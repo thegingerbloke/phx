@@ -1,0 +1,41 @@
+{
+  "name": "phx",
+  "version": "1.0.0",
+  "description": "Brighton Phoenix",
+  "scripts": {
+    "build:css": "postcss --config postcss.config.js src/css/main.css --output build/_assets/css/main.css",
+    "build:js": "webpack --config webpack.config.js",
+    "build": "npm-run-all build:*",
+    "lint:css": "stylelint --config stylelint.config.js \"src/components/**/*.css\" && stylelint \"src/css/**/*.css\"",
+    "lint:js": "eslint --config eslint.config.js src/components/ src/js/",
+    "lint": "npm-run-all lint:*",
+    "precommit": "npm run lint",
+    "watch:css": "npm run build:css -- --watch",
+    "watch:js": "npm run build:js -- --watch",
+    "watch": "npm-run-all --parallel watch:*"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.2",
+    "cssnano": "^3.10.0",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "husky": "^0.14.3",
+    "npm-run-all": "^4.1.3",
+    "postcss-calc": "^6.0.1",
+    "postcss-cli": "^5.0.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^7.0.0",
+    "postcss-easy-import": "^3.0.0",
+    "prettier": "1.13.5",
+    "stylelint": "^9.3.0",
+    "stylelint-config-prettier": "^3.2.0",
+    "stylelint-config-suitcss": "^14.0.0",
+    "stylelint-selector-bem-pattern": "^2.0.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0",
+    "suitcss-base": "^4.0.0"
+  }
+}

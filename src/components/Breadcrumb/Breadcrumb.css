@@ -1,0 +1,44 @@
+/**
+ * @define Breadcrumb; use strict
+ */
+
+.Breadcrumb-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Breadcrumb-item {
+  display: inline-block;
+  position: relative;
+}
+
+.Breadcrumb-item:first-child {
+  margin-left: var(--negative-gutter);
+}
+
+.Breadcrumb-item:not(:last-child)::after {
+  color: var(--colour-grey-mid);
+  content: "\203A"; /* > */
+  font-size: 24px;
+  margin-top: -2px;
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Breadcrumb-link {
+  color: var(--colour-blue-dark);
+  display: block;
+  padding: var(--gutter) var(--gutter);
+}
+
+.Breadcrumb-link:hover {
+  opacity: var(--opacity-hover);
+}
+
+.Breadcrumb-active {
+  display: block;
+  padding: var(--gutter-half) var(--gutter);
+}

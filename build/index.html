@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Brighton Phoenix</title>
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="_assets/css/main.css">
+
+    <link rel="icon" type="image/png" href="_assets/favicon.png"/>
+  </head>
+
+  <body class="roboto">
+
+    <!-- font switch start -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+
+    <ul class="FontSwitch">
+      <li class="FontSwitch-item">
+        Font:
+      </li>
+      <li class="FontSwitch-item">
+        <a class="FontSwitch-link" data-font="roboto" href="#">Roboto</a>
+      </li>
+      <li class="FontSwitch-item">|</li>
+      <li class="FontSwitch-item">
+        <a class="FontSwitch-link" data-font="montserrat" href="#">Montserrat</a>
+      </li>
+    </ul>
+    <style>
+      .roboto { font-family: 'Montserrat', sans-serif; }
+      .montserrat { font-family: 'Roboto', sans-serif; }
+      .FontSwitch { position: absolute; right: 10px; top: 10px; z-index: 10; }
+      .FontSwitch-item { display: inline-block; }
+      .FontSwitch-link { color: #0a1a72; }
+    </style>
+    <script>
+      var fonts = document.querySelectorAll('.FontSwitch-link');
+      fonts = [].slice.call(fonts);
+      fonts.forEach(function (font) {
+        font.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector('body').className = e.target.dataset.font;
+        });
+      });
+    </script>
+    <!-- font switch end -->
+
+    <header class="Header u-component">
+      <div class="Header-logo">
+        <a class="Header-logoLink" href="#">
+          <img class="Header-logoGraphic" src="_assets/img/logo_phoenix-graphic-rounded.png" alt="" />
+          <img class="Header-logoText" src="_assets/img/logo_brighton-phoenix-text.png" alt="Brighton Phoenix" />
+        </a>
+      </div>
+      <div class="Header-social">
+        <div class="Header-socialList">
+          <div class="SocialList">
+            <ul class="SocialList-list">
+              <li class="SocialList-item">
+                <a class="SocialList-link" href="#">
+                  <svg class="SocialList-icon SocialList-icon--facebook"><use xlink:href="_assets/img/icons/icons.svg#icon-facebook"></use></svg>
+                </a>
+              </li>
+              <li class="SocialList-item">
+                <a class="SocialList-link" href="#">
+                  <svg class="SocialList-icon SocialList-icon--twitter"><use xlink:href="_assets/img/icons/icons.svg#icon-twitter"></use></svg>
+                </a>
+              </li>
+              <li class="SocialList-item">
+                <a class="SocialList-link" href="#">
+                  <svg class="SocialList-icon SocialList-icon--instagram"><use xlink:href="_assets/img/icons/icons.svg#icon-instagram"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="Nav js-Nav">
+      <button class="Nav-toggle js-Nav-toggle">
+          <svg class="Nav-toggleIcon Nav-toggleIcon--open"><use xlink:href="_assets/img/icons/icons.svg#icon-menu"></use></svg>
+          <svg class="Nav-toggleIcon Nav-toggleIcon--close"><use xlink:href="_assets/img/icons/icons.svg#icon-cross"></use></svg>
+          <span class="Menu-toggleText">Menu</span>
+      </button>
+      <ul class="Nav-list u-component">
+        <li class="Nav-item">
+          <a class="Nav-link" href="#">
+            About
+          </a>
+        </li>
+        <li class="Nav-item">
+          <a class="Nav-link" href="#">
+            Fixtures
+          </a>
+        </li>
+        <li class="Nav-item">
+          <a class="Nav-link" href="#">
+            Results
+          </a>
+        </li>
+        <li class="Nav-item">
+          <a class="Nav-link Nav-link--active" href="#">
+            Training
+          </a>
+        </li>
+        <li class="Nav-item">
+          <a class="Nav-link" href="#">
+            News
+          </a>
+        </li>
+        <li class="Nav-item">
+          <a class="Nav-link" href="#">
+            Events
+          </a>
+        </li>
+        <li class="Nav-item">
+          <a class="Nav-link" href="#">
+            Membership
+          </a>
+        </li>
+        <li class="Nav-item Nav-item--contact">
+          <a class="Nav-link" href="#">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="Main">
+
+      <div class="Hero" style="background-image: url(_assets/img/_placeholder/hero/1.jpg);">
+        <div class="Hero-content u-component">
+          <h1 class="Hero-title">Compete_</h1>
+        </div>
+        <p class="Hero-caption">
+          Photo caption...
+        </p>
+      </div>
+
+      <div class="Breadcrumb u-component">
+        <ul class="Breadcrumb-list">
+          <li class="Breadcrumb-item">
+            <a class="Breadcrumb-link" href="#">
+              Home
+            </a>
+          </li>
+          <li class="Breadcrumb-item">
+              <a class="Breadcrumb-link" href="#">
+                Training
+              </a>
+            </li>
+          <li class="Breadcrumb-item">
+            <span class="Breadcrumb-active">
+              Juniors
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <section class="Content u-component">
+        <div class="Content-subnav">
+
+          <div class="SubNav">
+            <ul class="SubNav-list">
+              <li class="SubNav-item">
+                <a class="SubNav-link SubNav-link--active" href="#">
+                  Juniors
+                </a>
+                <ul class="SubNav-sublist">
+                  <li class="SubNav-subitem">
+                    <a class="SubNav-sublink" href="#">
+                      Track
+                    </a>
+                  </li>
+                  <li class="SubNav-subitem">
+                    <a class="SubNav-sublink" href="#">
+                      Strength &amp; Conditioning
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="SubNav-item">
+                <a class="SubNav-link" href="#">
+                  Seniors
+                </a>
+              </li>
+              <li class="SubNav-item">
+                <a class="SubNav-link" href="#">
+                  Elite
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="Content-main">
+
+          <div class="Content-component">
+            <div class="Editorial">
+              <h2>h2 - Lorem ipsum dolor sit amet</h2>
+              <p>Dolore sint Lorem eu cillum sit <strong>aute consectetur est reprehenderit</strong> mollit ut. Et eiusmod est excepteur id incididunt quis proident. Eiusmod duis anim <em>ipsum mollit culpa excepteur ipsum</em>. Cupidatat voluptate sit et est ullamco aliqua fugiat. Anim <a href="#">ex reprehenderit velit velit minim</a> ad est ad minim quis officia eiusmod. Ex cupidatat occaecat aliqua incididunt ea nostrud ea amet dolore nostrud cillum.</p>
+
+              <h3>h3 - Lorem ipsum dolor sit amet</h3>
+              <p>Est exercitation ut deserunt qui ad. Irure veniam mollit aliquip voluptate amet Lorem minim ut culpa consectetur aliquip quis dolore. Reprehenderit amet officia eiusmod sint consequat eu qui eu. Incididunt est id fugiat excepteur Lorem aute. Magna nostrud est officia labore anim. Sunt eu ut proident esse aliquip ipsum cupidatat eiusmod nisi ex non.</p>
+
+              <h4>h4 - Lorem ipsum dolor sit amet</h4>
+              <p>Est exercitation ut deserunt qui ad. Irure veniam mollit aliquip voluptate amet Lorem minim ut culpa consectetur aliquip quis dolore. Reprehenderit amet officia eiusmod sint consequat eu qui eu. Incididunt est id fugiat excepteur Lorem aute. Magna nostrud est officia labore anim. Sunt eu ut proident esse aliquip ipsum cupidatat eiusmod nisi ex non.</p>
+
+              <h4>Elements</h4>
+
+              <p>Est exercitation ut deserunt qui ad. Irure veniam mollit aliquip voluptate amet Lorem minim ut culpa consectetur aliquip quis dolore. Reprehenderit amet officia eiusmod sint consequat eu qui eu.</p>
+
+              <ul>
+                <li>Unordered</li>
+                <li>List</li>
+                <li>Styles</li>
+              </ul>
+
+              <p>Est exercitation ut deserunt qui ad. Irure veniam mollit aliquip voluptate amet Lorem minim ut culpa consectetur aliquip quis dolore. Reprehenderit amet officia eiusmod sint consequat eu qui eu.</p>
+
+              <ol>
+                <li>Ordered</li>
+                <li>List</li>
+                <li>Styles</li>
+              </ol>
+
+              <p>Est exercitation ut deserunt qui ad. Irure veniam mollit aliquip voluptate amet Lorem minim ut culpa consectetur aliquip quis dolore. Reprehenderit amet officia eiusmod sint consequat eu qui eu.</p>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Lorem</th>
+                    <th>Ipsum</th>
+                    <th>Dolor</th>
+                    <th>Sit</th>
+                    <th>Amet</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor</td>
+                    <td>Sit</td>
+                    <td>Amet</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor</td>
+                    <td>Sit</td>
+                    <td>Amet</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor</td>
+                    <td>Sit</td>
+                    <td>Amet</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p>Est exercitation ut deserunt qui ad. Irure veniam mollit aliquip voluptate amet Lorem minim ut culpa consectetur aliquip quis dolore. Reprehenderit amet officia eiusmod sint consequat eu qui eu.</p>
+            </div><!-- /Editorial -->
+          </div>
+
+          <div class="Content-component">
+            <div class="Feature Feature--light Feature--imageRight">
+              <img class="Feature-img" src="_assets/img/_placeholder/feature/1.jpg" alt="" />
+              <div class="Feature-content">
+                <h2 class="Feature-title">
+                  Feature title_
+                </h2>
+                <h3 class="Feature-subtitle">
+                  Feature subtitle
+                </h3>
+                <p class="Feature-text">
+                  Ad adipisicing esse fugiat reprehenderit eu tempor do excepteur qui Lorem officia commodo et.
+                </p>
+                <a class="Feature-cta" href="#">
+                  Read more
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="Content-component">
+            <div class="Feature Feature--dark Feature--imageLeft">
+              <img class="Feature-img" src="_assets/img/_placeholder/feature/1.jpg" alt="" />
+              <div class="Feature-content">
+                <h2 class="Feature-title">
+                  Feature title_
+                </h2>
+                <h3 class="Feature-subtitle">
+                  Feature subtitle
+                </h3>
+                <p class="Feature-text">
+                  Ad adipisicing esse fugiat reprehenderit eu tempor do excepteur qui Lorem officia commodo et.
+                </p>
+                <a class="Feature-cta" href="#">
+                  Read more
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="Content-component">
+            <div class="Feature Feature--white Feature--imageRight">
+              <img class="Feature-img" src="_assets/img/_placeholder/feature/2.jpg" alt="" />
+              <div class="Feature-content">
+                <h2 class="Feature-title">
+                  Feature title_
+                </h2>
+                <h3 class="Feature-subtitle">
+                  Feature subtitle
+                </h3>
+                <p class="Feature-text">
+                  Ad adipisicing esse fugiat reprehenderit eu tempor do excepteur qui Lorem officia commodo et.
+                </p>
+                <a class="Feature-cta" href="#">
+                  Read more
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="Content-component">
+            <div class="Feature Feature--dark Feature--centre">
+              <div class="Feature-content">
+                <h2 class="Feature-title">
+                  Feature title_
+                </h2>
+                <h3 class="Feature-subtitle">
+                  Feature subtitle
+                </h3>
+                <p class="Feature-text">
+                  Ad adipisicing esse fugiat reprehenderit eu tempor do excepteur qui Lorem officia commodo et.
+                </p>
+                <a class="Feature-cta" href="#">
+                  Read more
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="Content-component">
+            <div class="Quote Quote--dark Quote--imageLeft">
+              <img class="Quote-img" src="_assets/img/_placeholder/quote/1.jpg" alt="" />
+              <div class="Quote-content">
+                <p class="Quote-text">
+                  &ldquo;Ad adipisicing esse fugiat reprehenderit eu tempor do excepteur qui Lorem officia commodo et.&rdquo;
+                </p>
+                <p class="Quote-author">
+                  Steve Ovett
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="Content-component">
+            <div class="Quote Quote--light Quote--imageRight">
+              <img class="Quote-img" src="_assets/img/_placeholder/quote/1.jpg" alt="" />
+              <div class="Quote-content">
+                <p class="Quote-text">
+                  &ldquo;Ad adipisicing esse fugiat reprehenderit eu tempor do excepteur qui Lorem officia commodo et.&rdquo;
+                </p>
+                <p class="Quote-author">
+                  Steve Ovett
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="Content-component">
+            <div class="ListItems">
+              <div class="ListItems-item">
+                <img class="ListItems-img" src="_assets/img/_placeholder/list-items/1.jpg" alt="" />
+                <div class="ListItems-content">
+                  <h4 class="ListItems-title">
+                    Lorem ipsum dolor sit amet
+                  </h4>
+                  <p class="ListItems-text">
+                    Ad adipisicing esse fugiat reprehenderit eu tempor do excepteur qui Lorem officia commodo et.
+                  </p>
+                  <a class="ListItems-cta" href="#">
+                    Read more
+                  </a>
+                </div>
+              </div>
+              <div class="ListItems-item">
+                <img class="ListItems-img" src="_assets/img/_placeholder/list-items/2.jpg" alt="" />
+                <div class="ListItems-content">
+                  <h4 class="ListItems-title">
+                    Lorem ipsum dolor sit amet
+                  </h4>
+                  <p class="ListItems-text">
+                    Consequat adipisicing adipisicing excepteur laborum laborum amet incididunt.
+                  </p>
+                  <a class="ListItems-cta" href="#">
+                    Read more
+                  </a>
+                </div>
+              </div>
+              <div class="ListItems-item">
+                <img class="ListItems-img" src="_assets/img/_placeholder/list-items/3.jpg" alt="" />
+                <div class="ListItems-content">
+                  <h4 class="ListItems-title">
+                    Lorem ipsum dolor sit amet
+                  </h4>
+                  <p class="ListItems-text">
+                    Irure excepteur laboris deserunt reprehenderit ipsum esse occaecat mollit voluptate dolor officia id eiusmod elit irure magna id amet elit fugiat consequat.
+                  </p>
+                  <a class="ListItems-cta" href="#">
+                    Read more
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Content-component">
+            <div class="ListItems">
+              <div class="ListItems-item">
+                <img class="ListItems-img" src="_assets/img/_placeholder/list-items/1.jpg" alt="" />
+                <div class="ListItems-content">
+                  <h4 class="ListItems-title">
+                    Lorem ipsum dolor sit amet
+                  </h4>
+                  <p class="ListItems-text">
+                    Ad adipisicing esse fugiat reprehenderit eu tempor.
+                  </p>
+                  <a class="ListItems-cta" href="#">
+                    Read more
+                  </a>
+                </div>
+              </div>
+              <div class="ListItems-item">
+                <img class="ListItems-img" src="_assets/img/_placeholder/list-items/2.jpg" alt="" />
+                <div class="ListItems-content">
+                  <h4 class="ListItems-title">
+                    Lorem ipsum dolor sit amet
+                  </h4>
+                  <p class="ListItems-text">
+                    In commodo occaecat occaecat qui amet ad commodo et aliqua proident consequat. Veniam sint elit elit reprehenderit. Deserunt minim laboris magna eu ea elit deserunt laborum mollit minim pariatur.
+                  </p>
+                  <a class="ListItems-cta" href="#">
+                    Read more
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Content-component">
+            <div class="GridBlocks">
+              <div class="GridBlocks-block GridBlocks-block--phx GridBlocks-block--white">
+                <h3 class="GridBlocks-title">
+                  PHX_
+                </h3>
+                <p class="GridBlocks-text">
+                  Ex excepteur est mollit esse. Incididunt officia ipsum occaecat sint Lorem consequat sint nulla minim sunt culpa nostrud proident tempor.
+                </p>
+                <p class="GridBlocks-text">
+                  Et consectetur sunt velit reprehenderit cillum proident. Deserunt ullamco tempor do est voluptate consectetur magna aliqua adipisicing consequat dolor occaecat.
+                </p>
+                <p class="GridBlocks-text">
+                  Incididunt mollit adipisicing aute sit ipsum officia eiusmod officia amet quis cillum. Lorem consectetur mollit exercitation non aute incididunt aliquip dolore ex et veniam. Laborum ut nostrud nisi et ex esse aute culpa ullamco quis. Labore amet irure labore esse aliquip voluptate ipsum dolore sit cupidatat. Qui cupidatat ullamco excepteur adipisicing.
+                </p>
+              </div>
+              <div class="GridBlocks-block GridBlocks-block--news GridBlocks-block--white">
+                <h3 class="GridBlocks-title">
+                  News_
+                </h3>
+                <p class="GridBlocks-subtitle">
+                  <a class="GridBlocks-link" href="#">Ex excepteur est mollit esse.</a>
+                </p>
+                <p class="GridBlocks-text">
+                  Ex excepteur est mollit esse. Incididunt officia ipsum occaecat sint Lorem consequat sint nulla minim sunt culpa nostrud proident tempor.
+                </p>
+                <p class="GridBlocks-subtitle">
+                  <a class="GridBlocks-link" href="#">Ex excepteur est mollit esse.</a>
+                </p>
+                <p class="GridBlocks-text">
+                  Ex excepteur est mollit esse. Incididunt officia ipsum occaecat sint Lorem consequat sint nulla minim sunt culpa nostrud proident tempor.
+                </p>
+              </div>
+              <div class="GridBlocks-block GridBlocks-block--gallery">
+                <h3 class="GridBlocks-title">
+                  Gallery_
+                </h3>
+                <div class="GridBlocks-gallery">
+                  <div class="Gallery js-Gallery">
+                    <div class="Gallery-item js-Gallery-item" style="background-image:url(_assets/img/_placeholder/gallery/3.jpg);">
+                      <p class="Gallery-caption">Caption</p>
+                    </div>
+                    <div class="Gallery-item js-Gallery-item" style="background-image:url(_assets/img/_placeholder/gallery/4.jpg);">
+                      <p class="Gallery-caption">Caption</p>
+                    </div>
+                    <div class="Gallery-item js-Gallery-item" style="background-image:url(_assets/img/_placeholder/gallery/5.jpg);">
+                      <p class="Gallery-caption">Caption</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="GridBlocks-block GridBlocks-block--fixtures GridBlocks-block--light">
+                <h3 class="GridBlocks-title">
+                  Fixtures_
+                </h3>
+                <table class="GridBlocks-table">
+                  <tr>
+                    <th class="GridBlocks-tableHead">
+                      <a class="GridBlocks-link" href="#">Crawley Open</a>
+                    </th>
+                    <td class="GridBlocks-tableData">H2</td>
+                    <td class="GridBlocks-tableData">20/6/2018</td>
+                  </tr>
+                  <tr>
+                    <th class="GridBlocks-tableHead">
+                        <a class="GridBlocks-link" href="#">Swim the lake</a>
+                    </th>
+                    <td class="GridBlocks-tableData">Ardingly</td>
+                    <td class="GridBlocks-tableData">28/6/2018</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="GridBlocks-block GridBlocks-block--events GridBlocks-block--white">
+                <h3 class="GridBlocks-title">
+                  Events_
+                </h3>
+                <p class="GridBlocks-text">
+                  Ex excepteur est mollit esse. Incididunt officia ipsum occaecat sint Lorem consequat sint nulla minim sunt culpa nostrud proident tempor.
+                </p>
+              </div>
+              <div class="GridBlocks-block GridBlocks-block--results GridBlocks-block--dark">
+                <h3 class="GridBlocks-title">
+                  Results_
+                </h3>
+                <table class="GridBlocks-table">
+                  <tr>
+                    <th class="GridBlocks-tableHead">
+                      <a class="GridBlocks-link" href="#">Crawley Open</a>
+                    </th>
+                    <td class="GridBlocks-tableData">H2</td>
+                    <td class="GridBlocks-tableData">20/6/2018</td>
+                  </tr>
+                  <tr>
+                    <th class="GridBlocks-tableHead">
+                        <a class="GridBlocks-link" href="#">Swim the lake</a>
+                    </th>
+                    <td class="GridBlocks-tableData">Ardingly</td>
+                    <td class="GridBlocks-tableData">28/6/2018</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="GridBlocks-block GridBlocks-block--join GridBlocks-block--dark">
+                <h3 class="GridBlocks-title">
+                  Join_
+                </h3>
+                <p class="GridBlocks-text">
+                  Ex excepteur est mollit esse.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="Footer">
+      <div class="Footer-comms">
+        <div class="Footer-commsWrap u-component">
+          <div class="Footer-commsBlock">
+            <h4 class="Footer-commsTitle">
+              Join our mailing list
+            </h4>
+            <p class="Footer-commsText">
+              Sign up to receive our monthly Phoenix Phyler newsletter
+            </p>
+            <div class="Footer-commsForm">
+              <form method="post" action="" class="Form">
+                <fieldset>
+                  <legend></legend>
+                  <div class="Form-row">
+                    <input class="Form-input--text" name="email" type="email" />
+                  </div>
+                  <div class="Form-row">
+                    <input class="Form-input--button" type="submit" value="Join" />
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="Footer-commsBlock">
+            <h4 class="Footer-commsTitle">
+              Contact
+            </h4>
+            <p class="Footer-commsText">
+              Get in touch
+            </p>
+            <a class="Cta" href="#">
+              Contact us
+            </a>
+          </div>
+          <div class="Footer-commsBlock">
+            <h4 class="Footer-commsTitle">
+              Keep up to date
+            </h4>
+            <p class="Footer-commsText">
+              Follow us on social media
+            </p>
+            <div class="Footer-socialList">
+              <div class="SocialList">
+                <ul class="SocialList-list">
+                  <li class="SocialList-item">
+                    <a class="SocialList-link" href="#">
+                      <svg class="SocialList-icon SocialList-icon--facebook"><use xlink:href="_assets/img/icons/icons.svg#icon-facebook"></use></svg>
+                    </a>
+                  </li>
+                  <li class="SocialList-item">
+                    <a class="SocialList-link" href="#">
+                      <svg class="SocialList-icon SocialList-icon--twitter"><use xlink:href="_assets/img/icons/icons.svg#icon-twitter"></use></svg>
+                    </a>
+                  </li>
+                  <li class="SocialList-item">
+                    <a class="SocialList-link" href="#">
+                      <svg class="SocialList-icon SocialList-icon--instagram"><use xlink:href="_assets/img/icons/icons.svg#icon-instagram"></use></svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Footer-links">
+        <div class="Footer-linksWrap u-component">
+          <ul class="Footer-linksList">
+            <li class="Footer-linksItem">
+              <a class="Footer-link" href="#">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="Footer-linksItem">
+              <a class="Footer-link" href="#">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="Footer-linksItem">
+              <a class="Footer-link" href="#">
+                Cookies
+              </a>
+            </li>
+          </ul>
+          <p class="Footer-copyright">
+            Copyright &copy; 2018 Brighton Phoenix
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="_assets/js/main.js"></script>
+
+  </body>
+</html>

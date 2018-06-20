@@ -1,0 +1,103 @@
+/**
+ * @define Nav; use strict
+ */
+
+.Nav {
+  background-color: var(--colour-blue-dark);
+  text-transform: uppercase;
+}
+
+/* Nav - toggle */
+
+.Nav-toggle {
+  align-items: center;
+  color: var(--colour-white);
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  padding: var(--gutter);
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.Nav-toggle:focus {
+  outline: none;
+}
+
+.Nav-toggleIcon {
+  fill: var(--colour-white);
+  height: 20px;
+  margin-right: var(--gutter-half);
+  stroke: none;
+  width: 20px;
+}
+
+.Nav-toggleIcon--close {
+  display: none;
+}
+
+.Nav--open .Nav-toggleIcon--close {
+  display: block;
+}
+
+.Nav--open .Nav-toggleIcon--open {
+  display: none;
+}
+
+@media (--large) {
+  .Nav-toggle {
+    display: none;
+  }
+}
+
+/* Nav - list */
+
+.Nav-list {
+  display: none;
+  list-style: none;
+}
+
+.Nav--open .Nav-list {
+  display: block;
+  padding: 0;
+}
+
+@media (--large) {
+  .Nav-list,
+  .Nav--open .Nav-list {
+    display: flex;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+
+  .Nav-item:first-child {
+    margin-left: var(--negative-gutter);
+  }
+
+  .Nav-item--contact {
+    margin-left: auto;
+    margin-right: var(--negative-gutter);
+  }
+}
+
+.Nav-link {
+  color: var(--colour-white);
+  display: block;
+  padding: var(--gutter);
+  text-decoration: none;
+}
+
+.Nav-link:hover {
+  color: var(--colour-white);
+  opacity: var(--opacity-hover);
+}
+
+.Nav-link--active {
+  background: var(--colour-white);
+  color: var(--colour-blue-dark);
+}
+
+.Nav-link--active:hover {
+  color: var(--colour-blue-dark);
+  opacity: 1;
+}

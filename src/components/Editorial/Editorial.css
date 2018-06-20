@@ -1,0 +1,123 @@
+/**
+ * @define Editorial; weak
+ *
+ * Opt-in text content, see:
+ * https://css-tricks.com/opt-in-typography/
+ *
+ * weak linting to stop the need for classes on all formatting
+ */
+
+.Editorial {
+  line-height: var(--line-height-editorial);
+}
+
+.Editorial > *:first-child {
+  margin-top: 0;
+}
+
+/* Headings */
+
+.Editorial h1,
+.Editorial h2,
+.Editorial h3,
+.Editorial h4 {
+  margin: 2rem 0 0.5rem 0;
+}
+
+.Editorial h1 {
+  font-size: var(--font-size-h1);
+}
+
+.Editorial h2 {
+  font-size: var(--font-size-h2);
+}
+
+.Editorial h3 {
+  font-size: var(--font-size-h3);
+}
+
+.Editorial h4 {
+  font-size: var(--font-size-h4);
+}
+
+/* Text */
+
+.Editorial p {
+  font-size: var(--font-size-default);
+  margin: 0.5rem 0 1rem 0;
+}
+
+.Editorial a {
+  color: var(--colour-blue-dark);
+}
+
+.Editorial a:hover {
+  opacity: var(--opacity-hover);
+}
+
+/* Bulleted list styles */
+
+.Editorial ul,
+.Editorial ol {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.Editorial ol li {
+  list-style: decimal;
+  margin-left: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.Editorial ul li {
+  list-style: none;
+  margin-bottom: 0.25rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.Editorial ul li::before {
+  color: var(--colour-grey-mid);
+  content: "\203A"; /* > */
+  font-size: 24px;
+  left: 8px;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Tables */
+
+.Editorial table {
+  display: inline-block;
+  margin: 0.5rem 0 1rem 0;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+}
+
+@media (--medium) {
+  .Editorial table {
+    display: table;
+  }
+}
+
+.Editorial thead {
+  background: var(--colour-blue-dark);
+  color: var(--colour-white);
+  text-align: left;
+}
+
+.Editorial th {
+  border-bottom: 2px solid var(--colour-white);
+  padding: var(--gutter-half);
+}
+
+.Editorial td {
+  padding: var(--gutter-half);
+}
+
+.Editorial tr:nth-child(odd) td {
+  background-color: var(--colour-blue-light);
+}

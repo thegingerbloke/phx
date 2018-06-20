@@ -1,0 +1,81 @@
+/**
+ * @define Quote; use strict
+ */
+
+.Quote {
+  background: var(--colour-blue-mid);
+  color: var(--colour-blue-dark);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Quote - layout variants */
+
+@media (--large) {
+  .Quote {
+    flex-direction: row;
+  }
+
+  .Quote--imageRight {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Quote - colour variants */
+
+.Quote--dark {
+  background: var(--colour-blue-dark);
+  color: var(--colour-white);
+}
+
+.Quote--white {
+  background: var(--colour-white);
+  border: 1px solid var(--colour-grey-light);
+}
+
+@media (--large) {
+  .Quote--white {
+    border: none;
+  }
+}
+
+/* Quote - content */
+
+@media (--large) {
+  .Quote-img {
+    align-self: flex-start;
+    flex: 1;
+    max-width: 50%;
+  }
+}
+
+.Quote-content {
+  align-self: center;
+  flex: 1;
+  padding: var(--gutter-double);
+}
+
+.Quote-text {
+  font-size: var(--font-size-h3);
+  font-style: italic;
+  font-weight: normal;
+  line-height: var(--line-height-default);
+}
+
+@media (--large) {
+  .Quote-text {
+    font-size: var(--font-size-h2);
+  }
+}
+
+.Quote-author {
+  font-size: var(--font-size-h3);
+  font-weight: bold;
+  line-height: var(--line-height-default);
+}
+
+@media (--large) {
+  .Quote-author {
+    font-size: var(--font-size-h2);
+  }
+}

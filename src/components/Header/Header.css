@@ -1,0 +1,52 @@
+/**
+ * @define Header; use strict
+ */
+
+.Header {
+  display: flex;
+  padding-bottom: var(--gutter);
+  padding-top: var(--gutter);
+}
+
+/* Header - logo */
+
+.Header-logoGraphic {
+  display: block;
+  margin-bottom: var(--gutter);
+  margin-top: var(--gutter);
+  width: 128px;
+}
+
+@media (--small) {
+  .Header-logoGraphic {
+    width: 160px;
+  }
+}
+
+.Header-logoText {
+  margin-bottom: var(--gutter);
+  width: 240px;
+}
+
+@media (--small) {
+  .Header-logoText {
+    width: 320px;
+  }
+}
+
+/* Header - social */
+
+.Header-social {
+  align-self: flex-end;
+  margin-bottom: var(--gutter);
+  margin-left: auto;
+  position: absolute;
+  right: var(--gutter);
+  top: var(--gutter);
+}
+
+@media (--large) {
+  .Header-social {
+    position: static;
+  }
+}

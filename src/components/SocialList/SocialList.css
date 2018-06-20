@@ -1,0 +1,42 @@
+/**
+ * @define SocialList; use strict
+ */
+
+.SocialList-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.SocialList-item {
+  display: inline-block;
+  margin-left: var(--gutter-half);
+}
+
+.SocialList-item:first-child {
+  margin-left: 0;
+}
+
+.SocialList-link {
+  align-items: center;
+  background: #0a1a72;
+  border-radius: 50%;
+  display: flex;
+  height: calc(var(--font-size-default) * 2);
+  justify-content: center;
+  text-align: center;
+  width: calc(var(--font-size-default) * 2);
+}
+
+.SocialList-icon {
+  display: inline-block;
+  fill: var(--colour-white);
+  height: var(--font-size-default);
+  stroke: var(--colour-white);
+  stroke-width: 0;
+  width: var(--font-size-default);
+}
+
+.SocialList-link:hover .SocialList-icon {
+  opacity: var(--opacity-hover);
+}

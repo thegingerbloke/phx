@@ -1,0 +1,95 @@
+/**
+ * @define ListItems; use strict
+ */
+
+.ListItems {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ListItems - layout variants */
+
+@media (--large) {
+  .ListItems {
+    flex-direction: row;
+  }
+}
+
+/* ListItems - colour variants */
+
+.ListItems-item {
+  background: var(--colour-blue-dark);
+  color: var(--colour-white);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.ListItems-item:nth-child(odd) {
+  background: var(--colour-blue-mid);
+  color: var(--colour-blue-dark);
+}
+
+/* ListItems - content */
+
+.ListItems-content {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--gutter);
+  position: relative;
+}
+
+.ListItems-content::before {
+  border-bottom: 30px solid var(--colour-blue-dark);
+  border-right: 30px solid transparent;
+  content: "";
+  height: 0;
+  left: 50%;
+  margin-left: -15px;
+  position: absolute;
+  top: -30px;
+  width: 0;
+}
+
+.ListItems-item:nth-child(odd) .ListItems-content::before {
+  border-bottom-color: var(--colour-blue-mid);
+}
+
+.ListItems-img {
+  width: 100%;
+}
+
+.ListItems-title {
+  font-size: var(--font-size-h4);
+  line-height: var(--line-height-default);
+}
+
+.ListItems-text {
+  font-size: var(--font-size-default);
+  line-height: var(--line-height-default);
+  margin-bottom: var(--gutter);
+}
+
+/* ListItems - cta */
+
+.ListItems-cta {
+  background: var(--colour-white);
+  color: var(--colour-blue-dark);
+  display: inline-block;
+  margin-top: auto;
+  padding: var(--gutter-half) var(--gutter);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.ListItems-item:nth-child(odd) .ListItems-cta {
+  background: var(--colour-blue-dark);
+  color: var(--colour-white);
+}
+
+.ListItems-cta:hover {
+  opacity: var(--opacity-hover);
+}

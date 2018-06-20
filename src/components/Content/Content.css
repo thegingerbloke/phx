@@ -1,0 +1,39 @@
+/**
+ * @define Content; use strict
+ */
+
+@media (--medium) {
+  .Content {
+    display: flex;
+  }
+}
+.Content-subnav {
+  margin-bottom: var(--gutter-double);
+}
+
+@media (--medium) {
+  .Content-subnav {
+    margin-right: var(--gutter-double);
+    width: 240px;
+  }
+}
+
+@media (--medium) {
+  .Content-main {
+    flex: 1;
+  }
+}
+
+.Content-component {
+  margin-top: var(--gutter-double);
+}
+
+@media (--medium) {
+  .Content-component {
+    margin-top: var(--gutter-quad);
+  }
+}
+
+.Content-component:first-child {
+  margin-top: 0;
+}
