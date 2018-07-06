@@ -1,0 +1,9 @@
+<div class="Gallery js-Gallery">
+  {% for gallery in data %}
+  <div class="Gallery-item js-Gallery-item" style="background-image:url({{ gallery.image }});">
+    {% if gallery.caption %}
+      <p class="Gallery-caption">{{gallery.caption}}</p>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>

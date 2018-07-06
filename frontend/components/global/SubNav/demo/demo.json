@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Juniors",
+    "linkUrl": "#",
+    "active": true,
+    "children": [
+      {
+        "title": "Strength & Conditioning",
+        "linkUrl": "#"
+      },
+      {
+        "title": "Track",
+        "linkUrl": "#"
+      }
+    ]
+  },
+  {
+    "title": "Seniors",
+    "linkUrl": "#",
+    "children": [
+      {
+        "title": "Strength & Conditioning",
+        "linkUrl": "#"
+      },
+      {
+        "title": "Thursday club run",
+        "linkUrl": "#"
+      },
+      {
+        "title": "Track",
+        "linkUrl": "#"
+      },
+      {
+        "title": "Swimming",
+        "linkUrl": "#"
+      }
+    ]
+  },
+  {
+    "title": "Elites",
+    "linkUrl": "#"
+  }
+]

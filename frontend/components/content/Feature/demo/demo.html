@@ -1,0 +1,50 @@
+{% extends 'components/components_detail.html' %}
+{% load components_tags %}
+
+{% block component %}
+  <h3 class="Demo-h3">Image - left</h3>
+  <div class="Demo-block Demo-block--1">
+    {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
+      {% include template with data=data.imageLeft %}
+    {% endwith %}
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.imageLeft|pretty_print}}</pre>
+  </div>
+
+  <h3 class="Demo-h3">Image - right</h3>
+  <div class="Demo-block Demo-block--2">
+    {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
+      {% include template with data=data.imageRight %}
+    {% endwith %}
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.imageRight|pretty_print}}</pre>
+  </div>
+
+  <h3 class="Demo-h3">Background - white</h3>
+  <div class="Demo-block Demo-block--3">
+    {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
+      {% include template with data=data.bgWhite %}
+    {% endwith %}
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.bgWhite|pretty_print}}</pre>
+  </div>
+
+  <h3 class="Demo-h3">Background - light</h3>
+  <div class="Demo-block Demo-block--4">
+    {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
+      {% include template with data=data.bgLight %}
+    {% endwith %}
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.bgLight|pretty_print}}</pre>
+  </div>
+
+  <h3 class="Demo-h3">Centre</h3>
+  <div class="Demo-block Demo-block--5">
+    {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
+      {% include template with data=data.centre %}
+    {% endwith %}
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.centre|pretty_print}}</pre>
+  </div>
+
+{% endblock component %}

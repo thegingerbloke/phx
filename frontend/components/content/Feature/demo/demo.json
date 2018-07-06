@@ -1,0 +1,63 @@
+{
+  "imageLeft": {
+    "background": "dark",
+    "align": "imageLeft",
+    "image": {
+      "url": "/static/img/_placeholder/feature/1.jpg"
+    },
+    "image_alt": "",
+    "title": "Lorem ipsum",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "content": "Quis exercitation id minim elit sunt incididunt reprehenderit excepteur.",
+    "link_url": "#",
+    "link_text": "Lorem ipsum"
+  },
+  "imageRight": {
+    "background": "dark",
+    "align": "imageRight",
+    "image": {
+      "url": "/static/img/_placeholder/feature/1.jpg"
+    },
+    "image_alt": "",
+    "title": "Lorem ipsum",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "content": "Minim tempor et mollit irure consequat sunt reprehenderit reprehenderit reprehenderit fugiat.",
+    "link_url": "#",
+    "link_text": "Lorem ipsum"
+  },
+  "bgWhite": {
+    "background": "white",
+    "align": "imageLeft",
+    "image": {
+      "url": "/static/img/_placeholder/feature/2.jpg"
+    },
+    "image_alt": "",
+    "title": "Lorem ipsum",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "content": "Minim tempor et mollit irure consequat sunt reprehenderit reprehenderit reprehenderit fugiat.",
+    "link_url": "#",
+    "link_text": "Lorem ipsum"
+  },
+  "bgLight": {
+    "background": "light",
+    "align": "imageRight",
+    "image": {
+      "url": "/static/img/_placeholder/feature/1.jpg"
+    },
+    "image_alt": "",
+    "title": "Lorem ipsum",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "content": "Ad duis ut ullamco excepteur incididunt.",
+    "link_url": "#",
+    "link_text": "Lorem ipsum"
+  },
+  "centre": {
+    "background": "light",
+    "align": "centre",
+    "title": "Lorem ipsum",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "content": "Enim proident commodo aliqua officia nisi cillum magna non officia. Labore excepteur id sint exercitation eiusmod adipisicing laborum eu ex laborum sunt sit enim eu. Cupidatat enim laboris fugiat proident cillum Lorem. Laboris aute laborum ipsum consectetur velit laboris excepteur anim.",
+    "link_url": "#",
+    "link_text": "Lorem ipsum"
+  }
+}

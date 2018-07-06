@@ -1,9 +1,9 @@
 var path = require("path");
 
 module.exports = {
-  entry: "./src/js/main.js",
+  entry: "./frontend/js/main.js",
   output: {
-    path: path.resolve(__dirname, "build/_assets/js/"),
+    path: path.resolve(__dirname, "frontend/static/js/"),
     filename: "main.js"
   },
   mode: "production"

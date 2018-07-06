@@ -1,0 +1,19 @@
+{% for component in components %}
+  <div class="Content-component">
+    {% if component.editorial %}
+      {% include './content/Editorial/Editorial.html' with data=component.editorial %}
+    {% endif %}
+    {% if component.quote %}
+      {% include './content/Quote/Quote.html' with data=component.quote %}
+    {% endif %}
+    {% if component.feature %}
+      {% include './content/Feature/Feature.html' with data=component.feature %}
+    {% endif %}
+    {% if component.image %}
+      {% include './content/Image/Image.html' with data=component.image %}
+    {% endif %}
+    {% if component.list_items %}
+      {% include './content/ListItems/ListItems.html' with data=component.list_items %}
+    {% endif %}
+  </div>
+{% endfor %}

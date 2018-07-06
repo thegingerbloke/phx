@@ -1,0 +1,42 @@
+{
+  "imageLeft": {
+    "background": "dark",
+    "align": "imageLeft",
+    "image": {
+      "url": "/static/img/_placeholder/quote/1.jpg"
+    },
+    "image_alt": "",
+    "quote": "Quis exercitation id minim elit sunt incididunt reprehenderit excepteur.",
+    "author": "Steve Ovett"
+  },
+  "imageRight": {
+    "background": "dark",
+    "align": "imageRight",
+    "image": {
+      "url": "/static/img/_placeholder/quote/1.jpg"
+    },
+    "image_alt": "",
+    "quote": "Minim tempor et mollit irure consequat sunt reprehenderit reprehenderit reprehenderit fugiat.",
+    "author": "Steve Ovett"
+  },
+  "bgWhite": {
+    "background": "white",
+    "align": "imageLeft",
+    "image": {
+      "url": "/static/img/_placeholder/quote/1.jpg"
+    },
+    "image_alt": "",
+    "quote": "Minim tempor et mollit irure consequat sunt reprehenderit reprehenderit reprehenderit fugiat.",
+    "author": "Steve Ovett"
+  },
+  "bgLight": {
+    "background": "light",
+    "align": "imageRight",
+    "image": {
+      "url": "/static/img/_placeholder/quote/1.jpg"
+    },
+    "image_alt": "",
+    "quote": "Ad duis ut ullamco excepteur incididunt.",
+    "author": "Steve Ovett"
+  }
+}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+{% if hero %}
+  {% include 'components/global/Hero/Hero.html' with data=hero %}
+{% endif %}
+
+<section class="Content u-component">
+  <div class="Content-main">
+    <div class="Content-component">
+      {% include 'components/global/GridBlocks/GridBlocks.html' with data=data %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,1 +1,0 @@
-rsync ./build/ f90:/var/www/dev.petegoodman.com/public/phx/new --progress --exclude=.DS_Store --exclude=deploy.sh --exclude=.git --exclude=_talks --rsh=ssh --recursive --verbose --delete --delete-excluded --links #--dry-run

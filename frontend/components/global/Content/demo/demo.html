@@ -1,0 +1,45 @@
+{% extends 'components/components_detail.html' %}
+
+{% block template_content %}
+  <h3 class="Demo-h3">
+    Note:
+  </h3>
+  <p>
+    This can't be imported directly as a component. Content element should surround page content
+  </p>
+  <pre class="Demo-code">
+&lt;section class="Content u-component"&gt;
+  &lt;div class="Content-subnav"&gt;
+    ...
+  &lt;/div&gt;
+  &lt;div class="Content-main"&gt;
+    &lt;div class="Content-component"&gt;
+      ...
+    &lt;/div&gt;
+    &lt;div class="Content-component"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+{% endblock template_content %}
+
+
+{% block component %}
+  <h3 class="Demo-h3">Default</h3>
+  <div class="Demo-block Demo-block--1">
+      <section class="Content u-component">
+      <div class="Content-subnav">
+        [subnav]
+      </div>
+      <div class="Content-main">
+        <div class="Content-component">
+          [component]
+        </div>
+        <div class="Content-component">
+          [component]
+        </div>
+      </div>
+    </section>
+  </div>
+{% endblock component %}

@@ -13,3 +13,28 @@ npm-debug.log
 
 # VS Code
 .vscode
+
+# Python
+*.py[cod]
+__pycache__
+
+# Dev/Production config
+**/*/settings/dev.py
+**/*/settings/production.py
+
+# Distribution / packaging
+env/
+
+# Uploaded assets
+phx/media/
+
+# Static assets
+phx/static/
+
+# Compiled frontend files
+frontend/static/css
+frontend/static/js
+phx/templates/components
+
+# Django
+phx/db.sqlite3

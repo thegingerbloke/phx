@@ -1,0 +1,23 @@
+<div class="SubNav">
+  <ul class="SubNav-list">
+
+    {% for item in data %}
+    <li class="SubNav-item">
+      <a class="SubNav-link {% if item.active %}SubNav-link--active{% endif %}" href="{{item.linkUrl}}">
+        {{item.title}}
+      </a>
+      {% if item.children %}
+        <ul class="SubNav-sublist">
+          {% for child in item.children %}
+          <li class="SubNav-subitem">
+            <a class="SubNav-sublink {% if child.active %}SubNav-sublink--active{% endif %}" href="{{child.linkUrl}}">
+              {{child.title}}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>

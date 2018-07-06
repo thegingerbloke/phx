@@ -1,0 +1,32 @@
+{% extends 'components/components_detail.html' %}
+{% load components_tags %}
+
+{% block component %}
+  <h3 class="Demo-h3">No background image</h3>
+  <div class="Demo-block Demo-block--1">
+    {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
+      {% include template with data=data.noimage %}
+    {% endwith %}
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.noimage|pretty_print}}</pre>
+  </div>
+
+  <h3 class="Demo-h3">Example image</h3>
+  <div class="Demo-block Demo-block--2">
+    {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
+      {% include template with data=data.image1 %}
+    {% endwith %}
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.image1|pretty_print}}</pre>
+  </div>
+
+  <h3 class="Demo-h3">Another example image</h3>
+  <div class="Demo-block Demo-block--3">
+    {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
+      {% include template with data=data.image2 %}
+    {% endwith %}
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.image2|pretty_print}}</pre>
+  </div>
+
+{% endblock component %}

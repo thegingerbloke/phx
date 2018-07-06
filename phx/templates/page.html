@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+  {% if hero %}
+    {% include 'components/global/Hero/Hero.html' with data=hero %}
+  {% endif %}
+
+  {% if breadcrumb %}
+    {% include 'components/global/Breadcrumb/Breadcrumb.html' with data=breadcrumb %}
+  {% endif %}
+
+  <section class="Content u-component">
+    <div class="Content-subnav">
+
+      {% if subnav %}
+        {% include 'components/global/Subnav/Subnav.html' with data=subnav %}
+      {% endif %}
+
+    </div>
+    <div class="Content-main">
+
+      {% block content %}
+      {% endblock %}
+
+    </div>
+  </section>
+
+{% endblock %}

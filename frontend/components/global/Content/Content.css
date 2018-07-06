@@ -1,0 +1,43 @@
+/**
+ * @define Content; use strict
+ */
+
+.Content {
+  margin-top: var(--gutter-double);
+}
+
+@media (--large) {
+  .Content {
+    display: flex;
+  }
+}
+.Content-subnav {
+  margin-bottom: var(--gutter-double);
+}
+
+@media (--large) {
+  .Content-subnav {
+    margin-right: var(--gutter-double);
+    width: 240px;
+  }
+}
+
+@media (--large) {
+  .Content-main {
+    flex: 1;
+  }
+}
+
+.Content-component {
+  margin-top: var(--gutter-double);
+}
+
+@media (--large) {
+  .Content-component {
+    margin-top: var(--gutter-quad);
+  }
+}
+
+.Content-component:first-child {
+  margin-top: 0;
+}

@@ -1,22 +1,66 @@
 # PHX
 
+## Requirements
+
+* Python 3 (and pip)
+* node (and npm)
+* virtualenv
+
+
 ## Installation
 
-* Clone this repo
+Once you have cloned this repo, run through the following steps:
 
-* Install dependencies:
+
+### Installation - frontend
+
+* Install frontend dependencies:
 
   ```
   npm install
   ```
 
-* Watch for file changes during development:
+* Watch for frontend file changes during development:
 
   ```
   npm run watch
   ```
 
-* Open the `build` directory in a browser
+
+### Installation - backend
+
+* Set up a virtualenv:
+
+  ```
+  virtualenv env
+  source env/bin/activate
+  ```
+
+* Install requirements:
+
+  ```
+  pip3 install -r requirements.txt
+  ```
+
+* Run database migrations:
+
+  ```
+  python3 manage.py migrate
+  ```
+
+* Create an admin superuser
+
+  ```
+  python3 manage.py createsuperuser
+  ```
+
+* Start server:
+
+  ```
+  python3 manage.py runserver
+  ```
+
+* Open [http://localhost:8000](http://localhost:8000) in a browser
 
 
 ## Development

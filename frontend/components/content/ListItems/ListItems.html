@@ -1,0 +1,58 @@
+<div class="ListItems">
+  {% if data.content_1 %}
+  <div class="ListItems-item">
+    <img class="ListItems-img" src="{{data.image_1.url}}" alt="{{data.image_alt_1}}" />
+    <div class="ListItems-content">
+      <h4 class="ListItems-title">
+        {{data.title_1}}
+      </h4>
+      <p class="ListItems-text">
+        {{data.content_1}}
+      </p>
+      {% if data.link_url_1 and data.link_text_1 %}
+        <a class="ListItems-cta" href="{{data.link_url_1}}">
+          {{data.link_text_1}}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if data.content_2 %}
+  <div class="ListItems-item">
+    <img class="ListItems-img" src="{{data.image_2.url}}" alt="{{data.image_alt_2}}" />
+    <div class="ListItems-content">
+      <h4 class="ListItems-title">
+        {{data.title_2}}
+      </h4>
+      <p class="ListItems-text">
+        {{data.content_2}}
+      </p>
+      {% if data.link_url_2 and data.link_text_2 %}
+        <a class="ListItems-cta" href="{{data.link_url_2}}">
+          {{data.link_text_2}}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if data.content_3 %}
+  <div class="ListItems-item">
+    <img class="ListItems-img" src="{{data.image_3.url}}" alt="{{data.image_alt_3}}" />
+    <div class="ListItems-content">
+      <h4 class="ListItems-title">
+        {{data.title_3}}
+      </h4>
+      <p class="ListItems-text">
+        {{data.content_3}}
+      </p>
+      {% if data.link_url_3 and data.link_text_3 %}
+        <a class="ListItems-cta" href="{{data.link_url_3}}">
+          {{data.link_text_3}}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+</div>

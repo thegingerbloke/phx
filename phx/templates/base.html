@@ -1,0 +1,68 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Brighton Phoenix</title>
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
+  </head>
+
+  <body class="roboto">
+
+    <!-- font switch start -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+
+    <ul class="FontSwitch">
+      <li class="FontSwitch-item">
+        Font:
+      </li>
+      <li class="FontSwitch-item">
+        <a class="FontSwitch-link" data-font="roboto" href="#">Roboto</a>
+      </li>
+      <li class="FontSwitch-item">|</li>
+      <li class="FontSwitch-item">
+        <a class="FontSwitch-link" data-font="montserrat" href="#">Montserrat</a>
+      </li>
+    </ul>
+    <style>
+      .roboto { font-family: 'Montserrat', sans-serif; }
+      .montserrat { font-family: 'Roboto', sans-serif; }
+      .FontSwitch { position: absolute; right: 10px; top: 10px; z-index: 10; }
+      .FontSwitch-item { display: inline-block; }
+      .FontSwitch-link { color: #0a1a72; }
+    </style>
+    <script>
+      var fonts = document.querySelectorAll('.FontSwitch-link');
+      fonts = [].slice.call(fonts);
+      fonts.forEach(function (font) {
+        font.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector('body').className = e.target.dataset.font;
+        });
+      });
+    </script>
+    <!-- font switch end -->
+
+    {% include 'components/global/Header/Header.html' %}
+
+    {% include 'components/global/Nav/Nav.html' with data=nav %}
+
+
+    <main class="Main">
+
+      {% block main %}
+      {% endblock %}
+
+    </main>
+
+    {% include 'components/global/Footer/Footer.html' %}
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+  </body>
+</html>

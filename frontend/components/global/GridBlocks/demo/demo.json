@@ -1,0 +1,96 @@
+{
+  "phx": {
+    "title": "Brighton Phoenix",
+    "text": "Duis dolore sunt laborum eiusmod aute eiusmod amet ullamco aliqua velit veniam in."
+  },
+  "news": {
+    "title": "News",
+    "data": [
+      {
+        "id": "#",
+        "slug": "#",
+        "created_date": "2 days ago",
+        "title": "Culpa ex est esse",
+        "summary": "Lorem et aliqua aliqua cupidatat non laborum est velit proident pariatur."
+      },
+      {
+        "id": "#",
+        "slug": "#",
+        "created_date": "3 weeks ago",
+        "title": "Adipisicing laboris reprehenderit",
+        "summary": "Ullamco consectetur ut sit sit ea elit aliquip occaecat quis."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Gallery",
+    "data": [
+      {
+        "image": "/static/img/_placeholder/gallery/4.jpg",
+        "caption": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "image": "/static/img/_placeholder/gallery/5.jpg",
+        "caption": "Veniam ea labore labore eu pariatur nulla."
+      },
+      {
+        "image": "/static/img/_placeholder/gallery/6.jpg",
+        "caption": "Aute mollit officia non eu culpa."
+      }
+    ]
+  },
+  "fixtures": {
+    "title": "Fixtures",
+    "data": [
+      {
+        "title": "Lorem ipsum",
+        "location": "Dolor sit amet",
+        "event_date": "30/6/2018"
+      },
+      {
+        "title": "Sunt nisi veniam in occaecat",
+        "location": "Eu minim cillum",
+        "event_date": "22/7/2018"
+      },
+      {
+        "title": "Sunt irure aliquip",
+        "location": "Reprehenderit nisi",
+        "event_date": "17/8/2018"
+      }
+    ]
+  },
+  "results": {
+    "title": "Results",
+    "data": [
+      {
+        "fixture": {
+          "title": "Lorem ipsum",
+          "location": "Dolor sit amet",
+          "event_date": "30/6/2018"
+        }
+      },
+      {
+        "fixture": {
+          "title": "Sunt nisi veniam in occaecat",
+          "location": "Eu minim cillum",
+          "event_date": "22/7/2018"
+        }
+      },
+      {
+        "fixture": {
+          "title": "Sunt irure aliquip",
+          "location": "Reprehenderit nisi",
+          "event_date": "17/8/2018"
+        }
+      }
+    ]
+  },
+  "events": {
+    "title": "Events",
+    "text": "Exercitation in adipisicing nostrud minim irure et sint aliquip voluptate non. Tempor ut nostrud anim eiusmod do nulla mollit. Culpa consequat do irure minim ad."
+  },
+  "join": {
+    "title": "Join",
+    "text": "Tempor consectetur anim proident cillum non non elit pariatur incididunt minim elit reprehenderit. Laboris consectetur proident qui sint laboris incididunt. Ad consectetur labore officia amet."
+  }
+}

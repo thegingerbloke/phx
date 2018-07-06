@@ -1,0 +1,16 @@
+<div class="Quote
+  {% if data.background %}Quote--{{data.background}}{% endif %}
+  {% if data.align %}Quote--{{data.align}}{% endif %}
+">
+  {% if data.image.url %}
+    <img class="Quote-img" src="{{data.image.url}}" alt="{{data.image_alt}}" />
+  {% endif %}
+  <div class="Quote-content">
+    <p class="Quote-text">
+      &ldquo;{{data.quote}}&rdquo;
+    </p>
+    <p class="Quote-author">
+      {{data.author}}
+    </p>
+  </div>
+</div>

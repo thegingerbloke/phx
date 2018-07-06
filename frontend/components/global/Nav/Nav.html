@@ -1,0 +1,16 @@
+<nav class="Nav js-Nav">
+  <button class="Nav-toggle js-Nav-toggle">
+      <svg class="Nav-toggleIcon Nav-toggleIcon--open"><use xlink:href="/static/img/icons/icons.svg#icon-menu"></use></svg>
+      <svg class="Nav-toggleIcon Nav-toggleIcon--close"><use xlink:href="/static/img/icons/icons.svg#icon-cross"></use></svg>
+      <span class="Menu-toggleText">Menu</span>
+  </button>
+  <ul class="Nav-list u-component">
+    {% for item in data %}
+    <li class="Nav-item {% if item.contact %}Nav-item--contact{% endif %}">
+      <a class="Nav-link {% if item.active %}Nav-link--active{% endif %}" href="{{item.linkUrl}}">
+        {{item.linkText}}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

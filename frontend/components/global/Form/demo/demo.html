@@ -1,0 +1,60 @@
+{% extends 'components/components_detail.html' %}
+
+
+{% block extra_css %}
+<style>
+  .Demo-block .Form {
+    margin: 0 20px;
+  }
+</style>
+{% endblock %}
+
+{% block template_content %}
+  <h3 class="Demo-h3">
+    Note:
+  </h3>
+  <p>
+    This can't be imported directly as a component. Form elements should be used inline
+  </p>
+{% endblock template_content %}
+
+
+{% block component %}
+
+  <h3 class="Demo-h3">Form demo</h3>
+  <div class="Demo-block Demo-block--1">
+
+    <form class="Form">
+      <fieldset class="Form-fieldset">
+        <legend class="Form-legend u-visuallyHidden">
+          Legend
+        </legend>
+        <div class="Form-row">
+          <label class="Form-label">Form label</label>
+          <input class="Form-input--text" name="email" type="email" />
+        </div>
+        <div class="Form-row">
+          <input class="Form-input--button" type="submit" value="Join" />
+        </div>
+      </fieldset>
+    </form>
+
+    <pre class="Demo-code">
+&lt;form class="Form"&gt;
+  &lt;fieldset class="Form-fieldset"&gt;
+    &lt;legend class="Form-legend u-visuallyHidden"&gt;
+      Legend
+    &lt;/legend&gt;
+    &lt;div class="Form-row"&gt;
+      &lt;label class="Form-label">Form label&lt;/label&gt;
+      &lt;input class="Form-input--text" name="email" type="email" /&gt;
+    &lt;/div&gt;
+    &lt;div class="Form-row"&gt;
+      &lt;input class="Form-input--button" type="submit" value="Join" /&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+    </pre>
+
+  </div>
+{% endblock component %}

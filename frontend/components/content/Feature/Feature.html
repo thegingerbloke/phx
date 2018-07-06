@@ -1,0 +1,30 @@
+<div class="Feature
+  {% if data.background %}Feature--{{data.background}}{% endif %}
+  {% if data.align %}Feature--{{data.align}}{% endif %}
+">
+  {% if data.image.url %}
+    <img class="Feature-img" src="{{data.image.url}}" alt="{{data.image_alt}}" />
+  {% endif %}
+  <div class="Feature-content">
+    {% if data.title %}
+    <h2 class="Feature-title">
+      {{data.title}}_
+    </h2>
+    {% endif %}
+    {% if data.subtitle %}
+    <h3 class="Feature-subtitle">
+      {{data.subtitle}}
+    </h3>
+    {% endif %}
+    {% if data.content %}
+    <p class="Feature-text">
+      {{data.content}}
+    </p>
+    {% endif %}
+    {% if data.link_url %}
+    <a class="Feature-cta" href="{{data.link_url}}">
+      {{data.link_text}}
+    </a>
+    {% endif %}
+  </div>
+</div>

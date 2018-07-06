@@ -1,0 +1,22 @@
+/**
+ * @define Image; use strict
+ */
+
+.Image {
+  position: relative;
+}
+
+.Image-img {
+  vertical-align: bottom;
+}
+
+.Image-caption {
+  background: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  color: #fff;
+  font-style: italic;
+  margin: 0;
+  padding: var(--gutter-half) var(--gutter);
+  position: absolute;
+  right: 0;
+}

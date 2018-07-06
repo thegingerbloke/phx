@@ -1,0 +1,36 @@
+[
+  {
+    "linkUrl": "#",
+    "linkText": "About"
+  },
+  {
+    "linkUrl": "#",
+    "linkText": "Fixtures"
+  },
+  {
+    "linkUrl": "#",
+    "linkText": "Results"
+  },
+  {
+    "linkUrl": "#",
+    "linkText": "Training",
+    "active": true
+  },
+  {
+    "linkUrl": "#",
+    "linkText": "News"
+  },
+  {
+    "linkUrl": "#",
+    "linkText": "Events"
+  },
+  {
+    "linkUrl": "#",
+    "linkText": "Membership"
+  },
+  {
+    "linkUrl": "#",
+    "linkText": "Contact",
+    "contact": true
+  }
+]

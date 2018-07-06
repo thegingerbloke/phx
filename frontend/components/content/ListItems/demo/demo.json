@@ -1,0 +1,46 @@
+{
+  "two": {
+    "image_1": {
+      "url": "/static/img/_placeholder/list-items/1.jpg"
+    },
+    "image_alt_1": "",
+    "title_1": "Lorem",
+    "content_1": "Tempor velit incididunt veniam velit velit in officia duis. Nostrud exercitation exercitation nisi ea esse mollit laboris excepteur ipsum laborum. In anim amet velit velit labore voluptate fugiat irure reprehenderit adipisicing esse incididunt cillum velit.",
+    "link_url_1": "#",
+    "link_text_1": "Lorem ipsum",
+    "image_2": {
+      "url": "/static/img/_placeholder/list-items/2.jpg"
+    },
+    "image_alt_2": "",
+    "title_2": "Lorem",
+    "content_2": "Nostrud irure esse nisi do deserunt et incididunt eiusmod velit nulla non ad qui aliquip.",
+    "link_url_2": "#",
+    "link_text_2": "Lorem ipsum"
+  },
+  "three": {
+    "image_1": {
+      "url": "/static/img/_placeholder/list-items/1.jpg"
+    },
+    "image_alt_1": "",
+    "title_1": "Lorem",
+    "content_1": "Tempor velit incididunt veniam velit velit in officia duis. Nostrud exercitation exercitation nisi ea esse mollit laboris excepteur ipsum laborum. In anim amet velit velit labore voluptate fugiat irure reprehenderit adipisicing esse incididunt cillum velit.",
+    "link_url_1": "#",
+    "link_text_1": "Lorem ipsum",
+    "image_2": {
+      "url": "/static/img/_placeholder/list-items/2.jpg"
+    },
+    "image_alt_2": "",
+    "title_2": "Lorem",
+    "content_2": "Nostrud irure esse nisi do deserunt et incididunt eiusmod velit nulla non ad qui aliquip.",
+    "link_url_2": "#",
+    "link_text_2": "Lorem ipsum",
+    "image_3": {
+      "url": "/static/img/_placeholder/list-items/3.jpg"
+    },
+    "image_alt_3": "",
+    "title_3": "Lorem",
+    "content_3": "Nostrud irure esse nisi do deserunt et incididunt eiusmod velit nulla non ad qui aliquip.",
+    "link_url_3": "#",
+    "link_text_3": "Lorem ipsum"
+  }
+}

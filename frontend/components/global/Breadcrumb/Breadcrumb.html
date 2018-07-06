@@ -1,0 +1,17 @@
+<div class="Breadcrumb u-component">
+  <ul class="Breadcrumb-list">
+    {% for breadcrumb in data %}
+    <li class="Breadcrumb-item">
+      {% if breadcrumb.linkUrl %}
+        <a class="Breadcrumb-link" href="{{breadcrumb.linkUrl}}">
+          {{breadcrumb.title}}
+        </a>
+      {% else %}
+        <span class="Breadcrumb-active">
+          {{breadcrumb.title}}
+        </span>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>

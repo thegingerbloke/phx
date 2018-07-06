@@ -1,0 +1,31 @@
+{% extends 'components/components_detail.html' %}
+{% load components_tags %}
+
+{% block extra_css %}
+<style>
+  .Demo-block .ListItems {
+    margin: 0 20px;
+  }
+</style>
+{% endblock %}
+
+{% block component %}
+  <h3 class="Demo-h3">List Items - Two</h3>
+  <div class="Demo-block Demo-block--1">
+    {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
+      {% include template with data=data.two %}
+    {% endwith %}
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.two|pretty_print}}</pre>
+  </div>
+
+  <h3 class="Demo-h3">List Items - Three</h3>
+  <div class="Demo-block Demo-block--2">
+    {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
+      {% include template with data=data.three %}
+    {% endwith %}
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.three|pretty_print}}</pre>
+  </div>
+
+{% endblock component %}

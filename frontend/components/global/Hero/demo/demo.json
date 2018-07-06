@@ -1,0 +1,14 @@
+{
+  "noimage": {
+    "title": "Lorem ipsum dolor sit amet"
+  },
+  "image1": {
+    "bg": "/static/img/_placeholder/hero/1.jpg",
+    "title": "Lorem",
+    "caption": "Lorem ipsum dolor sit amet"
+  },
+  "image2": {
+    "bg": "/static/img/_placeholder/hero/3.jpg",
+    "title": "Lorem ipsum"
+  }
+}
