@@ -6,6 +6,7 @@
   display: grid;
   grid-gap: var(--gutter);
   grid-template-areas:
+    "announcement"
     "phx"
     "news"
     "fixtures"
@@ -14,18 +15,19 @@
     "join"
     "gallery";
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, auto) 300px;
+  grid-template-rows: repeat(7, auto) 300px;
 }
 
 @media (--large) {
   .GridBlocks {
     grid-template-areas:
-      "phx phx news news"
-      "phx phx gallery gallery"
+      "announcement announcement announcement announcement"
+      "news news phx phx"
+      "news news gallery gallery"
       "events join gallery gallery"
       "fixtures fixtures results results";
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: auto repeat(4, 1fr);
   }
 }
 
@@ -37,6 +39,11 @@
 }
 
 /* blocks - size variants */
+
+.GridBlocks-block--announcement {
+  align-self: start;
+  grid-area: announcement;
+}
 
 .GridBlocks-block--phx {
   grid-area: phx;
@@ -84,6 +91,11 @@
   color: var(--colour-white);
 }
 
+.GridBlocks-block--red {
+  background: var(--colour-red);
+  color: var(--colour-white);
+}
+
 /* blocks - content */
 
 .GridBlocks-title {
@@ -94,16 +106,10 @@
   z-index: 2;
 }
 
-.GridBlocks-link {
-  color: var(--colour-blue-dark);
-}
-
-.GridBlocks-block--dark .GridBlocks-link {
-  color: var(--colour-white);
-}
-
-.GridBlocks-link:hover {
-  opacity: var(--opacity-hover);
+.GridBlocks-subtitle {
+  display: block;
+  font-size: var(--font-size-h4);
+  margin-bottom: var(--gutter-quarter);
 }
 
 .GridBlocks-text {
@@ -115,6 +121,10 @@
   color: var(--colour-white);
 }
 
+.GridBlocks-block--red .GridBlocks-text {
+  color: var(--colour-white);
+}
+
 .GridBlocks-gallery {
   height: 100%;
   left: 0;
@@ -123,6 +133,78 @@
   width: 100%;
   z-index: 1;
 }
+
+/* blocks - lists */
+
+.GridBlocks-item {
+  margin-bottom: var(--gutter);
+}
+
+.GridBlocks-itemLink {
+  display: flex;
+  text-decoration: none;
+}
+
+.GridBlocks-itemThumb {
+  margin-bottom: var(--gutter);
+  margin-right: var(--gutter);
+  max-width: 30%;
+}
+
+.GridBlocks-itemLink .GridBlocks-subtitle {
+  color: var(--colour-blue-dark);
+  text-decoration: underline;
+}
+
+.GridBlocks-itemLink:hover .GridBlocks-subtitle {
+  opacity: var(--opacity-hover);
+}
+
+/* blocks - links */
+
+.GridBlocks-link {
+  color: var(--colour-blue-dark);
+}
+
+.GridBlocks-block--dark .GridBlocks-link {
+  color: var(--colour-white);
+}
+
+.GridBlocks-block--red .GridBlocks-link {
+  color: var(--colour-white);
+}
+
+.GridBlocks-link:hover {
+  opacity: var(--opacity-hover);
+}
+
+/* blocks - CTAs */
+
+.GridBlocks-cta {
+  background: var(--colour-blue-dark);
+  color: var(--colour-white);
+  display: inline-block;
+  margin-top: var(--gutter);
+  padding: var(--gutter-half) var(--gutter);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.GridBlocks-block--dark .GridBlocks-cta {
+  background: var(--colour-white);
+  color: var(--colour-blue-dark);
+}
+
+.GridBlocks-block--red .GridBlocks-cta {
+  background: var(--colour-white);
+  color: var(--colour-blue-dark);
+}
+
+.GridBlocks-cta:hover {
+  opacity: var(--opacity-hover);
+}
+
+/* blocks - tables */
 
 .GridBlocks-table {
   margin-bottom: var(--gutter-double);

@@ -56,5 +56,6 @@
 }
 
 .SubNav-sublink--active {
-  font-weight: bold;
+  background: var(--colour-blue-dark);
+  color: var(--colour-white);
 }

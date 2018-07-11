@@ -1,0 +1,75 @@
+{% load templatehelpers %}
+
+<div class="ResultsList">
+  <div class="ResultsList-filter">
+    <div class="ResultsList-filterCategories">
+      <p class="ResultsList-filterTitle">
+        Categories:
+      </p>
+      <ul class="ResultsList-filterList">
+        <li class="ResultsList-filterItem">
+          <a
+            class="ResultsList-filterLink {% if category != '' %}is-inactive{% endif %}"
+            href="{% relative_url_with_params 'category' '' request.GET.urlencode %}"
+          >All</a>
+        </li>
+
+        {% for cat in categories %}
+          <li class="ResultsList-filterItem">
+            <a
+              class="ResultsList-filterLink {% if cat.abbreviation != category %}is-inactive{% endif %}"
+              href="{% relative_url_with_params 'category' cat.abbreviation request.GET.urlencode %}"
+            >{{cat.abbreviation}}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <form class="ResultsList-filterSearch" method="get" action="{% url 'results-index' %}">
+      <label class="ResultsList-filterLabel">
+        <span class="ResultsList-filterTitle">Search:</span>
+        <input class="ResultsList-filterInput" name="search" value="{{search}}" />
+        <button class="ResultsList-filterSubmit" type="submit">Go</button>
+        {% if search %}
+        <a class="ResultsList-filterClear" href="{% relative_url_with_params 'search' '' request.GET.urlencode %}">
+            <svg class="ResultsList-filterClearIcon"><use xlink:href="/static/img/icons/icons.svg#icon-cross"></use></svg>
+        </a>
+        {% endif %}
+      </label>
+    </form>
+  </div>
+
+  {% if results %}
+    <ul class="ResultsList-list">
+      {% for result in results %}
+        <li class="ResultsList-item">
+          <p class="ResultsList-title">
+            {{result.fixture.title}}
+          </p>
+          <p class="ResultsList-date">{{result.fixture.event_date}}</p>
+          <p class="ResultsList-location">{{result.fixture.location}}</p>
+          <p class="ResultsList-categories">
+            {{result.fixture.categories.all|join:', '}}
+          </p>
+          <p class="ResultsList-summary">
+            {{result.summary}}
+          </p>
+          <p class="ResultsList-results">
+            {{result.results}}
+          </p>
+          <p class="ResultsList-links">
+            {% if result.fixture.link_url %}
+              <a href="{{result.fixture.link_url}}">Event link</a>
+            {% endif %}
+            {% if result.results_url %}
+              <a href="{{result.results_url}}">Results link</a>
+            {% endif %}
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <div class="Editorial">
+      <p>There are currently no results, check back soon</p>
+    </div>
+  {% endif %}
+</div>

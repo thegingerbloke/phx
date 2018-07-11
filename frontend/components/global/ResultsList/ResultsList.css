@@ -1,0 +1,107 @@
+/**
+ * @define ResultsList; use strict
+ */
+
+/* Filters */
+
+@media (--medium) {
+  .ResultsList-filter {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Filters - categories */
+
+.ResultsList-filterTitle {
+  display: inline-block;
+}
+
+.ResultsList-filterList {
+  display: inline-block;
+  margin-bottom: var(--gutter);
+}
+
+.ResultsList-filterItem {
+  display: inline-block;
+}
+
+.ResultsList-filterLink {
+  color: var(--colour-blue-dark);
+}
+
+.ResultsList-filterLink:hover {
+  opacity: var(--opacity-hover);
+}
+
+.ResultsList-filterLink.is-inactive {
+  color: var(--colour-grey-mid);
+}
+
+/* Filters - search */
+
+.ResultsList-filterSearch {
+  margin-bottom: var(--gutter);
+  position: relative;
+}
+
+.ResultsList-filterLabel {
+  align-items: center;
+  display: flex;
+}
+
+.ResultsList-filterInput {
+  border: 1px solid var(--colour-grey-light);
+  display: inline-block;
+  font-size: var(--font-size-default);
+  line-height: var(--line-height-default);
+  margin-left: var(--gutter-half);
+  padding: var(--gutter-half);
+  padding-right: 32px;
+  width: 100%;
+}
+
+.ResultsList-filterSubmit {
+  background: var(--colour-blue-dark);
+  border: 1px solid var(--colour-blue-dark);
+  color: var(--colour-white);
+  display: inline-block;
+  font-size: var(--font-size-default);
+  line-height: var(--line-height-default);
+  padding: var(--gutter-half) var(--gutter);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.ResultsList-filterSubmit:hover {
+  opacity: var(--opacity-hover);
+}
+
+.ResultsList-filterClear {
+  cursor: pointer;
+  margin-top: -8px;
+  position: absolute;
+  right: 60px;
+  top: 50%;
+}
+
+.ResultsList-filterClearIcon {
+  fill: var(--colour-grey-mid);
+  height: 16px;
+  margin-right: var(--gutter-half);
+  stroke: none;
+  width: 16px;
+}
+
+/* Result list */
+
+.ResultsList-item {
+  border: 1px solid var(--colour-blue-light);
+  margin-bottom: var(--gutter);
+  padding: var(--gutter);
+}
+
+.ResultsList-item:nth-child(even) {
+  background-color: var(--colour-blue-light);
+}

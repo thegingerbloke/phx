@@ -2,7 +2,7 @@
   {% if data.background %}Quote--{{data.background}}{% endif %}
   {% if data.align %}Quote--{{data.align}}{% endif %}
 ">
-  {% if data.image.url %}
+  {% if data.image and data.image.url %}
     <img class="Quote-img" src="{{data.image.url}}" alt="{{data.image_alt}}" />
   {% endif %}
   <div class="Quote-content">

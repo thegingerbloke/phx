@@ -1,6 +1,5 @@
 from django.db import models
 from django_extensions.db.fields import AutoSlugField
-from django.utils.timezone import now
 from django.contrib.auth.models import User
 from django.urls import reverse
 from components.models import (AbstractEditorials, AbstractFeatures,
@@ -24,16 +23,6 @@ class News(models.Model):
     )
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
-    live_start_date = models.DateTimeField(
-        default=now,
-        help_text='Change if the story shouldn\'t be published immediately',
-    )
-    live_end_date = models.DateTimeField(
-        blank=True,
-        null=True,
-        help_text='Change if the story should be hidden after a certain date',
-    )
-    is_deleted = models.BooleanField(default=False)
     author = models.ForeignKey(
         User,
         models.SET_NULL,
@@ -53,6 +42,24 @@ class News(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Thumbnails(models.Model):
+    def get_upload_path(self, filename):
+        id = self.news_id
+        return 'news/{0}/thumbnail/{1}'.format(id, filename)
+
+    news = models.OneToOneField(
+        News,
+        on_delete=models.CASCADE,
+        related_name='thumbnail',
+    )
+    image = models.ImageField(upload_to=get_upload_path, blank=True)
+    image_alt = models.CharField(max_length=200, blank=True)
+
+    class Meta:
+        verbose_name = 'thumbnail'
+        verbose_name_plural = 'thumbnails'
 
 
 class Components(models.Model):

@@ -83,6 +83,9 @@ TEMPLATES = [
                 'phx.context_processors.hero.hero',
                 'phx.context_processors.nav.nav',
             ],
+            'libraries': {
+                'templatehelpers': 'phx.templatetags.templatehelpers',
+            }
         },
     },
 ]

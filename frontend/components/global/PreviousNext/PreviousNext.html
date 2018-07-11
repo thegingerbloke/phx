@@ -1,0 +1,13 @@
+<div class="PreviousNext">
+  {% if data.previous %}
+  <a class="PreviousNext-link PreviousNext-link--previous" href="{{data.previous.link_url}}">
+      &laquo; {{data.previous.title}}
+  </a>
+  {% endif %}
+
+  {% if data.next %}
+    <a class="PreviousNext-link PreviousNext-link--next" href="{{data.next.link_url}}">
+      {{data.next.title}} &raquo;
+    </a>
+  {% endif %}
+</div>

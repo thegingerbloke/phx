@@ -28,7 +28,7 @@ class ResultsAdmin(admin.ModelAdmin):
 
     # if updating, hide fixture select field
     def get_exclude(self, request, obj):
-        return ['fixture'] if obj else []
+        return ['fixture', 'author'] if obj else ['author']
 
     # if adding, hide readonly fixture detail field
     def get_readonly_fields(self, request, obj):
@@ -45,6 +45,11 @@ class ResultsAdmin(admin.ModelAdmin):
                 event_date__lte=timezone.now(),
             )
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
+
+    def save_model(self, request, obj, form, change):
+        if getattr(obj, 'author', None) is None:
+            obj.author = request.user
+        obj.save()
 
 
 admin.site.register(Results, ResultsAdmin)

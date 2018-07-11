@@ -1,0 +1,66 @@
+{
+  "categories": [
+    {
+      "title": "Category 1",
+      "abbreviation": "Cat1"
+    },
+    {
+      "title": "Category 2",
+      "abbreviation": "Cat2"
+    },
+    {
+      "title": "Category 3",
+      "abbreviation": "Cat3"
+    },
+    {
+      "title": "Category 4",
+      "abbreviation": "Cat4"
+    }
+  ],
+  "results": [
+    {
+      "fixture": {
+        "link_url": "#",
+        "title": "Lorem ipsum",
+        "event_date": "Date",
+        "location": "Location",
+        "categories": {
+          "all": [
+            {
+              "title": "Category 1",
+              "abbreviation": "Cat1"
+            },
+            {
+              "title": "Category 2",
+              "abbreviation": "Cat2"
+            },
+            {
+              "title": "Category 3",
+              "abbreviation": "Cat3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fixture": {
+        "link_url": "#",
+        "title": "Dolor sit amet",
+        "event_date": "Date",
+        "location": "Another location",
+        "categories": {
+          "all": [
+            {
+              "title": "Category 2",
+              "abbreviation": "Cat2"
+            },
+            {
+              "title": "Category 4",
+              "abbreviation": "Cat4"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

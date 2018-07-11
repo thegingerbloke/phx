@@ -42,9 +42,28 @@ class ComponentsAdmin(nested_admin.NestedStackedInline):
 
 
 class PageAdmin(nested_admin.NestedModelAdmin):
-    list_display = ('title', 'created_date', 'slug',)
-    readonly_fields = ('slug',)
-    # exclude = ['author', 'is_deleted']
+    # list display config
+    list_display = ('get_title', 'parent', 'slug', )
+    ordering = ('slug', )
+
+    def get_title(self, obj):
+        if obj.parent and obj.parent.parent:
+            title = '⤚⤍ {0}'.format(obj.title)
+        elif obj.parent:
+            title = '↣ {0}'.format(obj.title)
+        else:
+            title = obj.title
+        return title
+    get_title.short_description = 'title'
+
+    # if adding, hide readonly fixture detail field
+    def get_readonly_fields(self, request, obj):
+        return [] if obj is None else ['slug']
+
+    # if adding, hide slug select field
+    def get_exclude(self, request, obj):
+        return ['author'] if obj is None else ['author', 'slug']
+
     # fieldsets = (
     #     ('Content', {
     #         'fields': ('title', 'slug', 'summary', 'content', 'parent')
@@ -54,6 +73,11 @@ class PageAdmin(nested_admin.NestedModelAdmin):
     #     }),
     # )
     inlines = [ComponentsAdmin]
+
+    def save_model(self, request, obj, form, change):
+        if getattr(obj, 'author', None) is None:
+            obj.author = request.user
+        obj.save()
 
 
 admin.site.register(Page, PageAdmin)

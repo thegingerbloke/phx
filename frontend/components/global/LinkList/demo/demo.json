@@ -1,0 +1,28 @@
+[
+  {
+    "id": "#",
+    "slug": "#",
+    "created_date": "2018-06-01 09:00:00",
+    "title": "Culpa ex est esse",
+    "summary": "Lorem et aliqua aliqua cupidatat non laborum est velit proident pariatur.",
+    "thumbnail": {
+      "image": {
+        "url": "/static/img/_placeholder/gallery/1.jpg"
+      },
+      "image_alt": "Lorem"
+    }
+  },
+  {
+    "id": "#",
+    "slug": "#",
+    "created_date": "2018-07-03 09:00:00",
+    "title": "Adipisicing laboris reprehenderit",
+    "summary": "Ullamco consectetur ut sit sit ea elit aliquip occaecat quis.",
+    "thumbnail": {
+      "image": {
+        "url": "/static/img/_placeholder/gallery/2.jpg"
+      },
+      "image_alt": "Lorem"
+    }
+  }
+]

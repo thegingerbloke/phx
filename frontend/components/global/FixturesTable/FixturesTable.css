@@ -1,0 +1,89 @@
+/**
+ * @define FixturesTable; use strict
+ */
+
+.FixturesTable-row.is-inactive {
+  display: none;
+}
+
+/* Filters */
+
+@media (--medium) {
+  .FixturesTable-filter {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Filters - categories */
+
+.FixturesTable-filterTitle {
+  display: inline-block;
+}
+
+.FixturesTable-filterList {
+  display: inline-block;
+  margin-bottom: var(--gutter);
+}
+
+.FixturesTable-filterItem {
+  display: inline-block;
+}
+
+.FixturesTable-filterLink {
+  color: var(--colour-blue-dark);
+}
+
+.FixturesTable-filterLink:hover {
+  opacity: var(--opacity-hover);
+}
+
+.FixturesTable-filterLink.is-inactive {
+  color: var(--colour-grey-mid);
+}
+
+/* Filters - search */
+
+.FixturesTable-filterSearch {
+  margin-bottom: var(--gutter);
+  position: relative;
+}
+
+.FixturesTable-filterLabel {
+  align-items: center;
+  display: flex;
+}
+
+.FixturesTable-filterInput {
+  border: 1px solid var(--colour-grey-light);
+  display: inline-block;
+  font-size: var(--font-size-default);
+  line-height: var(--line-height-default);
+  margin-left: var(--gutter-half);
+  padding: var(--gutter-half);
+  padding-right: 32px;
+  width: 100%;
+}
+
+.FixturesTable-filterClear {
+  cursor: pointer;
+  margin-top: -8px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transition: opacity var(--transition-time);
+}
+
+.FixturesTable-filterClear.is-active {
+  opacity: 1;
+}
+
+.FixturesTable-filterClearIcon {
+  fill: var(--colour-grey-mid);
+  height: 16px;
+  margin-right: var(--gutter-half);
+  stroke: none;
+  width: 16px;
+}

@@ -1,0 +1,10 @@
+{
+  "previous": {
+    "link_url": "#",
+    "title": "Previous link"
+  },
+  "next": {
+    "link_url": "#",
+    "title": "Next link"
+  }
+}

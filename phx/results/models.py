@@ -1,5 +1,6 @@
 from django.db import models
 from fixtures.models import Fixtures
+from django.contrib.auth.models import User
 
 
 class Results(models.Model):
@@ -14,6 +15,14 @@ class Results(models.Model):
         help_text='This is displayed above the results',
     )
     results = models.TextField()
+    created_date = models.DateTimeField(auto_now_add=True)
+    modified_date = models.DateTimeField(auto_now=True)
+    author = models.ForeignKey(
+        User,
+        models.SET_NULL,
+        blank=True,
+        null=True,
+    )
 
     # Metadata
     class Meta:

@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.core.validators import RegexValidator
 
 
 class Fixtures(models.Model):
@@ -8,6 +10,14 @@ class Fixtures(models.Model):
     location = models.CharField(max_length=200, blank=True)
     categories = models.ManyToManyField('Categories', blank=True)
     link_url = models.URLField(max_length=200)
+    created_date = models.DateTimeField(auto_now_add=True)
+    modified_date = models.DateTimeField(auto_now=True)
+    author = models.ForeignKey(
+        User,
+        models.SET_NULL,
+        blank=True,
+        null=True,
+    )
 
     # Metadata
     class Meta:
@@ -19,8 +29,15 @@ class Fixtures(models.Model):
 
 
 class Categories(models.Model):
+    alphanumeric = RegexValidator(r'^[0-9a-zA-Z]*$',
+        'Only alphanumeric characters (a-z, 0-9) are allowed.')
+
     title = models.CharField(max_length=50)
-    abbreviation = models.CharField(max_length=12)
+    abbreviation = models.CharField(
+        max_length=12,
+        help_text='Please ensure this doesn\'t contain any spaces',
+        validators=[alphanumeric]
+    )
     icon = models.ImageField(
         upload_to='fixtures/categories/',
         blank=True

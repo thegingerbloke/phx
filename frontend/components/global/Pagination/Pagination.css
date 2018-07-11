@@ -1,0 +1,36 @@
+/**
+ * @define Pagination; use strict
+ */
+
+.Pagination {
+  margin-bottom: var(--gutter-double);
+}
+
+.Pagination-item {
+  display: inline-block;
+}
+
+.Pagination-item--disabled {
+  opacity: 0.2;
+}
+
+.Pagination-link,
+.Pagination-span {
+  border: 1px solid var(--colour-blue-light);
+  display: block;
+  padding: 8px 16px;
+}
+
+.Pagination-link {
+  background-color: var(--colour-blue-light);
+  color: var(--colour-blue-dark);
+  text-decoration: none;
+}
+
+.Pagination-link:hover {
+  opacity: var(--opacity-hover);
+}
+
+.Pagination-span {
+  border-color: var(--colour-blue-dark);
+}

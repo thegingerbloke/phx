@@ -1,0 +1,13 @@
+{
+  "is_paginated": true,
+  "data": {
+    "has_previous": true,
+    "has_next": true,
+    "number": 2,
+    "previous_page_number": 1,
+    "next_page_number": 3
+  },
+  "paginator": {
+    "page_range": [1, 2, 3, 4]
+  }
+}

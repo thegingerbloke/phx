@@ -36,16 +36,6 @@ class Page(models.Model):
     )
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
-    live_start_date = models.DateTimeField(
-        default=now,
-        help_text='Change if the page shouldn\'t be published immediately',
-    )
-    live_end_date = models.DateTimeField(
-        blank=True,
-        null=True,
-        help_text='Change if the page should be hidden after a certain date',
-    )
-    is_deleted = models.BooleanField(default=False)
     author = models.ForeignKey(
         User,
         models.SET_NULL,

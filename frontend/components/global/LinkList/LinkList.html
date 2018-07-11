@@ -1,0 +1,20 @@
+<ul class="LinkList">
+  {% for story in data %}
+    <li class="LinkList-item">
+      <a class="LinkList-link" href="/news/{{ story.id }}/{{ story.slug }}">
+        <div class="LinkList-thumb">
+          <img src="{{story.thumbnail.image.url}}" alt="{{story.thumbnail.image_alt}}" />
+        </div>
+        <div class="LinkList-content">
+          <p class="LinkList-text">
+            <span class="LinkList-subtitle">{{story.title}}</span>
+            <em>{{story.created_date|date:"l dS F Y"}}</em>
+          </p>
+          <p class="LinkList-text">
+            {{story.summary|truncatewords_html:20}}
+          </p>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

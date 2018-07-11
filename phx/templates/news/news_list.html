@@ -3,21 +3,14 @@
 {% block content %}
 
 <div class="Content-component">
-  <div class="Editorial">
-    {% if news_list %}
-      <ul>
-        {% for news_story in news_list %}
-        <li>
-          <a href="{{ news_story.id }}/{{ news_story.slug }}">{{ news_story.title }}</a><br/>
-          ({{news_story.created_date}})<br/>
-          {{ news_story.summary }}
-        </li>
-        {% endfor %}
-      </ul>
-    {% else %}
+  {% if news_list %}
+    {% include '../components/global/LinkList/LinkList.html' with data=news_list %}
+    {% include '../components/global/Pagination/Pagination.html' with data=page_obj %}
+  {% else %}
+    <div class="Editorial">
       <p>There are no news stories.</p>
-    {% endif %}
+    </div>
+  {% endif %}
 
-  </div>
 </div>
 {% endblock %}

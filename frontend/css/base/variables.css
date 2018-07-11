@@ -14,7 +14,7 @@
   --font-size-h1: 60px;
   --font-size-h2: 32px;
   --font-size-h3: 24px;
-  --font-size-h4: 16px;
+  --font-size-h4: 20px;
   --font-size-default: 16px;
   --font-size-small: 12px;
 
@@ -31,8 +31,9 @@
   --colour-blue-dark: #0a1a72;
   --colour-blue-mid: #cfd4fa;
   --colour-blue-light: #e7e9fb;
+  --colour-red: #e23636;
 
-  --opacity-hover: 0.8;
+  --opacity-hover: 0.7;
 
   /* transitions */
 
@@ -43,6 +44,7 @@
   /* margins and spacing */
 
   --gutter: var(--font-size-default);
+  --gutter-quarter: calc(var(--gutter) / 4);
   --gutter-half: calc(var(--gutter) / 2);
   --gutter-double: calc(var(--gutter) * 2);
   --gutter-quad: calc(var(--gutter) * 4);

@@ -1,30 +1,32 @@
+from django.views import generic
 from django.utils import timezone
-from django.shortcuts import get_object_or_404, render
-from .models import Fixtures
+from django.shortcuts import get_object_or_404
+from .models import Fixtures, Categories
 from pages.models import Page
 
 
-def index(request):
-    breadcrumb = generate_breadcrumb()
-    page = get_object_or_404(Page, slug=request.path)
-    fixtures = Fixtures.objects.filter(
-        event_date__gte=timezone.now()
-    ).order_by('event_date')
+class FixturesListView(generic.ListView):
+    model = Fixtures
 
-    return render(request, 'fixtures/fixtures.html', {
-        'page': page,
-        'fixtures': fixtures,
-        'breadcrumb': breadcrumb
-    })
+    def get_context_data(self, **kwargs):
+        context = super(FixturesListView, self).get_context_data(**kwargs)
+        context['breadcrumb'] = self.generate_breadcrumb()
+        context['page'] = get_object_or_404(Page, slug=self.request.path)
+        context['categories'] = Categories.objects.all()
+        return context
 
+    def get_queryset(self):
+        return Fixtures.objects.filter(
+            event_date__gte=timezone.now(),
+        ).order_by('event_date')
 
-def generate_breadcrumb():
-    return [
-        {
-            'title': 'Home',
-            'linkUrl': '/',
-        },
-        {
-            'title': 'Fixtures',
-        }
-    ]
+    def generate_breadcrumb(self):
+        return [
+            {
+                'title': 'Home',
+                'linkUrl': '/',
+            },
+            {
+                'title': 'Fixtures',
+            }
+        ]

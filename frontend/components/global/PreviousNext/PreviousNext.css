@@ -1,0 +1,25 @@
+/**
+ * @define PreviousNext; use strict
+ */
+
+.PreviousNext {
+  border-top: 1px solid var(--colour-grey-light);
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--gutter-double);
+  padding-top: var(--gutter);
+}
+
+.PreviousNext-link {
+  color: var(--colour-blue-dark);
+  line-height: var(--line-height-default);
+  max-width: 40%;
+}
+
+.PreviousNext-link--next {
+  margin-left: auto;
+}
+
+.PreviousNext-link:hover {
+  opacity: var(--opacity-hover);
+}

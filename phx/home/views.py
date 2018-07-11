@@ -20,12 +20,21 @@ def index(request):
 
     news = News.objects.all().order_by('-created_date')[:3]
 
+    hero = {
+        "bg": "/static/img/_placeholder/hero/1.jpg",
+        "title": "Welcome",
+        "caption": "South Downs Way Relay, June 2018"
+    }
+
     data['fixtures']['data'] = fixtures
     data['results']['data'] = results
     data['news']['data'] = news
 
+    # data['announcement'] = {}
+
     context = {
-        'data': data
+        'data': data,
+        'hero': hero,
     }
 
     return render(request, 'home/home.html', context)

@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.index, name='fixtures-index'),
+    path('', views.FixturesListView.as_view(), name='fixtures-index'),
 ]

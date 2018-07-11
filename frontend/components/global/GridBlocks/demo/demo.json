@@ -1,7 +1,11 @@
 {
+  "announcement": {
+    "title": "Announcements",
+    "text": "The track is frozen, there will be no track session tonight"
+  },
   "phx": {
     "title": "Brighton Phoenix",
-    "text": "Duis dolore sunt laborum eiusmod aute eiusmod amet ullamco aliqua velit veniam in."
+    "text": "Duis dolore sunt laborum eiusmod aute eiusmod amet ullamco aliqua velit veniam in. Amet veniam commodo ad in non aliquip velit adipisicing. \n\nOccaecat eu in ad irure eiusmod voluptate eu id irure ut qui veniam nisi non. Et Lorem nulla laboris voluptate in minim in non ullamco sint sit ea nisi."
   },
   "news": {
     "title": "News",
@@ -11,14 +15,26 @@
         "slug": "#",
         "created_date": "2 days ago",
         "title": "Culpa ex est esse",
-        "summary": "Lorem et aliqua aliqua cupidatat non laborum est velit proident pariatur."
+        "summary": "Lorem et aliqua aliqua cupidatat non laborum est velit proident pariatur.",
+        "thumbnail": {
+          "image": {
+            "url": "/static/img/_placeholder/gallery/1.jpg"
+          },
+          "image_alt": "Lorem"
+        }
       },
       {
         "id": "#",
         "slug": "#",
         "created_date": "3 weeks ago",
         "title": "Adipisicing laboris reprehenderit",
-        "summary": "Ullamco consectetur ut sit sit ea elit aliquip occaecat quis."
+        "summary": "Ullamco consectetur ut sit sit ea elit aliquip occaecat quis.",
+        "thumbnail": {
+          "image": {
+            "url": "/static/img/_placeholder/gallery/2.jpg"
+          },
+          "image_alt": "Lorem"
+        }
       }
     ]
   },

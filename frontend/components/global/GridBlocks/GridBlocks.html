@@ -1,26 +1,51 @@
 <div class="GridBlocks">
 
+  {% if data.announcement %}
+  <div class="GridBlocks-block GridBlocks-block--announcement GridBlocks-block--red">
+    <h3 class="GridBlocks-title">
+      {{data.announcement.title}}_
+    </h3>
+    <p class="GridBlocks-text">
+      {{data.announcement.text|linebreaksbr}}
+    </p>
+  </div>
+  {% endif %}
+
   <div class="GridBlocks-block GridBlocks-block--phx GridBlocks-block--white">
     <h3 class="GridBlocks-title">
       {{data.phx.title}}_
     </h3>
     <p class="GridBlocks-text">
-      {{data.phx.text}}
+      {{data.phx.text|linebreaksbr}}
     </p>
+    <a class="GridBlocks-link" href="/about/">Read more about Brighton Phoenix</a>
   </div>
 
   <div class="GridBlocks-block GridBlocks-block--news GridBlocks-block--light">
     <h3 class="GridBlocks-title">
       {{data.news.title}}_
     </h3>
-    {% for story in data.news.data %}
-    <p class="GridBlocks-subtitle">
-      <a class="GridBlocks-link" href="/news/{{ story.id }}/{{ story.slug }}">{{story.title}}</a> ({{story.created_date}})
-    </p>
-    <p class="GridBlocks-text">
-      {{story.summary}}
-    </p>
-    {% endfor %}
+    <ul class="GridBlocks-list">
+      {% for story in data.news.data %}
+        <li class="GridBlocks-item">
+          <a class="GridBlocks-itemLink" href="/news/{{ story.id }}/{{ story.slug }}">
+            <div class="GridBlocks-itemThumb">
+              <img src="{{story.thumbnail.image.url}}" alt="{{story.thumbnail.image_alt}}" />
+            </div>
+            <div class="GridBlocks-itemContent">
+              <p class="GridBlocks-text">
+                <span class="GridBlocks-subtitle">{{story.title}}</span>
+                <em>{{story.created_date}}</em>
+              </p>
+              <p class="GridBlocks-text">
+                {{story.summary|truncatewords_html:20}}
+              </p>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <!-- <a class="GridBlocks-cta" href="/news/">See all news articles</a> -->
   </div>
 
   <div class="GridBlocks-block GridBlocks-block--gallery">
@@ -45,7 +70,7 @@
       </tr>
       {% endfor %}
     </table>
-    <a class="GridBlocks-link" href="/fixtures/">View all fixtures</a>
+    <a class="GridBlocks-cta" href="/fixtures/">See all fixtures</a>
   </div>
 
   <div class="GridBlocks-block GridBlocks-block--events GridBlocks-block--white">
@@ -55,6 +80,7 @@
     <p class="GridBlocks-text">
       {{data.events.text}}
     </p>
+    <a class="GridBlocks-cta" href="/events/">See all events</a>
   </div>
 
   <div class="GridBlocks-block GridBlocks-block--results GridBlocks-block--dark">
@@ -70,7 +96,7 @@
         </tr>
         {% endfor %}
     </table>
-    <a class="GridBlocks-link" href="/fixtures/">View all results</a>
+    <a class="GridBlocks-cta" href="/fixtures/">See all results</a>
   </div>
 
   <div class="GridBlocks-block GridBlocks-block--join GridBlocks-block--dark">
@@ -80,5 +106,6 @@
     <p class="GridBlocks-text">
       {{data.join.text}}
     </p>
+    <a class="GridBlocks-link" href="/membership/join/">Join Phoenix</a>
   </div>
 </div>

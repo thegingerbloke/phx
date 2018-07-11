@@ -1,0 +1,12 @@
+{% extends "page.html" %}
+
+{% block content %}
+
+{% include '../components/components_loop.html' with components=page.components.all %}
+
+<div class="Content-component">
+    {% include '../components/global/ResultsList/ResultsList.html' with results=results_list categories=categories %}
+    {% include '../components/global/Pagination/Pagination.html' with data=page_obj %}
+</div>
+
+{% endblock %}

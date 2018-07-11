@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import (News, Components, Editorials, Features, Quotes, Images,
-                     ListItems)
+from .models import (News, Thumbnails, Components, Editorials, Features,
+                     Quotes, Images, ListItems)
 from components.admin import (AbstractEditorialsAdmin, AbstractFeaturesAdmin,
                               AbstractListItemsAdmin, AbstractQuotesAdmin,
                               AbstractImagesAdmin)
@@ -41,9 +41,13 @@ class ComponentsAdmin(nested_admin.NestedStackedInline):
     sortable_field_name = 'order'
 
 
+class ThumbnailsAdmin(nested_admin.NestedStackedInline):
+    model = Thumbnails
+
+
 class NewsAdmin(nested_admin.NestedModelAdmin):
     list_display = ('title', 'created_date', 'author')
-    # exclude = ['author', 'is_deleted']
+    exclude = ['author']
     # fieldsets = (
     #     ('Story', {
     #         'fields': ('title', 'summary', 'content')
@@ -52,7 +56,12 @@ class NewsAdmin(nested_admin.NestedModelAdmin):
     #         'fields': ('live_start_date', 'live_end_date')
     #     }),
     # )
-    inlines = [ComponentsAdmin]
+    inlines = [ThumbnailsAdmin, ComponentsAdmin]
+
+    def save_model(self, request, obj, form, change):
+        if getattr(obj, 'author', None) is None:
+            obj.author = request.user
+        obj.save()
 
 
 admin.site.register(News, NewsAdmin)

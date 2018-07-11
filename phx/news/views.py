@@ -5,6 +5,7 @@ from .models import News
 
 class NewsListView(generic.ListView):
     model = News
+    paginate_by = 10
 
     def get_context_data(self, **kwargs):
         context = super(NewsListView, self).get_context_data(**kwargs)
@@ -29,7 +30,35 @@ class NewsDetailView(generic.DetailView):
     def get_context_data(self, **kwargs):
         context = super(NewsDetailView, self).get_context_data(**kwargs)
         context['breadcrumb'] = self.generate_breadcrumb()
+        context['data'] = {
+            "previous": self.get_previous(),
+            "next": self.get_next(),
+        }
         return context
+
+    def get_previous(self):
+        id = self.get_object().id
+        previous = News.objects.filter(id__lt=id).order_by('-id')[0:1].first()
+        if previous:
+            return {
+                'title': previous.title,
+                'link_url': reverse('news-detail', kwargs={
+                    'pk': previous.id,
+                    'slug': previous.slug
+                })
+            }
+
+    def get_next(self):
+        id = self.get_object().id
+        next = News.objects.filter(id__gt=id).order_by('id')[0:1].first()
+        if next:
+            return {
+                'title': next.title,
+                'link_url': reverse('news-detail', kwargs={
+                    'pk': next.id,
+                    'slug': next.slug
+                })
+            }
 
     def generate_breadcrumb(self):
         breadcrumb = [

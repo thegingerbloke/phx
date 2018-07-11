@@ -21,6 +21,7 @@
 .Editorial h2,
 .Editorial h3,
 .Editorial h4 {
+  line-height: var(--line-height-default);
   margin: 2rem 0 0.5rem 0;
 }
 
