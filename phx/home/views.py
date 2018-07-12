@@ -21,7 +21,7 @@ def index(request):
     news = News.objects.all().order_by('-created_date')[:3]
 
     hero = {
-        "bg": "/static/img/_placeholder/hero/1.jpg",
+        "bg": "/static/img/_placeholder/hero/3.jpg",
         "title": "Welcome",
         "caption": "South Downs Way Relay, June 2018"
     }

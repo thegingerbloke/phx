@@ -63,7 +63,7 @@
     </h3>
     <table class="GridBlocks-table">
       {% for fixture in data.fixtures.data %}
-      <tr>
+      <tr class="GridBlocks-tableRow">
         <th class="GridBlocks-tableHead">{{fixture.title}}</th>
         <td class="GridBlocks-tableData">{{fixture.location}}</td>
         <td class="GridBlocks-tableData">{{fixture.event_date}}</td>
@@ -89,7 +89,7 @@
     </h3>
     <table class="GridBlocks-table">
         {% for result in data.results.data %}
-        <tr>
+        <tr class="GridBlocks-tableRow">
           <th class="GridBlocks-tableHead">{{result.fixture.title}}</th>
           <td class="GridBlocks-tableData">{{result.fixture.location}}</td>
           <td class="GridBlocks-tableData">{{result.fixture.event_date}}</td>

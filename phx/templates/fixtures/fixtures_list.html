@@ -5,13 +5,7 @@
 {% include '../components/components_loop.html' with components=page.components.all %}
 
 <div class="Content-component">
-    {% if fixtures_list %}
-        {% include '../components/global/FixturesTable/FixturesTable.html' with fixtures=fixtures_list categories=categories %}
-    {% else %}
-        <div class="Editorial">
-            <p>There are currently no upcoming fixtures, check back soon</p>
-        </div>
-    {% endif %}
+    {% include '../components/global/FixturesList/FixturesList.html' with fixtures=fixtures_list categories=categories %}
 </div>
 
 {% endblock %}

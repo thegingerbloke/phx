@@ -1,0 +1,68 @@
+<div class="FixturesList">
+  <div class="FixturesList-filter js-FixturesList-filter u-hidden">
+    <div class="FixturesList-filterCategories">
+      <p class="FixturesList-filterTitle">
+        Categories:
+      </p>
+      <ul class="FixturesList-filterList">
+        <li class="FixturesList-filterItem">
+          <a class="FixturesList-filterLink js-FixturesList-filterLink" data-category="" href="#">All</a>
+        </li>
+
+        {% for category in categories %}
+          <li class="FixturesList-filterItem">
+            <a class="FixturesList-filterLink js-FixturesList-filterLink is-inactive" data-category="{{category.title|lower}}" href="#">{{category.abbreviation}}</a>
+          </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+    <div class="FixturesList-filterSearch">
+      <label class="FixturesList-filterLabel">
+        <span class="FixturesList-filterTitle">Search:</span>
+        <input class="FixturesList-filterInput js-FixturesList-filterInput" />
+        <button class="FixturesList-filterClear js-FixturesList-filterClear">
+            <svg class="FixturesList-filterClearIcon"><use xlink:href="/static/img/icons/icons.svg#icon-cross"></use></svg>
+        </button>
+      </label>
+    </div>
+  </div>
+
+  {% if fixtures %}
+    <div class="Editorial">
+      <table class="FixturesList-table">
+        <thead>
+          <tr>
+            <th>Race</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Categories</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for fixture in fixtures %}
+            <tr class="FixturesList-row js-FixturesList-row" data-categories="{{fixture.categories.all|join:', '}}">
+                <td>
+                    <a href="{{fixture.link_url}}">
+                        {{fixture.title}}
+                    </a>
+                </td>
+                <td>{{fixture.event_date}}</td>
+                <td>{{fixture.location}}</td>
+                <td>
+                    {% for category in fixture.categories.all %}
+                    {{category.abbreviation}}
+                    {% endfor %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+  {% else %}
+    <div class="Editorial">
+      <p>There are currently no fixtures, check back soon</p>
+    </div>
+  {% endif %}
+</div>

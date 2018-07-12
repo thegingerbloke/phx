@@ -9,7 +9,7 @@ from pages.models import Page
 
 class ResultsListView(generic.ListView):
     model = Results
-    paginate_by = 1
+    paginate_by = 10
 
     def get_context_data(self, **kwargs):
         context = super(ResultsListView, self).get_context_data(**kwargs)

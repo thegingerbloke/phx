@@ -1,5 +1,6 @@
 from django.views import generic
 from django.urls import reverse
+from django.db.models import Q
 from .models import News
 
 
@@ -10,7 +11,22 @@ class NewsListView(generic.ListView):
     def get_context_data(self, **kwargs):
         context = super(NewsListView, self).get_context_data(**kwargs)
         context['breadcrumb'] = self.generate_breadcrumb()
+        context['search'] = self.request.GET.get('search', '')
+        # context['page'] = get_object_or_404(Page, slug=self.request.path)
         return context
+
+    def get_queryset(self):
+        query = News.objects.all()
+
+        search = self.request.GET.get('search')
+        if search:
+            query = query.filter(
+                Q(title__icontains=search) |
+                Q(summary__icontains=search) |
+                Q(components__editorial__content__icontains=search)
+            )
+
+        return query
 
     def generate_breadcrumb(self):
         return [

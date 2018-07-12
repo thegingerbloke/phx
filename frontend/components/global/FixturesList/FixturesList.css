@@ -1,15 +1,15 @@
 /**
- * @define FixturesTable; use strict
+ * @define FixturesList; use strict
  */
 
-.FixturesTable-row.is-inactive {
+.FixturesList-row.is-inactive {
   display: none;
 }
 
 /* Filters */
 
 @media (--medium) {
-  .FixturesTable-filter {
+  .FixturesList-filter {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -18,44 +18,44 @@
 
 /* Filters - categories */
 
-.FixturesTable-filterTitle {
+.FixturesList-filterTitle {
   display: inline-block;
 }
 
-.FixturesTable-filterList {
+.FixturesList-filterList {
   display: inline-block;
   margin-bottom: var(--gutter);
 }
 
-.FixturesTable-filterItem {
+.FixturesList-filterItem {
   display: inline-block;
 }
 
-.FixturesTable-filterLink {
+.FixturesList-filterLink {
   color: var(--colour-blue-dark);
 }
 
-.FixturesTable-filterLink:hover {
+.FixturesList-filterLink:hover {
   opacity: var(--opacity-hover);
 }
 
-.FixturesTable-filterLink.is-inactive {
+.FixturesList-filterLink.is-inactive {
   color: var(--colour-grey-mid);
 }
 
 /* Filters - search */
 
-.FixturesTable-filterSearch {
+.FixturesList-filterSearch {
   margin-bottom: var(--gutter);
   position: relative;
 }
 
-.FixturesTable-filterLabel {
+.FixturesList-filterLabel {
   align-items: center;
   display: flex;
 }
 
-.FixturesTable-filterInput {
+.FixturesList-filterInput {
   border: 1px solid var(--colour-grey-light);
   display: inline-block;
   font-size: var(--font-size-default);
@@ -66,7 +66,7 @@
   width: 100%;
 }
 
-.FixturesTable-filterClear {
+.FixturesList-filterClear {
   cursor: pointer;
   margin-top: -8px;
   opacity: 0;
@@ -76,11 +76,11 @@
   transition: opacity var(--transition-time);
 }
 
-.FixturesTable-filterClear.is-active {
+.FixturesList-filterClear.is-active {
   opacity: 1;
 }
 
-.FixturesTable-filterClearIcon {
+.FixturesList-filterClearIcon {
   fill: var(--colour-grey-mid);
   height: 16px;
   margin-right: var(--gutter-half);

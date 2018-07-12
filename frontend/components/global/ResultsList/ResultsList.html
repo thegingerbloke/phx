@@ -10,7 +10,7 @@
         <li class="ResultsList-filterItem">
           <a
             class="ResultsList-filterLink {% if category != '' %}is-inactive{% endif %}"
-            href="{% relative_url_with_params 'category' '' request.GET.urlencode %}"
+          href="{% url 'results-index' %}{%if search %}?search={{search}}{% endif %}"
           >All</a>
         </li>
 
@@ -18,7 +18,7 @@
           <li class="ResultsList-filterItem">
             <a
               class="ResultsList-filterLink {% if cat.abbreviation != category %}is-inactive{% endif %}"
-              href="{% relative_url_with_params 'category' cat.abbreviation request.GET.urlencode %}"
+            href="{% url 'results-index' %}?category={{cat.abbreviation}}{%if search %}&amp;search={{search}}{% endif %}"
             >{{cat.abbreviation}}</a>
           </li>
         {% endfor %}
@@ -28,11 +28,14 @@
       <label class="ResultsList-filterLabel">
         <span class="ResultsList-filterTitle">Search:</span>
         <input class="ResultsList-filterInput" name="search" value="{{search}}" />
+        {%if category %}
+          <input type="hidden" name="category" value="{{category}}" />
+        {% endif %}
         <button class="ResultsList-filterSubmit" type="submit">Go</button>
         {% if search %}
-        <a class="ResultsList-filterClear" href="{% relative_url_with_params 'search' '' request.GET.urlencode %}">
+          <a class="ResultsList-filterClear" href="{% url 'results-index' %}{%if category %}?category={{category}}{% endif %}">
             <svg class="ResultsList-filterClearIcon"><use xlink:href="/static/img/icons/icons.svg#icon-cross"></use></svg>
-        </a>
+          </a>
         {% endif %}
       </label>
     </form>
@@ -42,11 +45,15 @@
     <ul class="ResultsList-list">
       {% for result in results %}
         <li class="ResultsList-item">
-          <p class="ResultsList-title">
+          <h3 class="ResultsList-title">
             {{result.fixture.title}}
+          </h3>
+          <p class="ResultsList-subtitle">
+            <span class="ResultsList-date">{{result.fixture.event_date}}</span>
+            {%if result.fixture.location %}
+              - <span class="ResultsList-location">{{result.fixture.location}}</span>
+            {% endif %}
           </p>
-          <p class="ResultsList-date">{{result.fixture.event_date}}</p>
-          <p class="ResultsList-location">{{result.fixture.location}}</p>
           <p class="ResultsList-categories">
             {{result.fixture.categories.all|join:', '}}
           </p>
@@ -54,16 +61,20 @@
             {{result.summary}}
           </p>
           <p class="ResultsList-results">
-            {{result.results}}
+            {{result.results|safe}}
           </p>
-          <p class="ResultsList-links">
+          <ul class="ResultsList-NewsList">
             {% if result.fixture.link_url %}
-              <a href="{{result.fixture.link_url}}">Event link</a>
+              <li class="ResultsList-linkItem">
+                <a class="ResultsList-link" href="{{result.fixture.link_url}}">Event link</a>
+              </li>
             {% endif %}
             {% if result.results_url %}
-              <a href="{{result.results_url}}">Results link</a>
+              <li class="ResultsList-linkItem">
+                <a class="ResultsList-link" href="{{result.results_url}}">Results link</a>
+              </li>
             {% endif %}
-          </p>
+          </ul>
         </li>
       {% endfor %}
     </ul>

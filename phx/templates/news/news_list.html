@@ -2,15 +2,11 @@
 
 {% block content %}
 
-<div class="Content-component">
-  {% if news_list %}
-    {% include '../components/global/LinkList/LinkList.html' with data=news_list %}
-    {% include '../components/global/Pagination/Pagination.html' with data=page_obj %}
-  {% else %}
-    <div class="Editorial">
-      <p>There are no news stories.</p>
-    </div>
-  {% endif %}
+{% include '../components/components_loop.html' with components=page.components.all %}
 
+<div class="Content-component">
+    {% include '../components/global/NewsList/NewsList.html' with news=news_list %}
+    {% include '../components/global/Pagination/Pagination.html' with data=page_obj %}
 </div>
+
 {% endblock %}

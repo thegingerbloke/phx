@@ -207,20 +207,30 @@
 /* blocks - tables */
 
 .GridBlocks-table {
+  border-collapse: collapse;
+  border-spacing: 0;
   margin-bottom: var(--gutter-double);
   width: 100%;
 }
 
+.GridBlocks-tableRow {
+  border-bottom: 1px solid var(--colour-blue-dark);
+}
+
+.GridBlocks-block--dark .GridBlocks-tableRow {
+  border-bottom: 1px solid var(--colour-grey-light);
+}
+
 .GridBlocks-tableHead {
   font-weight: normal;
-  padding-bottom: 5px;
+  padding: var(--gutter-half) 0;
   text-align: left;
   vertical-align: top;
   width: 50%;
 }
 
 .GridBlocks-tableData {
-  padding-bottom: 5px;
+  padding: var(--gutter-half) 0;
   vertical-align: top;
   width: 25%;
 }

@@ -1,5 +1,5 @@
 /*
- * FixturesTable filter
+ * FixturesList filter
  */
 
 "use strict";
@@ -12,20 +12,20 @@ var filterCategories;
 var selectedFilterCategory = "";
 
 function init() {
-  filter = document.querySelector(".js-FixturesTable-filter");
+  filter = document.querySelector(".js-FixturesList-filter");
   if (!filter) return;
 
   filter.classList.remove("u-hidden");
 
-  filterTableRows = document.querySelectorAll(".js-FixturesTable-row");
+  filterTableRows = document.querySelectorAll(".js-FixturesList-row");
 
-  filterTableSearch = filter.querySelector(".js-FixturesTable-filterInput");
+  filterTableSearch = filter.querySelector(".js-FixturesList-filterInput");
   filterTableSearch.addEventListener("input", onFilterUpdate);
 
-  filterClear = filter.querySelector(".js-FixturesTable-filterClear");
+  filterClear = filter.querySelector(".js-FixturesList-filterClear");
   filterClear.addEventListener("click", onFilterClear);
 
-  filterCategories = filter.querySelectorAll(".js-FixturesTable-filterLink");
+  filterCategories = filter.querySelectorAll(".js-FixturesList-filterLink");
   Array.prototype.forEach.call(filterCategories, function(filterCategory) {
     filterCategory.addEventListener("click", onCategorySelected);
   });

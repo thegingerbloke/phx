@@ -11,7 +11,7 @@
   background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 500px;
+  max-height: 400px;
   min-height: 200px;
   position: relative;
 }
@@ -24,13 +24,13 @@
 
 @media (--medium) {
   .Hero--bg::after {
-    padding-top: 40%;
+    padding-top: 35%;
   }
 }
 
 @media (--large) {
   .Hero--bg::after {
-    padding-top: 30%;
+    padding-top: 25%;
   }
 }
 

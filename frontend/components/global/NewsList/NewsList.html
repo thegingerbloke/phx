@@ -1,0 +1,46 @@
+<div class="NewsList">
+
+  <div class="NewsList-filter">
+    <form class="NewsList-filterSearch" method="get" action="{% url 'news-list' %}">
+      <label class="NewsList-filterLabel">
+        <span class="NewsList-filterTitle">Search:</span>
+        <input class="NewsList-filterInput" name="search" value="{{search}}" />
+        <button class="NewsList-filterSubmit" type="submit">Go</button>
+        {% if search %}
+          <a class="NewsList-filterClear" href="{% url 'news-list' %}">
+            <svg class="NewsList-filterClearIcon"><use xlink:href="/static/img/icons/icons.svg#icon-cross"></use></svg>
+          </a>
+        {% endif %}
+      </label>
+    </form>
+  </div>
+
+
+  {% if news %}
+    <ul class="NewsList-list">
+      {% for story in news %}
+        <li class="NewsList-item">
+          <a class="NewsList-link" href="/news/{{ story.id }}/{{ story.slug }}">
+            <div class="NewsList-thumb">
+              <img src="{{story.thumbnail.image.url}}" alt="{{story.thumbnail.image_alt}}" />
+            </div>
+            <div class="NewsList-content">
+              <p class="NewsList-text">
+                <span class="NewsList-subtitle">{{story.title}}</span>
+                <em>{{story.created_date|date:"l dS F Y"}}</em>
+              </p>
+              <p class="NewsList-text">
+                {{story.summary|truncatewords_html:20}}
+              </p>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  {% else %}
+    <div class="Editorial">
+      <p>There are currently no news articles, check back soon</p>
+    </div>
+  {% endif %}
+</div>
