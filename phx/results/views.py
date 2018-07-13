@@ -4,6 +4,7 @@ from django.shortcuts import get_object_or_404
 from django.db.models import Q
 from .models import Results
 from fixtures.models import Categories
+from pages.views import generate_subnav
 from pages.models import Page
 
 
@@ -18,6 +19,7 @@ class ResultsListView(generic.ListView):
         context['categories'] = Categories.objects.all()
         context['search'] = self.request.GET.get('search', '')
         context['category'] = self.request.GET.get('category', '')
+        context['subnav'] = generate_subnav(self.request.path, context['page'])
         return context
 
     def get_queryset(self):

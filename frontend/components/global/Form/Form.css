@@ -13,12 +13,19 @@
 
 /* Inputs */
 
-.Form-input--text {
+.Form-input--text,
+.Form-textarea {
   border: 1px solid var(--colour-grey-light);
   font-size: var(--font-size-default);
   line-height: var(--line-height-default);
   padding: var(--gutter-half);
+  transition: border-color var(--transition-time);
   width: 100%;
+}
+
+.Form-input--text:focus,
+.Form-textarea:focus {
+  border-color: var(--colour-grey-mid);
 }
 
 .Form-input--button {
@@ -33,4 +40,53 @@
 
 .Form-input--button:hover {
   opacity: var(--opacity-hover);
+}
+
+/* Selects */
+
+.Form-selectWrap {
+  border: 1px solid var(--colour-grey-light);
+  display: block;
+  position: relative;
+}
+
+.Form-select {
+  border-radius: 0;
+  box-sizing: border-box;
+  font-size: var(--font-size-default);
+  margin: 0;
+  outline: none;
+  padding: 0.6em 0.8em 0.5em 0.8em;
+  width: 100%;
+}
+
+.Form-selectWrap::after {
+  color: var(--colour-grey-mid);
+  content: "\25bc";
+  display: none;
+  font-size: 12px;
+  pointer-events: none;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+@supports (-webkit-appearance: none) or (appearance: none) or
+  ((-moz-appearance: none) and (mask-type: alpha)) {
+  .Form-selectWrap::after {
+    display: block;
+  }
+
+  .Form-select {
+    appearance: none;
+    background: none;
+    border: 1px solid transparent;
+    padding-right: 2em;
+  }
+
+  .Form-select:focus {
+    border-color: #aaa;
+  }
 }

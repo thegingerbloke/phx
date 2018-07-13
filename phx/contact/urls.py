@@ -3,5 +3,10 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.index, name='contact-index'),
+    path('', views.ContactIndexView.as_view(), name='contact-index'),
+    path(
+        'success/',
+        views.ContactSuccessView.as_view(),
+        name='contact-success'
+    ),
 ]

@@ -63,7 +63,12 @@
   margin-left: var(--gutter-half);
   padding: var(--gutter-half);
   padding-right: 32px;
+  transition: border-color var(--transition-time);
   width: 100%;
+}
+
+.FixturesList-filterInput:focus {
+  border-color: var(--colour-grey-mid);
 }
 
 .FixturesList-filterClear {

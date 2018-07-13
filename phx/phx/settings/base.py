@@ -151,3 +151,8 @@ STATICFILES_DIRS = [
 # Media files (uploaded through Django admin)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+# Emails
+# https://docs.djangoproject.com/en/2.0/topics/email/
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

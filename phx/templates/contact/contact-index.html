@@ -1,0 +1,61 @@
+{% extends "page.html" %}
+
+{% block content %}
+
+{% include '../components/components_loop.html' with components=page.components.all %}
+
+<div class="Content-component">
+
+    {% if form.non_field_errors %}
+        <p>{{ form.non_field_errors }}</p>
+    {% endif %}
+
+    <form class="Form" method="post" action="{% url 'contact-index' %}">
+        {% csrf_token %}
+        <div class="Form-row">
+            {% if form.name.errors %}
+                <p>{{ form.name.errors }}</p>
+            {% endif %}
+            <label class="Form-label" for="{{ form.name.id_for_label }}">
+                Your name:
+            </label>
+            {{form.name}}
+        </div>
+        <div class="Form-row">
+            {% if form.email.errors %}
+                <p>{{ form.email.errors }}</p>
+            {% endif %}
+            <label class="Form-label" for="{{ form.email.id_for_label }}">
+                Your email address:
+            </label>
+            {{form.email}}
+        </div>
+        <div class="Form-row">
+            {% if form.topic.errors %}
+                <p>{{ form.topic.errors }}</p>
+            {% endif %}
+            <label class="Form-label" for="{{ form.topic.id_for_label }}">
+                Topic:
+            </label>
+            <div class="Form-selectWrap">
+                {{form.topic}}
+            </div>
+        </div>
+        <div class="Form-row">
+            {% if form.message.errors %}
+                <p>{{ form.message.errors }}</p>
+            {% endif %}
+            <label class="Form-label" for="{{ form.message.id_for_label }}">
+                Message:
+            </label>
+            {{form.message}}
+        </div>
+        <div class="Form-row">
+            <button class="Form-input--button" type="submit">
+                Send
+            </button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
