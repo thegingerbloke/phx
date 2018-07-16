@@ -1,5 +1,9 @@
 {% extends "page.html" %}
 
+{% block meta %}
+{% include '_partials/meta.html' with title=news.title image=news.thumbnail.image.url image_alt=news.thumbnail.image_alt description=news.summary %}
+{% endblock %}
+
 {% block content %}
 
   <div class="Content-component">

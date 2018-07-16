@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block meta %}
+{% include '_partials/meta.html' with title='Home' %}
+{% endblock %}
+
 {% block main %}
 
 {% if hero %}

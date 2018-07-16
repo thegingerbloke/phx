@@ -1,8 +1,8 @@
 from django.utils import timezone
 from django.shortcuts import render
 from news.models import News
-from results.models import Results
-from fixtures.models import Fixtures
+from results.models import Result
+from fixtures.models import Fixture
 import json
 
 
@@ -10,11 +10,11 @@ def index(request):
     with open('../frontend/components/global/GridBlocks/demo/demo.json') as f:
         data = json.load(f)
 
-    fixtures = Fixtures.objects.filter(
+    fixtures = Fixture.objects.filter(
         event_date__gte=timezone.now()
     ).order_by('event_date')[:3]
 
-    results = Results.objects.filter(
+    results = Result.objects.filter(
         fixture__event_date__lte=timezone.now()
     ).order_by('-fixture__event_date')[:3]
 

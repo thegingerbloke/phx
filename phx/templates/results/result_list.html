@@ -1,11 +1,15 @@
 {% extends "page.html" %}
 
+{% block meta %}
+{% include '_partials/meta.html' with title='Results' %}
+{% endblock %}
+
 {% block content %}
 
 {% include '../components/components_loop.html' with components=page.components.all %}
 
 <div class="Content-component">
-    {% include '../components/global/ResultsList/ResultsList.html' with results=results_list categories=categories %}
+    {% include '../components/global/ResultsList/ResultsList.html' with results=result_list categories=categories %}
     {% include '../components/global/Pagination/Pagination.html' with data=page_obj %}
 </div>
 

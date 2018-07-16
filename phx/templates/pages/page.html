@@ -1,5 +1,9 @@
 {% extends "page.html" %}
 
+{% block meta %}
+{% include '_partials/meta.html' with title=page.title %}
+{% endblock %}
+
 {% block content %}
 
 {% include '../components/components_loop.html' with components=page.components.all %}

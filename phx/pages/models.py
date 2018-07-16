@@ -1,12 +1,11 @@
 from django.db import models
 from django_extensions.db.fields import AutoSlugField
-from django.utils.timezone import now
 from django.contrib.auth.models import User
 from django.urls import reverse
 from django.template.defaultfilters import slugify
 from hero.models import Hero
-from components.models import (AbstractEditorials, AbstractFeatures,
-                               AbstractQuotes, AbstractImages,
+from components.models import (AbstractEditorial, AbstractFeature,
+                               AbstractQuote, AbstractImage,
                                AbstractListItems)
 
 
@@ -19,7 +18,6 @@ def generate_slug(instance):
 
 class Page(models.Model):
     title = models.CharField(max_length=200)
-    summary = models.TextField(max_length=1000)
     parent = models.ForeignKey(
         'self',
         related_name='children',
@@ -51,7 +49,6 @@ class Page(models.Model):
 
     # Metadata
     class Meta:
-        verbose_name_plural = 'Pages'
         ordering = ['created_date']
 
     # Methods
@@ -62,7 +59,7 @@ class Page(models.Model):
         return self.title
 
 
-class Components(models.Model):
+class Component(models.Model):
     order = models.IntegerField(
         blank=True,
         null=True,
@@ -75,52 +72,50 @@ class Components(models.Model):
 
     # Metadata
     class Meta:
-        verbose_name = 'component'
-        verbose_name_plural = 'components'
         ordering = ['order']
 
 
-class Editorials(AbstractEditorials):
+class Editorial(AbstractEditorial):
     component = models.OneToOneField(
-        Components,
+        Component,
         on_delete=models.CASCADE,
         related_name='editorial',
     )
 
 
-class Features(AbstractFeatures):
+class Feature(AbstractFeature):
     def get_upload_path(self, filename):
         id = self.component.page_id
         return 'page/{0}/features/{1}'.format(id, filename)
 
     component = models.OneToOneField(
-        Components,
+        Component,
         on_delete=models.CASCADE,
         related_name='feature',
     )
     image = models.ImageField(upload_to=get_upload_path, blank=True)
 
 
-class Quotes(AbstractQuotes):
+class Quote(AbstractQuote):
     def get_upload_path(self, filename):
         id = self.component.page_id
         return 'page/{0}/quotes/{1}'.format(id, filename)
 
     component = models.OneToOneField(
-        Components,
+        Component,
         on_delete=models.CASCADE,
         related_name='quote',
     )
     image = models.ImageField(upload_to=get_upload_path, blank=True)
 
 
-class Images(AbstractImages):
+class Image(AbstractImage):
     def get_upload_path(self, filename):
         id = self.component.page_id
         return 'page/{0}/images/{1}'.format(id, filename)
 
     component = models.OneToOneField(
-        Components,
+        Component,
         on_delete=models.CASCADE,
         related_name='image',
     )
@@ -133,7 +128,7 @@ class ListItems(AbstractListItems):
         return 'page/{0}/list-items/{1}'.format(id, filename)
 
     component = models.OneToOneField(
-        Components,
+        Component,
         on_delete=models.CASCADE,
         related_name='list_items',
     )

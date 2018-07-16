@@ -1,0 +1,15 @@
+{% extends "page.html" %}
+
+{% block meta %}
+{% include '_partials/meta.html' with title='Fixtures' %}
+{% endblock %}
+
+{% block content %}
+
+{% include '../components/components_loop.html' with components=page.components.all %}
+
+<div class="Content-component">
+    {% include '../components/global/FixturesList/FixturesList.html' with fixtures=fixture_list categories=categories %}
+</div>
+
+{% endblock %}

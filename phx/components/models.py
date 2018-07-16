@@ -14,7 +14,7 @@ BACKGROUND_CHOICES = (
 )
 
 
-class AbstractComponents(models.Model):
+class AbstractComponent(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
 
@@ -22,19 +22,18 @@ class AbstractComponents(models.Model):
         abstract = True
 
 
-class AbstractEditorials(AbstractComponents):
+class AbstractEditorial(AbstractComponent):
+    title = models.CharField(max_length=200, blank=True)
     content = models.TextField()
 
     class Meta:
         abstract = True
-        verbose_name = 'editorial'
-        verbose_name_plural = 'editorials'
 
     def __str__(self):
         return 'Editorial'
 
 
-class AbstractFeatures(AbstractComponents):
+class AbstractFeature(AbstractComponent):
     # add image field directly where used:
     # image = models.ImageField(upload_to=get_upload_path, blank=True)
     title = models.CharField(max_length=200)
@@ -54,14 +53,12 @@ class AbstractFeatures(AbstractComponents):
 
     class Meta:
         abstract = True
-        verbose_name = 'feature'
-        verbose_name_plural = 'features'
 
     def __str__(self):
         return 'Feature'
 
 
-class AbstractListItems(AbstractComponents):
+class AbstractListItems(AbstractComponent):
     # add image fields directly where used:
     # image_1 = models.ImageField(upload_to=get_upload_path, blank=True)
     # image_2 = models.ImageField(upload_to=get_upload_path, blank=True)
@@ -91,7 +88,7 @@ class AbstractListItems(AbstractComponents):
         return 'ListItems'
 
 
-class AbstractQuotes(AbstractComponents):
+class AbstractQuote(AbstractComponent):
     # add image field directly where used:
     # image = models.ImageField(upload_to=get_upload_path, blank=True)
     quote = models.TextField()
@@ -107,23 +104,19 @@ class AbstractQuotes(AbstractComponents):
     )
 
     class Meta:
-        verbose_name = 'quote'
-        verbose_name_plural = 'quotes'
         abstract = True
 
     def __str__(self):
         return 'Quote'
 
 
-class AbstractImages(AbstractComponents):
+class AbstractImage(AbstractComponent):
     # add image field directly where used:
     # image = models.ImageField(upload_to=get_upload_path)
     image_alt = models.CharField(max_length=200, blank=True)
     caption = models.CharField(max_length=200, blank=True)
 
     class Meta:
-        verbose_name = 'image'
-        verbose_name_plural = 'images'
         abstract = True
 
     def __str__(self):

@@ -80,6 +80,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
 
                 # PHX
+                'phx.context_processors.globals.globals',
                 'phx.context_processors.hero.hero',
                 'phx.context_processors.nav.nav',
             ],
@@ -156,3 +157,12 @@ MEDIA_URL = '/media/'
 # Emails
 # https://docs.djangoproject.com/en/2.0/topics/email/
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+# Template values
+SITE_TITLE = 'Brighton Phoenix'
+SITE_DESCRIPTION = (
+    'Pursuing excellence and honours in athletics and multisport, road and '
+    'cross-country running, triathlon/duathlon. Coaching and competition, '
+    'advice and inspiration – for all ages and abilities.'
+)

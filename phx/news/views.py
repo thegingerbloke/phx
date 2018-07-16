@@ -16,7 +16,7 @@ class NewsListView(generic.ListView):
         return context
 
     def get_queryset(self):
-        query = News.objects.all()
+        query = News.objects.all().distinct()
 
         search = self.request.GET.get('search')
         if search:

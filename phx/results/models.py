@@ -1,11 +1,11 @@
 from django.db import models
-from fixtures.models import Fixtures
+from fixtures.models import Fixture
 from django.contrib.auth.models import User
 
 
-class Results(models.Model):
+class Result(models.Model):
     fixture = models.OneToOneField(
-        Fixtures,
+        Fixture,
         on_delete=models.CASCADE,
         related_name='fixture',
     )
@@ -23,11 +23,6 @@ class Results(models.Model):
         blank=True,
         null=True,
     )
-
-    # Metadata
-    class Meta:
-        verbose_name = 'Result'
-        verbose_name_plural = 'Results'
 
     def __str__(self):
         return self.fixture.title

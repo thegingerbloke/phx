@@ -1,41 +1,41 @@
 from django.contrib import admin
-from .models import (Page, Components, Editorials, Features, Quotes, Images,
+from .models import (Page, Component, Editorial, Feature, Quote, Image,
                      ListItems)
-from components.admin import (AbstractEditorialsAdmin, AbstractFeaturesAdmin,
-                              AbstractListItemsAdmin, AbstractQuotesAdmin,
-                              AbstractImagesAdmin)
+from components.admin import (AbstractEditorialAdmin, AbstractFeatureAdmin,
+                              AbstractListItemsAdmin, AbstractQuoteAdmin,
+                              AbstractImageAdmin)
 import nested_admin
 
 
-class EditorialsAdmin(AbstractEditorialsAdmin):
-    model = Editorials
+class EditorialAdmin(AbstractEditorialAdmin):
+    model = Editorial
 
 
-class FeaturesAdmin(AbstractFeaturesAdmin):
-    model = Features
+class FeatureAdmin(AbstractFeatureAdmin):
+    model = Feature
 
 
 class ListItemsAdmin(AbstractListItemsAdmin):
     model = ListItems
 
 
-class QuotesAdmin(AbstractQuotesAdmin):
-    model = Quotes
+class QuoteAdmin(AbstractQuoteAdmin):
+    model = Quote
 
 
-class ImagesAdmin(AbstractImagesAdmin):
-    model = Images
+class ImageAdmin(AbstractImageAdmin):
+    model = Image
 
 
-class ComponentsAdmin(nested_admin.NestedStackedInline):
-    model = Components
+class ComponentAdmin(nested_admin.NestedStackedInline):
+    model = Component
     extra = 0
     inlines = [
-        EditorialsAdmin,
-        FeaturesAdmin,
+        EditorialAdmin,
+        FeatureAdmin,
         ListItemsAdmin,
-        QuotesAdmin,
-        ImagesAdmin,
+        QuoteAdmin,
+        ImageAdmin,
     ]
     # exclude = ['order']
     sortable_field_name = 'order'
@@ -72,7 +72,7 @@ class PageAdmin(nested_admin.NestedModelAdmin):
     #         'fields': ('live_start_date', 'live_end_date')
     #     }),
     # )
-    inlines = [ComponentsAdmin]
+    inlines = [ComponentAdmin]
 
     def save_model(self, request, obj, form, change):
         if getattr(obj, 'author', None) is None:

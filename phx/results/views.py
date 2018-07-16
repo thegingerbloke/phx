@@ -2,30 +2,30 @@ from django.views import generic
 from django.utils import timezone
 from django.shortcuts import get_object_or_404
 from django.db.models import Q
-from .models import Results
-from fixtures.models import Categories
+from .models import Result
+from fixtures.models import Category
 from pages.views import generate_subnav
 from pages.models import Page
 
 
 class ResultsListView(generic.ListView):
-    model = Results
+    model = Result
     paginate_by = 10
 
     def get_context_data(self, **kwargs):
         context = super(ResultsListView, self).get_context_data(**kwargs)
         context['breadcrumb'] = self.generate_breadcrumb()
         context['page'] = get_object_or_404(Page, slug=self.request.path)
-        context['categories'] = Categories.objects.all()
+        context['categories'] = Category.objects.all()
         context['search'] = self.request.GET.get('search', '')
         context['category'] = self.request.GET.get('category', '')
         context['subnav'] = generate_subnav(self.request.path, context['page'])
         return context
 
     def get_queryset(self):
-        query = Results.objects.filter(
+        query = Result.objects.filter(
             fixture__event_date__lte=timezone.now(),
-        ).order_by('-fixture__event_date')
+        ).order_by('-fixture__event_date').distinct()
 
         search = self.request.GET.get('search')
         if search:

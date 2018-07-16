@@ -19,46 +19,28 @@
   ],
   "results": [
     {
+      "summary": "Summary text",
+      "results": "<table><tr><th>Position</th><th>Name</th><th>Time</th></tr> <tr><td>1</td><td>Me</td><td>01:01</td></tr> <tr><td>2</td><td>You</td><td>03:21</td></tr></table>",
       "fixture": {
         "link_url": "#",
         "title": "Lorem ipsum",
         "event_date": "Date",
         "location": "Location",
         "categories": {
-          "all": [
-            {
-              "title": "Category 1",
-              "abbreviation": "Cat1"
-            },
-            {
-              "title": "Category 2",
-              "abbreviation": "Cat2"
-            },
-            {
-              "title": "Category 3",
-              "abbreviation": "Cat3"
-            }
-          ]
+          "all": ["Cat1", "Cat2", "Cat3"]
         }
       }
     },
     {
+      "summary": "Summary text",
+      "results": "<table><tr><th>Position</th><th>Name</th><th>Time</th></tr> <tr><td>1</td><td>Me</td><td>01:01</td></tr> <tr><td>2</td><td>You</td><td>03:21</td></tr></table>",
       "fixture": {
         "link_url": "#",
         "title": "Dolor sit amet",
         "event_date": "Date",
         "location": "Another location",
         "categories": {
-          "all": [
-            {
-              "title": "Category 2",
-              "abbreviation": "Cat2"
-            },
-            {
-              "title": "Category 4",
-              "abbreviation": "Cat4"
-            }
-          ]
+          "all": ["Cat2", "Cat4"]
         }
       }
     }

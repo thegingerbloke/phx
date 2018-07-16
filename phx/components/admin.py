@@ -1,7 +1,7 @@
 import nested_admin
 
 
-class AbstractComponentsAdmin(nested_admin.NestedStackedInline):
+class AbstractComponentAdmin(nested_admin.NestedStackedInline):
     extra = 0
     max_num = 1
 
@@ -9,26 +9,26 @@ class AbstractComponentsAdmin(nested_admin.NestedStackedInline):
         abstract = True
 
 
-class AbstractEditorialsAdmin(AbstractComponentsAdmin):
+class AbstractEditorialAdmin(AbstractComponentAdmin):
     class Meta:
         abstract = True
 
 
-class AbstractFeaturesAdmin(AbstractComponentsAdmin):
+class AbstractFeatureAdmin(AbstractComponentAdmin):
     class Meta:
         abstract = True
 
 
-class AbstractListItemsAdmin(AbstractComponentsAdmin):
+class AbstractListItemsAdmin(AbstractComponentAdmin):
     class Meta:
         abstract = True
 
 
-class AbstractQuotesAdmin(AbstractComponentsAdmin):
+class AbstractQuoteAdmin(AbstractComponentAdmin):
     class Meta:
         abstract = True
 
 
-class AbstractImagesAdmin(AbstractComponentsAdmin):
+class AbstractImageAdmin(AbstractComponentAdmin):
     class Meta:
         abstract = True

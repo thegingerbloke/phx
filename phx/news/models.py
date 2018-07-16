@@ -2,8 +2,8 @@ from django.db import models
 from django_extensions.db.fields import AutoSlugField
 from django.contrib.auth.models import User
 from django.urls import reverse
-from components.models import (AbstractEditorials, AbstractFeatures,
-                               AbstractQuotes, AbstractImages,
+from components.models import (AbstractEditorial, AbstractFeature,
+                               AbstractQuote, AbstractImage,
                                AbstractListItems)
 
 
@@ -44,7 +44,7 @@ class News(models.Model):
         return self.title
 
 
-class Thumbnails(models.Model):
+class Thumbnail(models.Model):
     def get_upload_path(self, filename):
         id = self.news_id
         return 'news/{0}/thumbnail/{1}'.format(id, filename)
@@ -57,12 +57,8 @@ class Thumbnails(models.Model):
     image = models.ImageField(upload_to=get_upload_path, blank=True)
     image_alt = models.CharField(max_length=200, blank=True)
 
-    class Meta:
-        verbose_name = 'thumbnail'
-        verbose_name_plural = 'thumbnails'
 
-
-class Components(models.Model):
+class Component(models.Model):
     order = models.IntegerField(
         blank=True,
         null=True,
@@ -75,52 +71,50 @@ class Components(models.Model):
 
     # Metadata
     class Meta:
-        verbose_name = 'component'
-        verbose_name_plural = 'components'
         ordering = ['order']
 
 
-class Editorials(AbstractEditorials):
+class Editorial(AbstractEditorial):
     component = models.OneToOneField(
-        Components,
+        Component,
         on_delete=models.CASCADE,
         related_name='editorial',
     )
 
 
-class Features(AbstractFeatures):
+class Feature(AbstractFeature):
     def get_upload_path(self, filename):
         id = self.component.news_id
         return 'news/{0}/features/{1}'.format(id, filename)
 
     component = models.OneToOneField(
-        Components,
+        Component,
         on_delete=models.CASCADE,
         related_name='feature',
     )
     image = models.ImageField(upload_to=get_upload_path, blank=True)
 
 
-class Quotes(AbstractQuotes):
+class Quote(AbstractQuote):
     def get_upload_path(self, filename):
         id = self.component.news_id
         return 'news/{0}/quotes/{1}'.format(id, filename)
 
     component = models.OneToOneField(
-        Components,
+        Component,
         on_delete=models.CASCADE,
         related_name='quote',
     )
     image = models.ImageField(upload_to=get_upload_path, blank=True)
 
 
-class Images(AbstractImages):
+class Image(AbstractImage):
     def get_upload_path(self, filename):
         id = self.component.news_id
         return 'news/{0}/images/{1}'.format(id, filename)
 
     component = models.OneToOneField(
-        Components,
+        Component,
         on_delete=models.CASCADE,
         related_name='image',
     )
@@ -133,7 +127,7 @@ class ListItems(AbstractListItems):
         return 'news/{0}/list-items/{1}'.format(id, filename)
 
     component = models.OneToOneField(
-        Components,
+        Component,
         on_delete=models.CASCADE,
         related_name='list_items',
     )

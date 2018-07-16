@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Categories, Fixtures
+from .models import Category, Fixture
 
 
-class FixturesAdmin(admin.ModelAdmin):
+class FixtureAdmin(admin.ModelAdmin):
     list_display = ('title', 'event_date', 'location', 'has_results')
     ordering = ('-event_date',)
     exclude = ('author',)
@@ -18,9 +18,9 @@ class FixturesAdmin(admin.ModelAdmin):
         obj.save()
 
 
-class CategoriesAdmin(admin.ModelAdmin):
+class CategoryAdmin(admin.ModelAdmin):
     pass
 
 
-admin.site.register(Categories, CategoriesAdmin)
-admin.site.register(Fixtures, FixturesAdmin)
+admin.site.register(Category, CategoryAdmin)
+admin.site.register(Fixture, FixtureAdmin)

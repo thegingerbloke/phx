@@ -1,24 +1,24 @@
 from django.views import generic
 from django.utils import timezone
 from django.shortcuts import get_object_or_404
-from .models import Fixtures, Categories
+from .models import Fixture, Category
 from pages.views import generate_subnav
 from pages.models import Page
 
 
 class FixturesListView(generic.ListView):
-    model = Fixtures
+    model = Fixture
 
     def get_context_data(self, **kwargs):
         context = super(FixturesListView, self).get_context_data(**kwargs)
         context['breadcrumb'] = self.generate_breadcrumb()
         context['page'] = get_object_or_404(Page, slug=self.request.path)
-        context['categories'] = Categories.objects.all()
+        context['categories'] = Category.objects.all()
         context['subnav'] = generate_subnav(self.request.path, context['page'])
         return context
 
     def get_queryset(self):
-        return Fixtures.objects.filter(
+        return Fixture.objects.filter(
             event_date__gte=timezone.now(),
         ).order_by('event_date')
 

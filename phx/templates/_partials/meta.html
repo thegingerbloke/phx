@@ -1,0 +1,22 @@
+{% load static %}
+{% load templatehelpers %}
+
+<meta charset="utf-8">
+<title>
+  {% if title %}{{title}} | {% endif %}{{SITE_TITLE}}
+</title>
+<meta name="description" content="{% if description %}{{description}}{% else %}{{SITE_DESCRIPTION}}{% endif %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@brightonphoenix">
+
+<meta property="og:url" content="{{request.build_absolute_uri}}">
+<meta property="og:title" content="{% if title %}{{title}} | {% endif %}{{SITE_TITLE}}">
+<meta property="og:description" content="{% if description %}{{description}}{% else %}{{SITE_DESCRIPTION}}{% endif %}">
+<meta property="og:image" content="{% if image %}{% absolutemedia image %}{% else %}{% absolutestatic 'img/logo_brighton-phoenix-combined.png' %}{% endif %}">
+<meta property="og:image:alt" content="{% if image_alt %}{{image_alt}}{% endif %}">
+
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+<link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
