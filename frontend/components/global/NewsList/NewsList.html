@@ -1,3 +1,5 @@
+{% load thumbnail %}
+
 <div class="NewsList">
 
   <div class="NewsList-filter">
@@ -22,7 +24,7 @@
         <li class="NewsList-item">
           <a class="NewsList-link" href="/news/{{ story.id }}/{{ story.slug }}">
             <div class="NewsList-thumb">
-              <img src="{{story.thumbnail.image.url}}" alt="{{story.thumbnail.image_alt}}" />
+              <img src="{% thumbnail story.thumbnail.image 350x250 crop %}" alt="{{story.thumbnail.image_alt}}" />
             </div>
             <div class="NewsList-content">
               <p class="NewsList-text">

@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'news.apps.NewsConfig',
     'pages.apps.PagesConfig',
     'results.apps.ResultsConfig',
+    'error.apps.ErrorConfig',
 ]
 
 MIDDLEWARE = [

@@ -18,6 +18,7 @@ from django.urls import path, re_path
 from django.conf.urls import include
 from django.conf import settings
 from django.conf.urls.static import static
+from error.views import Error400View, Error403View, Error404View, Error500View
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,3 +31,8 @@ urlpatterns = [
     re_path(r'^_nested_admin/', include('nested_admin.urls')),
     re_path(r'^(?P<slug>.*)/', include('pages.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler400 = Error400View.as_view()
+handler403 = Error403View.as_view()
+handler404 = Error404View.as_view()
+handler500 = Error500View.as_view()
