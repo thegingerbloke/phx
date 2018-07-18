@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.conf import settings
-from .models import File
+from phx.admin import phx_admin
 from phx.helpers.file import file_size_string
+from .models import File
 
 
 class FileAdmin(admin.ModelAdmin):
@@ -26,4 +27,4 @@ class FileAdmin(admin.ModelAdmin):
         obj.save()
 
 
-admin.site.register(File, FileAdmin)
+phx_admin.register(File, FileAdmin)

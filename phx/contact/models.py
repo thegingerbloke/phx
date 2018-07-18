@@ -30,7 +30,13 @@ class Topic(models.Model):
           'This will appear in the contact form dropdown list'
         ),
     )
-    contact = models.ManyToManyField(Contact, blank=True)
+    contact = models.ManyToManyField(
+        Contact,
+        blank=True,
+        help_text=(
+          'Who should messages for this topic be sent to? '
+        ),
+    )
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
 
@@ -53,3 +59,8 @@ class Message(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name = 'messages received'
+        verbose_name_plural = 'messages received'
+

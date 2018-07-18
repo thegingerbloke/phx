@@ -1,4 +1,5 @@
 from django.contrib import admin
+from phx.admin import phx_admin
 from .models import Contact, Topic, Message
 
 
@@ -26,7 +27,7 @@ class MessageAdmin(admin.ModelAdmin):
         return False
 
 
-admin.site.register(Contact, ContactAdmin)
-admin.site.register(Topic, TopicAdmin)
-admin.site.register(Message, MessageAdmin)
+phx_admin.register(Contact, ContactAdmin)
+phx_admin.register(Topic, TopicAdmin)
+phx_admin.register(Message, MessageAdmin)
 

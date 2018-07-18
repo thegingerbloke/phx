@@ -1,4 +1,5 @@
-from django.contrib import admin
+from django.utils.html import format_html
+from phx.admin import phx_admin
 from .models import (News, Thumbnail, Component, Editorial, Feature,
                      Quote, Image, ListItems)
 from components.admin import (AbstractEditorialAdmin, AbstractFeatureAdmin,
@@ -46,8 +47,19 @@ class ThumbnailAdmin(nested_admin.NestedStackedInline):
 
 
 class NewsAdmin(nested_admin.NestedModelAdmin):
-    list_display = ('title', 'created_date', 'author')
+    list_display = ('current_image', 'title', 'created_date', 'author')
+    list_display_links = ('current_image', 'title', )
+
     exclude = ['author']
+    readonly_fields = ['current_image']
+
+    def current_image(self, obj):
+        return format_html(
+            '<img src="{0}" style="max-width:200px" />'.format(
+                obj.thumbnail.image.url
+            )
+        )
+
     # fieldsets = (
     #     ('Story', {
     #         'fields': ('title', 'summary', 'content')
@@ -64,4 +76,4 @@ class NewsAdmin(nested_admin.NestedModelAdmin):
         obj.save()
 
 
-admin.site.register(News, NewsAdmin)
+phx_admin.register(News, NewsAdmin)

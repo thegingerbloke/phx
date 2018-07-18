@@ -1,4 +1,5 @@
 from django.contrib import admin
+from phx.admin import phx_admin
 from .models import Category, Fixture
 
 
@@ -22,5 +23,5 @@ class CategoryAdmin(admin.ModelAdmin):
     pass
 
 
-admin.site.register(Category, CategoryAdmin)
-admin.site.register(Fixture, FixtureAdmin)
+phx_admin.register(Category, CategoryAdmin)
+phx_admin.register(Fixture, FixtureAdmin)

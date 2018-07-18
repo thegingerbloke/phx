@@ -1,7 +1,8 @@
-from django.utils import timezone
 from django.contrib import admin
-from .models import Result
+from django.utils import timezone
+from phx.admin import phx_admin
 from fixtures.models import Fixture
+from .models import Result
 
 
 class ResultAdmin(admin.ModelAdmin):
@@ -52,4 +53,4 @@ class ResultAdmin(admin.ModelAdmin):
         obj.save()
 
 
-admin.site.register(Result, ResultAdmin)
+phx_admin.register(Result, ResultAdmin)

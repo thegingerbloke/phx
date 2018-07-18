@@ -1,4 +1,4 @@
-from django.contrib import admin
+from phx.admin import phx_admin
 from .models import (Page, Component, Editorial, Feature, Quote, Image,
                      ListItems)
 from components.admin import (AbstractEditorialAdmin, AbstractFeatureAdmin,
@@ -80,4 +80,4 @@ class PageAdmin(nested_admin.NestedModelAdmin):
         obj.save()
 
 
-admin.site.register(Page, PageAdmin)
+phx_admin.register(Page, PageAdmin)

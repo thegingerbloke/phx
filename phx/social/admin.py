@@ -1,4 +1,5 @@
 from django.contrib import admin
+from phx.admin import phx_admin
 from .models import Social
 
 
@@ -17,4 +18,4 @@ class SocialAdmin(admin.ModelAdmin):
         return False
 
 
-admin.site.register(Social, SocialAdmin)
+phx_admin.register(Social, SocialAdmin)
