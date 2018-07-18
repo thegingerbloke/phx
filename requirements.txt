@@ -1,4 +1,6 @@
 Django==2.0.6
 django-nested-admin==3.0.21
 easy-thumbnails==2.5
-Pillow==5.2.0
+twitter==1.18.0
+django-cron==0.5.1
+facebook-sdk==2.0.0

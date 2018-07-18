@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(
 SECRET_KEY = 'k@sf6to-5%xri=u0gqyzez2&ypvo+hp&)e4pp$czwn&*ue5*_3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # third-party
     'easy_thumbnails',
     'nested_admin',
+    'django_cron',
 
     # PHX
     'components.apps.ComponentsConfig',
@@ -53,6 +54,7 @@ INSTALLED_APPS = [
     'news.apps.NewsConfig',
     'pages.apps.PagesConfig',
     'results.apps.ResultsConfig',
+    'social.apps.SocialConfig',
     'error.apps.ErrorConfig',
 ]
 
@@ -167,3 +169,31 @@ SITE_DESCRIPTION = (
     'cross-country running, triathlon/duathlon. Coaching and competition, '
     'advice and inspiration – for all ages and abilities.'
 )
+
+
+# Site URL
+HOST = 'http://127.0.0.1:8000'
+
+
+# Social media
+# Set these values in local/dev/production config files
+
+# TWITTER = {
+#     'consumer_key': '',
+#     'consumer_secret': '',
+#     'oauth_token': '',
+#     'oauth_secret': '',
+# }
+# 
+# FACEBOOK = {
+#   'access_token': '',
+#   'page_id': '',
+# }
+
+
+# Cron
+# http://django-cron.readthedocs.io/
+
+CRON_CLASSES = [
+    'social.cron.SocialCron',
+]

@@ -38,7 +38,7 @@ class News(models.Model):
 
     # Methods
     def get_absolute_url(self):
-        return reverse('news-detail-view', args=[str(self.id)])
+        return reverse('news-detail', args=[str(self.id)])
 
     def __str__(self):
         return self.title
