@@ -52,24 +52,26 @@ class Social(models.Model):
         )
 
     def post_to_twitter(self, message):
-        try:
-            t = Twitter(auth=OAuth(
-                settings.TWITTER['oauth_token'],
-                settings.TWITTER['oauth_secret'],
-                settings.TWITTER['consumer_key'],
-                settings.TWITTER['consumer_secret']))
-            t.statuses.update(status=message)
-        except: # noqa
-            # todo - catch twitter errors
-            pass
+        if hasattr(settings, 'TWITTER'):
+            try:
+                t = Twitter(auth=OAuth(
+                    settings.TWITTER['oauth_token'],
+                    settings.TWITTER['oauth_secret'],
+                    settings.TWITTER['consumer_key'],
+                    settings.TWITTER['consumer_secret']))
+                t.statuses.update(status=message)
+            except: # noqa
+                # todo - catch twitter errors
+                pass
 
     def post_to_facebook(self, message):
-        try:
-            graph = facebook.GraphAPI(
-                access_token=settings.FACEBOOK['access_token'],
-            )
-            page_id = settings.FACEBOOK['page_id']
-            graph.put_object(page_id, 'feed', message=message)
-        except: # noqa
-            # todo - catch facebook errors
-            pass
+        if hasattr(settings, 'FACEBOOK'):
+            try:
+                graph = facebook.GraphAPI(
+                    access_token=settings.FACEBOOK['access_token'],
+                )
+                page_id = settings.FACEBOOK['page_id']
+                graph.put_object(page_id, 'feed', message=message)
+            except: # noqa
+                # todo - catch facebook errors
+                pass
