@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'news.apps.NewsConfig',
     'pages.apps.PagesConfig',
     'results.apps.ResultsConfig',
+    'files.apps.FilesConfig',
     'social.apps.SocialConfig',
     'error.apps.ErrorConfig',
 ]
