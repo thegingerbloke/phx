@@ -19,7 +19,7 @@ class News(models.Model):
     )
     summary = models.TextField(
         max_length=1000,
-        help_text='This is the text used as the description of the article',
+        help_text='Text used on the news listing page',
     )
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
@@ -54,7 +54,14 @@ class Thumbnail(models.Model):
         on_delete=models.CASCADE,
         related_name='thumbnail',
     )
-    image = models.ImageField(upload_to=get_upload_path, blank=True)
+    image = models.ImageField(
+        upload_to=get_upload_path,
+        blank=True,
+        help_text=(
+            'Image to display on the news listing page, '
+            'it will be cropped and resized to 700x500 if it isn\'t already'
+        )
+    )
     image_alt = models.CharField(max_length=200, blank=True)
 
 
@@ -122,6 +129,8 @@ class Image(AbstractImage):
 
 
 class ListItems(AbstractListItems):
+    help_text = 'Image will be cropped and resized to 800x400'
+
     def get_upload_path(self, filename):
         id = self.component.news_id
         return 'news/{0}/list-items/{1}'.format(id, filename)
@@ -131,6 +140,18 @@ class ListItems(AbstractListItems):
         on_delete=models.CASCADE,
         related_name='list_items',
     )
-    image_1 = models.ImageField(upload_to=get_upload_path, blank=True)
-    image_2 = models.ImageField(upload_to=get_upload_path, blank=True)
-    image_3 = models.ImageField(upload_to=get_upload_path, blank=True)
+    image_1 = models.ImageField(
+        upload_to=get_upload_path,
+        blank=True,
+        help_text=help_text
+    )
+    image_2 = models.ImageField(
+        upload_to=get_upload_path,
+        blank=True,
+        help_text=help_text
+    )
+    image_3 = models.ImageField(
+        upload_to=get_upload_path,
+        blank=True,
+        help_text=help_text
+    )

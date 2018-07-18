@@ -1,3 +1,5 @@
+{% load thumbnail %}
+
 <div class="GridBlocks">
 
   {% if data.announcement %}
@@ -30,7 +32,7 @@
         <li class="GridBlocks-item">
           <a class="GridBlocks-itemLink" href="/news/{{ story.id }}/{{ story.slug }}">
             <div class="GridBlocks-itemThumb">
-              <img src="{{story.thumbnail.image.url}}" alt="{{story.thumbnail.image_alt}}" />
+              <img src="{% thumbnail story.thumbnail.image 350x250 crop %}" alt="{{story.thumbnail.image_alt}}" />
             </div>
             <div class="GridBlocks-itemContent">
               <p class="GridBlocks-text">

@@ -1,7 +1,9 @@
+{% load thumbnail %}
+
 <div class="ListItems">
   {% if data.content_1 %}
   <div class="ListItems-item">
-    <img class="ListItems-img" src="{{data.image_1.url}}" alt="{{data.image_alt_1}}" />
+    <img class="ListItems-img" src="{% thumbnail data.image_1 800x400 crop %}" alt="{{data.image_alt_1}}" />
     <div class="ListItems-content">
       <h4 class="ListItems-title">
         {{data.title_1}}
@@ -20,7 +22,7 @@
 
   {% if data.content_2 %}
   <div class="ListItems-item">
-    <img class="ListItems-img" src="{{data.image_2.url}}" alt="{{data.image_alt_2}}" />
+    <img class="ListItems-img" src="{% thumbnail data.image_2 800x400 crop %}" alt="{{data.image_alt_2}}" />
     <div class="ListItems-content">
       <h4 class="ListItems-title">
         {{data.title_2}}
@@ -39,7 +41,7 @@
 
   {% if data.content_3 %}
   <div class="ListItems-item">
-    <img class="ListItems-img" src="{{data.image_3.url}}" alt="{{data.image_alt_3}}" />
+    <img class="ListItems-img" src="{% thumbnail data.image_3 800x400 crop %}" alt="{{data.image_alt_3}}" />
     <div class="ListItems-content">
       <h4 class="ListItems-title">
         {{data.title_3}}

@@ -123,6 +123,8 @@ class Image(AbstractImage):
 
 
 class ListItems(AbstractListItems):
+    help_text = 'Image will be cropped and resized to 800x400'
+
     def get_upload_path(self, filename):
         id = self.component.page_id
         return 'page/{0}/list-items/{1}'.format(id, filename)
@@ -132,6 +134,18 @@ class ListItems(AbstractListItems):
         on_delete=models.CASCADE,
         related_name='list_items',
     )
-    image_1 = models.ImageField(upload_to=get_upload_path, blank=True)
-    image_2 = models.ImageField(upload_to=get_upload_path, blank=True)
-    image_3 = models.ImageField(upload_to=get_upload_path, blank=True)
+    image_1 = models.ImageField(
+        upload_to=get_upload_path,
+        blank=True,
+        help_text=help_text
+    )
+    image_2 = models.ImageField(
+        upload_to=get_upload_path,
+        blank=True,
+        help_text=help_text
+    )
+    image_3 = models.ImageField(
+        upload_to=get_upload_path,
+        blank=True,
+        help_text=help_text
+    )

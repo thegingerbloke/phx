@@ -5,8 +5,13 @@
 .Quote {
   background: var(--colour-blue-mid);
   color: var(--colour-blue-dark);
-  display: flex;
-  flex-direction: column;
+}
+
+@media (--large) {
+  .Quote {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Quote - layout variants */
@@ -41,12 +46,20 @@
 
 /* Quote - content */
 
+.Quote-img {
+  width: 100%;
+}
+
 @media (--large) {
   .Quote-img {
     align-self: flex-start;
     flex: 1;
     max-width: 50%;
   }
+}
+
+.Quote--centre .Quote-img {
+  display: none;
 }
 
 .Quote-content {

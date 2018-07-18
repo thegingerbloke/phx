@@ -3,6 +3,7 @@ from django.shortcuts import render
 from news.models import News
 from results.models import Result
 from fixtures.models import Fixture
+from hero.models import Hero
 import json
 
 
@@ -21,10 +22,12 @@ def index(request):
     news = News.objects.all().order_by('-created_date')[:3]
 
     hero = {
-        "bg": "/static/img/_placeholder/hero/3.jpg",
         "title": "Welcome",
-        "caption": "South Downs Way Relay, June 2018"
     }
+    random_hero = Hero.objects.order_by('?').first()
+    if random_hero:
+        hero['bg'] = random_hero.image
+        hero['caption'] = random_hero.caption
 
     data['fixtures']['data'] = fixtures
     data['results']['data'] = results

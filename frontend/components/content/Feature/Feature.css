@@ -5,8 +5,13 @@
 .Feature {
   background: var(--colour-blue-mid);
   color: var(--colour-blue-dark);
-  display: flex;
-  flex-direction: column;
+}
+
+@media (--large) {
+  .Feature {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Feature - layout variants */
@@ -45,12 +50,20 @@
 
 /* Feature - content */
 
+.Feature-img {
+  width: 100%;
+}
+
 @media (--large) {
   .Feature-img {
     align-self: flex-start;
     flex: 1;
     max-width: 50%;
   }
+}
+
+.Feature--centre .Feature-img {
+  display: none;
 }
 
 .Feature-content {

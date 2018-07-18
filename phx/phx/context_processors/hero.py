@@ -10,7 +10,7 @@ def hero(request):
             'title': page.title,
         }
         if page.hero:
-            hero['bg'] = page.hero.image.url
+            hero['bg'] = page.hero.image
             hero['caption'] = page.hero.caption
 
     except Page.DoesNotExist:

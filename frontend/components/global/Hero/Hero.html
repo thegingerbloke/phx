@@ -1,6 +1,8 @@
+{% load thumbnail %}
+
 <div
   class="Hero {% if data.bg %} Hero--bg{% endif %}"
-  {% if data.bg %}style="background-image: url({{data.bg}});"{% endif %}>
+  {% if data.bg %}style="background-image: url({% thumbnail data.bg 2000x0 %});"{% endif %}>
   <div class="Hero-content u-component">
     <h1 class="Hero-title">{{data.title}}</h1>
   </div>

@@ -2,7 +2,9 @@ from django import forms
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
 from django.utils import timezone
+from django.conf import settings
 from .models import Topic
+
 
 custom_topics = [
     ('general', 'General Enquiry'),
@@ -30,6 +32,7 @@ class ContactForm(forms.Form):
     )
 
     def __init__(self, *args, **kwargs):
+        # add custom topics to start and end of dropdown list
         super(ContactForm, self).__init__(*args, **kwargs)
         choices = [(topic.pk, topic.topic) for topic in Topic.objects.all()]
         choices = [
@@ -62,8 +65,8 @@ class ContactForm(forms.Form):
             additional_recipients = []
 
         subject = 'Website message received'
-        email = 'brightonphoenix@gmail.com'
-        recipients = ['thegingerbloke@gmail.com'] + additional_recipients
+        email = settings.CONTACT_EMAIL
+        recipients = [settings.CONTACT_EMAIL] + additional_recipients
         message = (
             'Website message received on {0}\n\n'
             'From: {1}\n'

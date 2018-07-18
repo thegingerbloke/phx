@@ -161,6 +161,7 @@ MEDIA_URL = '/media/'
 # Emails
 # https://docs.djangoproject.com/en/2.0/topics/email/
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# CONTACT_EMAIL = ''
 
 
 # Template values

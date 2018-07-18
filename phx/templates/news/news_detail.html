@@ -9,7 +9,12 @@
   <div class="Content-component">
     <div class="Editorial">
       <h2>{{news.title}}</h2>
-      <p>{{news.author.first_name}} {{news.author.last_name}}, <em>{{news.created_date|date:"l dS F Y"}}</em></p>
+      <p>
+        {% if news.author.first_name %}
+          {{news.author.first_name}} {{news.author.last_name}},
+        {% endif %}
+        <em>{{news.created_date|date:"l dS F Y"}}</em>
+      </p>
     </div>
   </div>
 

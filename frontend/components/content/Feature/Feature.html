@@ -1,9 +1,11 @@
+{% load thumbnail %}
+
 <div class="Feature
   {% if data.background %}Feature--{{data.background}}{% endif %}
   {% if data.align %}Feature--{{data.align}}{% endif %}
 ">
   {% if data.image and data.image.url %}
-    <img class="Feature-img" src="{{data.image.url}}" alt="{{data.image_alt}}" />
+    <img class="Feature-img" src="{% thumbnail data.image 1400x0 %}" alt="{{data.image_alt}}" />
   {% endif %}
   <div class="Feature-content">
     {% if data.title %}
