@@ -1,3 +1,4 @@
+{% load static %}
 {% load thumbnail %}
 
 <div class="GridBlocks">
@@ -32,7 +33,11 @@
         <li class="GridBlocks-item">
           <a class="GridBlocks-itemLink" href="/news/{{ story.id }}/{{ story.slug }}">
             <div class="GridBlocks-itemThumb">
-              <img src="{% thumbnail story.thumbnail.image 350x250 crop %}" alt="{{story.thumbnail.image_alt}}" />
+              {% if story.thumbnail %}
+                <img src="{% thumbnail story.thumbnail.image 350x250 crop %}" alt="{{story.thumbnail.image_alt}}" />
+              {% else %}
+                <img src="{% static 'img/no-image-bg.jpg' %}" alt="" />
+              {% endif %}
             </div>
             <div class="GridBlocks-itemContent">
               <p class="GridBlocks-text">

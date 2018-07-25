@@ -1,3 +1,4 @@
+{% load static %}
 {% load thumbnail %}
 
 <div class="NewsList">
@@ -24,7 +25,11 @@
         <li class="NewsList-item">
           <a class="NewsList-link" href="/news/{{ story.id }}/{{ story.slug }}">
             <div class="NewsList-thumb">
-              <img src="{% thumbnail story.thumbnail.image 700x500 crop %}" alt="{{story.thumbnail.image_alt}}" />
+              {% if story.thumbnail %}
+                <img src="{% thumbnail story.thumbnail.image 700x500 crop %}" alt="{{story.thumbnail.image_alt}}" />
+              {% else %}
+                <img src="{% static 'img/no-image-bg.jpg' %}" alt="" />
+              {% endif %}
             </div>
             <div class="NewsList-content">
               <p class="NewsList-text">

@@ -19,12 +19,14 @@ class Fixture(models.Model):
     )
 
     def __str__(self):
-        return self.title
+        return '{0} ({1})'.format(self.title, self.event_date)
 
 
 class Category(models.Model):
-    alphanumeric = RegexValidator(r'^[0-9a-zA-Z]*$',
-        'Only alphanumeric characters (a-z, 0-9) are allowed.')
+    alphanumeric = RegexValidator(
+        r'^[0-9a-zA-Z]*$',
+        'Only alphanumeric characters (a-z, 0-9) are allowed.'
+    )
 
     title = models.CharField(max_length=50)
     abbreviation = models.CharField(

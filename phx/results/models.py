@@ -29,4 +29,4 @@ class Result(models.Model):
     )
 
     def __str__(self):
-        return self.fixture.title
+        return '{0} ({1})'.format(self.fixture.title, self.fixture.event_date)

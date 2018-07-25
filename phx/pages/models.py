@@ -3,6 +3,7 @@ from django_extensions.db.fields import AutoSlugField
 from django.contrib.auth.models import User
 from django.urls import reverse
 from django.template.defaultfilters import slugify
+from django.core.exceptions import ValidationError
 from hero.models import Hero
 from components.models import (AbstractEditorial, AbstractFeature,
                                AbstractQuote, AbstractImage,
@@ -24,6 +25,10 @@ class Page(models.Model):
         on_delete=models.CASCADE,
         blank=True,
         null=True,
+        help_text=(
+            'Select section of the site this page should appear in, '
+            'leave blank if this page shouldn\'t appear under any section'
+        )
     )
     slug = AutoSlugField(
         help_text='This will be the URL for this page',
@@ -55,8 +60,22 @@ class Page(models.Model):
     def get_absolute_url(self):
         return reverse('page-detail', args=[self.slug])
 
+    # disallow selecting self as parent
+    def clean(self):
+        if self.parent == self:
+            raise ValidationError("A page can't be its own parent")
+
+    # display parent hierarchy in admin dropdown list
     def __str__(self):
-        return self.title
+        hierarchy = []
+        self.generate_hierarchy(self, hierarchy)
+        title = ' ↣ '.join(hierarchy)
+        return title
+
+    def generate_hierarchy(self, instance, hierarchy):
+        hierarchy.insert(0, instance.title)
+        if instance.parent:
+            self.generate_hierarchy(instance.parent, hierarchy)
 
 
 class Component(models.Model):

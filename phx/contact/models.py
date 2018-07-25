@@ -5,14 +5,14 @@ class Contact(models.Model):
     name = models.CharField(
         max_length=200,
         help_text=(
-          'This is won\'t be displayed on the site but helps us'
+          'This is won\'t be displayed on the site but helps us '
           'to identify contacts'
         ),
     )
     email = models.EmailField(
         max_length=200,
         help_text=(
-          'This is won\'t be displayed on the site but helps us'
+          'This is won\'t be displayed on the site but helps us '
           'to identify contacts'
         ),
     )
