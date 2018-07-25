@@ -6,14 +6,14 @@ from .models import File
 
 
 class FileAdmin(admin.ModelAdmin):
-    list_display = (
+    list_display = [
         'title',
         'url',
         'size',
         'uploaded_by',
         'created_date',
-    )
-    exclude = ('uploaded_by',)
+    ]
+    exclude = ['uploaded_by']
 
     def url(self, obj):
         return '{0}{1}'.format(settings.HOST, obj.file.url)

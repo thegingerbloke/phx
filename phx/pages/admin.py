@@ -43,8 +43,8 @@ class ComponentAdmin(nested_admin.NestedStackedInline):
 
 class PageAdmin(nested_admin.NestedModelAdmin):
     # list display config
-    list_display = ('get_title', 'parent', 'slug', )
-    ordering = ('slug', )
+    list_display = ['get_title', 'parent', 'slug']
+    ordering = ['slug']
 
     def get_title(self, obj):
         if obj.parent and obj.parent.parent:

@@ -5,10 +5,10 @@ from .models import Hero
 
 
 class HeroAdmin(admin.ModelAdmin):
-    list_display = ('current_image', 'caption', 'created_date', 'author', )
-    list_display_links = ('current_image', 'caption', )
-    readonly_fields = ('current_image', )
-    exclude = ('author',)
+    list_display = ['current_image', 'caption', 'created_date', 'author']
+    list_display_links = ['current_image', 'caption']
+    readonly_fields = ['current_image']
+    exclude = ['author']
 
     def current_image(self, obj):
         return format_html(

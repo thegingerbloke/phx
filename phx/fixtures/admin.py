@@ -4,9 +4,9 @@ from .models import Category, Fixture
 
 
 class FixtureAdmin(admin.ModelAdmin):
-    list_display = ('title', 'event_date', 'location', 'has_results')
-    ordering = ('-event_date',)
-    exclude = ('author',)
+    list_display = ['title', 'event_date', 'location', 'has_results']
+    ordering = ['-event_date']
+    exclude = ['author']
 
     def has_results(self, obj):
         return True if obj.fixture else False
@@ -20,6 +20,7 @@ class FixtureAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
+    list_display = ['title', 'abbreviation']
     pass
 
 

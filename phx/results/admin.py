@@ -11,7 +11,9 @@ class ResultAdmin(admin.ModelAdmin):
 
     # order list display view by fixture event date
     def get_queryset(self, request):
-        qs = super(ResultAdmin, self).get_queryset(request).select_related('fixture').order_by('-fixture__event_date')
+        qs = super(ResultAdmin, self).get_queryset(
+            request
+        ).select_related('fixture').order_by('-fixture__event_date')
         return qs
 
     def fixture_title(self, obj):
