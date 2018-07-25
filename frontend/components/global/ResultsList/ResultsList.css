@@ -142,6 +142,7 @@
 .ResultsList table {
   border-collapse: collapse;
   border-spacing: 0;
+  border-width: 0;
   margin-bottom: var(--gutter-double);
   width: 100%;
 }
@@ -167,6 +168,7 @@
 }
 
 .ResultsList td {
+  border-width: 0;
   padding: var(--gutter-half) 0;
   vertical-align: top;
   width: 25%;

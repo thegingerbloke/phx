@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Brighton Phoenix",
   "scripts": {
-    "build:css": "postcss --config postcss.config.js frontend/css/main.css --output frontend/static/css/main.css",
+    "build:css": "postcss --config postcss.config.js frontend/css/site.css --output frontend/static/css/site.css",
     "build:js": "webpack --config webpack.config.js",
     "build:templates": "node scripts/build-templates.js",
     "build": "npm-run-all build:*",

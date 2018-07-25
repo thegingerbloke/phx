@@ -58,7 +58,9 @@
             {{result.fixture.categories.all|join:', '}}
           </p>
           <p class="ResultsList-summary">
-            {{result.summary}}
+            <div class="Editorial">
+              {{result.summary|safe}}
+            </div>
           </p>
           <p class="ResultsList-results">
             {{result.results|safe}}

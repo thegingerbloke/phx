@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 from error.views import Error400View, Error403View, Error404View, Error500View
 
 urlpatterns = [
+    # app
     path('admin/', phx_admin.urls),
     path('', include('home.urls')),
     path('news/', include('news.urls')),
@@ -28,7 +29,11 @@ urlpatterns = [
     path('results/', include('results.urls')),
     path('contact/', include('contact.urls')),
     path('components/', include('components.urls')),
+
+    # third-party
     re_path(r'^_nested_admin/', include('nested_admin.urls')),
+
+    # pages - must be last
     re_path(r'^(?P<slug>.*)/', include('pages.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

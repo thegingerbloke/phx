@@ -1,6 +1,7 @@
 from django.db import models
-from fixtures.models import Fixture
 from django.contrib.auth.models import User
+from ckeditor.fields import RichTextField
+from fixtures.models import Fixture
 
 
 class Result(models.Model):
@@ -10,11 +11,14 @@ class Result(models.Model):
         related_name='fixture',
     )
     results_url = models.URLField(max_length=200, blank=True)
-    summary = models.TextField(
+    summary = RichTextField(
+        config_name='text',
         blank=True,
         help_text='This is displayed above the results',
     )
-    results = models.TextField()
+    results = RichTextField(
+        config_name='table',
+    )
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
     author = models.ForeignKey(

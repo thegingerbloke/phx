@@ -1,4 +1,4 @@
-var newWindowLinks = require("./global/new-window-links");
+var newWindowLinks = require("./site/new-window-links");
 var nav = require("../components/global/Nav/Nav");
 var gallery = require("../components/global/Gallery/Gallery");
 var FixturesList = require("../components/global/FixturesList/FixturesList");

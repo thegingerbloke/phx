@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 
 ALIGNMENT_CHOICES = (
@@ -24,7 +25,9 @@ class AbstractComponent(models.Model):
 
 class AbstractEditorial(AbstractComponent):
     title = models.CharField(max_length=200, blank=True)
-    content = models.TextField()
+    content = RichTextField(
+        config_name='text',
+    )
 
     class Meta:
         abstract = True

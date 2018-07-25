@@ -4,3 +4,4 @@ easy-thumbnails==2.5
 twitter==1.18.0
 django-cron==0.5.1
 facebook-sdk==2.0.0
+django-ckeditor==5.6.1

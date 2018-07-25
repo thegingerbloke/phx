@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'easy_thumbnails',
     'nested_admin',
     'django_cron',
+    'ckeditor',
 
     # PHX
     'components.apps.ComponentsConfig',
@@ -203,3 +204,29 @@ HOST = 'http://127.0.0.1:8000'
 CRON_CLASSES = [
     'social.cron.SocialCron',
 ]
+
+
+# CK Editor
+# https://github.com/django-ckeditor/django-ckeditor
+CKEDITOR_CONFIGS = {
+    'text': {
+        'toolbar': [
+            ['Undo', 'Redo'],
+            ['Bold', 'Italic'],
+            ['Link', 'Unlink'],
+            ['NumberedList', 'BulletedList'],
+        ],
+        'height': 200,
+        'width': 700,
+        'removeDialogTabs': 'link:advanced;link:target',
+    },
+    'table': {
+        'toolbar': [
+            ['Undo', 'Redo'],
+            ['Table']
+        ],
+        'height': 200,
+        'width': 700,
+        'removeDialogTabs': 'table:advanced',
+    },
+}
