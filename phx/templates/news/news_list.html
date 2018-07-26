@@ -6,7 +6,7 @@
 
 {% block content %}
 
-{% include '../components/components_loop.html' with components=page.components.all %}
+{% include '../components/components_loop.html' with components=components %}
 
 <div class="Content-component">
     {% include '../components/global/NewsList/NewsList.html' with news=news_list %}

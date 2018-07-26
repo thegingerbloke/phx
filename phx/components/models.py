@@ -1,6 +1,13 @@
 from django.db import models
 from ckeditor.fields import RichTextField
 
+COMPONENT_TYPES = [
+    'editorial',
+    'feature',
+    'list_items',
+    'quote',
+    'image',
+]
 
 ALIGNMENT_CHOICES = (
     ('imageLeft', 'Image left'),
@@ -33,7 +40,7 @@ class AbstractEditorial(AbstractComponent):
         abstract = True
 
     def __str__(self):
-        return 'Editorial'
+        return 'editorial'
 
 
 class AbstractFeature(AbstractComponent):
@@ -58,7 +65,7 @@ class AbstractFeature(AbstractComponent):
         abstract = True
 
     def __str__(self):
-        return 'Feature'
+        return 'feature'
 
 
 class AbstractListItems(AbstractComponent):
@@ -88,7 +95,7 @@ class AbstractListItems(AbstractComponent):
         verbose_name_plural = 'list items'
 
     def __str__(self):
-        return 'ListItems'
+        return 'list items'
 
 
 class AbstractQuote(AbstractComponent):
@@ -110,7 +117,7 @@ class AbstractQuote(AbstractComponent):
         abstract = True
 
     def __str__(self):
-        return 'Quote'
+        return 'quote'
 
 
 class AbstractImage(AbstractComponent):
@@ -123,4 +130,4 @@ class AbstractImage(AbstractComponent):
         abstract = True
 
     def __str__(self):
-        return 'Image'
+        return 'image'

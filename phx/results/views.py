@@ -4,7 +4,7 @@ from django.shortcuts import get_object_or_404
 from django.db.models import Q
 from .models import Result
 from fixtures.models import Category
-from pages.views import generate_subnav
+from phx.helpers.subnav import generate_subnav
 from pages.models import Page
 
 
@@ -23,7 +23,7 @@ class ResultsListView(generic.ListView):
         return context
 
     def get_queryset(self):
-        query = Result.objects.filter(
+        query = Result.objects.select_related('fixture').filter(
             fixture__event_date__lte=timezone.now(),
         ).order_by('-fixture__event_date').distinct()
 

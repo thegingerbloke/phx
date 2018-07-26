@@ -15,11 +15,13 @@ def index(request):
         event_date__gte=timezone.now()
     ).order_by('event_date')[:3]
 
-    results = Result.objects.filter(
+    results = Result.objects.select_related('fixture').filter(
         fixture__event_date__lte=timezone.now()
     ).order_by('-fixture__event_date')[:3]
 
-    news = News.objects.all().order_by('-created_date')[:3]
+    news = News.objects.select_related('thumbnail').all().order_by(
+        '-created_date'
+    )[:3]
 
     hero = {
         "title": "Welcome",

@@ -1,22 +1,30 @@
 from django.views import generic
 from django.views.generic.edit import FormView
 from django.shortcuts import get_object_or_404
+from phx.helpers.subnav import generate_subnav
+from components.models import COMPONENT_TYPES
+from pages.models import Page, Component
 from .forms import ContactForm, custom_topics
-from pages.models import Page
-from pages.views import generate_subnav
 from .models import Topic, Message
 
 
 class ContactIndexView(FormView):
-    template_name="contact/contact-index.html"
+    template_name = "contact/contact-index.html"
     form_class = ContactForm
     success_url = '/contact/success'
 
     def get_context_data(self, **kwargs):
         context = super(ContactIndexView, self).get_context_data(**kwargs)
+
+        slug = self.request.path
+        page = get_object_or_404(Page, slug=slug)
+        context['page'] = page
+        context['components'] = Component.objects.select_related(
+            *COMPONENT_TYPES
+        ).filter(page_id=page.id)
+
         context['breadcrumb'] = self.generate_breadcrumb()
-        context['page'] = get_object_or_404(Page, slug=self.request.path)
-        context['subnav'] = generate_subnav(self.request.path, context['page'])
+        context['subnav'] = generate_subnav(slug, page)
         return context
 
     def form_valid(self, form):
@@ -59,9 +67,8 @@ class ContactIndexView(FormView):
         ]
 
 
-
 class ContactSuccessView(generic.TemplateView):
-    template_name="contact/contact-success.html"
+    template_name = "contact/contact-success.html"
 
     def get_context_data(self, **kwargs):
         context = super(ContactSuccessView, self).get_context_data(**kwargs)

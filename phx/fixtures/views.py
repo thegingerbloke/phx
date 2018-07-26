@@ -1,9 +1,10 @@
 from django.views import generic
 from django.utils import timezone
 from django.shortcuts import get_object_or_404
+from phx.helpers.subnav import generate_subnav
+from components.models import COMPONENT_TYPES
+from pages.models import Page, Component
 from .models import Fixture, Category
-from pages.views import generate_subnav
-from pages.models import Page
 
 
 class FixturesListView(generic.ListView):
@@ -12,9 +13,16 @@ class FixturesListView(generic.ListView):
     def get_context_data(self, **kwargs):
         context = super(FixturesListView, self).get_context_data(**kwargs)
         context['breadcrumb'] = self.generate_breadcrumb()
-        context['page'] = get_object_or_404(Page, slug=self.request.path)
+
+        slug = self.request.path
+        page = get_object_or_404(Page, slug=slug)
+        context['page'] = page
+        context['components'] = Component.objects.select_related(
+            *COMPONENT_TYPES
+        ).filter(page_id=page.id)
+
         context['categories'] = Category.objects.all()
-        context['subnav'] = generate_subnav(self.request.path, context['page'])
+        context['subnav'] = generate_subnav(slug, page)
         return context
 
     def get_queryset(self):

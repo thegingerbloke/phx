@@ -1,7 +1,8 @@
 from django.views import generic
 from django.urls import reverse
 from django.db.models import Q
-from .models import News
+from components.models import COMPONENT_TYPES
+from .models import News, Component
 
 
 class NewsListView(generic.ListView):
@@ -12,11 +13,18 @@ class NewsListView(generic.ListView):
         context = super(NewsListView, self).get_context_data(**kwargs)
         context['breadcrumb'] = self.generate_breadcrumb()
         context['search'] = self.request.GET.get('search', '')
-        # context['page'] = get_object_or_404(Page, slug=self.request.path)
+
+        # slug = self.request.path
+        # page = get_object_or_404(Page, slug=slug)
+        # context['page'] = page
+        # context['components'] = Component.objects.select_related(
+        #     *COMPONENT_TYPES
+        # ).filter(page_id=page.id)
+
         return context
 
     def get_queryset(self):
-        query = News.objects.all().distinct()
+        query = News.objects.select_related('thumbnail').all().distinct()
 
         search = self.request.GET.get('search')
         if search:
@@ -45,6 +53,12 @@ class NewsDetailView(generic.DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(NewsDetailView, self).get_context_data(**kwargs)
+
+        id = self.object.id
+        context['components'] = Component.objects.select_related(
+            *COMPONENT_TYPES
+        ).filter(news_id=id)
+
         context['breadcrumb'] = self.generate_breadcrumb()
         context['data'] = {
             "previous": self.get_previous(),
@@ -53,7 +67,7 @@ class NewsDetailView(generic.DetailView):
         return context
 
     def get_previous(self):
-        id = self.get_object().id
+        id = self.object.id
         previous = News.objects.filter(id__lt=id).order_by('-id')[0:1].first()
         if previous:
             return {
@@ -65,7 +79,7 @@ class NewsDetailView(generic.DetailView):
             }
 
     def get_next(self):
-        id = self.get_object().id
+        id = self.object.id
         next = News.objects.filter(id__gt=id).order_by('id')[0:1].first()
         if next:
             return {
@@ -87,7 +101,7 @@ class NewsDetailView(generic.DetailView):
                 'linkUrl': reverse('news-list'),
             },
             {
-                'title': self.get_object().title
+                'title': self.object.title
             }
         ]
         return breadcrumb

@@ -5,7 +5,7 @@ from . import views
 urlpatterns = [
     path(
         '',
-        views.index,
+        views.PageView.as_view(),
         name='page-detail'
     ),
 ]

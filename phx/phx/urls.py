@@ -41,3 +41,10 @@ handler400 = Error400View.as_view()
 handler403 = Error403View.as_view()
 handler404 = Error404View.as_view()
 handler500 = Error500View.as_view()
+
+# debug toolbar
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        re_path(r'^__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns

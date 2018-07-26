@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'nested_admin',
     'django_cron',
     'ckeditor',
+    'debug_toolbar',
 
     # PHX
     'components.apps.ComponentsConfig',
@@ -61,6 +62,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -180,7 +182,7 @@ HOST = 'http://127.0.0.1:8000'
 
 # Social media
 # Set these values in local/dev/production config files
-
+#
 # TWITTER = {
 #     'consumer_key': '',
 #     'consumer_secret': '',
@@ -198,6 +200,14 @@ HOST = 'http://127.0.0.1:8000'
 # ANALYTICS = ''
 
 
+# Debug toolbar
+# https://django-debug-toolbar.readthedocs.io/
+#
+# INTERNAL_IPS = [
+#   '127.0.0.1'
+# ]
+
+
 # Cron
 # http://django-cron.readthedocs.io/
 
@@ -208,6 +218,7 @@ CRON_CLASSES = [
 
 # CK Editor
 # https://github.com/django-ckeditor/django-ckeditor
+
 CKEDITOR_CONFIGS = {
     'text': {
         'toolbar': [
