@@ -161,12 +161,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 
-# Emails
-# https://docs.djangoproject.com/en/2.0/topics/email/
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-# CONTACT_EMAIL = ''
-
-
 # Template values
 SITE_TITLE = 'Brighton Phoenix'
 SITE_DESCRIPTION = (
@@ -174,38 +168,6 @@ SITE_DESCRIPTION = (
     'cross-country running, triathlon/duathlon. Coaching and competition, '
     'advice and inspiration – for all ages and abilities.'
 )
-
-
-# Site URL
-HOST = 'http://127.0.0.1:8000'
-
-
-# Social media
-# Set these values in local/dev/production config files
-#
-# TWITTER = {
-#     'consumer_key': '',
-#     'consumer_secret': '',
-#     'oauth_token': '',
-#     'oauth_secret': '',
-# }
-# 
-# FACEBOOK = {
-#   'access_token': '',
-#   'page_id': '',
-# }
-
-
-# Google Analytics
-# ANALYTICS = ''
-
-
-# Debug toolbar
-# https://django-debug-toolbar.readthedocs.io/
-#
-# INTERNAL_IPS = [
-#   '127.0.0.1'
-# ]
 
 
 # Cron
