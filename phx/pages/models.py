@@ -82,6 +82,7 @@ class Component(models.Model):
     order = models.IntegerField(
         blank=True,
         null=True,
+        default=0,
     )
     page = models.ForeignKey(
         Page,
@@ -92,6 +93,9 @@ class Component(models.Model):
     # Metadata
     class Meta:
         ordering = ['order']
+
+    def __str__(self):
+        return '#{0}'.format(self.order + 1)
 
 
 class Editorial(AbstractEditorial):

@@ -38,7 +38,6 @@ class ComponentAdmin(nested_admin.NestedStackedInline):
         QuoteAdmin,
         ImageAdmin,
     ]
-    # exclude = ['order']
     sortable_field_name = 'order'
 
 

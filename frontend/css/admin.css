@@ -1,0 +1,80 @@
+/*
+ * Admin CSS overrides
+ */
+
+/* add new component button - increase prominence */
+
+.djn-group-root > .djn-fieldset > .djn-add-item > .djn-add-handler {
+  background: none;
+  display: block;
+  font-size: 16px;
+  padding-bottom: 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.djn-group-root > .djn-fieldset > .djn-add-item > .djn-add-handler::before {
+  content: "+";
+  display: block;
+  font-size: 72px;
+}
+
+/* hide order field - populated automatically */
+
+.field-order {
+  display: none !important;
+}
+
+/* inline form - display component options alongside one another */
+
+.djn-inline-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+}
+
+@media (min-width: 760px) {
+  .djn-inline-form {
+    flex-direction: row;
+  }
+}
+
+.djn-inline-form .djn-drag-handler,
+.djn-inline-form .djn-module.has-inlines {
+  flex-basis: 100%;
+  margin-bottom: 8px;
+}
+
+.djn-inline-form .djn-group-nested {
+  flex: 1;
+}
+
+.djn-inline-form .djn-group-nested h2 {
+  display: none;
+}
+
+/* inline form - add new component type buttons - increase prominence */
+
+.djn-inline-form .djn-add-item .djn-add-handler {
+  background: none;
+  display: block;
+  font-size: 14px;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.djn-inline-form .djn-add-item .djn-add-handler::before {
+  content: "+";
+  display: block;
+  font-size: 48px;
+}
+
+/* inline form - hide 'remove' link from each component type form
+   - should use the parent 'remove' link instead  */
+
+.djn-inline-form .djn-inline-form .djn-remove-handler,
+.djn-inline-form .djn-inline-form .djn-delete-handler {
+  display: none !important;
+}

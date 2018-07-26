@@ -64,11 +64,15 @@ class Thumbnail(models.Model):
     )
     image_alt = models.CharField(max_length=200, blank=True)
 
+    def __str__(self):
+        return self.news.title
+
 
 class Component(models.Model):
     order = models.IntegerField(
         blank=True,
         null=True,
+        default=0,
     )
     news = models.ForeignKey(
         News,
@@ -79,6 +83,9 @@ class Component(models.Model):
     # Metadata
     class Meta:
         ordering = ['order']
+
+    def __str__(self):
+        return '#{0}'.format(self.order + 1)
 
 
 class Editorial(AbstractEditorial):

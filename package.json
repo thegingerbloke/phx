@@ -4,6 +4,7 @@
   "description": "Brighton Phoenix",
   "scripts": {
     "build:css": "postcss --config postcss.config.js frontend/css/site.css --output frontend/static/css/site.css",
+    "build:admin-css": "postcss --config postcss.config.js frontend/css/admin.css --output frontend/static/css/admin.css",
     "build:js": "webpack --config webpack.config.js",
     "build:templates": "node scripts/build-templates.js",
     "build": "npm-run-all build:*",
@@ -12,6 +13,7 @@
     "lint": "npm-run-all lint:*",
     "precommit": "npm run lint",
     "watch:css": "npm run build:css -- --watch",
+    "watch:admin-css": "npm run build:admin-css -- --watch",
     "watch:js": "npm run build:js -- --watch",
     "watch:templates": "npm run build:templates && chokidar 'frontend/**/*.html' 'frontend/**/*.json' -c 'npm run build:templates'",
     "watch": "npm-run-all --parallel watch:*"

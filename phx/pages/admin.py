@@ -37,12 +37,10 @@ class ComponentAdmin(nested_admin.NestedStackedInline):
         QuoteAdmin,
         ImageAdmin,
     ]
-    # exclude = ['order']
     sortable_field_name = 'order'
 
 
 class PageAdmin(nested_admin.NestedModelAdmin):
-    # list display config
     list_display = ['get_title', 'parent', 'slug']
     ordering = ['slug']
 
