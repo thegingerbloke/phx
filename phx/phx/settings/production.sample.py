@@ -12,7 +12,7 @@ HOST = 'https://...'
 
 # Update to contain the URL(s) that the site will be hosted on
 ALLOWED_HOSTS = [
-  '...',
+    '...',
 ]
 
 # Add production database config
@@ -40,10 +40,10 @@ TWITTER = {
     'oauth_token': '...',
     'oauth_secret': '...',
 }
- 
+
 # Add production facebook keys
 FACEBOOK = {
-  'access_token': '...',
+    'access_token': '...',
 }
 
 # Add production Google Analytics key

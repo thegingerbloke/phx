@@ -12,8 +12,8 @@ HOST = 'http://127.0.0.1:8000'
 
 # Update to contain the URL(s) that the site will be hosted on
 ALLOWED_HOSTS = [
-  '127.0.0.1',
-  'localhost',
+    '127.0.0.1',
+    'localhost',
 ]
 
 # Add local database config
@@ -38,8 +38,8 @@ TWITTER = {
 
 # Add local facebook keys
 FACEBOOK = {
-  'page_id': '...',
-  'access_token': '...'
+    'page_id': '...',
+    'access_token': '...'
 }
 
 # Add local Google Analytics key
@@ -47,5 +47,5 @@ ANALYTICS = '...'
 
 # Add IP addresses to enable the debug toolbar
 INTERNAL_IPS = [
-  '127.0.0.1'
+    '127.0.0.1'
 ]

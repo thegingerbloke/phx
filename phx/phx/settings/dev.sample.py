@@ -12,7 +12,7 @@ HOST = 'https://...'
 
 # Update to contain the URL(s) that the site will be hosted on
 ALLOWED_HOSTS = [
-  '...',
+    '...',
 ]
 
 # Add dev database config
@@ -43,8 +43,8 @@ TWITTER = {
 
 # Add dev facebook keys
 FACEBOOK = {
-  'access_token': '...',
-  'page_id': '...',
+    'access_token': '...',
+    'page_id': '...',
 }
 
 # Add dev Google Analytics key

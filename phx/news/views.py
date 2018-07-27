@@ -13,6 +13,9 @@ class NewsListView(generic.ListView):
         context = super(NewsListView, self).get_context_data(**kwargs)
         context['breadcrumb'] = self.generate_breadcrumb()
         context['search'] = self.request.GET.get('search', '')
+        context['hero'] = {
+            'title': 'News'
+        }
 
         # slug = self.request.path
         # page = get_object_or_404(Page, slug=slug)

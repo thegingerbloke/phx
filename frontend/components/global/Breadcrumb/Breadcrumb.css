@@ -2,6 +2,12 @@
  * @define Breadcrumb; use strict
  */
 
+/*
+.Breadcrumb {
+  border-bottom: 1px solid var(--colour-blue-light);
+}
+*/
+
 .Breadcrumb-list {
   list-style: none;
   margin: 0;

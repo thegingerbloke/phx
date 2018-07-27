@@ -20,7 +20,7 @@
 
 .ResultsList-filterList {
   display: inline-block;
-  margin-bottom: var(--gutter);
+  margin-bottom: var(--gutter-double);
 }
 
 .ResultsList-filterItem {
@@ -42,7 +42,7 @@
 /* Filters - search */
 
 .ResultsList-filterSearch {
-  margin-bottom: var(--gutter);
+  margin-bottom: var(--gutter-double);
   position: relative;
 }
 
