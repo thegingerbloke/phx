@@ -1,0 +1,24 @@
+[
+  {
+    "model": "contact.contact",
+    "pk": 1,
+    "fields": {
+      "name": "Pete G",
+      "email": "pete@petegoodman.com",
+      "created_date": "2018-07-26T11:44:01.379Z",
+      "modified_date": "2018-07-27T10:40:01.009Z"
+    }
+  },
+  {
+    "model": "contact.topic",
+    "pk": 1,
+    "fields": {
+      "topic": "Website",
+      "created_date": "2018-07-26T11:44:14.662Z",
+      "modified_date": "2018-07-27T10:40:07.657Z",
+      "contact": [
+        1
+      ]
+    }
+  }
+]

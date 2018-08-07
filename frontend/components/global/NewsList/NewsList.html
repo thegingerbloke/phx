@@ -26,18 +26,18 @@
           <a class="NewsList-link" href="/news/{{ story.id }}/{{ story.slug }}">
             <div class="NewsList-thumb">
               {% if story.thumbnail %}
-                <img src="{% thumbnail story.thumbnail.image 700x500 crop %}" alt="{{story.thumbnail.image_alt}}" />
+                <img class="NewsList-thumbImg" src="{% thumbnail story.thumbnail.image 700x500 crop %}" alt="{{story.thumbnail.image_alt}}" />
               {% else %}
-                <img src="{% static 'img/no-image-bg.jpg' %}" alt="" />
+                <img class="NewsList-thumbImg" src="{% static 'img/no-image-bg.jpg' %}" alt="" />
               {% endif %}
             </div>
             <div class="NewsList-content">
               <p class="NewsList-text">
                 <span class="NewsList-subtitle">{{story.title}}</span>
-                <em>{{story.created_date|date:"l dS F Y"}}</em>
+                <em>{{story.created_date|date:'D j M Y'}}</em>
               </p>
               <p class="NewsList-text">
-                {{story.summary|truncatewords_html:20}}
+                {{story.summary|truncatewords_html:50}}
               </p>
             </div>
           </a>

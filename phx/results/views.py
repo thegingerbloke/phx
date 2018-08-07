@@ -33,7 +33,6 @@ class ResultsListView(generic.ListView):
                 Q(summary__icontains=search) |
                 Q(results__icontains=search) |
                 Q(fixture__title__icontains=search) |
-                Q(fixture__description__icontains=search) |
                 Q(fixture__location__icontains=search) |
                 Q(fixture__categories__abbreviation__icontains=search) |
                 Q(fixture__categories__title__icontains=search)

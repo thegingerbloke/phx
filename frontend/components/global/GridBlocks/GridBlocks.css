@@ -114,7 +114,11 @@
 
 .GridBlocks-text {
   color: var(--colour-black);
-  margin-bottom: var(--gutter);
+  margin-top: var(--gutter);
+}
+
+.GridBlocks-text:first-child {
+  margin-top: 0;
 }
 
 .GridBlocks-block--dark .GridBlocks-text {
@@ -137,7 +141,7 @@
 /* blocks - lists */
 
 .GridBlocks-item {
-  margin-bottom: var(--gutter);
+  margin-bottom: var(--gutter-double);
 }
 
 .GridBlocks-itemLink {
@@ -145,10 +149,30 @@
   text-decoration: none;
 }
 
+.GridBlocks-itemContent {
+  flex-basis: 60%;
+}
+
 .GridBlocks-itemThumb {
-  margin-bottom: var(--gutter);
+  flex-basis: 40%;
   margin-right: var(--gutter);
-  max-width: 30%;
+  position: relative;
+}
+
+.GridBlocks-itemThumb::after {
+  content: "";
+  display: block;
+  padding-top: 71.4%;
+  width: 100%;
+}
+
+.GridBlocks-itemThumbImg {
+  left: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
 }
 
 .GridBlocks-itemLink .GridBlocks-subtitle {
@@ -226,13 +250,13 @@
   padding: var(--gutter-half) 0;
   text-align: left;
   vertical-align: top;
-  width: 50%;
+  width: 40%;
 }
 
 .GridBlocks-tableData {
   padding: var(--gutter-half) 0;
   vertical-align: top;
-  width: 25%;
+  width: 30%;
 }
 
 .GridBlocks-tableData:last-child {

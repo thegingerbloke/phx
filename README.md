@@ -92,7 +92,13 @@ Once you have cloned this repo, run through the following steps:
 
 ### Optional site setup
 
-* Once up and running, from the admin area create a page for every top-level section of the site:
+* You can automate the site population with the following command:
+
+  ```
+  python3 manage.py loaddata fixtures results contact pages news
+  ```
+
+* Alternatively this can be done manually - from the admin area create a page for every top-level section of the site:
 
   - About
   - Fixtures
@@ -156,6 +162,11 @@ In order to set this up, the following `crontab` should be set up on the server:
 
 
 ## Development
+
+All CSS/JS code should sit in the `/frontend` directory.
+
+Anything in the `/frontend/static` directory will be served by the app
+
 
 ### Components
 

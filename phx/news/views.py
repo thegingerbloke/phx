@@ -67,6 +67,9 @@ class NewsDetailView(generic.DetailView):
             "previous": self.get_previous(),
             "next": self.get_next(),
         }
+        context['hero'] = {
+            'title': 'News'
+        }
         return context
 
     def get_previous(self):

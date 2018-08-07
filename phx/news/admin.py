@@ -43,6 +43,15 @@ class ComponentAdmin(nested_admin.NestedStackedInline):
 
 class ThumbnailAdmin(nested_admin.NestedStackedInline):
     model = Thumbnail
+    readonly_fields = ['current_image']
+
+    def current_image(self, obj):
+        return format_html(
+            '<img src="{0}" style="max-width:200px" />'.format(
+                obj.image.url
+            )
+        )
+
 
 
 class NewsAdmin(nested_admin.NestedModelAdmin):
@@ -50,11 +59,10 @@ class NewsAdmin(nested_admin.NestedModelAdmin):
     list_display_links = ['current_image', 'title']
 
     exclude = ['author']
-    readonly_fields = ['current_image']
 
     def current_image(self, obj):
         return format_html(
-            '<img src="{0}" style="max-width:200px" />'.format(
+            '<img src="{0}" style="max-width:100px" />'.format(
                 obj.thumbnail.image.url
             )
         )

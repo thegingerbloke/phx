@@ -24,6 +24,10 @@
   .Quote--imageRight {
     flex-direction: row-reverse;
   }
+
+  .Quote--centre {
+    text-align: center;
+  }
 }
 
 /* Quote - colour variants */

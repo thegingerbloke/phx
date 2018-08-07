@@ -17,14 +17,16 @@
 
 @media (--large) {
   .Content-subnav {
+    flex-basis: 240px;
+    flex-shrink: 0;
     margin-right: var(--gutter-double);
-    width: 240px;
   }
 }
 
 @media (--large) {
   .Content-main {
     flex: 1;
+    overflow-x: hidden;
   }
 }
 

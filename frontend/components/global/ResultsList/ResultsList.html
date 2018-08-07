@@ -49,7 +49,7 @@
             {{result.fixture.title}}
           </h3>
           <p class="ResultsList-subtitle">
-            <span class="ResultsList-date">{{result.fixture.event_date}}</span>
+            <span class="ResultsList-date">{{result.fixture.event_date|date:'D j M Y'}}</span>
             {%if result.fixture.location %}
               - <span class="ResultsList-location">{{result.fixture.location}}</span>
             {% endif %}
@@ -57,11 +57,11 @@
           <p class="ResultsList-categories">
             {{result.fixture.categories.all|join:', '}}
           </p>
-          <p class="ResultsList-summary">
+          <div class="ResultsList-summary">
             <div class="Editorial">
               {{result.summary|safe}}
             </div>
-          </p>
+          </div>
           <p class="ResultsList-results">
             {{result.results|safe}}
           </p>

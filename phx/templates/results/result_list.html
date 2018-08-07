@@ -10,7 +10,8 @@
 
 <div class="Content-component">
     {% include '../components/global/ResultsList/ResultsList.html' with results=result_list categories=categories %}
-    {% include '../components/global/Pagination/Pagination.html' with data=page_obj %}
+    {% if is_paginated %}{% load paginator %}{% paginator 4 %}{% endif %}
 </div>
+
 
 {% endblock %}

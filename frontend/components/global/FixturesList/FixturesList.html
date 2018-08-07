@@ -47,7 +47,7 @@
                         {{fixture.title}}
                     </a>
                 </td>
-                <td>{{fixture.event_date}}</td>
+                <td>{{fixture.event_date|date:'D j M Y'}}</td>
                 <td>{{fixture.location}}</td>
                 <td>
                     {% for category in fixture.categories.all %}

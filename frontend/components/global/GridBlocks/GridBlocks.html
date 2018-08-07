@@ -21,7 +21,9 @@
     <p class="GridBlocks-text">
       {{data.phx.text|linebreaksbr}}
     </p>
-    <a class="GridBlocks-link" href="/about/">Read more about Brighton Phoenix</a>
+    <p class="GridBlocks-text">
+      <a class="GridBlocks-link" href="/about/">Read more about Brighton Phoenix</a>
+    </p>
   </div>
 
   <div class="GridBlocks-block GridBlocks-block--news GridBlocks-block--light">
@@ -34,15 +36,15 @@
           <a class="GridBlocks-itemLink" href="/news/{{ story.id }}/{{ story.slug }}">
             <div class="GridBlocks-itemThumb">
               {% if story.thumbnail %}
-                <img src="{% thumbnail story.thumbnail.image 350x250 crop %}" alt="{{story.thumbnail.image_alt}}" />
+                <img  class="GridBlocks-itemThumbImg" src="{% thumbnail story.thumbnail.image 350x250 crop %}" alt="{{story.thumbnail.image_alt}}" />
               {% else %}
-                <img src="{% static 'img/no-image-bg.jpg' %}" alt="" />
+                <img  class="GridBlocks-itemThumbImg" src="{% static 'img/no-image-bg.jpg' %}" alt="" />
               {% endif %}
             </div>
             <div class="GridBlocks-itemContent">
               <p class="GridBlocks-text">
                 <span class="GridBlocks-subtitle">{{story.title}}</span>
-                <em>{{story.created_date}}</em>
+                <em>{{story.created_date|date:'D j M Y'}}</em>
               </p>
               <p class="GridBlocks-text">
                 {{story.summary|truncatewords_html:20}}
@@ -73,7 +75,7 @@
       <tr class="GridBlocks-tableRow">
         <th class="GridBlocks-tableHead">{{fixture.title}}</th>
         <td class="GridBlocks-tableData">{{fixture.location}}</td>
-        <td class="GridBlocks-tableData">{{fixture.event_date}}</td>
+        <td class="GridBlocks-tableData">{{fixture.event_date|date:'D j M Y'}}</td>
       </tr>
       {% endfor %}
     </table>
@@ -99,7 +101,7 @@
         <tr class="GridBlocks-tableRow">
           <th class="GridBlocks-tableHead">{{result.fixture.title}}</th>
           <td class="GridBlocks-tableData">{{result.fixture.location}}</td>
-          <td class="GridBlocks-tableData">{{result.fixture.event_date}}</td>
+          <td class="GridBlocks-tableData">{{result.fixture.event_date|date:'D j M Y'}}</td>
         </tr>
         {% endfor %}
     </table>
@@ -113,6 +115,8 @@
     <p class="GridBlocks-text">
       {{data.join.text}}
     </p>
-    <a class="GridBlocks-link" href="/membership/join/">Join Phoenix</a>
+    <p class="GridBlocks-text">
+      <a class="GridBlocks-link" href="/membership/join/">Join Phoenix</a>
+    </p>
   </div>
 </div>

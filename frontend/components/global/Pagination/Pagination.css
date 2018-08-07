@@ -4,6 +4,7 @@
 
 .Pagination {
   margin-bottom: var(--gutter-double);
+  text-align: center;
 }
 
 .Pagination-item {

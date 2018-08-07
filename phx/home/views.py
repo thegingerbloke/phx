@@ -13,11 +13,11 @@ def index(request):
 
     fixtures = Fixture.objects.filter(
         event_date__gte=timezone.now()
-    ).order_by('event_date')[:3]
+    ).order_by('event_date')[:5]
 
     results = Result.objects.select_related('fixture').filter(
         fixture__event_date__lte=timezone.now()
-    ).order_by('-fixture__event_date')[:3]
+    ).order_by('-fixture__event_date')[:5]
 
     news = News.objects.select_related('thumbnail').all().order_by(
         '-created_date'

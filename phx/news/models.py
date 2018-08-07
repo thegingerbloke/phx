@@ -15,7 +15,7 @@ class News(models.Model):
     slug = AutoSlugField(
         populate_from='title',
         help_text='This is used as the URL for this news item',
-        unique=True
+        unique=False
     )
     summary = models.TextField(
         max_length=1000,
@@ -99,7 +99,7 @@ class Editorial(AbstractEditorial):
 class Feature(AbstractFeature):
     def get_upload_path(self, filename):
         id = self.component.news_id
-        return 'news/{0}/features/{1}'.format(id, filename)
+        return 'news/{0}/feature/{1}'.format(id, filename)
 
     component = models.OneToOneField(
         Component,
@@ -112,7 +112,7 @@ class Feature(AbstractFeature):
 class Quote(AbstractQuote):
     def get_upload_path(self, filename):
         id = self.component.news_id
-        return 'news/{0}/quotes/{1}'.format(id, filename)
+        return 'news/{0}/quote/{1}'.format(id, filename)
 
     component = models.OneToOneField(
         Component,
@@ -125,7 +125,7 @@ class Quote(AbstractQuote):
 class Image(AbstractImage):
     def get_upload_path(self, filename):
         id = self.component.news_id
-        return 'news/{0}/images/{1}'.format(id, filename)
+        return 'news/{0}/image/{1}'.format(id, filename)
 
     component = models.OneToOneField(
         Component,

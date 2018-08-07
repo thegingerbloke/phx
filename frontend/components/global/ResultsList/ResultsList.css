@@ -109,12 +109,13 @@
 }
 
 .ResultsList-item:nth-child(even) {
-  background-color: var(--colour-blue-light);
+  background-color: var(--colour-blue-xlight);
 }
 
 .ResultsList-title {
   font-size: var(--font-size-h3);
   margin-bottom: var(--gutter-quarter);
+  margin-right: 10rem;
 }
 
 .ResultsList-subtitle {
@@ -124,8 +125,10 @@
 
 .ResultsList-categories {
   font-size: var(--font-size-small);
+  max-width: 10rem;
   position: absolute;
   right: var(--gutter);
+  text-align: right;
   top: var(--gutter);
 }
 
@@ -139,12 +142,16 @@
 
 /* Table styles */
 
+.ResultsList .Editorial {
+  overflow-x: auto;
+}
+
 .ResultsList table {
   border-collapse: collapse;
   border-spacing: 0;
   border-width: 0;
   margin-bottom: var(--gutter-double);
-  width: 100%;
+  white-space: nowrap;
 }
 
 .ResultsList tr:first-child {
@@ -162,16 +169,20 @@
 .ResultsList tr:first-child td,
 .ResultsList tr:first-child th {
   font-weight: bold;
-  padding: var(--gutter-half) 0;
+  padding: var(--gutter-half);
   text-align: left;
   vertical-align: top;
 }
 
 .ResultsList td {
   border-width: 0;
-  padding: var(--gutter-half) 0;
+  padding: var(--gutter-half);
   vertical-align: top;
   width: 25%;
+}
+
+.ResultsList-item:nth-child(even) tr:nth-child(even) td {
+  background-color: var(--colour-blue-light);
 }
 
 /* Links */

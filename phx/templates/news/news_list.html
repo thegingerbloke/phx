@@ -10,7 +10,7 @@
 
 <div class="Content-component">
     {% include '../components/global/NewsList/NewsList.html' with news=news_list %}
-    {% include '../components/global/Pagination/Pagination.html' with data=page_obj %}
+    {% if is_paginated %}{% load paginator %}{% paginator 4 %}{% endif %}
 </div>
 
 {% endblock %}
