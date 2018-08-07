@@ -38,7 +38,10 @@ class News(models.Model):
 
     # Methods
     def get_absolute_url(self):
-        return reverse('news-detail', args=[str(self.id)])
+        return reverse('news-detail', kwargs={
+            'pk': self.id,
+            'slug': self.slug,
+        })
 
     def __str__(self):
         return self.title
