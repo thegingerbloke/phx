@@ -29,6 +29,10 @@ EMAIL_HOST_PASSWORD = ''
 EMAIL_HOST_USER = '...@gmail.com'
 EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+SERVER_EMAIL = EMAIL_HOST_USER
+
+# Add error reporting email accounts
+ADMINS = []
 
 # Add production email recipient
 CONTACT_EMAIL = EMAIL_HOST_USER
@@ -51,3 +55,11 @@ ANALYTICS = '...'
 
 # Add IP addresses to enable the debug toolbar
 INTERNAL_IPS = []
+
+# SSL
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+# SECURE_SSL_REDIRECT = True
+
+# https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-SECURE_PROXY_SSL_HEADER
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

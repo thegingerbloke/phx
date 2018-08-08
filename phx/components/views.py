@@ -16,7 +16,7 @@ class ComponentsListView(TemplateView):
 
     def build_components_list(self):
         groups = []
-        group_path = os.path.join(settings.BASE_DIR, 'templates/components/')
+        group_path = os.path.join(settings.DJANGO_DIR, 'templates/components/')
         group_dirs = self.get_directories(group_path)
 
         for group_dir in group_dirs:
@@ -61,7 +61,7 @@ class ComponentsDetailView(TemplateView):
         ).format(
             **self.kwargs
         )
-        data_path = settings.BASE_DIR + data_path
+        data_path = settings.DJANGO_DIR + data_path
         with open(data_path, encoding='utf-8') as data_file:
             context['data'] = json.load(data_file)
 

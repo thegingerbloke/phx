@@ -85,6 +85,12 @@ Once you have cloned this repo, run through the following steps:
   python3 manage.py runserver
   ```
 
+  or
+
+  ```
+  django-admin runserver --pythonpath=. --settings=phx.settings.local
+  ```
+
 * Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in a browser
 
 * To see the admin area, open [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin) in a browser

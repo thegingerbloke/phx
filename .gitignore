@@ -27,10 +27,10 @@ __pycache__
 env/
 
 # Uploaded assets
-phx/media/
+media/
 
 # Static assets
-phx/static/
+static/
 
 # Compiled frontend files
 frontend/static/css
