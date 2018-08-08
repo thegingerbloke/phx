@@ -63,4 +63,3 @@ class Message(models.Model):
     class Meta:
         verbose_name = 'messages received'
         verbose_name_plural = 'messages received'
-

@@ -1,4 +1,4 @@
-from .base import *
+from .base import * # noqa
 
 # Set debug mode
 DEBUG = False
@@ -33,7 +33,7 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # Add dev email recipient
 CONTACT_EMAIL = '...@gmail.com'
 
-# Add dev twitter keys
+# Add dev twitter keys
 TWITTER = {
     'consumer_key': '...',
     'consumer_secret': '...',

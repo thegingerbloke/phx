@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 from error.views import Error400View, Error403View, Error404View, Error500View
 
 urlpatterns = [
-    # app
+    # app
     path('admin/', phx_admin.urls),
     path('', include('home.urls')),
     path('news/', include('news.urls')),

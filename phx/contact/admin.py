@@ -30,4 +30,3 @@ class MessageAdmin(admin.ModelAdmin):
 phx_admin.register(Contact, ContactAdmin)
 phx_admin.register(Topic, TopicAdmin)
 phx_admin.register(Message, MessageAdmin)
-

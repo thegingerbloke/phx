@@ -22,7 +22,7 @@ class ResultAdmin(admin.ModelAdmin):
     def fixture_event_date(self, obj):
         return obj.fixture.event_date
 
-    # if updating, add custom readonly fixture detail field
+    # if updating, add custom readonly fixture detail field
     def selected_fixture(self, obj):
         return '{0} ({1})'.format(
             obj.fixture.title,

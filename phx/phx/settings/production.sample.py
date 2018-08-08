@@ -1,4 +1,4 @@
-from .base import *
+from .base import * # noqa
 
 # Set debug mode
 DEBUG = False
@@ -37,7 +37,7 @@ ADMINS = []
 # Add production email recipient
 CONTACT_EMAIL = EMAIL_HOST_USER
 
-# Add production twitter keys
+# Add production twitter keys
 TWITTER = {
     'consumer_key': '...',
     'consumer_secret': '...',

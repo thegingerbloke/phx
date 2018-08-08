@@ -32,7 +32,8 @@ def paginator(context, adjacent_pages=2):
         endPage = paginator.num_pages + 1
 
     page_numbers = [
-        n for n in range(startPage, endPage) if n > 0 and n <= paginator.num_pages
+        n for n in range(startPage, endPage) if (n > 0 and
+                                                 n <= paginator.num_pages)
     ]
 
     return {

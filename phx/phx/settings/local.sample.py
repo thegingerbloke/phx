@@ -1,4 +1,4 @@
-from .base import *
+from .base import * # noqa
 
 # Set debug mode
 DEBUG = True
@@ -28,7 +28,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Add local email recipient
 CONTACT_EMAIL = '...@gmail.com'
 
-# Add local twitter keys
+# Add local twitter keys
 TWITTER = {
     'consumer_key': '...',
     'consumer_secret': '...',
