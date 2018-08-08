@@ -23,7 +23,9 @@ class ResultsListView(generic.ListView):
         return context
 
     def get_queryset(self):
-        query = Result.objects.select_related('fixture').filter(
+        query = Result.objects.prefetch_related(
+            'fixture__categories'
+        ).select_related('fixture').filter(
             fixture__event_date__lte=timezone.now(),
         ).order_by('-fixture__event_date').distinct()
 

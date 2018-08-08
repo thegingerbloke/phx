@@ -7,6 +7,8 @@ def generate_subnav(slug, page):
             'title': child.title,
             'linkUrl': child.slug,
             'active': child.slug == slug,
-            'children': generate_subnav(slug, child)
+            'children': (
+                generate_subnav(slug, child) if child.slug in slug else []
+            )
         })
     return pages

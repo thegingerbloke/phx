@@ -26,7 +26,7 @@ class FixturesListView(generic.ListView):
         return context
 
     def get_queryset(self):
-        return Fixture.objects.filter(
+        return Fixture.objects.prefetch_related('categories').filter(
             event_date__gte=timezone.now(),
         ).order_by('event_date')
 
