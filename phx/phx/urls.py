@@ -44,7 +44,10 @@ handler500 = Error500View.as_view()
 
 # debug toolbar
 if settings.DEBUG:
-    import debug_toolbar
-    urlpatterns = [
-        re_path(r'^__debug__/', include(debug_toolbar.urls)),
-    ] + urlpatterns
+    try:
+        import debug_toolbar
+        urlpatterns = [
+            re_path(r'^__debug__/', include(debug_toolbar.urls)),
+        ] + urlpatterns
+    except ImportError:
+        pass

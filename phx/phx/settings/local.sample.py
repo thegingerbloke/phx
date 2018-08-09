@@ -3,6 +3,14 @@ from .base import * # noqa
 # Set debug mode
 DEBUG = True
 
+INSTALLED_APPS += [ # noqa
+    'debug_toolbar',
+]
+
+MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+] + MIDDLEWARE # noqa
+
 # Generate a new secret key, e.g.
 # https://www.miniwebtool.com/django-secret-key-generator/
 SECRET_KEY = 'k@sf6to-5%xri=u0gqyzez2&ypvo+hp&)e4pp$czwn&*ue5*_3'

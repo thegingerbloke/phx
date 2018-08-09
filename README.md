@@ -58,7 +58,7 @@ Once you have cloned this repo, run through the following steps:
 * Install requirements:
 
   ```
-  pip3 install -r requirements.txt
+  pip3 install -r requirements/local.txt
   ```
 
 * Move from the root directory to the `phx` directory:
@@ -215,6 +215,26 @@ To set up Prettier with VS Code to automatically format CSS/JS on save, add this
     "configFile": "eslint.config.js"
   }
 }
+```
+
+## Linting and Testing
+
+To lint the frontend code:
+
+```
+npm run lint
+```
+
+To lint the backend code:
+
+```
+flake8
+```
+
+To test the backend code:
+
+```
+pylint
 ```
 
 ## Deployment

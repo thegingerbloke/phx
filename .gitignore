@@ -39,3 +39,7 @@ phx/templates/components
 
 # Django
 phx/db.sqlite3
+
+# Tests
+__pycache__/
+.pytest_cache

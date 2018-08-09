@@ -12,13 +12,13 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
-# Build paths inside the project like this: os.path.join(DJANGO_DIR, ...)
-DJANGO_DIR = os.path.dirname(
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+BASE_DIR = os.path.dirname(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 )
 
 #
-ROOT_DIR = os.path.dirname(DJANGO_DIR)
+PROJECT_ROOT = os.path.dirname(BASE_DIR)
 
 
 # Quick-start development settings - unsuitable for production
@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'nested_admin',
     'django_cron',
     'ckeditor',
-    'debug_toolbar',
 
     # PHX
     'components.apps.ComponentsConfig',
@@ -65,7 +64,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -80,7 +78,7 @@ ROOT_URLCONF = 'phx.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(DJANGO_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -90,7 +88,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
 
                 # PHX
-                'phx.context_processors.globals.globals',
+                'phx.context_processors.global_config.global_config',
                 'phx.context_processors.hero.hero',
                 'phx.context_processors.nav.nav',
             ],
@@ -111,7 +109,7 @@ WSGI_APPLICATION = 'phx.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(DJANGO_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -152,16 +150,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(ROOT_DIR, 'static')
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = [
-    os.path.join(ROOT_DIR, 'frontend', 'static'),
+    os.path.join(PROJECT_ROOT, 'frontend', 'static'),
 ]
 
 # Media files (uploaded through Django admin)
-MEDIA_ROOT = os.path.join(ROOT_DIR, 'media')
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 MEDIA_URL = '/media/'
 
 

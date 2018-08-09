@@ -1,8 +1,10 @@
 from django.conf import settings
 
 
-def globals(request):
-    """Expose config values to templates"""
+def global_config(request):
+    """
+    Add config info to the global template context
+    """
     config = {
         'HOST': settings.HOST,
         'SITE_TITLE': settings.SITE_TITLE,

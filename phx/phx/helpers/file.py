@@ -1,4 +1,7 @@
 def file_size_string(size):
+    """
+    convert a file size into a friendly string
+    """
     if size < 512000:
         size = size / 1024.0
         ext = 'kb'

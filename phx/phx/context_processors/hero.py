@@ -2,6 +2,9 @@ from pages.models import Page
 
 
 def hero(request):
+    """
+    Add page/hero info to the global template context
+    """
     path = request.path
 
     try:

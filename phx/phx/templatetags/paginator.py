@@ -10,6 +10,9 @@ from django import template
 register = template.Library()
 
 
+@register.inclusion_tag(
+    'components/global/Pagination/Pagination.html',
+    takes_context=True)
 def paginator(context, adjacent_pages=2):
     """
     To be used in conjunction with the object_list generic view.
@@ -51,9 +54,3 @@ def paginator(context, adjacent_pages=2):
         'show_last': paginator.num_pages not in page_numbers,
         'request': request,
     }
-
-
-register.inclusion_tag(
-    'components/global/Pagination/Pagination.html',
-    takes_context=True
-)(paginator)

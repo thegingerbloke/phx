@@ -1,4 +1,8 @@
 def generate_subnav(slug, page):
+    """
+    Given a slug and a page model instance,
+    generate subnav content
+    """
     pages = []
     children = page.children.all()
 

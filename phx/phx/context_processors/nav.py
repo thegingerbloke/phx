@@ -2,6 +2,9 @@ from django.urls import reverse
 
 
 def nav(request):
+    """
+    Add nav info to the global template context
+    """
     items = [
         {
             'linkUrl': '/about/',
