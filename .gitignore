@@ -22,6 +22,7 @@ __pycache__
 **/*/settings/local.py
 **/*/settings/dev.py
 **/*/settings/production.py
+**/*/settings/test.py
 
 # Distribution / packaging
 env/
