@@ -15,7 +15,6 @@ class ContactIndexView(FormView):
 
     def get_context_data(self, **kwargs):
         context = super(ContactIndexView, self).get_context_data(**kwargs)
-
         slug = self.request.path
         page = get_object_or_404(Page, slug=slug)
         context['page'] = page

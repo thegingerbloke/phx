@@ -59,8 +59,12 @@ class Page(models.Model):
     # Methods
     def get_absolute_url(self):
         return reverse('page-detail', kwargs={
-            'slug': self.slug.lstrip('/').rstrip('/')
+            'slug': self.get_slug()
         })
+
+    # strip tags from slug before returning
+    def get_slug(self):
+        return self.slug.lstrip('/').rstrip('/')
 
     # disallow selecting self as parent
     def clean(self):

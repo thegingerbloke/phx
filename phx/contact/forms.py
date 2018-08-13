@@ -65,8 +65,8 @@ class ContactForm(forms.Form):
             additional_recipients = []
 
         subject = 'Website message received'
-        email = settings.CONTACT_EMAIL
-        recipients = [settings.CONTACT_EMAIL] + additional_recipients
+        email_from = settings.CONTACT_EMAIL
+        email_to = [settings.CONTACT_EMAIL] + additional_recipients
         message = (
             'Website message received on {0}\n\n'
             'From: {1}\n'
@@ -83,6 +83,6 @@ class ContactForm(forms.Form):
         )
 
         try:
-            send_mail(subject, message, email, recipients)
+            send_mail(subject, message, email_from, email_to)
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
