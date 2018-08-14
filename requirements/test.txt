@@ -1,0 +1,5 @@
+-r base.txt
+
+factory-djoy==1.0.0
+pytest-django==3.3.3
+flake8==3.5.0

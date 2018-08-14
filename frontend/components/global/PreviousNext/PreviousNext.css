@@ -4,20 +4,32 @@
 
 .PreviousNext {
   border-top: 1px solid var(--colour-grey-light);
-  display: flex;
-  justify-content: space-between;
   margin-top: var(--gutter-double);
   padding-top: var(--gutter);
 }
 
+@media (--medium) {
+  .PreviousNext {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .PreviousNext-link {
   color: var(--colour-blue-dark);
+  display: block;
   line-height: var(--line-height-default);
-  max-width: 40%;
+}
+
+@media (--medium) {
+  .PreviousNext-link {
+    max-width: 40%;
+  }
 }
 
 .PreviousNext-link--next {
   margin-left: auto;
+  text-align: right;
 }
 
 .PreviousNext-link:hover {

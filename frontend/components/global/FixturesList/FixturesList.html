@@ -29,36 +29,34 @@
   </div>
 
   {% if fixtures %}
-    <div class="Editorial">
-      <table class="FixturesList-table">
-        <thead>
-          <tr>
-            <th>Race</th>
-            <th>Date</th>
-            <th>Location</th>
-            <th>Categories</th>
+    <table class="FixturesList-table">
+      <thead class="FixturesList-tableHead">
+        <tr>
+          <th class="FixturesList-tableHeadCell">Race</th>
+          <th class="FixturesList-tableHeadCell">Date</th>
+          <th class="FixturesList-tableHeadCell">Location</th>
+          <th class="FixturesList-tableHeadCell">Categories</th>
+        </tr>
+      </thead>
+      <tbody class="FixturesList-tableBody">
+          {% for fixture in fixtures %}
+          <tr class="FixturesList-row js-FixturesList-row" data-categories="{{fixture.categories.all|join:', '}}">
+              <td class="FixturesList-tableCell">
+                  <a class="FixturesList-tableLink" href="{{fixture.link_url}}">
+                      {{fixture.title}}
+                  </a>
+              </td>
+              <td class="FixturesList-tableCell">{{fixture.event_date|date:'D j M Y'}}</td>
+              <td class="FixturesList-tableCell">{{fixture.location}}</td>
+              <td class="FixturesList-tableCell">
+                  {% for category in fixture.categories.all %}
+                  {{category.abbreviation}}
+                  {% endfor %}
+              </td>
           </tr>
-        </thead>
-        <tbody>
-            {% for fixture in fixtures %}
-            <tr class="FixturesList-row js-FixturesList-row" data-categories="{{fixture.categories.all|join:', '}}">
-                <td>
-                    <a href="{{fixture.link_url}}">
-                        {{fixture.title}}
-                    </a>
-                </td>
-                <td>{{fixture.event_date|date:'D j M Y'}}</td>
-                <td>{{fixture.location}}</td>
-                <td>
-                    {% for category in fixture.categories.all %}
-                    {{category.abbreviation}}
-                    {% endfor %}
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-      </table>
-    </div>
+          {% endfor %}
+      </tbody>
+    </table>
 
   {% else %}
     <div class="Editorial">

@@ -115,7 +115,12 @@
 .ResultsList-title {
   font-size: var(--font-size-h3);
   margin-bottom: var(--gutter-quarter);
-  margin-right: 10rem;
+}
+
+@media (--medium) {
+  .ResultsList-title {
+    margin-right: 10rem;
+  }
 }
 
 .ResultsList-subtitle {
@@ -125,11 +130,17 @@
 
 .ResultsList-categories {
   font-size: var(--font-size-small);
-  max-width: 10rem;
-  position: absolute;
-  right: var(--gutter);
+  margin-bottom: var(--gutter);
   text-align: right;
-  top: var(--gutter);
+}
+
+@media (--medium) {
+  .ResultsList-categories {
+    max-width: 10rem;
+    position: absolute;
+    right: var(--gutter);
+    top: var(--gutter);
+  }
 }
 
 .ResultsList-summary {

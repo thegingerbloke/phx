@@ -73,8 +73,12 @@
     <table class="GridBlocks-table">
       {% for fixture in data.fixtures.data %}
       <tr class="GridBlocks-tableRow">
-        <th class="GridBlocks-tableHead">{{fixture.title}}</th>
-        <td class="GridBlocks-tableData">{{fixture.location}}</td>
+        <th class="GridBlocks-tableHead">
+          {{fixture.title}}
+          {% if fixture.location %}
+            ({{fixture.location}})
+          {% endif %}
+        </th>
         <td class="GridBlocks-tableData">{{fixture.event_date|date:'D j M Y'}}</td>
       </tr>
       {% endfor %}
@@ -99,8 +103,12 @@
     <table class="GridBlocks-table">
         {% for result in data.results.data %}
         <tr class="GridBlocks-tableRow">
-          <th class="GridBlocks-tableHead">{{result.fixture.title}}</th>
-          <td class="GridBlocks-tableData">{{result.fixture.location}}</td>
+          <th class="GridBlocks-tableHead">
+            {{result.fixture.title}}
+            {% if result.fixture.location %}
+              ({{result.fixture.location}})
+            {% endif %}
+          </th>
           <td class="GridBlocks-tableData">{{result.fixture.event_date|date:'D j M Y'}}</td>
         </tr>
         {% endfor %}

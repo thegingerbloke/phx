@@ -150,5 +150,6 @@
 
 .NewsList-text {
   color: var(--colour-black);
+  line-height: var(--line-height-editorial);
   margin-bottom: var(--gutter);
 }

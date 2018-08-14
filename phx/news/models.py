@@ -15,7 +15,8 @@ class News(models.Model):
     slug = AutoSlugField(
         populate_from='title',
         help_text='This is used as the URL for this news item',
-        unique=False
+        unique=False,
+        max_length=200
     )
     summary = models.TextField(
         max_length=1000,

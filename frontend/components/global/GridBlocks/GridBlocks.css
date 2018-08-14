@@ -145,18 +145,30 @@
 }
 
 .GridBlocks-itemLink {
-  display: flex;
   text-decoration: none;
 }
 
-.GridBlocks-itemContent {
-  flex-basis: 60%;
+@media (--medium) {
+  .GridBlocks-itemLink {
+    display: flex;
+  }
+
+  .GridBlocks-itemContent {
+    flex-basis: 60%;
+  }
 }
 
 .GridBlocks-itemThumb {
-  flex-basis: 40%;
-  margin-right: var(--gutter);
+  margin-bottom: var(--gutter);
   position: relative;
+}
+
+@media (--medium) {
+  .GridBlocks-itemThumb {
+    flex-basis: 40%;
+    margin-bottom: 0;
+    margin-right: var(--gutter);
+  }
 }
 
 .GridBlocks-itemThumb::after {
@@ -246,19 +258,38 @@
 }
 
 .GridBlocks-tableHead {
+  display: block;
   font-weight: normal;
-  padding: var(--gutter-half) 0;
+  padding-top: var(--gutter-quarter);
   text-align: left;
-  vertical-align: top;
-  width: 40%;
+}
+
+@media (--medium) {
+  .GridBlocks-tableHead {
+    display: table-cell;
+    padding: var(--gutter-half) 0;
+    vertical-align: top;
+    width: 70%;
+  }
 }
 
 .GridBlocks-tableData {
-  padding: var(--gutter-half) 0;
-  vertical-align: top;
-  width: 30%;
+  display: block;
+  font-style: italic;
+  padding-bottom: var(--gutter-quarter);
+  text-align: left;
 }
 
-.GridBlocks-tableData:last-child {
-  text-align: right;
+@media (--medium) {
+  .GridBlocks-tableData {
+    display: table-cell;
+    font-style: normal;
+    padding: var(--gutter-half) 0;
+    vertical-align: top;
+    width: 30%;
+  }
+
+  .GridBlocks-tableData:last-child {
+    text-align: right;
+  }
 }

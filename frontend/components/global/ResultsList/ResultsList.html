@@ -45,6 +45,9 @@
     <ul class="ResultsList-list">
       {% for result in results %}
         <li class="ResultsList-item">
+          <p class="ResultsList-categories">
+            {{result.fixture.categories.all|join:', '}}
+          </p>
           <h3 class="ResultsList-title">
             {{result.fixture.title}}
           </h3>
@@ -53,9 +56,6 @@
             {%if result.fixture.location %}
               - <span class="ResultsList-location">{{result.fixture.location}}</span>
             {% endif %}
-          </p>
-          <p class="ResultsList-categories">
-            {{result.fixture.categories.all|join:', '}}
           </p>
           <div class="ResultsList-summary">
             <div class="Editorial">
