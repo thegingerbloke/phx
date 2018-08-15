@@ -56,8 +56,8 @@ class ThumbnailAdmin(nested_admin.NestedStackedInline):
 class NewsAdmin(nested_admin.NestedModelAdmin):
     list_display = ['current_image', 'title', 'created_date', 'author']
     list_display_links = ['current_image', 'title']
-
     exclude = ['author']
+    inlines = [ThumbnailAdmin, ComponentAdmin]
 
     def current_image(self, obj):
         return format_html(
@@ -65,16 +65,6 @@ class NewsAdmin(nested_admin.NestedModelAdmin):
                 obj.thumbnail.image.url
             )
         )
-
-    # fieldsets = (
-    #     ('Story', {
-    #         'fields': ('title', 'summary', 'content')
-    #     }),
-    #     ('Dates', {
-    #         'fields': ('live_start_date', 'live_end_date')
-    #     }),
-    # )
-    inlines = [ThumbnailAdmin, ComponentAdmin]
 
     def save_model(self, request, obj, form, change):
         if getattr(obj, 'author', None) is None:

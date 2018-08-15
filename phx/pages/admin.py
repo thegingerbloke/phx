@@ -43,6 +43,7 @@ class ComponentAdmin(nested_admin.NestedStackedInline):
 class PageAdmin(nested_admin.NestedModelAdmin):
     list_display = ['get_title', 'parent', 'slug']
     ordering = ['slug']
+    inlines = [ComponentAdmin]
 
     def get_title(self, obj):
         if obj.parent and obj.parent.parent:
@@ -62,20 +63,18 @@ class PageAdmin(nested_admin.NestedModelAdmin):
     def get_exclude(self, request, obj):
         return ['author'] if obj is None else ['author', 'slug']
 
-    # fieldsets = (
-    #     ('Content', {
-    #         'fields': ('title', 'slug', 'summary', 'content', 'parent')
-    #     }),
-    #     ('Dates', {
-    #         'fields': ('live_start_date', 'live_end_date')
-    #     }),
-    # )
-    inlines = [ComponentAdmin]
-
     def save_model(self, request, obj, form, change):
         if getattr(obj, 'author', None) is None:
             obj.author = request.user
         obj.save()
+
+    # base PageAdmin form doesn't contain files,
+    # so doesn't register as requring multipart support (`has_file_field`)
+    # this fix ensures `enctype="multipart/form-data"` is added to HTML form
+    def get_form(self, request, obj=None, **kwargs):
+        form = super().get_form(request, obj, **kwargs)
+        form.is_multipart = lambda n: True
+        return form
 
 
 phx_admin.register(Page, PageAdmin)
