@@ -52,8 +52,8 @@ jobs:
       - run:
           name: Lint (Backend)
           command: |
-          . venv/bin/activate
-          cd phx && flake8
+            . venv/bin/activate
+            cd phx && flake8
 
   test_backend:
     docker:
