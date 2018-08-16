@@ -66,7 +66,7 @@
     </div>
   </div>
 
-  <div class="GridBlocks-block GridBlocks-block--fixtures GridBlocks-block--light">
+  <div class="GridBlocks-block GridBlocks-block--fixtures GridBlocks-block--dark">
     <h3 class="GridBlocks-title">
       {{data.fixtures.title}}_
     </h3>
@@ -99,7 +99,7 @@
     <a class="GridBlocks-cta" href="/events/">See all events</a>
   </div>
 
-  <div class="GridBlocks-block GridBlocks-block--results GridBlocks-block--dark">
+  <div class="GridBlocks-block GridBlocks-block--results GridBlocks-block--light">
     <h3 class="GridBlocks-title">
       {{data.results.title}}_
     </h3>
@@ -107,7 +107,7 @@
         {% for result in data.results.data %}
         <tr class="GridBlocks-tableRow">
           <th class="GridBlocks-tableHead">
-            {{result.fixture.title}}
+            <a class="GridBlocks-link" href="{% url 'results-index' %}#result-{{result.id}}">{{result.fixture.title}}</a>
             {% if result.fixture.age_groups %}
               - {{result.fixture.age_groups}}
             {% endif %}

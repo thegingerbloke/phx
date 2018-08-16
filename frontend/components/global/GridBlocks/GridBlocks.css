@@ -25,7 +25,7 @@
       "news news phx phx"
       "news news gallery gallery"
       "events join gallery gallery"
-      "fixtures fixtures results results";
+      "results results fixtures fixtures";
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto repeat(4, 1fr);
   }
@@ -250,11 +250,11 @@
 }
 
 .GridBlocks-tableRow {
-  border-bottom: 1px solid var(--colour-blue-dark);
+  border-bottom: 1px solid var(--colour-blue-mid);
 }
 
 .GridBlocks-block--dark .GridBlocks-tableRow {
-  border-bottom: 1px solid var(--colour-grey-light);
+  border-bottom: 1px solid var(--colour-blue-mid);
 }
 
 .GridBlocks-tableHead {

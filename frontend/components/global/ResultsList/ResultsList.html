@@ -44,7 +44,7 @@
   {% if results %}
     <ul class="ResultsList-list">
       {% for result in results %}
-        <li class="ResultsList-item">
+        <li class="ResultsList-item" id="result-{{result.id}}">
           <p class="ResultsList-categories">
             {{result.fixture.categories.all|join:', '}}
           </p>
