@@ -16,6 +16,15 @@
   word-wrap: break-word;
 }
 
+@media (--medium) {
+  .Editorial {
+    hyphens: none;
+    overflow-wrap: normal;
+    word-break: normal;
+    word-wrap: normal;
+  }
+}
+
 .Editorial > *:first-child {
   margin-top: 0;
 }
