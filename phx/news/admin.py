@@ -59,6 +59,7 @@ class ThumbnailAdmin(nested_admin.NestedStackedInline):
 class NewsAdmin(nested_admin.NestedModelAdmin):
     list_display = ['current_image', 'title', 'created_date', 'author']
     list_display_links = ['current_image', 'title']
+    list_select_related = ['author', 'thumbnail']
     exclude = ['author']
     inlines = [ThumbnailAdmin, ComponentAdmin]
 
