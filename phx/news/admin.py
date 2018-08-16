@@ -1,3 +1,4 @@
+from easy_thumbnails.files import get_thumbnailer
 from django.utils.html import format_html
 from phx.admin import phx_admin
 from .models import (News, Thumbnail, Component, Editorial, Feature,
@@ -46,9 +47,11 @@ class ThumbnailAdmin(nested_admin.NestedStackedInline):
     readonly_fields = ['current_image']
 
     def current_image(self, obj):
+        thumbnailer = get_thumbnailer(obj.image)
+        thumbnail_options = {'size': (200, 200)}
         return format_html(
-            '<img src="{0}" style="max-width:200px" />'.format(
-                obj.image.url
+            '<img src="/media/{0}" />'.format(
+                thumbnailer.get_thumbnail(thumbnail_options)
             )
         )
 
@@ -60,9 +63,11 @@ class NewsAdmin(nested_admin.NestedModelAdmin):
     inlines = [ThumbnailAdmin, ComponentAdmin]
 
     def current_image(self, obj):
+        thumbnailer = get_thumbnailer(obj.thumbnail.image)
+        thumbnail_options = {'size': (100, 100)}
         return format_html(
-            '<img src="{0}" style="max-width:100px" />'.format(
-                obj.thumbnail.image.url
+            '<img src="/media/{0}" />'.format(
+                thumbnailer.get_thumbnail(thumbnail_options)
             )
         )
 

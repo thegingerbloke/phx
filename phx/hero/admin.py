@@ -1,3 +1,4 @@
+from easy_thumbnails.files import get_thumbnailer
 from django.utils.html import format_html
 from django.contrib import admin
 from phx.admin import phx_admin
@@ -11,9 +12,11 @@ class HeroAdmin(admin.ModelAdmin):
     exclude = ['author']
 
     def current_image(self, obj):
+        thumbnailer = get_thumbnailer(obj.image)
+        thumbnail_options = {'size': (200, 200)}
         return format_html(
-            '<img src="{0}" style="max-width:200px" />'.format(
-                obj.image.url
+            '<img src="/media/{0}" />'.format(
+                thumbnailer.get_thumbnail(thumbnail_options)
             )
         )
 

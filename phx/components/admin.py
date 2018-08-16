@@ -1,3 +1,4 @@
+from easy_thumbnails.files import get_thumbnailer
 from django.utils.html import format_html
 import nested_admin
 
@@ -19,9 +20,11 @@ class AbstractFeatureAdmin(AbstractComponentAdmin):
     readonly_fields = ['current_image']
 
     def current_image(self, obj):
+        thumbnailer = get_thumbnailer(obj.image)
+        thumbnail_options = {'size': (200, 200)}
         return format_html(
-            '<img src="{0}" style="max-width:200px" />'.format(
-                obj.image.url
+            '<img src="/media/{0}" />'.format(
+                thumbnailer.get_thumbnail(thumbnail_options)
             )
         )
 
@@ -42,9 +45,11 @@ class AbstractListItemsAdmin(AbstractComponentAdmin):
         return self.current_image(obj.image_3)
 
     def current_image(self, img):
+        thumbnailer = get_thumbnailer(img)
+        thumbnail_options = {'size': (200, 200)}
         return format_html(
-            '<img src="{0}" style="max-width:200px" />'.format(
-                img.url
+            '<img src="/media/{0}" />'.format(
+                thumbnailer.get_thumbnail(thumbnail_options)
             )
         )
 
@@ -56,9 +61,11 @@ class AbstractQuoteAdmin(AbstractComponentAdmin):
     readonly_fields = ['current_image']
 
     def current_image(self, obj):
+        thumbnailer = get_thumbnailer(obj.image)
+        thumbnail_options = {'size': (200, 200)}
         return format_html(
-            '<img src="{0}" style="max-width:200px" />'.format(
-                obj.image.url
+            '<img src="/media/{0}" />'.format(
+                thumbnailer.get_thumbnail(thumbnail_options)
             )
         )
 
@@ -70,9 +77,11 @@ class AbstractImageAdmin(AbstractComponentAdmin):
     readonly_fields = ['current_image']
 
     def current_image(self, obj):
+        thumbnailer = get_thumbnailer(obj.image)
+        thumbnail_options = {'size': (200, 200)}
         return format_html(
-            '<img src="{0}" style="max-width:200px" />'.format(
-                obj.image.url
+            '<img src="/media/{0}" />'.format(
+                thumbnailer.get_thumbnail(thumbnail_options)
             )
         )
 
