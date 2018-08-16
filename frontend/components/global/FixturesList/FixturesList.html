@@ -35,6 +35,7 @@
           <th class="FixturesList-tableHeadCell">Race</th>
           <th class="FixturesList-tableHeadCell">Date</th>
           <th class="FixturesList-tableHeadCell">Location</th>
+          <th class="FixturesList-tableHeadCell">Age Groups</th>
           <th class="FixturesList-tableHeadCell">Categories</th>
         </tr>
       </thead>
@@ -48,6 +49,7 @@
               </td>
               <td class="FixturesList-tableCell">{{fixture.event_date|date:'D j M Y'}}</td>
               <td class="FixturesList-tableCell">{{fixture.location}}</td>
+              <td class="FixturesList-tableCell">{{fixture.age_groups}}</td>
               <td class="FixturesList-tableCell">
                   {% for category in fixture.categories.all %}
                   {{category.abbreviation}}

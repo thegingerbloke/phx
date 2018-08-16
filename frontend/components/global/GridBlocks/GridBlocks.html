@@ -75,6 +75,9 @@
       <tr class="GridBlocks-tableRow">
         <th class="GridBlocks-tableHead">
           {{fixture.title}}
+          {% if fixture.age_groups %}
+            - {{fixture.age_groups}}
+          {% endif %}
           {% if fixture.location %}
             ({{fixture.location}})
           {% endif %}
@@ -105,6 +108,9 @@
         <tr class="GridBlocks-tableRow">
           <th class="GridBlocks-tableHead">
             {{result.fixture.title}}
+            {% if result.fixture.age_groups %}
+              - {{result.fixture.age_groups}}
+            {% endif %}
             {% if result.fixture.location %}
               ({{result.fixture.location}})
             {% endif %}

@@ -6,6 +6,11 @@ from django.core.validators import RegexValidator
 class Fixture(models.Model):
     title = models.CharField(max_length=200)
     event_date = models.DateField()
+    age_groups = models.CharField(
+        max_length=200,
+        blank=True,
+        help_text='Comma-separated list, or leave blank for open/senior'
+    )
     location = models.CharField(max_length=200, blank=True)
     categories = models.ManyToManyField('Category', blank=True)
     link_url = models.URLField(max_length=200, blank=True)

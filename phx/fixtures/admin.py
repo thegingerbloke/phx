@@ -4,7 +4,13 @@ from .models import Category, Fixture
 
 
 class FixtureAdmin(admin.ModelAdmin):
-    list_display = ['title', 'event_date', 'location', 'has_results']
+    list_display = [
+        'title',
+        'event_date',
+        'age_groups',
+        'location',
+        'has_results'
+    ]
     list_select_related = ['fixture']
     ordering = ['-event_date']
     exclude = ['author']
