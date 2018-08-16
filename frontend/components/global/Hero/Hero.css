@@ -1,76 +1,59 @@
 /*
- * @define Hero
+ * @define Hero; use strict
  */
 
 .Hero {
   background: var(--colour-blue-light);
-}
-
-/* Hero variant - bg image */
-.Hero--bg {
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: cover;
   max-height: 400px;
   min-height: 200px;
+  overflow: hidden;
   position: relative;
 }
 
-.Hero--bg::after {
+.Hero::after {
   content: "";
   display: block;
   padding-top: 50%;
 }
 
 @media (--medium) {
-  .Hero--bg::after {
+  .Hero::after {
     padding-top: 35%;
   }
 }
 
 @media (--large) {
-  .Hero--bg::after {
+  .Hero::after {
     padding-top: 25%;
   }
 }
 
-/* Hero content */
+/* Hero content - title container */
 
 .Hero-content {
   position: relative;
+  z-index: 3;
 }
 
 .Hero-title {
-  color: var(--colour-blue-dark);
+  color: var(--colour-white);
   font-size: var(--font-size-h2);
   font-style: italic;
+  left: 0;
+  margin: 0;
   padding: var(--gutter) 0;
+  position: absolute;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+  top: 0;
 }
 
 @media (--large) {
   .Hero-title {
-    padding: var(--gutter-double) 0;
-  }
-}
-
-/* Hero variant - bg image */
-
-.Hero--bg .Hero-title {
-  color: var(--colour-white);
-  left: var(--gutter);
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
-  top: var(--gutter);
-}
-
-@media (--large) {
-  .Hero--bg .Hero-title {
     font-size: var(--font-size-h1);
-    top: var(--gutter-double);
   }
 }
+
+/* Hero caption */
 
 .Hero-caption {
   background: rgba(0, 0, 0, 0.3);
@@ -81,4 +64,32 @@
   padding: var(--gutter-half) var(--gutter);
   position: absolute;
   right: 0;
+  z-index: 2;
+}
+
+/* Hero - images */
+
+.Hero-items {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.Hero-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity var(--transition-time) ease-in;
+  width: 100%;
+}
+
+.Hero-item + .Hero-item {
+  opacity: 0;
 }

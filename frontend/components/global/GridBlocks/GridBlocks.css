@@ -21,6 +21,20 @@
 @media (--large) {
   .GridBlocks {
     grid-template-areas:
+      "announcement announcement announcement"
+      "news news phx"
+      "news news phx"
+      "join results results"
+      "events fixtures fixtures"
+      "gallery gallery gallery";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(5, 1fr);
+  }
+}
+
+@media (--full) {
+  .GridBlocks {
+    grid-template-areas:
       "announcement announcement announcement announcement"
       "news news phx phx"
       "news news gallery gallery"
@@ -91,8 +105,8 @@
   color: var(--colour-white);
 }
 
-.GridBlocks-block--red {
-  background: var(--colour-red);
+.GridBlocks-block--orange {
+  background: var(--colour-orange-dark);
   color: var(--colour-white);
 }
 
@@ -125,7 +139,7 @@
   color: var(--colour-white);
 }
 
-.GridBlocks-block--red .GridBlocks-text {
+.GridBlocks-block--orange .GridBlocks-text {
   color: var(--colour-white);
 }
 
@@ -141,7 +155,11 @@
 /* blocks - lists */
 
 .GridBlocks-item {
-  margin-bottom: var(--gutter-double);
+  margin-top: var(--gutter-double);
+}
+
+.GridBlocks-item:first-child {
+  margin-top: 0;
 }
 
 .GridBlocks-itemLink {
@@ -206,7 +224,7 @@
   color: var(--colour-white);
 }
 
-.GridBlocks-block--red .GridBlocks-link {
+.GridBlocks-block--orange .GridBlocks-link {
   color: var(--colour-white);
 }
 
@@ -231,7 +249,7 @@
   color: var(--colour-blue-dark);
 }
 
-.GridBlocks-block--red .GridBlocks-cta {
+.GridBlocks-block--orange .GridBlocks-cta {
   background: var(--colour-white);
   color: var(--colour-blue-dark);
 }
@@ -245,7 +263,6 @@
 .GridBlocks-table {
   border-collapse: collapse;
   border-spacing: 0;
-  margin-bottom: var(--gutter-double);
   width: 100%;
 }
 
@@ -293,3 +310,25 @@
     text-align: right;
   }
 }
+
+/* Announcement */
+
+.GridBlocks-announcementIcon {
+  fill: var(--colour-white);
+  height: 24px;
+  margin-right: var(--gutter-half);
+  stroke: none;
+  width: 24px;
+}
+
+/* stylelint-disable plugin/selector-bem-pattern */
+
+.GridBlocks-block--announcement a {
+  color: var(--colour-white);
+}
+
+.GridBlocks-block--announcement a:hover {
+  opacity: var(--opacity-hover);
+}
+
+/* stylelint-enable plugin/selector-bem-pattern */

@@ -6,9 +6,7 @@
 
 {% block main %}
 
-{% if hero %}
-  {% include 'components/global/Hero/Hero.html' with data=hero %}
-{% endif %}
+{% include 'components/global/Hero/Hero.html' with heroes=heroes title=title %}
 
 <section class="Content u-component">
   <div class="Content-main">

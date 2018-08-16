@@ -3,23 +3,24 @@
 
 <div class="GridBlocks">
 
-  {% if data.announcement %}
-  <div class="GridBlocks-block GridBlocks-block--announcement GridBlocks-block--red">
+  {% if announcement %}
+  <div class="GridBlocks-block GridBlocks-block--announcement GridBlocks-block--orange">
     <h3 class="GridBlocks-title">
-      {{data.announcement.title}}_
+      <svg class="GridBlocks-announcementIcon"><use xlink:href="/static/img/icons/icons.svg#icon-alert"></use></svg>
+      Announcement_
     </h3>
     <p class="GridBlocks-text">
-      {{data.announcement.text|linebreaksbr}}
+      {{announcement|safe}}
     </p>
   </div>
   {% endif %}
 
   <div class="GridBlocks-block GridBlocks-block--phx GridBlocks-block--white">
     <h3 class="GridBlocks-title">
-      {{data.phx.title}}_
+      Brighton Phoenix_
     </h3>
     <p class="GridBlocks-text">
-      {{data.phx.text|linebreaksbr}}
+      {{about|safe}}
     </p>
     <p class="GridBlocks-text">
       <a class="GridBlocks-link" href="/about/">Read more about Brighton Phoenix</a>
@@ -28,10 +29,10 @@
 
   <div class="GridBlocks-block GridBlocks-block--news GridBlocks-block--light">
     <h3 class="GridBlocks-title">
-      {{data.news.title}}_
+      News_
     </h3>
     <ul class="GridBlocks-list">
-      {% for story in data.news.data %}
+      {% for story in news %}
         <li class="GridBlocks-item">
           <a class="GridBlocks-itemLink" href="/news/{{ story.id }}/{{ story.slug }}">
             <div class="GridBlocks-itemThumb">
@@ -59,19 +60,19 @@
 
   <div class="GridBlocks-block GridBlocks-block--gallery">
     <h3 class="GridBlocks-title">
-      {{data.gallery.title}}_
+      Gallery_
     </h3>
     <div class="GridBlocks-gallery">
-      {% include '../Gallery/Gallery.html' with data=data.gallery.data %}
+      {% include '../Gallery/Gallery.html' with data=gallery %}
     </div>
   </div>
 
   <div class="GridBlocks-block GridBlocks-block--fixtures GridBlocks-block--dark">
     <h3 class="GridBlocks-title">
-      {{data.fixtures.title}}_
+      Fixtures_
     </h3>
     <table class="GridBlocks-table">
-      {% for fixture in data.fixtures.data %}
+      {% for fixture in fixtures %}
       <tr class="GridBlocks-tableRow">
         <th class="GridBlocks-tableHead">
           {{fixture.title}}
@@ -91,20 +92,20 @@
 
   <div class="GridBlocks-block GridBlocks-block--events GridBlocks-block--white">
     <h3 class="GridBlocks-title">
-      {{data.events.title}}_
+      Events_
     </h3>
     <p class="GridBlocks-text">
-      {{data.events.text}}
+      {{events|safe}}
     </p>
     <a class="GridBlocks-cta" href="/events/">See all events</a>
   </div>
 
   <div class="GridBlocks-block GridBlocks-block--results GridBlocks-block--light">
     <h3 class="GridBlocks-title">
-      {{data.results.title}}_
+      Results_
     </h3>
     <table class="GridBlocks-table">
-        {% for result in data.results.data %}
+        {% for result in results %}
         <tr class="GridBlocks-tableRow">
           <th class="GridBlocks-tableHead">
             <a class="GridBlocks-link" href="{% url 'results-index' %}#result-{{result.id}}">{{result.fixture.title}}</a>
@@ -124,10 +125,10 @@
 
   <div class="GridBlocks-block GridBlocks-block--join GridBlocks-block--dark">
     <h3 class="GridBlocks-title">
-      {{data.join.title}}_
+      Join_
     </h3>
     <p class="GridBlocks-text">
-      {{data.join.text}}
+      {{join|safe}}
     </p>
     <p class="GridBlocks-text">
       <a class="GridBlocks-link" href="/membership/join/">Join Phoenix</a>
