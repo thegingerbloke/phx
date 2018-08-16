@@ -684,8 +684,7 @@
             "slug": "/about/",
             "created_date": "2018-07-18T14:32:05.524Z",
             "modified_date": "2018-07-25T16:18:53.269Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -697,8 +696,7 @@
             "slug": "/contact/",
             "created_date": "2018-07-25T13:29:49.304Z",
             "modified_date": "2018-07-27T10:56:21.937Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -710,8 +708,7 @@
             "slug": "/fixtures/",
             "created_date": "2018-07-25T15:22:29.061Z",
             "modified_date": "2018-07-26T10:18:50.073Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -723,8 +720,7 @@
             "slug": "/results/",
             "created_date": "2018-07-25T15:27:11.755Z",
             "modified_date": "2018-07-27T10:52:42.058Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -736,8 +732,7 @@
             "slug": "/about/club-values/",
             "created_date": "2018-07-25T17:07:41.715Z",
             "modified_date": "2018-07-27T10:50:20.306Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -749,8 +744,7 @@
             "slug": "/about/club-history/",
             "created_date": "2018-07-25T17:08:32.467Z",
             "modified_date": "2018-07-27T10:50:49.910Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -762,8 +756,7 @@
             "slug": "/events/",
             "created_date": "2018-07-26T14:27:41.736Z",
             "modified_date": "2018-07-27T10:53:05.013Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -775,8 +768,7 @@
             "slug": "/about/constitution-and-policies/",
             "created_date": "2018-07-27T10:51:46.597Z",
             "modified_date": "2018-07-27T10:53:26.970Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -788,8 +780,7 @@
             "slug": "/about/awards-records/",
             "created_date": "2018-07-27T10:52:07.789Z",
             "modified_date": "2018-07-27T10:52:07.789Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -801,8 +792,7 @@
             "slug": "/about/club-reps/",
             "created_date": "2018-07-27T10:52:21.428Z",
             "modified_date": "2018-07-27T10:53:19.630Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -814,8 +804,7 @@
             "slug": "/contact/find-us/",
             "created_date": "2018-07-27T10:58:53.154Z",
             "modified_date": "2018-07-27T11:02:04.570Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -827,8 +816,7 @@
             "slug": "/training/",
             "created_date": "2018-07-27T11:03:48.984Z",
             "modified_date": "2018-07-27T11:03:48.984Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -840,8 +828,7 @@
             "slug": "/training/training-pathway/",
             "created_date": "2018-07-27T11:04:04.522Z",
             "modified_date": "2018-07-27T11:04:04.522Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -853,8 +840,7 @@
             "slug": "/training/juniors/",
             "created_date": "2018-07-27T11:04:14.205Z",
             "modified_date": "2018-07-27T11:04:14.205Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -866,8 +852,7 @@
             "slug": "/training/juniors/strength-and-conditioning/",
             "created_date": "2018-07-27T11:04:33.146Z",
             "modified_date": "2018-07-27T11:04:33.146Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -879,8 +864,7 @@
             "slug": "/training/juniors/track/",
             "created_date": "2018-07-27T11:04:44.573Z",
             "modified_date": "2018-07-27T11:04:44.573Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -892,8 +876,7 @@
             "slug": "/training/seniors/",
             "created_date": "2018-07-27T11:04:54.826Z",
             "modified_date": "2018-07-27T11:04:54.826Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -905,8 +888,7 @@
             "slug": "/training/seniors/multisport/",
             "created_date": "2018-07-27T11:05:10.706Z",
             "modified_date": "2018-07-27T11:05:10.706Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -918,8 +900,7 @@
             "slug": "/training/seniors/strength-and-conditioning/",
             "created_date": "2018-07-27T11:05:28.964Z",
             "modified_date": "2018-07-27T11:05:28.964Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -931,8 +912,7 @@
             "slug": "/training/seniors/track/",
             "created_date": "2018-07-27T11:05:39.505Z",
             "modified_date": "2018-07-27T11:05:39.505Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -944,8 +924,7 @@
             "slug": "/training/seniors/club-run/",
             "created_date": "2018-07-27T11:05:53.155Z",
             "modified_date": "2018-07-27T11:05:53.155Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -957,8 +936,7 @@
             "slug": "/training/seniors/swimming/",
             "created_date": "2018-07-27T11:06:02.372Z",
             "modified_date": "2018-07-27T11:06:02.372Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -970,8 +948,7 @@
             "slug": "/training/elite/",
             "created_date": "2018-07-27T11:06:15.778Z",
             "modified_date": "2018-07-27T11:06:15.778Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -983,8 +960,7 @@
             "slug": "/events/phoenix-10k/",
             "created_date": "2018-07-27T11:07:02.534Z",
             "modified_date": "2018-07-27T11:07:02.534Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -996,8 +972,7 @@
             "slug": "/events/bmc-open/",
             "created_date": "2018-07-27T11:07:16.163Z",
             "modified_date": "2018-07-27T11:07:16.163Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1009,8 +984,7 @@
             "slug": "/events/big-w/",
             "created_date": "2018-07-27T11:07:29.122Z",
             "modified_date": "2018-07-27T11:07:29.122Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1022,8 +996,7 @@
             "slug": "/events/black-cap/",
             "created_date": "2018-07-27T11:07:41.951Z",
             "modified_date": "2018-07-27T11:07:41.952Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1035,8 +1008,7 @@
             "slug": "/events/beer-mile/",
             "created_date": "2018-07-27T11:07:54.503Z",
             "modified_date": "2018-07-27T11:07:54.503Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1048,8 +1020,7 @@
             "slug": "/events/awards-night/",
             "created_date": "2018-07-27T11:08:26.766Z",
             "modified_date": "2018-07-27T11:08:26.766Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1061,8 +1032,7 @@
             "slug": "/membership/",
             "created_date": "2018-07-27T11:08:41.503Z",
             "modified_date": "2018-07-27T11:08:41.503Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1074,8 +1044,7 @@
             "slug": "/membership/join/",
             "created_date": "2018-07-27T11:08:54.929Z",
             "modified_date": "2018-07-27T11:08:54.929Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1087,8 +1056,7 @@
             "slug": "/membership/renew/",
             "created_date": "2018-07-27T11:09:04.092Z",
             "modified_date": "2018-07-27T11:09:04.092Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1100,8 +1068,7 @@
             "slug": "/membership/kit/",
             "created_date": "2018-07-27T11:09:13.610Z",
             "modified_date": "2018-07-27T11:09:13.610Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1113,8 +1080,7 @@
             "slug": "/membership/testimonials/",
             "created_date": "2018-07-27T11:09:27.152Z",
             "modified_date": "2018-07-27T11:09:27.152Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1126,8 +1092,7 @@
             "slug": "/privacy/",
             "created_date": "2018-07-27T11:09:47.015Z",
             "modified_date": "2018-07-27T11:09:47.015Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1139,8 +1104,7 @@
             "slug": "/terms-and-conditions/",
             "created_date": "2018-07-27T11:10:02.834Z",
             "modified_date": "2018-07-27T11:10:02.835Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1152,8 +1116,7 @@
             "slug": "/cookies/",
             "created_date": "2018-07-27T11:10:12.084Z",
             "modified_date": "2018-07-27T11:10:12.084Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1165,8 +1128,7 @@
             "slug": "/how-to-use-the-admin/",
             "created_date": "2018-08-07T14:01:04.028Z",
             "modified_date": "2018-08-07T14:28:51.004Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1178,8 +1140,7 @@
             "slug": "/how-to-use-the-admin/editorial-components/",
             "created_date": "2018-08-07T14:30:27.526Z",
             "modified_date": "2018-08-07T14:30:27.526Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1191,8 +1152,7 @@
             "slug": "/how-to-use-the-admin/image-components/",
             "created_date": "2018-08-07T14:35:58.928Z",
             "modified_date": "2018-08-07T14:35:58.928Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1204,8 +1164,7 @@
             "slug": "/how-to-use-the-admin/feature-components/",
             "created_date": "2018-08-07T14:44:38.742Z",
             "modified_date": "2018-08-07T14:45:46.463Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1217,8 +1176,7 @@
             "slug": "/how-to-use-the-admin/quote-components/",
             "created_date": "2018-08-07T14:49:03.960Z",
             "modified_date": "2018-08-07T14:49:03.960Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     },
     {
@@ -1230,8 +1188,7 @@
             "slug": "/how-to-use-the-admin/list-items-components/",
             "created_date": "2018-08-07T14:55:55.219Z",
             "modified_date": "2018-08-07T14:57:29.938Z",
-            "author": 1,
-            "hero": null
+            "author": 1
         }
     }
 ]

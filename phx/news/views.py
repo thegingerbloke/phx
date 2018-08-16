@@ -13,17 +13,7 @@ class NewsListView(generic.ListView):
         context = super(NewsListView, self).get_context_data(**kwargs)
         context['breadcrumb'] = self.generate_breadcrumb()
         context['search'] = self.request.GET.get('search', '')
-        context['hero'] = {
-            'title': 'News'
-        }
-
-        # slug = self.request.path
-        # page = get_object_or_404(Page, slug=slug)
-        # context['page'] = page
-        # context['components'] = Component.objects.select_related(
-        #     *COMPONENT_TYPES
-        # ).filter(page_id=page.id)
-
+        context['page_title'] = 'News'
         return context
 
     def get_queryset(self):
@@ -67,9 +57,7 @@ class NewsDetailView(generic.DetailView):
             "previous": self.get_previous(),
             "next": self.get_next(),
         }
-        context['hero'] = {
-            'title': 'News'
-        }
+        context['page_title'] = 'News'
         return context
 
     def get_previous(self):

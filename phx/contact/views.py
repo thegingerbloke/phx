@@ -18,6 +18,7 @@ class ContactIndexView(FormView):
         slug = self.request.path
         page = get_object_or_404(Page, slug=slug)
         context['page'] = page
+        context['page_title'] = page.title
         context['components'] = Component.objects.select_related(
             *COMPONENT_TYPES
         ).filter(page_id=page.id)
@@ -72,9 +73,7 @@ class ContactSuccessView(generic.TemplateView):
     def get_context_data(self, **kwargs):
         context = super(ContactSuccessView, self).get_context_data(**kwargs)
         context['breadcrumb'] = self.generate_breadcrumb()
-        context['hero'] = {
-            'title': 'Contact'
-        }
+        context['page_title'] = 'Contact'
         return context
 
     def generate_breadcrumb(self):

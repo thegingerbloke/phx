@@ -4,7 +4,6 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from django.template.defaultfilters import slugify
 from django.core.exceptions import ValidationError
-from hero.models import Hero
 from components.models import (AbstractEditorial, AbstractFeature,
                                AbstractQuote, AbstractImage,
                                AbstractListItems)
@@ -41,12 +40,6 @@ class Page(models.Model):
     modified_date = models.DateTimeField(auto_now=True)
     author = models.ForeignKey(
         User,
-        models.SET_NULL,
-        blank=True,
-        null=True,
-    )
-    hero = models.ForeignKey(
-        Hero,
         models.SET_NULL,
         blank=True,
         null=True,

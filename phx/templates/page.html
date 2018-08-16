@@ -2,8 +2,8 @@
 
 {% block main %}
 
-  {% if hero %}
-    {% include 'components/global/Hero/Hero.html' with data=hero %}
+  {% if page_title %}
+    {% include 'components/global/PageTitle/PageTitle.html' with data=page_title %}
   {% endif %}
 
   {% if breadcrumb %}

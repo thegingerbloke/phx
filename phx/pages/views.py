@@ -17,6 +17,7 @@ class PageView(generic.TemplateView):
 
         page = get_object_or_404(Page, slug=slug)
         context['page'] = page
+        context['page_title'] = page.title
         context['components'] = Component.objects.select_related(
             *COMPONENT_TYPES
         ).filter(page_id=page.id)

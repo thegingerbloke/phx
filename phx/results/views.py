@@ -15,7 +15,9 @@ class ResultsListView(generic.ListView):
     def get_context_data(self, **kwargs):
         context = super(ResultsListView, self).get_context_data(**kwargs)
         context['breadcrumb'] = self.generate_breadcrumb()
-        context['page'] = get_object_or_404(Page, slug=self.request.path)
+        page = get_object_or_404(Page, slug=self.request.path)
+        context['page'] = page
+        context['page_title'] = page.title
         context['categories'] = Category.objects.all()
         context['search'] = self.request.GET.get('search', '')
         context['category'] = self.request.GET.get('category', '')

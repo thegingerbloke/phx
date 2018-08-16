@@ -53,7 +53,6 @@ INSTALLED_APPS = [
     'components.apps.ComponentsConfig',
     'contact.apps.ContactConfig',
     'fixtures.apps.FixturesConfig',
-    'hero.apps.HeroConfig',
     'home.apps.HomeConfig',
     'news.apps.NewsConfig',
     'pages.apps.PagesConfig',
@@ -89,7 +88,6 @@ TEMPLATES = [
 
                 # PHX
                 'phx.context_processors.global_config.global_config',
-                'phx.context_processors.hero.hero',
                 'phx.context_processors.nav.nav',
             ],
             'libraries': {
