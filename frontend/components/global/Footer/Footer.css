@@ -49,6 +49,8 @@
 
 .Footer-commsTitle {
   font-size: var(--font-size-h2);
+  font-style: italic;
+  font-weight: normal;
   margin-bottom: 1rem;
 }
 
