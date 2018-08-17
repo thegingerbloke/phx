@@ -101,9 +101,8 @@
 }
 
 .Footer-link {
-  color: var(--colour-white);
+  color: var(--colour-blue-dark);
   display: inline-block;
-  padding: var(--gutter);
   text-decoration: none;
 }
 
