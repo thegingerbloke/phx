@@ -100,9 +100,20 @@
   }
 }
 
-.Footer-link {
+.Footer-commsLink {
   color: var(--colour-blue-dark);
   display: inline-block;
+  text-decoration: none;
+}
+
+.Footer-commsLink:hover {
+  opacity: var(--opacity-hover);
+}
+
+.Footer-link {
+  color: var(--colour-white);
+  display: inline-block;
+  padding: var(--gutter);
   text-decoration: none;
 }
 
