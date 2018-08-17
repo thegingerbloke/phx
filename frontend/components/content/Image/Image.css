@@ -3,7 +3,7 @@
  */
 
 .Image {
-  background: var(--colour-blue-xlight);
+  background: var(--colour-grey-light);
   position: relative;
   text-align: center;
 }

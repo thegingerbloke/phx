@@ -2,21 +2,11 @@
 
 {% load components_tags %}
 
-{% block extra_css %}
-<style>
-  .Demo-block .Gallery {
-    height: 500px;
-    position: relative;
-    width: 500px;
-  }
-</style>
-{% endblock %}
-
 {% block component %}
   <h3 class="Demo-h3">Default</h3>
   <div class="Demo-block Demo-block--1">
     {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
-      {% include template with gallery=data %}
+      {% include template with galleries=data.galleries %}
     {% endwith %}
     <h4 class="Demo-h4">Data</h4>
     <pre class="Demo-code">{{data|pretty_print}}</pre>

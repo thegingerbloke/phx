@@ -1,8 +1,20 @@
-<div class="Gallery js-Gallery">
-  {% for gallery in data %}
-  <div class="Gallery-item js-Gallery-item" style="background-image:url({{ gallery.image }});">
-    {% if gallery.caption %}
-      <p class="Gallery-caption">{{gallery.caption}}</p>
+{% load thumbnail %}
+
+<div class="Gallery js-Gallery {% if autosize %}Gallery--autosize{% endif %}">
+  {% if controls %}
+    <button class="Gallery-control Gallery-control--forward js-Gallery-control--forward">&raquo;</button>
+    <button class="Gallery-control Gallery-control--back js-Gallery-control--back">&laquo;</button>
+  {% endif %}
+  {% for item in gallery %}
+  <div class="Gallery-item js-Gallery-item"
+    {% if forloop.counter is 1 %}
+      style="background-image:url({% thumbnail item.image 2000x0 %});"
+    {% else %}
+      data-img="{% thumbnail item.image 2000x0 %}"
+    {% endif %}
+  >
+    {% if item.caption %}
+      <p class="Gallery-caption">{{item.caption}}</p>
     {% endif %}
   </div>
   {% endfor %}

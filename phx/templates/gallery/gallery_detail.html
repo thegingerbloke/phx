@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+
+{% block meta %}
+{% include '_partials/meta.html' with title=gallery.title image=gallery.thumbnail.image.url image_alt=gallery.thumbnail.image_alt description=gallery.summary %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="Content-component">
+    <div class="Editorial">
+      <h2>{{gallery.title}}</h2>
+      <p>
+        <em>{{gallery.created_date|date:"l dS F Y"}}</em>
+      </p>
+      <p>{{gallery.summary}}</p>
+    </div>
+  </div>
+
+  {% include '../components/global/Gallery/Gallery.html' with gallery=gallery.images.all autosize=True controls=True %}
+
+  {% include '../components/global/PreviousNext/PreviousNext.html' with data=data %}
+
+
+{% endblock %}

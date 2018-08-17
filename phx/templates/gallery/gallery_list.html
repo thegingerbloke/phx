@@ -1,0 +1,16 @@
+{% extends "page.html" %}
+
+{% block meta %}
+{% include '_partials/meta.html' with title='Gallery' %}
+{% endblock %}
+
+{% block content %}
+
+{% include '../components/components_loop.html' with components=components %}
+
+<div class="Content-component">
+    {% include '../components/global/GalleryList/GalleryList.html' with galleries=gallery_list %}
+    {% if is_paginated %}{% load paginator %}{% paginator 4 %}{% endif %}
+</div>
+
+{% endblock %}

@@ -6,6 +6,8 @@ from .models import Content, Announcement, Hero, HeroImageCategory
 
 
 class ContentAdmin(admin.ModelAdmin):
+    autocomplete_fields = ['gallery']
+
     def has_add_permission(self, *args, **kwargs):
         return not Content.objects.exists()
 
@@ -21,6 +23,7 @@ class AnnouncementAdmin(admin.ModelAdmin):
 
     def get_announcement(self, obj):
         return strip_tags(obj.announcement)
+    get_announcement.short_description = 'announcement'
 
     def save_model(self, request, obj, form, change):
         if getattr(obj, 'author', None) is None:

@@ -6,16 +6,35 @@
   height: 100%;
 }
 
+/* If autosizing - set own size rather than filling parent container */
+
+.Gallery--autosize {
+  height: auto;
+  max-height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.Gallery--autosize::after {
+  content: "";
+  display: block;
+  padding-top: 66.67%; /* 6x4 */
+}
+
+/* Gallery images */
+
 .Gallery-item {
+  background-color: var(--colour-grey-light);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   transition: opacity var(--transition-time) ease-in;
   width: 100%;
+  z-index: 1;
 }
 
 .Gallery-item + .Gallery-item {
@@ -28,7 +47,40 @@
   color: #fff;
   font-style: italic;
   margin: 0;
+  max-width: 49%;
   padding: var(--gutter-half) var(--gutter);
   position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+/* Gallery controls */
+
+.Gallery-control {
+  background: var(--colour-grey-light);
+  cursor: pointer;
+  font-size: var(--font-size-h3);
+  opacity: 0;
+  padding: var(--gutter);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all var(--transition-time);
+  z-index: 2;
+}
+
+.Gallery-control:hover {
+  background: var(--colour-white);
+}
+
+.Gallery.is-active:hover .Gallery-control {
+  opacity: 1;
+}
+
+.Gallery-control--back {
+  left: 0;
+}
+
+.Gallery-control--forward {
   right: 0;
 }

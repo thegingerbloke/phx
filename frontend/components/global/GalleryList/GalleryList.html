@@ -1,0 +1,56 @@
+{% load static %}
+{% load thumbnail %}
+
+<div class="GalleryList">
+
+  <div class="GalleryList-filter">
+    <form class="GalleryList-filterSearch" method="get" action="{% url 'gallery-list' %}">
+      <label class="GalleryList-filterLabel">
+        <span class="GalleryList-filterTitle">Search:</span>
+        <input class="GalleryList-filterInput" name="search" value="{{search}}" />
+        <button class="GalleryList-filterSubmit" type="submit">Go</button>
+        {% if search %}
+          <a class="GalleryList-filterClear" href="{% url 'gallery-list' %}">
+            <svg class="GalleryList-filterClearIcon"><use xlink:href="/static/img/icons/icons.svg#icon-cross"></use></svg>
+          </a>
+        {% endif %}
+      </label>
+    </form>
+  </div>
+
+
+  {% if galleries %}
+    <ul class="GalleryList-list">
+      {% for gallery in galleries %}
+        <li class="GalleryList-item">
+          <a class="GalleryList-link" href="/gallery/{{ gallery.id }}/{{ gallery.slug }}">
+            <div class="GalleryList-thumb">
+              {% if gallery.thumbnail %}
+                <img class="GalleryList-thumbImg" src="{% thumbnail gallery.thumbnail.image 700x500 crop %}" alt="{{gallery.thumbnail.image_alt}}" />
+              {% else %}
+                <img class="GalleryList-thumbImg" src="{% static 'img/no-image-bg.jpg' %}" alt="" />
+              {% endif %}
+            </div>
+            <div class="GalleryList-content">
+              <p class="GalleryList-text">
+                <span class="GalleryList-subtitle">{{gallery.title}}</span>
+                <em>{{gallery.created_date|date:'D j M Y'}}</em>
+              </p>
+              <p class="GalleryList-text">
+                {{gallery.summary|truncatewords_html:50}}
+              </p>
+              <p class="GalleryList-text">
+                ({{gallery.images.all|length}} image{{gallery.images.all|length|pluralize}})
+              </p>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  {% else %}
+    <div class="Editorial">
+      <p>There are currently no galleries, check back soon</p>
+    </div>
+  {% endif %}
+</div>

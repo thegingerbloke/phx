@@ -13,11 +13,8 @@
           data-img="{% thumbnail hero.image 2000x0 %}"
         {% endif %}
       >
-
         {% if hero.caption %}
-          <p class="Hero-caption">
-            {{hero.caption}}
-          </p>
+          <p class="Hero-caption">{{hero.caption}}</p>
         {% endif %}
       </div>
     {% endfor %}

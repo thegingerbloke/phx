@@ -44,20 +44,7 @@ class HomeView(generic.TemplateView):
         ).order_by('event_date')[:5]
 
     def get_gallery(self):
-        return [
-            {
-                "image": "/static/img/_placeholder/gallery/4.jpg",
-                "caption": "Lorem ipsum dolor sit amet"
-            },
-            {
-                "image": "/static/img/_placeholder/gallery/5.jpg",
-                "caption": "Veniam ea labore labore eu pariatur nulla."
-            },
-            {
-                "image": "/static/img/_placeholder/gallery/6.jpg",
-                "caption": "Aute mollit officia non eu culpa."
-            }
-        ]
+        return self.content.gallery
 
     def get_heroes(self):
         """

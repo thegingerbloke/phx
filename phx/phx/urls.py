@@ -28,6 +28,7 @@ urlpatterns = [
     path('fixtures/', include('fixtures.urls')),
     path('results/', include('results.urls')),
     path('contact/', include('contact.urls')),
+    path('gallery/', include('gallery.urls')),
     path('components/', include('components.urls')),
 
     # third-party

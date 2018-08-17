@@ -2,10 +2,17 @@ from django.db import models
 from django.utils.html import strip_tags
 from django.contrib.auth.models import User
 from ckeditor.fields import RichTextField
+from gallery.models import Gallery
 
 
 class Content(models.Model):
     title = models.CharField(max_length=32)
+    gallery = models.ForeignKey(
+        Gallery,
+        models.SET_NULL,
+        blank=True,
+        null=True,
+    )
     join = RichTextField(config_name='text')
     events = RichTextField(config_name='text')
     about = RichTextField(config_name='text')

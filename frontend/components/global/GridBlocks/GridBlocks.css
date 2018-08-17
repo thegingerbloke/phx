@@ -113,6 +113,7 @@
 
 .GridBlocks-title {
   font-size: var(--font-size-h2);
+  font-style: italic;
   font-weight: normal;
   margin-bottom: var(--gutter);
   position: relative;
@@ -317,7 +318,39 @@
   }
 }
 
-/* Announcement */
+/* Gallery block styles */
+
+.GridBlocks-block--gallery .GridBlocks-title,
+.GridBlocks-block--gallery .GridBlocks-link {
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--colour-white);
+  display: inline-block;
+  left: 0;
+  padding: var(--gutter);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.GridBlocks-block--gallery .GridBlocks-link {
+  bottom: 0;
+  line-height: var(--line-height-default);
+  max-width: 49%;
+  opacity: 0;
+  padding: var(--gutter-half) var(--gutter);
+  top: auto;
+  transition: opacity var(--transition-time);
+}
+
+.GridBlocks-block--gallery:hover .GridBlocks-link {
+  opacity: 1;
+}
+
+.GridBlocks-block--gallery:hover .GridBlocks-link:hover {
+  opacity: 0.9;
+}
+
+/* Announcement block styles */
 
 .GridBlocks-block--announcement {
   padding-right: 5rem;

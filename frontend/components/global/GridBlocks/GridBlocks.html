@@ -61,8 +61,11 @@
     <h3 class="GridBlocks-title">
       Gallery_
     </h3>
+    <a class="GridBlocks-link" href="{% url 'gallery-detail' pk=gallery.pk slug=gallery.slug %}">
+      {{gallery.title}}
+    </a>
     <div class="GridBlocks-gallery">
-      {% include '../Gallery/Gallery.html' with data=gallery %}
+      {% include '../Gallery/Gallery.html' with gallery=gallery.images.all controls=True %}
     </div>
   </div>
 

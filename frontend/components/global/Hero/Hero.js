@@ -1,43 +1,59 @@
 var Hero = {
   els: {
-    hero: ".js-Hero",
-    heroItems: ".js-Hero-item"
+    container: ".js-Hero",
+    items: ".js-Hero-item"
   },
   transitionTime: 4000,
+  timeout: null,
 
   init: function() {
     this.current = 0;
 
-    this.hero = document.querySelector(this.els.hero);
-    if (!this.hero) return false;
+    this.container = document.querySelector(this.els.container);
+    if (!this.container) return false;
 
-    this.heroItems = this.hero.querySelectorAll(this.els.heroItems);
+    this.items = this.container.querySelectorAll(this.els.items);
 
-    if (this.heroItems.length < 2) {
+    if (this.items.length < 2) {
       return false;
     }
 
     // lazyload subsequent images
-    for (var i = 1; i < this.heroItems.length; i++) {
-      var hero = this.heroItems[i];
-      hero.style.backgroundImage = "url(" + hero.dataset.img + ")";
+    for (var i = 1; i < this.items.length; i++) {
+      var container = this.items[i];
+      container.style.backgroundImage = "url(" + container.dataset.img + ")";
     }
 
     // start transition once first new bg image has loaded
     var img = new Image();
-    img.addEventListener("load", this.queueTransition.bind(this));
-    img.src = hero.dataset.img;
+    img.addEventListener("load", this.imageLoaded.bind(this));
+    img.src = container.dataset.img;
+  },
+  imageLoaded: function() {
+    this.queueTransition();
+    this.container.addEventListener(
+      "mouseover",
+      this.clearTransition.bind(this)
+    );
+    this.container.addEventListener(
+      "mouseout",
+      this.queueTransition.bind(this)
+    );
   },
   queueTransition: function() {
-    setTimeout(this.transition.bind(this), this.transitionTime);
+    this.timeout = setTimeout(this.transition.bind(this), this.transitionTime);
+  },
+  clearTransition: function() {
+    clearTimeout(this.timeout);
   },
   transition: function() {
-    for (var i = 0; i < this.heroItems.length; i++) {
-      this.heroItems[i].style.opacity = 0;
+    for (var i = 0; i < this.items.length; i++) {
+      this.items[i].style.opacity = 0;
     }
-    this.current =
-      this.current != this.heroItems.length - 1 ? this.current + 1 : 0;
-    this.heroItems[this.current].style.opacity = 1;
+    var next = this.current != this.items.length - 1 ? this.current + 1 : 0;
+    this.items[next].style.opacity = 1;
+
+    this.current = next;
 
     this.queueTransition();
   }
