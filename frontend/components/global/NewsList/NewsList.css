@@ -92,11 +92,14 @@
 
 @media (--medium) {
   .NewsList-link {
+    align-items: flex-start;
     display: flex;
   }
 
   .NewsList-content {
     flex: 1;
+    position: relative;
+    top: -0.75rem; /* align text top with image top */
   }
 }
 

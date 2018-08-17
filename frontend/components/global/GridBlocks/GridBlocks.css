@@ -21,14 +21,13 @@
 @media (--large) {
   .GridBlocks {
     grid-template-areas:
-      "announcement announcement announcement"
-      "news news phx"
-      "news news phx"
-      "join results results"
-      "events fixtures fixtures"
-      "gallery gallery gallery";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto repeat(5, 1fr);
+      "announcement announcement announcement announcement announcement announcement"
+      "phx phx phx gallery gallery gallery"
+      "news news news news events events"
+      "news news news news join join"
+      "fixtures fixtures fixtures results results results";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto repeat(4, 1fr);
   }
 }
 
@@ -203,6 +202,13 @@
   position: absolute;
   top: 0;
   transform: translateX(-50%);
+  width: 100%;
+}
+
+@media (--medium) {
+  .GridBlocks-itemThumbImg {
+    width: auto;
+  }
 }
 
 .GridBlocks-itemLink .GridBlocks-subtitle {
@@ -313,12 +319,46 @@
 
 /* Announcement */
 
-.GridBlocks-announcementIcon {
-  fill: var(--colour-white);
-  height: 24px;
-  margin-right: var(--gutter-half);
-  stroke: none;
-  width: 24px;
+.GridBlocks-block--announcement {
+  padding-right: 5rem;
+  position: relative;
+}
+
+.GridBlocks-block--announcement::before,
+.GridBlocks-block--announcement::after {
+  background: url("/static/img/logo_phoenix-graphic-square-white.png")
+    transparent no-repeat left top;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 3rem;
+  position: absolute;
+  right: var(--gutter);
+  top: var(--gutter);
+  width: 4rem;
+}
+
+.GridBlocks-block--announcement::before {
+  display: none;
+}
+
+@media (--large) {
+  .GridBlocks-block--announcement {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .GridBlocks-block--announcement::before,
+  .GridBlocks-block--announcement::after {
+    height: 6rem;
+    width: 8rem;
+  }
+
+  .GridBlocks-block--announcement::before {
+    display: block;
+    left: var(--gutter);
+    right: auto;
+  }
 }
 
 /* stylelint-disable plugin/selector-bem-pattern */
