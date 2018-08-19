@@ -3,8 +3,9 @@
   "about": "Duis dolore sunt laborum eiusmod aute eiusmod amet ullamco aliqua velit veniam in. Amet veniam commodo ad in non aliquip velit adipisicing. \n\nOccaecat eu in ad irure eiusmod voluptate eu id irure ut qui veniam nisi non. Et Lorem nulla laboris voluptate in minim in non ullamco sint sit ea nisi.",
   "news": [
     {
-      "id": "#",
-      "slug": "#",
+      "id": "1",
+      "pk": "1",
+      "slug": "lorem",
       "created_date": "2 days ago",
       "title": "Culpa ex est esse",
       "summary": "Lorem et aliqua aliqua cupidatat non laborum est velit proident pariatur.",
@@ -16,8 +17,9 @@
       }
     },
     {
-      "id": "#",
-      "slug": "#",
+      "id": "2",
+      "pk": "2",
+      "slug": "lorem",
       "created_date": "3 weeks ago",
       "title": "Adipisicing laboris reprehenderit",
       "summary": "Ullamco consectetur ut sit sit ea elit aliquip occaecat quis.",
@@ -29,20 +31,28 @@
       }
     }
   ],
-  "gallery": [
-    {
-      "image": "/static/img/_placeholder/gallery/4.jpg",
-      "caption": "Lorem ipsum dolor sit amet"
-    },
-    {
-      "image": "/static/img/_placeholder/gallery/5.jpg",
-      "caption": "Veniam ea labore labore eu pariatur nulla."
-    },
-    {
-      "image": "/static/img/_placeholder/gallery/6.jpg",
-      "caption": "Aute mollit officia non eu culpa."
+  "gallery": {
+    "title": "Gallery title",
+    "id": 1,
+    "pk": 1,
+    "slug": "lorem",
+    "images": {
+      "all": [
+        {
+          "image": "/static/img/_placeholder/gallery/4.jpg",
+          "caption": "Lorem ipsum dolor sit amet"
+        },
+        {
+          "image": "/static/img/_placeholder/gallery/5.jpg",
+          "caption": "Veniam ea labore labore eu pariatur nulla."
+        },
+        {
+          "image": "/static/img/_placeholder/gallery/6.jpg",
+          "caption": "Aute mollit officia non eu culpa."
+        }
+      ]
     }
-  ],
+  },
   "fixtures": [
     {
       "title": "Lorem ipsum",

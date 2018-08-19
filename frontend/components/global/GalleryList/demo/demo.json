@@ -1,8 +1,9 @@
 {
   "galleries": [
     {
-      "id": "#",
-      "slug": "#",
+      "id": "1",
+      "pk": "1",
+      "slug": "blah",
       "created_date": "2018-06-01 09:00:00",
       "title": "Culpa ex est esse",
       "summary": "Lorem et aliqua aliqua cupidatat non laborum est velit proident pariatur.",
@@ -14,8 +15,9 @@
       }
     },
     {
-      "id": "#",
-      "slug": "#",
+      "id": "2",
+      "pk": "2",
+      "slug": "lorem",
       "created_date": "2018-07-03 09:00:00",
       "title": "Adipisicing laboris reprehenderit",
       "summary": "Ullamco consectetur ut sit sit ea elit aliquip occaecat quis.",

@@ -5,10 +5,10 @@
   <h3 class="Demo-h3">Default</h3>
   <div class="Demo-block Demo-block--1">
     {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
-      {% include template with data=data.data is_paginated=True paginator=data.paginator %}
+      {% include template with show_first=data.show_first show_last=data.show_last has_previous=data.has_previous has_next=data.has_next page=data.page previous_page_number=data.previous_page_number next_page_number=data.next_page_number page_numbers=data.page_numbers previous=data.previous next=data.next pages=data.pages %}
     {% endwith %}
     <h4 class="Demo-h4">Data</h4>
-    <pre class="Demo-code">{{data|pretty_print}}</pre>
+    <pre class="Demo-code">{{data}}</pre>
   </div>
 
 {% endblock component %}

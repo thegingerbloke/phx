@@ -2,31 +2,22 @@
 {% load components_tags %}
 
 {% block component %}
-  <h3 class="Demo-h3">No background image</h3>
+  <h3 class="Demo-h3">One image</h3>
   <div class="Demo-block Demo-block--1">
     {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
-      {% include template with data=data.noimage %}
+      {% include template with title=data.one_hero.title heroes=data.one_hero.heroes %}
     {% endwith %}
     <h4 class="Demo-h4">Data</h4>
-    <pre class="Demo-code">{{data.noimage|pretty_print}}</pre>
+    <pre class="Demo-code">{{data.one_hero|pretty_print}}</pre>
   </div>
 
-  <h3 class="Demo-h3">Example image</h3>
+  <h3 class="Demo-h3">Multiple images</h3>
   <div class="Demo-block Demo-block--2">
     {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
-      {% include template with data=data.image1 %}
+      {% include template with title=data.multiple_heroes.title heroes=data.multiple_heroes.heroes %}
     {% endwith %}
     <h4 class="Demo-h4">Data</h4>
-    <pre class="Demo-code">{{data.image1|pretty_print}}</pre>
-  </div>
-
-  <h3 class="Demo-h3">Another example image</h3>
-  <div class="Demo-block Demo-block--3">
-    {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
-      {% include template with data=data.image2 %}
-    {% endwith %}
-    <h4 class="Demo-h4">Data</h4>
-    <pre class="Demo-code">{{data.image2|pretty_print}}</pre>
+    <pre class="Demo-code">{{data.multiple_heroes|pretty_print}}</pre>
   </div>
 
 {% endblock component %}
