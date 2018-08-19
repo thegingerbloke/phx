@@ -23,7 +23,7 @@
     <ul class="GalleryList-list">
       {% for gallery in galleries %}
         <li class="GalleryList-item">
-          <a class="GalleryList-link" href="/gallery/{{ gallery.id }}/{{ gallery.slug }}">
+          <a class="GalleryList-link" href="{% url 'gallery-detail' pk=gallery.pk slug=gallery.slug %}">
             <div class="GalleryList-thumb">
               {% if gallery.thumbnail %}
                 <img class="GalleryList-thumbImg" src="{% thumbnail gallery.thumbnail.image 700x500 crop %}" alt="{{gallery.thumbnail.image_alt}}" />

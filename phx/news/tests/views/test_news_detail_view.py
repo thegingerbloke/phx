@@ -24,7 +24,7 @@ class TestNewsDetailsView(TestCase):
             'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
         )
 
-        self.assertEqual(url, '/news/1/this-is-a-test')
+        self.assertEqual(url, '/news/1/this-is-a-test/')
 
     def test_get(self):
         """"
@@ -68,11 +68,11 @@ class TestNewsDetailsView(TestCase):
         self.assertEqual(response.context['news'], news_2)
         self.assertEqual(
             response.context['data']['previous']['link_url'],
-            '/news/{}/{}'.format(news_1.id, news_1.slug)
+            '/news/{}/{}/'.format(news_1.id, news_1.slug)
         )
         self.assertEqual(
             response.context['data']['next']['link_url'],
-            '/news/{}/{}'.format(news_3.id, news_3.slug)
+            '/news/{}/{}/'.format(news_3.id, news_3.slug)
         )
 
     def test_component_editorial(self):

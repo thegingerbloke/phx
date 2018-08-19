@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.utils import timezone
+from django.db.models import Q
 from phx.admin import phx_admin
 from fixtures.models import Fixture
 from .models import Result
@@ -40,13 +41,22 @@ class ResultAdmin(admin.ModelAdmin):
     # update dropdown to contain date alongside name
     # fields = ['results_url', 'summary', 'results', 'get_']
 
-    # only list past fixtures that don't already have results associated
+    # only list fixtures that don't already have results associated
+    # past fixtures from (or created in) the last month only
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
         if db_field.name == "fixture":
+            one_month_ago = timezone.now() - timezone.timedelta(days=30)
             kwargs["queryset"] = Fixture.objects.filter(
-                fixture__isnull=True,
-                event_date__lte=timezone.now(),
+                Q(fixture__isnull=True) &
+                ((
+                    Q(event_date__lte=timezone.now()) &
+                    Q(event_date__gte=one_month_ago)
+                ) | (
+                    Q(event_date__lte=timezone.now()) &
+                    Q(modified_date__gte=one_month_ago)
+                ))
             )
+
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
 
     def save_model(self, request, obj, form, change):

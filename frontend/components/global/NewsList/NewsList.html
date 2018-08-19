@@ -23,7 +23,7 @@
     <ul class="NewsList-list">
       {% for story in news %}
         <li class="NewsList-item">
-          <a class="NewsList-link" href="/news/{{ story.id }}/{{ story.slug }}">
+          <a class="NewsList-link" href="{% url 'news-detail' pk=story.pk slug=story.slug %}">
             <div class="NewsList-thumb">
               {% if story.thumbnail %}
                 <img class="NewsList-thumbImg" src="{% thumbnail story.thumbnail.image 700x500 crop %}" alt="{{story.thumbnail.image_alt}}" />

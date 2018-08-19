@@ -37,6 +37,12 @@
   z-index: 1;
 }
 
+/* If set to fill, images should crop to fill container */
+
+.Gallery--fill .Gallery-item {
+  background-size: cover;
+}
+
 .Gallery-item + .Gallery-item {
   opacity: 0;
 }

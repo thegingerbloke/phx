@@ -1,0 +1,35 @@
+[
+    {
+        "model": "home.content",
+        "pk": 1,
+        "fields": {
+            "title": "Welcome",
+            "gallery": null,
+            "join": "<p>Join us at Brighton Phoenix!</p>",
+            "events": "<p>Our next event will be...</p>",
+            "about": "<p>Here is some information about Phoenix...</p>"
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 1,
+        "fields": {
+            "image": "hero/1.jpg",
+            "caption": "",
+            "created_date": "2018-08-16T14:10:39.882Z",
+            "modified_date": "2018-08-16T15:50:47.825Z",
+            "author": 1,
+            "image_categories": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "home.heroimagecategory",
+        "pk": 1,
+        "fields": {
+            "category": "Running",
+            "count": 1
+        }
+    }
+]

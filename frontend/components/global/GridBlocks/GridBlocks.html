@@ -33,7 +33,7 @@
     <ul class="GridBlocks-list">
       {% for story in news %}
         <li class="GridBlocks-item">
-          <a class="GridBlocks-itemLink" href="/news/{{ story.id }}/{{ story.slug }}">
+          <a class="GridBlocks-itemLink" href="{% url 'news-detail' pk=story.pk slug=story.slug %}">
             <div class="GridBlocks-itemThumb">
               {% if story.thumbnail %}
                 <img  class="GridBlocks-itemThumbImg" src="{% thumbnail story.thumbnail.image 350x250 crop %}" alt="{{story.thumbnail.image_alt}}" />
@@ -54,18 +54,20 @@
         </li>
       {% endfor %}
     </ul>
-    <a class="GridBlocks-cta" href="/news/">See all news articles</a>
+    <a class="GridBlocks-cta" href="{% url 'news-list' %}">See all news articles</a>
   </div>
 
   <div class="GridBlocks-block GridBlocks-block--gallery">
     <h3 class="GridBlocks-title">
       Gallery_
     </h3>
-    <a class="GridBlocks-link" href="{% url 'gallery-detail' pk=gallery.pk slug=gallery.slug %}">
-      {{gallery.title}}
-    </a>
+    {% if gallery %}
+      <a class="GridBlocks-link" href="{% url 'gallery-detail' pk=gallery.pk slug=gallery.slug %}">
+        {{gallery.title}}
+      </a>
+    {% endif %}
     <div class="GridBlocks-gallery">
-      {% include '../Gallery/Gallery.html' with gallery=gallery.images.all controls=True %}
+      {% include '../Gallery/Gallery.html' with gallery=gallery.images.all controls=True fill=True %}
     </div>
   </div>
 
@@ -89,7 +91,7 @@
       </tr>
       {% endfor %}
     </table>
-    <a class="GridBlocks-cta" href="/fixtures/">See all fixtures</a>
+    <a class="GridBlocks-cta" href="{% url 'fixtures-index' %}">See all fixtures</a>
   </div>
 
   <div class="GridBlocks-block GridBlocks-block--events GridBlocks-block--white">
@@ -122,7 +124,7 @@
         </tr>
         {% endfor %}
     </table>
-    <a class="GridBlocks-cta" href="/fixtures/">See all results</a>
+    <a class="GridBlocks-cta" href="{% url 'results-index' %}">See all results</a>
   </div>
 
   <div class="GridBlocks-block GridBlocks-block--join GridBlocks-block--dark">

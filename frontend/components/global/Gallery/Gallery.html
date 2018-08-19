@@ -1,6 +1,9 @@
 {% load thumbnail %}
 
-<div class="Gallery js-Gallery {% if autosize %}Gallery--autosize{% endif %}">
+<div class="Gallery js-Gallery
+  {% if autosize %}Gallery--autosize{% endif %}
+  {% if fill %}Gallery--fill{% endif %}
+  ">
   {% if controls %}
     <button class="Gallery-control Gallery-control--forward js-Gallery-control--forward">&raquo;</button>
     <button class="Gallery-control Gallery-control--back js-Gallery-control--back">&laquo;</button>

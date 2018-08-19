@@ -31,6 +31,10 @@ def nav(request):
             'linkText': 'Events'
         },
         {
+            'linkUrl': reverse('gallery-list'),
+            'linkText': 'Gallery'
+        },
+        {
             'linkUrl': '/membership/',
             'linkText': 'Membership'
         },

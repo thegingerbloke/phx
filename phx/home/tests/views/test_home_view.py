@@ -9,6 +9,7 @@ from ..factories import (
     HeroImageCategoryFactory
 )
 from fixtures.tests.factories import FixtureFactory
+from gallery.tests.factories import GalleryFactory
 from results.tests.factories import ResultFactory
 from news.tests.factories import NewsFactory
 from fixtures.models import Fixture
@@ -102,6 +103,18 @@ class TestHomeView(TestCase):
 
         self.assertEqual(
             response.context['announcement'], latest_announcement.announcement)
+
+    def test_gallery(self):
+        """
+        Test gallery is returned
+        """
+        url = reverse('home-index')
+        gallery = GalleryFactory()
+        ContentFactory(gallery=gallery)
+
+        response = self.client.get(url)
+
+        self.assertEqual(response.context['gallery'], gallery)
 
     def test_fixtures(self):
         """
