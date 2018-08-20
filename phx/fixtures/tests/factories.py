@@ -1,6 +1,5 @@
 from datetime import datetime
 from factory import post_generation
-from factory.django import ImageField
 from factory.fuzzy import FuzzyText, FuzzyDate
 from factory_djoy import CleanModelFactory
 
