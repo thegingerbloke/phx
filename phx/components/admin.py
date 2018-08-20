@@ -16,7 +16,28 @@ class AbstractEditorialAdmin(AbstractComponentAdmin):
         abstract = True
 
 
+class AbstractEmbedAdmin(AbstractComponentAdmin):
+    class Meta:
+        abstract = True
+
+
 class AbstractFeatureAdmin(AbstractComponentAdmin):
+    readonly_fields = ['current_image']
+
+    def current_image(self, obj):
+        thumbnailer = get_thumbnailer(obj.image)
+        thumbnail_options = {'size': (200, 200)}
+        return format_html(
+            '<img src="/media/{0}" />'.format(
+                thumbnailer.get_thumbnail(thumbnail_options)
+            )
+        )
+
+    class Meta:
+        abstract = True
+
+
+class AbstractImageAdmin(AbstractComponentAdmin):
     readonly_fields = ['current_image']
 
     def current_image(self, obj):
@@ -73,17 +94,6 @@ class AbstractQuoteAdmin(AbstractComponentAdmin):
         abstract = True
 
 
-class AbstractImageAdmin(AbstractComponentAdmin):
-    readonly_fields = ['current_image']
-
-    def current_image(self, obj):
-        thumbnailer = get_thumbnailer(obj.image)
-        thumbnail_options = {'size': (200, 200)}
-        return format_html(
-            '<img src="/media/{0}" />'.format(
-                thumbnailer.get_thumbnail(thumbnail_options)
-            )
-        )
-
+class AbstractTableAdmin(AbstractComponentAdmin):
     class Meta:
         abstract = True

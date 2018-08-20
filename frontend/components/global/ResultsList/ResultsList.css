@@ -161,8 +161,19 @@
   border-collapse: collapse;
   border-spacing: 0;
   border-width: 0;
-  margin-bottom: var(--gutter-double);
+  display: inline-block;
+  margin: var(--gutter-half) 0 var(--gutter-double) 0;
+  max-width: 100%;
+  overflow-x: auto;
   white-space: nowrap;
+  width: 100%;
+}
+
+@media (--medium) {
+  .ResultsList table {
+    display: table;
+    white-space: inherit;
+  }
 }
 
 .ResultsList tr:first-child {

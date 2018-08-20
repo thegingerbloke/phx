@@ -3,10 +3,12 @@ from ckeditor.fields import RichTextField
 
 COMPONENT_TYPES = [
     'editorial',
+    'embed',
     'feature',
+    'image',
     'list_items',
     'quote',
-    'image',
+    'table',
 ]
 
 ALIGNMENT_CHOICES = (
@@ -41,6 +43,20 @@ class AbstractEditorial(AbstractComponent):
 
     def __str__(self):
         return 'editorial'
+
+
+class AbstractEmbed(AbstractComponent):
+    title = models.CharField(max_length=200, blank=True)
+    content = models.TextField(
+        help_text="Careful! Anything you enter here will be embedded "
+        "directly in the website..."
+    )
+
+    class Meta:
+        abstract = True
+
+    def __str__(self):
+        return 'embed'
 
 
 class AbstractFeature(AbstractComponent):
@@ -131,3 +147,16 @@ class AbstractImage(AbstractComponent):
 
     def __str__(self):
         return 'image'
+
+
+class AbstractTable(AbstractComponent):
+    title = models.CharField(max_length=200, blank=True)
+    content = RichTextField(
+        config_name='table',
+    )
+
+    class Meta:
+        abstract = True
+
+    def __str__(self):
+        return 'table'

@@ -24,7 +24,8 @@ class NewsListView(generic.ListView):
             query = query.filter(
                 Q(title__icontains=search) |
                 Q(summary__icontains=search) |
-                Q(components__editorial__content__icontains=search)
+                Q(components__editorial__content__icontains=search) |
+                Q(components__table__content__icontains=search)
             )
 
         return query

@@ -9,10 +9,12 @@ from ..models import (
     Thumbnail,
     Component,
     Editorial,
+    Embed,
     Feature,
-    Quote,
     Image,
     ListItems,
+    Quote,
+    Table,
 )
 
 
@@ -48,6 +50,14 @@ class EditorialFactory(CleanModelFactory):
         model = Editorial
 
 
+class EmbedFactory(CleanModelFactory):
+    title = FuzzyText()
+    content = FuzzyText()
+
+    class Meta:
+        model = Embed
+
+
 class FeatureFactory(CleanModelFactory):
     title = FuzzyText()
     content = FuzzyText()
@@ -57,17 +67,6 @@ class FeatureFactory(CleanModelFactory):
 
     class Meta:
         model = Feature
-
-
-class QuoteFactory(CleanModelFactory):
-    quote = FuzzyText()
-    author = FuzzyText()
-    align = FuzzyChoice([i[0] for i in ALIGNMENT_CHOICES])
-    background = FuzzyChoice([i[0] for i in BACKGROUND_CHOICES])
-    image = ImageField()
-
-    class Meta:
-        model = Quote
 
 
 class ImageFactory(CleanModelFactory):
@@ -84,3 +83,22 @@ class ListItemsFactory(CleanModelFactory):
 
     class Meta:
         model = ListItems
+
+
+class QuoteFactory(CleanModelFactory):
+    quote = FuzzyText()
+    author = FuzzyText()
+    align = FuzzyChoice([i[0] for i in ALIGNMENT_CHOICES])
+    background = FuzzyChoice([i[0] for i in BACKGROUND_CHOICES])
+    image = ImageField()
+
+    class Meta:
+        model = Quote
+
+
+class TableFactory(CleanModelFactory):
+    title = FuzzyText()
+    content = FuzzyText()
+
+    class Meta:
+        model = Table

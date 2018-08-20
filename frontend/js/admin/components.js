@@ -52,13 +52,16 @@ var Components = {
       .not($fieldset)
       .hide();
 
-    // if this is an editorial component, we also need to init ckeditor
-    if (formsetName.toLowerCase().indexOf("editorial") !== -1) {
+    // if this is an editorial/table component, we also need to init ckeditor
+    if (
+      formsetName.toLowerCase().indexOf("editorial") !== -1 ||
+      formsetName.toLowerCase().indexOf("table") !== -1
+    ) {
       Components.initCKEditor();
     }
   },
 
-  // editorial blocks added by the component admin need to be manually
+  // editorial/table blocks added by the component admin need to be manually
   // initialised.
   //
   // taken from:

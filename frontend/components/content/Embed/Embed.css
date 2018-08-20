@@ -1,0 +1,41 @@
+/**
+ * @define Embed; weak
+ *
+ * weak linting to stop the need for classes on all formatting
+ */
+
+.Embed-title {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-default);
+  margin: 2rem 0 0.5rem 0;
+}
+
+.Embed-content {
+  background: var(--colour-grey-light);
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  text-align: center;
+}
+.Embed-content iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.Embed-content * {
+  text-align: left;
+}
+
+/* Embed - links */
+
+.Embed a {
+  color: var(--colour-blue-dark);
+}
+
+.Embed a:hover {
+  opacity: var(--opacity-hover);
+}

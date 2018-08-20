@@ -4,9 +4,15 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from django.template.defaultfilters import slugify
 from django.core.exceptions import ValidationError
-from components.models import (AbstractEditorial, AbstractFeature,
-                               AbstractQuote, AbstractImage,
-                               AbstractListItems)
+from components.models import (
+    AbstractEditorial,
+    AbstractEmbed,
+    AbstractFeature,
+    AbstractImage,
+    AbstractListItems,
+    AbstractQuote,
+    AbstractTable,
+)
 
 
 def generate_slug(instance):
@@ -105,6 +111,14 @@ class Editorial(AbstractEditorial):
     )
 
 
+class Embed(AbstractEmbed):
+    component = models.OneToOneField(
+        Component,
+        on_delete=models.CASCADE,
+        related_name='embed',
+    )
+
+
 class Feature(AbstractFeature):
     def get_upload_path(self, filename):
         id = self.component.page_id
@@ -114,19 +128,6 @@ class Feature(AbstractFeature):
         Component,
         on_delete=models.CASCADE,
         related_name='feature',
-    )
-    image = models.ImageField(upload_to=get_upload_path, blank=True)
-
-
-class Quote(AbstractQuote):
-    def get_upload_path(self, filename):
-        id = self.component.page_id
-        return 'page/{0}/quote/{1}'.format(id, filename)
-
-    component = models.OneToOneField(
-        Component,
-        on_delete=models.CASCADE,
-        related_name='quote',
     )
     image = models.ImageField(upload_to=get_upload_path, blank=True)
 
@@ -170,4 +171,25 @@ class ListItems(AbstractListItems):
         upload_to=get_upload_path,
         blank=True,
         help_text=help_text
+    )
+
+
+class Quote(AbstractQuote):
+    def get_upload_path(self, filename):
+        id = self.component.page_id
+        return 'page/{0}/quote/{1}'.format(id, filename)
+
+    component = models.OneToOneField(
+        Component,
+        on_delete=models.CASCADE,
+        related_name='quote',
+    )
+    image = models.ImageField(upload_to=get_upload_path, blank=True)
+
+
+class Table(AbstractTable):
+    component = models.OneToOneField(
+        Component,
+        on_delete=models.CASCADE,
+        related_name='table',
     )

@@ -3,8 +3,8 @@
     {% if component.editorial %}
       {% include './content/Editorial/Editorial.html' with data=component.editorial %}
     {% endif %}
-    {% if component.quote %}
-      {% include './content/Quote/Quote.html' with data=component.quote %}
+    {% if component.embed %}
+      {% include './content/Embed/Embed.html' with data=component.embed %}
     {% endif %}
     {% if component.feature %}
       {% include './content/Feature/Feature.html' with data=component.feature %}
@@ -14,6 +14,12 @@
     {% endif %}
     {% if component.list_items %}
       {% include './content/ListItems/ListItems.html' with data=component.list_items %}
+    {% endif %}
+    {% if component.quote %}
+      {% include './content/Quote/Quote.html' with data=component.quote %}
+    {% endif %}
+    {% if component.table %}
+      {% include './content/Table/Table.html' with data=component.table %}
     {% endif %}
   </div>
 {% endfor %}

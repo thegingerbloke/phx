@@ -1,0 +1,4 @@
+{
+  "title": "table title",
+  "content": "<table><tbody><tr><td>Pos</td><td>Perf</td><td>Name</td><td>AG</td><td>SB</td><td>PB</td></tr><tr><td>1</td><td>1:48.61</td><td>Lorem</td><td>U23</td><td>1:47.76</td><td>1:47.76</td></tr><tr><td>2</td><td>1:48.97</td><td>Ipsum</td><td>U23</td><td>1:48.97</td><td>1:48.97</td></tr></tbody></table>"
+}

@@ -1,9 +1,24 @@
 from phx.admin import phx_admin
-from .models import (Page, Component, Editorial, Feature, Quote, Image,
-                     ListItems)
-from components.admin import (AbstractEditorialAdmin, AbstractFeatureAdmin,
-                              AbstractListItemsAdmin, AbstractQuoteAdmin,
-                              AbstractImageAdmin)
+from .models import (
+    Page,
+    Component,
+    Editorial,
+    Embed,
+    Feature,
+    Image,
+    ListItems,
+    Quote,
+    Table,
+)
+from components.admin import (
+    AbstractEditorialAdmin,
+    AbstractEmbedAdmin,
+    AbstractFeatureAdmin,
+    AbstractImageAdmin,
+    AbstractListItemsAdmin,
+    AbstractQuoteAdmin,
+    AbstractTableAdmin,
+)
 import nested_admin
 
 
@@ -11,8 +26,16 @@ class EditorialAdmin(AbstractEditorialAdmin):
     model = Editorial
 
 
+class EmbedAdmin(AbstractEmbedAdmin):
+    model = Embed
+
+
 class FeatureAdmin(AbstractFeatureAdmin):
     model = Feature
+
+
+class ImageAdmin(AbstractImageAdmin):
+    model = Image
 
 
 class ListItemsAdmin(AbstractListItemsAdmin):
@@ -23,8 +46,8 @@ class QuoteAdmin(AbstractQuoteAdmin):
     model = Quote
 
 
-class ImageAdmin(AbstractImageAdmin):
-    model = Image
+class TableAdmin(AbstractTableAdmin):
+    model = Table
 
 
 class ComponentAdmin(nested_admin.NestedStackedInline):
@@ -32,10 +55,12 @@ class ComponentAdmin(nested_admin.NestedStackedInline):
     extra = 0
     inlines = [
         EditorialAdmin,
+        EmbedAdmin,
         FeatureAdmin,
+        ImageAdmin,
         ListItemsAdmin,
         QuoteAdmin,
-        ImageAdmin,
+        TableAdmin,
     ]
     sortable_field_name = 'order'
 

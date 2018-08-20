@@ -6,10 +6,12 @@ from ..factories import (
     PageFactory,
     ComponentFactory,
     EditorialFactory,
-    FeatureFactory,
-    QuoteFactory,
+    EmbedFactory,
     ImageFactory,
+    FeatureFactory,
     ListItemsFactory,
+    QuoteFactory,
+    TableFactory,
 )
 
 
@@ -72,6 +74,25 @@ class TestPageView(TestCase):
         self.assertEqual(first_editorial, editorial)
         self.assertEqual(first_editorial.title, 'first editorial block')
 
+    def test_component_embed(self):
+        """"
+        GET request returns embed component as expected
+        """
+        page = PageFactory()
+        embed = EmbedFactory(
+            title='first embed block',
+            component=SubFactory(ComponentFactory, page=page))
+
+        url = reverse(
+            'page-detail', kwargs={'slug': page.get_slug()}
+        )
+
+        response = self.client.get(url)
+        component = response.context['components'].first()
+        first_embed = component.embed
+        self.assertEqual(first_embed, embed)
+        self.assertEqual(first_embed.title, 'first embed block')
+
     def test_component_feature(self):
         """"
         GET request returns feature component as expected
@@ -90,25 +111,6 @@ class TestPageView(TestCase):
         first_feature = component.feature
         self.assertEqual(first_feature, feature)
         self.assertEqual(first_feature.title, 'first feature block')
-
-    def test_component_quote(self):
-        """"
-        GET request returns quote component as expected
-        """
-        page = PageFactory()
-        quote = QuoteFactory(
-            quote='first quote block',
-            component=SubFactory(ComponentFactory, page=page))
-
-        url = reverse(
-            'page-detail', kwargs={'slug': page.get_slug()}
-        )
-
-        response = self.client.get(url)
-        component = response.context['components'].first()
-        first_quote = component.quote
-        self.assertEqual(first_quote, quote)
-        self.assertEqual(first_quote.quote, 'first quote block')
 
     def test_component_image(self):
         """"
@@ -147,3 +149,41 @@ class TestPageView(TestCase):
         first_list_items = component.list_items
         self.assertEqual(first_list_items, list_items)
         self.assertEqual(first_list_items.title_1, 'first list_items block')
+
+    def test_component_quote(self):
+        """"
+        GET request returns quote component as expected
+        """
+        page = PageFactory()
+        quote = QuoteFactory(
+            quote='first quote block',
+            component=SubFactory(ComponentFactory, page=page))
+
+        url = reverse(
+            'page-detail', kwargs={'slug': page.get_slug()}
+        )
+
+        response = self.client.get(url)
+        component = response.context['components'].first()
+        first_quote = component.quote
+        self.assertEqual(first_quote, quote)
+        self.assertEqual(first_quote.quote, 'first quote block')
+
+    def test_component_table(self):
+        """"
+        GET request returns table component as expected
+        """
+        page = PageFactory()
+        table = TableFactory(
+            title='first table block',
+            component=SubFactory(ComponentFactory, page=page))
+
+        url = reverse(
+            'page-detail', kwargs={'slug': page.get_slug()}
+        )
+
+        response = self.client.get(url)
+        component = response.context['components'].first()
+        first_table = component.table
+        self.assertEqual(first_table, table)
+        self.assertEqual(first_table.title, 'first table block')

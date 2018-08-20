@@ -6,10 +6,12 @@ from ..factories import (
     NewsFactory,
     ComponentFactory,
     EditorialFactory,
+    EmbedFactory,
     FeatureFactory,
-    QuoteFactory,
     ImageFactory,
     ListItemsFactory,
+    QuoteFactory,
+    TableFactory,
 )
 
 
@@ -94,6 +96,26 @@ class TestNewsDetailsView(TestCase):
         self.assertEqual(first_editorial, editorial)
         self.assertEqual(first_editorial.title, 'first editorial block')
 
+    def test_component_embed(self):
+        """"
+        GET request returns embed component as expected
+        """
+        news = NewsFactory()
+        embed = EmbedFactory(
+            title='first embed block',
+            content='blah',
+            component=SubFactory(ComponentFactory, news=news))
+
+        url = reverse(
+            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
+        )
+
+        response = self.client.get(url)
+        component = response.context['components'].first()
+        first_embed = component.embed
+        self.assertEqual(first_embed, embed)
+        self.assertEqual(first_embed.title, 'first embed block')
+
     def test_component_feature(self):
         """"
         GET request returns feature component as expected
@@ -112,25 +134,6 @@ class TestNewsDetailsView(TestCase):
         first_feature = component.feature
         self.assertEqual(first_feature, feature)
         self.assertEqual(first_feature.title, 'first feature block')
-
-    def test_component_quote(self):
-        """"
-        GET request returns quote component as expected
-        """
-        news = NewsFactory()
-        quote = QuoteFactory(
-            quote='first quote block',
-            component=SubFactory(ComponentFactory, news=news))
-
-        url = reverse(
-            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
-        )
-
-        response = self.client.get(url)
-        component = response.context['components'].first()
-        first_quote = component.quote
-        self.assertEqual(first_quote, quote)
-        self.assertEqual(first_quote.quote, 'first quote block')
 
     def test_component_image(self):
         """"
@@ -169,3 +172,42 @@ class TestNewsDetailsView(TestCase):
         first_list_items = component.list_items
         self.assertEqual(first_list_items, list_items)
         self.assertEqual(first_list_items.title_1, 'first list_items block')
+
+    def test_component_quote(self):
+        """"
+        GET request returns quote component as expected
+        """
+        news = NewsFactory()
+        quote = QuoteFactory(
+            quote='first quote block',
+            component=SubFactory(ComponentFactory, news=news))
+
+        url = reverse(
+            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
+        )
+
+        response = self.client.get(url)
+        component = response.context['components'].first()
+        first_quote = component.quote
+        self.assertEqual(first_quote, quote)
+        self.assertEqual(first_quote.quote, 'first quote block')
+
+    def test_component_table(self):
+        """"
+        GET request returns table component as expected
+        """
+        news = NewsFactory()
+        table = TableFactory(
+            title='first table block',
+            content='blah',
+            component=SubFactory(ComponentFactory, news=news))
+
+        url = reverse(
+            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
+        )
+
+        response = self.client.get(url)
+        component = response.context['components'].first()
+        first_table = component.table
+        self.assertEqual(first_table, table)
+        self.assertEqual(first_table.title, 'first table block')
