@@ -93,6 +93,7 @@ TEMPLATES = [
             ],
             'libraries': {
                 'templatehelpers': 'phx.templatetags.templatehelpers',
+                'highlight': 'phx.templatetags.highlight',
                 'paginator': 'phx.templatetags.paginator',
             }
         },

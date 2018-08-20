@@ -1,5 +1,6 @@
 {% load static %}
 {% load thumbnail %}
+{% load highlight %}
 
 <div class="NewsList">
 
@@ -33,11 +34,11 @@
             </div>
             <div class="NewsList-content">
               <p class="NewsList-text">
-                <span class="NewsList-subtitle">{{story.title}}</span>
+                <span class="NewsList-subtitle">{{story.title|highlight:search|safe}}</span>
                 <em>{{story.created_date|date:'D j M Y'}}</em>
               </p>
               <p class="NewsList-text">
-                {{story.summary|truncatewords_html:50}}
+                {{story.summary|highlight:search|safe|truncatewords_html:50}}
               </p>
             </div>
           </a>

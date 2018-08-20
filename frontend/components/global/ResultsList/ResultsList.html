@@ -1,4 +1,5 @@
 {% load templatehelpers %}
+{% load highlight %}
 
 <div class="ResultsList">
   <div class="ResultsList-filter">
@@ -49,24 +50,24 @@
             {{result.fixture.categories.all|join:', '}}
           </p>
           <h3 class="ResultsList-title">
-            {{result.fixture.title}}
+            {{result.fixture.title|highlight:search|safe}}
           </h3>
           <p class="ResultsList-subtitle">
             <span class="ResultsList-date">{{result.fixture.event_date|date:'D j M Y'}}</span>
             {% if result.fixture.age_group %}
-              - <span class="ResultsList-age_group">{{result.fixture.age_group}}</span>
+              - <span class="ResultsList-age_group">{{result.fixture.age_group|highlight:search|safe}}</span>
             {% endif %}
             {% if result.fixture.location %}
-              (<span class="ResultsList-location">{{result.fixture.location}}</span>)
+              (<span class="ResultsList-location">{{result.fixture.location|highlight:search|safe}}</span>)
             {% endif %}
           </p>
           <div class="ResultsList-summary">
             <div class="Editorial">
-              {{result.summary|safe}}
+              {{result.summary|highlight:search|safe}}
             </div>
           </div>
           <p class="ResultsList-results">
-            {{result.results|safe}}
+            {{result.results|highlight:search|safe}}
           </p>
           <ul class="ResultsList-NewsList">
             {% if result.fixture.link_url %}

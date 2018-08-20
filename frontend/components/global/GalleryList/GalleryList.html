@@ -1,5 +1,6 @@
 {% load static %}
 {% load thumbnail %}
+{% load highlight %}
 
 <div class="GalleryList">
 
@@ -33,11 +34,11 @@
             </div>
             <div class="GalleryList-content">
               <p class="GalleryList-text">
-                <span class="GalleryList-subtitle">{{gallery.title}}</span>
+                <span class="GalleryList-subtitle">{{gallery.title|highlight:search|safe}}</span>
                 <em>{{gallery.created_date|date:'D j M Y'}}</em>
               </p>
               <p class="GalleryList-text">
-                {{gallery.summary|truncatewords_html:50}}
+                {{gallery.summary|highlight:search|safe|truncatewords_html:50}}
               </p>
               <p class="GalleryList-text">
                 ({{gallery.images.all|length}} image{{gallery.images.all|length|pluralize}})
