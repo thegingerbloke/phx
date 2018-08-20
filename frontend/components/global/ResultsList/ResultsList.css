@@ -203,6 +203,10 @@
   width: 25%;
 }
 
+.ResultsList-item tr:nth-child(even) td {
+  background-color: var(--colour-blue-xlight);
+}
+
 .ResultsList-item:nth-child(even) tr:nth-child(even) td {
   background-color: var(--colour-blue-light);
 }

@@ -36,8 +36,8 @@
         "fields": {
             "image_alt": "",
             "caption": "",
-            "image": "gallery/2/image/2.jpg",
-            "gallery": 2
+            "image": "gallery/1/image/2.jpg",
+            "gallery": 1
         }
     }
 ]

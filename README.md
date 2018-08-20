@@ -101,7 +101,7 @@ Once you have cloned this repo, run through the following steps:
 * You can automate the site population with the following command:
 
   ```
-  python3 manage.py loaddata fixtures results contact pages news
+  python3 manage.py loaddata fixtures results contact pages news home gallery
   ```
 
 * Alternatively this can be done manually - from the admin area create a page for every top-level section of the site:
@@ -293,5 +293,5 @@ A config for Circle CI has been set up to run linting and testing on every push 
 * Optional: manually (generate, upload and) load fixture data:
 
   ```
-  manage.py loaddata news fixtures results pages contact
+  manage.py loaddata fixtures results contact pages news home gallery
   ```

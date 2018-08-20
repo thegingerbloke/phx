@@ -1,719 +1,5 @@
 [
     {
-        "model": "pages.component",
-        "pk": 1,
-        "fields": {
-            "order": 0,
-            "page": 2
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 2,
-        "fields": {
-            "order": 0,
-            "page": 11
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 3,
-        "fields": {
-            "order": 1,
-            "page": 11
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 4,
-        "fields": {
-            "order": 0,
-            "page": 39
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 5,
-        "fields": {
-            "order": 1,
-            "page": 39
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 6,
-        "fields": {
-            "order": 2,
-            "page": 39
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 7,
-        "fields": {
-            "order": 3,
-            "page": 39
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 8,
-        "fields": {
-            "order": 4,
-            "page": 39
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 9,
-        "fields": {
-            "order": 5,
-            "page": 39
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 10,
-        "fields": {
-            "order": 6,
-            "page": 39
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 11,
-        "fields": {
-            "order": 7,
-            "page": 39
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 12,
-        "fields": {
-            "order": 8,
-            "page": 39
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 13,
-        "fields": {
-            "order": 0,
-            "page": 40
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 14,
-        "fields": {
-            "order": 0,
-            "page": 41
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 15,
-        "fields": {
-            "order": 1,
-            "page": 41
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 16,
-        "fields": {
-            "order": 2,
-            "page": 41
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 17,
-        "fields": {
-            "order": 0,
-            "page": 42
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 18,
-        "fields": {
-            "order": 1,
-            "page": 42
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 19,
-        "fields": {
-            "order": 2,
-            "page": 42
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 20,
-        "fields": {
-            "order": 3,
-            "page": 42
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 21,
-        "fields": {
-            "order": 4,
-            "page": 42
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 22,
-        "fields": {
-            "order": 5,
-            "page": 42
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 23,
-        "fields": {
-            "order": 0,
-            "page": 43
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 24,
-        "fields": {
-            "order": 1,
-            "page": 43
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 25,
-        "fields": {
-            "order": 2,
-            "page": 43
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 26,
-        "fields": {
-            "order": 3,
-            "page": 43
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 27,
-        "fields": {
-            "order": 4,
-            "page": 43
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 28,
-        "fields": {
-            "order": 0,
-            "page": 44
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 29,
-        "fields": {
-            "order": 1,
-            "page": 44
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 30,
-        "fields": {
-            "order": 2,
-            "page": 44
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 31,
-        "fields": {
-            "order": 3,
-            "page": 44
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 32,
-        "fields": {
-            "order": 0,
-            "page": 37
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 33,
-        "fields": {
-            "order": 0,
-            "page": 36
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 1,
-        "fields": {
-            "created_date": "2018-07-25T13:29:49.308Z",
-            "modified_date": "2018-07-27T10:56:22.060Z",
-            "title": "",
-            "content": "<p>You can contact us by emailing <a href=\"mailto:brightonphoenix@gmail.com\">brightonphoenix@gmail.com</a> or by&nbsp;filling in the form below</p>",
-            "component": 1
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 2,
-        "fields": {
-            "created_date": "2018-07-27T10:58:53.208Z",
-            "modified_date": "2018-07-27T11:02:04.722Z",
-            "title": "",
-            "content": "<p>You can find us at the <a href=\"https://www.freedom-leisure.co.uk/centres/withdean-sports-complex/\">Withdean Stadium track</a> every Wednesday evening from 5:30pm.</p>\r\n\r\n<p>Tongdean Lane, Brighton,&nbsp;<a href=\"https://www.google.co.uk/maps/place/Withdean+Sports+Complex/@50.8535931,-0.1597183,18z/data=!4m13!1m7!3m6!1s0x48758f8d2383f9dd:0x32e9caf72a3d565b!2sTongdean+Ln,+Brighton+BN1+5JD!3b1!8m2!3d50.8538631!4d-0.159572!3m4!1s0x48758f8d23653431:0x57201f67be7f42a0!8m2!3d50.852903!4d-0.1602452\">BN1 5JD</a></p>",
-            "component": 2
-        }
-    },
-    {
-        "model": "pages.image",
-        "pk": 3,
-        "fields": {
-            "created_date": "2018-07-27T10:58:53.235Z",
-            "modified_date": "2018-07-27T10:58:53.235Z",
-            "image_alt": "Map of Withdean stadium",
-            "caption": "",
-            "component": 3,
-            "image": "page/11/image/map.jpg"
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 3,
-        "fields": {
-            "created_date": "2018-08-07T14:01:04.050Z",
-            "modified_date": "2018-08-07T14:06:41.588Z",
-            "title": "Login",
-            "content": "<ol>\r\n\t<li>Visit <a href=\"https://www.brightonphoenix.org.uk/admin\">https://www.brightonphoenix.org.uk/admin</a></li>\r\n\t<li>Log in (if you don&#39;t have login details, contact the web team)</li>\r\n</ol>\r\n\r\n<p>The following content can be edited:</p>\r\n\r\n<ul>\r\n\t<li>Fixtures and categories</li>\r\n\t<li>Results</li>\r\n\t<li>Contacts and topics</li>\r\n\t<li>Files</li>\r\n\t<li>Hero images</li>\r\n\t<li>News</li>\r\n\t<li>Pages</li>\r\n</ul>",
-            "component": 4
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 4,
-        "fields": {
-            "created_date": "2018-08-07T14:06:41.604Z",
-            "modified_date": "2018-08-07T14:06:41.604Z",
-            "title": "Fixtures and categories",
-            "content": "<p><strong>Fixtures</strong><br />\r\nFor each new fixture, add a name and date. Optionally add a location, link and category.</p>\r\n\r\n<p><strong>Categories</strong><br />\r\nYou can assign each fixture (or result) to one or more categories, for example <em>Sussex Grand Prix</em>&nbsp;or&nbsp;<em>Road Race.</em></p>\r\n\r\n<ul>\r\n</ul>",
-            "component": 5
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 5,
-        "fields": {
-            "created_date": "2018-08-07T14:08:56.482Z",
-            "modified_date": "2018-08-07T14:08:56.482Z",
-            "title": "Results",
-            "content": "<p>New results need to be assigned to a fixture. If it doesn&#39;t already exist, you will need to first create the fixture.</p>\r\n\r\n<p>Result content is split into two parts, a <em>summary</em>&nbsp;which is the text description of the event, and&nbsp;<em>results</em>&nbsp;which is the (usually tabular) result content.</p>\r\n\r\n<p>Optionally, add a link for full results.</p>",
-            "component": 6
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 6,
-        "fields": {
-            "created_date": "2018-08-07T14:14:08.093Z",
-            "modified_date": "2018-08-07T14:14:08.094Z",
-            "title": "Contacts and topics",
-            "content": "<p>The contact form allows members of the public to contact Phoenix through the website.</p>\r\n\r\n<p>The dropdown list in the contact form allows people to choose the relevant topic of&nbsp;their message.</p>\r\n\r\n<p>For any submission for the contact form, a message will be sent to the main Phoenix email account. Based on the selected topic,&nbsp;the relevant people will also be copied in to the email.</p>\r\n\r\n<p><strong>Contacts</strong><br />\r\nIn the admin section, contact information&nbsp;can be added by submitting a name and email address. These aren&#39;t displayed on the site but they are used to assign topics.</p>\r\n\r\n<p><strong>Topics</strong><br />\r\nContacts can be&nbsp;assigned to topics. These topics will&nbsp;appear in the dropdown list, and the contacts will receive a message when the topic is selected.</p>",
-            "component": 7
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 7,
-        "fields": {
-            "created_date": "2018-08-07T14:18:57.748Z",
-            "modified_date": "2018-08-07T14:18:57.748Z",
-            "title": "Files",
-            "content": "<p>Files can be uploaded through the admin area.</p>\r\n\r\n<p>Once uploaded, the listing page will display the URL for each file.</p>\r\n\r\n<p>This can be copied, and pasted as a link in the relevant part of the website.</p>",
-            "component": 8
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 8,
-        "fields": {
-            "created_date": "2018-08-07T14:18:57.758Z",
-            "modified_date": "2018-08-07T14:18:57.758Z",
-            "title": "Hero images",
-            "content": "<p>New hero images can be added, they can be set to appear at the top of a page behind the page title.</p>",
-            "component": 9
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 9,
-        "fields": {
-            "created_date": "2018-08-07T14:18:57.770Z",
-            "modified_date": "2018-08-07T14:18:57.770Z",
-            "title": "News",
-            "content": "<p><strong>Title and summary</strong><br />\r\nNews articles should have a title and summary. The title is used to auto-generate the page &#39;slug&#39; (its link). The summary is used on the home page and news listing page. The summary doesn&#39;t appear on the news detail page.</p>\r\n\r\n<p><strong>Thumbnail</strong><br />\r\nEach news article can have a thumbnail uploaded. The thumbnail is used on the home page and news listing page. It doesn&#39;t appear on the news detail page.</p>\r\n\r\n<p><strong>Components</strong><br />\r\nSee below for how components with news articles and pages</p>",
-            "component": 10
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 10,
-        "fields": {
-            "created_date": "2018-08-07T14:23:53.280Z",
-            "modified_date": "2018-08-07T14:23:53.280Z",
-            "title": "Pages",
-            "content": "<p>New pages can be added to the site.&nbsp;</p>\r\n\r\n<p>For each page, a <em>parent</em>&nbsp;page can be assigned. This allows pages to be &#39;nested&#39;, creating a heirarchy.&nbsp;</p>\r\n\r\n<p>The &#39;slug&#39; (link) for each page is automatically generated from its title, and also the title from any parent pages.</p>\r\n\r\n<p><strong>Components</strong><br />\r\nSee below for how components with news articles and pages</p>",
-            "component": 11
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 11,
-        "fields": {
-            "created_date": "2018-08-07T14:28:51.562Z",
-            "modified_date": "2018-08-07T14:28:51.562Z",
-            "title": "Components",
-            "content": "<p>For news articles and pages, there are five types of <em>component</em>&nbsp;that can be used to create content:&nbsp;</p>\r\n\r\n<ol>\r\n\t<li>Editorial</li>\r\n\t<li>Image</li>\r\n\t<li>Quote</li>\r\n\t<li>Feature</li>\r\n\t<li>List Items</li>\r\n</ol>\r\n\r\n<p>These components can be used as many times as desired, in any order.</p>\r\n\r\n<p>Further details for each of these components can be found on the sub-pages of this guide</p>",
-            "component": 12
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 12,
-        "fields": {
-            "created_date": "2018-08-07T14:30:27.562Z",
-            "modified_date": "2018-08-07T14:30:27.562Z",
-            "title": "",
-            "content": "<p>Editorial components are text blocks, such as this.&nbsp;</p>\r\n\r\n<p>They have some style options, such as <strong>bold&nbsp;</strong>and&nbsp;<em>italic</em>&nbsp;text, and&nbsp;<a href=\"https://www.brightonphoenix.org.uk\">links</a>.</p>\r\n\r\n<ol>\r\n\t<li>Numbered</li>\r\n\t<li>lists</li>\r\n</ol>\r\n\r\n<ul>\r\n\t<li>Bullet</li>\r\n\t<li>point</li>\r\n\t<li>lists</li>\r\n</ul>",
-            "component": 13
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 13,
-        "fields": {
-            "created_date": "2018-08-07T14:35:58.987Z",
-            "modified_date": "2018-08-07T14:35:58.987Z",
-            "title": "",
-            "content": "<p>Images&nbsp;can be landscape or portrait, they are resized&nbsp;automatically to display at the correct resolution for the website.</p>\r\n\r\n<p>When possible, <em>alt text</em>&nbsp;should be added for a photo giving a brief description of its contents.</p>\r\n\r\n<p>Optionally, a caption can be added. It can be used to describe further details, such as where the photo was taken, who by, etc. When set, this will be displayed in the bottom corner of&nbsp;the photo.&nbsp;</p>",
-            "component": 14
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 14,
-        "fields": {
-            "created_date": "2018-08-07T14:44:38.845Z",
-            "modified_date": "2018-08-07T14:44:38.845Z",
-            "title": "",
-            "content": "<p>Feature components can be used to place text alongside an image.&nbsp;</p>\r\n\r\n<p>There are two required pieces of information for a feature component:</p>\r\n\r\n<ul>\r\n\t<li>Title</li>\r\n\t<li>Text content</li>\r\n</ul>\r\n\r\n<p>There are several optional pieces of information:</p>\r\n\r\n<ul>\r\n\t<li>A subtitle</li>\r\n\t<li>An image</li>\r\n\t<li>Image alt text</li>\r\n\t<li>A link URL</li>\r\n\t<li>The link text</li>\r\n</ul>\r\n\r\n<p>There are also&nbsp;configuration options:&nbsp;</p>\r\n\r\n<ul>\r\n\t<li>Image/text alignment - e.g. image to the left or right of the text, or centred text (with no image)</li>\r\n\t<li>The background colour - light or dark blue, or white</li>\r\n</ul>",
-            "component": 17
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 15,
-        "fields": {
-            "created_date": "2018-08-07T14:44:38.858Z",
-            "modified_date": "2018-08-07T14:44:38.858Z",
-            "title": "Example feature components",
-            "content": "<p>Several examples are displayed below:</p>",
-            "component": 18
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 16,
-        "fields": {
-            "created_date": "2018-08-07T14:49:04.075Z",
-            "modified_date": "2018-08-07T14:49:04.075Z",
-            "title": "",
-            "content": "<p>Quote components can be used to place a quote alongside an image.&nbsp;</p>\r\n\r\n<p>There is one&nbsp;required&nbsp;piece&nbsp;of information for a quote component:</p>\r\n\r\n<ul>\r\n\t<li>Quote</li>\r\n</ul>\r\n\r\n<p>There are several optional pieces of information:</p>\r\n\r\n<ul>\r\n\t<li>Author</li>\r\n\t<li>An image</li>\r\n\t<li>Image alt text</li>\r\n</ul>\r\n\r\n<p>There are also&nbsp;configuration options:&nbsp;</p>\r\n\r\n<ul>\r\n\t<li>Image/text alignment - e.g. image to the left or right of the text, or centred text (with no image)</li>\r\n\t<li>The background colour - light or dark blue, or white</li>\r\n</ul>",
-            "component": 23
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 17,
-        "fields": {
-            "created_date": "2018-08-07T14:49:04.089Z",
-            "modified_date": "2018-08-07T14:49:04.089Z",
-            "title": "Example quote components",
-            "content": "<p>Several examples are displayed below:</p>",
-            "component": 24
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 18,
-        "fields": {
-            "created_date": "2018-08-07T14:55:55.286Z",
-            "modified_date": "2018-08-07T14:55:55.286Z",
-            "title": "",
-            "content": "<p>List items components can be used to link through to other sections of the website.</p>\r\n\r\n<p>They can be either two or three in a row.</p>\r\n\r\n<p>There is optional content for each list item:</p>\r\n\r\n<ul>\r\n\t<li>Title</li>\r\n\t<li>Content</li>\r\n\t<li>Image</li>\r\n\t<li>Image alt text</li>\r\n\t<li>Link url</li>\r\n\t<li>Link text</li>\r\n</ul>",
-            "component": 28
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 19,
-        "fields": {
-            "created_date": "2018-08-07T14:55:55.298Z",
-            "modified_date": "2018-08-07T14:55:55.298Z",
-            "title": "Example list item components",
-            "content": "<p>Two examples are displayed below:</p>",
-            "component": 29
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 20,
-        "fields": {
-            "created_date": "2018-08-17T10:28:24.808Z",
-            "modified_date": "2018-08-17T10:42:20.116Z",
-            "title": "",
-            "content": "<p>These terms and conditions are the contract between you and Brighton Phoenix (&ldquo;us&rdquo;, &ldquo;we&rdquo;, etc). By visiting or using our Website, you agree to be bound by them.</p>\r\n\r\n<p>They protect your rights as well as ours.</p>\r\n\r\n<p>I / We are Brighton Phoenix. Charity Number: xxxxx Address: Tongdean Lane, Brighton BN1 5JD</p>\r\n\r\n<p>You are: Anyone who uses our Website.</p>\r\n\r\n<p>Please read this agreement carefully and save it. If you do not agree with it, you should leave our Website immediately.</p>\r\n\r\n<p>These are the agreed terms:</p>\r\n\r\n<p><strong>1. Definitions</strong></p>\r\n\r\n<p>&ldquo;Content&rdquo; means the textual, visual or aural content that is encountered as part of your experience on our Website. It may include, among other things: text, images, sounds, videos and animations.</p>\r\n\r\n<p>&ldquo;Intellectual Property&rdquo; means intellectual property owned by us, of every sort, whether or not registered or registrable in any country, including intellectual property of all kinds coming into existence after today; and including, among others, patents, trade marks, unregistered marks, designs, copyrights, software, domain names, discoveries, creations and inventions, together with all rights which are derived from those rights.</p>\r\n\r\n<p>&ldquo;Our Website&rdquo; means any website or service designed for electronic access by mobile or fixed devices which is owned or operated by us.</p>\r\n\r\n<p>&ldquo;Services&rdquo; means the service provided from our Website.</p>\r\n\r\n<p><strong>2. Intellectual Property</strong></p>\r\n\r\n<p>You agree that at all times you will:</p>\r\n\r\n<ul>\r\n\t<li>not do anything which does or might reduce the value of our Intellectual Property or challenge our ownership of it.</li>\r\n\t<li>notify us of any suspected infringement of the Intellectual Property;</li>\r\n\t<li>so far as concerns our work provided or made accessible by us to you, you will not:</li>\r\n\t<li>copy, or make any change to any part of its code;</li>\r\n\t<li>use it in any way not anticipated by this agreement;</li>\r\n\t<li>give access to it to any other person than you, the licensee in this agreement;</li>\r\n\t<li>in any way provide any information about it to any other person or generally.</li>\r\n\t<li>not use the Intellectual Property except directly as intended by this agreement or in our interest.</li>\r\n</ul>\r\n\r\n<p><strong>3. Disclaimers and limitation of liability</strong></p>\r\n\r\n<p>The law differs from one country to another. This paragraph applies so far as the applicable law allows.</p>\r\n\r\n<p>All implied conditions, warranties and terms are excluded from this agreement. If in any jurisdiction an implied condition, warrant or term cannot be excluded, then this sub paragraph shall be deemed to be reduced in effect, only to the extent necessary to release that specific condition, warranty or term.</p>\r\n\r\n<p>You are advised that Content may include technical inaccuracies or typographical errors. This is inevitable in any large website. We would be grateful if you bring to our immediate attention, any that you find.</p>\r\n\r\n<p>Our Website contains links to other internet websites. We have neither power nor control over any such website. You acknowledge and agree that we shall not be liable in any way for the Content of any such linked website, nor for any loss or damage arising from your use of any such website or from your buying services or goods via such a website.</p>\r\n\r\n<p>The Brighton Phoenix Website is provided &ldquo;as is&rdquo;. We make no representation or warranty that our Website will be:</p>\r\n\r\n<ul>\r\n\t<li>useful to you;</li>\r\n\t<li>of satisfactory quality;</li>\r\n\t<li>fit for a particular purpose;</li>\r\n\t<li>available or accessible, without interruption, or without error.</li>\r\n</ul>\r\n\r\n<p>We claim no expert knowledge in any subject. We disclaim any obligation or liability to you arising directly or indirectly from information you take from our Website.</p>\r\n\r\n<p>We shall not be liable to you for any loss or expense which is:</p>\r\n\r\n<ul>\r\n\t<li>indirect or consequential loss; or</li>\r\n\t<li>economic loss or other loss of turnover, profits, business or goodwill even if such loss was reasonably foreseeable or we knew you might incur it.</li>\r\n</ul>\r\n\r\n<p>This paragraph (and any other paragraph which excludes or restricts our liability) applies to our directors, officers, employees, subcontractors, agents and affiliated companies (who may enforce this clause under the Contracts (Rights of Third Parties) Act 1999 as well as to ourselves.</p>\r\n\r\n<p><strong>4. Miscellaneous matters</strong></p>\r\n\r\n<p>If any term or provision of this agreement is at any time held by any jurisdiction to be void, invalid or unenforceable, then it shall be treated as changed or reduced, only to the extent minimally necessary to bring it within the laws of that jurisdiction and to prevent it from being void and it shall be binding in that changed or reduced form. Subject to that, each provision shall be interpreted as severable and shall not in any way affect any other of these terms.</p>\r\n\r\n<p>No failure or delay by any party to exercise any right, power or remedy will operate as a waiver of it nor indicate any intention to reduce that or any other right in the future.</p>\r\n\r\n<p>Any communication to be served on either party by the other shall be delivered by hand or sent by first class post or by e-mail. It shall be deemed to have been delivered:</p>\r\n\r\n<ul>\r\n\t<li>&nbsp;if delivered by hand: on the day of delivery;</li>\r\n\t<li>&nbsp;if sent by post to the correct address: within 72 hours of posting;</li>\r\n\t<li>&nbsp;If sent by e-mail to the address from which the receiving party has last sent e-mail: within 24 hours if no notice of non-receipt has been received by the sender.</li>\r\n</ul>\r\n\r\n<p>The validity, construction and performance of this agreement shall be governed by the laws of England and Wales and you agree that any dispute arising from it shall be litigated only in that country.</p>\r\n\r\n<p>These terms and conditions are based on a set written by Net Lawman and released under licence.</p>\r\n\r\n<p>Last updated: 01 October 2018</p>\r\n\r\n<p>If you have any question regarding our terms and conditions, please contact us.</p>\r\n\r\n<p>&copy; 2018 Brighton Phoenix</p>",
-            "component": 33
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 21,
-        "fields": {
-            "created_date": "2018-08-17T10:39:03.817Z",
-            "modified_date": "2018-08-17T10:39:03.817Z",
-            "title": "",
-            "content": "<p>This is the privacy notice of BrightonPhoenix. In this document, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo; refer to Brighton Phoenix.</p>\r\n\r\n<p>Brighton Phoenix. Charity Number: xxxxx Address: Tongdean Lane, Brighton BN1 5JD</p>\r\n\r\n<p>Data Protection Officer: xxxxxxxxx brightonphoenix@gmail.com<br />\r\n&nbsp;</p>\r\n\r\n<p><strong>Introduction</strong></p>\r\n\r\n<p>This is a notice to inform you of our policy about all information that we record about you. It sets out the conditions under which we may process any information that we collect from you, or that you provide to us. It covers information that could identify you (&ldquo;personal information&rdquo;) and information that could not. In the context of the law and this notice, &ldquo;process&rdquo; means collect, store, transfer, use or otherwise act on information.</p>\r\n\r\n<p>We regret that if there are one or more points below with which you are not happy, your only recourse is to leave our website immediately.</p>\r\n\r\n<p>We take seriously the protection of your privacy and confidentiality. We understand that all visitors to our website are entitled to know that their personal data will not be used for any purpose unintended by them, and will not accidentally fall into the hands of a third party.</p>\r\n\r\n<p>We undertake to preserve the confidentiality of all information you provide to us, and hope that you reciprocate.</p>\r\n\r\n<p>Our policy complies with UK law accordingly implemented, including that required by the EU General Data Protection Regulation (GDPR).</p>\r\n\r\n<p>The law requires us to tell you about your rights and our obligations to you in regards to the processing and control of your personal data. We do this now, by requesting that you read the information provided at <a href=\"https://ico.org.uk/for-the-public/\">https://ico.org.uk/for-the-public/</a>.</p>\r\n\r\n<p>Except as set out below, we do not share, or sell, or disclose to a third party, any information collected through our website.</p>\r\n\r\n<p>The bases on which we process information about you</p>\r\n\r\n<p>The law requires us to determine under which of six defined bases we process different categories of your personal information, and to notify you of the basis for each category.</p>\r\n\r\n<p>If a basis on which we process your personal information is no longer relevant then we shall immediately stop processing your data.</p>\r\n\r\n<p>If the basis changes then if required by law we shall notify you of the change and of any new basis under which we have determined that we can continue to process your information.</p>\r\n\r\n<p><strong>1. Information we process because we have a contractual obligation with you</strong></p>\r\n\r\n<p>When you buy a product or service from us, or otherwise agree to our terms and conditions, a contract is formed between you and us.</p>\r\n\r\n<p>In order to carry out our obligations under that contract we must process the information you give us. Some of this information may be personal information.</p>\r\n\r\n<p>We may use it in order to:</p>\r\n\r\n<ul>\r\n\t<li>verify your identity for security purposes</li>\r\n\t<li>sell products to you</li>\r\n\t<li>provide you with our services</li>\r\n\t<li>provide you with suggestions and advice on products, services and how to obtain the most from using our website</li>\r\n</ul>\r\n\r\n<p>We process this information on the basis there is a contract between us, or that you have requested we use the information before we enter into a legal contract.</p>\r\n\r\n<p>Additionally, we may aggregate this information in a general way and use it to provide class information, for example to monitor our performance with respect to a particular service we provide. If we use it for this purpose, you as an individual will not be personally identifiable.</p>\r\n\r\n<p>We shall continue to process this information until the contract between us ends or is terminated by either party under the terms of the contract.</p>\r\n\r\n<p><strong>2. Information we process with your consent</strong></p>\r\n\r\n<p>Through certain actions when otherwise there is no contractual relationship between us, such as when you browse our website or ask us to provide you more information about our business, including our products and services, you provide your consent to us to process information that may be personal information.</p>\r\n\r\n<p>Wherever possible, we aim to obtain your explicit consent to process this information, for example, by asking you to agree to our use of cookies.</p>\r\n\r\n<p>Sometimes you might give your consent implicitly, such as when you send us a message by e-mail to which you would reasonably expect us to reply.</p>\r\n\r\n<p>Except where you have consented to our use of your information for a specific purpose, we do not use your information in any way that would identify you personally. We may aggregate it in a general way and use it to provide class information, for example to monitor the performance of a particular page on our website.</p>\r\n\r\n<p>If you have given us explicit permission to do so, we may from time to time pass your name and contact information to selected associates whom we consider may provide services or products you would find useful.</p>\r\n\r\n<p>We continue to process your information on this basis until you withdraw your consent or it can be reasonably assumed that your consent no longer exists.</p>\r\n\r\n<p>You may withdraw your consent at any time by instructing us . However, if you do so, you may not be able to use our website or our services further.</p>\r\n\r\n<p><strong>3.&nbsp; Information we process because we have a legal obligation</strong></p>\r\n\r\n<p>We are subject to the law like everyone else. Sometimes, we must process your information in order to comply with a statutory obligation.</p>\r\n\r\n<p>For example, we may be required to give information to legal authorities if they so request or if they have the proper authorisation such as a search warrant or court order.</p>\r\n\r\n<p>This may include your personal information.<br />\r\n<br />\r\n<strong>Specific uses of information you provide to us</strong><br />\r\n<br />\r\n<strong>4. Complaining</strong></p>\r\n\r\n<p>When we receive a complaint, we record all the information you have given to us.</p>\r\n\r\n<p>We use that information to resolve your complaint.</p>\r\n\r\n<p>If your complaint reasonably requires us to contact some other person, we may decide to give to that other person some of the information contained in your complaint. We do this as infrequently as possible, but it is a matter for our sole discretion as to whether we do give information, and if we do, what that information is.</p>\r\n\r\n<p>We may also compile statistics showing information obtained from this source to assess the level of service we provide, but not in a way that could identify you or any other person.<br />\r\nUse of information we collect through automated systems when you visit our website</p>\r\n\r\n<p><strong>5. Cookies</strong></p>\r\n\r\n<p>Our website uses cookies. They are placed by software that operates on our servers, and by software operated by third parties whose services we use.</p>\r\n\r\n<p>The <a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32002L0058:EN:HTML\">ePrivacy directive</a> &ndash; more specifically Article 5(3) &ndash; requires prior informed consent for storage or for access to information stored on a user&rsquo;s terminal equipment (ie, you must ask users if they agree to most cookies). However, some cookies are exempt from this requirement and we consider that applies to the cookies set on our website.</p>\r\n\r\n<p>You can prevent their use through your browser settings, but you will then not be able to use all the functionality of our website.</p>\r\n\r\n<p>We provide more information about the cookies we use in our cookie policy.</p>\r\n\r\n<p><strong>6. Personal identifiers from your browsing activity</strong></p>\r\n\r\n<p>Requests by your web browser to our servers for web pages and other content on our website are recorded.</p>\r\n\r\n<p>We record information such as your geographical location, your Internet service provider and your IP address.</p>\r\n\r\n<p>This information is used by our security systems to track events on the website and may be included in alerts of suspicious activity sent to the website administrator.</p>\r\n\r\n<p>We use anonymised information of this type in aggregate to assess the popularity of the webpages on our website and how we perform in providing content to you.</p>\r\n\r\n<p>If combined with other information we know about you from previous visits, the data possibly could be used to identify you personally, even if you are not signed in to our website.</p>\r\n\r\n<p><strong>7. Our use of re-marketing</strong></p>\r\n\r\n<p>Re-marketing involves placing a cookie on your computer when you browse our website in order to be able to serve to you an advert for our products or services when you visit some other website.</p>\r\n\r\n<p>We do not use re-marketing cookies.</p>\r\n\r\n<p><br />\r\n<strong>Disclosure and sharing of your information</strong></p>\r\n\r\n<p><strong>8. Information we obtain from third parties</strong></p>\r\n\r\n<p>Although we do not disclose your personal information to any third party (except as set out in this notice), we sometimes receive data that is indirectly made up from your personal information from third parties whose services we use.</p>\r\n\r\n<p><strong>9. Third party advertising on our website</strong></p>\r\n\r\n<p>We do not carry third-party advertising on our website.</p>\r\n\r\n<p><strong>10. Data may be processed outside the European Union</strong></p>\r\n\r\n<p>Our website is hosted in the UK.</p>\r\n\r\n<p>We may also use outsourced services in countries outside the European Union from time to time in other aspects of our business.</p>\r\n\r\n<p>Accordingly data obtained within the UK or any other country could be processed outside the European Union.</p>\r\n\r\n<p>We take all steps reasonably necessary to ensure that any outsourced service providers implement appropriate safeguards to protect your personal information.</p>\r\n\r\n<p><strong>Access to your own information</strong></p>\r\n\r\n<p><strong>11. Access to your personal information</strong></p>\r\n\r\n<p>We do not hold your personally identifiable information on our website.</p>\r\n\r\n<p>To obtain a copy of any personal information we hold for you, you may email brightonphoenix@gmail.com.</p>\r\n\r\n<p>After receiving the request, we will tell you when we expect to provide you with the information.</p>\r\n\r\n<p><strong>12. Removal of your information</strong></p>\r\n\r\n<p>If you wish us to remove personally identifiable information, you may email brightonphoenix@gmail.com.</p>\r\n\r\n<p>This may limit the service we can provide to you.</p>\r\n\r\n<p><strong>13. Verification of your information</strong></p>\r\n\r\n<p>When we receive any request to access, edit or delete personal identifiable information we shall first take reasonable steps to verify your identity before granting you access or otherwise taking any action. This is important to safeguard your information.</p>\r\n\r\n<p><strong>Other matters</strong></p>\r\n\r\n<p><strong>14. Use of site by children</strong></p>\r\n\r\n<p>We do not sell products or provide services for purchase by children, nor do we market to children.</p>\r\n\r\n<p>If you are under 18, you may use our website only with consent from a parent or guardian.</p>\r\n\r\n<p><br />\r\n<strong>15. Encryption of data sent between us</strong></p>\r\n\r\n<p>We use Secure Sockets Layer (SSL) certificates to verify our identity to your browser and to encrypt any data you give us.</p>\r\n\r\n<p>Whenever information is transferred between us, you can check that it is done so using SSL by looking for a closed padlock symbol or other trust mark in your browser&rsquo;s URL bar or toolbar.</p>\r\n\r\n<p><strong>16. How you can complain</strong></p>\r\n\r\n<p>If you are not happy with our privacy policy or if have any complaint then you should tell us by email at <a href=\"mailto:brightonphoenix@gmail.com?subject=Privacy%20Policy\">brightonphoenix@gmail.com</a>.</p>\r\n\r\n<p>If a dispute is not settled then we hope you will agree to attempt to resolve it by engaging in good faith with us in a process of mediation or arbitration.</p>\r\n\r\n<p>If you are in any way dissatisfied about how we process your personal information, you have a right to lodge a complaint with the Information Commissioner&rsquo;s Office. This can be done at <a href=\"https://ico.org.uk/concerns/\">https://ico.org.uk/concerns/</a></p>\r\n\r\n<p><br />\r\n<strong>17. Retention period for personal data</strong></p>\r\n\r\n<p>Except as otherwise mentioned in this privacy notice, we keep your personal information only for as long as required by us:</p>\r\n\r\n<ul>\r\n\t<li>&nbsp;to provide you with the services you have requested;</li>\r\n\t<li>&nbsp;to comply with other law, including for the period demanded by our tax authorities;</li>\r\n\t<li>&nbsp;to support a claim or defence in court.</li>\r\n</ul>\r\n\r\n<p><strong>18. Compliance with the law</strong></p>\r\n\r\n<p>Our privacy policy has been compiled so as to comply with the law of every country or legal jurisdiction in which we aim to do business. If you think it fails to satisfy the law of your jurisdiction, we should like to hear from you.</p>\r\n\r\n<p>However, ultimately it is your choice as to whether you wish to use our website.</p>\r\n\r\n<p><strong>19. Review of this privacy policy</strong></p>\r\n\r\n<p>We may update this privacy notice from time to time as necessary. The terms that apply to you are those posted here on our website on the day you use our website. We advise you to print a copy for your records.</p>\r\n\r\n<p>Last updated: 01 October 2018</p>\r\n\r\n<p>If you have any question regarding our privacy notice, please contact us.</p>\r\n\r\n<p>&copy; 2018 Brighton Phoenix Ltd&nbsp;</p>",
-            "component": 32
-        }
-    },
-    {
-        "model": "pages.feature",
-        "pk": 1,
-        "fields": {
-            "created_date": "2018-08-07T14:44:38.870Z",
-            "modified_date": "2018-08-07T14:45:46.884Z",
-            "title": "Image left, text right, dark bg",
-            "subtitle": "",
-            "content": "Consectetur sunt quis anim dolor magna. Excepteur est deserunt id ex commodo.",
-            "image_alt": "",
-            "link_url": "https://www.brightonphoenix.org.uk",
-            "link_text": "Link",
-            "align": "imageLeft",
-            "background": "dark",
-            "component": 19,
-            "image": "page/42/feature/1.jpg"
-        }
-    },
-    {
-        "model": "pages.feature",
-        "pk": 2,
-        "fields": {
-            "created_date": "2018-08-07T14:44:38.884Z",
-            "modified_date": "2018-08-07T14:45:46.927Z",
-            "title": "Image right, text left, light bg",
-            "subtitle": "subtitle",
-            "content": "Nisi adipisicing laborum enim est amet ex consequat consequat.",
-            "image_alt": "",
-            "link_url": "",
-            "link_text": "",
-            "align": "imageRight",
-            "background": "light",
-            "component": 20,
-            "image": "page/42/feature/1_JAQIAQj.jpg"
-        }
-    },
-    {
-        "model": "pages.feature",
-        "pk": 3,
-        "fields": {
-            "created_date": "2018-08-07T14:44:38.897Z",
-            "modified_date": "2018-08-07T14:44:38.897Z",
-            "title": "Image left, text right, white background",
-            "subtitle": "",
-            "content": "In Lorem velit sunt aliquip minim dolore ad officia. Mollit qui quis fugiat laboris ipsum esse eu do.",
-            "image_alt": "",
-            "link_url": "",
-            "link_text": "",
-            "align": "imageLeft",
-            "background": "white",
-            "component": 21,
-            "image": "page/42/feature/2.jpg"
-        }
-    },
-    {
-        "model": "pages.feature",
-        "pk": 4,
-        "fields": {
-            "created_date": "2018-08-07T14:44:38.913Z",
-            "modified_date": "2018-08-07T14:44:38.913Z",
-            "title": "Centred text, no image, dark background",
-            "subtitle": "Subtitle",
-            "content": "In Lorem velit sunt aliquip minim dolore ad officia. Mollit qui quis fugiat laboris ipsum esse eu do.",
-            "image_alt": "",
-            "link_url": "",
-            "link_text": "",
-            "align": "centre",
-            "background": "dark",
-            "component": 22,
-            "image": ""
-        }
-    },
-    {
-        "model": "pages.quote",
-        "pk": 1,
-        "fields": {
-            "created_date": "2018-08-07T14:49:04.102Z",
-            "modified_date": "2018-08-07T14:49:04.102Z",
-            "quote": "Image left, text right, dark bg",
-            "author": "Author name",
-            "image_alt": "",
-            "align": "imageLeft",
-            "background": "dark",
-            "component": 25,
-            "image": "page/43/quote/1.jpg"
-        }
-    },
-    {
-        "model": "pages.quote",
-        "pk": 2,
-        "fields": {
-            "created_date": "2018-08-07T14:49:04.117Z",
-            "modified_date": "2018-08-07T14:49:04.117Z",
-            "quote": "Image right, text left, light bg",
-            "author": "",
-            "image_alt": "",
-            "align": "imageRight",
-            "background": "light",
-            "component": 26,
-            "image": "page/43/quote/1_4KZslKt.jpg"
-        }
-    },
-    {
-        "model": "pages.quote",
-        "pk": 3,
-        "fields": {
-            "created_date": "2018-08-07T14:49:04.132Z",
-            "modified_date": "2018-08-07T14:49:04.132Z",
-            "quote": "Text centre, no image, dark bg",
-            "author": "Author name",
-            "image_alt": "",
-            "align": "centre",
-            "background": "dark",
-            "component": 27,
-            "image": ""
-        }
-    },
-    {
-        "model": "pages.image",
-        "pk": 3,
-        "fields": {
-            "created_date": "2018-07-27T10:58:53.235Z",
-            "modified_date": "2018-07-27T10:58:53.235Z",
-            "image_alt": "Map of Withdean stadium",
-            "caption": "",
-            "component": 3,
-            "image": "page/11/image/map.jpg"
-        }
-    },
-    {
-        "model": "pages.image",
-        "pk": 4,
-        "fields": {
-            "created_date": "2018-08-07T14:35:59.006Z",
-            "modified_date": "2018-08-07T14:35:59.006Z",
-            "image_alt": "A description of the photo",
-            "caption": "An example of a landscape photo",
-            "component": 15,
-            "image": "page/41/image/3.jpg"
-        }
-    },
-    {
-        "model": "pages.image",
-        "pk": 5,
-        "fields": {
-            "created_date": "2018-08-07T14:35:59.024Z",
-            "modified_date": "2018-08-07T14:35:59.024Z",
-            "image_alt": "A description of the photo",
-            "caption": "An example of a portrait photo",
-            "component": 16,
-            "image": "page/41/image/3-portrait.jpg"
-        }
-    },
-    {
-        "model": "pages.listitems",
-        "pk": 1,
-        "fields": {
-            "created_date": "2018-08-07T14:55:55.316Z",
-            "modified_date": "2018-08-07T14:57:30.262Z",
-            "title_1": "Two list items",
-            "content_1": "Quis minim ut fugiat velit labore ex velit eu anim. Minim duis in anim consequat aliqua non irure enim velit laborum quis nisi labore.",
-            "image_alt_1": "",
-            "link_url_1": "https://www.brightonphoenix.org.uk",
-            "link_text_1": "Link 1",
-            "title_2": "",
-            "content_2": "In reprehenderit Lorem veniam occaecat dolore ullamco pariatur proident cillum dolor minim sit consequat",
-            "image_alt_2": "",
-            "link_url_2": "https://www.brightonphoenix.org.uk",
-            "link_text_2": "Link 2",
-            "title_3": "",
-            "content_3": "",
-            "image_alt_3": "",
-            "link_url_3": "",
-            "link_text_3": "",
-            "component": 30,
-            "image_1": "page/44/list-items/1.jpg",
-            "image_2": "page/44/list-items/2.jpg",
-            "image_3": ""
-        }
-    },
-    {
-        "model": "pages.listitems",
-        "pk": 2,
-        "fields": {
-            "created_date": "2018-08-07T14:55:55.330Z",
-            "modified_date": "2018-08-07T14:57:30.308Z",
-            "title_1": "Three list items",
-            "content_1": "Ea eiusmod veniam id nulla sunt occaecat adipisicing mollit. Tempor minim amet consequat sint est est Lorem excepteur laboris exercitation.",
-            "image_alt_1": "",
-            "link_url_1": "https://www.brightonphoenix.org.uk",
-            "link_text_1": "Link 1",
-            "title_2": "",
-            "content_2": "Quis amet consequat id ipsum.",
-            "image_alt_2": "",
-            "link_url_2": "https://www.brightonphoenix.org.uk",
-            "link_text_2": "Link 2",
-            "title_3": "",
-            "content_3": "Quis minim ut fugiat velit labore ex velit eu anim. Minim duis in anim consequat aliqua non irure enim velit laborum quis nisi labore.",
-            "image_alt_3": "",
-            "link_url_3": "https://www.brightonphoenix.org.uk",
-            "link_text_3": "Link 3",
-            "component": 31,
-            "image_1": "page/44/list-items/3.jpg",
-            "image_2": "page/44/list-items/1_5QdBxCv.jpg",
-            "image_3": "page/44/list-items/2_OHjWAwG.jpg"
-        }
-    },
-    {
         "model": "pages.page",
         "pk": 1,
         "fields": {
@@ -841,7 +127,7 @@
             "parent": 2,
             "slug": "/contact/find-us/",
             "created_date": "2018-07-27T10:58:53.154Z",
-            "modified_date": "2018-07-27T11:02:04.570Z",
+            "modified_date": "2018-08-20T16:01:20.875Z",
             "author": 1
         }
     },
@@ -1165,7 +451,7 @@
             "parent": null,
             "slug": "/how-to-use-the-admin/",
             "created_date": "2018-08-07T14:01:04.028Z",
-            "modified_date": "2018-08-07T14:28:51.004Z",
+            "modified_date": "2018-08-20T15:34:40.830Z",
             "author": 1
         }
     },
@@ -1225,8 +511,983 @@
             "parent": 39,
             "slug": "/how-to-use-the-admin/list-items-components/",
             "created_date": "2018-08-07T14:55:55.219Z",
-            "modified_date": "2018-08-07T14:57:29.938Z",
+            "modified_date": "2018-08-20T15:36:58.184Z",
             "author": 1
+        }
+    },
+    {
+        "model": "pages.page",
+        "pk": 45,
+        "fields": {
+            "title": "Embed components",
+            "parent": 39,
+            "slug": "/how-to-use-the-admin/embed-components/",
+            "created_date": "2018-08-20T15:39:36.367Z",
+            "modified_date": "2018-08-20T15:39:36.367Z",
+            "author": 1
+        }
+    },
+    {
+        "model": "pages.page",
+        "pk": 46,
+        "fields": {
+            "title": "Table components",
+            "parent": 39,
+            "slug": "/how-to-use-the-admin/table-components/",
+            "created_date": "2018-08-20T15:46:28.738Z",
+            "modified_date": "2018-08-20T15:46:28.738Z",
+            "author": 1
+        }
+    },
+    {
+        "model": "pages.page",
+        "pk": 47,
+        "fields": {
+            "title": "Profile components",
+            "parent": 39,
+            "slug": "/how-to-use-the-admin/profile-components/",
+            "created_date": "2018-08-20T15:49:16.893Z",
+            "modified_date": "2018-08-20T15:49:16.893Z",
+            "author": 1
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 1,
+        "fields": {
+            "order": 0,
+            "page": 2
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 2,
+        "fields": {
+            "order": 0,
+            "page": 11
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 4,
+        "fields": {
+            "order": 0,
+            "page": 39
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 5,
+        "fields": {
+            "order": 1,
+            "page": 39
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 6,
+        "fields": {
+            "order": 2,
+            "page": 39
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 7,
+        "fields": {
+            "order": 3,
+            "page": 39
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 8,
+        "fields": {
+            "order": 4,
+            "page": 39
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 9,
+        "fields": {
+            "order": 5,
+            "page": 39
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 10,
+        "fields": {
+            "order": 6,
+            "page": 39
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 11,
+        "fields": {
+            "order": 7,
+            "page": 39
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 12,
+        "fields": {
+            "order": 8,
+            "page": 39
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 13,
+        "fields": {
+            "order": 0,
+            "page": 40
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 14,
+        "fields": {
+            "order": 0,
+            "page": 41
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 15,
+        "fields": {
+            "order": 1,
+            "page": 41
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 16,
+        "fields": {
+            "order": 2,
+            "page": 41
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 17,
+        "fields": {
+            "order": 0,
+            "page": 42
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 18,
+        "fields": {
+            "order": 1,
+            "page": 42
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 19,
+        "fields": {
+            "order": 2,
+            "page": 42
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 20,
+        "fields": {
+            "order": 3,
+            "page": 42
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 21,
+        "fields": {
+            "order": 4,
+            "page": 42
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 22,
+        "fields": {
+            "order": 5,
+            "page": 42
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 23,
+        "fields": {
+            "order": 0,
+            "page": 43
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 24,
+        "fields": {
+            "order": 1,
+            "page": 43
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 25,
+        "fields": {
+            "order": 2,
+            "page": 43
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 26,
+        "fields": {
+            "order": 3,
+            "page": 43
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 27,
+        "fields": {
+            "order": 4,
+            "page": 43
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 28,
+        "fields": {
+            "order": 0,
+            "page": 44
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 29,
+        "fields": {
+            "order": 1,
+            "page": 44
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 30,
+        "fields": {
+            "order": 2,
+            "page": 44
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 31,
+        "fields": {
+            "order": 3,
+            "page": 44
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 32,
+        "fields": {
+            "order": 0,
+            "page": 37
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 33,
+        "fields": {
+            "order": 0,
+            "page": 36
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 34,
+        "fields": {
+            "order": 9,
+            "page": 39
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 35,
+        "fields": {
+            "order": 0,
+            "page": 45
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 36,
+        "fields": {
+            "order": 1,
+            "page": 45
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 37,
+        "fields": {
+            "order": 2,
+            "page": 45
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 38,
+        "fields": {
+            "order": 0,
+            "page": 46
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 39,
+        "fields": {
+            "order": 1,
+            "page": 46
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 40,
+        "fields": {
+            "order": 0,
+            "page": 47
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 41,
+        "fields": {
+            "order": 1,
+            "page": 47
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 42,
+        "fields": {
+            "order": 1,
+            "page": 11
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 1,
+        "fields": {
+            "created_date": "2018-07-25T13:29:49.308Z",
+            "modified_date": "2018-07-27T10:56:22.060Z",
+            "title": "",
+            "content": "<p>You can contact us by emailing <a href=\"mailto:brightonphoenix@gmail.com\">brightonphoenix@gmail.com</a> or by&nbsp;filling in the form below</p>",
+            "component": 1
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 2,
+        "fields": {
+            "created_date": "2018-07-27T10:58:53.208Z",
+            "modified_date": "2018-07-27T11:02:04.722Z",
+            "title": "",
+            "content": "<p>You can find us at the <a href=\"https://www.freedom-leisure.co.uk/centres/withdean-sports-complex/\">Withdean Stadium track</a> every Wednesday evening from 5:30pm.</p>\r\n\r\n<p>Tongdean Lane, Brighton,&nbsp;<a href=\"https://www.google.co.uk/maps/place/Withdean+Sports+Complex/@50.8535931,-0.1597183,18z/data=!4m13!1m7!3m6!1s0x48758f8d2383f9dd:0x32e9caf72a3d565b!2sTongdean+Ln,+Brighton+BN1+5JD!3b1!8m2!3d50.8538631!4d-0.159572!3m4!1s0x48758f8d23653431:0x57201f67be7f42a0!8m2!3d50.852903!4d-0.1602452\">BN1 5JD</a></p>",
+            "component": 2
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 3,
+        "fields": {
+            "created_date": "2018-08-07T14:01:04.050Z",
+            "modified_date": "2018-08-20T15:34:41.387Z",
+            "title": "Login",
+            "content": "<ol>\r\n\t<li>Visit <a href=\"/admin\">/admin</a></li>\r\n\t<li>Log in (if you don&#39;t have login details, contact the web team)</li>\r\n</ol>\r\n\r\n<p>The following content can be edited:</p>\r\n\r\n<ul>\r\n\t<li>Home</li>\r\n\t<li>Fixtures and categories</li>\r\n\t<li>Results</li>\r\n\t<li>Contacts and topics</li>\r\n\t<li>Files</li>\r\n\t<li>Gallery</li>\r\n\t<li>News</li>\r\n\t<li>Pages</li>\r\n</ul>",
+            "component": 4
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 4,
+        "fields": {
+            "created_date": "2018-08-07T14:06:41.604Z",
+            "modified_date": "2018-08-07T14:06:41.604Z",
+            "title": "Fixtures and categories",
+            "content": "<p><strong>Fixtures</strong><br />\r\nFor each new fixture, add a name and date. Optionally add a location, link and category.</p>\r\n\r\n<p><strong>Categories</strong><br />\r\nYou can assign each fixture (or result) to one or more categories, for example <em>Sussex Grand Prix</em>&nbsp;or&nbsp;<em>Road Race.</em></p>\r\n\r\n<ul>\r\n</ul>",
+            "component": 5
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 5,
+        "fields": {
+            "created_date": "2018-08-07T14:08:56.482Z",
+            "modified_date": "2018-08-07T14:08:56.482Z",
+            "title": "Results",
+            "content": "<p>New results need to be assigned to a fixture. If it doesn&#39;t already exist, you will need to first create the fixture.</p>\r\n\r\n<p>Result content is split into two parts, a <em>summary</em>&nbsp;which is the text description of the event, and&nbsp;<em>results</em>&nbsp;which is the (usually tabular) result content.</p>\r\n\r\n<p>Optionally, add a link for full results.</p>",
+            "component": 6
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 6,
+        "fields": {
+            "created_date": "2018-08-07T14:14:08.093Z",
+            "modified_date": "2018-08-07T14:14:08.094Z",
+            "title": "Contacts and topics",
+            "content": "<p>The contact form allows members of the public to contact Phoenix through the website.</p>\r\n\r\n<p>The dropdown list in the contact form allows people to choose the relevant topic of&nbsp;their message.</p>\r\n\r\n<p>For any submission for the contact form, a message will be sent to the main Phoenix email account. Based on the selected topic,&nbsp;the relevant people will also be copied in to the email.</p>\r\n\r\n<p><strong>Contacts</strong><br />\r\nIn the admin section, contact information&nbsp;can be added by submitting a name and email address. These aren&#39;t displayed on the site but they are used to assign topics.</p>\r\n\r\n<p><strong>Topics</strong><br />\r\nContacts can be&nbsp;assigned to topics. These topics will&nbsp;appear in the dropdown list, and the contacts will receive a message when the topic is selected.</p>",
+            "component": 7
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 7,
+        "fields": {
+            "created_date": "2018-08-07T14:18:57.748Z",
+            "modified_date": "2018-08-07T14:18:57.748Z",
+            "title": "Files",
+            "content": "<p>Files can be uploaded through the admin area.</p>\r\n\r\n<p>Once uploaded, the listing page will display the URL for each file.</p>\r\n\r\n<p>This can be copied, and pasted as a link in the relevant part of the website.</p>",
+            "component": 8
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 8,
+        "fields": {
+            "created_date": "2018-08-07T14:18:57.758Z",
+            "modified_date": "2018-08-20T15:34:41.675Z",
+            "title": "Home",
+            "content": "<p>For the home page, there are lots of different things that can be updated</p>\r\n\r\n<p><strong>Hero</strong><br />\r\nHero images can be uplaoded and categorised. When creating categories, the number of images for each category can be adjusted. This dictates how many types of image for each category will be selected at random each time the page loads</p>\r\n\r\n<p><strong>Gallery</strong><br />\r\nSelect which gallery to display on the home page</p>\r\n\r\n<p><strong>About</strong><br />\r\nAdd some about text</p>\r\n\r\n<p><strong>Events</strong><br />\r\nAdd some events text</p>\r\n\r\n<p><strong>Join</strong><br />\r\nAdd some join text</p>",
+            "component": 9
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 9,
+        "fields": {
+            "created_date": "2018-08-07T14:18:57.770Z",
+            "modified_date": "2018-08-07T14:18:57.770Z",
+            "title": "News",
+            "content": "<p><strong>Title and summary</strong><br />\r\nNews articles should have a title and summary. The title is used to auto-generate the page &#39;slug&#39; (its link). The summary is used on the home page and news listing page. The summary doesn&#39;t appear on the news detail page.</p>\r\n\r\n<p><strong>Thumbnail</strong><br />\r\nEach news article can have a thumbnail uploaded. The thumbnail is used on the home page and news listing page. It doesn&#39;t appear on the news detail page.</p>\r\n\r\n<p><strong>Components</strong><br />\r\nSee below for how components with news articles and pages</p>",
+            "component": 10
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 10,
+        "fields": {
+            "created_date": "2018-08-07T14:23:53.280Z",
+            "modified_date": "2018-08-07T14:23:53.280Z",
+            "title": "Pages",
+            "content": "<p>New pages can be added to the site.&nbsp;</p>\r\n\r\n<p>For each page, a <em>parent</em>&nbsp;page can be assigned. This allows pages to be &#39;nested&#39;, creating a heirarchy.&nbsp;</p>\r\n\r\n<p>The &#39;slug&#39; (link) for each page is automatically generated from its title, and also the title from any parent pages.</p>\r\n\r\n<p><strong>Components</strong><br />\r\nSee below for how components with news articles and pages</p>",
+            "component": 11
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 11,
+        "fields": {
+            "created_date": "2018-08-07T14:28:51.562Z",
+            "modified_date": "2018-08-20T15:34:41.819Z",
+            "title": "Components",
+            "content": "<p>For news articles and pages, there are eight&nbsp;types of <em>component</em>&nbsp;that can be used to create content:&nbsp;</p>\r\n\r\n<ol>\r\n\t<li>Editorial</li>\r\n\t<li>Embed</li>\r\n\t<li>Image</li>\r\n\t<li>Feature</li>\r\n\t<li>List Items</li>\r\n\t<li>Profile</li>\r\n\t<li>Quote</li>\r\n\t<li>Table</li>\r\n</ol>\r\n\r\n<p>These components can be used as many times as desired, in any order.</p>\r\n\r\n<p>Further details for each of these components can be found on the sub-pages of this guide</p>",
+            "component": 12
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 12,
+        "fields": {
+            "created_date": "2018-08-07T14:30:27.562Z",
+            "modified_date": "2018-08-07T14:30:27.562Z",
+            "title": "",
+            "content": "<p>Editorial components are text blocks, such as this.&nbsp;</p>\r\n\r\n<p>They have some style options, such as <strong>bold&nbsp;</strong>and&nbsp;<em>italic</em>&nbsp;text, and&nbsp;<a href=\"https://www.brightonphoenix.org.uk\">links</a>.</p>\r\n\r\n<ol>\r\n\t<li>Numbered</li>\r\n\t<li>lists</li>\r\n</ol>\r\n\r\n<ul>\r\n\t<li>Bullet</li>\r\n\t<li>point</li>\r\n\t<li>lists</li>\r\n</ul>",
+            "component": 13
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 13,
+        "fields": {
+            "created_date": "2018-08-07T14:35:58.987Z",
+            "modified_date": "2018-08-07T14:35:58.987Z",
+            "title": "",
+            "content": "<p>Images&nbsp;can be landscape or portrait, they are resized&nbsp;automatically to display at the correct resolution for the website.</p>\r\n\r\n<p>When possible, <em>alt text</em>&nbsp;should be added for a photo giving a brief description of its contents.</p>\r\n\r\n<p>Optionally, a caption can be added. It can be used to describe further details, such as where the photo was taken, who by, etc. When set, this will be displayed in the bottom corner of&nbsp;the photo.&nbsp;</p>",
+            "component": 14
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 14,
+        "fields": {
+            "created_date": "2018-08-07T14:44:38.845Z",
+            "modified_date": "2018-08-07T14:44:38.845Z",
+            "title": "",
+            "content": "<p>Feature components can be used to place text alongside an image.&nbsp;</p>\r\n\r\n<p>There are two required pieces of information for a feature component:</p>\r\n\r\n<ul>\r\n\t<li>Title</li>\r\n\t<li>Text content</li>\r\n</ul>\r\n\r\n<p>There are several optional pieces of information:</p>\r\n\r\n<ul>\r\n\t<li>A subtitle</li>\r\n\t<li>An image</li>\r\n\t<li>Image alt text</li>\r\n\t<li>A link URL</li>\r\n\t<li>The link text</li>\r\n</ul>\r\n\r\n<p>There are also&nbsp;configuration options:&nbsp;</p>\r\n\r\n<ul>\r\n\t<li>Image/text alignment - e.g. image to the left or right of the text, or centred text (with no image)</li>\r\n\t<li>The background colour - light or dark blue, or white</li>\r\n</ul>",
+            "component": 17
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 15,
+        "fields": {
+            "created_date": "2018-08-07T14:44:38.858Z",
+            "modified_date": "2018-08-07T14:44:38.858Z",
+            "title": "Example feature components",
+            "content": "<p>Several examples are displayed below:</p>",
+            "component": 18
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 16,
+        "fields": {
+            "created_date": "2018-08-07T14:49:04.075Z",
+            "modified_date": "2018-08-07T14:49:04.075Z",
+            "title": "",
+            "content": "<p>Quote components can be used to place a quote alongside an image.&nbsp;</p>\r\n\r\n<p>There is one&nbsp;required&nbsp;piece&nbsp;of information for a quote component:</p>\r\n\r\n<ul>\r\n\t<li>Quote</li>\r\n</ul>\r\n\r\n<p>There are several optional pieces of information:</p>\r\n\r\n<ul>\r\n\t<li>Author</li>\r\n\t<li>An image</li>\r\n\t<li>Image alt text</li>\r\n</ul>\r\n\r\n<p>There are also&nbsp;configuration options:&nbsp;</p>\r\n\r\n<ul>\r\n\t<li>Image/text alignment - e.g. image to the left or right of the text, or centred text (with no image)</li>\r\n\t<li>The background colour - light or dark blue, or white</li>\r\n</ul>",
+            "component": 23
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 17,
+        "fields": {
+            "created_date": "2018-08-07T14:49:04.089Z",
+            "modified_date": "2018-08-07T14:49:04.089Z",
+            "title": "Example quote components",
+            "content": "<p>Several examples are displayed below:</p>",
+            "component": 24
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 18,
+        "fields": {
+            "created_date": "2018-08-07T14:55:55.286Z",
+            "modified_date": "2018-08-07T14:55:55.286Z",
+            "title": "",
+            "content": "<p>List items components can be used to link through to other sections of the website.</p>\r\n\r\n<p>They can be either two or three in a row.</p>\r\n\r\n<p>There is optional content for each list item:</p>\r\n\r\n<ul>\r\n\t<li>Title</li>\r\n\t<li>Content</li>\r\n\t<li>Image</li>\r\n\t<li>Image alt text</li>\r\n\t<li>Link url</li>\r\n\t<li>Link text</li>\r\n</ul>",
+            "component": 28
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 19,
+        "fields": {
+            "created_date": "2018-08-07T14:55:55.298Z",
+            "modified_date": "2018-08-07T14:55:55.298Z",
+            "title": "Example list item components",
+            "content": "<p>Two examples are displayed below:</p>",
+            "component": 29
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 20,
+        "fields": {
+            "created_date": "2018-08-17T10:28:24.808Z",
+            "modified_date": "2018-08-17T10:42:20.116Z",
+            "title": "",
+            "content": "<p>These terms and conditions are the contract between you and Brighton Phoenix (&ldquo;us&rdquo;, &ldquo;we&rdquo;, etc). By visiting or using our Website, you agree to be bound by them.</p>\r\n\r\n<p>They protect your rights as well as ours.</p>\r\n\r\n<p>I / We are Brighton Phoenix. Charity Number: xxxxx Address: Tongdean Lane, Brighton BN1 5JD</p>\r\n\r\n<p>You are: Anyone who uses our Website.</p>\r\n\r\n<p>Please read this agreement carefully and save it. If you do not agree with it, you should leave our Website immediately.</p>\r\n\r\n<p>These are the agreed terms:</p>\r\n\r\n<p><strong>1. Definitions</strong></p>\r\n\r\n<p>&ldquo;Content&rdquo; means the textual, visual or aural content that is encountered as part of your experience on our Website. It may include, among other things: text, images, sounds, videos and animations.</p>\r\n\r\n<p>&ldquo;Intellectual Property&rdquo; means intellectual property owned by us, of every sort, whether or not registered or registrable in any country, including intellectual property of all kinds coming into existence after today; and including, among others, patents, trade marks, unregistered marks, designs, copyrights, software, domain names, discoveries, creations and inventions, together with all rights which are derived from those rights.</p>\r\n\r\n<p>&ldquo;Our Website&rdquo; means any website or service designed for electronic access by mobile or fixed devices which is owned or operated by us.</p>\r\n\r\n<p>&ldquo;Services&rdquo; means the service provided from our Website.</p>\r\n\r\n<p><strong>2. Intellectual Property</strong></p>\r\n\r\n<p>You agree that at all times you will:</p>\r\n\r\n<ul>\r\n\t<li>not do anything which does or might reduce the value of our Intellectual Property or challenge our ownership of it.</li>\r\n\t<li>notify us of any suspected infringement of the Intellectual Property;</li>\r\n\t<li>so far as concerns our work provided or made accessible by us to you, you will not:</li>\r\n\t<li>copy, or make any change to any part of its code;</li>\r\n\t<li>use it in any way not anticipated by this agreement;</li>\r\n\t<li>give access to it to any other person than you, the licensee in this agreement;</li>\r\n\t<li>in any way provide any information about it to any other person or generally.</li>\r\n\t<li>not use the Intellectual Property except directly as intended by this agreement or in our interest.</li>\r\n</ul>\r\n\r\n<p><strong>3. Disclaimers and limitation of liability</strong></p>\r\n\r\n<p>The law differs from one country to another. This paragraph applies so far as the applicable law allows.</p>\r\n\r\n<p>All implied conditions, warranties and terms are excluded from this agreement. If in any jurisdiction an implied condition, warrant or term cannot be excluded, then this sub paragraph shall be deemed to be reduced in effect, only to the extent necessary to release that specific condition, warranty or term.</p>\r\n\r\n<p>You are advised that Content may include technical inaccuracies or typographical errors. This is inevitable in any large website. We would be grateful if you bring to our immediate attention, any that you find.</p>\r\n\r\n<p>Our Website contains links to other internet websites. We have neither power nor control over any such website. You acknowledge and agree that we shall not be liable in any way for the Content of any such linked website, nor for any loss or damage arising from your use of any such website or from your buying services or goods via such a website.</p>\r\n\r\n<p>The Brighton Phoenix Website is provided &ldquo;as is&rdquo;. We make no representation or warranty that our Website will be:</p>\r\n\r\n<ul>\r\n\t<li>useful to you;</li>\r\n\t<li>of satisfactory quality;</li>\r\n\t<li>fit for a particular purpose;</li>\r\n\t<li>available or accessible, without interruption, or without error.</li>\r\n</ul>\r\n\r\n<p>We claim no expert knowledge in any subject. We disclaim any obligation or liability to you arising directly or indirectly from information you take from our Website.</p>\r\n\r\n<p>We shall not be liable to you for any loss or expense which is:</p>\r\n\r\n<ul>\r\n\t<li>indirect or consequential loss; or</li>\r\n\t<li>economic loss or other loss of turnover, profits, business or goodwill even if such loss was reasonably foreseeable or we knew you might incur it.</li>\r\n</ul>\r\n\r\n<p>This paragraph (and any other paragraph which excludes or restricts our liability) applies to our directors, officers, employees, subcontractors, agents and affiliated companies (who may enforce this clause under the Contracts (Rights of Third Parties) Act 1999 as well as to ourselves.</p>\r\n\r\n<p><strong>4. Miscellaneous matters</strong></p>\r\n\r\n<p>If any term or provision of this agreement is at any time held by any jurisdiction to be void, invalid or unenforceable, then it shall be treated as changed or reduced, only to the extent minimally necessary to bring it within the laws of that jurisdiction and to prevent it from being void and it shall be binding in that changed or reduced form. Subject to that, each provision shall be interpreted as severable and shall not in any way affect any other of these terms.</p>\r\n\r\n<p>No failure or delay by any party to exercise any right, power or remedy will operate as a waiver of it nor indicate any intention to reduce that or any other right in the future.</p>\r\n\r\n<p>Any communication to be served on either party by the other shall be delivered by hand or sent by first class post or by e-mail. It shall be deemed to have been delivered:</p>\r\n\r\n<ul>\r\n\t<li>&nbsp;if delivered by hand: on the day of delivery;</li>\r\n\t<li>&nbsp;if sent by post to the correct address: within 72 hours of posting;</li>\r\n\t<li>&nbsp;If sent by e-mail to the address from which the receiving party has last sent e-mail: within 24 hours if no notice of non-receipt has been received by the sender.</li>\r\n</ul>\r\n\r\n<p>The validity, construction and performance of this agreement shall be governed by the laws of England and Wales and you agree that any dispute arising from it shall be litigated only in that country.</p>\r\n\r\n<p>These terms and conditions are based on a set written by Net Lawman and released under licence.</p>\r\n\r\n<p>Last updated: 01 October 2018</p>\r\n\r\n<p>If you have any question regarding our terms and conditions, please contact us.</p>\r\n\r\n<p>&copy; 2018 Brighton Phoenix</p>",
+            "component": 33
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 21,
+        "fields": {
+            "created_date": "2018-08-17T10:39:03.817Z",
+            "modified_date": "2018-08-17T10:39:03.817Z",
+            "title": "",
+            "content": "<p>This is the privacy notice of BrightonPhoenix. In this document, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo; refer to Brighton Phoenix.</p>\r\n\r\n<p>Brighton Phoenix. Charity Number: xxxxx Address: Tongdean Lane, Brighton BN1 5JD</p>\r\n\r\n<p>Data Protection Officer: xxxxxxxxx brightonphoenix@gmail.com<br />\r\n&nbsp;</p>\r\n\r\n<p><strong>Introduction</strong></p>\r\n\r\n<p>This is a notice to inform you of our policy about all information that we record about you. It sets out the conditions under which we may process any information that we collect from you, or that you provide to us. It covers information that could identify you (&ldquo;personal information&rdquo;) and information that could not. In the context of the law and this notice, &ldquo;process&rdquo; means collect, store, transfer, use or otherwise act on information.</p>\r\n\r\n<p>We regret that if there are one or more points below with which you are not happy, your only recourse is to leave our website immediately.</p>\r\n\r\n<p>We take seriously the protection of your privacy and confidentiality. We understand that all visitors to our website are entitled to know that their personal data will not be used for any purpose unintended by them, and will not accidentally fall into the hands of a third party.</p>\r\n\r\n<p>We undertake to preserve the confidentiality of all information you provide to us, and hope that you reciprocate.</p>\r\n\r\n<p>Our policy complies with UK law accordingly implemented, including that required by the EU General Data Protection Regulation (GDPR).</p>\r\n\r\n<p>The law requires us to tell you about your rights and our obligations to you in regards to the processing and control of your personal data. We do this now, by requesting that you read the information provided at <a href=\"https://ico.org.uk/for-the-public/\">https://ico.org.uk/for-the-public/</a>.</p>\r\n\r\n<p>Except as set out below, we do not share, or sell, or disclose to a third party, any information collected through our website.</p>\r\n\r\n<p>The bases on which we process information about you</p>\r\n\r\n<p>The law requires us to determine under which of six defined bases we process different categories of your personal information, and to notify you of the basis for each category.</p>\r\n\r\n<p>If a basis on which we process your personal information is no longer relevant then we shall immediately stop processing your data.</p>\r\n\r\n<p>If the basis changes then if required by law we shall notify you of the change and of any new basis under which we have determined that we can continue to process your information.</p>\r\n\r\n<p><strong>1. Information we process because we have a contractual obligation with you</strong></p>\r\n\r\n<p>When you buy a product or service from us, or otherwise agree to our terms and conditions, a contract is formed between you and us.</p>\r\n\r\n<p>In order to carry out our obligations under that contract we must process the information you give us. Some of this information may be personal information.</p>\r\n\r\n<p>We may use it in order to:</p>\r\n\r\n<ul>\r\n\t<li>verify your identity for security purposes</li>\r\n\t<li>sell products to you</li>\r\n\t<li>provide you with our services</li>\r\n\t<li>provide you with suggestions and advice on products, services and how to obtain the most from using our website</li>\r\n</ul>\r\n\r\n<p>We process this information on the basis there is a contract between us, or that you have requested we use the information before we enter into a legal contract.</p>\r\n\r\n<p>Additionally, we may aggregate this information in a general way and use it to provide class information, for example to monitor our performance with respect to a particular service we provide. If we use it for this purpose, you as an individual will not be personally identifiable.</p>\r\n\r\n<p>We shall continue to process this information until the contract between us ends or is terminated by either party under the terms of the contract.</p>\r\n\r\n<p><strong>2. Information we process with your consent</strong></p>\r\n\r\n<p>Through certain actions when otherwise there is no contractual relationship between us, such as when you browse our website or ask us to provide you more information about our business, including our products and services, you provide your consent to us to process information that may be personal information.</p>\r\n\r\n<p>Wherever possible, we aim to obtain your explicit consent to process this information, for example, by asking you to agree to our use of cookies.</p>\r\n\r\n<p>Sometimes you might give your consent implicitly, such as when you send us a message by e-mail to which you would reasonably expect us to reply.</p>\r\n\r\n<p>Except where you have consented to our use of your information for a specific purpose, we do not use your information in any way that would identify you personally. We may aggregate it in a general way and use it to provide class information, for example to monitor the performance of a particular page on our website.</p>\r\n\r\n<p>If you have given us explicit permission to do so, we may from time to time pass your name and contact information to selected associates whom we consider may provide services or products you would find useful.</p>\r\n\r\n<p>We continue to process your information on this basis until you withdraw your consent or it can be reasonably assumed that your consent no longer exists.</p>\r\n\r\n<p>You may withdraw your consent at any time by instructing us . However, if you do so, you may not be able to use our website or our services further.</p>\r\n\r\n<p><strong>3.&nbsp; Information we process because we have a legal obligation</strong></p>\r\n\r\n<p>We are subject to the law like everyone else. Sometimes, we must process your information in order to comply with a statutory obligation.</p>\r\n\r\n<p>For example, we may be required to give information to legal authorities if they so request or if they have the proper authorisation such as a search warrant or court order.</p>\r\n\r\n<p>This may include your personal information.<br />\r\n<br />\r\n<strong>Specific uses of information you provide to us</strong><br />\r\n<br />\r\n<strong>4. Complaining</strong></p>\r\n\r\n<p>When we receive a complaint, we record all the information you have given to us.</p>\r\n\r\n<p>We use that information to resolve your complaint.</p>\r\n\r\n<p>If your complaint reasonably requires us to contact some other person, we may decide to give to that other person some of the information contained in your complaint. We do this as infrequently as possible, but it is a matter for our sole discretion as to whether we do give information, and if we do, what that information is.</p>\r\n\r\n<p>We may also compile statistics showing information obtained from this source to assess the level of service we provide, but not in a way that could identify you or any other person.<br />\r\nUse of information we collect through automated systems when you visit our website</p>\r\n\r\n<p><strong>5. Cookies</strong></p>\r\n\r\n<p>Our website uses cookies. They are placed by software that operates on our servers, and by software operated by third parties whose services we use.</p>\r\n\r\n<p>The <a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32002L0058:EN:HTML\">ePrivacy directive</a> &ndash; more specifically Article 5(3) &ndash; requires prior informed consent for storage or for access to information stored on a user&rsquo;s terminal equipment (ie, you must ask users if they agree to most cookies). However, some cookies are exempt from this requirement and we consider that applies to the cookies set on our website.</p>\r\n\r\n<p>You can prevent their use through your browser settings, but you will then not be able to use all the functionality of our website.</p>\r\n\r\n<p>We provide more information about the cookies we use in our cookie policy.</p>\r\n\r\n<p><strong>6. Personal identifiers from your browsing activity</strong></p>\r\n\r\n<p>Requests by your web browser to our servers for web pages and other content on our website are recorded.</p>\r\n\r\n<p>We record information such as your geographical location, your Internet service provider and your IP address.</p>\r\n\r\n<p>This information is used by our security systems to track events on the website and may be included in alerts of suspicious activity sent to the website administrator.</p>\r\n\r\n<p>We use anonymised information of this type in aggregate to assess the popularity of the webpages on our website and how we perform in providing content to you.</p>\r\n\r\n<p>If combined with other information we know about you from previous visits, the data possibly could be used to identify you personally, even if you are not signed in to our website.</p>\r\n\r\n<p><strong>7. Our use of re-marketing</strong></p>\r\n\r\n<p>Re-marketing involves placing a cookie on your computer when you browse our website in order to be able to serve to you an advert for our products or services when you visit some other website.</p>\r\n\r\n<p>We do not use re-marketing cookies.</p>\r\n\r\n<p><br />\r\n<strong>Disclosure and sharing of your information</strong></p>\r\n\r\n<p><strong>8. Information we obtain from third parties</strong></p>\r\n\r\n<p>Although we do not disclose your personal information to any third party (except as set out in this notice), we sometimes receive data that is indirectly made up from your personal information from third parties whose services we use.</p>\r\n\r\n<p><strong>9. Third party advertising on our website</strong></p>\r\n\r\n<p>We do not carry third-party advertising on our website.</p>\r\n\r\n<p><strong>10. Data may be processed outside the European Union</strong></p>\r\n\r\n<p>Our website is hosted in the UK.</p>\r\n\r\n<p>We may also use outsourced services in countries outside the European Union from time to time in other aspects of our business.</p>\r\n\r\n<p>Accordingly data obtained within the UK or any other country could be processed outside the European Union.</p>\r\n\r\n<p>We take all steps reasonably necessary to ensure that any outsourced service providers implement appropriate safeguards to protect your personal information.</p>\r\n\r\n<p><strong>Access to your own information</strong></p>\r\n\r\n<p><strong>11. Access to your personal information</strong></p>\r\n\r\n<p>We do not hold your personally identifiable information on our website.</p>\r\n\r\n<p>To obtain a copy of any personal information we hold for you, you may email brightonphoenix@gmail.com.</p>\r\n\r\n<p>After receiving the request, we will tell you when we expect to provide you with the information.</p>\r\n\r\n<p><strong>12. Removal of your information</strong></p>\r\n\r\n<p>If you wish us to remove personally identifiable information, you may email brightonphoenix@gmail.com.</p>\r\n\r\n<p>This may limit the service we can provide to you.</p>\r\n\r\n<p><strong>13. Verification of your information</strong></p>\r\n\r\n<p>When we receive any request to access, edit or delete personal identifiable information we shall first take reasonable steps to verify your identity before granting you access or otherwise taking any action. This is important to safeguard your information.</p>\r\n\r\n<p><strong>Other matters</strong></p>\r\n\r\n<p><strong>14. Use of site by children</strong></p>\r\n\r\n<p>We do not sell products or provide services for purchase by children, nor do we market to children.</p>\r\n\r\n<p>If you are under 18, you may use our website only with consent from a parent or guardian.</p>\r\n\r\n<p><br />\r\n<strong>15. Encryption of data sent between us</strong></p>\r\n\r\n<p>We use Secure Sockets Layer (SSL) certificates to verify our identity to your browser and to encrypt any data you give us.</p>\r\n\r\n<p>Whenever information is transferred between us, you can check that it is done so using SSL by looking for a closed padlock symbol or other trust mark in your browser&rsquo;s URL bar or toolbar.</p>\r\n\r\n<p><strong>16. How you can complain</strong></p>\r\n\r\n<p>If you are not happy with our privacy policy or if have any complaint then you should tell us by email at <a href=\"mailto:brightonphoenix@gmail.com?subject=Privacy%20Policy\">brightonphoenix@gmail.com</a>.</p>\r\n\r\n<p>If a dispute is not settled then we hope you will agree to attempt to resolve it by engaging in good faith with us in a process of mediation or arbitration.</p>\r\n\r\n<p>If you are in any way dissatisfied about how we process your personal information, you have a right to lodge a complaint with the Information Commissioner&rsquo;s Office. This can be done at <a href=\"https://ico.org.uk/concerns/\">https://ico.org.uk/concerns/</a></p>\r\n\r\n<p><br />\r\n<strong>17. Retention period for personal data</strong></p>\r\n\r\n<p>Except as otherwise mentioned in this privacy notice, we keep your personal information only for as long as required by us:</p>\r\n\r\n<ul>\r\n\t<li>&nbsp;to provide you with the services you have requested;</li>\r\n\t<li>&nbsp;to comply with other law, including for the period demanded by our tax authorities;</li>\r\n\t<li>&nbsp;to support a claim or defence in court.</li>\r\n</ul>\r\n\r\n<p><strong>18. Compliance with the law</strong></p>\r\n\r\n<p>Our privacy policy has been compiled so as to comply with the law of every country or legal jurisdiction in which we aim to do business. If you think it fails to satisfy the law of your jurisdiction, we should like to hear from you.</p>\r\n\r\n<p>However, ultimately it is your choice as to whether you wish to use our website.</p>\r\n\r\n<p><strong>19. Review of this privacy policy</strong></p>\r\n\r\n<p>We may update this privacy notice from time to time as necessary. The terms that apply to you are those posted here on our website on the day you use our website. We advise you to print a copy for your records.</p>\r\n\r\n<p>Last updated: 01 October 2018</p>\r\n\r\n<p>If you have any question regarding our privacy notice, please contact us.</p>\r\n\r\n<p>&copy; 2018 Brighton Phoenix Ltd&nbsp;</p>",
+            "component": 32
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 22,
+        "fields": {
+            "created_date": "2018-08-20T15:34:41.833Z",
+            "modified_date": "2018-08-20T15:34:41.833Z",
+            "title": "Gallery",
+            "content": "<p>Add images to galleries, they&#39;re displayed as a slideshow...</p>",
+            "component": 34
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 23,
+        "fields": {
+            "created_date": "2018-08-20T15:39:36.450Z",
+            "modified_date": "2018-08-20T15:39:36.450Z",
+            "title": "",
+            "content": "<p>Embed components let you add raw HTML straight into a page.</p>\r\n\r\n<p>This allows you to add external content such as Google Maps and Youtube videos.</p>\r\n\r\n<p><strong>Be careful -&nbsp;</strong>This is dangerous, please only use these if you really know what you&#39;re doing! If in doubt, ask...</p>",
+            "component": 35
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 24,
+        "fields": {
+            "created_date": "2018-08-20T15:46:28.800Z",
+            "modified_date": "2018-08-20T15:46:28.800Z",
+            "title": "",
+            "content": "<p>Table components let you add a table into a page or article</p>",
+            "component": 38
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 25,
+        "fields": {
+            "created_date": "2018-08-20T15:49:16.940Z",
+            "modified_date": "2018-08-20T15:49:16.941Z",
+            "title": "",
+            "content": "<p>Profile components allow you to put names to faces...</p>",
+            "component": 40
+        }
+    },
+    {
+        "model": "pages.embed",
+        "pk": 1,
+        "fields": {
+            "created_date": "2018-08-20T15:39:36.491Z",
+            "modified_date": "2018-08-20T15:39:36.491Z",
+            "title": "Example embed - YouTube",
+            "content": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/XSH0M9335js?rel=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>",
+            "component": 36
+        }
+    },
+    {
+        "model": "pages.embed",
+        "pk": 2,
+        "fields": {
+            "created_date": "2018-08-20T15:39:36.526Z",
+            "modified_date": "2018-08-20T15:39:36.526Z",
+            "title": "Example embed - Google Maps",
+            "content": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.8261799276784!2d-0.1624336842586232!3d50.85290297953289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758f8d23653431%3A0x57201f67be7f42a0!2sWithdean+Sports+Complex!5e0!3m2!1sen!2suk!4v1534687604947\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>",
+            "component": 37
+        }
+    },
+    {
+        "model": "pages.embed",
+        "pk": 3,
+        "fields": {
+            "created_date": "2018-08-20T16:01:21.113Z",
+            "modified_date": "2018-08-20T16:01:21.113Z",
+            "title": "",
+            "content": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.8261799276784!2d-0.1624336842586232!3d50.85290297953289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758f8d23653431%3A0x57201f67be7f42a0!2sWithdean+Sports+Complex!5e0!3m2!1sen!2suk!4v1534687604947\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>",
+            "component": 42
+        }
+    },
+    {
+        "model": "pages.feature",
+        "pk": 1,
+        "fields": {
+            "created_date": "2018-08-07T14:44:38.870Z",
+            "modified_date": "2018-08-07T14:45:46.884Z",
+            "title": "Image left, text right, dark bg",
+            "subtitle": "",
+            "content": "Consectetur sunt quis anim dolor magna. Excepteur est deserunt id ex commodo.",
+            "image_alt": "",
+            "link_url": "https://www.brightonphoenix.org.uk",
+            "link_text": "Link",
+            "align": "imageLeft",
+            "background": "dark",
+            "component": 19,
+            "image": "page/42/feature/1.jpg"
+        }
+    },
+    {
+        "model": "pages.feature",
+        "pk": 2,
+        "fields": {
+            "created_date": "2018-08-07T14:44:38.884Z",
+            "modified_date": "2018-08-07T14:45:46.927Z",
+            "title": "Image right, text left, light bg",
+            "subtitle": "subtitle",
+            "content": "Nisi adipisicing laborum enim est amet ex consequat consequat.",
+            "image_alt": "",
+            "link_url": "",
+            "link_text": "",
+            "align": "imageRight",
+            "background": "light",
+            "component": 20,
+            "image": "page/42/feature/1_JAQIAQj.jpg"
+        }
+    },
+    {
+        "model": "pages.feature",
+        "pk": 3,
+        "fields": {
+            "created_date": "2018-08-07T14:44:38.897Z",
+            "modified_date": "2018-08-07T14:44:38.897Z",
+            "title": "Image left, text right, white background",
+            "subtitle": "",
+            "content": "In Lorem velit sunt aliquip minim dolore ad officia. Mollit qui quis fugiat laboris ipsum esse eu do.",
+            "image_alt": "",
+            "link_url": "",
+            "link_text": "",
+            "align": "imageLeft",
+            "background": "white",
+            "component": 21,
+            "image": "page/42/feature/2.jpg"
+        }
+    },
+    {
+        "model": "pages.feature",
+        "pk": 4,
+        "fields": {
+            "created_date": "2018-08-07T14:44:38.913Z",
+            "modified_date": "2018-08-07T14:44:38.913Z",
+            "title": "Centred text, no image, dark background",
+            "subtitle": "Subtitle",
+            "content": "In Lorem velit sunt aliquip minim dolore ad officia. Mollit qui quis fugiat laboris ipsum esse eu do.",
+            "image_alt": "",
+            "link_url": "",
+            "link_text": "",
+            "align": "centre",
+            "background": "dark",
+            "component": 22,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 4,
+        "fields": {
+            "created_date": "2018-08-07T14:35:59.006Z",
+            "modified_date": "2018-08-07T14:35:59.006Z",
+            "image_alt": "A description of the photo",
+            "caption": "An example of a landscape photo",
+            "component": 15,
+            "image": "page/41/image/3.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 5,
+        "fields": {
+            "created_date": "2018-08-07T14:35:59.024Z",
+            "modified_date": "2018-08-07T14:35:59.024Z",
+            "image_alt": "A description of the photo",
+            "caption": "An example of a portrait photo",
+            "component": 16,
+            "image": "page/41/image/3-portrait.jpg"
+        }
+    },
+    {
+        "model": "pages.listitems",
+        "pk": 1,
+        "fields": {
+            "created_date": "2018-08-20T15:36:58.507Z",
+            "modified_date": "2018-08-20T15:36:58.507Z",
+            "component": 30
+        }
+    },
+    {
+        "model": "pages.listitems",
+        "pk": 2,
+        "fields": {
+            "created_date": "2018-08-20T15:36:58.520Z",
+            "modified_date": "2018-08-20T15:36:58.520Z",
+            "component": 31
+        }
+    },
+    {
+        "model": "pages.listitem",
+        "pk": 1,
+        "fields": {
+            "created_date": "2018-08-20T15:36:58.532Z",
+            "modified_date": "2018-08-20T15:36:58.532Z",
+            "title": "List item one",
+            "content": "Lorem ipsum dolor sit amet",
+            "image_alt": "",
+            "link_url": "http://brightonphoenix.org.uk",
+            "link_text": "Link",
+            "image": "page/44/list-items/1_z0IcwJQ.jpg",
+            "list_items": 1
+        }
+    },
+    {
+        "model": "pages.listitem",
+        "pk": 2,
+        "fields": {
+            "created_date": "2018-08-20T15:36:58.547Z",
+            "modified_date": "2018-08-20T15:36:58.547Z",
+            "title": "List item two",
+            "content": "Lorem ipsum",
+            "image_alt": "",
+            "link_url": "http://brightonphoenix.org.uk",
+            "link_text": "Link",
+            "image": "page/44/list-items/2_5apHld8.jpg",
+            "list_items": 1
+        }
+    },
+    {
+        "model": "pages.listitem",
+        "pk": 3,
+        "fields": {
+            "created_date": "2018-08-20T15:36:58.565Z",
+            "modified_date": "2018-08-20T15:36:58.565Z",
+            "title": "First list item",
+            "content": "Lorem",
+            "image_alt": "",
+            "link_url": "http://brightonphoenix.org.uk",
+            "link_text": "Link",
+            "image": "page/44/list-items/3_c2aIOiu.jpg",
+            "list_items": 2
+        }
+    },
+    {
+        "model": "pages.listitem",
+        "pk": 4,
+        "fields": {
+            "created_date": "2018-08-20T15:36:58.581Z",
+            "modified_date": "2018-08-20T15:36:58.581Z",
+            "title": "Second list item",
+            "content": "Lorem ipsum dolor sit amet",
+            "image_alt": "",
+            "link_url": "http://brightonphoenix.org.uk",
+            "link_text": "Link",
+            "image": "page/44/list-items/1_HCvXNG6.jpg",
+            "list_items": 2
+        }
+    },
+    {
+        "model": "pages.listitem",
+        "pk": 5,
+        "fields": {
+            "created_date": "2018-08-20T15:36:58.594Z",
+            "modified_date": "2018-08-20T15:36:58.594Z",
+            "title": "Third list item",
+            "content": "Lorem ipsum",
+            "image_alt": "",
+            "link_url": "http://brightonphoenix.org.uk",
+            "link_text": "Link",
+            "image": "page/44/list-items/2_qWc1tWm.jpg",
+            "list_items": 2
+        }
+    },
+    {
+        "model": "pages.profile",
+        "pk": 1,
+        "fields": {
+            "created_date": "2018-08-20T15:49:16.961Z",
+            "modified_date": "2018-08-20T15:49:16.961Z",
+            "title": "Example profile component",
+            "component": 41
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 1,
+        "fields": {
+            "created_date": "2018-08-20T15:49:16.978Z",
+            "modified_date": "2018-08-20T15:49:16.978Z",
+            "name": "Name 1",
+            "role": "Role 1",
+            "profile": 1,
+            "image": "page/47/profile/avatar-1.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 2,
+        "fields": {
+            "created_date": "2018-08-20T15:49:16.995Z",
+            "modified_date": "2018-08-20T15:49:16.995Z",
+            "name": "Name 2",
+            "role": "Role 2",
+            "profile": 1,
+            "image": "page/47/profile/avatar-2.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 3,
+        "fields": {
+            "created_date": "2018-08-20T15:49:17.010Z",
+            "modified_date": "2018-08-20T15:49:17.011Z",
+            "name": "Name 3",
+            "role": "Role 3",
+            "profile": 1,
+            "image": "page/47/profile/avatar-1_zSAh24V.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 4,
+        "fields": {
+            "created_date": "2018-08-20T15:49:17.027Z",
+            "modified_date": "2018-08-20T15:49:17.027Z",
+            "name": "Name 4",
+            "role": "Role 4",
+            "profile": 1,
+            "image": "page/47/profile/avatar-2_hQvuQGp.jpg"
+        }
+    },
+    {
+        "model": "pages.quote",
+        "pk": 1,
+        "fields": {
+            "created_date": "2018-08-07T14:49:04.102Z",
+            "modified_date": "2018-08-07T14:49:04.102Z",
+            "quote": "Image left, text right, dark bg",
+            "author": "Author name",
+            "image_alt": "",
+            "align": "imageLeft",
+            "background": "dark",
+            "component": 25,
+            "image": "page/43/quote/1.jpg"
+        }
+    },
+    {
+        "model": "pages.quote",
+        "pk": 2,
+        "fields": {
+            "created_date": "2018-08-07T14:49:04.117Z",
+            "modified_date": "2018-08-07T14:49:04.117Z",
+            "quote": "Image right, text left, light bg",
+            "author": "",
+            "image_alt": "",
+            "align": "imageRight",
+            "background": "light",
+            "component": 26,
+            "image": "page/43/quote/1_4KZslKt.jpg"
+        }
+    },
+    {
+        "model": "pages.quote",
+        "pk": 3,
+        "fields": {
+            "created_date": "2018-08-07T14:49:04.132Z",
+            "modified_date": "2018-08-07T14:49:04.132Z",
+            "quote": "Text centre, no image, dark bg",
+            "author": "Author name",
+            "image_alt": "",
+            "align": "centre",
+            "background": "dark",
+            "component": 27,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.table",
+        "pk": 1,
+        "fields": {
+            "created_date": "2018-08-20T15:46:28.818Z",
+            "modified_date": "2018-08-20T15:46:28.818Z",
+            "title": "Example table",
+            "content": "<table border=\"1\" style=\"width:100%\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>Lorem</td>\r\n\t\t\t<td>Ipsum</td>\r\n\t\t\t<td>Dolor</td>\r\n\t\t\t<td>Sit</td>\r\n\t\t\t<td>Amet</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>1</td>\r\n\t\t\t<td>2</td>\r\n\t\t\t<td>1</td>\r\n\t\t\t<td>2</td>\r\n\t\t\t<td>1</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>2</td>\r\n\t\t\t<td>1</td>\r\n\t\t\t<td>2</td>\r\n\t\t\t<td>1</td>\r\n\t\t\t<td>2</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>",
+            "component": 39
         }
     }
 ]

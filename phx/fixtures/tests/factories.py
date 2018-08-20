@@ -10,7 +10,6 @@ from ..models import Fixture, Category
 class CategoryFactory(CleanModelFactory):
     title = FuzzyText()
     abbreviation = FuzzyText()
-    icon = ImageField()
 
     class Meta:
         model = Category

@@ -39,10 +39,6 @@ class Category(models.Model):
         help_text='Please ensure this doesn\'t contain any spaces',
         validators=[alphanumeric]
     )
-    icon = models.ImageField(
-        upload_to='fixtures/categories/',
-        blank=True
-    )
 
     # Metadata
     class Meta:
