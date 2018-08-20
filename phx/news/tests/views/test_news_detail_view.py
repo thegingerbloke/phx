@@ -9,7 +9,10 @@ from ..factories import (
     EmbedFactory,
     FeatureFactory,
     ImageFactory,
+    ListItemFactory,
     ListItemsFactory,
+    ProfileFactory,
+    ProfileMemberFactory,
     QuoteFactory,
     TableFactory,
 )
@@ -160,8 +163,8 @@ class TestNewsDetailsView(TestCase):
         """
         news = NewsFactory()
         list_items = ListItemsFactory(
-            title_1='first list_items block',
             component=SubFactory(ComponentFactory, news=news))
+        ListItemFactory.create_batch(3, list_items=list_items)
 
         url = reverse(
             'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
@@ -171,7 +174,26 @@ class TestNewsDetailsView(TestCase):
         component = response.context['components'].first()
         first_list_items = component.list_items
         self.assertEqual(first_list_items, list_items)
-        self.assertEqual(first_list_items.title_1, 'first list_items block')
+        self.assertEqual(len(first_list_items.list_items.all()), 3)
+
+    def test_component_profile(self):
+        """"
+        GET request returns profile component as expected
+        """
+        news = NewsFactory()
+        profile = ProfileFactory(
+            component=SubFactory(ComponentFactory, news=news))
+        ProfileMemberFactory.create_batch(3, profile=profile)
+
+        url = reverse(
+            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
+        )
+
+        response = self.client.get(url)
+        component = response.context['components'].first()
+        first_profile = component.profile
+        self.assertEqual(first_profile, profile)
+        self.assertEqual(len(first_profile.profile_members.all()), 3)
 
     def test_component_quote(self):
         """"

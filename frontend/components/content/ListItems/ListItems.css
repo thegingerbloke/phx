@@ -9,7 +9,7 @@
 
 /* ListItems - layout variants */
 
-@media (--large) {
+@media (--medium) {
   .ListItems {
     flex-direction: row;
   }

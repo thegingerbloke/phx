@@ -1,0 +1,21 @@
+{% load static %}
+{% load thumbnail %}
+
+<div class="Profile">
+  <h3 class="Profile-title">{{data.title}}</h3>
+  <div class="Profile-members">
+    {% for member in data.profile_members.all %}
+      <div class="Profile-member">
+        <div class="Profile-memberContent">
+          <img class="Profile-memberImg" src="{% if member.image %}{% thumbnail member.image 400x600 crop %}{% else %}{% static 'img/no-image-bg.jpg' %}{% endif %}" alt="{{member.name}}" />
+          <h4 class="Profile-memberName">
+            {{member.name}}
+          </h4>
+          <p class="Profile-memberRole">
+            {{member.role}}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

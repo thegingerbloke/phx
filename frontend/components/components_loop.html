@@ -15,6 +15,9 @@
     {% if component.list_items %}
       {% include './content/ListItems/ListItems.html' with data=component.list_items %}
     {% endif %}
+    {% if component.profile %}
+      {% include './content/Profile/Profile.html' with data=component.profile %}
+    {% endif %}
     {% if component.quote %}
       {% include './content/Quote/Quote.html' with data=component.quote %}
     {% endif %}

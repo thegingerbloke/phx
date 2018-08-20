@@ -54,19 +54,38 @@ class AbstractImageAdmin(AbstractComponentAdmin):
 
 
 class AbstractListItemsAdmin(AbstractComponentAdmin):
-    readonly_fields = ['current_image_1', 'current_image_2', 'current_image_3']
+    class Meta:
+        abstract = True
 
-    def current_image_1(self, obj):
-        return self.current_image(obj.image_1)
 
-    def current_image_2(self, obj):
-        return self.current_image(obj.image_2)
+class AbstractListItemAdmin(AbstractComponentAdmin):
+    max_num = 3
+    readonly_fields = ['current_image']
 
-    def current_image_3(self, obj):
-        return self.current_image(obj.image_3)
+    def current_image(self, obj):
+        thumbnailer = get_thumbnailer(obj.image)
+        thumbnail_options = {'size': (200, 200)}
+        return format_html(
+            '<img src="/media/{0}" />'.format(
+                thumbnailer.get_thumbnail(thumbnail_options)
+            )
+        )
 
-    def current_image(self, img):
-        thumbnailer = get_thumbnailer(img)
+    class Meta:
+        abstract = True
+
+
+class AbstractProfileAdmin(AbstractComponentAdmin):
+    class Meta:
+        abstract = True
+
+
+class AbstractProfileMemberAdmin(AbstractComponentAdmin):
+    max_num = 8
+    readonly_fields = ['current_image']
+
+    def current_image(self, obj):
+        thumbnailer = get_thumbnailer(obj.image)
         thumbnail_options = {'size': (200, 200)}
         return format_html(
             '<img src="/media/{0}" />'.format(

@@ -7,6 +7,7 @@ COMPONENT_TYPES = [
     'feature',
     'image',
     'list_items',
+    'profile',
     'quote',
     'table',
 ]
@@ -84,34 +85,67 @@ class AbstractFeature(AbstractComponent):
         return 'feature'
 
 
-class AbstractListItems(AbstractComponent):
-    # add image fields directly where used:
-    # image_1 = models.ImageField(upload_to=get_upload_path, blank=True)
-    # image_2 = models.ImageField(upload_to=get_upload_path, blank=True)
-    # image_3 = models.ImageField(upload_to=get_upload_path, blank=True)
-    title_1 = models.CharField(max_length=200, blank=True)
-    content_1 = models.TextField(blank=True)
-    image_alt_1 = models.CharField(max_length=200, blank=True)
-    link_url_1 = models.URLField(max_length=200, blank=True)
-    link_text_1 = models.CharField(max_length=200, blank=True)
-    title_2 = models.CharField(max_length=200, blank=True)
-    content_2 = models.TextField(blank=True)
-    image_alt_2 = models.CharField(max_length=200, blank=True)
-    link_url_2 = models.URLField(max_length=200, blank=True)
-    link_text_2 = models.CharField(max_length=200, blank=True)
-    title_3 = models.CharField(max_length=200, blank=True)
-    content_3 = models.TextField(blank=True)
-    image_alt_3 = models.CharField(max_length=200, blank=True)
-    link_url_3 = models.URLField(max_length=200, blank=True)
-    link_text_3 = models.CharField(max_length=200, blank=True)
+class AbstractImage(AbstractComponent):
+    # add image field directly where used:
+    # image = models.ImageField(upload_to=get_upload_path)
+    image_alt = models.CharField(max_length=200, blank=True)
+    caption = models.CharField(max_length=200, blank=True)
 
     class Meta:
         abstract = True
-        verbose_name = 'list item'
+
+    def __str__(self):
+        return 'image'
+
+
+class AbstractListItems(AbstractComponent):
+    class Meta:
+        abstract = True
+        verbose_name = 'list items'
         verbose_name_plural = 'list items'
 
     def __str__(self):
         return 'list items'
+
+
+class AbstractListItem(AbstractComponent):
+    # add image fields directly where used:
+    # image = models.ImageField(upload_to=get_upload_path, blank=True)
+    title = models.CharField(max_length=200, blank=True)
+    content = models.TextField(blank=True)
+    image_alt = models.CharField(max_length=200, blank=True)
+    link_url = models.URLField(max_length=200, blank=True)
+    link_text = models.CharField(max_length=200, blank=True)
+
+    class Meta:
+        abstract = True
+        verbose_name = 'list item'
+
+    def __str__(self):
+        return 'list item'
+
+
+class AbstractProfile(AbstractComponent):
+    title = models.CharField(max_length=200)
+
+    class Meta:
+        abstract = True
+
+    def __str__(self):
+        return 'profile'
+
+
+class AbstractProfileMember(AbstractComponent):
+    # add image field directly where used:
+    # image = models.ImageField(upload_to=get_upload_path, blank=True)
+    name = models.CharField(max_length=200)
+    role = models.CharField(max_length=200)
+
+    class Meta:
+        abstract = True
+
+    def __str__(self):
+        return 'profile member'
 
 
 class AbstractQuote(AbstractComponent):
@@ -134,19 +168,6 @@ class AbstractQuote(AbstractComponent):
 
     def __str__(self):
         return 'quote'
-
-
-class AbstractImage(AbstractComponent):
-    # add image field directly where used:
-    # image = models.ImageField(upload_to=get_upload_path)
-    image_alt = models.CharField(max_length=200, blank=True)
-    caption = models.CharField(max_length=200, blank=True)
-
-    class Meta:
-        abstract = True
-
-    def __str__(self):
-        return 'image'
 
 
 class AbstractTable(AbstractComponent):

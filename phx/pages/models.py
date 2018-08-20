@@ -9,7 +9,10 @@ from components.models import (
     AbstractEmbed,
     AbstractFeature,
     AbstractImage,
+    AbstractListItem,
     AbstractListItems,
+    AbstractProfile,
+    AbstractProfileMember,
     AbstractQuote,
     AbstractTable,
 )
@@ -146,31 +149,56 @@ class Image(AbstractImage):
 
 
 class ListItems(AbstractListItems):
-    help_text = 'Image will be cropped and resized to 800x400'
-
-    def get_upload_path(self, filename):
-        id = self.component.page_id
-        return 'page/{0}/list-items/{1}'.format(id, filename)
-
     component = models.OneToOneField(
         Component,
         on_delete=models.CASCADE,
         related_name='list_items',
     )
-    image_1 = models.ImageField(
+
+
+class ListItem(AbstractListItem):
+    def get_upload_path(self, filename):
+        id = self.list_items.component.page_id
+        return 'page/{0}/list-items/{1}'.format(id, filename)
+
+    image = models.ImageField(
         upload_to=get_upload_path,
         blank=True,
-        help_text=help_text
+        help_text='Image will be cropped and resized to 800x400'
     )
-    image_2 = models.ImageField(
-        upload_to=get_upload_path,
+    list_items = models.ForeignKey(
+        ListItems,
+        models.SET_NULL,
         blank=True,
-        help_text=help_text
+        null=True,
+        related_name='list_items',
     )
-    image_3 = models.ImageField(
+
+
+class Profile(AbstractProfile):
+    component = models.OneToOneField(
+        Component,
+        on_delete=models.CASCADE,
+        related_name='profile',
+    )
+
+
+class ProfileMember(AbstractProfileMember):
+    def get_upload_path(self, filename):
+        id = self.profile.component.page_id
+        return 'page/{0}/profile/{1}'.format(id, filename)
+
+    profile = models.ForeignKey(
+        Profile,
+        models.SET_NULL,
+        blank=True,
+        null=True,
+        related_name='profile_members',
+    )
+    image = models.ImageField(
+        help_text='Image will be cropped and resized to 400x600',
         upload_to=get_upload_path,
         blank=True,
-        help_text=help_text
     )
 
 

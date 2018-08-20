@@ -1,0 +1,56 @@
+/**
+ * @define Profile; use strict
+ */
+
+.Profile-title {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-default);
+  margin: 2rem 0 0.5rem 0;
+}
+
+.Profile-members {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* Profile - layout variants */
+
+.Profile-member {
+  flex-basis: 50%;
+  margin-bottom: var(--gutter);
+}
+
+@media (--medium) {
+  .Profile-member {
+    flex-basis: 25%;
+  }
+}
+
+@media (--large) {
+  .Profile-member {
+    flex-basis: 16.6%;
+  }
+}
+
+.Profile-memberContent {
+  padding: 0 var(--gutter-half);
+}
+
+.Profile-memberImg {
+  margin-bottom: var(--gutter);
+}
+
+.Profile-memberName {
+  font-size: var(--font-size-default);
+  font-weight: bold;
+  line-height: var(--line-height-default);
+  margin-bottom: var(--gutter-quarter);
+}
+
+.Profile-memberRole {
+  font-size: var(--font-size-default);
+  line-height: var(--line-height-default);
+  margin-bottom: var(--gutter);
+}

@@ -1,60 +1,22 @@
 {% load thumbnail %}
 
 <div class="ListItems">
-  {% if data.content_1 %}
+  {% for list_item in data.list_items.all %}
   <div class="ListItems-item">
-    <img class="ListItems-img" src="{% thumbnail data.image_1 800x400 crop %}" alt="{{data.image_alt_1}}" />
+    <img class="ListItems-img" src="{% thumbnail list_item.image 800x400 crop %}" alt="{{list_item.image_alt}}" />
     <div class="ListItems-content">
       <h4 class="ListItems-title">
-        {{data.title_1}}
+        {{list_item.title}}
       </h4>
       <p class="ListItems-text">
-        {{data.content_1}}
+        {{list_item.content}}
       </p>
-      {% if data.link_url_1 and data.link_text_1 %}
-        <a class="ListItems-cta" href="{{data.link_url_1}}">
-          {{data.link_text_1}}
+      {% if list_item.link_url and list_item.link_text %}
+        <a class="ListItems-cta" href="{{list_item.link_url}}">
+          {{list_item.link_text}}
         </a>
       {% endif %}
     </div>
   </div>
-  {% endif %}
-
-  {% if data.content_2 %}
-  <div class="ListItems-item">
-    <img class="ListItems-img" src="{% thumbnail data.image_2 800x400 crop %}" alt="{{data.image_alt_2}}" />
-    <div class="ListItems-content">
-      <h4 class="ListItems-title">
-        {{data.title_2}}
-      </h4>
-      <p class="ListItems-text">
-        {{data.content_2}}
-      </p>
-      {% if data.link_url_2 and data.link_text_2 %}
-        <a class="ListItems-cta" href="{{data.link_url_2}}">
-          {{data.link_text_2}}
-        </a>
-      {% endif %}
-    </div>
-  </div>
-  {% endif %}
-
-  {% if data.content_3 %}
-  <div class="ListItems-item">
-    <img class="ListItems-img" src="{% thumbnail data.image_3 800x400 crop %}" alt="{{data.image_alt_3}}" />
-    <div class="ListItems-content">
-      <h4 class="ListItems-title">
-        {{data.title_3}}
-      </h4>
-      <p class="ListItems-text">
-        {{data.content_3}}
-      </p>
-      {% if data.link_url_3 and data.link_text_3 %}
-        <a class="ListItems-cta" href="{{data.link_url_3}}">
-          {{data.link_text_3}}
-        </a>
-      {% endif %}
-    </div>
-  </div>
-  {% endif %}
+  {% endfor %}
 </div>

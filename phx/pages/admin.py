@@ -6,7 +6,10 @@ from .models import (
     Embed,
     Feature,
     Image,
+    ListItem,
     ListItems,
+    Profile,
+    ProfileMember,
     Quote,
     Table,
 )
@@ -15,7 +18,10 @@ from components.admin import (
     AbstractEmbedAdmin,
     AbstractFeatureAdmin,
     AbstractImageAdmin,
+    AbstractListItemAdmin,
     AbstractListItemsAdmin,
+    AbstractProfileAdmin,
+    AbstractProfileMemberAdmin,
     AbstractQuoteAdmin,
     AbstractTableAdmin,
 )
@@ -38,8 +44,22 @@ class ImageAdmin(AbstractImageAdmin):
     model = Image
 
 
+class ListItemAdmin(AbstractListItemAdmin):
+    model = ListItem
+
+
 class ListItemsAdmin(AbstractListItemsAdmin):
     model = ListItems
+    inlines = [ListItemAdmin]
+
+
+class ProfileMemberAdmin(AbstractProfileMemberAdmin):
+    model = ProfileMember
+
+
+class ProfileAdmin(AbstractProfileAdmin):
+    model = Profile
+    inlines = [ProfileMemberAdmin]
 
 
 class QuoteAdmin(AbstractQuoteAdmin):
@@ -59,6 +79,7 @@ class ComponentAdmin(nested_admin.NestedStackedInline):
         FeatureAdmin,
         ImageAdmin,
         ListItemsAdmin,
+        ProfileAdmin,
         QuoteAdmin,
         TableAdmin,
     ]

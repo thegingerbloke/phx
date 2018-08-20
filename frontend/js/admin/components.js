@@ -46,10 +46,12 @@ var Components = {
     if (formsetName === "components") return;
 
     var $fieldset = $row.parent().closest(".djn-group-nested");
+    var $childFieldsets = $fieldset.find(".djn-group-nested");
     var $form = $row.parent().closest(".djn-inline-form");
     $form
       .find(".djn-group-nested")
       .not($fieldset)
+      .not($childFieldsets)
       .hide();
 
     // if this is an editorial/table component, we also need to init ckeditor

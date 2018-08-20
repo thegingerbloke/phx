@@ -12,7 +12,10 @@ from ..models import (
     Embed,
     Feature,
     Image,
+    ListItem,
     ListItems,
+    Profile,
+    ProfileMember,
     Quote,
     Table,
 )
@@ -78,11 +81,32 @@ class ImageFactory(CleanModelFactory):
 
 
 class ListItemsFactory(CleanModelFactory):
-    title_1 = FuzzyText()
-    image_1 = ImageField()
-
     class Meta:
         model = ListItems
+
+
+class ListItemFactory(CleanModelFactory):
+    title = FuzzyText()
+    image = ImageField()
+
+    class Meta:
+        model = ListItem
+
+
+class ProfileFactory(CleanModelFactory):
+    title = FuzzyText()
+
+    class Meta:
+        model = Profile
+
+
+class ProfileMemberFactory(CleanModelFactory):
+    name = FuzzyText()
+    role = FuzzyText()
+    image = ImageField()
+
+    class Meta:
+        model = ProfileMember
 
 
 class QuoteFactory(CleanModelFactory):
