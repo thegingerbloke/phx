@@ -166,8 +166,8 @@ MEDIA_URL = '/media/'
 # Template values
 SITE_TITLE = 'Brighton Phoenix'
 SITE_DESCRIPTION = (
-    'Pursuing excellence and honours in athletics and multisport, road and '
-    'cross-country running, triathlon/duathlon. Coaching and competition, '
+    'Pursuing excellence and honours in athletics and multisport, road, track '
+    'and cross-country running, triathlon/duathlon. Coaching and competition, '
     'advice and inspiration – for all ages and abilities.'
 )
 
