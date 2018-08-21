@@ -88,6 +88,6 @@ workflows:
       - lint_backend:
           requires:
             - build
-      # - test_backend:
-      #     requires:
-      #       - build
+      - test_backend:
+          requires:
+            - build
