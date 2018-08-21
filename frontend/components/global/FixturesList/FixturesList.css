@@ -8,6 +8,11 @@
 
 /* Filters */
 
+.FixturesList-filter {
+  border-bottom: 1px solid var(--colour-grey-light);
+  margin-bottom: var(--gutter-double);
+}
+
 @media (--medium) {
   .FixturesList-filter {
     align-items: center;
@@ -20,15 +25,17 @@
 
 .FixturesList-filterTitle {
   display: inline-block;
+  line-height: var(--line-height-editorial);
 }
 
 .FixturesList-filterList {
   display: inline-block;
-  margin-bottom: var(--gutter);
+  margin-bottom: var(--gutter-double);
 }
 
 .FixturesList-filterItem {
   display: inline-block;
+  line-height: var(--line-height-editorial);
 }
 
 .FixturesList-filterLink {
@@ -46,7 +53,7 @@
 /* Filters - search */
 
 .FixturesList-filterSearch {
-  margin-bottom: var(--gutter);
+  margin-bottom: var(--gutter-double);
   position: relative;
 }
 
@@ -148,18 +155,18 @@
 
 .FixturesList-tableCell {
   display: block;
-  padding: 0 var(--gutter-half);
+  padding: 0 var(--gutter);
   text-align: left;
 }
 
 .FixturesList-tableCell:first-child {
   font-size: var(--font-size-h4);
-  padding-bottom: var(--gutter-quarter);
-  padding-top: var(--gutter-half);
+  padding-bottom: var(--gutter-half);
+  padding-top: var(--gutter);
 }
 
 .FixturesList-tableCell:last-child {
-  padding-bottom: var(--gutter-half);
+  padding-bottom: var(--gutter);
 }
 
 @media (--medium) {

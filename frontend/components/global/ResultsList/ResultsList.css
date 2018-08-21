@@ -4,6 +4,11 @@
 
 /* Filters */
 
+.ResultsList-filter {
+  border-bottom: 1px solid var(--colour-grey-light);
+  margin-bottom: var(--gutter-double);
+}
+
 @media (--medium) {
   .ResultsList-filter {
     align-items: center;
@@ -16,6 +21,7 @@
 
 .ResultsList-filterTitle {
   display: inline-block;
+  line-height: var(--line-height-editorial);
 }
 
 .ResultsList-filterList {
@@ -25,6 +31,7 @@
 
 .ResultsList-filterItem {
   display: inline-block;
+  line-height: var(--line-height-editorial);
 }
 
 .ResultsList-filterLink {

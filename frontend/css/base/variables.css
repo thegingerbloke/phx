@@ -47,6 +47,7 @@
   --gutter: var(--font-size-default);
   --gutter-quarter: calc(var(--gutter) / 4);
   --gutter-half: calc(var(--gutter) / 2);
+  --gutter-three-quarters: calc(var(--gutter) * 0.75);
   --gutter-double: calc(var(--gutter) * 2);
   --gutter-quad: calc(var(--gutter) * 4);
 

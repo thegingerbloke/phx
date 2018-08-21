@@ -30,7 +30,7 @@
   margin-right: var(--gutter-half);
   position: relative;
   stroke: none;
-  top: -1px;
+  top: -2px;
   width: 20px;
 }
 
@@ -96,7 +96,7 @@
   color: var(--colour-white);
   display: block;
   font-size: var(--font-size-default);
-  padding: var(--gutter-half) var(--gutter);
+  padding: var(--gutter-three-quarters) var(--gutter);
   text-decoration: none;
 }
 

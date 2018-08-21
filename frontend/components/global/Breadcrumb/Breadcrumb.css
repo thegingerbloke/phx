@@ -10,17 +10,13 @@
 
 .Breadcrumb-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 0 var(--negative-gutter);
+  padding: var(--gutter-half) 0;
 }
 
 .Breadcrumb-item {
   display: inline-block;
   position: relative;
-}
-
-.Breadcrumb-item:first-child {
-  margin-left: var(--negative-gutter);
 }
 
 .Breadcrumb-item:not(:last-child)::after {
@@ -37,7 +33,7 @@
 .Breadcrumb-link {
   color: var(--colour-blue-dark);
   display: block;
-  padding: var(--gutter) var(--gutter);
+  padding: var(--gutter-half) var(--gutter);
 }
 
 .Breadcrumb-link:hover {

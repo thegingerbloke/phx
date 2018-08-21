@@ -3,12 +3,13 @@
  */
 
 .Pagination {
-  margin-bottom: var(--gutter-double);
+  margin-bottom: var(--gutter);
   text-align: center;
 }
 
 .Pagination-item {
   display: inline-block;
+  margin-bottom: var(--gutter);
 }
 
 .Pagination-item--disabled {

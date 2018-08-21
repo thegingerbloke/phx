@@ -128,6 +128,7 @@
 
 .GridBlocks-text {
   color: var(--colour-black);
+  line-height: var(--line-height-default);
   margin-top: var(--gutter);
 }
 
@@ -284,7 +285,7 @@
 .GridBlocks-tableHead {
   display: block;
   font-weight: normal;
-  padding-top: var(--gutter-quarter);
+  padding-top: var(--gutter-three-quarters);
   text-align: left;
 }
 
@@ -300,7 +301,8 @@
 .GridBlocks-tableData {
   display: block;
   font-style: italic;
-  padding-bottom: var(--gutter-quarter);
+  padding-bottom: var(--gutter-three-quarters);
+  padding-top: var(--gutter-quarter);
   text-align: left;
 }
 
