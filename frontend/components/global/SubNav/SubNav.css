@@ -2,6 +2,10 @@
  * @define SubNav; use strict
  */
 
+.SubNav {
+  font-family: var(--font-nav);
+}
+
 .SubNav-list {
   list-style: none;
   margin: 0;

@@ -7,9 +7,9 @@
 
   /* fonts */
 
-  --font-headings: "opensans-regular", sans-serif;
-  --font-headings-bold: "opensans-regular", sans-serif;
-  --font-body: "opensans-regular", sans-serif;
+  --font-headings: "Montserrat", sans-serif;
+  --font-nav: "Montserrat", sans-serif;
+  --font-body: "Roboto", sans-serif;
 
   --font-size-h1: 60px;
   --font-size-h2: 32px;

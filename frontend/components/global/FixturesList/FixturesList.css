@@ -36,6 +36,7 @@
 .FixturesList-filterItem {
   display: inline-block;
   line-height: var(--line-height-editorial);
+  margin-right: 5px;
 }
 
 .FixturesList-filterLink {

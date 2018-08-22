@@ -73,26 +73,26 @@
 }
 
 .Quote-text {
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-h4);
   font-style: italic;
   font-weight: normal;
   line-height: var(--line-height-default);
+  margin-bottom: var(--gutter-half);
 }
 
 @media (--large) {
   .Quote-text {
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-h3);
   }
 }
 
 .Quote-author {
-  font-size: var(--font-size-h3);
-  font-weight: bold;
+  font-size: var(--font-size-default);
   line-height: var(--line-height-default);
 }
 
 @media (--large) {
   .Quote-author {
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-default);
   }
 }

@@ -32,7 +32,6 @@
     border-bottom: 0;
     color: var(--colour-black);
     display: block;
-    font-family: var(--font-headings);
     opacity: 1;
     position: static;
   }

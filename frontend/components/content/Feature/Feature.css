@@ -73,12 +73,13 @@
 }
 
 .Feature-title {
-  font-size: var(--font-size-h2);
+  font-size: var(--font-size-h3);
+  font-weight: normal;
   line-height: var(--line-height-default);
 }
 
 .Feature-subtitle {
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-h4);
   font-weight: normal;
   line-height: var(--line-height-default);
   margin-top: var(--gutter);

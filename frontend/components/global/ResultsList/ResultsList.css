@@ -32,6 +32,7 @@
 .ResultsList-filterItem {
   display: inline-block;
   line-height: var(--line-height-editorial);
+  margin-right: 5px;
 }
 
 .ResultsList-filterLink {
@@ -121,6 +122,7 @@
 
 .ResultsList-title {
   font-size: var(--font-size-h3);
+  font-weight: normal;
   margin-bottom: var(--gutter-quarter);
 }
 

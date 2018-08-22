@@ -39,7 +39,7 @@
   color: var(--colour-white);
   font-size: var(--font-size-h2);
   font-style: italic;
-  left: 0;
+  left: var(--gutter-half);
   margin: 0;
   padding: var(--gutter) 0;
   position: absolute;

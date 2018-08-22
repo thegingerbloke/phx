@@ -4,6 +4,7 @@
 
 .Nav {
   background-color: var(--colour-blue-dark);
+  font-family: var(--font-nav);
   text-transform: uppercase;
 }
 

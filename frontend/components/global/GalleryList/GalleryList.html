@@ -33,8 +33,8 @@
               {% endif %}
             </div>
             <div class="GalleryList-content">
+              <h3 class="GalleryList-title">{{gallery.title|highlight:search|safe}}</h3>
               <p class="GalleryList-text">
-                <span class="GalleryList-subtitle">{{gallery.title|highlight:search|safe}}</span>
                 <em>{{gallery.created_date|date:'D j M Y'}}</em>
               </p>
               <p class="GalleryList-text">

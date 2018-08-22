@@ -31,6 +31,10 @@
   text-align: left;
 }
 
+.Embed-title {
+  font-weight: normal;
+}
+
 /* Embed - links */
 
 .Embed a {

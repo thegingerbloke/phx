@@ -12,6 +12,7 @@
   color: var(--colour-blue-dark);
   font-size: var(--font-size-h2);
   font-style: italic;
+  font-weight: normal;
   padding: var(--gutter) 0;
 }
 

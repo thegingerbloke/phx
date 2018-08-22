@@ -64,7 +64,9 @@
 
 .ListItems-title {
   font-size: var(--font-size-h4);
+  font-weight: normal;
   line-height: var(--line-height-default);
+  margin-bottom: var(--gutter-half);
 }
 
 .ListItems-text {
