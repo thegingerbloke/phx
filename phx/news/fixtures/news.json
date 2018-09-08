@@ -66871,5 +66871,356 @@
             "caption": "",
             "created_date": "2018-08-13T16:19:27.000Z"
         }
+    },
+    {
+        "pk": 618,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-09-06T06:21:54.000Z",
+            "author": 1,
+            "title": "Grand Master... update!",
+            "summary": "The Masters Grand Prix at Lee Valley on Sun 19 Aug saw an attempt at the V50 4x800m world record. Nigel Herron gives us an eye witness account. New picture added!",
+            "created_date": "2018-08-20T16:49:03.000Z",
+            "slug": "grand-master-update"
+        }
+    },
+    {
+        "pk": 2756,
+        "model": "news.component",
+        "fields": {
+            "news": 618,
+            "order": 0
+        }
+    },
+    {
+        "pk": 618,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><strong><span >Grand Master</span></strong></p>\r\n<p>The Masters Grand Prix at Lee Valley on Sun 19 Aug saw an attempt at the V50 4x800m world record. Nigel Herron gives us an eye witness account:</p>\r\n<p><br />&ldquo;The team featured our very own Steve Atkinson.<br />I watched the race unfold from the 200m bend where I was calling out splits.<br />The record was a tough ask (average 2.06/runner) but the V50s were always in the hunt, chasing the V45 squad<br />Steve ran a strong 3rd leg, handing over to Adrian Haines who ran fantastically, chasing down the V45 team</p>\r\n<p>Their time of 8:25.87 is a new British record by 14 seconds but the World record (held by a Swedish squad)was missed by a tantalising 8/100ths of a second.<br />It was quite windy down the home straight but well done to: Gary Burnett (2:05), Dav(2:06), Steve Atkinson (2:08),Adrian Haines (2:06).</p>\r\n<p>Earlier in the meeting Phil Grabsky (20:13.32) &amp; Andrew Haig (21:49.34) ran the 5000m.<br />Nigel Herron ran his usual (?foolish) double:<br />800m in 2:37.0 and 1500m in 5:21.10</p>\r\n<p>Full results should be available presently&rdquo;</p>\r\n<p></p>\r\n<p></p>\r\n<p></p>",
+            "modified_date": "2018-09-06T06:21:54.000Z",
+            "title": "",
+            "component": 2756,
+            "created_date": "2018-08-20T16:49:03.000Z"
+        }
+    },
+    {
+        "pk": 618,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 618,
+            "image": "news/618/thumbnail/2139.jpeg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2757,
+        "model": "news.component",
+        "fields": {
+            "news": 618,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2139,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-06T06:21:54.000Z",
+            "image_alt": "",
+            "image": "news/618/image/2139.jpeg",
+            "component": 2757,
+            "caption": "",
+            "created_date": "2018-08-20T16:49:03.000Z"
+        }
+    },
+    {
+        "pk": 2758,
+        "model": "news.component",
+        "fields": {
+            "news": 618,
+            "order": 2
+        }
+    },
+    {
+        "pk": 2140,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-06T06:21:54.000Z",
+            "image_alt": "",
+            "image": "news/618/image/2140.jpeg",
+            "component": 2758,
+            "caption": "",
+            "created_date": "2018-08-20T16:49:03.000Z"
+        }
+    },
+    {
+        "pk": 2759,
+        "model": "news.component",
+        "fields": {
+            "news": 618,
+            "order": 3
+        }
+    },
+    {
+        "pk": 2141,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-06T06:21:54.000Z",
+            "image_alt": "",
+            "image": "news/618/image/2141.jpeg",
+            "component": 2759,
+            "caption": "",
+            "created_date": "2018-08-20T16:49:03.000Z"
+        }
+    },
+    {
+        "pk": 2760,
+        "model": "news.component",
+        "fields": {
+            "news": 618,
+            "order": 4
+        }
+    },
+    {
+        "pk": 2142,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-06T06:21:54.000Z",
+            "image_alt": "",
+            "image": "news/618/image/2142.jpeg",
+            "component": 2760,
+            "caption": "",
+            "created_date": "2018-08-20T16:49:03.000Z"
+        }
+    },
+    {
+        "pk": 2761,
+        "model": "news.component",
+        "fields": {
+            "news": 618,
+            "order": 5
+        }
+    },
+    {
+        "pk": 2143,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-06T06:21:54.000Z",
+            "image_alt": "",
+            "image": "news/618/image/2143.jpeg",
+            "component": 2761,
+            "caption": "",
+            "created_date": "2018-08-20T16:49:03.000Z"
+        }
+    },
+    {
+        "pk": 2762,
+        "model": "news.component",
+        "fields": {
+            "news": 618,
+            "order": 6
+        }
+    },
+    {
+        "pk": 2144,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-06T06:21:54.000Z",
+            "image_alt": "",
+            "image": "news/618/image/2144.png",
+            "component": 2762,
+            "caption": "",
+            "created_date": "2018-08-20T16:49:03.000Z"
+        }
+    },
+    {
+        "pk": 619,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-08-31T06:20:57.000Z",
+            "author": 1,
+            "title": "Sharkbait in the Channel ",
+            "summary": "Hot off the press.... Hildi Mitchell gives her report on swimming the Channel with team Sharkbait!",
+            "created_date": "2018-08-31T06:15:39.000Z",
+            "slug": "sharkbait-in-the-channel"
+        }
+    },
+    {
+        "pk": 2763,
+        "model": "news.component",
+        "fields": {
+            "news": 619,
+            "order": 0
+        }
+    },
+    {
+        "pk": 619,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><strong><span >Sharkbait in the Channel</span></strong></p>\r\n<p>28 August 2018<br />4 person relay team: Team Sharkbait<br />1 way crossing England to France<br />Pilot Simon Ellis on Seafarer 2</p>\r\n<p>&ldquo;When I was a little girl I had a secret dream to swim the channel. Of course, I had no . As I got older and found out more the dream became more and more of a pipe dream: too difficult, too complicated, too hard. I put the dream away.</p>\r\n<p>Then I discovered triathlon. I realised that you can achieve incredible things and there are people out there who will help you. I retired from triathlon to concentrate on my job and my k, but the seed of adventure had been planted. My open water swimming adventures, which were supposed to be &lsquo;less' (in time, energy and money) than triathlon, became more important to me than ever as my life but more stressful. Little challenges like swimming every month through the year without a wetsuit became more important. The growth of social media and the people I met and stayed in touch with from swim events like 2swim4life (&lsquo;swim an hour on the hour every hour for 24 hours') helped me learn more about the sport. Just like in triathlon when the question starts to be, &lsquo;can I do an Ironman?', in open water swimming the question starts to ask itself, &lsquo;can I swim the channel?'.</p>\r\n<p>I dec/2021. We started finding out about it but we weren't quite sure. Meanwhile I saw a post from someone asking for a reserve for a relay team this year. I had just returned to swimming after a bit of a break and it seemed right. When we met up we realised we were all local, had mutual friends, and it seemed meant to be.</p>\r\n<p>The training started in earnest straight away as I only had 4 months to prepare. I was already fairly acclimatised to the temperatures but was not spending long enough in the water. It was tough to get in and stay in! We had done interesting swims including one where we got lost in the fog in May. I bought a whistle for my tow float after that.</p>\r\n<p>We had to do a two hour qualifying swim. In the end this had to be brought forward as we watched the sea temperature climb in the heatwave. We ended up doing it after work which wasn't , but i had already done it a couple of times in training and it was a conf.</p>\r\n<p>I returned from a 3 week hol(much swearing and cursing in the direction of the coach!) and then had a taper where I just d. I came back into Autumn weather!!!! I spent my first day home getting in the sea to get re acquainted with the temperature. Luckily the sea still felt warm and it was better in than out!</p>\r\n<p>Our window for the swim opened on Sunday 26. The weather was predicted to be stormy and windy. It was a waiting game. The pilot sa. On the plus we would be landing in the daylight. This was not to be. With such uncertainty we booked a hotel in Dover and headed off. Another change - the swim was confirmed for Tuesday morning!</p>\r\n<p>The morning of the swim we went for breakfast next to the marina and then slightly hysterically went to meet the pilot and observer. We had packed a car load of stuff - large bags each of warm clothes, towels, blankets and sleeping bags, as well as 4 bags of food. In the final week the pilot had asked how many supporters we had coming and we had realised that maybe this meant a supporter who wasn't swimming might be a good . Luckily my other half jon knows a bit about both sailing and endurance sports and was willing and able to come along.</p>\r\n<p>We were briefed and then set off the short boat journey to Shakespeare beach where Sarah, our #1 swimmer and the fastest in the team jumped in and swam to shore to start the swim on the claxton. It was exciting and scary all at the same time but we were ready to get going. The first changeover was negotiated: next swimmer jumping in the water on 5 second countdown, the current swimmer quickly to the steps to get into the boat, and once they are clear of the water, the new swimmer starts swimming.</p>\r\n<p>The first leg for all of us was weird getting used to swimming next to the boat, getting used to the level of visibility and trying to establish a good pace which we could keep going. We swam 1 hour each on rotation and expected to swim at least 4 times but were prepared it might be 5. The distance is 21 miles at the shortest point but the t. On a spring t(a big t) the t.</p>\r\n<p>The second swims started to get interesting. I'd seen a few jelly fish in leg 1 but on leg two I got stung. I d't even see it, just had a sudden burning on my shoulder, armpit and around my ear. It took everything to just keep swimming. The team on the boat hadn't even seen. I'd had a great rhythm going until then and that put me off so I was disappointed with the last half of that swim, but when Sarah got in she ended up in a swarm of jellies and was getting stung again and again. We were all (team, jon, observer, pilot) on the back of the boat encouraging her - she amazingly stayed in and kept swimming but her speed had really dropped.</p>\r\n<p>Team captain rob was next in. In my head I was wondering if I could make myself jump back in and swim with the jelly fish. My shoulder was still reminding me what might be in store. I would be after rob. He showed his team captain strength and just jumped in and swam for his life. The pilot had told the two of us that we really needed to push the pace so we could hit the t. After Sarah had been slowed by the jelly fish it was even more important. Rob was a machine!! &lsquo;Just do the same' I was told by the pilot! I jumped in and pushed and pushed. Jon was offering us drinks and feeds at the half hour point but I'd told him I just wanted to swim without a break. At half an hour I was given a shout and I pressed on with my swim. I was kicking and trying to keep my cadence up like I was doing a 400 sprint tri. I had no . After a while I shouted up, &lsquo;how much longer!' And they told me 15 minutes. I kicked on and pushed on. When I finally clambered up the boat I had nothing left, and had generated so much heat that I was warm from head to feet.</p>\r\n<p>The cold was always a worry. Despite the water being a balmy 18/19 it could still be a challenge to be properly warm, preventing injury and keeping able to eat and drink. Si was finding the cold the worst as his more athletic build meant he felt the cold. Jon was invaluable in helping him warm up and feed. He was busy making hot drinks, having dry clothes ready as well as constantly making sure someone was on the back cheering on the swimmer.</p>\r\n<p>The next few hours were a blur. Broken up into hours and then into half hours or twenty minutes as people wanted hot drinks during their swims as night fell. I d't take any drinks preferring to swim hard to keep warm as I d't want to lose any time which might lead to a missed t. The pilot kept his counsel and wasn't prepared to commit to when and where we would land. We looked like we would miss the cap Gris Nez and make the beach north at Wissant, but nothing is certain in Channel swimming. As I prepared for my 4th swim the pilot sa. I wasn't really sure what that meant! Si was tired and cold and I d't want him to swim again if he d't need to, plus the ! Just before I went in we heard that another boat, the Sea Satin, had just completed their crossing and they came up to us as they started their return. We offered our congratulations and they cheered as I entered the water in front of both boats (I later found out they were a 6 person Dutch team). It took a while to find my rhythm on this swim and I felt I was swimming off the front of the boat too much so I kept pulling back. Suddenly the boat stopped!!! Everyone yelled at me to keep swimming but I couldn't understand where I was supposed to swim to. They were telling to to swim towards some lights but I couldn't work out which ones. Eventually Jon told me to swim towards a vertical line which he sa. I had been expecting a beach but the t. Get on with it, they all shouted, or the pilot says we will have to do another changeover - which by this point would have been complicated. I swam on in the darkness towards the line somehow able to not feel scared but just feel the urgency of completing the swim and someone shone a light on the steps. I realised then I was only about 100 metres from shore! As I got closer the steps got clearer and I saw people on top cheering. I heard the rest of the team swimming behind me. I climbed up the steps out of the water and shouted and then wondered if that was enough so climbed to the top where a half dozen French youths high fived and took selfies with me! The rest of the team climbed up the steps and there were hugs and cheers. Then, after my shortest ever trip to France, we were down the steps and swimming back to the boat.</p>\r\n<p>Back on the boat it was a blur. Jon got the champagne glasses out but the next thing I knew were were all asleep. It was 3.30 in the morning. We dozed in various positions the two hour journey back to Dover. We had the champagne in the car park, and our adventure was over - for now! I will be back for more now I know what is possible!&rdquo;</p>\r\n<p>thank you Hildi.... amazing report!</p>\r\n<p></p>\r\n<p></p>\r\n<p></p>",
+            "modified_date": "2018-08-31T06:20:57.000Z",
+            "title": "",
+            "component": 2763,
+            "created_date": "2018-08-31T06:15:39.000Z"
+        }
+    },
+    {
+        "pk": 619,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 619,
+            "image": "news/619/thumbnail/2145.jpeg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2764,
+        "model": "news.component",
+        "fields": {
+            "news": 619,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2145,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-08-31T06:20:57.000Z",
+            "image_alt": "",
+            "image": "news/619/image/2145.jpeg",
+            "component": 2764,
+            "caption": "",
+            "created_date": "2018-08-31T06:15:39.000Z"
+        }
+    },
+    {
+        "pk": 2765,
+        "model": "news.component",
+        "fields": {
+            "news": 619,
+            "order": 2
+        }
+    },
+    {
+        "pk": 2146,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-08-31T06:20:57.000Z",
+            "image_alt": "",
+            "image": "news/619/image/2146.jpeg",
+            "component": 2765,
+            "caption": "",
+            "created_date": "2018-08-31T06:15:39.000Z"
+        }
+    },
+    {
+        "pk": 2766,
+        "model": "news.component",
+        "fields": {
+            "news": 619,
+            "order": 3
+        }
+    },
+    {
+        "pk": 2147,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-08-31T06:20:57.000Z",
+            "image_alt": "",
+            "image": "news/619/image/2147.jpeg",
+            "component": 2766,
+            "caption": "",
+            "created_date": "2018-08-31T06:15:39.000Z"
+        }
+    },
+    {
+        "pk": 620,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-09-04T16:02:43.000Z",
+            "author": 1,
+            "title": "Atkinson & on!",
+            "summary": "Steve Atkinson won silver in the 800m and bronze in the 1500m M50 races at the British Masters Track and Field Championships at Alexander Stadium last week.",
+            "created_date": "2018-09-04T06:07:14.000Z",
+            "slug": "atkinson-on"
+        }
+    },
+    {
+        "pk": 2767,
+        "model": "news.component",
+        "fields": {
+            "news": 620,
+            "order": 0
+        }
+    },
+    {
+        "pk": 620,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><strong><span >Atkinson &amp; on!</span></strong></p>\r\n<p>Steve Atkinson won silver in the 800m and bronze in the 1500m M50 races at the British Masters Track and Field Championships at Alexander Stadium last week. Despite Saturday's windy conditions for the 1500m, he managed a pb of 4:31:99. The next day, rain added to the wind to make for even more challenging conditions for the 800m in which Steve was pleased to finish just a second behind the European silver medalist.</p>\r\n<p><a href=\"https://www.thepowerof10.info/athletes/profile.aspx?athlete\">https://www.thepowerof10.info/athletes/profile.aspx?athlete</a></p>\r\n<p><em>Thanks Andrew H for this report.</em></p>\r\n<p><em><br /></em></p>\r\n<p></p>",
+            "modified_date": "2018-09-04T16:02:43.000Z",
+            "title": "",
+            "component": 2767,
+            "created_date": "2018-09-04T06:07:14.000Z"
+        }
+    },
+    {
+        "pk": 620,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 620,
+            "image": "news/620/thumbnail/2148.jpeg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2768,
+        "model": "news.component",
+        "fields": {
+            "news": 620,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2148,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-04T16:02:43.000Z",
+            "image_alt": "",
+            "image": "news/620/image/2148.jpeg",
+            "component": 2768,
+            "caption": "",
+            "created_date": "2018-09-04T06:07:14.000Z"
+        }
+    },
+    {
+        "pk": 621,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-09-04T06:26:23.000Z",
+            "author": 1,
+            "title": "Team effort at K2",
+            "summary": "Our younger athletes supported Phoenix at the Sussex League championships on Sunday at the K2 in Crawley",
+            "created_date": "2018-09-04T06:23:49.000Z",
+            "slug": "team-effort-at-k2"
+        }
+    },
+    {
+        "pk": 2769,
+        "model": "news.component",
+        "fields": {
+            "news": 621,
+            "order": 0
+        }
+    },
+    {
+        "pk": 621,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><strong><span >Team effort at K2</span></strong></p>\r\n<p>Our younger athletes supported Phoenix at the Sussex League championships on Sunday at the K2 in Crawley.<br />Coach Nicola gives this report:<br />\"we had a severely depleted team on Sunday mainly due to the hol. As a result there were quite a few empty spaces in the team sheet. All the athletes were asked at the last minute to change their event to optimise the number of points we gained. Despite this we d(we were 5th prior to the event). There is therefore no outstanding athlete as they all were! \"</p>\r\n<p>The athletes were:<br />U13 Girls<br />Ruby Challis<br />Imogen Read<br />Mekdes Berry<br />Annalise Brown<br />Rosa Howie<br />Yuuna Barra</p>\r\n<p>U13 Boys<br />Jaymes Fonteyn<br />Woody Rickwood<br />Reuben Whitfield<br />Matthew Noakes<br />Raphael Reed<br />Ravi Clark</p>\r\n<p>U11 Boys<br />Harrison Poole<br />Raffaele Barra</p>\r\n<p>https://www.thepowerof10.info/results/results.aspx?meeting&amp;pagenum=1#1500</p>\r\n<p></p>\r\n<p></p>\r\n<p></p>\r\n<p></p>",
+            "modified_date": "2018-09-04T06:26:23.000Z",
+            "title": "",
+            "component": 2769,
+            "created_date": "2018-09-04T06:23:49.000Z"
+        }
     }
 ]

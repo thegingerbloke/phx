@@ -17266,5 +17266,137 @@
             "summary": "<p>&nbsp;</p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td><br />SYDNEY WOODERSON MEMORIAL 800m</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td><br /></td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr>\r\n<td>1</td>\r\n<td>1:49.04</td>\r\n<td>Spencer Thomas</td>\r\n<td>U23 M</td>\r\n<td>Brighton Phoenix</td>\r\n</tr>\r\n<tr>\r\n<td>2</td>\r\n<td>1:49.05</td>\r\n<td>Charles Da'Vall Grice</td>\r\n<td>SEN M</td>\r\n<td>Brighton Phoenix</td>\r\n</tr>\r\n<tr>\r\n<td>3</td>\r\n<td>1:49.78</td>\r\n<td>Archie Davis</td>\r\n<td>U23 M</td>\r\n<td>Brighton Phoenix</td>\r\n</tr>\r\n<tr>\r\n<td><br /></td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr>\r\n<td>6</td>\r\n<td>1:50.31</td>\r\n<td>Finley Bigg</td>\r\n<td>U23 M</td>\r\n<td>Brighton Phoenix</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><span><br />BMC 800m Race I</span></p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>6</td>\r\n<td>2:08.02</td>\r\n<td>Steve Atkinson</td>\r\n<td>V50 M</td>\r\n<td>Brighton Phoenix</td>\r\n</tr>\r\n<tr>\r\n<td>7</td>\r\n<td>2:09.44</td>\r\n<td>Tom Mackman</td>\r\n<td>U23 M</td>\r\n<td>Brighton Phoenix</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>BMC 800M Race M</p>\r\n<p>&nbsp;</p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>1</td>\r\n<td>2:22.64</td>\r\n<td>Maia Hardman</td>\r\n<td>U17 W</td>\r\n<td>Brighton Phoenix</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>8</td>\r\n<td>2:37.32</td>\r\n<td>Flora Davis</td>\r\n<td>U15 W</td>\r\n<td>Brighton Phoenix</td>\r\n</tr>\r\n</tbody>\r\n</table>",
             "created_date": "2018-08-16T20:48:34.000Z"
         }
+    },
+    {
+        "pk": 1440,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-08-20T19:02:06.000Z",
+            "author": 1,
+            "fixture": 1440,
+            "results": " ",
+            "summary": "<p>Great running from all our Masters . Special well done to Phil on his first ever track event and to Steve on his new British record&nbsp;</p>\r\n<p><span>V50 4x800m New British Record by 14 seconds. T</span>he World record (held by a Swedish squad)&nbsp;was missed by a tantalising 8/100ths of a second.</p>\r\n<p><span>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Gary Burnett</td>\r\n<td>2.05</td>\r\n</tr>\r\n<tr>\r\n<td>Dav</td>\r\n<td>2.06</td>\r\n</tr>\r\n<tr>\r\n<td>Steve Atkinson</td>\r\n<td>2.08</td>\r\n</tr>\r\n<tr>\r\n<td>Adrian Haines</td>\r\n<td>2.06</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr>\r\n<td>Full Time</td>\r\n<td>8.25</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</span></p>\r\n<p>Other Races</p>\r\n<p>1500m Heat 1</p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Rank</td>\r\n<td>Name&nbsp;</td>\r\n<td>Cat</td>\r\n<td>Result</td>\r\n</tr>\r\n<tr>\r\n<td>3</td>\r\n<td>Nigel Herron</td>\r\n<td>M53</td>\r\n<td>5.21.10</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>5000m Heat 1</p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Rank</td>\r\n<td>Name&nbsp;</td>\r\n<td>Cat</td>\r\n<td>Result</td>\r\n</tr>\r\n<tr>\r\n<td>7</td>\r\n<td>Phil Grabsky</td>\r\n<td>M55</td>\r\n<td>20.13.32</td>\r\n</tr>\r\n<tr>\r\n<td>9</td>\r\n<td>Andrew Haig</td>\r\n<td>M73</td>\r\n<td>21.49.34</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p>800m Heat 1</p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Rank</td>\r\n<td>Name&nbsp;</td>\r\n<td>Cat</td>\r\n<td>Result</td>\r\n</tr>\r\n<tr>\r\n<td>5</td>\r\n<td>Nigel Herron</td>\r\n<td>M53</td>\r\n<td>2.37.0</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+            "created_date": "2018-08-20T18:41:19.000Z"
+        }
+    },
+    {
+        "pk": 1441,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-08-20T18:56:28.000Z",
+            "author": 1,
+            "fixture": 1441,
+            "results": " ",
+            "summary": "<p>&nbsp;</p>\r\n<table >\r\n<!--StartFragment--> <colgroup><col w></col> <col w></col> <col w></col> <col span=\"4\" w></col> </colgroup> \r\n<tbody>\r\n<tr height=\"21\">\r\n<td colspan=\"4\" w>Ringmer Tri/Dua - Sprint Triathlon</td>\r\n<td w>&nbsp;</td>\r\n<td w>&nbsp;</td>\r\n<td w>&nbsp;</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td height=\"21\">Rank</td>\r\n<td>Name</td>\r\n<td>AgeGrp</td>\r\n<td>Swim</td>\r\n<td>Bike</td>\r\n<td>Run</td>\r\n<td>FINISH</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td height=\"21\" >14</td>\r\n<td>Mark Cossey (m)</td>\r\n<td>H</td>\r\n<td >00:10:44</td>\r\n<td >00:44:33</td>\r\n<td >00:24:38</td>\r\n<td >01:19:55</td>\r\n</tr>\r\n<!--EndFragment-->\r\n</tbody>\r\n</table>",
+            "created_date": "2018-08-20T18:56:15.000Z"
+        }
+    },
+    {
+        "pk": 1442,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-08-27T08:34:51.000Z",
+            "author": 1,
+            "fixture": 1442,
+            "results": " ",
+            "summary": "<p><em>Race 1</em></p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>2</td>\r\n<td>17:22.3</td>\r\n<td>Paul Weir</td>\r\n</tr>\r\n<tr>\r\n<td>26</td>\r\n<td>19:09.6</td>\r\n<td>Phil Hampshire</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><em>Race 2</em></p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>6</td>\r\n<td>15:55.6</td>\r\n<td>Reuben Hoyte</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;<em>Race 3</em></p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>14</td>\r\n<td>19:52.5</td>\r\n<td>Geoff Pike</td>\r\n</tr>\r\n<tr>\r\n<td>16</td>\r\n<td>19:57.9</td>\r\n<td>Phil Grabsky</td>\r\n</tr>\r\n<tr>\r\n<td>27</td>\r\n<td>21:45.9</td>\r\n<td>Joe Appleton</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><em>Race 4</em></p>\r\n<div>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>9</td>\r\n<td>21:18.1</td>\r\n<td>Andrew Haig</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n<div>&nbsp;</div>\r\n<div><em><a href=\"https://www.thepowerof10.info/results/results.aspx?meeting\">Full results</a></em></div>",
+            "created_date": "2018-08-27T08:34:51.000Z"
+        }
+    },
+    {
+        "pk": 1443,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-08-29T08:29:47.000Z",
+            "author": 1,
+            "fixture": 1443,
+            "results": " ",
+            "summary": "<p><em><em>800m M50</em></em></p>\r\n<table >\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>2</td>\r\n<td>2:11.90&nbsp;</td>\r\n<td>Steve Atkinson</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><em>1500m M50</em></p>\r\n<p>\r\n<table >\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>3</td>\r\n<td>4:31.99 (PB)</td>\r\n<td>Steve Atkinson</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><a href=\"https://www.thepowerof10.info/athletes/profile.aspx?athlete\">Full results</a></p>",
+            "created_date": "2018-08-27T08:38:39.000Z"
+        }
+    },
+    {
+        "pk": 1444,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-08-27T08:42:28.000Z",
+            "author": 1,
+            "fixture": 1444,
+            "results": " ",
+            "summary": "<p><em>Sprint distance</em></p>\r\n<p><em>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Cat Pos</td>\r\n<td>Name</td>\r\n<td>Swim</td>\r\n<td>T1</td>\r\n<td>Bike</td>\r\n<td>T2</td>\r\n<td>Run</td>\r\n<td>Total</td>\r\n</tr>\r\n<tr>\r\n<td>103</td>\r\n<td>3 (f35)</td>\r\n<td>Isabel Anderson</td>\r\n<td>19:03.85</td>\r\n<td>2:39.70</td>\r\n<td>45:17.85</td>\r\n<td>00:36.35</td>\r\n<td>24:48.95</td>\r\n<td>1:32:26.70</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</em></p>\r\n<p><a href=\"http://www.uksportstiming.co.uk/Results/bewl2018_results/sprint_results.pdf\">Full results</a></p>",
+            "created_date": "2018-08-27T08:42:28.000Z"
+        }
+    },
+    {
+        "pk": 1445,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-08-28T11:14:22.000Z",
+            "author": 1,
+            "fixture": 1445,
+            "results": " ",
+            "summary": "<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>33</td>\r\n<td>18:57</td>\r\n<td>Tom Sanderson</td>\r\n</tr>\r\n<tr>\r\n<td>51</td>\r\n<td>20:20</td>\r\n<td>Cassius Hebden</td>\r\n</tr>\r\n<tr>\r\n<td>130</td>\r\n<td>26:39</td>\r\n<td>Terry Avey</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p>\r\n<p ><em><a href=\"http://www.kingsheadcanter5k.org.uk/Kings%20Head%20Canter%202018%20Results%20FNAL%20PDF.pdf\">Full results</a></em></p>\r\n</p>",
+            "created_date": "2018-08-28T11:14:22.000Z"
+        }
+    },
+    {
+        "pk": 1446,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-08-28T11:17:43.000Z",
+            "author": 1,
+            "fixture": 1446,
+            "results": " ",
+            "summary": "<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>1</td>\r\n<td>32:10</td>\r\n<td>Ross Skelton</td>\r\n</tr>\r\n<tr>\r\n<td>54</td>\r\n<td>43:54</td>\r\n<td>Barry Blackwell</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<em><a href=\"http://www.chiptimingresults.co.uk/Results.aspx?CId=61&amp;RId=318\">Full results</a></em></p>",
+            "created_date": "2018-08-28T11:17:43.000Z"
+        }
+    },
+    {
+        "pk": 1447,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-08-28T11:20:05.000Z",
+            "author": 1,
+            "fixture": 1447,
+            "results": " ",
+            "summary": "<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>4</td>\r\n<td>39:30</td>\r\n<td>Paul Whelpton</td>\r\n</tr>\r\n<tr>\r\n<td>26</td>\r\n<td>46:07</td>\r\n<td>Andrew Haig</td>\r\n</tr>\r\n<tr>\r\n<td>86</td>\r\n<td>58:20</td>\r\n<td>Rik Taub</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><em><a href=\"https://www.nice-work.org.uk/races/the-newick-will-page-10k/2018\">Full results</a></em></p>",
+            "created_date": "2018-08-28T11:20:05.000Z"
+        }
+    },
+    {
+        "pk": 1448,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-08-29T08:28:48.000Z",
+            "author": 1,
+            "fixture": 1448,
+            "results": " ",
+            "summary": "<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>4</td>\r\n<td>1:18:30</td>\r\n<td>Milan Watson</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><em><a href=\"http://www.multisport-management.co.uk/2018/Results/documents/MSM_FristonForestTrailRuns_20180812_v0.pdf\">Full results</a></em></p>",
+            "created_date": "2018-08-29T08:28:48.000Z"
+        }
+    },
+    {
+        "pk": 1449,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-08-29T08:37:05.000Z",
+            "author": 1,
+            "fixture": 1449,
+            "results": " ",
+            "summary": "<p><em>100m U15 women (race 1)</em></p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>4</td>\r\n<td>14.42</td>\r\n<td>Jess Powell</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><em>200m Senior men</em></p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>4</td>\r\n<td>26.51</td>\r\n<td>Max Andrews</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><em>200m U15 women</em></p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>7</td>\r\n<td>30.60</td>\r\n<td>Jess Powell</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><em>400m Senior men</em></p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>4</td>\r\n<td>58.21</td>\r\n<td>Max Andrews<br /></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><em>800m Senior&nbsp;</em></p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>4</td>\r\n<td>2:15.22</td>\r\n<td>Tom Mackman<br /></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><em>800m U15 men</em></p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>4</td>\r\n<td>2:15.84</td>\r\n<td>Cassius Hebden<br /></td>\r\n</tr>\r\n<tr>\r\n<td>6</td>\r\n<td>2:24.88</td>\r\n<td>Ben Connolly</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><em>800m U15 women</em></p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>4</td>\r\n<td>2:39.45</td>\r\n<td>Flora Davis<br /></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><em>1500m race 1</em></p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>3</td>\r\n<td>5:49.92</td>\r\n<td>Madeleine Parmar</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><em>1500m race 2</em></p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>12</td>\r\n<td>5:19.49 (PB)</td>\r\n<td>Phil Grabsky</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><em><a href=\"https://www.thepowerof10.info/results/results.aspx?meeting&amp;pagenum=1#1500\">Full results</a></em></p>",
+            "created_date": "2018-08-29T08:37:05.000Z"
+        }
+    },
+    {
+        "pk": 1450,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-09-05T17:02:19.000Z",
+            "author": 1,
+            "fixture": 1450,
+            "results": " ",
+            "summary": "<p>Well done to the old hands and the duathlon newbies - great results!</p>\r\n<p>Women's duathlon</p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Run</td>\r\n<td>Bike</td>\r\n<td>Run</td>\r\n<td>Total</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>1</td>\r\n<td>14:24</td>\r\n<td>35:14</td>\r\n<td>7:24</td>\r\n<td>57:02</td>\r\n<td>Erica Martin</td>\r\n</tr>\r\n<tr>\r\n<td>4</td>\r\n<td>19:15</td>\r\n<td>43:55</td>\r\n<td>9:54</td>\r\n<td>1:13:04</td>\r\n<td>Hannah Felton</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p>Men's duathlon</p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Run</td>\r\n<td>Bike</td>\r\n<td>Run</td>\r\n<td>Total</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>1</td>\r\n<td>13:59</td>\r\n<td>31:16</td>\r\n<td>7:23</td>\r\n<td>52:38</td>\r\n<td>Mark Cossey</td>\r\n</tr>\r\n<tr>\r\n<td>3</td>\r\n<td>14:57</td>\r\n<td>35:10</td>\r\n<td>7:29</td>\r\n<td>57:36</td>\r\n<td>Andrew Brooks</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;<em><a href=\"http://www.hedgehogtri.co.uk/AH_RESULTS/2018/20180902_Uckfield_Autumn/HHT_UckfieldAutumnTriathlons_20180902_v0b.pdf\">Full results</a></em></p>",
+            "created_date": "2018-09-05T17:02:19.000Z"
+        }
     }
 ]

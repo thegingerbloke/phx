@@ -23075,20 +23075,180 @@
         "pk": 1440,
         "model": "fixtures.fixture",
         "fields": {
-            "modified_date": "2018-01-15T13:29:14.000Z",
-            "location": "Multisport Champs event",
-            "title": "Uckfield Autumn Tri/Duathlon",
+            "modified_date": "2018-08-20T19:02:06.000Z",
+            "location": "",
+            "title": "Masters Grand Prix",
             "author": 1,
-            "event_date": "2018-09-03",
-            "link_url": "http://www.hedgehogtri.co.uk/",
-            "created_date": "2017-11-09T12:18:51.000Z",
+            "event_date": "2018-08-19",
+            "link_url": "",
+            "created_date": "2018-08-20T18:41:19.000Z",
+            "categories": [
+                5
+            ]
+        }
+    },
+    {
+        "pk": 1441,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-20T18:56:28.000Z",
+            "location": "",
+            "title": "Ringer Tri/Duathalon",
+            "author": 1,
+            "event_date": "2018-08-19",
+            "link_url": "",
+            "created_date": "2018-08-20T18:56:15.000Z",
             "categories": [
                 3
             ]
         }
     },
     {
-        "pk": 1441,
+        "pk": 1442,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-27T08:34:51.000Z",
+            "location": "",
+            "title": "Brighton Birthday Boys 5000m",
+            "author": 1,
+            "event_date": "2018-08-23",
+            "link_url": "",
+            "created_date": "2018-08-27T08:34:51.000Z",
+            "categories": [
+                5
+            ]
+        }
+    },
+    {
+        "pk": 1443,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-29T08:29:47.000Z",
+            "location": "",
+            "title": "British Master's Championships",
+            "author": 1,
+            "event_date": "2018-08-25",
+            "link_url": "",
+            "created_date": "2018-08-27T08:38:39.000Z",
+            "categories": [
+                5
+            ]
+        }
+    },
+    {
+        "pk": 1444,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-27T08:42:28.000Z",
+            "location": "",
+            "title": "Bewl Triathlon",
+            "author": 1,
+            "event_date": "2018-08-05",
+            "link_url": "",
+            "created_date": "2018-08-27T08:42:28.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1445,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-28T11:14:22.000Z",
+            "location": "",
+            "title": "King's Head Canter",
+            "author": 1,
+            "event_date": "2018-08-27",
+            "link_url": "",
+            "created_date": "2018-08-28T11:14:22.000Z",
+            "categories": [
+                1
+            ]
+        }
+    },
+    {
+        "pk": 1446,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-28T11:17:43.000Z",
+            "location": "",
+            "title": "Arundel 10k",
+            "author": 1,
+            "event_date": "2018-08-26",
+            "link_url": "",
+            "created_date": "2018-08-28T11:17:43.000Z",
+            "categories": [
+                1
+            ]
+        }
+    },
+    {
+        "pk": 1447,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-28T11:20:05.000Z",
+            "location": "",
+            "title": "Newick Will Page 10k",
+            "author": 1,
+            "event_date": "2018-08-26",
+            "link_url": "",
+            "created_date": "2018-08-28T11:20:05.000Z",
+            "categories": [
+                1
+            ]
+        }
+    },
+    {
+        "pk": 1448,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-29T08:28:48.000Z",
+            "location": "",
+            "title": "Friston Forest Trail 10 mile",
+            "author": 1,
+            "event_date": "2018-08-12",
+            "link_url": "",
+            "created_date": "2018-08-29T08:28:48.000Z",
+            "categories": [
+                2
+            ]
+        }
+    },
+    {
+        "pk": 1449,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-29T08:37:05.000Z",
+            "location": "",
+            "title": "Crawley Open",
+            "author": 1,
+            "event_date": "2018-08-26",
+            "link_url": "",
+            "created_date": "2018-08-29T08:37:05.000Z",
+            "categories": [
+                5
+            ]
+        }
+    },
+    {
+        "pk": 1450,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-09-05T17:02:19.000Z",
+            "location": "",
+            "title": "Uckfield Duathlon",
+            "author": 1,
+            "event_date": "2018-09-02",
+            "link_url": "",
+            "created_date": "2018-09-05T17:02:19.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1451,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2017-11-09T12:19:53.000Z",
@@ -23104,7 +23264,7 @@
         }
     },
     {
-        "pk": 1442,
+        "pk": 1452,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2017-11-10T12:44:13.000Z",
@@ -23120,7 +23280,7 @@
         }
     },
     {
-        "pk": 1443,
+        "pk": 1453,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2017-11-10T12:43:57.000Z",
@@ -23136,7 +23296,7 @@
         }
     },
     {
-        "pk": 1444,
+        "pk": 1454,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2017-11-10T12:43:44.000Z",
@@ -23152,7 +23312,7 @@
         }
     },
     {
-        "pk": 1445,
+        "pk": 1455,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-07-02T16:30:01.000Z",
@@ -23168,7 +23328,7 @@
         }
     },
     {
-        "pk": 1446,
+        "pk": 1456,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2017-11-27T10:39:57.000Z",
@@ -23184,7 +23344,7 @@
         }
     },
     {
-        "pk": 1447,
+        "pk": 1457,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2017-11-27T10:40:19.000Z",
@@ -23200,87 +23360,7 @@
         }
     },
     {
-        "pk": 1448,
-        "model": "fixtures.fixture",
-        "fields": {
-            "modified_date": "2018-05-31T09:31:16.000Z",
-            "location": "K2",
-            "title": "Crawley Open",
-            "author": 1,
-            "event_date": "2018-08-26",
-            "link_url": "http://crawleyac.net/index.php/news/crawley-ac-open-meetings-2018",
-            "created_date": "2018-03-19T11:04:10.000Z",
-            "categories": [
-                5
-            ]
-        }
-    },
-    {
-        "pk": 1449,
-        "model": "fixtures.fixture",
-        "fields": {
-            "modified_date": "2018-04-11T10:30:32.000Z",
-            "location": "Venue TBC",
-            "title": "Sussex U15 League Final",
-            "author": 1,
-            "event_date": "2018-08-31",
-            "link_url": "http://www.sussexathletics.net/Fixtures",
-            "created_date": "2018-04-11T10:30:32.000Z",
-            "categories": [
-                5
-            ]
-        }
-    },
-    {
-        "pk": 1450,
-        "model": "fixtures.fixture",
-        "fields": {
-            "modified_date": "2018-04-11T10:31:30.000Z",
-            "location": "K2 Crawley",
-            "title": "Sussex U13 League Final",
-            "author": 1,
-            "event_date": "2018-09-02",
-            "link_url": "http://www.sussexathletics.net/Fixtures",
-            "created_date": "2018-04-11T10:31:30.000Z",
-            "categories": [
-                5
-            ]
-        }
-    },
-    {
-        "pk": 1451,
-        "model": "fixtures.fixture",
-        "fields": {
-            "modified_date": "2018-08-20T14:41:37.000Z",
-            "location": "",
-            "title": "Will Page Newick 10K",
-            "author": 1,
-            "event_date": "2018-08-26",
-            "link_url": "http://www.sussexraces.co.uk/sussexraceseventplanner.html",
-            "created_date": "2018-07-28T17:52:43.000Z",
-            "categories": [
-                1
-            ]
-        }
-    },
-    {
-        "pk": 1452,
-        "model": "fixtures.fixture",
-        "fields": {
-            "modified_date": "2018-07-28T17:55:24.000Z",
-            "location": "Chiddingly",
-            "title": "King's Head Canter",
-            "author": 1,
-            "event_date": "2018-08-27",
-            "link_url": "http://www.sussexraces.co.uk/sussexraceseventplanner.html",
-            "created_date": "2018-07-28T17:55:24.000Z",
-            "categories": [
-                6
-            ]
-        }
-    },
-    {
-        "pk": 1453,
+        "pk": 1458,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T16:56:53.000Z",
@@ -23296,7 +23376,7 @@
         }
     },
     {
-        "pk": 1454,
+        "pk": 1459,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-16T08:54:32.000Z",
@@ -23312,7 +23392,7 @@
         }
     },
     {
-        "pk": 1455,
+        "pk": 1460,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T17:02:20.000Z",
@@ -23328,7 +23408,7 @@
         }
     },
     {
-        "pk": 1456,
+        "pk": 1461,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T17:04:11.000Z",
@@ -23344,7 +23424,7 @@
         }
     },
     {
-        "pk": 1457,
+        "pk": 1462,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T17:05:38.000Z",
@@ -23360,7 +23440,7 @@
         }
     },
     {
-        "pk": 1458,
+        "pk": 1463,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T17:07:34.000Z",
@@ -23376,7 +23456,7 @@
         }
     },
     {
-        "pk": 1459,
+        "pk": 1464,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-18T18:14:24.000Z",
@@ -23392,7 +23472,7 @@
         }
     },
     {
-        "pk": 1460,
+        "pk": 1465,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-18T18:14:54.000Z",
@@ -23408,7 +23488,7 @@
         }
     },
     {
-        "pk": 1461,
+        "pk": 1466,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-18T18:15:31.000Z",
@@ -23424,7 +23504,7 @@
         }
     },
     {
-        "pk": 1462,
+        "pk": 1467,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-18T18:15:54.000Z",
@@ -23440,7 +23520,7 @@
         }
     },
     {
-        "pk": 1463,
+        "pk": 1468,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T17:14:10.000Z",
@@ -23456,7 +23536,7 @@
         }
     },
     {
-        "pk": 1464,
+        "pk": 1469,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T17:18:35.000Z",
@@ -23472,7 +23552,7 @@
         }
     },
     {
-        "pk": 1465,
+        "pk": 1470,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T17:20:00.000Z",
@@ -23488,7 +23568,7 @@
         }
     },
     {
-        "pk": 1466,
+        "pk": 1471,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T17:21:06.000Z",
@@ -23504,7 +23584,7 @@
         }
     },
     {
-        "pk": 1467,
+        "pk": 1472,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T17:22:04.000Z",
@@ -23520,7 +23600,7 @@
         }
     },
     {
-        "pk": 1468,
+        "pk": 1473,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-18T18:19:06.000Z",
@@ -23536,7 +23616,7 @@
         }
     },
     {
-        "pk": 1469,
+        "pk": 1474,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-18T18:29:39.000Z",
@@ -23552,23 +23632,7 @@
         }
     },
     {
-        "pk": 1470,
-        "model": "fixtures.fixture",
-        "fields": {
-            "modified_date": "2018-08-18T18:37:48.000Z",
-            "location": "Malaga 4-16 Sept",
-            "title": "World Masters Track & Field Champs",
-            "author": 1,
-            "event_date": "2018-09-04",
-            "link_url": "https://world-masters-athletics.com/",
-            "created_date": "2018-08-18T18:32:39.000Z",
-            "categories": [
-                5
-            ]
-        }
-    },
-    {
-        "pk": 1471,
+        "pk": 1475,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-18T18:35:11.000Z",
@@ -23580,6 +23644,182 @@
             "created_date": "2018-08-18T18:35:11.000Z",
             "categories": [
                 3
+            ]
+        }
+    },
+    {
+        "pk": 1476,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-21T12:08:57.000Z",
+            "location": "Sept 15-16th",
+            "title": "Brighton Triathlon",
+            "author": 1,
+            "event_date": "2018-09-15",
+            "link_url": "https://www.brightonandhovetriathlon.com/",
+            "created_date": "2018-08-21T12:08:57.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1477,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-21T12:10:13.000Z",
+            "location": "",
+            "title": "Crawley Late Summer Tri",
+            "author": 1,
+            "event_date": "2018-09-16",
+            "link_url": "https://www.eventgoat.co.uk/crawley/crawley-triathlon-late-summer-triathlon-2018/",
+            "created_date": "2018-08-21T12:10:13.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1478,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-21T12:11:13.000Z",
+            "location": "",
+            "title": "Kids Tri Bognor Regis",
+            "author": 1,
+            "event_date": "2018-09-16",
+            "link_url": "http://www.kidstri.uk/kidstri/bognor.php",
+            "created_date": "2018-08-21T12:11:13.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1479,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-21T12:12:23.000Z",
+            "location": "22nd/23rd",
+            "title": "Hever Castle Tri",
+            "author": 1,
+            "event_date": "2018-09-22",
+            "link_url": "https://www.castletriathlonseries.co.uk/the-series/hever-castle/",
+            "created_date": "2018-08-21T12:12:23.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1480,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-21T12:13:41.000Z",
+            "location": "",
+            "title": "Horsham GO TRI",
+            "author": 1,
+            "event_date": "2018-09-29",
+            "link_url": "http://horshamtriclub.co.uk/events/go-tri-events/",
+            "created_date": "2018-08-21T12:13:41.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1481,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-21T12:14:45.000Z",
+            "location": "",
+            "title": "Kids Tri Crowborough Aquathlon",
+            "author": 1,
+            "event_date": "2018-09-30",
+            "link_url": "http://www.hedgehogtri-events.co.uk/kidstri/crow_aqua.php",
+            "created_date": "2018-08-21T12:14:45.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1482,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-21T12:18:20.000Z",
+            "location": "",
+            "title": "Brighton Original Triathlon",
+            "author": 1,
+            "event_date": "2018-09-30",
+            "link_url": "https://www.eventrac.co.uk/race-course-map/the-brighton-triathlon-olympic-distance-30-09-2018-06-15",
+            "created_date": "2018-08-21T12:18:20.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1483,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-21T12:19:43.000Z",
+            "location": "",
+            "title": "Bedford Duathlon (ETU Qualifier)",
+            "author": 1,
+            "event_date": "2018-10-14",
+            "link_url": "http://nicetrievents.com",
+            "created_date": "2018-08-21T12:19:43.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1484,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-21T12:20:40.000Z",
+            "location": "",
+            "title": "East Grinstead Aquathlon",
+            "author": 1,
+            "event_date": "2018-10-14",
+            "link_url": "https://www.egtri.com/index.php/aquathlon-home",
+            "created_date": "2018-08-21T12:20:40.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1485,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-08-21T12:25:03.000Z",
+            "location": "Gravesend",
+            "title": "South East Team Relay Duathlon",
+            "author": 1,
+            "event_date": "2018-11-04",
+            "link_url": "http://www.bridgetriathlon.co.uk/race-calendar/team-relay-duathlon/",
+            "created_date": "2018-08-21T12:21:58.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1486,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-09-07T10:06:20.000Z",
+            "location": "Lancing",
+            "title": "Sussex Sportshall",
+            "author": 1,
+            "event_date": "2018-11-17",
+            "link_url": "http://www.sussexathletics.net/Sportshall",
+            "created_date": "2018-09-07T10:06:20.000Z",
+            "categories": [
+                5
             ]
         }
     }
