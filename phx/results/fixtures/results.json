@@ -15687,7 +15687,7 @@
         "pk": 1308,
         "model": "results.result",
         "fields": {
-            "modified_date": "2018-02-11T16:51:28.000Z",
+            "modified_date": "2018-10-09T08:53:12.000Z",
             "author": 1,
             "fixture": 1308,
             "results": " ",
@@ -17067,7 +17067,7 @@
         "pk": 1423,
         "model": "results.result",
         "fields": {
-            "modified_date": "2018-07-12T11:12:34.000Z",
+            "modified_date": "2018-10-09T08:53:48.000Z",
             "author": 1,
             "fixture": 1423,
             "results": " ",
@@ -17331,11 +17331,11 @@
         "pk": 1445,
         "model": "results.result",
         "fields": {
-            "modified_date": "2018-08-28T11:14:22.000Z",
+            "modified_date": "2018-10-09T08:54:16.000Z",
             "author": 1,
             "fixture": 1445,
             "results": " ",
-            "summary": "<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>33</td>\r\n<td>18:57</td>\r\n<td>Tom Sanderson</td>\r\n</tr>\r\n<tr>\r\n<td>51</td>\r\n<td>20:20</td>\r\n<td>Cassius Hebden</td>\r\n</tr>\r\n<tr>\r\n<td>130</td>\r\n<td>26:39</td>\r\n<td>Terry Avey</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p>\r\n<p ><em><a href=\"http://www.kingsheadcanter5k.org.uk/Kings%20Head%20Canter%202018%20Results%20FNAL%20PDF.pdf\">Full results</a></em></p>\r\n</p>",
+            "summary": "<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>33</td>\r\n<td>18:57</td>\r\n<td>Tom Sanderson</td>\r\n</tr>\r\n<tr>\r\n<td>51</td>\r\n<td>20:20</td>\r\n<td>Cassius Hebden</td>\r\n</tr>\r\n<tr>\r\n<td>130</td>\r\n<td>26:39</td>\r\n<td>Terry Avey</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p>&nbsp;</p>\r\n<p ><em><a href=\"http://www.kingsheadcanter5k.org.uk/Kings%20Head%20Canter%202018%20Results%20FNAL%20PDF.pdf\">Full results</a></em></p>\r\n<p>&nbsp;</p>",
             "created_date": "2018-08-28T11:14:22.000Z"
         }
     },
@@ -17355,7 +17355,7 @@
         "pk": 1447,
         "model": "results.result",
         "fields": {
-            "modified_date": "2018-08-28T11:20:05.000Z",
+            "modified_date": "2018-10-03T09:01:51.000Z",
             "author": 1,
             "fixture": 1447,
             "results": " ",
@@ -17397,6 +17397,162 @@
             "results": " ",
             "summary": "<p>Well done to the old hands and the duathlon newbies - great results!</p>\r\n<p>Women's duathlon</p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Run</td>\r\n<td>Bike</td>\r\n<td>Run</td>\r\n<td>Total</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>1</td>\r\n<td>14:24</td>\r\n<td>35:14</td>\r\n<td>7:24</td>\r\n<td>57:02</td>\r\n<td>Erica Martin</td>\r\n</tr>\r\n<tr>\r\n<td>4</td>\r\n<td>19:15</td>\r\n<td>43:55</td>\r\n<td>9:54</td>\r\n<td>1:13:04</td>\r\n<td>Hannah Felton</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p>Men's duathlon</p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Run</td>\r\n<td>Bike</td>\r\n<td>Run</td>\r\n<td>Total</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>1</td>\r\n<td>13:59</td>\r\n<td>31:16</td>\r\n<td>7:23</td>\r\n<td>52:38</td>\r\n<td>Mark Cossey</td>\r\n</tr>\r\n<tr>\r\n<td>3</td>\r\n<td>14:57</td>\r\n<td>35:10</td>\r\n<td>7:29</td>\r\n<td>57:36</td>\r\n<td>Andrew Brooks</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;<em><a href=\"http://www.hedgehogtri.co.uk/AH_RESULTS/2018/20180902_Uckfield_Autumn/HHT_UckfieldAutumnTriathlons_20180902_v0b.pdf\">Full results</a></em></p>",
             "created_date": "2018-09-05T17:02:19.000Z"
+        }
+    },
+    {
+        "pk": 1451,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-10-03T09:01:24.000Z",
+            "author": 1,
+            "fixture": 1451,
+            "results": " ",
+            "summary": "<p>Good Turn for 7th race in the Sussex Grandprix with 4 men in the top 10 and categorys wins from Patrick (male senior), Paul Wishhart (Male V50) and Malcolm (male V70)</p>\r\n<p>\r\n<table >\r\n<!--StartFragment--> <colgroup><col span=\"6\" w></col> </colgroup> \r\n<tbody>\r\n<tr height=\"16\">\r\n<td >Pos</td>\r\n<td >Name</td>\r\n<td >Gun Time</td>\r\n<td >Chip Time</td>\r\n<td >Category</td>\r\n<td >Cat Pos</td>\r\n</tr>\r\n<tr height=\"16\">\r\n<td >2</td>\r\n<td >Patrick   Acaye</td>\r\n<td >00:36:09</td>\r\n<td >00:36:09</td>\r\n<td >MALE   SENIOR</td>\r\n<td >1</td>\r\n</tr>\r\n<tr height=\"16\">\r\n<td >4</td>\r\n<td >Ash   Dorrington</td>\r\n<td >00:36:56</td>\r\n<td >00:36:56</td>\r\n<td >MALE   SENIOR</td>\r\n<td >3</td>\r\n</tr>\r\n<tr height=\"16\">\r\n<td >5</td>\r\n<td >James   Miles</td>\r\n<td >00:36:56</td>\r\n<td >00:36:56</td>\r\n<td >MALE   SENIOR</td>\r\n<td >4</td>\r\n</tr>\r\n<tr height=\"16\">\r\n<td >9</td>\r\n<td >Tom   Hooper</td>\r\n<td >00:37:50</td>\r\n<td >00:37:48</td>\r\n<td >MALE   SENIOR</td>\r\n<td >7</td>\r\n</tr>\r\n<tr height=\"16\">\r\n<td >11</td>\r\n<td >Matthew   Greenall</td>\r\n<td >00:38:15</td>\r\n<td >00:38:13</td>\r\n<td >MALE   V40</td>\r\n<td >3</td>\r\n</tr>\r\n<tr height=\"16\">\r\n<td >15</td>\r\n<td >Sean   Butchers</td>\r\n<td >00:38:59</td>\r\n<td >00:38:57</td>\r\n<td >MALE   SENIOR</td>\r\n<td >10</td>\r\n</tr>\r\n<tr height=\"16\">\r\n<td >19</td>\r\n<td >Paul   Wishart</td>\r\n<td >00:39:30</td>\r\n<td >00:39:27</td>\r\n<td >MALE   V50</td>\r\n<td >1</td>\r\n</tr>\r\n<tr height=\"16\">\r\n<td >30</td>\r\n<td >Will   Russell</td>\r\n<td >00:41:38</td>\r\n<td >00:41:35</td>\r\n<td >MALE   SENIOR</td>\r\n<td >17</td>\r\n</tr>\r\n<tr height=\"16\">\r\n<td >38</td>\r\n<td >Phil   Grabsky</td>\r\n<td >00:43:21</td>\r\n<td >00:43:17</td>\r\n<td >MALE   V55</td>\r\n<td >3</td>\r\n</tr>\r\n<tr height=\"16\">\r\n<td >44</td>\r\n<td >Lance   Bellers</td>\r\n<td >00:43:42</td>\r\n<td >00:43:40</td>\r\n<td >MALE   V55</td>\r\n<td >4</td>\r\n</tr>\r\n<tr height=\"16\">\r\n<td >59</td>\r\n<td >Amelia   Culshaw</td>\r\n<td >00:45:13</td>\r\n<td >00:45:12</td>\r\n<td >FEMALE   V45</td>\r\n<td >2</td>\r\n</tr>\r\n<tr height=\"17\">\r\n<td >72</td>\r\n<td >Malcolm   Kemp</td>\r\n<td >00:46:34</td>\r\n<td >00:46:28</td>\r\n<td >MALE   V70</td>\r\n<td >1</td>\r\n</tr>\r\n<tr height=\"17\">\r\n<td >89</td>\r\n<td >Georgia   Flowers</td>\r\n<td >00:48:23</td>\r\n<td >00:48:21</td>\r\n<td >FEMALE   SENIOR</td>\r\n<td >3</td>\r\n</tr>\r\n<tr height=\"17\">\r\n<td >111</td>\r\n<td >Gill   Checkley</td>\r\n<td >00:50:16</td>\r\n<td >00:50:13</td>\r\n<td >FEMALE   V40</td>\r\n<td >8</td>\r\n</tr>\r\n<tr height=\"17\">\r\n<td >157</td>\r\n<td >Zeina   Clare</td>\r\n<td >00:53:57</td>\r\n<td >00:53:46</td>\r\n<td >FEMALE   V40</td>\r\n<td >12</td>\r\n</tr>\r\n<tr height=\"17\">\r\n<td >221</td>\r\n<td >Hannah   Felton</td>\r\n<td >01:00:48</td>\r\n<td >01:00:36</td>\r\n<td >FEMALE   SENIOR</td>\r\n<td >16</td>\r\n</tr>\r\n<tr height=\"17\">\r\n<td >244</td>\r\n<td >Sarah   Russell</td>\r\n<td >01:04:47</td>\r\n<td >01:04:38</td>\r\n<td >FEMALE   V50</td>\r\n<td >16</td>\r\n</tr>\r\n<!--EndFragment-->\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><a title=\"Full results\" href=\"lopace.racetecresults.com/results.aspx?CId=16646&amp;RId=9061&amp;EId=1&amp;st=ulzq9Dd7KCuh2DXRmSud9Q%3d%3d\">Full Results</a></p>",
+            "created_date": "2018-09-09T12:47:50.000Z"
+        }
+    },
+    {
+        "pk": 1452,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-09-26T09:18:40.000Z",
+            "author": 1,
+            "fixture": 1452,
+            "results": " ",
+            "summary": "<p>&nbsp;</p>\r\n<p >Great results from the boys at Malaga. Silver for Paul Whelpton in 10k, Bronze for Paul Whelpton in Half marathon <span>&nbsp;</span>and Team Gold for Paul Whelpton in half marathon(V65). Team Bronze for Malcolm kemp in half marathon (v70)</p>\r\n<p ><span >F<a title=\"Full results\" href=\"https://results.simplyregister.net/Malaga2018/\">ull Results</a></span></p>\r\n<p><!--[if gte mso 10]> <mce:><!   /* Style Definitions */  table.MsoNormalTable \t{mso-\tmso-t\tmso-t\tmso-\tmso-\tmso-\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt; \tmso-para-margin:0cm; \tmso-para-margin-bottom:.0001pt; \tmso-pagination:w\tfont-size:12.0pt; \tfont-family:\"Calibri\",sans-serif; \tmso-ascii-font-family:Calibri; \tmso-ascii-theme-font:minor-latin; \tmso-hansi-font-family:Calibri; \tmso-hansi-theme-font:minor-latin; \tmso-b\tmso-b} --> <!--[endif] --> <!--StartFragment--> <!--EndFragment--></p>\r\n<table %;\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\r\n<tbody>\r\n<tr>\r\n<td v>\r\n<p ><strong><span>&nbsp;</span></strong></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td colspan=\"12\">&nbsp;</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><strong><span>Event</span></strong></p>\r\n</td>\r\n<td>\r\n<p ><strong><span>Perf</span></strong></p>\r\n</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>\r\n<p ><strong><span>Pos</span></strong></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>&nbsp;</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>&nbsp;</td>\r\n<td>\r\n<p ><span>Name</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><strong><span>Group</span></strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>800</span></p>\r\n</td>\r\n<td>\r\n<p ><span>2:07.84</span></p>\r\n</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>\r\n<p ><span>7</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>s2</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>&nbsp;</td>\r\n<td>\r\n<p ><span>Steve Atkinson</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V50</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>800</span></p>\r\n</td>\r\n<td>\r\n<p ><span>2:33.72</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>10</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>h6</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>Nigel   Herron</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V50</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>1500</span></p>\r\n</td>\r\n<td>\r\n<p ><span>4:24.08</span></p>\r\n</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>\r\n<p ><span>11</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>&nbsp;</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>&nbsp;</td>\r\n<td>\r\n<p ><span>Steve Atkinson</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V50</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>1500</span></p>\r\n</td>\r\n<td>\r\n<p ><span>4:26.12</span></p>\r\n</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>\r\n<p ><span>2</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>h3</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>&nbsp;</td>\r\n<td>\r\n<p ><span>Steve Atkinson</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V50</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>1500</span></p>\r\n</td>\r\n<td>\r\n<p ><span>5:10.45</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>13</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>h6</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>Nigel   Herron</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V50</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>1500</span></p>\r\n</td>\r\n<td>\r\n<p ><span>5:10.60</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>12</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>H4</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>Steve   Selby</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V50</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>5000</td>\r\n<td>22:07.92</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>12</td>\r\n<td>&nbsp;</td>\r\n<td>A</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>Malcolm Kemp</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td >V70</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>5000</span></p>\r\n</td>\r\n<td>\r\n<p ><span>22:19.08</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>13</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>A</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>Andrew   Haig <span>&nbsp;</span></span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V70</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>5000</span></p>\r\n</td>\r\n<td>\r\n<p ><span>20:25.63</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>7</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>Phil   Grabsky</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V50</span></p>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>5000</span></p>\r\n</td>\r\n<td>\r\n<p ><span>19:07.20</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>7</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>Nigel   Herron</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V50</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>5000</span></p>\r\n</td>\r\n<td>\r\n<p ><span>19:24.02</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>17</span></p>\r\n</td>\r\n<td>\r\n<p ><span>A</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>Phil   Hampshire</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V60</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><strong><span>Event</span></strong></p>\r\n</td>\r\n<td>\r\n<p ><strong><span>Perf</span></strong></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><strong><span>Pos</span></strong></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>Name</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><strong><span>Group</span></strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>10K</span></p>\r\n</td>\r\n<td>\r\n<p ><span>39:20</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>2</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>Paul   Whelpton</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V65</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>HM</span></p>\r\n</td>\r\n<td>\r\n<p ><span>1:28:38</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>3</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>3</span></p>\r\n</td>\r\n<td v>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>Paul   Whelpton</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V65</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>HM</span></p>\r\n</td>\r\n<td>\r\n<p ><span>93:24</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>23</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>Phil   Hampshire</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V60</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>HM</span></p>\r\n</td>\r\n<td>\r\n<p ><span>1:48:01</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>20</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>Malcolm   Kemp</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>V70</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n<td>\r\n<p ><span>&nbsp;</span></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>",
+            "created_date": "2018-09-09T13:02:39.000Z"
+        }
+    },
+    {
+        "pk": 1453,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-09-09T13:33:39.000Z",
+            "author": 1,
+            "fixture": 1453,
+            "results": " ",
+            "summary": "<p>&nbsp;</p>\r\n<p>\r\n<table >\r\n<!--StartFragment--> <colgroup><col w></col> <col w></col> <col w></col> <col w></col> </colgroup> \r\n<tbody>\r\n<tr height=\"17\">\r\n<td w>Pos</td>\r\n<td w>Name</td>\r\n<td >Finish time</td>\r\n<td w>Gun/chip</td>\r\n</tr>\r\n<tr height=\"17\">\r\n<td height=\"17\" >20</td>\r\n<td>Ross Skelton</td>\r\n<td >1.09.53</td>\r\n<td>Gun</td>\r\n</tr>\r\n<tr height=\"17\">\r\n<td height=\"17\" >1182</td>\r\n<td>Andrew Haslam</td>\r\n<td >1.36.19</td>\r\n<td >chip</td>\r\n</tr>\r\n<tr height=\"17\">\r\n<td height=\"17\" >3989</td>\r\n<td>Simon Beeforth</td>\r\n<td >1.49.00</td>\r\n<td>Chip</td>\r\n</tr>\r\n<!--EndFragment-->\r\n</tbody>\r\n</table>\r\n</p>\r\n<p>&nbsp;</p>\r\n<p>Full <a title=\"Full results\" href=\"https://www.greatrun.org/myresults/\">Results</a></p>",
+            "created_date": "2018-09-09T13:29:33.000Z"
+        }
+    },
+    {
+        "pk": 1454,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-09-18T06:14:21.000Z",
+            "author": 1,
+            "fixture": 1454,
+            "results": " ",
+            "summary": "<p>Amazing feat for Andy Pumphrey at Tor des Geants 330KM Endurance Trail</p>\r\n<p><br /> \r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Distance</td>\r\n<td>Elevation</td>\r\n<td>Start Time</td>\r\n<td>Finish Time</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n<td>Position</td>\r\n</tr>\r\n<tr>\r\n<td>330km</td>\r\n<td>30908</td>\r\n<td>Sun 12:00</td>\r\n<td>Sat 00:15</td>\r\n<td>132:15:44</td>\r\n<td>Andy Pumphrey</td>\r\n<td>260</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><br /><a title=\"Full results\" href=\"http://live.tordesgeants.it/\"><br />Full Results</a></p>",
+            "created_date": "2018-09-18T06:07:49.000Z"
+        }
+    },
+    {
+        "pk": 1455,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-09-24T09:40:32.000Z",
+            "author": 1,
+            "fixture": 1455,
+            "results": " ",
+            "summary": "<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>30</td>\r\n<td>1:15:23</td>\r\n<td>Milan Watson</td>\r\n</tr>\r\n<tr>\r\n<td>43</td>\r\n<td>1:16:49</td>\r\n<td>Alex Cruttenden</td>\r\n</tr>\r\n<tr>\r\n<td>54</td>\r\n<td>1:18:02</td>\r\n<td>Tobias Bremer</td>\r\n</tr>\r\n<tr>\r\n<td>64</td>\r\n<td>1:18:34</td>\r\n<td>Dav</td>\r\n</tr>\r\n<tr>\r\n<td>101</td>\r\n<td>1:20:59</td>\r\n<td>Tom Hooper</td>\r\n</tr>\r\n<tr>\r\n<td>291</td>\r\n<td>1:27:44</td>\r\n<td>Rachel Gorman</td>\r\n</tr>\r\n<tr>\r\n<td>380</td>\r\n<td>1:29:22</td>\r\n<td>Cyril Crua</td>\r\n</tr>\r\n<tr>\r\n<td>1007</td>\r\n<td>1:38:10</td>\r\n<td>Amelia Culshaw</td>\r\n</tr>\r\n<tr>\r\n<td>1050</td>\r\n<td>1:38:45</td>\r\n<td>Robin Searle</td>\r\n</tr>\r\n<tr>\r\n<td>1973</td>\r\n<td>1:46:35</td>\r\n<td>Georgia Flowers</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><em><a href=\"https://www.greatrun.org/myresults/advanced-search\">Full results</a></em></p>",
+            "created_date": "2018-09-23T20:32:30.000Z"
+        }
+    },
+    {
+        "pk": 1456,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-09-25T14:19:37.000Z",
+            "author": 1,
+            "fixture": 1456,
+            "results": " ",
+            "summary": "<p>Well done <strong>Barry</strong>&nbsp;for the category win.</p>\r\n<p>&nbsp;</p>\r\n<p>K</p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Cat Pos</td>\r\n<td>Name</td>\r\n<td>Swim</td>\r\n<td>T1</td>\r\n<td>Bike</td>\r\n<td>T2</td>\r\n<td>Run</td>\r\n<td>Total</td>\r\n</tr>\r\n<tr>\r\n<td>11</td>\r\n<td>6</td>\r\n<td>Cesare Masset</td>\r\n<td>2:36</td>\r\n<td>1:42</td>\r\n<td>9:40</td>\r\n<td>0:57</td>\r\n<td>5:14</td>\r\n<td>20:09</td>\r\n</tr>\r\n<tr>\r\n<td>14</td>\r\n<td>7</td>\r\n<td>Marnie Butler</td>\r\n<td>2:23</td>\r\n<td>2:05</td>\r\n<td>10:04</td>\r\n<td>0:46</td>\r\n<td>5:53</td>\r\n<td>21:11</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p>Sprint (400m swim)</p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Cat Pos</td>\r\n<td>Name</td>\r\n<td>Swim</td>\r\n<td>T1</td>\r\n<td>Bike</td>\r\n<td>T2</td>\r\n<td>Run</td>\r\n<td>Total</td>\r\n</tr>\r\n<tr>\r\n<td>31</td>\r\n<td>1 (m50)</td>\r\n<td>Barry Blackwell</td>\r\n<td>9:08</td>\r\n<td>1:57</td>\r\n<td>39:51</td>\r\n<td>1:04</td>\r\n<td>22:52</td>\r\n<td>1:14:52</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p>Olympic<span > </span></p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Cat Pos</td>\r\n<td>Name</td>\r\n<td>Swim</td>\r\n<td>T1</td>\r\n<td>Bike</td>\r\n<td>T2</td>\r\n<td>Run</td>\r\n<td>Total</td>\r\n</tr>\r\n<tr>\r\n<td>92</td>\r\n<td>6 (m50)</td>\r\n<td>Mark Walker</td>\r\n<td>9:18</td>\r\n<td>1:45</td>\r\n<td>1:16:39</td>\r\n<td>1:08</td>\r\n<td>42:44</td>\r\n<td>2:11:34</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>\r\n<p><em><a href=\"https://www.brightonandhovetriathlon.com/results\">Full results</a></em></p>",
+            "created_date": "2018-09-25T14:19:37.000Z"
+        }
+    },
+    {
+        "pk": 1457,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-10-09T08:54:39.000Z",
+            "author": 1,
+            "fixture": 1457,
+            "results": " ",
+            "summary": "<form action=\"https://www.sportsystems.co.uk/ss/results/Barns%20Green%20Half%20Marathon/3534\" method=\"POST\"> </form>\r\n<div>\r\n<div><span >Half Marathon</span></div>\r\n<div><span ><br /></span></div>\r\n<div>\r\n<table >\r\n<!--StartFragment--> <colgroup><col w></col> <col w></col> <col w></col> <col w></col> <col w></col> <col w></col> </colgroup> \r\n<tbody>\r\n<tr height=\"23\">\r\n<td >\r\n<div>Place</div>\r\n</td>\r\n<td >\r\n<div>Time</div>\r\n</td>\r\n<td >\r\n<div>Name</div>\r\n</td>\r\n<td >\r\n<div>Category</div>\r\n</td>\r\n<td >\r\n<div>Chip</div>\r\n</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td ><form action=\"https://www.sportsystems.co.uk/ss/results/Barns%20Green%2010K/3535\" method=\"POST\">\r\n<div>\r\n<div>\r\n<div>22</div>\r\n</div>\r\n</div>\r\n</form></td>\r\n<td >01:24:08</td>\r\n<td ><a title=\"Paul Wishart\" href=\"https://www.sportsystems.co.uk/ss/results/athlete/?entId=WISHA-CVHUM-PAULL\">Paul Wishart</a></td>\r\n<td >Vet Men 50-59</td>\r\n<td >01:24:04</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >95</td>\r\n<td >01:32:14</td>\r\n<td ><a title=\"Jonathan Lamb\" href=\"https://www.sportsystems.co.uk/ss/results/athlete/?entId=LAMBL-DAAYM-JONNM\">Jonathan Lamb</a></td>\r\n<td >Vet Men 40-49</td>\r\n<td >01:32:06</td>\r\n</tr>\r\n<!--EndFragment-->\r\n</tbody>\r\n</table>\r\n</div>\r\n<div><span >10K</span></div>\r\n<div><br />\r\n<div><form action=\"https://www.sportsystems.co.uk/ss/results/Barns%20Green%20Half%20Marathon/3534\" method=\"POST\"> </form>\r\n<div>\r\n<div><form action=\"https://www.sportsystems.co.uk/ss/results/Barns%20Green%2010K/3535\" method=\"POST\"> </form></div>\r\n</div>\r\n</div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div></div>\r\n</div>\r\n</div>\r\n</div>\r\n<table >\r\n<!--StartFragment--> <colgroup><col w></col> <col w></col> <col w></col> <col w></col> <col w></col> </colgroup> \r\n<tbody>\r\n<tr height=\"23\">\r\n<td >\r\n<div>Place</div>\r\n</td>\r\n<td >\r\n<div>Time</div>\r\n</td>\r\n<td >\r\n<div>Name</div>\r\n</td>\r\n<td >\r\n<div>Category</div>\r\n</td>\r\n<td >\r\n<div>Chip</div>\r\n</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >5</td>\r\n<td >00:34:35</td>\r\n<td ><a title=\"Patrick Acaye\" href=\"https://www.sportsystems.co.uk/ss/results/athlete/?entId=ACAYE-DOVSM-PATKM\">Patrick Acaye</a></td>\r\n<td >Senior Men</td>\r\n<td >00:34:29</td>\r\n</tr>\r\n<!--EndFragment-->\r\n</tbody>\r\n</table>\r\n</div>\r\n</div>\r\n<div><a title=\"Full results\" href=\"https://www.sportsystems.co.uk/ss/results\">Full Results</a></div>\r\n</div>",
+            "created_date": "2018-09-30T17:41:32.000Z"
+        }
+    },
+    {
+        "pk": 1458,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-10-02T14:54:05.000Z",
+            "author": 1,
+            "fixture": 1458,
+            "results": " ",
+            "summary": "<p>The ubiquitous <strong>Eddie Harrison</strong> came 5th in the 12-16 yr olds mini mile race. in a time of 5:39</p>\r\n<p><a href=\"https://www.ealinghalfmarathon.com/results\">Full results</a> (click on \"all events\" to select age category)</p>",
+            "created_date": "2018-10-02T14:54:05.000Z"
+        }
+    },
+    {
+        "pk": 1459,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-10-09T08:55:04.000Z",
+            "author": 1,
+            "fixture": 1459,
+            "results": " ",
+            "summary": "<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>4</td>\r\n<td>52:07</td>\r\n<td>Ian Leitch</td>\r\n</tr>\r\n<tr>\r\n<td>7</td>\r\n<td>53:36</td>\r\n<td>Todd Leckie</td>\r\n</tr>\r\n<tr>\r\n<td>19</td>\r\n<td>58:01</td>\r\n<td>Paul Weir</td>\r\n</tr>\r\n<tr>\r\n<td>34</td>\r\n<td>60:56</td>\r\n<td>Jonny McCormack</td>\r\n</tr>\r\n<tr>\r\n<td>38</td>\r\n<td>61:07</td>\r\n<td>Joe Butler</td>\r\n</tr>\r\n<tr>\r\n<td>62</td>\r\n<td>63:53</td>\r\n<td>Karn Sandilands</td>\r\n</tr>\r\n<tr>\r\n<td>114</td>\r\n<td>68:33</td>\r\n<td>Jonathan Lamb</td>\r\n</tr>\r\n<tr>\r\n<td>158</td>\r\n<td>71:20</td>\r\n<td>Andrew Brooks</td>\r\n</tr>\r\n<tr>\r\n<td>179</td>\r\n<td>72:30</td>\r\n<td>James White</td>\r\n</tr>\r\n<tr>\r\n<td>469</td>\r\n<td>84:12</td>\r\n<td>Alison Moore</td>\r\n</tr>\r\n<tr>\r\n<td>512</td>\r\n<td>85:43</td>\r\n<td>Gary Wilson</td>\r\n</tr>\r\n<tr>\r\n<td>982</td>\r\n<td>1:41:14</td>\r\n<td>Rob White</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><em><a href=\"https://www.runbritainrankings.com/results/results.aspx?meeting&amp;pagenum=5\">Full results</a></em></p>",
+            "created_date": "2018-10-07T20:30:13.000Z"
+        }
+    },
+    {
+        "pk": 1460,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-10-07T20:35:48.000Z",
+            "author": 1,
+            "fixture": 1460,
+            "results": " ",
+            "summary": "<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>4393 (665 f)</td>\r\n<td>3:23:44</td>\r\n<td>Amelia Culshaw</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><em><a href=\"http://results.chicagomarathon.com/2018/?p\">Full results</a></em></p>",
+            "created_date": "2018-10-07T20:34:25.000Z"
+        }
+    },
+    {
+        "pk": 1461,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-10-09T08:57:04.000Z",
+            "author": 1,
+            "fixture": 1461,
+            "results": " ",
+            "summary": "<p>Amazing turnout for the 8th race in Sussex Grand Prix</p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Place</td>\r\n<td>Cat Place</td>\r\n<td>Name</td>\r\n<td>Time</td>\r\n</tr>\r\n<tr>\r\n<td>3</td>\r\n<td>3rd Senior Men</td>\r\n<td>Alex Cruttenden</td>\r\n<td>1:03:58</td>\r\n</tr>\r\n<tr>\r\n<td>5</td>\r\n<td><br /></td>\r\n<td>Ash Dorrington</td>\r\n<td>1:04:24</td>\r\n</tr>\r\n<tr>\r\n<td>8</td>\r\n<td><br /></td>\r\n<td>Tom Hooper</td>\r\n<td>1:07:08</td>\r\n</tr>\r\n<tr>\r\n<td>12</td>\r\n<td><br /></td>\r\n<td>James Lathbury</td>\r\n<td>1:08:45</td>\r\n</tr>\r\n<tr>\r\n<td>16</td>\r\n<td>3rd Vet M50</td>\r\n<td>Paul Wishhart</td>\r\n<td>1:09:57</td>\r\n</tr>\r\n<tr>\r\n<td>20</td>\r\n<td>&nbsp;</td>\r\n<td>Sean Butchers</td>\r\n<td>1:10:35</td>\r\n</tr>\r\n<tr>\r\n<td>28</td>\r\n<td>&nbsp;</td>\r\n<td>Tony Rickwood</td>\r\n<td>1:12:52</td>\r\n</tr>\r\n<tr>\r\n<td>37</td>\r\n<td>&nbsp;</td>\r\n<td>Will Russell</td>\r\n<td>1:15:07</td>\r\n</tr>\r\n<tr>\r\n<td>39</td>\r\n<td>&nbsp;</td>\r\n<td>Pete Goodman</td>\r\n<td>1:15:19</td>\r\n</tr>\r\n<tr>\r\n<td>45</td>\r\n<td>2nd Vet M55</td>\r\n<td>Lance Bellers</td>\r\n<td>1:16:38</td>\r\n</tr>\r\n<tr>\r\n<td>47</td>\r\n<td>&nbsp;</td>\r\n<td>Cyril Crua</td>\r\n<td>1:17.14</td>\r\n</tr>\r\n<tr>\r\n<td>49</td>\r\n<td>3rd Vet M55</td>\r\n<td>Phil Grabsky</td>\r\n<td>1:17:39</td>\r\n</tr>\r\n<tr>\r\n<td>50</td>\r\n<td>2nd Vet W45</td>\r\n<td>Charlotte Softly</td>\r\n<td>1:17:43</td>\r\n</tr>\r\n<tr>\r\n<td>52</td>\r\n<td>&nbsp;</td>\r\n<td>Richard Thompson</td>\r\n<td>1:17:55</td>\r\n</tr>\r\n<tr>\r\n<td>60</td>\r\n<td>&nbsp;</td>\r\n<td>Steve Selby</td>\r\n<td>1:19:20</td>\r\n</tr>\r\n<tr>\r\n<td>94</td>\r\n<td>2nd Senior Women</td>\r\n<td>Georgia Flowers</td>\r\n<td>1:25:50</td>\r\n</tr>\r\n<tr>\r\n<td>104</td>\r\n<td>3rd Vet 40</td>\r\n<td>Kathryn Harnett</td>\r\n<td>1:28:29</td>\r\n</tr>\r\n<tr>\r\n<td>120</td>\r\n<td>&nbsp;</td>\r\n<td>Gill Checkley</td>\r\n<td>1:32:14</td>\r\n</tr>\r\n<tr>\r\n<td>181</td>\r\n<td>&nbsp;</td>\r\n<td>Hannah Felton</td>\r\n<td>1:56:15</td>\r\n</tr>\r\n<tr>\r\n<td>182</td>\r\n<td>&nbsp;</td>\r\n<td>Sarah Russell</td>\r\n<td>1:59:59</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><a title=\"Full results\" href=\"http://www.lewesac.co.uk/events/downland-runs\">Full Results</a></p>\r\n<p>&nbsp;</p>",
+            "created_date": "2018-10-09T01:56:51.000Z"
+        }
+    },
+    {
+        "pk": 1462,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-10-09T02:25:57.000Z",
+            "author": 1,
+            "fixture": 1462,
+            "results": " ",
+            "summary": "<p>Full Marathon</p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Cat Pos</td>\r\n<td>Name</td>\r\n<td>Time</td>\r\n</tr>\r\n<tr>\r\n<td>2015</td>\r\n<td>8 MV70</td>\r\n<td>Malcolm Kemp</td>\r\n<td>4:25:25</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p>Metric Marathon - For those that don't know is as the name suggests is 26.2km (16.5m)</p>\r\n<p>Phil achieves 1st place and course record for MV60.Well done</p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Cat Pos</td>\r\n<td>Name</td>\r\n<td>Time</td>\r\n</tr>\r\n<tr>\r\n<td>30</td>\r\n<td>1st MV60</td>\r\n<td>Phil Hampshire</td>\r\n<td>1:53:58</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>\r\n<p><a title=\"Full results\" href=\"https://ale.niftyentries.com/Results/MBNA-Chester-Marathon-2018/\">Full results</a></p>",
+            "created_date": "2018-10-09T02:07:34.000Z"
+        }
+    },
+    {
+        "pk": 1463,
+        "model": "results.result",
+        "fields": {
+            "modified_date": "2018-10-09T02:13:21.000Z",
+            "author": 1,
+            "fixture": 1463,
+            "results": " ",
+            "summary": "<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Name</td>\r\n<td>Time</td>\r\n</tr>\r\n<tr>\r\n<td>723</td>\r\n<td>Phil Jeffrey</td>\r\n<td>3:58:16</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><a title=\"Full results\" href=\"https://www.bournemouthmarathon.com/results/\">Full Results</a></p>",
+            "created_date": "2018-10-09T02:13:21.000Z"
         }
     }
 ]

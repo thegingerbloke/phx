@@ -67222,5 +67222,636 @@
             "component": 2769,
             "created_date": "2018-09-04T06:23:49.000Z"
         }
+    },
+    {
+        "pk": 622,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-09-11T06:15:55.000Z",
+            "author": 1,
+            "title": "Hard work pays off",
+            "summary": "Four regulars at our Monday bike / run sessions allowed Liz H to twist their arms into doing the Uckfield Duathlon, a run / bike / run event that is included in our multi sport club champs.",
+            "created_date": "2018-09-11T06:13:54.000Z",
+            "slug": "hard-work-pays-off"
+        }
+    },
+    {
+        "pk": 2770,
+        "model": "news.component",
+        "fields": {
+            "news": 622,
+            "order": 0
+        }
+    },
+    {
+        "pk": 622,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><strong><span >Hard work pays off</span></strong></p>\r\n<p>Four regulars at our Monday bike / run sessions allowed me to twist their arms into doing the Uckfield Duathlon, a run / bike / run event that is included in our multi sport club champs. Erica is a seasoned campaigner at Duathlon but Mark Cossey, Hannah Felton and Andrew Brooks are all new to multi sport this year and had not done Duathlon before. All had worked hard in the training sessions and I was conf. At last night's session (a recovery one) they all agreed they had indeed enjoyed it but better still their results are to be proud of, showing how their hard work has gained good rewards.<br />Mark was 1st man and overall winner<br />Erica was 1st woman<br />Andrew was 3rd man<br />Hannah was 4th woman</p>\r\n<p>Very well done to you all!</p>\r\n<p><a href=\"http://www.hedgehogtri.co.uk/AH_RESULTS/2018/20180902_Uckfield_Autumn/HHT_UckfieldAutumnTriathlons_20180902_v0b.pdf\">http://www.hedgehogtri.co.uk/AH_RESULTS/2018/20180902_Uckfield_Autumn/HHT_UckfieldAutumnTriathlons_20180902_v0b.pdf</a></p>\r\n<p></p>\r\n<p><em>thanks Liz H for this report!</em></p>\r\n<p></p>",
+            "modified_date": "2018-09-11T06:15:55.000Z",
+            "title": "",
+            "component": 2770,
+            "created_date": "2018-09-11T06:13:54.000Z"
+        }
+    },
+    {
+        "pk": 622,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 622,
+            "image": "news/622/thumbnail/2149.jpeg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2771,
+        "model": "news.component",
+        "fields": {
+            "news": 622,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2149,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-11T06:15:55.000Z",
+            "image_alt": "",
+            "image": "news/622/image/2149.jpeg",
+            "component": 2771,
+            "caption": "",
+            "created_date": "2018-09-11T06:13:54.000Z"
+        }
+    },
+    {
+        "pk": 2772,
+        "model": "news.component",
+        "fields": {
+            "news": 622,
+            "order": 2
+        }
+    },
+    {
+        "pk": 2150,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-11T06:15:55.000Z",
+            "image_alt": "",
+            "image": "news/622/image/2150.jpeg",
+            "component": 2772,
+            "caption": "",
+            "created_date": "2018-09-11T06:13:54.000Z"
+        }
+    },
+    {
+        "pk": 623,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-09-13T16:53:21.000Z",
+            "author": 1,
+            "title": "Ross of the North",
+            "summary": "Ross Skelton... 20th in the Great North Run!",
+            "created_date": "2018-09-13T16:48:59.000Z",
+            "slug": "ross-of-the-north"
+        }
+    },
+    {
+        "pk": 2773,
+        "model": "news.component",
+        "fields": {
+            "news": 623,
+            "order": 0
+        }
+    },
+    {
+        "pk": 623,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><strong><span >Ross of the North</span></strong></p>\r\n<p>The iconic Great North Run is the largest half marathon in the world. Started by Olympian and Commentator Brendan Foster, it is now in its 37th year.</p>\r\n<p>This year (9th September) some 57000 athletes ran the 13.1 miles between Newcastle &amp; South Shields.</p>\r\n<p></p>\r\n<p>The one and only Mo Farah made record history by taking his 5th consecutive win in 59:26. Up amongst the elite athletes was Phoenix's Ross Skelton (look out for him by Mo on the start line). Ross showed his .<br />Well done also to Andrew Hassan &amp; Simon Beesforth who finished 1182nd &amp; 3989th.</p>\r\n<p><br /><a href=\"https://www.greatrun.org/myresults/\">https://www.greatrun.org/myresults/</a></p>\r\n<p>Pictured: Ross (on left) with Jake Robertson, New Zealand Olympian who came 2nd in the race in sub 60.</p>",
+            "modified_date": "2018-09-13T16:53:21.000Z",
+            "title": "",
+            "component": 2773,
+            "created_date": "2018-09-13T16:48:59.000Z"
+        }
+    },
+    {
+        "pk": 623,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 623,
+            "image": "news/623/thumbnail/2151.jpeg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2774,
+        "model": "news.component",
+        "fields": {
+            "news": 623,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2151,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-13T16:53:21.000Z",
+            "image_alt": "",
+            "image": "news/623/image/2151.jpeg",
+            "component": 2774,
+            "caption": "",
+            "created_date": "2018-09-13T16:48:59.000Z"
+        }
+    },
+    {
+        "pk": 624,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-09-27T07:49:10.000Z",
+            "author": 1,
+            "title": "Bristol massif!",
+            "summary": "Sunday the 23rd of September saw 10 Phoenix runners make the trip West to tackle the Great Bristol Half Marathon.",
+            "created_date": "2018-09-27T06:13:10.000Z",
+            "slug": "bristol-massif"
+        }
+    },
+    {
+        "pk": 2775,
+        "model": "news.component",
+        "fields": {
+            "news": 624,
+            "order": 0
+        }
+    },
+    {
+        "pk": 624,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><strong><span >Bristol massif!</span></strong></p>\r\n<p>Sunday the 23rd of September saw 10 Phoenix runners make the trip West to tackle the Great Bristol Half Marathon. Hosted by Bitton Road Runners who have ties to our own Women's captain Bobby Searle, we were offered accommodation and a delicious Italian meal (wine optional) as part of the first phase of what promises to be a burgeoning exchange program.</p>\r\n<p>When it came to race day an extremely variable forecast, which earlier in the week peaked at 43mph winds, actually delivered a cold and wet day that was suitable for some potentially fast times.</p>\r\n<p>Our runners duly obliged with a series of Personal Bests across the board. The highlight was a sensational run from Milan Watson who finished 30th in a time of 75:23. After a series of misfortune and injuries, it's incredibly exciting to see what this breakthrough will lead to with Beach Head marathon around the corner.</p>\r\n<p>Alex Cruttenden wasn't far behind in a very quick 76:49, followed by Tobias Bremer who is in strong shape 3 weeks before the Munich marathon. TB clocked 78:02 and bashed out 6 miles afterwards just for good measure.</p>\r\n<p>Another superb run on the day was produced by Dave Powell who misleadingly sa. Arm warmers could be the way forward....</p>\r\n<p>Tom Hooper lowered his PB to 80:59, and Rachel Gorman's wonderful 87:44 secured her 17th place in the Women's race.</p>\r\n<p>Cyril Crua was another athlete setting a new PB, running 89:22 to dip under 90 mins for the first time after a hum.1 mile distance in Chicago earlier in the summer (and shaving nearly 5 mins off his previous best in the process).</p>\r\n<p>Our res(F45 7th) and continue her incredibly consistent season that shows no sign of slowing down.</p>\r\n<p>The Phoenix contingent was completed by Bobby Searle (98:45), back from injury, and pacing Georgia Flowers (1hr 46 - just 2 mins outs) for 8 miles before stretching her legs for the final 5 miles around the twisting streets of her home City.</p>\r\n<p>In summary it was an excellent weekend, and a huge congratulations to all the runners and again to Bitton for their hospitality and generosity. We look forward to the return leg, with the balance of drinking Vs actual running still being thrashed out by club reps.</p>\r\n<p></p>\r\n<p><em>thanks Tom Hooper for this report</em></p>\r\n<p></p>\r\n<p><em><a href=\"https://www.greatrun.org/myresults/advanced-search\">https://www.greatrun.org/myresults/advanced-search</a><br /></em></p>\r\n<p></p>",
+            "modified_date": "2018-09-27T07:49:10.000Z",
+            "title": "",
+            "component": 2775,
+            "created_date": "2018-09-27T06:13:10.000Z"
+        }
+    },
+    {
+        "pk": 625,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-09-28T06:14:21.000Z",
+            "author": 1,
+            "title": "World Masters ",
+            "summary": "The Phoenix contingent at the 2018 World Master Athletics Championships must have been one of the largest from any single  club, with  8 Phoenix members Competing. Here are their reports...\r\nNEW PICTURES ADDED!",
+            "created_date": "2018-09-27T06:25:35.000Z",
+            "slug": "world-masters"
+        }
+    },
+    {
+        "pk": 2776,
+        "model": "news.component",
+        "fields": {
+            "news": 625,
+            "order": 0
+        }
+    },
+    {
+        "pk": 625,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><strong><span >World Masters</span></strong></p>\r\n<p>The Phoenix contingent at the 2018 World Master Athletics Championships must have been one of the largest from any single  club, with  8 Phoenix members - all first-timers despite an average of around 60 - making the trip to Malaga. We asked some of the members of our squad to  pick out some of the best moments for us</p>\r\n<p>PHIL GRABSKY: Malaga 2018.  I have to be honest : I don't think I had heard of the term &lsquo;Masters' until recently but one of the joys of running for me has recently been working out what terms like V50, SGP and VO2 meant.  Now I can add &lsquo;Masters'. Basically races for anyone over 35.  This year's world champs in Malaga seemed like a great , especially when 7 of your buddies are going too - so, lo &amp; behold, I find myself one hot and hum, Chile, India, Turkey, Spain, Argentina, Australia and the GB for a 5000m.  I should add that I had only done my first ever 5000m track race a month before and this is very different to a Park Run. Twelve and a half laps - not a bollard, cone or dog-on-a-lead in sight. My fear was it would be a bit dull but it certainly isn't that. I also thought it would automatically be faster than a Park Run (I run around 20-15 to 20-30 with a PB of 19-56) but it isn't that either. It's both an exercise in pacing and a proper race. I was only a novice but already I knew that who you choose to run behind makes a big difference and, as I kept telling myself leading up to the gun, don't go off too fast. Two weeks earlier - in my second 5000m on a track - there had been a pacer for 20'. I chose to try and follow him: the first lap seemed slow &amp; stately and loads of people had bounded off in front of us but by the third k we were passing them. We kept to a steady 4'/km all the way and with a bit of a sprint at the end I hit a 19-56.  So I knew at Malaga not to rush off at the start. And what happened? Bang - and sprint. I find myself in third place after one km running at 3-40'/km - I know it's too quick but I try to hold on rather than slow down (which I soon start doing anyway). This time it was me who became the hare that the tortoises passed. I came in 7th (in my race which was the slowest of the three 5000m V55 finals) in 20-25. A bit disappointing but the point was it really d't matter - I had run in an international championship - been cheered on by those who knew me and plenty who d't. I also got to see others run - both friends and total unknowns (from superb quick 5k runners to &lsquo;hats-off-to-them-for-being-there 90-year-old long jumpers...).  Watching your pals do their races and, in some cases, win medals was thrilling. Malaga itself was great (and with beer at two euros a glass!) and full of 8000 international athletes. It was a bit embarrassing wearing a GB vest that I had earnt only by paying an entry fee but I was proud and excited to do so too. And half the battle and credit of any race is ensuring you're on the start line.  In sum, I can't recommend it enough - whatever your standard - and there will be plenty of us to cheer you on at the Europeans in Venice next year or the World Championships in Toronto the year after.</p>\r\n<p><br />PAUL WHELPTON: Although we experienced mixed  fortunes in our races on the track and road, the experience was a fabulous one for all of us. The atmosphere really does feel quite similar to the Olympics, with thousands of athletes in their national kit  thronging the stands and competing against each other. There are some obvious differences of course: the age range of the athletes starts at 35 and goes all the way to over 100,  and there are no minimum qualifying standards, so many  of the events feature fun-runners mingling - at least at the start of the race - with the world-.</p>\r\n<p>The number one highlight for me  has of course to be returning with a full set of medals - Indiv. They were both really exciting races, ending with a lap of the track at the Main Stadium where my lack of finishing speed  made things difficult, as I clung on to second place in the 10k by just six seconds and got squeezed into third place by just 3 seconds in the Half Marathon. I loved the friendliness from other athletes, and the spectating too, especially seeing Steve Atkinson post 3 pbs in the 800m and 1500m races and fight his way back on the last lap of the 1500m semi to make it into the Final  after three runners had overtaken him.</p>\r\n<p>STEVE SELBY: Away from the track we savour life in bustling Malaga; early morning walks through the now quiet maze of alleyways , only recently vacated  by  boisterous revellers heading homewards after waking us in the small hours (the one drawback of our centrally-located flat! ). We  break into a jog in the morning sun for a half hour run through the lovely botanic gardens with sunlight breaking through the canopy of trees above our heads. We then return to our flat for the team breakfast of coffee / fresh bread / jam / eggs and avocado on toast. Then it's off to Carranque Stadium to see the world's best over 35s perform amazing  feats of age on the track to thunderous applause . Sore throats ease as we head back to the flat to listen tolerantly to Whelpton's daily musings on who his potential rivals may be in the Half. The Kenyan? Who is this Kenyan ? Surely his reported times can't be accurate? We all ponder ... !</p>\r\n<p>.</p>\r\n<p><br />MALCOLM KEMP: One of my most memorable moments was when I registered for my races at the imposing main stadium on the day I arrived. I walked out on to the gallery in the towering main stand and was confronted by this 9-laned blue track, thinking I've got to run twelve and a half laps on that in two days time!</p>\r\n<p>NIGEL HERRON: A fantastic experience. The standard was world-quality but completely inclusive. We were all athletes together,  speaking the language of \"Ouch!That hurts\".?Come and join us on the next adventure, if you are old enough!<br /> --</p>\r\n<p><a href=\"https://world-masters-athletics.com/championships/results-championships-outdoor/\">https://world-masters-athletics.com/championships/results-championships-outdoor/</a></p>\r\n<p></p>\r\n<p></p>",
+            "modified_date": "2018-09-28T06:14:21.000Z",
+            "title": "",
+            "component": 2776,
+            "created_date": "2018-09-27T06:25:35.000Z"
+        }
+    },
+    {
+        "pk": 625,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 625,
+            "image": "news/625/thumbnail/2152.jpeg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2777,
+        "model": "news.component",
+        "fields": {
+            "news": 625,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2152,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-28T06:14:21.000Z",
+            "image_alt": "",
+            "image": "news/625/image/2152.jpeg",
+            "component": 2777,
+            "caption": "",
+            "created_date": "2018-09-27T06:25:35.000Z"
+        }
+    },
+    {
+        "pk": 2778,
+        "model": "news.component",
+        "fields": {
+            "news": 625,
+            "order": 2
+        }
+    },
+    {
+        "pk": 2153,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-28T06:14:21.000Z",
+            "image_alt": "",
+            "image": "news/625/image/2153.jpeg",
+            "component": 2778,
+            "caption": "",
+            "created_date": "2018-09-27T06:25:35.000Z"
+        }
+    },
+    {
+        "pk": 2779,
+        "model": "news.component",
+        "fields": {
+            "news": 625,
+            "order": 3
+        }
+    },
+    {
+        "pk": 2154,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-28T06:14:21.000Z",
+            "image_alt": "",
+            "image": "news/625/image/2154.jpeg",
+            "component": 2779,
+            "caption": "",
+            "created_date": "2018-09-27T06:25:35.000Z"
+        }
+    },
+    {
+        "pk": 2780,
+        "model": "news.component",
+        "fields": {
+            "news": 625,
+            "order": 4
+        }
+    },
+    {
+        "pk": 2155,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-28T06:14:21.000Z",
+            "image_alt": "",
+            "image": "news/625/image/2155.jpeg",
+            "component": 2780,
+            "caption": "",
+            "created_date": "2018-09-27T06:25:35.000Z"
+        }
+    },
+    {
+        "pk": 2781,
+        "model": "news.component",
+        "fields": {
+            "news": 625,
+            "order": 5
+        }
+    },
+    {
+        "pk": 2156,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-28T06:14:21.000Z",
+            "image_alt": "",
+            "image": "news/625/image/2156.jpeg",
+            "component": 2781,
+            "caption": "",
+            "created_date": "2018-09-27T06:25:35.000Z"
+        }
+    },
+    {
+        "pk": 2782,
+        "model": "news.component",
+        "fields": {
+            "news": 625,
+            "order": 6
+        }
+    },
+    {
+        "pk": 2157,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-28T06:14:21.000Z",
+            "image_alt": "",
+            "image": "news/625/image/2157.jpeg",
+            "component": 2782,
+            "caption": "",
+            "created_date": "2018-09-27T06:25:35.000Z"
+        }
+    },
+    {
+        "pk": 2783,
+        "model": "news.component",
+        "fields": {
+            "news": 625,
+            "order": 7
+        }
+    },
+    {
+        "pk": 2158,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-28T06:14:21.000Z",
+            "image_alt": "",
+            "image": "news/625/image/2158.jpeg",
+            "component": 2783,
+            "caption": "",
+            "created_date": "2018-09-27T06:25:35.000Z"
+        }
+    },
+    {
+        "pk": 2784,
+        "model": "news.component",
+        "fields": {
+            "news": 625,
+            "order": 8
+        }
+    },
+    {
+        "pk": 2159,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-28T06:14:21.000Z",
+            "image_alt": "",
+            "image": "news/625/image/2159.jpeg",
+            "component": 2784,
+            "caption": "",
+            "created_date": "2018-09-27T06:25:35.000Z"
+        }
+    },
+    {
+        "pk": 2785,
+        "model": "news.component",
+        "fields": {
+            "news": 625,
+            "order": 9
+        }
+    },
+    {
+        "pk": 2160,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-28T06:14:21.000Z",
+            "image_alt": "",
+            "image": "news/625/image/2160.jpeg",
+            "component": 2785,
+            "caption": "",
+            "created_date": "2018-09-27T06:25:35.000Z"
+        }
+    },
+    {
+        "pk": 2786,
+        "model": "news.component",
+        "fields": {
+            "news": 625,
+            "order": 10
+        }
+    },
+    {
+        "pk": 2161,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-09-28T06:14:21.000Z",
+            "image_alt": "",
+            "image": "news/625/image/2161.jpeg",
+            "component": 2786,
+            "caption": "",
+            "created_date": "2018-09-27T06:25:35.000Z"
+        }
+    },
+    {
+        "pk": 626,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-10-01T17:55:56.000Z",
+            "author": 1,
+            "title": "The idiots guide to the Tor Des Geants",
+            "summary": "Andy Pumfrey gives his account of the Tor Dest Geants Ultra",
+            "created_date": "2018-10-01T17:55:56.000Z",
+            "slug": "the-idiots-guide-to-the-tor-des-geants"
+        }
+    },
+    {
+        "pk": 2787,
+        "model": "news.component",
+        "fields": {
+            "news": 626,
+            "order": 0
+        }
+    },
+    {
+        "pk": 626,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><span ><strong>The Idiots gu(Marathon/Ultra 105)</strong></span></p>\r\n<p><em>Andy Pumphrey gives his account of the Tor Des Geants Ultra.......</em></p>\r\n<p>&ldquo;I was first made aware of the Tor Des Geants around five years ago when my friend Cliff told me that another friend Lorenzo had just completed this race, at the time I d't think much of it. It was not until I was taking part in the Lavaredo Ultra Trail that I was made aware of how tough it was. It was in Cortina, Italy where Kevin Bush and I were wearing our UTMB finisher tops and Lorenzo came out wearing his Tor Des Geants finisher top. Kevin commented that our UTMB tops were not in the same league as his finisher jacket.</p>\r\n<p>Being a little competitive, I had to look into this race and when I looked at the distance and height gain I wondered if it was possible to run/march over 200 miles up and down the s. When I read about the race I discovered that the Tor des G&eacute;ants is one of the premier endurance trail running races in the world. It is a non-stop 340K ultra-trail race covering an entire region; from the 4,000m Italian Alps to the Gran Paradiso Natural Park and the Aosta Valley. The race crosses 34 municipalities, 25 mountain passes, 30 alpine lakes, and 2 national parks. It has a mountain elevation of 24,000m and actual climbing of around 30,000m. On top of this, on average only 50% normally finish the race due to fatigue, illness, weather or injury.</p>\r\n<p>Following my early retirement from my 24/7 job in London I dec't have a go now, I would never enter. So in went my entry showing all the previous mountain races I had completed. I also looked at the list of other British runners who had entered and was now even more concerned that: \"I am out of my league\". But to my excitement I got in, this was quickly followed by that sudden realisation that I now had a massive race ahead of me and it was over twice the length of any other mountain race I had previously completed.</p>\r\n<p>To give myself the best chance possible I d(basically do as much as possible without breaking anything) I d, long distance races each month (Marathons/ultras) I ran the South Downs way 100, Transylvania 100, ran a marathon each weekend and also ran up and down the s. I can honestly say that since my entry was accepted there has not been a single day the TDG has not been on my mind, this race can take over your life and for me it d.</p>\r\n<p>As well as running this race, for me it was a logistical nightmare. The preparation is so important, you have to take so much kit and you need to plan this race to the finest detail. Because of sleep deprivation you even need a list to remind you what to do at the Life A, when the brain is in a mess you will forget something and your race will be over or you will be disqualified. Your kit even includes transporting running crampons and enough batteries to keep your two head torches running for up to 6 days. If you are discovered without the extensive kit in your running back pack you will be disqualified.</p>\r\n<p>So with two suitcases full of kit, I arrived (a bit stressed) at a nice camp site just outs. All was going to plan? As with all older men we have to get up in the night to have a wee. Unfortunately during this process I fell over and all I remember is waking up on the ground. I sa. Being a trained first a, d. However next morning I discovered I had a broken nose, two black eyes, a nasty cut on the s, all this and I had not even started the race.</p>\r\n<p><br />Following some First A. Every shop has TDG posters and there are banners everywhere. I went to the registration and they checked almost every part of my kit and d. Very different to the 5 minute pre-race briefing I normally get.</p>\r\n<p>I also collected my Life Base Bag, this bag is transported along the route and meets you six times, at each life base. In this bag you put extra clothes socks, spare running top; spare microfleece sweater, food, gels, instant energy bars, packs of batteries, battery charge packs, sunscreen, foot care tape, wet wipes, loo roll, medical kit, body gl, a second bigger pair of trainers, spare insoles, toothbrush and most important English tea bags.</p>\r\n<p>Next morning, was the day of the race, so on with the running kit and a 20L running bag that has so much kit in it that you think you are carrying a small child on your back. I am now at the start with 900 other hopeful competitors, to say I'm nervous is an understatement. We now have well over 200 miles to run and about 28 mountains to run up and down. The send-off was amazing with thousands of spectators, lining the streets and cheering us off.</p>\r\n<p>Almost immediately we marched up the first mountain of over 2500m and then immediately down the other s. Then as soon as we came down one mountain we went straight up the next one and this is why it's called TOR DES GEANTS. You don't get nice flat bits to jog along, except for one small section it's almost all straight up and straight down one mountain after another. Many of the mountain paths are extremely technical and dangerous; one slip in the wrong place and you will plunge down a mountain. Sadly people do get injured and last year one poor guy was killed. The only way I could cope with this was to just pretend the drops were not there. The terrain on many of the climbs are extremely brutal and you often question how you will get to the top and then when you finally make it to the top you think how the hell will I get down there. </p>\r\n<p>To put the height and terrain into some prospective, Ben Nevis is 1,345M whereas most of these mountains are over 2,500M. In addition the terrain destroys your kit. During the event I wrecked a brand new pair of trainers, destroyed two pairs of socks, destroyed a Gore-Tex pair of trousers, snapped one running pole and broke the handle on the other running pole.</p>\r\n<p>Smelly - After 3 days in the same clothes I finally had the chance to change into a set of clean clothes. Up to that point I must have stunk. Lucky for me I have no sense of smell. Anyone who knows me will be aware that since a head injury I have no sense of smell. However even I could taste (in the air) how bad I stunk. If you dec.</p>\r\n<p>Sleep - We started this race at Sunday lunchtime and I finished at 12.20 on Saturday morning 132 hour later. During that time I had just 5 hours sleep. I don't know how I kept going with so little sleep but somehow with power naps I d. For example on the last final uphill section before the last 5k run down into Courmayeur I was so desperate for sleep that I kept falling over and d. At the top of the hill was an a, so I collapsed on to a deck chair and asked them to wake me in half an hour, I then passed out? Half an hour later, when they woke me, I was back to normal and ran all the way down an evil technical track to the finish without any problem.</p>\r\n<p>The Weather was good during most days it was 25-30 degrees and at night on the mountains it was below freezing. We had one lightning storm and two nights of rain. At one point we thought we were in a m? This happened whilst going up one mountain on a wet night. We suddenly had some amazing sporadic rain, the rain was so heavy that you could almost drown in, this went on for around two minutes until, we realised we had stup.</p>\r\n<p><br />Diet - When you are running, marching and climbing for 23 hours a day you probably consume between 8,000-10,000 calories, somehow you need to put as much of this back as is possible. The food was good and I managed my diet very well, at each station I always consumed a bowl of pasta with ham cheese, bread and fruit. I also filled up a goody bag with biscuits, sweets and dried fruit of which I grazed on between stations. This worked well for me and kept my energy levels up. During the week I only lost around half a stone in weight.</p>\r\n<p>The Route &amp; Support - The route is spectacular and I was privileged to witness some of the best views I had ever seen. The course was very well marked and I only went slightly off-course 3 times. There were over 2,000 support staff, that is two for each runner and the a, also some of the people were at the a.</p>\r\n<p>Cows - One small risk is the wildlife and on one occasion we d, it is strange that even when you are totally knackered and your life is at risk you have this energy to run like hell.</p>\r\n<p>The race is so strange in that, there is no end to it, you finish one day and it just rolls into the next day and then the next night and so on, it just seems to go on and on. When I got to Courmayeur and the finish was a few hundred yards away I knew then I had done it. I d't care who was in bed at 12.20am I was going to celebrate. I was not shy about my finish and let the whole town know that Andy from the UK had arrived. Luckily for me a few hundred late drinkers were still up and more than happy to cheer me in. At the finish you run up a large platform and celebrate. I celebrated the hardest thing I have ever done in my life.</p>\r\n<p>The race took me 132 hours, I came 260th out of 900, I was extremely pleased with my race and how it all went, and other than my broken nose I only had one small blister.</p>\r\n<p>In Summary this was the best race of my life in so many ways and I would recommend it to anyone who is mad enough to enter</p>\r\n<p>I have now been back one week and I need to rest up for a bit, as I physically knackered.&rdquo;</p>\r\n<p></p>",
+            "modified_date": "2018-10-01T17:55:56.000Z",
+            "title": "",
+            "component": 2787,
+            "created_date": "2018-10-01T17:55:56.000Z"
+        }
+    },
+    {
+        "pk": 626,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 626,
+            "image": "news/626/thumbnail/2162.jpeg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2788,
+        "model": "news.component",
+        "fields": {
+            "news": 626,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2162,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-10-01T17:55:56.000Z",
+            "image_alt": "",
+            "image": "news/626/image/2162.jpeg",
+            "component": 2788,
+            "caption": "",
+            "created_date": "2018-10-01T17:55:56.000Z"
+        }
+    },
+    {
+        "pk": 2789,
+        "model": "news.component",
+        "fields": {
+            "news": 626,
+            "order": 2
+        }
+    },
+    {
+        "pk": 2163,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-10-01T17:55:56.000Z",
+            "image_alt": "",
+            "image": "news/626/image/2163.jpeg",
+            "component": 2789,
+            "caption": "",
+            "created_date": "2018-10-01T17:55:56.000Z"
+        }
+    },
+    {
+        "pk": 2790,
+        "model": "news.component",
+        "fields": {
+            "news": 626,
+            "order": 3
+        }
+    },
+    {
+        "pk": 2164,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-10-01T17:55:56.000Z",
+            "image_alt": "",
+            "image": "news/626/image/2164.jpeg",
+            "component": 2790,
+            "caption": "",
+            "created_date": "2018-10-01T17:55:56.000Z"
+        }
+    },
+    {
+        "pk": 2791,
+        "model": "news.component",
+        "fields": {
+            "news": 626,
+            "order": 4
+        }
+    },
+    {
+        "pk": 2165,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-10-01T17:55:56.000Z",
+            "image_alt": "",
+            "image": "news/626/image/2165.jpeg",
+            "component": 2791,
+            "caption": "",
+            "created_date": "2018-10-01T17:55:56.000Z"
+        }
+    },
+    {
+        "pk": 2792,
+        "model": "news.component",
+        "fields": {
+            "news": 626,
+            "order": 5
+        }
+    },
+    {
+        "pk": 2166,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-10-01T17:55:56.000Z",
+            "image_alt": "",
+            "image": "news/626/image/2166.jpeg",
+            "component": 2792,
+            "caption": "",
+            "created_date": "2018-10-01T17:55:56.000Z"
+        }
+    },
+    {
+        "pk": 2793,
+        "model": "news.component",
+        "fields": {
+            "news": 626,
+            "order": 6
+        }
+    },
+    {
+        "pk": 2167,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-10-01T17:55:56.000Z",
+            "image_alt": "",
+            "image": "news/626/image/2167.jpeg",
+            "component": 2793,
+            "caption": "",
+            "created_date": "2018-10-01T17:55:56.000Z"
+        }
+    },
+    {
+        "pk": 627,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-10-05T06:19:10.000Z",
+            "author": 1,
+            "title": "Phoenix Nomads",
+            "summary": "Phoenix members give their account of the Nomads cycling trial",
+            "created_date": "2018-10-05T06:13:12.000Z",
+            "slug": "phoenix-nomads"
+        }
+    },
+    {
+        "pk": 2794,
+        "model": "news.component",
+        "fields": {
+            "news": 627,
+            "order": 0
+        }
+    },
+    {
+        "pk": 627,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><strong><span >Phoenix Nomads</span></strong></p>\r\n<p>Phoenix members give their account of the Nomads cycling trial</p>\r\n<p></p>\r\n<p></p>\r\n<p>Liz Hall...<br />\"A cycling reliability trial involves each cyclist choosing a time slot in which they will complete the course. This includes any checkpoints and , if necessary, fixing any mechanical issues. Hannah and Lydia chose the 26 mile course and others d. Cyclists must navigate the chosen route and can r.<br />The course included parts of the Weald of Sussex and Ashdown Forest. Weather was beautiful if a little chilly.<br />Brighton Phoenix cyclist included:<br />Andy Bone<br />Tom Sanderson<br />Jim Whitelegg<br />James Lathbury<br />Mark Cossey<br />Alex Cruttenden<br />Paul Lawrence<br />Jon Wright<br />Andrew Brooks<br />Hannah Felton<br />Lydia Felton<br />Richard Nerurkar\"</p>\r\n<p></p>\r\n<p>\"Liz and Andy had recommended this event so I signed up straight away and it d't disappoint. Upon arrival at Ditchling Village Hall, it was refreshing to see a slick 'sort yourself out' check-in process followed by a cuppa. In no time at all, our group was called and we were off. The main group split fairly early with team PHX settling into steady (perhaps slightly too quick) pace and collectively making sure we were on the right route. Much to our delight, Richard Nerurkar who had to start in the group behind us soon managed to catch up and we were a full team. At the first checkpoint, I suffered my very first pedal unclip catastrophe and came a cropper. I thought no one saw but I think everyone was just being polite. Nothing to see here.</p>\r\n<p>Our group dwindled over the latter parts of the routes. A pacey early start and quite a few climbs took their toll but we d. Upon final check-in, we were welcomed with another cuppa and an array of delicious cake. No better way to spend a Sunday morning and hats off to Sussex Nomads who put on this great event. Looking forward to the next one.\"<br /><em>Mark</em></p>\r\n<p>\"I really enjoyed it. It was a fantastic route, (even K) the marshals were great and the cakes were fantastic! Hope to be back for the Beacon Hill Climb.\"<br /><em>Tom</em></p>\r\n<p>\"What a great event, perfect conditions, beautiful route, punchy climbs and quiet lanes around the Ashdown Forest. All finished off with homemade cake.<br />Happy 40th Nomads.\"<br /><em>Andy</em></p>\r\n<p><br />\"I echo Andy's comments. It was a lovely route and a friendly run event.\"<br /><em>Jim<br /> Thanks Jim for the photo!</em></p>\r\n<p></p>",
+            "modified_date": "2018-10-05T06:19:10.000Z",
+            "title": "",
+            "component": 2794,
+            "created_date": "2018-10-05T06:13:12.000Z"
+        }
+    },
+    {
+        "pk": 627,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 627,
+            "image": "news/627/thumbnail/2168.jpeg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2795,
+        "model": "news.component",
+        "fields": {
+            "news": 627,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2168,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-10-05T06:19:10.000Z",
+            "image_alt": "",
+            "image": "news/627/image/2168.jpeg",
+            "component": 2795,
+            "caption": "",
+            "created_date": "2018-10-05T06:13:12.000Z"
+        }
     }
 ]
