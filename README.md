@@ -234,7 +234,7 @@ flake8
 To test the backend code:
 
 ```
-pylint
+pytest
 ```
 
 ## CI
