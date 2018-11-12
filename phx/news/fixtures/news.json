@@ -67853,5 +67853,616 @@
             "caption": "",
             "created_date": "2018-10-05T06:13:12.000Z"
         }
+    },
+    {
+        "pk": 628,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-10-16T06:18:56.000Z",
+            "author": 1,
+            "title": "Super Sprinter",
+            "summary": "Andrew Brooks gives his account of taking the new course record at the Anne Boleyn Super Sprint Tri",
+            "created_date": "2018-10-16T06:18:56.000Z",
+            "slug": "super-sprinter"
+        }
+    },
+    {
+        "pk": 2796,
+        "model": "news.component",
+        "fields": {
+            "news": 628,
+            "order": 0
+        }
+    },
+    {
+        "pk": 628,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><strong><span >Super Sprinter</span></strong></p>\r\n<p>Andrew Brooks gives his account of the Anne Boleyn Super Sprint at Hever Castle. Although he doesn&rsquo;t mention it, Andrew finished the 400m swim, 20Km bike r!</p>\r\n<p><br />&ldquo;The weather in the morning was overcast and cold; the savvy triathloners had put on their wet suit even before registration!<br />Water was cold (about 14 degrees) and very cloudy / muddy.<br />Overall the event was well organised and in beautiful settings, not only was there multiple events but plenty for families to do as well, there was even a fun fair<br />I found the swim a trial, being a beginner I'm not used to the free-for-all at the start - although we were set off in waves, it was true thrashing mayhem and difficult to get keep composed - not sure why they don't send swimmers off one by one - far more civilised!<br />The cycle was around the villages and was undulating and open, but was well marshalled<br />Run was then around the Hever grounds - probably the most scenic part of the tri, and the end was well supported with plenty of drinks and food<br />Would definitely recommend for next year (be good if they could do the swim better, I'll give this feedback to them)&rdquo;<br /><em></em></p>\r\n<p><em>Thanks Andrew For this report</em></p>\r\n<p><em><em><a href=\"https://www.stuweb.co.uk/race/1Wp/674.html\">https://www.stuweb.co.uk/race/1Wp/674.html</a></em><br /></em></p>",
+            "modified_date": "2018-10-16T06:18:56.000Z",
+            "title": "",
+            "component": 2796,
+            "created_date": "2018-10-16T06:18:56.000Z"
+        }
+    },
+    {
+        "pk": 629,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-10-24T07:21:43.000Z",
+            "author": 1,
+            "title": "Good in the wood... updated!",
+            "summary": "Saturday 13th saw the start of the Cross Country season",
+            "created_date": "2018-10-22T06:25:20.000Z",
+            "slug": "good-in-the-wood-updated"
+        }
+    },
+    {
+        "pk": 2797,
+        "model": "news.component",
+        "fields": {
+            "news": 629,
+            "order": 0
+        }
+    },
+    {
+        "pk": 629,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><strong><span >Good in the wood</span></strong></p>\r\n<p>Saturday 13th October saw the start of Cross Country season. Held at Goodwood, the CRoss Country Relays saw a record number entrants this year as18 Sussex Clubs entered some 200 teams - that's over 700 runners aged 11 to 70!<br />Sadly, Phoenix only had 2 teams medal: The U17 women's team of Mia Edwards, Maia Hardman and Milly Dickinson brought home the gold winning in 48:26, 2 seconds ahead of Brighton &amp; Hove. The V50 men (Steve Atkinson, Andy Bone, Steve Shelby, Paul Wishart) finished in 2nd in their race to win silver.</p>\r\n<p>Just missing out on medals: 4th place V40 men (Karn Sandilands, Tom Rick wood, Joe Butler, Alex Bonzi) and V35 4th (Kathryn Harnett, Gill Checkley, Charlotte Softley) and 5th for senior women (Jessica Prior, Bobby Searle, Connie Jankowski).<br />Well done to all who competed!</p>\r\n<p></p>\r\n<p><a href=\"http://www.sussexathletics.net\">http://www.sussexathletics.net</a></p>",
+            "modified_date": "2018-10-24T07:21:43.000Z",
+            "title": "",
+            "component": 2797,
+            "created_date": "2018-10-22T06:25:20.000Z"
+        }
+    },
+    {
+        "pk": 629,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 629,
+            "image": "news/629/thumbnail/2169.jpeg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2798,
+        "model": "news.component",
+        "fields": {
+            "news": 629,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2169,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-10-24T07:21:43.000Z",
+            "image_alt": "",
+            "image": "news/629/image/2169.jpeg",
+            "component": 2798,
+            "caption": "",
+            "created_date": "2018-10-22T06:25:20.000Z"
+        }
+    },
+    {
+        "pk": 630,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-10-27T14:50:35.000Z",
+            "author": 1,
+            "title": "Phoenix at the Prom",
+            "summary": "The penultimate race of the 2018 Sussex Grand Prix was held Sunday October 21st at Hove Prom. Phoenix were out in force!",
+            "created_date": "2018-10-27T14:48:45.000Z",
+            "slug": "phoenix-at-the-prom"
+        }
+    },
+    {
+        "pk": 2799,
+        "model": "news.component",
+        "fields": {
+            "news": 630,
+            "order": 0
+        }
+    },
+    {
+        "pk": 630,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><span ><strong>Phoenix at the Prom</strong></span></p>\r\n<p >As a beautiful blue sky and unseasonably mild weather drew crowds to the promenade for a few steps by the beach and strokes on the paddle board, about 400 runners converged with a final warm up jog and str.<br /><br />Arena 80's Hove Prom 10k promised a fast course and the Phoenix contingent duly obliged, delivering an impressive array of strong performances. One of our most remarkable collective achievements was the turnout from our members: a total of 31 Phoenix runners participated, representing almost 10% of the whole field and more than a third of all club runners.<br /><br />The only obstacle between our team and those coveted PBs and prizes was a sea of lactate. Phoenix embraced the pain, led by Ian Leitch who won the men's race in 31:38 with a minute's lead on the second runner.<br /><br />Our women raked the SGP points in with Charlotte bringing 495 points, Amelia 494, Anna 493, Caz 492, Gill 485, Izzy 483, Taff 469 and Sarah 455. The men's strong turnout produced some impressive performances too: not far behind Ian's 500 points was Patrick coming 4th in 33:55 with 498 points, Paul Wishart 479 points followed by Paul Whelpton 475 points and 1st V60 by 1 whole second! Steve Selby brought 465 points, Lance 460, Pete 456 with a strong performance just a few days before the Beachy Head marathon. Will brought 451 points, Malcolm 430, Andrew Haig 420, Daniel Allen 418, Scott 412, Rob 409, and Gary 403 points.<br /><br />Although the weather warmed up during the race the wind remained very mild and the conditions great for breaking some personal bests, and we certainly made the most of it as we skilfully circumnavigated cyclists and high-fived children to bring home the following trove: Paul Weir came 9th with a new PB of 35:18, Steve Atkinson took 15 seconds off his PB (and the V50 prize as a bonus!) in a stunning 36:03. Lewis came 13th with a new PB of 36:07, Sean smashed 37mins by 6 seconds, Matt in 37:08, Cyril joined the sub-40 club with a 2:22 PB thanks to Steve Selby's skilful pacing, Phil dipped under 42min with a new 36s PB of 41:46, Richard lowered his PB by almost 8 minutes in 44:19, and Chris Berry broke 45 in 44:46.<br /><br />Although some are threatening to boycott Hove Prom 10k until the biscuit medals are brought back, Arena 80's organisation, support and encouragements for all runners was outstanding, and whoever was in charge of planning the weather should get a well-deserved pay rise!</p>\r\n<p><em>Thanks to Cyril for sending this report.</em></p>\r\n<p><em><a href=\"https://www.nice-work.org.uk/races/hove-prom-10k/2018\">https://www.nice-work.org.uk/races/hove-prom-10k/2018<br /></a></em></p>\r\n<p></p>",
+            "modified_date": "2018-10-27T14:50:35.000Z",
+            "title": "",
+            "component": 2799,
+            "created_date": "2018-10-27T14:48:45.000Z"
+        }
+    },
+    {
+        "pk": 630,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 630,
+            "image": "news/630/thumbnail/2170.jpeg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2800,
+        "model": "news.component",
+        "fields": {
+            "news": 630,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2170,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-10-27T14:50:35.000Z",
+            "image_alt": "",
+            "image": "news/630/image/2170.jpeg",
+            "component": 2800,
+            "caption": "",
+            "created_date": "2018-10-27T14:48:45.000Z"
+        }
+    },
+    {
+        "pk": 2801,
+        "model": "news.component",
+        "fields": {
+            "news": 630,
+            "order": 2
+        }
+    },
+    {
+        "pk": 2171,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-10-27T14:50:35.000Z",
+            "image_alt": "",
+            "image": "news/630/image/2171.jpeg",
+            "component": 2801,
+            "caption": "",
+            "created_date": "2018-10-27T14:48:45.000Z"
+        }
+    },
+    {
+        "pk": 2802,
+        "model": "news.component",
+        "fields": {
+            "news": 630,
+            "order": 3
+        }
+    },
+    {
+        "pk": 2172,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-10-27T14:50:35.000Z",
+            "image_alt": "",
+            "image": "news/630/image/2172.jpg",
+            "component": 2802,
+            "caption": "",
+            "created_date": "2018-10-27T14:48:45.000Z"
+        }
+    },
+    {
+        "pk": 631,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-10-29T07:17:36.000Z",
+            "author": 1,
+            "title": "Phoenix fly high... updated!",
+            "summary": "The Phoenix men's team posted an impressive 5th place at the annual SEAA Southern Cross Country Relays - the highest ever placing by a team from Sussex",
+            "created_date": "2018-10-27T14:56:21.000Z",
+            "slug": "phoenix-fly-high-updated"
+        }
+    },
+    {
+        "pk": 2803,
+        "model": "news.component",
+        "fields": {
+            "news": 631,
+            "order": 0
+        }
+    },
+    {
+        "pk": 631,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><span ><strong>Phoenix fly high</strong></span></p>\r\n<p><br />Archie Davis writes:</p>\r\n<p>Celebrations were in order for the club last weekend (20th October) as the Phoenix men's team posted an impressive 5th place at the annual SEAA Southern Cross Country Relays - the highest ever placing by a team from Sussex.</p>\r\n<p>The quartet were blessed with one of the warmest October days in recent history, as well as a generously flat course just shy of 5k, which would always compliment a team of runners who weren't traditionally suited to the cross country season.</p>\r\n<p>Phoenix were lead out by Max Pickard who made his intentions clear right from the gun, moving to the front of the race to gain a strong position. Despite a couple of very strong athletes from Highgate Harriers pulling away, Pickard managed to stay well in contention, finishing fast to hand over in sixth position.</p>\r\n<p>Leg two was run by the newest member of the Phoenix AC team Declan Neary - the Yorkshire-born man ran sensationally to gain a further two positions, rounding off his leg in fourth place with a time of 14:25; the 13th fastest time of the day.</p>\r\n<p>He handed over to Oliver Johnson who prov, holding his position well to take Phoenix into the final leg in sixth place - not bad for a young man who has barely started his Winter training following a Summer break.</p>\r\n<p>The final leg of the day came from Archie Davis, who had to put up with being chased down by the two fastest athletes of the day - one of those a current training partner of Double-Double Olympic champion Mo Farah.<br />After running the majority of the final leg by himself, Davis picked up one more place to take the team to fifth, running the ninth fastest leg of the day in an impressive 14:15.</p>\r\n<p>An exceptional performance from the whole team at such an early stage of the season - proving that the depth of Phoenix's running squad is possibly the strongest it has ever been. That says a lot for a club with such a successful history...&rdquo;</p>\r\n<p>Ollie Johnson adds:</p>\r\n<p>&rdquo;The Southern Cross Relays were much more difficult in comparison to the Sussex Cross Country Relays. The course was much flatter but it was also very uneven underfoot so it was difficult to get into a good rhythm. Max Pickard and Declan Neary d. I handed over to Archie in 5th and that's where we finished. There were some top half marathon/10k/5k runners that we were up against so we were very pleased with the result. Training prior to this was more endurance based, with 800m reps on the track and a threshold session on the Monday before the race. It was a hot day so it was a very good test.&rdquo;</p>\r\n<p><em>Thank you Archie &amp; Ollie for these reports - as impressive as the running!</em></p>\r\n<p><em><a href=\"http://www.seaa.org.uk/index.php/results/cross-country\">http://www.seaa.org.uk/index.php/results/cross-country</a><br /></em></p>\r\n<p></p>",
+            "modified_date": "2018-10-29T07:17:36.000Z",
+            "title": "",
+            "component": 2803,
+            "created_date": "2018-10-27T14:56:21.000Z"
+        }
+    },
+    {
+        "pk": 631,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 631,
+            "image": "news/631/thumbnail/2173.jpeg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2804,
+        "model": "news.component",
+        "fields": {
+            "news": 631,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2173,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-10-29T07:17:36.000Z",
+            "image_alt": "",
+            "image": "news/631/image/2173.jpeg",
+            "component": 2804,
+            "caption": "",
+            "created_date": "2018-10-27T14:56:21.000Z"
+        }
+    },
+    {
+        "pk": 2805,
+        "model": "news.component",
+        "fields": {
+            "news": 631,
+            "order": 2
+        }
+    },
+    {
+        "pk": 2174,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-10-29T07:17:36.000Z",
+            "image_alt": "",
+            "image": "news/631/image/2174.jpeg",
+            "component": 2805,
+            "caption": "",
+            "created_date": "2018-10-27T14:56:21.000Z"
+        }
+    },
+    {
+        "pk": 632,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-11-04T17:42:38.000Z",
+            "author": 1,
+            "title": "Maybe it was just that easy....!?!",
+            "summary": "Richard Thompson conquered the Beachy Head marathon - here&rsquo;s how!",
+            "created_date": "2018-11-04T17:39:12.000Z",
+            "slug": "maybe-it-was-just-that-easy"
+        }
+    },
+    {
+        "pk": 2806,
+        "model": "news.component",
+        "fields": {
+            "news": 632,
+            "order": 0
+        }
+    },
+    {
+        "pk": 632,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><strong><span >Maybe it was just that easy....!?!</span></strong></p>\r\n<p>&ldquo;After pulling up last year on the first hill due to a back / hamstring issue, the Beachy Head marathon was a demon I had to slay. It turned out to be much more than that on the day though.</p>\r\n<p>Simply it's a race that delivers way more than its fair share of endorphins per mile than most others. That's not just me but everyone I have spoken to that has completed it.</p>\r\n<p>If you've run or know the SDW relay you'll be familiar with big chunks of legs 1 and 2. Picture staggering views from the r, the support through Jevington, Alfriston and Exceat, taking in the best parts of Friston Forest and then finishing over the 7 sisters, all on a cool clear day in near perfect running conditions. I forgot the excellent marshalling, a.</p>\r\n<p>My favourite shout out was an enthusiastic Phoenix supporter reminding me after 20 miles of hills it was 'only the sisters and then you're home mate'. I've heard similar welcome shouts at 20 miles in the Brighton marathon, but compare Basin Rd South with the view of the 7 sisters stretching ahead of you towards Belle Tout lighthouse, turquoise waters against those intensely white cliffs, a spitfire doing a fly by (no joke) - and and you may be able to understand why this race should be cons. Each time you crest one of the sisters it's like a shot in the arm to get you over the next one. It is simply an all round winner.</p>\r\n<p>I want to thank Pete and Phil for most of the shared long runs and encouragement. In the weeks leading up we discussed multiple theories and tactics for the &gt;3500 ft of elevation gain - but for me it was summed up by Milan who had just nailed a sub 3 and a position on the podium. When I asked him how he tackled the bigger hills his advice was just to run it hard all the way. Maybe it was just that easy... &ldquo;</p>\r\n<p><em>Thanks Richard - great report!</em></p>\r\n<p><em><a href=\"../../results\">http://www.brightonphoenix.org.uk/results</a><br /></em></p>\r\n<p><em><br /></em></p>\r\n<p></p>",
+            "modified_date": "2018-11-04T17:42:38.000Z",
+            "title": "",
+            "component": 2806,
+            "created_date": "2018-11-04T17:39:12.000Z"
+        }
+    },
+    {
+        "pk": 632,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 632,
+            "image": "news/632/thumbnail/2175.jpeg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2807,
+        "model": "news.component",
+        "fields": {
+            "news": 632,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2175,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-11-04T17:42:38.000Z",
+            "image_alt": "",
+            "image": "news/632/image/2175.jpeg",
+            "component": 2807,
+            "caption": "",
+            "created_date": "2018-11-04T17:39:12.000Z"
+        }
+    },
+    {
+        "pk": 2808,
+        "model": "news.component",
+        "fields": {
+            "news": 632,
+            "order": 2
+        }
+    },
+    {
+        "pk": 2176,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-11-04T17:42:38.000Z",
+            "image_alt": "",
+            "image": "news/632/image/2176.jpeg",
+            "component": 2808,
+            "caption": "",
+            "created_date": "2018-11-04T17:39:12.000Z"
+        }
+    },
+    {
+        "pk": 2809,
+        "model": "news.component",
+        "fields": {
+            "news": 632,
+            "order": 3
+        }
+    },
+    {
+        "pk": 2177,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-11-04T17:42:38.000Z",
+            "image_alt": "",
+            "image": "news/632/image/2177.jpeg",
+            "component": 2809,
+            "caption": "",
+            "created_date": "2018-11-04T17:39:12.000Z"
+        }
+    },
+    {
+        "pk": 2810,
+        "model": "news.component",
+        "fields": {
+            "news": 632,
+            "order": 4
+        }
+    },
+    {
+        "pk": 2178,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-11-04T17:42:38.000Z",
+            "image_alt": "",
+            "image": "news/632/image/2178.jpeg",
+            "component": 2810,
+            "caption": "",
+            "created_date": "2018-11-04T17:39:12.000Z"
+        }
+    },
+    {
+        "pk": 2811,
+        "model": "news.component",
+        "fields": {
+            "news": 632,
+            "order": 5
+        }
+    },
+    {
+        "pk": 2179,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-11-04T17:42:38.000Z",
+            "image_alt": "",
+            "image": "news/632/image/2179.jpeg",
+            "component": 2811,
+            "caption": "",
+            "created_date": "2018-11-04T17:39:12.000Z"
+        }
+    },
+    {
+        "pk": 633,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-11-04T17:57:33.000Z",
+            "author": 1,
+            "title": "Beacon beauties",
+            "summary": "Some Brighton Phoenix members braved the freezing north wind early on Sunday October 28th in the morning to do the Sussex Nomads hill climb up Ditchling Beacon.",
+            "created_date": "2018-11-04T17:57:33.000Z",
+            "slug": "beacon-beauties"
+        }
+    },
+    {
+        "pk": 2812,
+        "model": "news.component",
+        "fields": {
+            "news": 633,
+            "order": 0
+        }
+    },
+    {
+        "pk": 633,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p ><strong><span >Beacon beauties</span></strong></p>\r\n<p>Some Brighton Phoenix members braved the freezing north wind early on Sunday October 28th in the morning to do the Sussex Nomads hill climb up Ditchling Beacon.</p>\r\n<p>The race involves sprinting uphill from a standing start on a bike in TT fashion. It might be short but done properly you are bound to taste your lung lining by the finish!</p>\r\n<p>Thank you Sussex Nomads for the amazing action shots.</p>\r\n<p><a href=\"http://www.sussexnomads.com/wp-content/uploads/asgarosforum/298/RESULTS.pdf\">http://www.sussexnomads.com/wp-content/uploads/asgarosforum/298/RESULTS.pdf</a></p>\r\n<p></p>",
+            "modified_date": "2018-11-04T17:57:33.000Z",
+            "title": "",
+            "component": 2812,
+            "created_date": "2018-11-04T17:57:33.000Z"
+        }
+    },
+    {
+        "pk": 633,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 633,
+            "image": "news/633/thumbnail/2180.jpeg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2813,
+        "model": "news.component",
+        "fields": {
+            "news": 633,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2180,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-11-04T17:57:33.000Z",
+            "image_alt": "",
+            "image": "news/633/image/2180.jpeg",
+            "component": 2813,
+            "caption": "",
+            "created_date": "2018-11-04T17:57:33.000Z"
+        }
+    },
+    {
+        "pk": 2814,
+        "model": "news.component",
+        "fields": {
+            "news": 633,
+            "order": 2
+        }
+    },
+    {
+        "pk": 2181,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-11-04T17:57:33.000Z",
+            "image_alt": "",
+            "image": "news/633/image/2181.jpeg",
+            "component": 2814,
+            "caption": "",
+            "created_date": "2018-11-04T17:57:33.000Z"
+        }
+    },
+    {
+        "pk": 2815,
+        "model": "news.component",
+        "fields": {
+            "news": 633,
+            "order": 3
+        }
+    },
+    {
+        "pk": 2182,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-11-04T17:57:33.000Z",
+            "image_alt": "",
+            "image": "news/633/image/2182.jpeg",
+            "component": 2815,
+            "caption": "",
+            "created_date": "2018-11-04T17:57:33.000Z"
+        }
+    },
+    {
+        "pk": 2816,
+        "model": "news.component",
+        "fields": {
+            "news": 633,
+            "order": 4
+        }
+    },
+    {
+        "pk": 2183,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-11-04T17:57:33.000Z",
+            "image_alt": "",
+            "image": "news/633/image/2183.jpeg",
+            "component": 2816,
+            "caption": "",
+            "created_date": "2018-11-04T17:57:33.000Z"
+        }
+    },
+    {
+        "pk": 2817,
+        "model": "news.component",
+        "fields": {
+            "news": 633,
+            "order": 5
+        }
+    },
+    {
+        "pk": 2184,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-11-04T17:57:33.000Z",
+            "image_alt": "",
+            "image": "news/633/image/2184.jpeg",
+            "component": 2817,
+            "caption": "",
+            "created_date": "2018-11-04T17:57:33.000Z"
+        }
+    },
+    {
+        "pk": 634,
+        "model": "news.news",
+        "fields": {
+            "modified_date": "2018-11-05T21:34:38.000Z",
+            "author": 1,
+            "title": "Stretches of Spain",
+            "summary": "Paul Whelpton reports on the Almijara Half Marathon, a challenging trail race in southern Spain that winds through rocky ravines and climbs 1000m up tiny mountain footpaths.",
+            "created_date": "2018-11-05T17:49:57.000Z",
+            "slug": "stretches-of-spain"
+        }
+    },
+    {
+        "pk": 2818,
+        "model": "news.component",
+        "fields": {
+            "news": 634,
+            "order": 0
+        }
+    },
+    {
+        "pk": 634,
+        "model": "news.editorial",
+        "fields": {
+            "content": "<p></p>\r\n<p>Paul Whelpton reports on the Almijara Trail Half Marathon:</p>\r\n<p>\"Possibly not the most sensible race to tackle whilst nursing a cracked rib (sustained in a fall on the relatively unchallenging terrain of Old Shoreham Road). But the Almijara Trail Half Marathon, through rocky ravines and climbing 1000m up tiny mountain footpaths in the Sierra de Almijara, was just too tempting, starting as it d&rsquo;s throw away from the hol in nearby Nerja on Spain&rsquo;s sunny southern coastline.</p>\r\n<p>Not the easiest race either for a tall skinny runner with a high centre of gravity and very poor balance, (as displayed to much amusement during our Wednesday Track session warmup drills). Slightly frustrating to see young nimble locals bounding past me on the long stretches of tricky downhill paths whilst I lumbered down dislodging loose stones and fearing the worst &ndash; though I only took a tumble once and made sure the cracked rib stayed clear of the impact! Uphills were lung-bursting but great fun &ndash; despite lots of scrambly bits that were hard to walk up without using your hands let alone try to run up. And as soon as the paths w&rsquo;d overtaken me on the tricky downhill bits.</p>\r\n<p>Other things I loved were the great welcome from locals (plenty of spectators shouting encouragement even at the water stations right up in the mountains, and half a dozen runners must have stopped to help when I took a tumble); the totally amazing views of valleys mountains and sea; and the exhilaration of charging down the relatively easy finishing stretch - 3 km along familiar w the weirdest negative split I&rsquo;ve ever done: slowest km 11mins 10 seconds, last km 3mins 50 seconds! At 2 hours 25 that has to be my slowest ever Half Marathon, but it got me on the podium as fastest V65 and with a prerace target of sub 2:30 I was pretty satisfied with my time. Will definitely be badgering Andy Pumphrey for some tips and working on my downhill technique so I can have another crack at this one next year!\"</p>",
+            "modified_date": "2018-11-05T21:34:38.000Z",
+            "title": "",
+            "component": 2818,
+            "created_date": "2018-11-05T17:49:57.000Z"
+        }
+    },
+    {
+        "pk": 634,
+        "model": "news.thumbnail",
+        "fields": {
+            "news": 634,
+            "image": "news/634/thumbnail/2185.jpg",
+            "image_alt": ""
+        }
+    },
+    {
+        "pk": 2819,
+        "model": "news.component",
+        "fields": {
+            "news": 634,
+            "order": 1
+        }
+    },
+    {
+        "pk": 2185,
+        "model": "news.image",
+        "fields": {
+            "modified_date": "2018-11-05T21:34:38.000Z",
+            "image_alt": "",
+            "image": "news/634/image/2185.jpg",
+            "component": 2819,
+            "caption": "",
+            "created_date": "2018-11-05T17:49:57.000Z"
+        }
     }
 ]

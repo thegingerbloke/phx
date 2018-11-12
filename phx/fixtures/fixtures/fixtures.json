@@ -23459,20 +23459,164 @@
         "pk": 1464,
         "model": "fixtures.fixture",
         "fields": {
-            "modified_date": "2018-09-25T14:29:12.000Z",
-            "location": "SGP",
-            "title": "Hove Prom 10K",
+            "modified_date": "2018-10-12T17:00:07.000Z",
+            "location": "",
+            "title": "Hever Super Sprint Tri",
+            "author": 1,
+            "event_date": "2018-09-22",
+            "link_url": "",
+            "created_date": "2018-10-12T17:00:07.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1465,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-10-14T19:11:58.000Z",
+            "location": "",
+            "title": "Bedford Autodrome Duathlon",
+            "author": 1,
+            "event_date": "2018-10-14",
+            "link_url": "",
+            "created_date": "2018-10-14T19:10:27.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1466,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-10-18T09:31:47.000Z",
+            "location": "",
+            "title": "Sussex Cross Country Relays",
+            "author": 1,
+            "event_date": "2018-10-13",
+            "link_url": "",
+            "created_date": "2018-10-17T20:26:21.000Z",
+            "categories": [
+                2
+            ]
+        }
+    },
+    {
+        "pk": 1467,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-10-21T16:20:18.000Z",
+            "location": "",
+            "title": "SGP Hove Prom 10k",
             "author": 1,
             "event_date": "2018-10-21",
-            "link_url": "http://sussexraces.tripod.com/sussexraceseventplanner.html",
-            "created_date": "2017-11-09T16:14:26.000Z",
+            "link_url": "",
+            "created_date": "2018-10-21T15:31:11.000Z",
             "categories": [
                 4
             ]
         }
     },
     {
-        "pk": 1465,
+        "pk": 1468,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-10-21T16:20:38.000Z",
+            "location": "",
+            "title": "Great South Run (10m)",
+            "author": 1,
+            "event_date": "2018-10-21",
+            "link_url": "",
+            "created_date": "2018-10-21T16:19:00.000Z",
+            "categories": [
+                1
+            ]
+        }
+    },
+    {
+        "pk": 1469,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-10-23T20:14:24.000Z",
+            "location": "",
+            "title": "SEAA Southern XC Relay Championships",
+            "author": 1,
+            "event_date": "2018-10-20",
+            "link_url": "",
+            "created_date": "2018-10-23T20:02:09.000Z",
+            "categories": [
+                2
+            ]
+        }
+    },
+    {
+        "pk": 1470,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-10-28T20:13:48.000Z",
+            "location": "",
+            "title": "Beachy Head Marathon",
+            "author": 1,
+            "event_date": "2018-10-27",
+            "link_url": "",
+            "created_date": "2018-10-27T17:46:51.000Z",
+            "categories": [
+                2
+            ]
+        }
+    },
+    {
+        "pk": 1471,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-10-28T19:48:11.000Z",
+            "location": "",
+            "title": "Crawley 10k",
+            "author": 1,
+            "event_date": "2018-10-28",
+            "link_url": "",
+            "created_date": "2018-10-28T19:48:11.000Z",
+            "categories": [
+                1
+            ]
+        }
+    },
+    {
+        "pk": 1472,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-11-01T11:13:27.000Z",
+            "location": "",
+            "title": "Sussex Nomads Hill climb",
+            "author": 1,
+            "event_date": "2018-10-28",
+            "link_url": "",
+            "created_date": "2018-11-01T11:13:27.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1473,
+        "model": "fixtures.fixture",
+        "fields": {
+            "modified_date": "2018-11-01T13:18:34.000Z",
+            "location": "",
+            "title": "ETU European Aquathlon Championships",
+            "author": 1,
+            "event_date": "2018-10-24",
+            "link_url": "",
+            "created_date": "2018-11-01T13:18:34.000Z",
+            "categories": [
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1474,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-07-02T16:30:01.000Z",
@@ -23488,39 +23632,7 @@
         }
     },
     {
-        "pk": 1466,
-        "model": "fixtures.fixture",
-        "fields": {
-            "modified_date": "2018-09-28T16:52:05.000Z",
-            "location": "Goodwood CountryPark",
-            "title": "Sussex XC relays *ALL AGES",
-            "author": 1,
-            "event_date": "2018-10-13",
-            "link_url": "http://www.sussexathletics.net/Fixtures",
-            "created_date": "2018-08-14T17:02:20.000Z",
-            "categories": [
-                2
-            ]
-        }
-    },
-    {
-        "pk": 1467,
-        "model": "fixtures.fixture",
-        "fields": {
-            "modified_date": "2018-09-28T16:53:13.000Z",
-            "location": "Stanmer Park",
-            "title": "Sussex XC League 1 *ALL AGES",
-            "author": 1,
-            "event_date": "2018-11-10",
-            "link_url": "http://www.sussexathletics.net/Fixtures",
-            "created_date": "2018-08-14T17:04:11.000Z",
-            "categories": [
-                2
-            ]
-        }
-    },
-    {
-        "pk": 1468,
+        "pk": 1475,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-09-28T16:55:53.000Z",
@@ -23536,7 +23648,7 @@
         }
     },
     {
-        "pk": 1469,
+        "pk": 1476,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T17:07:34.000Z",
@@ -23552,7 +23664,7 @@
         }
     },
     {
-        "pk": 1470,
+        "pk": 1477,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-09-28T17:01:53.000Z",
@@ -23568,7 +23680,7 @@
         }
     },
     {
-        "pk": 1471,
+        "pk": 1478,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-18T18:14:54.000Z",
@@ -23584,7 +23696,7 @@
         }
     },
     {
-        "pk": 1472,
+        "pk": 1479,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-18T18:15:31.000Z",
@@ -23600,7 +23712,7 @@
         }
     },
     {
-        "pk": 1473,
+        "pk": 1480,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-09-28T17:06:55.000Z",
@@ -23616,7 +23728,7 @@
         }
     },
     {
-        "pk": 1474,
+        "pk": 1481,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-09-28T17:09:15.000Z",
@@ -23632,7 +23744,7 @@
         }
     },
     {
-        "pk": 1475,
+        "pk": 1482,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T17:20:00.000Z",
@@ -23648,7 +23760,7 @@
         }
     },
     {
-        "pk": 1476,
+        "pk": 1483,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T17:21:06.000Z",
@@ -23664,7 +23776,7 @@
         }
     },
     {
-        "pk": 1477,
+        "pk": 1484,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-08-14T17:22:04.000Z",
@@ -23680,87 +23792,7 @@
         }
     },
     {
-        "pk": 1478,
-        "model": "fixtures.fixture",
-        "fields": {
-            "modified_date": "2018-08-18T18:29:39.000Z",
-            "location": "Wormwood Scrubs tbc",
-            "title": "SEAA CX Relays",
-            "author": 1,
-            "event_date": "2018-10-20",
-            "link_url": "http://seaa.org.uk/index.php/events/cross-country",
-            "created_date": "2018-08-18T18:29:39.000Z",
-            "categories": [
-                2
-            ]
-        }
-    },
-    {
-        "pk": 1479,
-        "model": "fixtures.fixture",
-        "fields": {
-            "modified_date": "2018-08-18T18:35:11.000Z",
-            "location": "",
-            "title": "GO TRI East Grinstead Aquathlon",
-            "author": 1,
-            "event_date": "2018-10-14",
-            "link_url": "https://www.britishtriathlon.org/events/go-tri-east-grinstead-aquathlon_9522",
-            "created_date": "2018-08-18T18:35:11.000Z",
-            "categories": [
-                3
-            ]
-        }
-    },
-    {
-        "pk": 1480,
-        "model": "fixtures.fixture",
-        "fields": {
-            "modified_date": "2018-08-21T12:19:43.000Z",
-            "location": "",
-            "title": "Bedford Duathlon (ETU Qualifier)",
-            "author": 1,
-            "event_date": "2018-10-14",
-            "link_url": "http://nicetrievents.com",
-            "created_date": "2018-08-21T12:19:43.000Z",
-            "categories": [
-                3
-            ]
-        }
-    },
-    {
-        "pk": 1481,
-        "model": "fixtures.fixture",
-        "fields": {
-            "modified_date": "2018-08-21T12:20:40.000Z",
-            "location": "",
-            "title": "East Grinstead Aquathlon",
-            "author": 1,
-            "event_date": "2018-10-14",
-            "link_url": "https://www.egtri.com/index.php/aquathlon-home",
-            "created_date": "2018-08-21T12:20:40.000Z",
-            "categories": [
-                3
-            ]
-        }
-    },
-    {
-        "pk": 1482,
-        "model": "fixtures.fixture",
-        "fields": {
-            "modified_date": "2018-08-21T12:25:03.000Z",
-            "location": "Gravesend",
-            "title": "South East Team Relay Duathlon",
-            "author": 1,
-            "event_date": "2018-11-04",
-            "link_url": "http://www.bridgetriathlon.co.uk/race-calendar/team-relay-duathlon/",
-            "created_date": "2018-08-21T12:21:58.000Z",
-            "categories": [
-                3
-            ]
-        }
-    },
-    {
-        "pk": 1483,
+        "pk": 1485,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-09-28T17:04:37.000Z",
@@ -23776,7 +23808,7 @@
         }
     },
     {
-        "pk": 1484,
+        "pk": 1486,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-09-25T14:39:19.000Z",
@@ -23792,7 +23824,7 @@
         }
     },
     {
-        "pk": 1485,
+        "pk": 1487,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-09-28T17:08:15.000Z",
@@ -23808,7 +23840,7 @@
         }
     },
     {
-        "pk": 1486,
+        "pk": 1488,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-09-28T21:25:35.000Z",
@@ -23824,7 +23856,7 @@
         }
     },
     {
-        "pk": 1487,
+        "pk": 1489,
         "model": "fixtures.fixture",
         "fields": {
             "modified_date": "2018-09-28T21:26:29.000Z",
