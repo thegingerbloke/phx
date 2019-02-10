@@ -1,0 +1,10 @@
+Django
+django_extensions
+django-ckeditor
+django-cron
+django-environ
+django-nested-admin
+easy-thumbnails
+facebook-sdk
+psycopg2-binary
+twitter
