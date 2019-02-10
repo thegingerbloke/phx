@@ -88,7 +88,7 @@ jobs:
           command: |
             . venv/bin/activate
             cp .env.ci.example .env
-            cd phx && pytest --ds=phx.settings.ci
+            cd phx && python manage.py test --settings=phx.settings.ci
 
 workflows:
   version: 2
