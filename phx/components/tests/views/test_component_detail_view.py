@@ -4,8 +4,8 @@ from django.conf import settings
 from django.test import TestCase, override_settings
 from django.urls import reverse
 
-TEST_BASE_DIR = os.path.join(settings.BASE_DIR, 'components/tests')
-TEST_TEMPLATE_DIR = os.path.join(TEST_BASE_DIR, 'templates')
+TEST_SITE_ROOT = os.path.join(settings.SITE_ROOT, 'components/tests')
+TEST_TEMPLATE_DIR = os.path.join(TEST_SITE_ROOT, 'templates')
 TEST_TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -14,7 +14,7 @@ TEST_TEMPLATES = [
 ]
 
 
-@override_settings(BASE_DIR=TEST_BASE_DIR, TEMPLATES=TEST_TEMPLATES)
+@override_settings(SITE_ROOT=TEST_SITE_ROOT, TEMPLATES=TEST_TEMPLATES)
 class TestComponentDetailView(TestCase):
     def test_url_resolves(self):
         """"

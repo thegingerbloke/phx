@@ -1,12 +1,15 @@
+# import pytest
+
 import os
 
 from django.conf import settings
 from django.test import TestCase, override_settings
 from django.urls import reverse
 
-TEST_BASE_DIR = os.path.join(settings.BASE_DIR, 'components/tests')
+TEST_SITE_ROOT = os.path.join(settings.SITE_ROOT, 'components/tests')
 
 
+# @pytest.mark.current
 class TestComponentListView(TestCase):
     def test_url_resolves(self):
         """"
@@ -16,7 +19,7 @@ class TestComponentListView(TestCase):
 
         self.assertEqual(url, '/components/')
 
-    @override_settings(BASE_DIR=TEST_BASE_DIR)
+    @override_settings(SITE_ROOT=TEST_SITE_ROOT)
     def test_get(self):
         """"
         GET request uses template
