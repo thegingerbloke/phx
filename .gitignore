@@ -11,9 +11,6 @@
 /node_modules/
 npm-debug.log
 
-# VS Code
-.vscode
-
 # Python
 *.py[cod]
 __pycache__
@@ -25,6 +22,10 @@ __pycache__
 
 # Distribution / packaging
 env/
+.env
+.env.local
+.env.dev
+.env.production
 
 # Uploaded assets
 media/
