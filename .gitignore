@@ -15,11 +15,6 @@ npm-debug.log
 *.py[cod]
 __pycache__
 
-# Local/Dev/Production config
-**/*/settings/local.py
-**/*/settings/dev.py
-**/*/settings/production.py
-
 # Distribution / packaging
 env/
 .env

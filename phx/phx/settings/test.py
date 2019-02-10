@@ -1,12 +1,15 @@
-import os
-
 from .base import *  # noqa
-
-HOST = 'http://example.com'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db_test.sqlite3'),  # noqa
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'phx_test',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
     }
 }
+
+HOST = 'http://example.com'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
