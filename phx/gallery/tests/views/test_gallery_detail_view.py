@@ -5,15 +5,16 @@ from ..factories import GalleryFactory, ImageFactory
 
 
 class TestGalleryDetailView(TestCase):
-
     def test_url_resolves(self):
         """"
         URL resolves as expected
         """
         gallery = GalleryFactory(title='this? is& a! (test*)')
         url = reverse(
-            'gallery-detail', kwargs={'pk': gallery.id, 'slug': gallery.slug}
-        )
+            'gallery-detail', kwargs={
+                'pk': gallery.id,
+                'slug': gallery.slug
+            })
 
         self.assertEqual(url, '/gallery/1/this-is-a-test/')
 
@@ -23,8 +24,10 @@ class TestGalleryDetailView(TestCase):
         """
         gallery = GalleryFactory(title='this? is& a! (test*)')
         url = reverse(
-            'gallery-detail', kwargs={'pk': gallery.id, 'slug': gallery.slug}
-        )
+            'gallery-detail', kwargs={
+                'pk': gallery.id,
+                'slug': gallery.slug
+            })
 
         response = self.client.get(url)
 
@@ -36,8 +39,10 @@ class TestGalleryDetailView(TestCase):
         GET request returns a 404 when no gallery found
         """
         url = reverse(
-            'gallery-detail', kwargs={'pk': 9999, 'slug': 'this is a test'}
-        )
+            'gallery-detail', kwargs={
+                'pk': 9999,
+                'slug': 'this is a test'
+            })
 
         response = self.client.get(url)
 
@@ -53,19 +58,19 @@ class TestGalleryDetailView(TestCase):
         gallery_3 = GalleryFactory(title='gallery 3')
         url = reverse(
             'gallery-detail',
-            kwargs={'pk': gallery_2.id, 'slug': gallery_2.slug}
-        )
+            kwargs={
+                'pk': gallery_2.id,
+                'slug': gallery_2.slug
+            })
 
         response = self.client.get(url)
         self.assertEqual(response.context['gallery'], gallery_2)
         self.assertEqual(
             response.context['data']['previous']['link_url'],
-            '/gallery/{}/{}/'.format(gallery_1.id, gallery_1.slug)
-        )
+            '/gallery/{}/{}/'.format(gallery_1.id, gallery_1.slug))
         self.assertEqual(
             response.context['data']['next']['link_url'],
-            '/gallery/{}/{}/'.format(gallery_3.id, gallery_3.slug)
-        )
+            '/gallery/{}/{}/'.format(gallery_3.id, gallery_3.slug))
 
     def test_gallery_images(self):
         """"
@@ -76,8 +81,10 @@ class TestGalleryDetailView(TestCase):
         ImageFactory.create_batch(4, gallery=gallery)
 
         url = reverse(
-            'gallery-detail', kwargs={'pk': gallery.id, 'slug': gallery.slug}
-        )
+            'gallery-detail', kwargs={
+                'pk': gallery.id,
+                'slug': gallery.slug
+            })
 
         response = self.client.get(url)
         gallery_instance = response.context['gallery']

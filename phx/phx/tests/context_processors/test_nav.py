@@ -1,5 +1,6 @@
-from django.test import TestCase
 from unittest.mock import Mock
+
+from django.test import TestCase
 
 from ...context_processors.nav import nav
 

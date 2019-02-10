@@ -1,6 +1,7 @@
 from django.test import TestCase
 
 from pages.models import Page
+
 from ...helpers.subnav import generate_subnav
 
 

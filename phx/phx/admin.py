@@ -1,12 +1,6 @@
 from django.contrib.admin import AdminSite
-from django.contrib.auth.admin import (
-    GroupAdmin,
-    UserAdmin,
-)
-from django.contrib.auth.models import (
-    Group,
-    User,
-)
+from django.contrib.auth.admin import GroupAdmin, UserAdmin
+from django.contrib.auth.models import Group, User
 
 
 class PHXAdminSite(AdminSite):

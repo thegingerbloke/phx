@@ -1,16 +1,13 @@
 from django.contrib import admin
+
 from phx.admin import phx_admin
+
 from .models import Social
 
 
 class SocialAdmin(admin.ModelAdmin):
     list_display = [
-        'model',
-        'title',
-        'url',
-        'created_date',
-        'posted',
-        'reposted'
+        'model', 'title', 'url', 'created_date', 'posted', 'reposted'
     ]
     readonly_fields = ['model', 'title', 'url', 'posted', 'reposted']
 

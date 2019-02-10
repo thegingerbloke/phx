@@ -4,7 +4,6 @@ from ...templatetags.highlight import highlight
 
 
 class TestTemplateTagsHighlight(TestCase):
-
     def test_highlight_no_params(self):
         """
         No search, return original string
@@ -23,10 +22,8 @@ class TestTemplateTagsHighlight(TestCase):
         """
         full_text = 'Lorem ipsum dolor sit amet'
         search_term = 'ipsum'
-        expected = (
-            'Lorem <span class="u-highlight">ipsum</span> '
-            'dolor sit amet'
-        )
+        expected = ('Lorem <span class="u-highlight">ipsum</span> '
+                    'dolor sit amet')
 
         results = highlight(full_text, search_term)
 

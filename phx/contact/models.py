@@ -4,17 +4,13 @@ from django.db import models
 class Contact(models.Model):
     name = models.CharField(
         max_length=200,
-        help_text=(
-          'This is won\'t be displayed on the site but helps us '
-          'to identify contacts'
-        ),
+        help_text=('This is won\'t be displayed on the site but helps us '
+                   'to identify contacts'),
     )
     email = models.EmailField(
         max_length=200,
-        help_text=(
-          'This is won\'t be displayed on the site but helps us '
-          'to identify contacts'
-        ),
+        help_text=('This is won\'t be displayed on the site but helps us '
+                   'to identify contacts'),
     )
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
@@ -26,16 +22,12 @@ class Contact(models.Model):
 class Topic(models.Model):
     topic = models.CharField(
         max_length=200,
-        help_text=(
-          'This will appear in the contact form dropdown list'
-        ),
+        help_text=('This will appear in the contact form dropdown list'),
     )
     contact = models.ManyToManyField(
         Contact,
         blank=True,
-        help_text=(
-          'Who should messages for this topic be sent to? '
-        ),
+        help_text=('Who should messages for this topic be sent to? '),
     )
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)

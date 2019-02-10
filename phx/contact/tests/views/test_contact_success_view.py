@@ -3,7 +3,6 @@ from django.urls import reverse
 
 
 class TestContactSuccessView(TestCase):
-
     def test_url_resolves(self):
         """"
         URL resolves as expected

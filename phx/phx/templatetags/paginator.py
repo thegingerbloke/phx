@@ -11,8 +11,7 @@ register = template.Library()
 
 
 @register.inclusion_tag(
-    'components/global/Pagination/Pagination.html',
-    takes_context=True)
+    'components/global/Pagination/Pagination.html', takes_context=True)
 def paginator(context, adjacent_pages=2):
     """
     To be used in conjunction with the object_list generic view.
@@ -35,8 +34,8 @@ def paginator(context, adjacent_pages=2):
         endPage = paginator.num_pages + 1
 
     page_numbers = [
-        n for n in range(startPage, endPage) if (n > 0 and
-                                                 n <= paginator.num_pages)
+        n for n in range(startPage, endPage)
+        if (n > 0 and n <= paginator.num_pages)
     ]
 
     return {

@@ -14,12 +14,10 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-)
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 #
 PROJECT_ROOT = os.path.dirname(BASE_DIR)
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -31,7 +29,6 @@ SECRET_KEY = 'k@sf6to-5%xri=u0gqyzez2&ypvo+hp&)e4pp$czwn&*ue5*_3'
 DEBUG = False
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -102,7 +99,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'phx.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
@@ -113,25 +109,27 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator', # noqa
+        'NAME':
+        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator', # noqa
+        'NAME':
+        'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator', # noqa
+        'NAME':
+        'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator', # noqa
+        'NAME':
+        'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
@@ -145,7 +143,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
@@ -162,15 +159,12 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 MEDIA_URL = '/media/'
 
-
 # Template values
 SITE_TITLE = 'Brighton Phoenix'
 SITE_DESCRIPTION = (
     'Pursuing excellence and honours in athletics and multisport, road, track '
     'and cross-country running, triathlon/duathlon. Coaching and competition, '
-    'advice and inspiration – for all ages and abilities.'
-)
-
+    'advice and inspiration – for all ages and abilities.')
 
 # Cron
 # http://django-cron.readthedocs.io/
@@ -178,7 +172,6 @@ SITE_DESCRIPTION = (
 CRON_CLASSES = [
     'social.cron.SocialCron',
 ]
-
 
 # CK Editor
 # https://github.com/django-ckeditor/django-ckeditor
@@ -191,21 +184,20 @@ CKEDITOR_CONFIGS = {
             ['Link', 'Unlink'],
             ['NumberedList', 'BulletedList'],
         ],
-        'height': 200,
-        'width': 700,
-        'removeDialogTabs': 'link:advanced;link:target',
+        'height':
+        200,
+        'width':
+        700,
+        'removeDialogTabs':
+        'link:advanced;link:target',
     },
     'table': {
-        'toolbar': [
-            ['Undo', 'Redo'],
-            ['Table']
-        ],
+        'toolbar': [['Undo', 'Redo'], ['Table']],
         'height': 200,
         'width': 700,
         'removeDialogTabs': 'table:advanced',
     },
 }
-
 
 # Misc
 

@@ -1,8 +1,10 @@
-from easy_thumbnails.files import get_thumbnailer
-from django.utils.html import format_html
 from django.contrib import admin
+from django.utils.html import format_html
+from easy_thumbnails.files import get_thumbnailer
+
 from phx.admin import phx_admin
-from .models import Gallery, Thumbnail, Image
+
+from .models import Gallery, Image, Thumbnail
 
 
 class ImageAdmin(admin.StackedInline):
@@ -13,11 +15,8 @@ class ImageAdmin(admin.StackedInline):
     def current_image(self, obj):
         thumbnailer = get_thumbnailer(obj.image)
         thumbnail_options = {'size': (200, 200)}
-        return format_html(
-            '<img src="/media/{0}" />'.format(
-                thumbnailer.get_thumbnail(thumbnail_options)
-            )
-        )
+        return format_html('<img src="/media/{0}" />'.format(
+            thumbnailer.get_thumbnail(thumbnail_options)))
 
 
 class ThumbnailAdmin(admin.StackedInline):
@@ -27,20 +26,13 @@ class ThumbnailAdmin(admin.StackedInline):
     def current_image(self, obj):
         thumbnailer = get_thumbnailer(obj.image)
         thumbnail_options = {'size': (200, 200)}
-        return format_html(
-            '<img src="/media/{0}" />'.format(
-                thumbnailer.get_thumbnail(thumbnail_options)
-            )
-        )
+        return format_html('<img src="/media/{0}" />'.format(
+            thumbnailer.get_thumbnail(thumbnail_options)))
 
 
 class GalleryAdmin(admin.ModelAdmin):
     list_display = [
-        'get_thumbnail',
-        'title',
-        'created_date',
-        'author',
-        'image_count'
+        'get_thumbnail', 'title', 'created_date', 'author', 'image_count'
     ]
     list_display_links = ['get_thumbnail', 'title']
     list_select_related = ['author', 'thumbnail']
@@ -56,11 +48,9 @@ class GalleryAdmin(admin.ModelAdmin):
     def get_thumbnail(self, obj):
         thumbnailer = get_thumbnailer(obj.thumbnail.image)
         thumbnail_options = {'size': (100, 100)}
-        return format_html(
-            '<img src="/media/{0}" />'.format(
-                thumbnailer.get_thumbnail(thumbnail_options)
-            )
-        )
+        return format_html('<img src="/media/{0}" />'.format(
+            thumbnailer.get_thumbnail(thumbnail_options)))
+
     get_thumbnail.short_description = 'thumbnail'
 
     def save_model(self, request, obj, form, change):

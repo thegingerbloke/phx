@@ -5,7 +5,6 @@ from ..factories import GalleryFactory
 
 
 class TestGalleryListView(TestCase):
-
     def test_url_resolves(self):
         """"
         URL resolves as expected

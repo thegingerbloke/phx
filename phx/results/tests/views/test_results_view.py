@@ -1,16 +1,17 @@
 from datetime import datetime, timedelta
-from django.test import TestCase
-from django.utils import timezone
-from django.urls import reverse
 
-from pages.models import Page
+from django.test import TestCase
+from django.urls import reverse
+from django.utils import timezone
+
 from fixtures.models import Fixture
-from fixtures.tests.factories import FixtureFactory, CategoryFactory
+from fixtures.tests.factories import CategoryFactory, FixtureFactory
+from pages.models import Page
+
 from ..factories import ResultFactory
 
 
 class TestResultsView(TestCase):
-
     def test_url_resolves(self):
         """"
         URL resolves as expected
@@ -63,8 +64,7 @@ class TestResultsView(TestCase):
 
         # add results for two past fixtures
         past_fixtures = Fixture.objects.filter(
-            event_date__lte=timezone.now()
-        ).distinct()
+            event_date__lte=timezone.now()).distinct()
 
         first_past_fixture = past_fixtures.first()
         last_past_fixture = past_fixtures.last()
@@ -126,8 +126,7 @@ class TestResultsView(TestCase):
 
         first_fixture = FixtureFactory(
             title='First Fixture',
-            categories=[first_category, second_category]
-        )
+            categories=[first_category, second_category])
         first_result = ResultFactory(fixture=first_fixture)
 
         second_fixture = FixtureFactory(title='Second Fixture')
@@ -150,9 +149,7 @@ class TestResultsView(TestCase):
         CategoryFactory(title='Cat 2')
 
         first_fixture = FixtureFactory(
-            title='First Fixture',
-            categories=[first_category]
-        )
+            title='First Fixture', categories=[first_category])
         ResultFactory(fixture=first_fixture)
 
         second_fixture = FixtureFactory(title='Second Fixture')

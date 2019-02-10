@@ -1,12 +1,11 @@
 from factory import RelatedFactory, Sequence
 from factory.django import ImageField
-from factory.fuzzy import FuzzyText, FuzzyChoice
+from factory.fuzzy import FuzzyChoice, FuzzyText
 from factory_djoy import CleanModelFactory
 
 from components.models import ALIGNMENT_CHOICES, BACKGROUND_CHOICES
+
 from ..models import (
-    News,
-    Thumbnail,
     Component,
     Editorial,
     Embed,
@@ -14,10 +13,12 @@ from ..models import (
     Image,
     ListItem,
     ListItems,
+    News,
     Profile,
     ProfileMember,
     Quote,
     Table,
+    Thumbnail,
 )
 
 

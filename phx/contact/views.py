@@ -1,11 +1,13 @@
+from django.shortcuts import get_object_or_404
 from django.views import generic
 from django.views.generic.edit import FormView
-from django.shortcuts import get_object_or_404
-from phx.helpers.subnav import generate_subnav
+
 from components.models import COMPONENT_TYPES
-from pages.models import Page, Component
+from pages.models import Component, Page
+from phx.helpers.subnav import generate_subnav
+
 from .forms import ContactForm, custom_topics
-from .models import Topic, Message
+from .models import Message, Topic
 
 
 class ContactIndexView(FormView):
@@ -20,8 +22,7 @@ class ContactIndexView(FormView):
         context['page'] = page
         context['page_title'] = page.title
         context['components'] = Component.objects.select_related(
-            *COMPONENT_TYPES
-        ).filter(page_id=page.id)
+            *COMPONENT_TYPES).filter(page_id=page.id)
 
         context['breadcrumb'] = self.generate_breadcrumb()
         context['subnav'] = generate_subnav(slug, page)
@@ -56,15 +57,12 @@ class ContactIndexView(FormView):
         message.save()
 
     def generate_breadcrumb(self):
-        return [
-            {
-                'title': 'Home',
-                'linkUrl': '/',
-            },
-            {
-                'title': 'Contact',
-            }
-        ]
+        return [{
+            'title': 'Home',
+            'linkUrl': '/',
+        }, {
+            'title': 'Contact',
+        }]
 
 
 class ContactSuccessView(generic.TemplateView):
@@ -77,16 +75,12 @@ class ContactSuccessView(generic.TemplateView):
         return context
 
     def generate_breadcrumb(self):
-        return [
-            {
-                'title': 'Home',
-                'linkUrl': '/',
-            },
-            {
-                'title': 'Contact',
-                'linkUrl': '/contact/',
-            },
-            {
-                'title': 'Success',
-            }
-        ]
+        return [{
+            'title': 'Home',
+            'linkUrl': '/',
+        }, {
+            'title': 'Contact',
+            'linkUrl': '/contact/',
+        }, {
+            'title': 'Success',
+        }]

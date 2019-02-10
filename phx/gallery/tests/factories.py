@@ -3,7 +3,7 @@ from factory.django import ImageField
 from factory.fuzzy import FuzzyText
 from factory_djoy import CleanModelFactory
 
-from ..models import Gallery, Thumbnail, Image
+from ..models import Gallery, Image, Thumbnail
 
 
 class ThumbnailFactory(CleanModelFactory):

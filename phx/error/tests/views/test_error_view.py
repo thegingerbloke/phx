@@ -2,7 +2,6 @@ from django.test import TestCase
 
 
 class TestErrorView(TestCase):
-
     def test_get_404(self):
         """"
         GET request returns 404

@@ -1,6 +1,7 @@
-from django.db import models
-from django.contrib.auth.models import User
 from ckeditor.fields import RichTextField
+from django.contrib.auth.models import User
+from django.db import models
+
 from fixtures.models import Fixture
 
 
@@ -16,9 +17,7 @@ class Result(models.Model):
         blank=True,
         help_text='This is displayed above the results',
     )
-    results = RichTextField(
-        config_name='table',
-    )
+    results = RichTextField(config_name='table', )
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
     author = models.ForeignKey(

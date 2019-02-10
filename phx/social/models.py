@@ -1,7 +1,7 @@
-from django.db import models
-from twitter import Twitter, OAuth
-from django.conf import settings
 import facebook
+from django.conf import settings
+from django.db import models
+from twitter import OAuth, Twitter
 
 
 class Social(models.Model):
@@ -21,8 +21,7 @@ class Social(models.Model):
 
     def post(self):
         model = Social.objects.filter(
-            posted=False
-        ).order_by('-created_date')[:1].first()
+            posted=False).order_by('-created_date')[:1].first()
 
         if model:
             message = self.create_message(model, 'Latest ')
@@ -33,8 +32,7 @@ class Social(models.Model):
 
     def repost(self):
         model = Social.objects.filter(
-            reposted=False
-        ).order_by('created_date')[:1].first()
+            reposted=False).order_by('created_date')[:1].first()
 
         if model:
             message = self.create_message(model)
@@ -44,23 +42,19 @@ class Social(models.Model):
             model.save()
 
     def create_message(self, model, prefix=''):
-        return '{0}{1}:\n{2} \n\n{3}'.format(
-            prefix,
-            model.model,
-            model.title,
-            model.url
-        )
+        return '{0}{1}:\n{2} \n\n{3}'.format(prefix, model.model, model.title,
+                                             model.url)
 
     def post_to_twitter(self, message):
         if hasattr(settings, 'TWITTER'):
             try:
-                t = Twitter(auth=OAuth(
-                    settings.TWITTER['oauth_token'],
-                    settings.TWITTER['oauth_secret'],
-                    settings.TWITTER['consumer_key'],
-                    settings.TWITTER['consumer_secret']))
+                t = Twitter(
+                    auth=OAuth(settings.TWITTER['oauth_token'],
+                               settings.TWITTER['oauth_secret'],
+                               settings.TWITTER['consumer_key'],
+                               settings.TWITTER['consumer_secret']))
                 t.statuses.update(status=message)
-            except: # noqa
+            except:  # noqa
                 # todo - catch twitter errors
                 pass
 
@@ -68,10 +62,9 @@ class Social(models.Model):
         if hasattr(settings, 'FACEBOOK'):
             try:
                 graph = facebook.GraphAPI(
-                    access_token=settings.FACEBOOK['access_token'],
-                )
+                    access_token=settings.FACEBOOK['access_token'], )
                 page_id = settings.FACEBOOK['page_id']
                 graph.put_object(page_id, 'feed', message=message)
-            except: # noqa
+            except:  # noqa
                 # todo - catch facebook errors
                 pass

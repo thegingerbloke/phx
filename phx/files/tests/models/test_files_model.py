@@ -1,6 +1,7 @@
+from unittest.mock import Mock, patch
+
 from django.core.exceptions import ValidationError
 from django.test import TestCase
-from unittest.mock import Mock, patch
 
 from ...models import file_size_validator
 

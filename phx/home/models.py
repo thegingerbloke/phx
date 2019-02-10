@@ -1,7 +1,8 @@
+from ckeditor.fields import RichTextField
+from django.contrib.auth.models import User
 from django.db import models
 from django.utils.html import strip_tags
-from django.contrib.auth.models import User
-from ckeditor.fields import RichTextField
+
 from gallery.models import Gallery
 
 
@@ -44,11 +45,8 @@ class Announcement(models.Model):
 class Hero(models.Model):
     image = models.ImageField(
         upload_to='home/hero/',
-        help_text=(
-            'Hero images should be at least 1200 pixels wide, '
-            'with an aspect ratio of at least 16:9.'
-        )
-    )
+        help_text=('Hero images should be at least 1200 pixels wide, '
+                   'with an aspect ratio of at least 16:9.'))
     caption = models.CharField(max_length=200, blank=True)
     image_categories = models.ManyToManyField('HeroImageCategory', blank=True)
     created_date = models.DateTimeField(auto_now_add=True)

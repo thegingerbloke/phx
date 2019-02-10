@@ -1,9 +1,10 @@
-from django.db import models
-from django_extensions.db.fields import AutoSlugField
 from django.contrib.auth.models import User
-from django.urls import reverse
-from django.template.defaultfilters import slugify
 from django.core.exceptions import ValidationError
+from django.db import models
+from django.template.defaultfilters import slugify
+from django.urls import reverse
+from django_extensions.db.fields import AutoSlugField
+
 from components.models import (
     AbstractEditorial,
     AbstractEmbed,
@@ -35,16 +36,13 @@ class Page(models.Model):
         null=True,
         help_text=(
             'Select section of the site this page should appear in, '
-            'leave blank if this page shouldn\'t appear under any section'
-        )
-    )
+            'leave blank if this page shouldn\'t appear under any section'))
     slug = AutoSlugField(
         help_text='This will be the URL for this page',
         unique=True,
         overwrite=True,
         slugify_function=lambda value: value,
-        populate_from=generate_slug
-    )
+        populate_from=generate_slug)
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
     author = models.ForeignKey(
@@ -60,9 +58,7 @@ class Page(models.Model):
 
     # Methods
     def get_absolute_url(self):
-        return reverse('page-detail', kwargs={
-            'slug': self.get_slug()
-        })
+        return reverse('page-detail', kwargs={'slug': self.get_slug()})
 
     # strip tags from slug before returning
     def get_slug(self):
@@ -164,8 +160,7 @@ class ListItem(AbstractListItem):
     image = models.ImageField(
         upload_to=get_upload_path,
         blank=True,
-        help_text='Image will be cropped and resized to 800x400'
-    )
+        help_text='Image will be cropped and resized to 800x400')
     list_items = models.ForeignKey(
         ListItems,
         models.SET_NULL,

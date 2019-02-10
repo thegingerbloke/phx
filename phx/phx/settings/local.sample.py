@@ -1,15 +1,15 @@
-from .base import * # noqa
+from .base import *  # noqa
 
 # Set debug mode
 DEBUG = True
 
-INSTALLED_APPS += [ # noqa
+INSTALLED_APPS += [  # noqa
     'debug_toolbar',
 ]
 
 MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
-] + MIDDLEWARE # noqa
+] + MIDDLEWARE  # noqa
 
 # Generate a new secret key, e.g.
 # https://www.miniwebtool.com/django-secret-key-generator/
@@ -45,15 +45,10 @@ TWITTER = {
 }
 
 # Add local facebook keys
-FACEBOOK = {
-    'page_id': '...',
-    'access_token': '...'
-}
+FACEBOOK = {'page_id': '...', 'access_token': '...'}
 
 # Add local Google Analytics key
 ANALYTICS = '...'
 
 # Add IP addresses to enable the debug toolbar
-INTERNAL_IPS = [
-    '127.0.0.1'
-]
+INTERNAL_IPS = ['127.0.0.1']

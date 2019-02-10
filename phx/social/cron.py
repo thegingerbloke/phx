@@ -1,4 +1,5 @@
 from django_cron import CronJobBase, Schedule
+
 from .models import Social
 
 

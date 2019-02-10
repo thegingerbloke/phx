@@ -1,8 +1,10 @@
-from django.views import generic
-from django.urls import reverse
 from django.db.models import Q
+from django.urls import reverse
+from django.views import generic
+
 from components.models import COMPONENT_TYPES
-from .models import News, Component
+
+from .models import Component, News
 
 
 class NewsListView(generic.ListView):
@@ -22,24 +24,19 @@ class NewsListView(generic.ListView):
         search = self.request.GET.get('search')
         if search:
             query = query.filter(
-                Q(title__icontains=search) |
-                Q(summary__icontains=search) |
-                Q(components__editorial__content__icontains=search) |
-                Q(components__table__content__icontains=search)
-            )
+                Q(title__icontains=search) | Q(summary__icontains=search)
+                | Q(components__editorial__content__icontains=search)
+                | Q(components__table__content__icontains=search))
 
         return query
 
     def generate_breadcrumb(self):
-        return [
-            {
-                'title': 'Home',
-                'linkUrl': '/',
-            },
-            {
-                'title': 'News',
-            }
-        ]
+        return [{
+            'title': 'Home',
+            'linkUrl': '/',
+        }, {
+            'title': 'News',
+        }]
 
 
 class NewsDetailView(generic.DetailView):
@@ -50,8 +47,7 @@ class NewsDetailView(generic.DetailView):
 
         id = self.object.id
         context['components'] = Component.objects.select_related(
-            *COMPONENT_TYPES
-        ).filter(news_id=id)
+            *COMPONENT_TYPES).filter(news_id=id)
 
         context['breadcrumb'] = self.generate_breadcrumb()
         context['data'] = {
@@ -66,11 +62,15 @@ class NewsDetailView(generic.DetailView):
         previous = News.objects.filter(id__lt=id).order_by('-id')[0:1].first()
         if previous:
             return {
-                'title': previous.title,
-                'link_url': reverse('news-detail', kwargs={
-                    'pk': previous.id,
-                    'slug': previous.slug
-                })
+                'title':
+                previous.title,
+                'link_url':
+                reverse(
+                    'news-detail',
+                    kwargs={
+                        'pk': previous.id,
+                        'slug': previous.slug
+                    })
             }
 
     def get_next(self):
@@ -78,25 +78,24 @@ class NewsDetailView(generic.DetailView):
         next = News.objects.filter(id__gt=id).order_by('id')[0:1].first()
         if next:
             return {
-                'title': next.title,
-                'link_url': reverse('news-detail', kwargs={
-                    'pk': next.id,
-                    'slug': next.slug
-                })
+                'title':
+                next.title,
+                'link_url':
+                reverse(
+                    'news-detail', kwargs={
+                        'pk': next.id,
+                        'slug': next.slug
+                    })
             }
 
     def generate_breadcrumb(self):
-        breadcrumb = [
-            {
-                'title': 'Home',
-                'linkUrl': '/',
-            },
-            {
-                'title': 'News',
-                'linkUrl': reverse('news-list'),
-            },
-            {
-                'title': self.object.title
-            }
-        ]
+        breadcrumb = [{
+            'title': 'Home',
+            'linkUrl': '/',
+        }, {
+            'title': 'News',
+            'linkUrl': reverse('news-list'),
+        }, {
+            'title': self.object.title
+        }]
         return breadcrumb

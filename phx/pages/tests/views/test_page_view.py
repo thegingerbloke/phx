@@ -1,16 +1,16 @@
-from factory import SubFactory
 from django.test import TestCase
 from django.urls import reverse
+from factory import SubFactory
 
 from ..factories import (
-    PageFactory,
     ComponentFactory,
     EditorialFactory,
     EmbedFactory,
-    ImageFactory,
     FeatureFactory,
+    ImageFactory,
     ListItemFactory,
     ListItemsFactory,
+    PageFactory,
     ProfileFactory,
     ProfileMemberFactory,
     QuoteFactory,
@@ -19,15 +19,12 @@ from ..factories import (
 
 
 class TestPageView(TestCase):
-
     def test_url_resolves(self):
         """"
         URL resolves as expected
         """
         page = PageFactory(title='this? is& a! (test*)')
-        url = reverse(
-            'page-detail', kwargs={'slug': page.get_slug()}
-        )
+        url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
         self.assertEqual(url, '/this-is-a-test/')
 
@@ -36,9 +33,7 @@ class TestPageView(TestCase):
         GET request uses template
         """
         page = PageFactory(title='this? is& a! (test*)')
-        url = reverse(
-            'page-detail', kwargs={'slug': page.get_slug()}
-        )
+        url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
         response = self.client.get(url)
 
@@ -49,9 +44,7 @@ class TestPageView(TestCase):
         """"
         GET request returns a 404 when no article found
         """
-        url = reverse(
-            'page-detail', kwargs={'slug': 'this is a test'}
-        )
+        url = reverse('page-detail', kwargs={'slug': 'this is a test'})
 
         response = self.client.get(url)
 
@@ -67,9 +60,7 @@ class TestPageView(TestCase):
             title='first editorial block',
             component=SubFactory(ComponentFactory, page=page))
 
-        url = reverse(
-            'page-detail', kwargs={'slug': page.get_slug()}
-        )
+        url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -86,9 +77,7 @@ class TestPageView(TestCase):
             title='first embed block',
             component=SubFactory(ComponentFactory, page=page))
 
-        url = reverse(
-            'page-detail', kwargs={'slug': page.get_slug()}
-        )
+        url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -105,9 +94,7 @@ class TestPageView(TestCase):
             title='first feature block',
             component=SubFactory(ComponentFactory, page=page))
 
-        url = reverse(
-            'page-detail', kwargs={'slug': page.get_slug()}
-        )
+        url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -124,9 +111,7 @@ class TestPageView(TestCase):
             caption='first image block',
             component=SubFactory(ComponentFactory, page=page))
 
-        url = reverse(
-            'page-detail', kwargs={'slug': page.get_slug()}
-        )
+        url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -143,9 +128,7 @@ class TestPageView(TestCase):
             component=SubFactory(ComponentFactory, page=page))
         ListItemFactory.create_batch(3, list_items=list_items)
 
-        url = reverse(
-            'page-detail', kwargs={'slug': page.get_slug()}
-        )
+        url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -162,9 +145,7 @@ class TestPageView(TestCase):
             component=SubFactory(ComponentFactory, page=page))
         ProfileMemberFactory.create_batch(3, profile=profile)
 
-        url = reverse(
-            'page-detail', kwargs={'slug': page.get_slug()}
-        )
+        url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -181,9 +162,7 @@ class TestPageView(TestCase):
             quote='first quote block',
             component=SubFactory(ComponentFactory, page=page))
 
-        url = reverse(
-            'page-detail', kwargs={'slug': page.get_slug()}
-        )
+        url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -200,9 +179,7 @@ class TestPageView(TestCase):
             title='first table block',
             component=SubFactory(ComponentFactory, page=page))
 
-        url = reverse(
-            'page-detail', kwargs={'slug': page.get_slug()}
-        )
+        url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
         response = self.client.get(url)
         component = response.context['components'].first()

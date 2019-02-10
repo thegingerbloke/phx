@@ -1,10 +1,9 @@
-from django.test import override_settings, TestCase
+from django.test import TestCase, override_settings
 
 from ...context_processors.global_config import global_config
 
 
 class TestContextProcessorGlobalConfig(TestCase):
-
     def test_global_config(self):
         """
         Return settings in config object

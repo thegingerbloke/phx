@@ -1,7 +1,9 @@
-from django.contrib import admin
 from django.conf import settings
+from django.contrib import admin
+
 from phx.admin import phx_admin
 from phx.helpers.file import file_size_string
+
 from .models import File
 
 

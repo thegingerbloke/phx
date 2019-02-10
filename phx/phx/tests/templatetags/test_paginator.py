@@ -1,11 +1,11 @@
-from django.test import TestCase
 from unittest.mock import Mock
+
+from django.test import TestCase
 
 from ...templatetags.paginator import paginator
 
 
 class TestTemplateTagsPaginator(TestCase):
-
     def test_paginator_simple(self):
         """
         Return paginator params for three pages
@@ -23,7 +23,6 @@ class TestTemplateTagsPaginator(TestCase):
         context = {
             'page_obj': page_obj,
             'request': None,
-
         }
         adjacent_pages = 3
 
@@ -50,7 +49,6 @@ class TestTemplateTagsPaginator(TestCase):
         context = {
             'page_obj': page_obj,
             'request': None,
-
         }
         adjacent_pages = 3
 

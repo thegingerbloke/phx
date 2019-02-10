@@ -1,10 +1,12 @@
-from django.views import generic
-from django.utils import timezone
 from django.shortcuts import get_object_or_404
-from phx.helpers.subnav import generate_subnav
+from django.utils import timezone
+from django.views import generic
+
 from components.models import COMPONENT_TYPES
-from pages.models import Page, Component
-from .models import Fixture, Category
+from pages.models import Component, Page
+from phx.helpers.subnav import generate_subnav
+
+from .models import Category, Fixture
 
 
 class FixturesListView(generic.ListView):
@@ -19,8 +21,7 @@ class FixturesListView(generic.ListView):
         context['page'] = page
         context['page_title'] = page.title
         context['components'] = Component.objects.select_related(
-            *COMPONENT_TYPES
-        ).filter(page_id=page.id)
+            *COMPONENT_TYPES).filter(page_id=page.id)
 
         context['categories'] = Category.objects.all()
         context['subnav'] = generate_subnav(slug, page)
@@ -28,16 +29,12 @@ class FixturesListView(generic.ListView):
 
     def get_queryset(self):
         return Fixture.objects.prefetch_related('categories').filter(
-            event_date__gte=timezone.now(),
-        ).order_by('event_date')
+            event_date__gte=timezone.now(), ).order_by('event_date')
 
     def generate_breadcrumb(self):
-        return [
-            {
-                'title': 'Home',
-                'linkUrl': '/',
-            },
-            {
-                'title': 'Fixtures',
-            }
-        ]
+        return [{
+            'title': 'Home',
+            'linkUrl': '/',
+        }, {
+            'title': 'Fixtures',
+        }]

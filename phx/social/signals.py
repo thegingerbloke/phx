@@ -1,7 +1,7 @@
-from django.urls import reverse
 from django.conf import settings
-from django.utils.html import strip_tags
 from django.template.defaultfilters import truncatechars
+from django.urls import reverse
+from django.utils.html import strip_tags
 
 
 def save_news(sender, instance, created, **kwargs):

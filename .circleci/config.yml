@@ -55,11 +55,23 @@ jobs:
           name: Lint (Backend)
           command: |
             . venv/bin/activate
-            cd phx && flake8
+            cd phx
+            isort --check-only --quiet --recursive --diff phx
+            yapf --diff --recursive --exclude=*migrations* phx
+            flake8
 
   test_backend:
     docker:
       - image: circleci/python:3.6-jessie-node
+        environment:
+          PGHOST: 127.0.0.1
+          PGUSER: root
+
+      - image: circleci/postgres:10-alpine-postgis
+        environment:
+          POSTGRES_USER: testuser
+          POSTGRES_PASSWORD: testpw
+          POSTGRES_DB: testdb
     steps:
       - checkout
       - restore_cache:
@@ -75,7 +87,8 @@ jobs:
           name: Test (Backend)
           command: |
             . venv/bin/activate
-            cd phx && pytest --ds=phx.settings.test
+            cp .env.ci.example .env
+            cd phx && pytest --ds=phx.settings.ci
 
 workflows:
   version: 2

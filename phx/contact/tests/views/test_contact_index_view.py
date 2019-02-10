@@ -2,12 +2,12 @@ from django.test import TestCase, override_settings
 from django.urls import reverse
 
 from pages.models import Page
-from ...models import Message, Topic
+
 from ...forms import ContactForm
+from ...models import Message, Topic
 
 
 class TestContactIndexView(TestCase):
-
     def test_url_resolves(self):
         """"
         URL resolves as expected
@@ -38,15 +38,13 @@ class TestContactIndexView(TestCase):
         Page.objects.create(title='contact')
 
         response = self.client.post(
-            url,
-            {
+            url, {
                 'name': 'Lorem Ipsum',
                 'email': 'lorem@ipsum.com',
                 'topic': 'misc',
                 'message': 'This is a test'
             },
-            follow=True
-        )
+            follow=True)
 
         self.assertEqual(response.status_code, 200)
         self.assertEqual(Message.objects.count(), 1)
@@ -66,15 +64,13 @@ class TestContactIndexView(TestCase):
         Topic.objects.create(topic='Test topic')
 
         response = self.client.post(
-            url,
-            {
+            url, {
                 'name': 'Lorem Ipsum',
                 'email': 'lorem@ipsum.com',
                 'topic': '1',
                 'message': 'This is a test'
             },
-            follow=True
-        )
+            follow=True)
 
         self.assertEqual(response.status_code, 200)
         self.assertEqual(Message.objects.count(), 1)
@@ -98,8 +94,7 @@ class TestContactIndexView(TestCase):
                 # 'topic': 'missing topic',
                 'message': 'This is a test'
             },
-            follow=True
-        )
+            follow=True)
 
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.context['form'].errors, {

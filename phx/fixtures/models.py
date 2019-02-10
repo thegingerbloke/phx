@@ -1,6 +1,6 @@
-from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import RegexValidator
+from django.db import models
 
 
 class Fixture(models.Model):
@@ -9,8 +9,7 @@ class Fixture(models.Model):
     age_groups = models.CharField(
         max_length=200,
         blank=True,
-        help_text='Comma-separated list, or leave blank for open/senior'
-    )
+        help_text='Comma-separated list, or leave blank for open/senior')
     location = models.CharField(max_length=200, blank=True)
     categories = models.ManyToManyField('Category', blank=True)
     link_url = models.URLField(max_length=200, blank=True)
@@ -30,15 +29,13 @@ class Fixture(models.Model):
 class Category(models.Model):
     alphanumeric = RegexValidator(
         r'^[0-9a-zA-Z]*$',
-        'Only alphanumeric characters (a-z, 0-9) are allowed.'
-    )
+        'Only alphanumeric characters (a-z, 0-9) are allowed.')
 
     title = models.CharField(max_length=50)
     abbreviation = models.CharField(
         max_length=12,
         help_text='Please ensure this doesn\'t contain any spaces',
-        validators=[alphanumeric]
-    )
+        validators=[alphanumeric])
 
     # Metadata
     class Meta:

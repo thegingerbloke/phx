@@ -1,9 +1,10 @@
 from datetime import datetime
+
 from factory import post_generation
-from factory.fuzzy import FuzzyText, FuzzyDate
+from factory.fuzzy import FuzzyDate, FuzzyText
 from factory_djoy import CleanModelFactory
 
-from ..models import Fixture, Category
+from ..models import Category, Fixture
 
 
 class CategoryFactory(CleanModelFactory):

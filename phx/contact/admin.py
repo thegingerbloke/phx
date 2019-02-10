@@ -1,6 +1,8 @@
 from django.contrib import admin
+
 from phx.admin import phx_admin
-from .models import Contact, Topic, Message
+
+from .models import Contact, Message, Topic
 
 
 class ContactAdmin(admin.ModelAdmin):

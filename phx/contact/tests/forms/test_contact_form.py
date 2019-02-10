@@ -1,8 +1,9 @@
-from django.test import TestCase, override_settings
 from unittest.mock import patch
 
-from ...models import Topic, Contact
+from django.test import TestCase, override_settings
+
 from ...forms import ContactForm
+from ...models import Contact, Topic
 
 
 @patch('contact.forms.send_mail')

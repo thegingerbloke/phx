@@ -1,7 +1,8 @@
-from django.db import models
-from django_extensions.db.fields import AutoSlugField
 from django.contrib.auth.models import User
+from django.db import models
 from django.urls import reverse
+from django_extensions.db.fields import AutoSlugField
+
 from components.models import (
     AbstractEditorial,
     AbstractEmbed,
@@ -25,8 +26,7 @@ class News(models.Model):
         populate_from='title',
         help_text='This is used as the URL for this news item',
         unique=False,
-        max_length=200
-    )
+        max_length=200)
     summary = models.TextField(
         max_length=1000,
         help_text='Text used on the news listing page',
@@ -48,10 +48,11 @@ class News(models.Model):
 
     # Methods
     def get_absolute_url(self):
-        return reverse('news-detail', kwargs={
-            'pk': self.id,
-            'slug': self.slug,
-        })
+        return reverse(
+            'news-detail', kwargs={
+                'pk': self.id,
+                'slug': self.slug,
+            })
 
     def __str__(self):
         return self.title
@@ -72,9 +73,7 @@ class Thumbnail(models.Model):
         blank=True,
         help_text=(
             'Image to display on the news listing page, '
-            'it will be cropped and resized to 700x500 if it isn\'t already'
-        )
-    )
+            'it will be cropped and resized to 700x500 if it isn\'t already'))
     image_alt = models.CharField(max_length=200, blank=True)
 
     def __str__(self):
@@ -159,8 +158,7 @@ class ListItem(AbstractListItem):
     image = models.ImageField(
         upload_to=get_upload_path,
         blank=True,
-        help_text='Image will be cropped and resized to 800x400'
-    )
+        help_text='Image will be cropped and resized to 800x400')
     list_items = models.ForeignKey(
         ListItems,
         models.SET_NULL,

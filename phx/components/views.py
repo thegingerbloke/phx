@@ -20,9 +20,7 @@ class ComponentsListView(TemplateView):
         group_dirs = self.get_directories(group_path)
 
         for group_dir in group_dirs:
-            group = {
-                'dir': group_dir
-            }
+            group = {'dir': group_dir}
             components_path = os.path.join(group_path, group_dir)
             group['components'] = self.get_components(components_path)
             if (len(group['components']) > 0):
@@ -51,16 +49,13 @@ class ComponentsListView(TemplateView):
 class ComponentsDetailView(TemplateView):
     def get_template_names(self):
         return 'components/{group}/{component}/demo/demo.html'.format(
-            **self.kwargs
-        )
+            **self.kwargs)
 
     def get_context_data(self, **kwargs):
         context = super(ComponentsDetailView, self).get_context_data(**kwargs)
         data_path = (
-            '/templates/components/{group}/{component}/demo/demo.json'
-        ).format(
-            **self.kwargs
-        )
+            '/templates/components/{group}/{component}/demo/demo.json').format(
+                **self.kwargs)
         data_path = settings.BASE_DIR + data_path
         with open(data_path, encoding='utf-8') as data_file:
             context['data'] = json.load(data_file)

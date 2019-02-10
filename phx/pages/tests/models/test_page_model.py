@@ -5,7 +5,6 @@ from ..factories import PageFactory
 
 
 class TestPageModel(TestCase):
-
     def test_page_url(self):
         """
         Get the URL for the Page instance - via the sluggified title
@@ -30,10 +29,8 @@ class TestPageModel(TestCase):
         child_page = PageFactory(title='child page', parent=parent_page)
         grandchild = PageFactory(title='grand child page', parent=child_page)
 
-        self.assertEqual(
-            grandchild.slug,
-            '/this-is-a-test/child-page/grand-child-page/'
-        )
+        self.assertEqual(grandchild.slug,
+                         '/this-is-a-test/child-page/grand-child-page/')
 
     def test_validation_fail(self):
         """

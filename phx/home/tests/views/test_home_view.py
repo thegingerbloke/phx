@@ -1,24 +1,24 @@
-from django.utils import timezone
 from django.test import TestCase
 from django.urls import reverse
+from django.utils import timezone
 
-from ..factories import (
-    ContentFactory,
-    AnnouncementFactory,
-    HeroFactory,
-    HeroImageCategoryFactory
-)
+from fixtures.models import Fixture
 from fixtures.tests.factories import FixtureFactory
 from gallery.tests.factories import GalleryFactory
-from results.tests.factories import ResultFactory
-from news.tests.factories import NewsFactory
-from fixtures.models import Fixture
-from results.models import Result
 from news.models import News
+from news.tests.factories import NewsFactory
+from results.models import Result
+from results.tests.factories import ResultFactory
+
+from ..factories import (
+    AnnouncementFactory,
+    ContentFactory,
+    HeroFactory,
+    HeroImageCategoryFactory,
+)
 
 
 class TestHomeView(TestCase):
-
     def test_url_resolves(self):
         """"
         URL resolves as expected
@@ -84,8 +84,8 @@ class TestHomeView(TestCase):
         announcement = AnnouncementFactory(display_until=future)
         response = self.client.get(url)
 
-        self.assertEqual(
-            response.context['announcement'], announcement.announcement)
+        self.assertEqual(response.context['announcement'],
+                         announcement.announcement)
 
     def test_home_announcement_future_latest(self):
         """
@@ -101,8 +101,8 @@ class TestHomeView(TestCase):
         latest_announcement = AnnouncementFactory(display_until=future)
         response = self.client.get(url)
 
-        self.assertEqual(
-            response.context['announcement'], latest_announcement.announcement)
+        self.assertEqual(response.context['announcement'],
+                         latest_announcement.announcement)
 
     def test_gallery(self):
         """
@@ -128,10 +128,9 @@ class TestHomeView(TestCase):
 
         response = self.client.get(url)
 
-        self.assertEqual(
-            len(response.context['fixtures']), 5)
-        self.assertEqual(
-            response.context['fixtures'][0], Fixture.objects.first())
+        self.assertEqual(len(response.context['fixtures']), 5)
+        self.assertEqual(response.context['fixtures'][0],
+                         Fixture.objects.first())
 
     def test_heroes(self):
         """
@@ -144,9 +143,7 @@ class TestHomeView(TestCase):
         second_category = HeroImageCategoryFactory(category='Cat 2', count=2)
 
         first_hero = HeroFactory(
-            caption='First Fixture',
-            image_categories=[first_category]
-        )
+            caption='First Fixture', image_categories=[first_category])
         HeroFactory.create_batch(5, image_categories=[second_category])
 
         response = self.client.get(url)
@@ -167,8 +164,7 @@ class TestHomeView(TestCase):
 
         HeroFactory(
             caption='First Fixture',
-            image_categories=[first_category, second_category]
-        )
+            image_categories=[first_category, second_category])
 
         response = self.client.get(url)
 
@@ -188,8 +184,8 @@ class TestHomeView(TestCase):
         response = self.client.get(url)
 
         self.assertEqual(len(response.context['results']), 1)
-        self.assertEqual(
-            response.context['results'][0], Result.objects.first())
+        self.assertEqual(response.context['results'][0],
+                         Result.objects.first())
 
     def test_news(self):
         """
@@ -202,7 +198,5 @@ class TestHomeView(TestCase):
 
         response = self.client.get(url)
 
-        self.assertEqual(
-            len(response.context['news']), 3)
-        self.assertEqual(
-            response.context['news'][0], News.objects.first())
+        self.assertEqual(len(response.context['news']), 3)
+        self.assertEqual(response.context['news'][0], News.objects.first())

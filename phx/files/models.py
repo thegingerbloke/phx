@@ -1,6 +1,7 @@
-from django.db import models
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
+from django.db import models
+
 from phx.helpers.file import file_size_string
 
 
@@ -9,25 +10,19 @@ def file_size_validator(value):
     if value.size > limit:
         file_size = file_size_string(value.size)
         limit_size = file_size_string(limit)
-        error = (
-            'File is too large - {0}. '
-            'It should not exceed {1}'
-        ).format(file_size, limit_size)
+        error = ('File is too large - {0}. '
+                 'It should not exceed {1}').format(file_size, limit_size)
         raise ValidationError(error)
 
 
 class File(models.Model):
-    file = models.FileField(
-      upload_to='file',
-      validators=[file_size_validator]
-    )
+    file = models.FileField(upload_to='file', validators=[file_size_validator])
     title = models.CharField(
         max_length=200,
         blank=True,
         help_text=(
-          'This is isn\'t displayed on the website but helps us to identify'
-          'the file in the admin'
-        ),
+            'This is isn\'t displayed on the website but helps us to identify'
+            'the file in the admin'),
     )
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)

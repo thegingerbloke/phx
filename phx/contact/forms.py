@@ -1,15 +1,13 @@
 from django import forms
-from django.core.mail import send_mail, BadHeaderError
+from django.conf import settings
+from django.core.mail import BadHeaderError, send_mail
 from django.http import HttpResponse
 from django.utils import timezone
-from django.conf import settings
+
 from .models import Topic
 
-
-custom_topics = [
-    ('general', 'General Enquiry'),
-    ('misc', 'Miscellaneous / Other')
-]
+custom_topics = [('general', 'General Enquiry'),
+                 ('misc', 'Miscellaneous / Other')]
 
 
 class ContactForm(forms.Form):
@@ -35,11 +33,7 @@ class ContactForm(forms.Form):
         # add custom topics to start and end of dropdown list
         super(ContactForm, self).__init__(*args, **kwargs)
         choices = [(topic.pk, topic.topic) for topic in Topic.objects.all()]
-        choices = [
-            custom_topics[0]
-        ] + choices + [
-            custom_topics[1]
-        ]
+        choices = [custom_topics[0]] + choices + [custom_topics[1]]
         self.fields['topic'].choices = choices
 
     def send_email(self):
@@ -67,20 +61,18 @@ class ContactForm(forms.Form):
         subject = 'Website message received'
         email_from = settings.CONTACT_EMAIL
         email_to = [settings.CONTACT_EMAIL] + additional_recipients
-        message = (
-            'Website message received on {0}\n\n'
-            'From: {1}\n'
-            'Email: {2}\n'
-            'Topic: {3}\n\n'
-            'Message: {4}\n\n'
-            '-----------------------------------\n\n'
-        ).format(
-            timezone.now(),
-            self.cleaned_data['name'],
-            self.cleaned_data['email'],
-            topic_label,
-            self.cleaned_data['message'],
-        )
+        message = ('Website message received on {0}\n\n'
+                   'From: {1}\n'
+                   'Email: {2}\n'
+                   'Topic: {3}\n\n'
+                   'Message: {4}\n\n'
+                   '-----------------------------------\n\n').format(
+                       timezone.now(),
+                       self.cleaned_data['name'],
+                       self.cleaned_data['email'],
+                       topic_label,
+                       self.cleaned_data['message'],
+                   )
 
         try:
             send_mail(subject, message, email_from, email_to)

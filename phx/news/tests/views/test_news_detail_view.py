@@ -1,9 +1,8 @@
-from factory import SubFactory
 from django.test import TestCase
 from django.urls import reverse
+from factory import SubFactory
 
 from ..factories import (
-    NewsFactory,
     ComponentFactory,
     EditorialFactory,
     EmbedFactory,
@@ -11,6 +10,7 @@ from ..factories import (
     ImageFactory,
     ListItemFactory,
     ListItemsFactory,
+    NewsFactory,
     ProfileFactory,
     ProfileMemberFactory,
     QuoteFactory,
@@ -19,15 +19,12 @@ from ..factories import (
 
 
 class TestNewsDetailsView(TestCase):
-
     def test_url_resolves(self):
         """"
         URL resolves as expected
         """
         news = NewsFactory(title='this? is& a! (test*)')
-        url = reverse(
-            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
-        )
+        url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
         self.assertEqual(url, '/news/1/this-is-a-test/')
 
@@ -36,9 +33,7 @@ class TestNewsDetailsView(TestCase):
         GET request uses template
         """
         news = NewsFactory(title='this? is& a! (test*)')
-        url = reverse(
-            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
-        )
+        url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
         response = self.client.get(url)
 
@@ -50,8 +45,10 @@ class TestNewsDetailsView(TestCase):
         GET request returns a 404 when no article found
         """
         url = reverse(
-            'news-detail', kwargs={'pk': 9999, 'slug': 'this is a test'}
-        )
+            'news-detail', kwargs={
+                'pk': 9999,
+                'slug': 'this is a test'
+            })
 
         response = self.client.get(url)
 
@@ -66,19 +63,17 @@ class TestNewsDetailsView(TestCase):
         news_2 = NewsFactory(title='article 2')
         news_3 = NewsFactory(title='article 3')
         url = reverse(
-            'news-detail', kwargs={'pk': news_2.id, 'slug': news_2.slug}
-        )
+            'news-detail', kwargs={
+                'pk': news_2.id,
+                'slug': news_2.slug
+            })
 
         response = self.client.get(url)
         self.assertEqual(response.context['news'], news_2)
-        self.assertEqual(
-            response.context['data']['previous']['link_url'],
-            '/news/{}/{}/'.format(news_1.id, news_1.slug)
-        )
-        self.assertEqual(
-            response.context['data']['next']['link_url'],
-            '/news/{}/{}/'.format(news_3.id, news_3.slug)
-        )
+        self.assertEqual(response.context['data']['previous']['link_url'],
+                         '/news/{}/{}/'.format(news_1.id, news_1.slug))
+        self.assertEqual(response.context['data']['next']['link_url'],
+                         '/news/{}/{}/'.format(news_3.id, news_3.slug))
 
     def test_component_editorial(self):
         """"
@@ -89,9 +84,7 @@ class TestNewsDetailsView(TestCase):
             title='first editorial block',
             component=SubFactory(ComponentFactory, news=news))
 
-        url = reverse(
-            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
-        )
+        url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -109,9 +102,7 @@ class TestNewsDetailsView(TestCase):
             content='blah',
             component=SubFactory(ComponentFactory, news=news))
 
-        url = reverse(
-            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
-        )
+        url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -128,9 +119,7 @@ class TestNewsDetailsView(TestCase):
             title='first feature block',
             component=SubFactory(ComponentFactory, news=news))
 
-        url = reverse(
-            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
-        )
+        url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -147,9 +136,7 @@ class TestNewsDetailsView(TestCase):
             caption='first image block',
             component=SubFactory(ComponentFactory, news=news))
 
-        url = reverse(
-            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
-        )
+        url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -166,9 +153,7 @@ class TestNewsDetailsView(TestCase):
             component=SubFactory(ComponentFactory, news=news))
         ListItemFactory.create_batch(3, list_items=list_items)
 
-        url = reverse(
-            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
-        )
+        url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -185,9 +170,7 @@ class TestNewsDetailsView(TestCase):
             component=SubFactory(ComponentFactory, news=news))
         ProfileMemberFactory.create_batch(3, profile=profile)
 
-        url = reverse(
-            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
-        )
+        url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -204,9 +187,7 @@ class TestNewsDetailsView(TestCase):
             quote='first quote block',
             component=SubFactory(ComponentFactory, news=news))
 
-        url = reverse(
-            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
-        )
+        url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
         response = self.client.get(url)
         component = response.context['components'].first()
@@ -224,9 +205,7 @@ class TestNewsDetailsView(TestCase):
             content='blah',
             component=SubFactory(ComponentFactory, news=news))
 
-        url = reverse(
-            'news-detail', kwargs={'pk': news.id, 'slug': news.slug}
-        )
+        url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
         response = self.client.get(url)
         component = response.context['components'].first()

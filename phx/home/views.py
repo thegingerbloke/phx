@@ -1,10 +1,13 @@
 from itertools import chain
-from django.views import generic
+
 from django.utils import timezone
+from django.views import generic
+
+from fixtures.models import Fixture
 from news.models import News
 from results.models import Result
-from fixtures.models import Fixture
-from .models import Content, Announcement, Hero, HeroImageCategory
+
+from .models import Announcement, Content, Hero, HeroImageCategory
 
 
 class HomeView(generic.TemplateView):
@@ -30,8 +33,8 @@ class HomeView(generic.TemplateView):
 
     def get_announcement(self):
         annoucement = Announcement.objects.filter(
-            display_until__gte=timezone.now()
-        ).order_by('-created_date')[:1].first()
+            display_until__gte=timezone.now()).order_by(
+                '-created_date')[:1].first()
         if annoucement:
             return annoucement.announcement
 
@@ -40,8 +43,7 @@ class HomeView(generic.TemplateView):
 
     def get_fixtures(self):
         return Fixture.objects.filter(
-            event_date__gte=timezone.now()
-        ).order_by('event_date')[:5]
+            event_date__gte=timezone.now()).order_by('event_date')[:5]
 
     def get_gallery(self):
         return self.content.gallery
@@ -56,8 +58,8 @@ class HomeView(generic.TemplateView):
         exclude_ids = []
         for category in categories:
             queryset = Hero.objects.filter(
-                image_categories=category
-            ).order_by('?').exclude(id__in=exclude_ids)[:category.count]
+                image_categories=category).order_by('?').exclude(
+                    id__in=exclude_ids)[:category.count]
             exclude_ids = exclude_ids + [hero.id for hero in queryset]
             heroes = chain(heroes, queryset)
         return list(heroes)
@@ -67,13 +69,12 @@ class HomeView(generic.TemplateView):
 
     def get_news(self):
         return News.objects.select_related('thumbnail').all().order_by(
-            '-created_date'
-        )[:3]
+            '-created_date')[:3]
 
     def get_results(self):
         return Result.objects.select_related('fixture').filter(
-            fixture__event_date__lte=timezone.now()
-        ).order_by('-fixture__event_date')[:5]
+            fixture__event_date__lte=timezone.now()).order_by(
+                '-fixture__event_date')[:5]
 
     def get_title(self):
         return self.content.title

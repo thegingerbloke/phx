@@ -13,12 +13,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from .admin import phx_admin
-from django.urls import path, re_path
-from django.conf.urls import include
 from django.conf import settings
+from django.conf.urls import include
 from django.conf.urls.static import static
+from django.urls import path, re_path
+
 from error.views import Error400View, Error403View, Error404View, Error500View
+
+from .admin import phx_admin
 
 urlpatterns = [
     # app
@@ -36,7 +38,8 @@ urlpatterns = [
 
     # pages - must be last
     re_path(r'^(?P<slug>.*)/', include('pages.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(
+    settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler400 = Error400View.as_view()
 handler403 = Error403View.as_view()

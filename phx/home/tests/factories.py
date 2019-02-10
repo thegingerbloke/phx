@@ -1,10 +1,10 @@
 from django.utils import timezone
 from factory import post_generation
 from factory.django import ImageField
-from factory.fuzzy import FuzzyText, FuzzyDateTime, FuzzyInteger
+from factory.fuzzy import FuzzyDateTime, FuzzyInteger, FuzzyText
 from factory_djoy import CleanModelFactory
 
-from ..models import Content, Announcement, Hero, HeroImageCategory
+from ..models import Announcement, Content, Hero, HeroImageCategory
 
 
 class ContentFactory(CleanModelFactory):

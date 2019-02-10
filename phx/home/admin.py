@@ -1,8 +1,10 @@
-from easy_thumbnails.files import get_thumbnailer
-from django.utils.html import format_html, strip_tags
 from django.contrib import admin
+from django.utils.html import format_html, strip_tags
+from easy_thumbnails.files import get_thumbnailer
+
 from phx.admin import phx_admin
-from .models import Content, Announcement, Hero, HeroImageCategory
+
+from .models import Announcement, Content, Hero, HeroImageCategory
 
 
 class ContentAdmin(admin.ModelAdmin):
@@ -14,15 +16,13 @@ class ContentAdmin(admin.ModelAdmin):
 
 class AnnouncementAdmin(admin.ModelAdmin):
     list_display = [
-        'get_announcement',
-        'created_date',
-        'display_until',
-        'author'
+        'get_announcement', 'created_date', 'display_until', 'author'
     ]
     exclude = ['author']
 
     def get_announcement(self, obj):
         return strip_tags(obj.announcement)
+
     get_announcement.short_description = 'announcement'
 
     def save_model(self, request, obj, form, change):
@@ -33,11 +33,7 @@ class AnnouncementAdmin(admin.ModelAdmin):
 
 class HeroAdmin(admin.ModelAdmin):
     list_display = [
-        'current_image',
-        'caption',
-        'categories',
-        'created_date',
-        'author'
+        'current_image', 'caption', 'categories', 'created_date', 'author'
     ]
     list_display_links = ['current_image', 'caption']
     readonly_fields = ['current_image']
@@ -49,11 +45,8 @@ class HeroAdmin(admin.ModelAdmin):
     def current_image(self, obj):
         thumbnailer = get_thumbnailer(obj.image)
         thumbnail_options = {'size': (200, 200)}
-        return format_html(
-            '<img src="/media/{0}" />'.format(
-                thumbnailer.get_thumbnail(thumbnail_options)
-            )
-        )
+        return format_html('<img src="/media/{0}" />'.format(
+            thumbnailer.get_thumbnail(thumbnail_options)))
 
     def save_model(self, request, obj, form, change):
         if getattr(obj, 'author', None) is None:

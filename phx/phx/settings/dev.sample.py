@@ -1,4 +1,4 @@
-from .base import * # noqa
+from .base import *  # noqa
 
 # Set debug mode
 DEBUG = False
@@ -16,10 +16,7 @@ ALLOWED_HOSTS = [
 ]
 
 # Add dev database config
-DATABASES = {
-    'default': {
-    }
-}
+DATABASES = {'default': {}}
 
 # Add dev email settings
 EMAIL_USE_TLS = True

@@ -1,18 +1,5 @@
-from phx.admin import phx_admin
-from .models import (
-    Page,
-    Component,
-    Editorial,
-    Embed,
-    Feature,
-    Image,
-    ListItem,
-    ListItems,
-    Profile,
-    ProfileMember,
-    Quote,
-    Table,
-)
+import nested_admin
+
 from components.admin import (
     AbstractEditorialAdmin,
     AbstractEmbedAdmin,
@@ -25,7 +12,22 @@ from components.admin import (
     AbstractQuoteAdmin,
     AbstractTableAdmin,
 )
-import nested_admin
+from phx.admin import phx_admin
+
+from .models import (
+    Component,
+    Editorial,
+    Embed,
+    Feature,
+    Image,
+    ListItem,
+    ListItems,
+    Page,
+    Profile,
+    ProfileMember,
+    Quote,
+    Table,
+)
 
 
 class EditorialAdmin(AbstractEditorialAdmin):
@@ -102,6 +104,7 @@ class PageAdmin(nested_admin.NestedModelAdmin):
         else:
             title = obj.title
         return title
+
     get_title.short_description = 'title'
 
     # if adding, hide readonly fixture detail field

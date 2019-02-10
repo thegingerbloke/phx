@@ -1,6 +1,7 @@
-from django.views import generic
-from django.urls import reverse
 from django.db.models import Q
+from django.urls import reverse
+from django.views import generic
+
 from .models import Gallery, Image
 
 
@@ -16,28 +17,23 @@ class GalleryListView(generic.ListView):
         return context
 
     def get_queryset(self):
-        query = Gallery.objects.select_related(
-            'thumbnail').prefetch_related('images').all().distinct()
+        query = Gallery.objects.select_related('thumbnail').prefetch_related(
+            'images').all().distinct()
 
         search = self.request.GET.get('search')
         if search:
             query = query.filter(
-                Q(title__icontains=search) |
-                Q(summary__icontains=search)
-            )
+                Q(title__icontains=search) | Q(summary__icontains=search))
 
         return query
 
     def generate_breadcrumb(self):
-        return [
-            {
-                'title': 'Home',
-                'linkUrl': '/',
-            },
-            {
-                'title': 'Gallery',
-            }
-        ]
+        return [{
+            'title': 'Home',
+            'linkUrl': '/',
+        }, {
+            'title': 'Gallery',
+        }]
 
 
 class GalleryDetailView(generic.DetailView):
@@ -59,15 +55,19 @@ class GalleryDetailView(generic.DetailView):
 
     def get_previous(self):
         id = self.object.id
-        previous = Gallery.objects.filter(id__lt=id).order_by(
-            '-id')[0:1].first()
+        previous = Gallery.objects.filter(
+            id__lt=id).order_by('-id')[0:1].first()
         if previous:
             return {
-                'title': previous.title,
-                'link_url': reverse('gallery-detail', kwargs={
-                    'pk': previous.id,
-                    'slug': previous.slug
-                })
+                'title':
+                previous.title,
+                'link_url':
+                reverse(
+                    'gallery-detail',
+                    kwargs={
+                        'pk': previous.id,
+                        'slug': previous.slug
+                    })
             }
 
     def get_next(self):
@@ -75,25 +75,25 @@ class GalleryDetailView(generic.DetailView):
         next = Gallery.objects.filter(id__gt=id).order_by('id')[0:1].first()
         if next:
             return {
-                'title': next.title,
-                'link_url': reverse('gallery-detail', kwargs={
-                    'pk': next.id,
-                    'slug': next.slug
-                })
+                'title':
+                next.title,
+                'link_url':
+                reverse(
+                    'gallery-detail',
+                    kwargs={
+                        'pk': next.id,
+                        'slug': next.slug
+                    })
             }
 
     def generate_breadcrumb(self):
-        breadcrumb = [
-            {
-                'title': 'Home',
-                'linkUrl': '/',
-            },
-            {
-                'title': 'Gallery',
-                'linkUrl': reverse('gallery-list'),
-            },
-            {
-                'title': self.object.title
-            }
-        ]
+        breadcrumb = [{
+            'title': 'Home',
+            'linkUrl': '/',
+        }, {
+            'title': 'Gallery',
+            'linkUrl': reverse('gallery-list'),
+        }, {
+            'title': self.object.title
+        }]
         return breadcrumb

@@ -1,5 +1,5 @@
-from django.db import models
 from ckeditor.fields import RichTextField
+from django.db import models
 
 COMPONENT_TYPES = [
     'editorial',
@@ -35,9 +35,7 @@ class AbstractComponent(models.Model):
 
 class AbstractEditorial(AbstractComponent):
     title = models.CharField(max_length=200, blank=True)
-    content = RichTextField(
-        config_name='text',
-    )
+    content = RichTextField(config_name='text', )
 
     class Meta:
         abstract = True
@@ -50,8 +48,7 @@ class AbstractEmbed(AbstractComponent):
     title = models.CharField(max_length=200, blank=True)
     content = models.TextField(
         help_text="Careful! Anything you enter here will be embedded "
-        "directly in the website..."
-    )
+        "directly in the website...")
 
     class Meta:
         abstract = True
@@ -69,14 +66,8 @@ class AbstractFeature(AbstractComponent):
     image_alt = models.CharField(max_length=200, blank=True)
     link_url = models.URLField(max_length=200, blank=True)
     link_text = models.CharField(max_length=200, blank=True)
-    align = models.CharField(
-      choices=ALIGNMENT_CHOICES,
-      max_length=200
-    )
-    background = models.CharField(
-      choices=BACKGROUND_CHOICES,
-      max_length=200
-    )
+    align = models.CharField(choices=ALIGNMENT_CHOICES, max_length=200)
+    background = models.CharField(choices=BACKGROUND_CHOICES, max_length=200)
 
     class Meta:
         abstract = True
@@ -154,14 +145,8 @@ class AbstractQuote(AbstractComponent):
     quote = models.TextField()
     author = models.CharField(max_length=200, blank=True)
     image_alt = models.CharField(max_length=200, blank=True)
-    align = models.CharField(
-      choices=ALIGNMENT_CHOICES,
-      max_length=200
-    )
-    background = models.CharField(
-      choices=BACKGROUND_CHOICES,
-      max_length=200
-    )
+    align = models.CharField(choices=ALIGNMENT_CHOICES, max_length=200)
+    background = models.CharField(choices=BACKGROUND_CHOICES, max_length=200)
 
     class Meta:
         abstract = True
@@ -172,9 +157,7 @@ class AbstractQuote(AbstractComponent):
 
 class AbstractTable(AbstractComponent):
     title = models.CharField(max_length=200, blank=True)
-    content = RichTextField(
-        config_name='table',
-    )
+    content = RichTextField(config_name='table', )
 
     class Meta:
         abstract = True

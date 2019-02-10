@@ -1,13 +1,14 @@
 from datetime import datetime, timedelta
+
 from django.test import TestCase
 from django.urls import reverse
 
 from pages.models import Page
+
 from ..factories import FixtureFactory
 
 
 class TestFixturesView(TestCase):
-
     def test_url_resolves(self):
         """"
         URL resolves as expected
@@ -35,9 +36,7 @@ class TestFixturesView(TestCase):
         url = reverse('fixtures-index')
         Page.objects.create(title='fixtures')
 
-        first_fixture = FixtureFactory(
-            title='First Fixture',
-        )
+        first_fixture = FixtureFactory(title='First Fixture', )
         FixtureFactory.create_batch(9)
 
         response = self.client.get(url)

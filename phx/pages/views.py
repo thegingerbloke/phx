@@ -1,8 +1,10 @@
-from django.views import generic
 from django.shortcuts import get_object_or_404
-from phx.helpers.subnav import generate_subnav
+from django.views import generic
+
 from components.models import COMPONENT_TYPES
-from .models import Page, Component
+from phx.helpers.subnav import generate_subnav
+
+from .models import Component, Page
 
 
 class PageView(generic.TemplateView):
@@ -19,8 +21,7 @@ class PageView(generic.TemplateView):
         context['page'] = page
         context['page_title'] = page.title
         context['components'] = Component.objects.select_related(
-            *COMPONENT_TYPES
-        ).filter(page_id=page.id)
+            *COMPONENT_TYPES).filter(page_id=page.id)
 
         top_level_page = self.get_top_level_page(page)
         context['subnav'] = generate_subnav(slug, top_level_page)
@@ -34,10 +35,11 @@ class PageView(generic.TemplateView):
         return page
 
     def generate_breadcrumb_segment(self, slug, page, breadcrumb_segments):
-        breadcrumb_segments.insert(0, {
-            'title': page.title,
-            'linkUrl': None if slug == page.slug else page.slug,
-        })
+        breadcrumb_segments.insert(
+            0, {
+                'title': page.title,
+                'linkUrl': None if slug == page.slug else page.slug,
+            })
         if page.parent:
             self.generate_breadcrumb_segment(
                 slug,

@@ -1,13 +1,13 @@
 import os
+
 from django.conf import settings
-from django.urls import reverse
 from django.test import TestCase, override_settings
+from django.urls import reverse
 
 TEST_BASE_DIR = os.path.join(settings.BASE_DIR, 'components/tests')
 
 
 class TestComponentListView(TestCase):
-
     def test_url_resolves(self):
         """"
         URL resolves as expected
