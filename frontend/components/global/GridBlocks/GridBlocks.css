@@ -118,6 +118,11 @@
   z-index: 2;
 }
 
+.GridBlocks-titleLink {
+  color: var(--colour-white);
+  text-decoration: none;
+}
+
 .GridBlocks-subtitle {
   display: block;
   font-size: var(--font-size-h4);

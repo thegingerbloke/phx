@@ -59,7 +59,7 @@
 
   <div class="GridBlocks-block GridBlocks-block--gallery">
     <h3 class="GridBlocks-title">
-      Gallery_
+      <a class="GridBlocks-titleLink" href="{% url 'gallery-detail' pk=gallery.pk slug=gallery.slug %}">Gallery_</a>
     </h3>
     {% if gallery %}
       <a class="GridBlocks-link" href="{% url 'gallery-detail' pk=gallery.pk slug=gallery.slug %}">
