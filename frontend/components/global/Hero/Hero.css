@@ -10,6 +10,12 @@
   position: relative;
 }
 
+@media (min-width: 90rem) and (min-height: 60rem) {
+  .Hero {
+    max-height: 550px;
+  }
+}
+
 .Hero::after {
   content: "";
   display: block;
