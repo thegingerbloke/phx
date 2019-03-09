@@ -18,7 +18,6 @@ class HomeView(generic.TemplateView):
         context = super(HomeView, self).get_context_data(**kwargs)
         context['about'] = self.get_about()
         context['announcement'] = self.get_announcement()
-        context['events'] = self.get_events()
         context['fixtures'] = self.get_fixtures()
         context['gallery'] = self.get_gallery()
         context['heroes'] = self.get_heroes()
@@ -37,9 +36,6 @@ class HomeView(generic.TemplateView):
                 '-created_date')[:1].first()
         if annoucement:
             return annoucement.announcement
-
-    def get_events(self):
-        return self.content.events
 
     def get_fixtures(self):
         return Fixture.objects.filter(

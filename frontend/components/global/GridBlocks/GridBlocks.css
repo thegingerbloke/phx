@@ -11,22 +11,21 @@
     "news"
     "fixtures"
     "results"
-    "events"
     "join"
     "gallery";
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(7, auto) 300px;
+  grid-template-rows: repeat(6, auto) 300px;
 }
 
 @media (--large) {
   .GridBlocks {
     grid-template-areas:
-      "announcement announcement announcement announcement announcement announcement"
-      "phx phx phx gallery gallery gallery"
-      "news news news news events events"
-      "news news news news join join"
-      "fixtures fixtures fixtures results results results";
-    grid-template-columns: repeat(6, 1fr);
+      "announcement announcement announcement"
+      "phx news news"
+      "phx news news"
+      "results results join"
+      "gallery fixtures fixtures";
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto repeat(4, 1fr);
   }
 }
@@ -36,11 +35,10 @@
     grid-template-areas:
       "announcement announcement announcement announcement"
       "news news phx phx"
-      "news news gallery gallery"
-      "events join gallery gallery"
-      "results results fixtures fixtures";
+      "news news join gallery"
+      "fixtures fixtures results results";
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto repeat(4, 1fr);
+    grid-template-rows: auto repeat(3, 1fr);
   }
 }
 

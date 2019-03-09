@@ -48,7 +48,6 @@ class TestHomeView(TestCase):
 
         self.assertEqual(response.context['title'], content.title)
         self.assertEqual(response.context['join'], content.join)
-        self.assertEqual(response.context['events'], content.events)
         self.assertEqual(response.context['about'], content.about)
 
     def test_home_announcement_none(self):

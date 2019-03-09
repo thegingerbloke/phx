@@ -6,7 +6,6 @@
             "title": "Welcome",
             "gallery": 1,
             "join": "<p>Join us at Brighton Phoenix!</p>",
-            "events": "<p>Our next event will be...</p>",
             "about": "<p>Here is some information about Phoenix...</p>"
         }
     },

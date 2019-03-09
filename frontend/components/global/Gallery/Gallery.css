@@ -24,7 +24,7 @@
 /* Gallery images */
 
 .Gallery-item {
-  background-color: var(--colour-grey-light);
+  background-color: var(--colour-white);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;

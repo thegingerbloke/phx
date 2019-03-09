@@ -15,7 +15,6 @@ class Content(models.Model):
         null=True,
     )
     join = RichTextField(config_name='text')
-    events = RichTextField(config_name='text')
     about = RichTextField(config_name='text')
 
     class Meta:
