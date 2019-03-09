@@ -14,12 +14,6 @@
   width: auto;
 }
 
-@media (--medium) {
-  .Image-img {
-    max-height: 75vh;
-  }
-}
-
 .Image-caption {
   background: rgba(0, 0, 0, 0.3);
   bottom: 0;

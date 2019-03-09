@@ -60,6 +60,10 @@ class Hero(models.Model):
     def __str__(self):
         return self.caption
 
+    class Meta:
+        verbose_name = 'hero'
+        verbose_name_plural = 'heroes'
+
 
 class HeroImageCategory(models.Model):
     category = models.CharField(max_length=30)

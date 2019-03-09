@@ -111,6 +111,7 @@ class AbstractListItem(AbstractComponent):
     class Meta:
         abstract = True
         verbose_name = 'list item'
+        ordering = ['id']
 
     def __str__(self):
         return 'list item'
@@ -130,10 +131,11 @@ class AbstractProfileMember(AbstractComponent):
     # add image field directly where used:
     # image = models.ImageField(upload_to=get_upload_path, blank=True)
     name = models.CharField(max_length=200)
-    role = models.CharField(max_length=200)
+    role = models.CharField(max_length=200, blank=True)
 
     class Meta:
         abstract = True
+        ordering = ['id']
 
     def __str__(self):
         return 'profile member'
