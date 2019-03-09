@@ -10,7 +10,6 @@ from ..models import Announcement, Content, Hero, HeroImageCategory
 class ContentFactory(CleanModelFactory):
     title = FuzzyText()
     join = FuzzyText()
-    events = FuzzyText()
     about = FuzzyText()
 
     class Meta:
