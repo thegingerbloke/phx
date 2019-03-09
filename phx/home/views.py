@@ -59,7 +59,9 @@ class HomeView(generic.TemplateView):
                     id__in=exclude_ids)[:category.count]
             exclude_ids = exclude_ids + [hero.id for hero in queryset]
             heroes = chain(heroes, queryset)
-        return random.shuffle(list(heroes))
+        hero_list = list(heroes)
+        random.shuffle(hero_list)
+        return hero_list
 
     def get_join(self):
         return self.content.join
