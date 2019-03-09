@@ -72,7 +72,7 @@ class AbstractProfileAdmin(AbstractComponentAdmin):
 
 
 class AbstractProfileMemberAdmin(AbstractComponentAdmin):
-    max_num = 8
+    max_num = 32
     readonly_fields = ['current_image']
 
     def current_image(self, obj):
