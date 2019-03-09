@@ -1,3 +1,4 @@
+import random
 from itertools import chain
 
 from django.utils import timezone
@@ -58,7 +59,7 @@ class HomeView(generic.TemplateView):
                     id__in=exclude_ids)[:category.count]
             exclude_ids = exclude_ids + [hero.id for hero in queryset]
             heroes = chain(heroes, queryset)
-        return list(heroes)
+        return random.shuffle(list(heroes))
 
     def get_join(self):
         return self.content.join
