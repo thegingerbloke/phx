@@ -138,10 +138,18 @@ CKEDITOR_CONFIGS = {
         'link:advanced;link:target',
     },
     'table': {
-        'toolbar': [['Undo', 'Redo'], ['Table']],
-        'height': 200,
-        'width': 700,
-        'removeDialogTabs': 'table:advanced',
+        'toolbar': [
+            ['Undo', 'Redo'],
+            ['Bold', 'Italic'],
+            ['Link', 'Unlink'],
+            ['Table'],
+        ],
+        'height':
+        200,
+        'width':
+        700,
+        'removeDialogTabs':
+        'table:advanced',
     },
 }
 

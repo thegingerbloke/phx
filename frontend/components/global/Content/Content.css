@@ -34,12 +34,6 @@
   margin-top: var(--gutter-double);
 }
 
-@media (--large) {
-  .Content-component {
-    margin-top: var(--gutter-quad);
-  }
-}
-
 .Content-component:first-child {
   margin-top: 0;
 }

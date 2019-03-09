@@ -56,14 +56,16 @@
 }
 
 .Table td {
-  padding: var(--gutter-half);
+  border: 1px solid var(--colour-white);
+  padding: var(--gutter);
+  vertical-align: top;
 }
 
 .Table tr:first-child td {
   background: var(--colour-blue-dark);
   border-bottom: 2px solid var(--colour-white);
   color: var(--colour-white);
-  padding: var(--gutter-half);
+  padding: var(--gutter);
 }
 
 .Table tr:nth-child(even) td {
