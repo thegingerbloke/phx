@@ -4,7 +4,7 @@
 
 .Hero {
   background: var(--colour-blue-light);
-  max-height: 400px;
+  max-height: 450px;
   min-height: 200px;
   overflow: hidden;
   position: relative;
@@ -19,12 +19,6 @@
 @media (--medium) {
   .Hero::after {
     padding-top: 35%;
-  }
-}
-
-@media (--large) {
-  .Hero::after {
-    padding-top: 25%;
   }
 }
 
