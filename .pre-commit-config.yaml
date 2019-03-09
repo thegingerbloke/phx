@@ -14,8 +14,8 @@
     - id: flake8
       args: [--config=setup.cfg]
       exclude: migrations|env
-# - repo: https://github.com/pre-commit/mirrors-yapf
-#   rev: 'v0.26.0'
-#   hooks:
-#     - id: yapf
-#       args: [--diff, --exclude=*migrations*]
+- repo: https://github.com/pre-commit/mirrors-yapf
+  rev: 'v0.26.0'
+  hooks:
+    - id: yapf
+      args: [--diff, --exclude=*migrations*]
