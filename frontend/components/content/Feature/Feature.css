@@ -26,6 +26,7 @@
   }
 
   .Feature--centre {
+    display: block;
     text-align: center;
   }
 }
@@ -63,7 +64,7 @@
 }
 
 .Feature--centre .Feature-img {
-  display: none;
+  max-width: 100%;
 }
 
 .Feature-content {
@@ -78,11 +79,20 @@
   line-height: var(--line-height-default);
 }
 
+.Feature-content--small .Feature-title {
+  font-size: var(--font-size-h4);
+}
+
 .Feature-subtitle {
   font-size: var(--font-size-h4);
   font-weight: normal;
   line-height: var(--line-height-default);
   margin-top: var(--gutter);
+}
+
+.Feature-content--small .Feature-subtitle {
+  font-size: var(--font-size-default);
+  font-style: italic;
 }
 
 .Feature-text {

@@ -25,6 +25,20 @@
     "link_url": "#",
     "link_text": "Lorem ipsum"
   },
+  "textSmall": {
+    "background": "dark",
+    "align": "imageRight",
+    "text_size": "small",
+    "image": {
+      "url": "/static/img/_placeholder/feature/1.jpg"
+    },
+    "image_alt": "",
+    "title": "Lorem ipsum",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "content": "Minim tempor et mollit irure consequat sunt reprehenderit reprehenderit reprehenderit fugiat.",
+    "link_url": "#",
+    "link_text": "Lorem ipsum"
+  },
   "bgWhite": {
     "background": "white",
     "align": "imageLeft",

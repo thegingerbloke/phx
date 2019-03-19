@@ -24,6 +24,11 @@ BACKGROUND_CHOICES = (
     ('white', 'White'),
 )
 
+TEXT_SIZE_CHOICES = (
+    ('small', 'Small'),
+    ('large', 'Large'),
+)
+
 
 class AbstractComponent(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
@@ -68,6 +73,7 @@ class AbstractFeature(AbstractComponent):
     link_text = models.CharField(max_length=200, blank=True)
     align = models.CharField(choices=ALIGNMENT_CHOICES, max_length=200)
     background = models.CharField(choices=BACKGROUND_CHOICES, max_length=200)
+    text_size = models.CharField(choices=TEXT_SIZE_CHOICES, max_length=200)
 
     class Meta:
         abstract = True
@@ -149,6 +155,7 @@ class AbstractQuote(AbstractComponent):
     image_alt = models.CharField(max_length=200, blank=True)
     align = models.CharField(choices=ALIGNMENT_CHOICES, max_length=200)
     background = models.CharField(choices=BACKGROUND_CHOICES, max_length=200)
+    text_size = models.CharField(choices=TEXT_SIZE_CHOICES, max_length=200)
 
     class Meta:
         abstract = True

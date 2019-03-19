@@ -20,6 +20,24 @@
     <pre class="Demo-code">{{data.imageRight|pretty_print}}</pre>
   </div>
 
+  <h3 class="Demo-h3">Image - centre</h3>
+  <div class="Demo-block Demo-block--2">
+    {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
+      {% include template with data=data.imageCentre %}
+    {% endwith %}
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.imageCentre|pretty_print}}</pre>
+  </div>
+
+  <h3 class="Demo-h3">Text - small</h3>
+  <div class="Demo-block Demo-block--2">
+    {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
+      {% include template with data=data.textSmall %}
+    {% endwith %}
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.textSmall|pretty_print}}</pre>
+  </div>
+
   <h3 class="Demo-h3">Background - white</h3>
   <div class="Demo-block Demo-block--3">
     {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}

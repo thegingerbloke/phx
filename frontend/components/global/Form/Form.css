@@ -15,7 +15,7 @@
 
 .Form-input--text,
 .Form-textarea {
-  border: 1px solid var(--colour-grey-light);
+  border: 1px solid var(--colour-grey-mid);
   font-size: var(--font-size-default);
   line-height: var(--line-height-default);
   padding: var(--gutter-half);
@@ -25,7 +25,7 @@
 
 .Form-input--text:focus,
 .Form-textarea:focus {
-  border-color: var(--colour-grey-mid);
+  border-color: var(--colour-blue-dark);
 }
 
 .Form-input--button {
@@ -45,7 +45,7 @@
 /* Selects */
 
 .Form-selectWrap {
-  border: 1px solid var(--colour-grey-light);
+  border: 1px solid var(--colour-grey-mid);
   display: block;
   position: relative;
 }
@@ -61,7 +61,7 @@
 }
 
 .Form-selectWrap::after {
-  color: var(--colour-grey-mid);
+  color: var(--colour-blue-mid);
   content: "\25bc";
   display: none;
   font-size: 12px;

@@ -26,6 +26,7 @@
   }
 
   .Quote--centre {
+    display: block;
     text-align: center;
   }
 }
@@ -63,7 +64,7 @@
 }
 
 .Quote--centre .Quote-img {
-  display: none;
+  max-width: 100%;
 }
 
 .Quote-content {
@@ -83,6 +84,16 @@
 @media (--large) {
   .Quote-text {
     font-size: var(--font-size-h3);
+  }
+}
+
+.Quote-text--small {
+  font-size: var(--font-size-default);
+}
+
+@media (--large) {
+  .Quote-text--small {
+    font-size: var(--font-size-default);
   }
 }
 

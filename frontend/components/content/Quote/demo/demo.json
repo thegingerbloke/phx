@@ -19,6 +19,27 @@
     "quote": "Minim tempor et mollit irure consequat sunt reprehenderit reprehenderit reprehenderit fugiat.",
     "author": "Steve Ovett"
   },
+  "imageCentre": {
+    "background": "dark",
+    "align": "centre",
+    "image": {
+      "url": "/static/img/_placeholder/quote/1.jpg"
+    },
+    "image_alt": "",
+    "quote": "Minim tempor et mollit irure consequat sunt reprehenderit reprehenderit reprehenderit fugiat.",
+    "author": "Steve Ovett"
+  },
+  "textSmall": {
+    "background": "dark",
+    "align": "imageLeft",
+    "image": {
+      "url": "/static/img/_placeholder/quote/1.jpg"
+    },
+    "text_size": "small",
+    "image_alt": "",
+    "quote": "Minim tempor et mollit irure consequat sunt reprehenderit reprehenderit reprehenderit fugiat.",
+    "author": "Steve Ovett"
+  },
   "bgWhite": {
     "background": "white",
     "align": "imageLeft",

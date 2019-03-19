@@ -3,7 +3,11 @@ from factory.django import ImageField
 from factory.fuzzy import FuzzyChoice, FuzzyText
 from factory_djoy import CleanModelFactory
 
-from components.models import ALIGNMENT_CHOICES, BACKGROUND_CHOICES
+from components.models import (
+    ALIGNMENT_CHOICES,
+    BACKGROUND_CHOICES,
+    TEXT_SIZE_CHOICES,
+)
 
 from ..models import (
     Component,
@@ -67,6 +71,7 @@ class FeatureFactory(CleanModelFactory):
     content = FuzzyText()
     align = FuzzyChoice([i[0] for i in ALIGNMENT_CHOICES])
     background = FuzzyChoice([i[0] for i in BACKGROUND_CHOICES])
+    text_size = FuzzyChoice([i[0] for i in TEXT_SIZE_CHOICES])
     image = ImageField()
 
     class Meta:
@@ -115,6 +120,7 @@ class QuoteFactory(CleanModelFactory):
     author = FuzzyText()
     align = FuzzyChoice([i[0] for i in ALIGNMENT_CHOICES])
     background = FuzzyChoice([i[0] for i in BACKGROUND_CHOICES])
+    text_size = FuzzyChoice([i[0] for i in TEXT_SIZE_CHOICES])
     image = ImageField()
 
     class Meta:

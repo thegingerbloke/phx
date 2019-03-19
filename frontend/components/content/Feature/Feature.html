@@ -7,7 +7,9 @@
   {% if data.image and data.image.url %}
     <img class="Feature-img" src="{% thumbnail data.image 1400x0 %}" alt="{{data.image_alt}}" />
   {% endif %}
-  <div class="Feature-content">
+  <div class="Feature-content
+    {% if data.text_size %}Feature-content--{{data.text_size}}{% endif %}
+  ">
     {% if data.title %}
     <h2 class="Feature-title">
       {{data.title}}_
