@@ -18154,5 +18154,173 @@
           "summary": "<p>A res</p>\r\n<table >\r\n<!--StartFragment--> <colgroup><col span=\"6\" w></col> </colgroup> \r\n<tbody>\r\n<tr height=\"17\">\r\n<td >Place</td>\r\n<td >First Name</td>\r\n<td >Last Name</td>\r\n<td >Time</td>\r\n<td >Category&nbsp;</td>\r\n<td >Category Place</td>\r\n</tr>\r\n<tr height=\"17\">\r\n<td height=\"17\" >96</td>\r\n<td >Andy&nbsp;</td>\r\n<td >Pumphrey</td>\r\n<td >4.46.07</td>\r\n<td >Male 55-59</td>\r\n<td >8</td>\r\n</tr>\r\n<!--EndFragment-->\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>\r\n<p>F<a title=\"Full Results\" href=\"http://www.steyningac.co.uk/stinger-2019/\">ULL RESULTS</a></p>",
           "created_date": "2019-03-03T20:55:11.000Z"
       }
+  },
+  {
+      "pk": 1514,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-03-12T20:15:14.000Z",
+          "author": 1,
+          "fixture": 1514,
+          "results": " ",
+          "summary": "<p>Well done Steve on your &nbsp;Bronze (s)</p>\r\n<table >\r\n<colgroup><col w></col><col span=\"7\" w></col></colgroup> \r\n<tbody>\r\n<tr height=\"21\">\r\n<td w>Event</td>\r\n<td >Perf</td>\r\n<td >Name</td>\r\n<td w>&nbsp;</td>\r\n<td >Pos</td>\r\n<td >AG</td>\r\n<td w>&nbsp;</td>\r\n<td w>&nbsp;</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >800m</td>\r\n<td >02:08.4</td>\r\n<td >Steve Atkinson</td>\r\n<td >3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td>\r\n<td >V50</td>\r\n<td ><a href=\"https://www.thepowerof10.info/results/results.aspx?meeting&amp;event=800&amp;venue=Lee+Valley&amp;date=10-Mar-19\" target=\"_blank\">Lee Valley</a></td>\r\n<td >10-Mar-19</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >1500m</td>\r\n<td >04:33.2</td>\r\n<td >Steve Atkinson</td>\r\n<td >\r\n<p>3&nbsp;</p>\r\n</td>\r\n<td >&nbsp;V50</td>\r\n<td ><a href=\"https://www.thepowerof10.info/results/results.aspx?meeting&amp;event=1500&amp;venue=Lee+Valley&amp;date=9-Mar-19\" target=\"_blank\">Lee Valley</a></td>\r\n<td >09-Mar-19</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+          "created_date": "2019-03-12T20:08:33.000Z"
+      }
+  },
+  {
+      "pk": 1515,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-03-12T21:01:00.000Z",
+          "author": 1,
+          "fixture": 1515,
+          "results": " ",
+          "summary": "<p><br /> \r\n<table >\r\n<!--StartFragment--> <colgroup><col span=\"8\" w></col> </colgroup> \r\n<tbody>\r\n<tr height=\"21\">\r\n<td >First name</td>\r\n<td >Last name</td>\r\n<td >Chip Time</td>\r\n<td >Chip Pos</td>\r\n<td >Gender</td>\r\n<td >Pos</td>\r\n<td >Category</td>\r\n<td >Pos</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td ><a href=\"https://run-northwest.niftyentries.com/Results/Trafford-10k/1142/1\">Paul</a></td>\r\n<td ><a href=\"https://run-northwest.niftyentries.com/Results/Trafford-10k/1142/1\">Weir</a></td>\r\n<td >35:23:00</td>\r\n<td >125</td>\r\n<td >Male</td>\r\n<td >117</td>\r\n<td >Vet 35</td>\r\n<td >20</td>\r\n</tr>\r\n<!--EndFragment-->\r\n</tbody>\r\n</table>\r\n</p>\r\n<p>&nbsp;</p>\r\n<p><a title=\"Full Results\" href=\"https://run-northwest.niftyentries.com/Results/Trafford-10k\">FULL RESULTS</a></p>\r\n<p>&nbsp;</p>",
+          "created_date": "2019-03-12T20:33:08.000Z"
+      }
+  },
+  {
+      "pk": 1516,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-03-12T21:00:45.000Z",
+          "author": 1,
+          "fixture": 1516,
+          "results": " ",
+          "summary": "<p><a title=\"Full Results\" href=\"https://www.thebighalf.co.uk/results/2019/?event=the-vitality-big-half&amp;first_name=&amp;last_name=&amp;gender=&amp;bib_number=&amp;club=brighton+phoenix&amp;team=&amp;age_group=&amp;paginate_by=25&amp;order_by=position&amp;sort=asc\">Full Results</a></p>\r\n<table >\r\n<thead > \r\n<tr>\r\n<th>Name</th><th>Position</th><th>Position in Age Group</th><th>Position in Gender</th><th>Total Time</th>\r\n</tr>\r\n</thead> \r\n<tbody>\r\n<tr>\r\n<td><a href=\"https://www.thebighalf.co.uk/results/2019/107177/?sort=asc&amp;first_name=&amp;last_name=&amp;order_by=position&amp;club=brighton+phoenix&amp;gender=&amp;paginate_by=25&amp;team=&amp;bib_number=&amp;age_group=&amp;event=the-vitality-big-half&amp;page=1\">Ross Skelton</a></td>\r\n<td>18</td>\r\n<td>17</td>\r\n<td>18</td>\r\n<td>1:07:37</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+          "created_date": "2019-03-12T20:59:50.000Z"
+      }
+  },
+  {
+      "pk": 1517,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-03-12T21:24:52.000Z",
+          "author": 1,
+          "fixture": 1517,
+          "results": " ",
+          "summary": "<p><a title=\"Full Results\" href=\"http://dbmaxresults.co.uk/results.aspx?CId=16421&amp;RId=2245\">FULL RESULTS</a></p>\r\n<div>\r\n<table >\r\n<!--StartFragment--> <colgroup><col span=\"10\" w></col> </colgroup> \r\n<tbody>\r\n<tr height=\"23\">\r\n<td >Pos</td>\r\n<td >Bib No</td>\r\n<td >Name</td>\r\n<td >Chip Time</td>\r\n<td >Category</td>\r\n<td >Cat Pos</td>\r\n<td >Gender</td>\r\n<td >Gen Pos</td>\r\n<td >Age Grade</td>\r\n<td >Pace</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >16</td>\r\n<td >5959</td>\r\n<td >Milan WATSON</td>\r\n<td >1:14:53.7</td>\r\n<td >Sen</td>\r\n<td >12</td>\r\n<td >Male</td>\r\n<td >16</td>\r\n<td >77.94</td>\r\n<td >10.5 m/hr</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >55</td>\r\n<td >5940</td>\r\n<td >Tobias BREMER</td>\r\n<td >1:20:55.6</td>\r\n<td >Sen</td>\r\n<td >40</td>\r\n<td >Male</td>\r\n<td >53</td>\r\n<td >73.71</td>\r\n<td >\r\n<p>9.7 m/hr</p>\r\n</td>\r\n</tr>\r\n<!--EndFragment-->\r\n</tbody>\r\n</table>\r\n</div>",
+          "created_date": "2019-03-12T21:24:33.000Z"
+      }
+  },
+  {
+      "pk": 1518,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-03-14T15:19:33.000Z",
+          "author": 1,
+          "fixture": 1518,
+          "results": " ",
+          "summary": "<p><a href=\"http://www.sussexathletics.net/2019\">Full Results</a></p>\r\n<p><strong>Year 7 Girls</strong><br />Elfin Sandilands 21<br />Imogen Read 28<br />Rosa Howie 54<br />Yuuna Barra 89<br /><br /><strong>Year 7 Boys</strong><br />Raphael Reed 4<br />Matthew Noakes 7<br />Felix Preston 56<br /><br /><strong>Year 8 Girls</strong><br />Annalise Brown 8<br />Amelia Kortens 44<br />Amelie Parker 58<br /><br /><strong>Year 8 Boys</strong><br />Ravi Clark 7<br />Finley Jones 9<br />Jaymes Fonteyn 10<br />Ben Power 20<br />Finley Hawkins 49<br /><br />Congratulations to Raphael, Matthew, Annalise, Ravi, Finley Jones, Jaymes and Ben who will be competing for Sussex at the inter counties on 23rd March.<br /><br />Nicola Swanson</p>",
+          "created_date": "2019-03-14T15:18:30.000Z"
+      }
+  },
+  {
+      "pk": 1519,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-03-15T17:39:46.000Z",
+          "author": 1,
+          "fixture": 1519,
+          "results": " ",
+          "summary": "<p>There were some fine performances by our young athletes running for Sussex</p>\r\n<p>&nbsp;</p>\r\n<p><strong>Under 20 Women</strong></p>\r\n<p>14th Almi Neurker 22:15</p>\r\n<p>131st Amy Gamblin 28:02</p>\r\n<p>Both were scorers for the 12th placed team</p>\r\n<p>&nbsp;</p>\r\n<p><strong>Under 17 men</strong></p>\r\n<p>14th Leo Brewer 19:22</p>\r\n<p>Leo was first scorer for his 11th placed team</p>\r\n<p>&nbsp;</p>\r\n<p>Well done all</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"https://results.sporthive.com/events/6509064585385874688\">Full results</a></p>",
+          "created_date": "2019-03-15T17:39:46.000Z"
+      }
+  },
+  {
+      "pk": 1520,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-03-17T20:36:19.000Z",
+          "author": 1,
+          "fixture": 1520,
+          "results": " ",
+          "summary": "<p>Sorry to hear Ash was unwell during the race - well done for completing the course.</p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>138</td>\r\n<td>1:18:32 (PB)</td>\r\n<td>Tom Hooper</td>\r\n</tr>\r\n<tr>\r\n<td>410</td>\r\n<td>1:27:36</td>\r\n<td>Ash Dorrington</td>\r\n</tr>\r\n<tr>\r\n<td>367</td>\r\n<td>1:26:21</td>\r\n<td>Jessica Prior</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><em><a href=\"http://www.readinghalfmarathon.com/race-data/get-results.php?race-&amp;race_number=&amp;surname=prior&amp;forename=&amp;running_club=&amp;submit=submit\">Full results</a></em></p>",
+          "created_date": "2019-03-17T20:36:19.000Z"
+      }
+  },
+  {
+      "pk": 1521,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-03-17T20:39:39.000Z",
+          "author": 1,
+          "fixture": 1521,
+          "results": " ",
+          "summary": "<p>Tough hilly coastal course.<span > </span></p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>2</td>\r\n<td>46:00</td>\r\n<td>Mark Cossey</td>\r\n</tr>\r\n<tr>\r\n<td>60</td>\r\n<td>1:02:51</td>\r\n<td>Alison Moore</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><em><a href=\"https://docs.google.com/spreadsheets/d/1wFQvVzDuuMRLnAAlNlzFn0anpXK1gGosjHLvxrHcS_Q/edit#g>Full results</a></em></p>",
+          "created_date": "2019-03-17T20:39:39.000Z"
+      }
+  },
+  {
+      "pk": 1522,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-03-18T08:44:54.000Z",
+          "author": 1,
+          "fixture": 1522,
+          "results": " ",
+          "summary": "<p><strong>Paul Whelpton</strong>&nbsp;not far off a lifetime PB!</p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>180 (2nd v65)</td>\r\n<td>1:22:53</td>\r\n<td>Paul Whelpton</td>\r\n</tr>\r\n<tr>\r\n<td>349</td>\r\n<td>1:27:30</td>\r\n<td>Andrew Bunt</td>\r\n</tr>\r\n<tr>\r\n<td>1052</td>\r\n<td>1:43:14</td>\r\n<td>Malcolm Kemp</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><a href=\"http://fleethalfmarathon.com/past-results/\"><em>Full results</em></a></p>",
+          "created_date": "2019-03-17T20:57:19.000Z"
+      }
+  },
+  {
+      "pk": 1523,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-03-20T08:56:10.000Z",
+          "author": 1,
+          "fixture": 1523,
+          "results": " ",
+          "summary": "<p>Lewes AC organise this scenic off-road marathon and marathon relay event.</p>\r\n<p>Marathon</p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>66</td>\r\n<td>4:23:41</td>\r\n<td>Andrew Pumphrey</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p>Relay</p>\r\n<p>\r\n<table border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>Pos</td>\r\n<td>Time</td>\r\n<td>Name</td>\r\n</tr>\r\n<tr>\r\n<td>2</td>\r\n<td>3:05:16</td>\r\n<td>Paul Weir/Jonny McCormack</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</p>\r\n<p><em><a href=\"https://themoyleman.com/2019-results/?fbcl\">Full results</a></em></p>",
+          "created_date": "2019-03-20T08:56:10.000Z"
+      }
+  },
+  {
+      "pk": 1524,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-03-25T10:00:33.000Z",
+          "author": 1,
+          "fixture": 1524,
+          "results": " ",
+          "summary": "<p>&nbsp;</p>\r\n<p>First of the Sussex Grand Prix!!&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<div>\r\n<table >\r\n<!--StartFragment--> <colgroup><col w></col> <col w></col> <col w></col> <col span=\"3\" w></col> </colgroup> \r\n<tbody>\r\n<tr height=\"23\">\r\n<td >\r\n<div>Place</div>\r\n</td>\r\n<td >\r\n<div>Name</div>\r\n</td>\r\n<td >\r\n<div>Category</div>\r\n</td>\r\n<td >\r\n<div>Number</div>\r\n</td>\r\n<td >\r\n<div>Chip</div>\r\n</td>\r\n<td >&nbsp;</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >27</td>\r\n<td ><a title=\"Will Wakefield\" href=\"http://www.sportsystems.co.uk/ss/results/athlete/?entId=WAKEF-DQBUM-WILLN\">Will Wakefield</a></td>\r\n<td >Men 18-39</td>\r\n<td >2124</td>\r\n<td >01:23:29</td>\r\n<td >&nbsp;</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >33</td>\r\n<td ><a title=\"Mark Cossey\" href=\"http://www.sportsystems.co.uk/ss/results/athlete/?entId=COSSE-DERQM-MARKK\">Mark Cossey</a></td>\r\n<td >Men 40-44</td>\r\n<td >1434</td>\r\n<td >01:24:24</td>\r\n<td >PB</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >98</td>\r\n<td ><a title=\"Will Russell\" href=\"http://www.sportsystems.co.uk/ss/results/athlete/?entId=RUSSE-EBPGM-WILLL\">Will Russell</a></td>\r\n<td >Men 18-39</td>\r\n<td >1823</td>\r\n<td >01:28:59</td>\r\n<td >&nbsp;</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >196</td>\r\n<td ><a title=\"Amelia Culshaw\" href=\"http://www.sportsystems.co.uk/ss/results/athlete/?entId=CULSH-DBCTF-AMEAN\">Amelia Culshaw</a></td>\r\n<td >Women 45-49</td>\r\n<td >1932</td>\r\n<td >01:35:04</td>\r\n<td >&nbsp;</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >396</td>\r\n<td ><a title=\"Charlotte Softly\" href=\"http://www.sportsystems.co.uk/ss/results/athlete/?entId=SOFTL-CZKLF-CHAEP\">Charlotte Softly</a></td>\r\n<td >Women 45-49</td>\r\n<td >848</td>\r\n<td >01:42:56</td>\r\n<td >&nbsp;</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >524</td>\r\n<td ><a title=\"Caroline Garrett\" href=\"http://www.sportsystems.co.uk/ss/results/athlete/?entId=GARRE-DKAJF-CAREP\">Caroline Garrett</a></td>\r\n<td >Women 18-39</td>\r\n<td >1579</td>\r\n<td >01:46:15</td>\r\n<td >&nbsp;</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >538</td>\r\n<td ><a title=\"Dan Harris\" href=\"http://www.sportsystems.co.uk/ss/results/athlete/?entId=HARRI-DJQMM-DANNJ\">Dan Harris</a></td>\r\n<td >Men 18-39</td>\r\n<td >2401</td>\r\n<td >01:46:56</td>\r\n<td >&nbsp;</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >614</td>\r\n<td ><a title=\"Georgia Flowers\" href=\"http://www.sportsystems.co.uk/ss/results/athlete/?entId=FLOWE-DPFNF-GEOAO\">Georgia Flowers</a></td>\r\n<td >Women 18-39</td>\r\n<td >1516</td>\r\n<td >01:48:47</td>\r\n<td >&nbsp;</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >673</td>\r\n<td ><a title=\"Alison Moore\" href=\"http://www.sportsystems.co.uk/ss/results/athlete/?entId=MOORE-DVKRF-ALINL\">Alison Moore</a></td>\r\n<td >Women 18-39</td>\r\n<td >2407</td>\r\n<td >01:50:26</td>\r\n<td >&nbsp;</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >811</td>\r\n<td ><a title=\"Gill Checkley\" href=\"http://www.sportsystems.co.uk/ss/results/athlete/?entId=CHECK-DCYZF-GILLM\">Gill Checkley</a></td>\r\n<td >Women 40-44</td>\r\n<td >810</td>\r\n<td >01:52:39</td>\r\n<td >&nbsp;</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >957</td>\r\n<td ><a title=\"Tabitha Atkinson\" href=\"http://www.sportsystems.co.uk/ss/results/athlete/?entId=ATKIN-CTXPF-TABAP\">Tabitha Atkinson</a></td>\r\n<td >Women 50-54</td>\r\n<td >1740</td>\r\n<td >01:56:44</td>\r\n<td >&nbsp;</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >1218</td>\r\n<td ><a title=\"Valentina Avella\" href=\"http://www.sportsystems.co.uk/ss/results/athlete/?entId=AVELL-DJVPF-VALAP\">Valentina Avella</a></td>\r\n<td >Women 18-39</td>\r\n<td >2510</td>\r\n<td >02:01:21</td>\r\n<td >&nbsp;</td>\r\n</tr>\r\n<tr height=\"23\">\r\n<td >1811</td>\r\n<td ><a title=\"Sarah Russell\" href=\"http://www.sportsystems.co.uk/ss/results/athlete/?entId=RUSSE-CTSFF-SARHM\">Sarah Russell</a></td>\r\n<td >Women 50-54</td>\r\n<td >1822</td>\r\n<td >02:20:40</td>\r\n<td >&nbsp;</td>\r\n</tr>\r\n<!--EndFragment-->\r\n</tbody>\r\n</table>\r\n</div>\r\n<p><a title=\"Full Results\" href=\"http://www.sportsystems.co.uk/ss/results/Hastings%20HM%202019/4021\">Full Results</a></p>",
+          "created_date": "2019-03-24T20:17:15.000Z"
+      }
+  },
+  {
+      "pk": 1525,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-03-29T08:58:28.000Z",
+          "author": 1,
+          "fixture": 1525,
+          "results": " ",
+          "summary": "<p>&nbsp;</p>\r\n<p><br /> \r\n<table >\r\n<!--StartFragment--> <colgroup><col w></col> <col span=\"2\" w></col> </colgroup> \r\n<tbody>\r\n<tr height=\"21\">\r\n<td >YEAR 7 &amp; 8 SOUTH EAST INTERCOUNTY XC 2019</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td height=\"21\">&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >Year 7 boys</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >Name</td>\r\n<td >Pos<span>&nbsp;</span></td>\r\n<td >Time</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td height=\"21\">Raphael, Reed</td>\r\n<td >33</td>\r\n<td >12.54</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td height=\"21\">Matthew, Noakes</td>\r\n<td >72</td>\r\n<td>13 17</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td height=\"21\">George, Hendriks<span>&nbsp;</span></td>\r\n<td >82</td>\r\n<td >1339</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td height=\"21\">&nbsp;</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >Year 8 Boys</td>\r\n<td>&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >Name</td>\r\n<td >Pos<span>&nbsp;</span></td>\r\n<td >Time</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td height=\"21\">Finley Jones</td>\r\n<td >50</td>\r\n<td >14.25</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td height=\"21\">James Fonteyn</td>\r\n<td >56</td>\r\n<td >14.28</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td height=\"21\">Ravi Clark</td>\r\n<td >71</td>\r\n<td >14.41</td>\r\n</tr>\r\n<!--EndFragment-->\r\n</tbody>\r\n</table>\r\n</p>\r\n<p>&nbsp;</p>\r\n<p><a title=\"Full Results\" href=\"http://www.sussexathletics.net/2019\">FULL RESULTS</a></p>",
+          "created_date": "2019-03-29T08:32:55.000Z"
+      }
+  },
+  {
+      "pk": 1526,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-03-29T09:00:39.000Z",
+          "author": 1,
+          "fixture": 1526,
+          "results": " ",
+          "summary": "<p><br /> \r\n<table >\r\n<!--StartFragment--> <colgroup><col w></col> <col w></col> </colgroup> \r\n<tbody>\r\n<tr height=\"21\">\r\n<td >\r\n<div>Year   6 Boys</div>\r\n</td>\r\n<td w>&nbsp;</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >Name</td>\r\n<td >Pos<span>&nbsp;</span></td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >\r\n<div>Corbin   Bailey</div>\r\n</td>\r\n<td >10</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >\r\n<div><span>Henry Stenning</span></div>\r\n</td>\r\n<td >26</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >\r\n<div>Vinnie   Pegley</div>\r\n</td>\r\n<td >28</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td height=\"21\">&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >\r\n<div>Year   5 Boys</div>\r\n</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >Name</td>\r\n<td >Pos<span>&nbsp;</span></td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >\r\n<div>Jake   Pursey</div>\r\n</td>\r\n<td >63</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >\r\n<div>Lewis   Wilbey</div>\r\n</td>\r\n<td >75</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td height=\"21\">&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >\r\n<div>Year   6 Girls</div>\r\n</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >Name</td>\r\n<td >Pos<span>&nbsp;</span></td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >\r\n<div>Greta   Hunter</div>\r\n</td>\r\n<td >27</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >\r\n<div>Thalia   Parker</div>\r\n</td>\r\n<td >44</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td height=\"21\">&nbsp;</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >\r\n<div>Year   5&nbsp;Girls</div>\r\n</td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >Name</td>\r\n<td >Pos<span>&nbsp;</span></td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >\r\n<div>Isabella   Pulson-Jones</div>\r\n</td>\r\n<td >42</td>\r\n</tr>\r\n<tr height=\"21\">\r\n<td >\r\n<div>Iris   Reily</div>\r\n</td>\r\n<td >82</td>\r\n</tr>\r\n<!--EndFragment-->\r\n</tbody>\r\n</table>\r\n</p>",
+          "created_date": "2019-03-29T08:58:12.000Z"
+      }
+  },
+  {
+      "pk": 1527,
+      "model": "results.result",
+      "fields": {
+          "modified_date": "2019-04-04T09:58:04.000Z",
+          "author": 1,
+          "fixture": 1527,
+          "results": " ",
+          "summary": "<p>&nbsp;</p>\r\n<p><strong>Some more spectacular performances on the world stage by Steve Atkinson.</strong></p>\r\n<p>M50 1500M<br />Heat 1&nbsp;&nbsp; 3rd&nbsp;&nbsp; 4:31.74<br />Final&nbsp;&nbsp; 8th&nbsp;&nbsp; 4:29.19</p>\r\n<p>M50 800M<br />Heat 1&nbsp;&nbsp; 3rd&nbsp;&nbsp; 2:09.50<br />Final&nbsp;&nbsp; 6th&nbsp;&nbsp; 2:05.68 (that's a PB by 2 seconds and 93% age grading!)</p>\r\n<p>Great stuff Steve</p>\r\n<p><a href=\"https://wmaci2019.domtel-sport.pl/?seria=0&amp;dzien=2019-03-28&amp;runda=3&amp;konkurencja=M800_50&amp;impreza=6\">Full results</a></p>",
+          "created_date": "2019-04-04T09:53:46.000Z"
+      }
   }
 ]

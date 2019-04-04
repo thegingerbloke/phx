@@ -70004,5 +70004,125 @@
           "caption": "",
           "created_date": "2019-02-18T20:24:53.000Z"
       }
+  },
+  {
+      "pk": 649,
+      "model": "news.news",
+      "fields": {
+          "modified_date": "2019-03-16T11:48:01.000Z",
+          "author": 1,
+          "title": "Atkinson Act Is On (Again) !",
+          "summary": "At the British Masters Indoor Athletics Champs at Lee Valley on Sunday March 9th Steve Atkinson picked up two more medals to add to his growing collection.",
+          "created_date": "2019-03-11T08:43:33.000Z",
+          "slug": "atkinson-act-is-on-again"
+      }
+  },
+  {
+      "pk": 2883,
+      "model": "news.component",
+      "fields": {
+          "news": 649,
+          "order": 0
+      }
+  },
+  {
+      "pk": 649,
+      "model": "news.editorial",
+      "fields": {
+          "content": "<p>At the British Masters Indoor Athletics Champs at Lee Valley on Sunday March 9th Steve Atkinson picked up two more medals to add to his growing collection.</p>\r\n<p>Here is Steve's rundown on the races:</p>\r\n<p>\"In a stacked V50 800m field I ran 2:08.3 and won the bronze medal. The race was won in 2:04.9 by favourite Mark Symes, the reigning world V45 1500m champion who has just moved up to the V50 age group. Dominic Bokor Ingram, the reigning European 800m indoor champion, took silver in 2:07.1.<span>Adrian Haines, the silver medallist over 800m in both last year&rsquo;s world championships and European indoors, was 4th in 2:09.1. Behind Adrian in 5th, with 2:09.3, was Dav, who finished 10th in last summer&rsquo;s world 800m final, and ran</span><span>2:04</span><span>last season.So, to get the 800m bronze was a satisfying result and restored my conf.</span></p>\r\n<p>In that 1500m, Symes took gold again, in4:17, but this time Haines was ahead of me for silver in4:26, and I took bronze in4:33. Being my first track race of the year, it was a bit of a shock to the system, and the first few laps were at 34/68sec pace which is my target schedule for Venice (the European Outdoor Masters Champs coming up in September). I&rsquo;m not close to that yet, which explains why I faded so much in the last 600m. Still, I was comfortably clear of 4th place and maybe not having to sprint for the line helped my chances for the upcoming 800m.</p>\r\n<p>So, after this decent weekend of track racing, I&rsquo;ll be going to Torun for the indoor world championships in a couple of weeks time. Aim to at least make both finals - let&rsquo;s see!\"</p>\r\n<div><span><br /></span></div>",
+          "modified_date": "2019-03-16T11:48:01.000Z",
+          "title": "",
+          "component": 2883,
+          "created_date": "2019-03-11T08:43:33.000Z"
+      }
+  },
+  {
+      "pk": 649,
+      "model": "news.thumbnail",
+      "fields": {
+          "news": 649,
+          "image": "news/649/thumbnail/2235.jpg",
+          "image_alt": ""
+      }
+  },
+  {
+      "pk": 2884,
+      "model": "news.component",
+      "fields": {
+          "news": 649,
+          "order": 1
+      }
+  },
+  {
+      "pk": 2235,
+      "model": "news.image",
+      "fields": {
+          "modified_date": "2019-03-16T11:48:01.000Z",
+          "image_alt": "",
+          "image": "news/649/image/2235.jpg",
+          "component": 2884,
+          "caption": "",
+          "created_date": "2019-03-11T08:43:33.000Z"
+      }
+  },
+  {
+      "pk": 650,
+      "model": "news.news",
+      "fields": {
+          "modified_date": "2019-03-22T15:24:33.000Z",
+          "author": 1,
+          "title": "Happy Brighton Half Day!",
+          "summary": "Truly spectacular weekend for Phoenix this year at the Brighton Half, with 20 runners turning out for us in the Youth Races and 34 in the Half Marathon.",
+          "created_date": "2019-03-22T14:09:42.000Z",
+          "slug": "happy-brighton-half-day"
+      }
+  },
+  {
+      "pk": 2885,
+      "model": "news.component",
+      "fields": {
+          "news": 650,
+          "order": 0
+      }
+  },
+  {
+      "pk": 650,
+      "model": "news.editorial",
+      "fields": {
+          "content": "<p><span>Truly spectacular weekend for Phoenix this year at the Brighton Half, on February 24th with 20 runners turning out for us in the Youth Races and 34 in the Half Marathon. In the Youth Races there were top-three finishes for Vincent Pegley (and potential recruit brother Louie!), Matthew Noakes, Ravi Clark, Ben Connolly, Eddie Harrison, Cassius Hebden, Milly Dickinson and Mia Edwards. And in the Half Marathon there were too many spectacular pbs to list, with 16 Phoenix runners ducking under 90 minutes and standout performances from V40 Ian Leitch who finished 4</span><span><sup>th</sup></span><span> overall in 1:07:09, Max Dumbrell (1:09:20), and Rachel Gorman (pictured), who set a new Phoenix club female record with a time of 1:22:24 .</span></p>\r\n<p>Full details of all our runners on the Results page.</p>",
+          "modified_date": "2019-03-22T15:24:33.000Z",
+          "title": "",
+          "component": 2885,
+          "created_date": "2019-03-22T14:09:42.000Z"
+      }
+  },
+  {
+      "pk": 650,
+      "model": "news.thumbnail",
+      "fields": {
+          "news": 650,
+          "image": "news/650/thumbnail/2236.jpeg",
+          "image_alt": ""
+      }
+  },
+  {
+      "pk": 2886,
+      "model": "news.component",
+      "fields": {
+          "news": 650,
+          "order": 1
+      }
+  },
+  {
+      "pk": 2236,
+      "model": "news.image",
+      "fields": {
+          "modified_date": "2019-03-22T15:24:33.000Z",
+          "image_alt": "",
+          "image": "news/650/image/2236.jpeg",
+          "component": 2886,
+          "caption": "",
+          "created_date": "2019-03-22T14:09:42.000Z"
+      }
   }
 ]

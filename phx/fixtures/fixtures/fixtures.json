@@ -24259,6 +24259,230 @@
       "pk": 1514,
       "model": "fixtures.fixture",
       "fields": {
+          "modified_date": "2019-03-12T20:15:14.000Z",
+          "location": "",
+          "title": "British Masters Championships",
+          "author": 1,
+          "event_date": "2019-03-09",
+          "link_url": "",
+          "created_date": "2019-03-12T20:08:33.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1515,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-12T21:01:00.000Z",
+          "location": "",
+          "title": "Trafford 10 k",
+          "author": 1,
+          "event_date": "2019-03-10",
+          "link_url": "",
+          "created_date": "2019-03-12T20:33:08.000Z",
+          "categories": [
+              1
+          ]
+      }
+  },
+  {
+      "pk": 1516,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-12T21:00:45.000Z",
+          "location": "",
+          "title": " Vitality Big Half",
+          "author": 1,
+          "event_date": "2019-03-10",
+          "link_url": "",
+          "created_date": "2019-03-12T20:59:50.000Z",
+          "categories": [
+              1
+          ]
+      }
+  },
+  {
+      "pk": 1517,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-12T21:24:52.000Z",
+          "location": "",
+          "title": "Surrey Half Marathon",
+          "author": 1,
+          "event_date": "2019-03-10",
+          "link_url": "",
+          "created_date": "2019-03-12T21:24:33.000Z",
+          "categories": [
+              1
+          ]
+      }
+  },
+  {
+      "pk": 1518,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-14T15:19:33.000Z",
+          "location": "",
+          "title": "Year 7& 8 Sussex Schools XC Champs",
+          "author": 1,
+          "event_date": "2019-02-28",
+          "link_url": "",
+          "created_date": "2019-03-14T15:18:30.000Z",
+          "categories": [
+              2
+          ]
+      }
+  },
+  {
+      "pk": 1519,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-15T17:39:46.000Z",
+          "location": "",
+          "title": "Inter-counties XC Champs, Loughborough",
+          "author": 1,
+          "event_date": "2019-03-09",
+          "link_url": "",
+          "created_date": "2019-03-15T17:39:46.000Z",
+          "categories": [
+              2
+          ]
+      }
+  },
+  {
+      "pk": 1520,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-17T20:36:19.000Z",
+          "location": "",
+          "title": "Reading Half Marathon",
+          "author": 1,
+          "event_date": "2019-03-17",
+          "link_url": "",
+          "created_date": "2019-03-17T20:36:19.000Z",
+          "categories": [
+              1
+          ]
+      }
+  },
+  {
+      "pk": 1521,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-17T20:39:39.000Z",
+          "location": "",
+          "title": "Endurance Life 10k",
+          "author": 1,
+          "event_date": "2019-03-17",
+          "link_url": "",
+          "created_date": "2019-03-17T20:39:39.000Z",
+          "categories": [
+              2
+          ]
+      }
+  },
+  {
+      "pk": 1522,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-18T08:44:54.000Z",
+          "location": "",
+          "title": "Fleet Half Marathon",
+          "author": 1,
+          "event_date": "2019-03-17",
+          "link_url": "",
+          "created_date": "2019-03-17T20:57:19.000Z",
+          "categories": [
+              1
+          ]
+      }
+  },
+  {
+      "pk": 1523,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-20T08:56:10.000Z",
+          "location": "",
+          "title": "Moyleman",
+          "author": 1,
+          "event_date": "2019-03-17",
+          "link_url": "",
+          "created_date": "2019-03-20T08:56:10.000Z",
+          "categories": [
+              2
+          ]
+      }
+  },
+  {
+      "pk": 1524,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-25T10:00:33.000Z",
+          "location": "",
+          "title": "Hastings Half Marathon",
+          "author": 1,
+          "event_date": "2019-03-24",
+          "link_url": "",
+          "created_date": "2019-03-24T20:17:15.000Z",
+          "categories": [
+              1
+          ]
+      }
+  },
+  {
+      "pk": 1525,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-29T08:58:28.000Z",
+          "location": "",
+          "title": "Year 7&8 InterCounty XC",
+          "author": 1,
+          "event_date": "2019-03-23",
+          "link_url": "",
+          "created_date": "2019-03-29T08:32:55.000Z",
+          "categories": [
+              2
+          ]
+      }
+  },
+  {
+      "pk": 1526,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-29T09:00:39.000Z",
+          "location": "",
+          "title": "Sussex Schools Year 5&6 XC",
+          "author": 1,
+          "event_date": "2019-03-27",
+          "link_url": "",
+          "created_date": "2019-03-29T08:58:12.000Z",
+          "categories": [
+              2
+          ]
+      }
+  },
+  {
+      "pk": 1527,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-04-04T09:58:04.000Z",
+          "location": "",
+          "title": "World Masters Athletics Championships Indoor TORUN (POL)",
+          "author": 1,
+          "event_date": "2019-03-24",
+          "link_url": "",
+          "created_date": "2019-04-04T09:53:46.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1528,
+      "model": "fixtures.fixture",
+      "fields": {
           "modified_date": "2018-09-28T17:09:15.000Z",
           "location": "Christ's Hospital",
           "title": "Sussex Road Relays *ALL AGES",
@@ -24272,7 +24496,7 @@
       }
   },
   {
-      "pk": 1515,
+      "pk": 1529,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2018-08-14T17:21:06.000Z",
@@ -24288,7 +24512,7 @@
       }
   },
   {
-      "pk": 1516,
+      "pk": 1530,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2018-08-14T17:22:04.000Z",
@@ -24304,23 +24528,7 @@
       }
   },
   {
-      "pk": 1517,
-      "model": "fixtures.fixture",
-      "fields": {
-          "modified_date": "2019-01-07T17:11:58.000Z",
-          "location": "",
-          "title": "Hastings Half Marathon",
-          "author": 1,
-          "event_date": "2019-03-24",
-          "link_url": "http://www.sussexraces.co.uk/sussexraceseventplanner.html",
-          "created_date": "2019-01-07T17:11:58.000Z",
-          "categories": [
-              4
-          ]
-      }
-  },
-  {
-      "pk": 1518,
+      "pk": 1531,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-07T17:13:03.000Z",
@@ -24336,7 +24544,7 @@
       }
   },
   {
-      "pk": 1519,
+      "pk": 1532,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-07T17:14:36.000Z",
@@ -24352,7 +24560,7 @@
       }
   },
   {
-      "pk": 1520,
+      "pk": 1533,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-07T17:15:33.000Z",
@@ -24368,7 +24576,7 @@
       }
   },
   {
-      "pk": 1521,
+      "pk": 1534,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-07T17:16:21.000Z",
@@ -24384,7 +24592,7 @@
       }
   },
   {
-      "pk": 1522,
+      "pk": 1535,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-07T17:20:40.000Z",
@@ -24400,7 +24608,7 @@
       }
   },
   {
-      "pk": 1523,
+      "pk": 1536,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-07T17:23:13.000Z",
@@ -24416,7 +24624,7 @@
       }
   },
   {
-      "pk": 1524,
+      "pk": 1537,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-07T17:24:00.000Z",
@@ -24432,7 +24640,7 @@
       }
   },
   {
-      "pk": 1525,
+      "pk": 1538,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-07T17:28:06.000Z",
@@ -24448,7 +24656,7 @@
       }
   },
   {
-      "pk": 1526,
+      "pk": 1539,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-07T17:28:50.000Z",
@@ -24464,7 +24672,7 @@
       }
   },
   {
-      "pk": 1527,
+      "pk": 1540,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-07T17:29:39.000Z",
@@ -24480,7 +24688,7 @@
       }
   },
   {
-      "pk": 1528,
+      "pk": 1541,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-30T15:25:55.000Z",
@@ -24496,23 +24704,7 @@
       }
   },
   {
-      "pk": 1529,
-      "model": "fixtures.fixture",
-      "fields": {
-          "modified_date": "2019-01-18T13:12:13.000Z",
-          "location": "",
-          "title": "Gravesend Cyclopark Spring Duathlons",
-          "author": 1,
-          "event_date": "2019-03-10",
-          "link_url": "http://www.bridgetriathlon.co.uk",
-          "created_date": "2019-01-18T13:12:13.000Z",
-          "categories": [
-              3
-          ]
-      }
-  },
-  {
-      "pk": 1530,
+      "pk": 1542,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-18T13:12:59.000Z",
@@ -24528,7 +24720,7 @@
       }
   },
   {
-      "pk": 1531,
+      "pk": 1543,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-18T13:13:46.000Z",
@@ -24544,7 +24736,7 @@
       }
   },
   {
-      "pk": 1532,
+      "pk": 1544,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-18T13:14:33.000Z",
@@ -24560,7 +24752,7 @@
       }
   },
   {
-      "pk": 1533,
+      "pk": 1545,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-18T13:15:21.000Z",
@@ -24576,7 +24768,7 @@
       }
   },
   {
-      "pk": 1534,
+      "pk": 1546,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-18T13:16:13.000Z",
@@ -24592,7 +24784,7 @@
       }
   },
   {
-      "pk": 1535,
+      "pk": 1547,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-18T13:17:35.000Z",
@@ -24608,7 +24800,7 @@
       }
   },
   {
-      "pk": 1536,
+      "pk": 1548,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-18T13:18:25.000Z",
@@ -24624,7 +24816,7 @@
       }
   },
   {
-      "pk": 1537,
+      "pk": 1549,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-18T13:19:49.000Z",
@@ -24640,7 +24832,7 @@
       }
   },
   {
-      "pk": 1538,
+      "pk": 1550,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-18T13:21:00.000Z",
@@ -24656,7 +24848,7 @@
       }
   },
   {
-      "pk": 1539,
+      "pk": 1551,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-18T13:21:51.000Z",
@@ -24672,7 +24864,7 @@
       }
   },
   {
-      "pk": 1540,
+      "pk": 1552,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-18T13:27:02.000Z",
@@ -24688,7 +24880,7 @@
       }
   },
   {
-      "pk": 1541,
+      "pk": 1553,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-29T16:59:02.000Z",
@@ -24704,7 +24896,7 @@
       }
   },
   {
-      "pk": 1542,
+      "pk": 1554,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-29T16:59:27.000Z",
@@ -24720,7 +24912,7 @@
       }
   },
   {
-      "pk": 1543,
+      "pk": 1555,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-29T16:46:34.000Z",
@@ -24736,7 +24928,7 @@
       }
   },
   {
-      "pk": 1544,
+      "pk": 1556,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-29T16:47:37.000Z",
@@ -24752,23 +24944,7 @@
       }
   },
   {
-      "pk": 1545,
-      "model": "fixtures.fixture",
-      "fields": {
-          "modified_date": "2019-01-29T16:48:58.000Z",
-          "location": "Withdean Stadium",
-          "title": "PHOENIX OPEN",
-          "author": 1,
-          "event_date": "2019-05-29",
-          "link_url": "http://www.sussexathletics.net/",
-          "created_date": "2019-01-29T16:48:58.000Z",
-          "categories": [
-              5
-          ]
-      }
-  },
-  {
-      "pk": 1546,
+      "pk": 1557,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-30T15:28:44.000Z",
@@ -24784,7 +24960,7 @@
       }
   },
   {
-      "pk": 1547,
+      "pk": 1558,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-29T16:51:38.000Z",
@@ -24800,7 +24976,7 @@
       }
   },
   {
-      "pk": 1548,
+      "pk": 1559,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-29T17:00:03.000Z",
@@ -24816,7 +24992,7 @@
       }
   },
   {
-      "pk": 1549,
+      "pk": 1560,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-29T16:54:46.000Z",
@@ -24832,7 +25008,7 @@
       }
   },
   {
-      "pk": 1550,
+      "pk": 1561,
       "model": "fixtures.fixture",
       "fields": {
           "modified_date": "2019-01-29T17:00:17.000Z",
@@ -24842,6 +25018,198 @@
           "event_date": "2019-06-22",
           "link_url": "http://crawleyac.net/index.php/news/crawley-ac-open-meetings-2019tf",
           "created_date": "2019-01-29T16:55:46.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1562,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-26T17:55:10.000Z",
+          "location": "Lewes",
+          "title": "Sussex U13 League (East)",
+          "author": 1,
+          "event_date": "2019-05-08",
+          "link_url": "http://www.sussexathletics.net/Fixtures",
+          "created_date": "2019-03-26T17:55:10.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1563,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-26T17:56:32.000Z",
+          "location": "K2 Crawley",
+          "title": "Sussex County Champs (U13 upwards)",
+          "author": 1,
+          "event_date": "2019-05-11",
+          "link_url": "http://www.sussexathletics.net/Fixtures",
+          "created_date": "2019-03-26T17:56:32.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1564,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-26T18:11:51.000Z",
+          "location": "Brighton",
+          "title": "PHOENIX OPEN (U11 upwards)",
+          "author": 1,
+          "event_date": "2019-05-29",
+          "link_url": "http://www.sussexathletics.net/Fixtures",
+          "created_date": "2019-03-26T17:57:47.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1565,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-26T17:59:05.000Z",
+          "location": "Eastbourne",
+          "title": "Sussex U15 League (East)",
+          "author": 1,
+          "event_date": "2019-06-05",
+          "link_url": "http://www.sussexathletics.net/Fixtures",
+          "created_date": "2019-03-26T17:59:05.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1566,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-26T18:00:20.000Z",
+          "location": "K2 Crawley",
+          "title": "Sussex Schools Champs (Year 8 upwards)",
+          "author": 1,
+          "event_date": "2019-06-08",
+          "link_url": "http://www.sussexathletics.net/Fixtures",
+          "created_date": "2019-03-26T18:00:20.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1567,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-26T18:02:45.000Z",
+          "location": "Brighton",
+          "title": "Sussex U13 League (East) tbc",
+          "author": 1,
+          "event_date": "2019-06-14",
+          "link_url": "http://www.sussexathletics.net/Fixtures",
+          "created_date": "2019-03-26T18:02:45.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1568,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-26T18:03:57.000Z",
+          "location": "Brighton",
+          "title": "Sussex U15 League (East)",
+          "author": 1,
+          "event_date": "2019-06-28",
+          "link_url": "http://www.sussexathletics.net/Fixtures",
+          "created_date": "2019-03-26T18:03:57.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1569,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-26T18:05:02.000Z",
+          "location": "Brighton",
+          "title": "Sussex U13 and Quadkids Champs",
+          "author": 1,
+          "event_date": "2019-07-07",
+          "link_url": "http://www.sussexathletics.net/Fixtures",
+          "created_date": "2019-03-26T18:05:02.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1570,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-26T18:06:00.000Z",
+          "location": "Lewes",
+          "title": "Sussex U15 League (East)",
+          "author": 1,
+          "event_date": "2019-07-08",
+          "link_url": "http://www.sussexathletics.net/Fixtures",
+          "created_date": "2019-03-26T18:06:00.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1571,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-26T18:06:59.000Z",
+          "location": "Eastbourne",
+          "title": "Sussex U13 League (East)",
+          "author": 1,
+          "event_date": "2019-07-17",
+          "link_url": "http://www.sussexathletics.net/Fixtures",
+          "created_date": "2019-03-26T18:06:59.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1572,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-26T18:08:06.000Z",
+          "location": "Brighton",
+          "title": "Sussex U15 League Final",
+          "author": 1,
+          "event_date": "2019-08-30",
+          "link_url": "http://www.sussexathletics.net/Fixtures",
+          "created_date": "2019-03-26T18:08:06.000Z",
+          "categories": [
+              5
+          ]
+      }
+  },
+  {
+      "pk": 1573,
+      "model": "fixtures.fixture",
+      "fields": {
+          "modified_date": "2019-03-26T18:08:59.000Z",
+          "location": "K2 Crawley",
+          "title": "Sussex U13 League Final",
+          "author": 1,
+          "event_date": "2019-09-01",
+          "link_url": "http://www.sussexathletics.net/Fixtures",
+          "created_date": "2019-03-26T18:08:59.000Z",
           "categories": [
               5
           ]
