@@ -116,7 +116,8 @@ USE_TZ = True
 # http://django-cron.readthedocs.io/
 
 CRON_CLASSES = [
-    'social.cron.SocialCron',
+    'social.cron.SocialCronPost',
+    'social.cron.SocialCronRePost',
 ]
 
 # CK Editor

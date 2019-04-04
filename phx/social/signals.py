@@ -31,7 +31,6 @@ def save(model, title, url, reposted=False):
     from .models import Social
     social = Social(model=model, title=title, url=url, reposted=reposted)
     social.save()
-    social.post()
 
 
 def get_news_url(obj):
