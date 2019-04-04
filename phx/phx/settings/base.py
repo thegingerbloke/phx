@@ -83,3 +83,14 @@ if env.str(
         'page_id': env.str('FACEBOOK_PAGE_ID_KEY'),
         'access_token': env.str('FACEBOOK_ACCESS_TOKEN_KEY')
     }
+
+# Mailgun
+if env.str(
+        'MAILGUN_API_KEY', default='') and env.str(
+            'MAILGUN_SENDER_DOMAIN', default=''):
+    EMAIL_BACKEND = "anymail.backends.mailgun.EmailBackend"
+    ANYMAIL = {
+        "MAILGUN_API_KEY": env.str("MAILGUN_API_KEY"),
+        "MAILGUN_SENDER_DOMAIN": env.str("MAILGUN_SENDER_DOMAIN"),
+        "MAILGUN_API_URL": "https://api.eu.mailgun.net/v3",
+    }

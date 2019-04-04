@@ -1,5 +1,6 @@
 Django
 django_extensions
+django-anymail[mailgun]
 django-ckeditor
 django-cron
 django-environ
