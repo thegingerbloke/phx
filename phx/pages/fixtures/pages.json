@@ -7,7 +7,7 @@
             "parent": null,
             "slug": "/about/",
             "created_date": "2018-07-18T14:32:05.524Z",
-            "modified_date": "2018-07-25T16:18:53.269Z",
+            "modified_date": "2019-03-09T12:43:43.533Z",
             "author": 1
         }
     },
@@ -19,7 +19,7 @@
             "parent": null,
             "slug": "/contact/",
             "created_date": "2018-07-25T13:29:49.304Z",
-            "modified_date": "2018-07-27T10:56:21.937Z",
+            "modified_date": "2019-03-12T21:47:06.974Z",
             "author": 1
         }
     },
@@ -55,7 +55,7 @@
             "parent": 1,
             "slug": "/about/club-values/",
             "created_date": "2018-07-25T17:07:41.715Z",
-            "modified_date": "2018-07-27T10:50:20.306Z",
+            "modified_date": "2019-03-12T18:09:15.421Z",
             "author": 1
         }
     },
@@ -67,7 +67,7 @@
             "parent": 1,
             "slug": "/about/club-history/",
             "created_date": "2018-07-25T17:08:32.467Z",
-            "modified_date": "2018-07-27T10:50:49.910Z",
+            "modified_date": "2019-03-12T18:09:34.566Z",
             "author": 1
         }
     },
@@ -79,7 +79,7 @@
             "parent": null,
             "slug": "/events/",
             "created_date": "2018-07-26T14:27:41.736Z",
-            "modified_date": "2018-07-27T10:53:05.013Z",
+            "modified_date": "2019-03-12T18:38:11.865Z",
             "author": 1
         }
     },
@@ -87,11 +87,11 @@
         "model": "pages.page",
         "pk": 8,
         "fields": {
-            "title": "Constitution and Policies",
+            "title": "Constitution",
             "parent": 1,
-            "slug": "/about/constitution-and-policies/",
+            "slug": "/about/constitution/",
             "created_date": "2018-07-27T10:51:46.597Z",
-            "modified_date": "2018-07-27T10:53:26.970Z",
+            "modified_date": "2019-03-09T16:06:59.339Z",
             "author": 1
         }
     },
@@ -99,11 +99,11 @@
         "model": "pages.page",
         "pk": 9,
         "fields": {
-            "title": "Awards & Records",
+            "title": "Club Records",
             "parent": 1,
-            "slug": "/about/awards-records/",
+            "slug": "/about/club-records/",
             "created_date": "2018-07-27T10:52:07.789Z",
-            "modified_date": "2018-07-27T10:52:07.789Z",
+            "modified_date": "2019-03-12T18:09:53.868Z",
             "author": 1
         }
     },
@@ -115,19 +115,7 @@
             "parent": 1,
             "slug": "/about/club-reps/",
             "created_date": "2018-07-27T10:52:21.428Z",
-            "modified_date": "2018-07-27T10:53:19.630Z",
-            "author": 1
-        }
-    },
-    {
-        "model": "pages.page",
-        "pk": 11,
-        "fields": {
-            "title": "Find us",
-            "parent": 2,
-            "slug": "/contact/find-us/",
-            "created_date": "2018-07-27T10:58:53.154Z",
-            "modified_date": "2018-08-20T16:01:20.875Z",
+            "modified_date": "2019-04-02T11:01:54.433Z",
             "author": 1
         }
     },
@@ -139,7 +127,7 @@
             "parent": null,
             "slug": "/training/",
             "created_date": "2018-07-27T11:03:48.984Z",
-            "modified_date": "2018-07-27T11:03:48.984Z",
+            "modified_date": "2019-04-03T09:14:06.591Z",
             "author": 1
         }
     },
@@ -147,11 +135,11 @@
         "model": "pages.page",
         "pk": 13,
         "fields": {
-            "title": "Training pathway",
+            "title": "Training Pathway",
             "parent": 12,
             "slug": "/training/training-pathway/",
             "created_date": "2018-07-27T11:04:04.522Z",
-            "modified_date": "2018-07-27T11:04:04.522Z",
+            "modified_date": "2019-03-22T18:28:48.285Z",
             "author": 1
         }
     },
@@ -163,7 +151,7 @@
             "parent": 12,
             "slug": "/training/juniors/",
             "created_date": "2018-07-27T11:04:14.205Z",
-            "modified_date": "2018-07-27T11:04:14.205Z",
+            "modified_date": "2019-03-22T18:23:19.404Z",
             "author": 1
         }
     },
@@ -171,11 +159,11 @@
         "model": "pages.page",
         "pk": 15,
         "fields": {
-            "title": "Strength and conditioning",
+            "title": "Sessions",
             "parent": 14,
-            "slug": "/training/juniors/strength-and-conditioning/",
+            "slug": "/training/juniors/sessions/",
             "created_date": "2018-07-27T11:04:33.146Z",
-            "modified_date": "2018-07-27T11:04:33.146Z",
+            "modified_date": "2019-03-22T18:34:47.378Z",
             "author": 1
         }
     },
@@ -183,11 +171,11 @@
         "model": "pages.page",
         "pk": 16,
         "fields": {
-            "title": "Track",
+            "title": "Strength and conditioning",
             "parent": 14,
-            "slug": "/training/juniors/track/",
+            "slug": "/training/juniors/strength-and-conditioning/",
             "created_date": "2018-07-27T11:04:44.573Z",
-            "modified_date": "2018-07-27T11:04:44.573Z",
+            "modified_date": "2019-03-19T12:40:29.535Z",
             "author": 1
         }
     },
@@ -199,7 +187,7 @@
             "parent": 12,
             "slug": "/training/seniors/",
             "created_date": "2018-07-27T11:04:54.826Z",
-            "modified_date": "2018-07-27T11:04:54.826Z",
+            "modified_date": "2019-03-19T13:02:31.102Z",
             "author": 1
         }
     },
@@ -207,11 +195,11 @@
         "model": "pages.page",
         "pk": 18,
         "fields": {
-            "title": "Multisport",
+            "title": "Run Sessions",
             "parent": 17,
-            "slug": "/training/seniors/multisport/",
+            "slug": "/training/seniors/run-sessions/",
             "created_date": "2018-07-27T11:05:10.706Z",
-            "modified_date": "2018-07-27T11:05:10.706Z",
+            "modified_date": "2019-03-25T21:37:59.718Z",
             "author": 1
         }
     },
@@ -223,7 +211,7 @@
             "parent": 17,
             "slug": "/training/seniors/strength-and-conditioning/",
             "created_date": "2018-07-27T11:05:28.964Z",
-            "modified_date": "2018-07-27T11:05:28.964Z",
+            "modified_date": "2018-11-27T15:53:53.457Z",
             "author": 1
         }
     },
@@ -231,11 +219,11 @@
         "model": "pages.page",
         "pk": 20,
         "fields": {
-            "title": "Track",
+            "title": "Thursday Club Run",
             "parent": 17,
-            "slug": "/training/seniors/track/",
+            "slug": "/training/seniors/thursday-club-run/",
             "created_date": "2018-07-27T11:05:39.505Z",
-            "modified_date": "2018-07-27T11:05:39.505Z",
+            "modified_date": "2019-04-02T15:25:08.492Z",
             "author": 1
         }
     },
@@ -243,11 +231,11 @@
         "model": "pages.page",
         "pk": 21,
         "fields": {
-            "title": "Club run",
+            "title": "Multisport",
             "parent": 17,
-            "slug": "/training/seniors/club-run/",
+            "slug": "/training/seniors/multisport/",
             "created_date": "2018-07-27T11:05:53.155Z",
-            "modified_date": "2018-07-27T11:05:53.155Z",
+            "modified_date": "2019-03-19T13:02:51.247Z",
             "author": 1
         }
     },
@@ -259,7 +247,7 @@
             "parent": 17,
             "slug": "/training/seniors/swimming/",
             "created_date": "2018-07-27T11:06:02.372Z",
-            "modified_date": "2018-07-27T11:06:02.372Z",
+            "modified_date": "2019-03-22T18:38:50.021Z",
             "author": 1
         }
     },
@@ -271,7 +259,7 @@
             "parent": 12,
             "slug": "/training/elite/",
             "created_date": "2018-07-27T11:06:15.778Z",
-            "modified_date": "2018-07-27T11:06:15.778Z",
+            "modified_date": "2019-04-03T09:15:17.274Z",
             "author": 1
         }
     },
@@ -279,11 +267,11 @@
         "model": "pages.page",
         "pk": 25,
         "fields": {
-            "title": "Phoenix 10k",
+            "title": "Phoenix 10K",
             "parent": 7,
             "slug": "/events/phoenix-10k/",
             "created_date": "2018-07-27T11:07:02.534Z",
-            "modified_date": "2018-07-27T11:07:02.534Z",
+            "modified_date": "2019-03-10T16:14:11.003Z",
             "author": 1
         }
     },
@@ -295,7 +283,7 @@
             "parent": 7,
             "slug": "/events/bmc-open/",
             "created_date": "2018-07-27T11:07:16.163Z",
-            "modified_date": "2018-07-27T11:07:16.163Z",
+            "modified_date": "2019-03-10T16:26:13.330Z",
             "author": 1
         }
     },
@@ -307,7 +295,7 @@
             "parent": 7,
             "slug": "/events/big-w/",
             "created_date": "2018-07-27T11:07:29.122Z",
-            "modified_date": "2018-07-27T11:07:29.122Z",
+            "modified_date": "2019-03-09T18:18:58.464Z",
             "author": 1
         }
     },
@@ -319,19 +307,7 @@
             "parent": 7,
             "slug": "/events/black-cap/",
             "created_date": "2018-07-27T11:07:41.951Z",
-            "modified_date": "2018-07-27T11:07:41.952Z",
-            "author": 1
-        }
-    },
-    {
-        "model": "pages.page",
-        "pk": 29,
-        "fields": {
-            "title": "Beer mile",
-            "parent": 7,
-            "slug": "/events/beer-mile/",
-            "created_date": "2018-07-27T11:07:54.503Z",
-            "modified_date": "2018-07-27T11:07:54.503Z",
+            "modified_date": "2019-03-09T18:15:49.789Z",
             "author": 1
         }
     },
@@ -343,7 +319,7 @@
             "parent": 7,
             "slug": "/events/awards-night/",
             "created_date": "2018-07-27T11:08:26.766Z",
-            "modified_date": "2018-07-27T11:08:26.766Z",
+            "modified_date": "2019-03-10T16:31:09.463Z",
             "author": 1
         }
     },
@@ -355,7 +331,7 @@
             "parent": null,
             "slug": "/membership/",
             "created_date": "2018-07-27T11:08:41.503Z",
-            "modified_date": "2018-07-27T11:08:41.503Z",
+            "modified_date": "2019-03-13T14:41:18.028Z",
             "author": 1
         }
     },
@@ -367,7 +343,7 @@
             "parent": 31,
             "slug": "/membership/join/",
             "created_date": "2018-07-27T11:08:54.929Z",
-            "modified_date": "2018-07-27T11:08:54.929Z",
+            "modified_date": "2019-03-13T09:17:46.381Z",
             "author": 1
         }
     },
@@ -391,7 +367,7 @@
             "parent": 31,
             "slug": "/membership/kit/",
             "created_date": "2018-07-27T11:09:13.610Z",
-            "modified_date": "2018-07-27T11:09:13.610Z",
+            "modified_date": "2019-03-12T18:46:11.818Z",
             "author": 1
         }
     },
@@ -403,7 +379,7 @@
             "parent": 31,
             "slug": "/membership/testimonials/",
             "created_date": "2018-07-27T11:09:27.152Z",
-            "modified_date": "2018-07-27T11:09:27.152Z",
+            "modified_date": "2019-03-19T11:45:35.217Z",
             "author": 1
         }
     },
@@ -415,7 +391,7 @@
             "parent": null,
             "slug": "/privacy-notice/",
             "created_date": "2018-07-27T11:09:47.015Z",
-            "modified_date": "2018-08-17T10:40:18.411Z",
+            "modified_date": "2019-04-03T10:27:05.297Z",
             "author": 1
         }
     },
@@ -427,7 +403,7 @@
             "parent": null,
             "slug": "/terms-of-use/",
             "created_date": "2018-07-27T11:10:02.834Z",
-            "modified_date": "2018-08-17T10:42:20.108Z",
+            "modified_date": "2019-04-03T10:27:24.191Z",
             "author": 1
         }
     },
@@ -487,7 +463,7 @@
             "parent": 39,
             "slug": "/how-to-use-the-admin/feature-components/",
             "created_date": "2018-08-07T14:44:38.742Z",
-            "modified_date": "2018-08-07T14:45:46.463Z",
+            "modified_date": "2019-03-19T11:56:23.522Z",
             "author": 1
         }
     },
@@ -499,7 +475,7 @@
             "parent": 39,
             "slug": "/how-to-use-the-admin/quote-components/",
             "created_date": "2018-08-07T14:49:03.960Z",
-            "modified_date": "2018-08-07T14:49:03.960Z",
+            "modified_date": "2019-03-19T11:55:43.199Z",
             "author": 1
         }
     },
@@ -552,19 +528,35 @@
         }
     },
     {
+        "model": "pages.page",
+        "pk": 48,
+        "fields": {
+            "title": "2018 Awards",
+            "parent": 30,
+            "slug": "/events/awards-night/2018-awards/",
+            "created_date": "2019-03-09T17:37:04.816Z",
+            "modified_date": "2019-03-10T17:07:03.800Z",
+            "author": 7
+        }
+    },
+    {
+        "model": "pages.page",
+        "pk": 49,
+        "fields": {
+            "title": "Information for parents",
+            "parent": 14,
+            "slug": "/training/juniors/information-for-parents/",
+            "created_date": "2019-03-19T12:35:45.136Z",
+            "modified_date": "2019-03-22T18:24:14.608Z",
+            "author": 7
+        }
+    },
+    {
         "model": "pages.component",
         "pk": 1,
         "fields": {
             "order": 0,
             "page": 2
-        }
-    },
-    {
-        "model": "pages.component",
-        "pk": 2,
-        "fields": {
-            "order": 0,
-            "page": 11
         }
     },
     {
@@ -873,10 +865,578 @@
     },
     {
         "model": "pages.component",
-        "pk": 42,
+        "pk": 43,
+        "fields": {
+            "order": 0,
+            "page": 27
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 44,
+        "fields": {
+            "order": 0,
+            "page": 28
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 45,
+        "fields": {
+            "order": 0,
+            "page": 30
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 47,
+        "fields": {
+            "order": 0,
+            "page": 15
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 48,
+        "fields": {
+            "order": 0,
+            "page": 16
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 49,
+        "fields": {
+            "order": 0,
+            "page": 12
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 50,
         "fields": {
             "order": 1,
-            "page": 11
+            "page": 12
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 51,
+        "fields": {
+            "order": 0,
+            "page": 14
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 52,
+        "fields": {
+            "order": 0,
+            "page": 6
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 53,
+        "fields": {
+            "order": 0,
+            "page": 17
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 54,
+        "fields": {
+            "order": 0,
+            "page": 32
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 55,
+        "fields": {
+            "order": 0,
+            "page": 31
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 56,
+        "fields": {
+            "order": 0,
+            "page": 8
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 58,
+        "fields": {
+            "order": 0,
+            "page": 9
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 59,
+        "fields": {
+            "order": 0,
+            "page": 5
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 60,
+        "fields": {
+            "order": 0,
+            "page": 25
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 63,
+        "fields": {
+            "order": 0,
+            "page": 7
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 64,
+        "fields": {
+            "order": 0,
+            "page": 19
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 65,
+        "fields": {
+            "order": 0,
+            "page": 18
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 66,
+        "fields": {
+            "order": 1,
+            "page": 30
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 68,
+        "fields": {
+            "order": 1,
+            "page": 25
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 69,
+        "fields": {
+            "order": 2,
+            "page": 25
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 70,
+        "fields": {
+            "order": 1,
+            "page": 8
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 71,
+        "fields": {
+            "order": 2,
+            "page": 8
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 72,
+        "fields": {
+            "order": 0,
+            "page": 26
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 73,
+        "fields": {
+            "order": 1,
+            "page": 26
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 74,
+        "fields": {
+            "order": 1,
+            "page": 28
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 75,
+        "fields": {
+            "order": 1,
+            "page": 14
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 79,
+        "fields": {
+            "order": 0,
+            "page": 1
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 80,
+        "fields": {
+            "order": 1,
+            "page": 9
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 81,
+        "fields": {
+            "order": 1,
+            "page": 17
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 88,
+        "fields": {
+            "order": 1,
+            "page": 27
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 89,
+        "fields": {
+            "order": 2,
+            "page": 28
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 90,
+        "fields": {
+            "order": 0,
+            "page": 10
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 91,
+        "fields": {
+            "order": 1,
+            "page": 10
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 92,
+        "fields": {
+            "order": 2,
+            "page": 10
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 93,
+        "fields": {
+            "order": 0,
+            "page": 34
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 95,
+        "fields": {
+            "order": 2,
+            "page": 27
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 97,
+        "fields": {
+            "order": 0,
+            "page": 48
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 101,
+        "fields": {
+            "order": 1,
+            "page": 6
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 102,
+        "fields": {
+            "order": 2,
+            "page": 6
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 103,
+        "fields": {
+            "order": 2,
+            "page": 9
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 104,
+        "fields": {
+            "order": 1,
+            "page": 5
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 105,
+        "fields": {
+            "order": 1,
+            "page": 7
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 106,
+        "fields": {
+            "order": 1,
+            "page": 34
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 107,
+        "fields": {
+            "order": 0,
+            "page": 35
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 108,
+        "fields": {
+            "order": 1,
+            "page": 35
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 109,
+        "fields": {
+            "order": 6,
+            "page": 42
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 110,
+        "fields": {
+            "order": 7,
+            "page": 42
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 111,
+        "fields": {
+            "order": 5,
+            "page": 43
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 112,
+        "fields": {
+            "order": 6,
+            "page": 43
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 113,
+        "fields": {
+            "order": 0,
+            "page": 49
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 116,
+        "fields": {
+            "order": 0,
+            "page": 20
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 117,
+        "fields": {
+            "order": 0,
+            "page": 21
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 118,
+        "fields": {
+            "order": 1,
+            "page": 21
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 119,
+        "fields": {
+            "order": 2,
+            "page": 21
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 120,
+        "fields": {
+            "order": 3,
+            "page": 21
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 121,
+        "fields": {
+            "order": 4,
+            "page": 21
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 122,
+        "fields": {
+            "order": 0,
+            "page": 13
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 124,
+        "fields": {
+            "order": 0,
+            "page": 22
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 125,
+        "fields": {
+            "order": 1,
+            "page": 22
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 126,
+        "fields": {
+            "order": 0,
+            "page": 23
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 127,
+        "fields": {
+            "order": 1,
+            "page": 49
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 128,
+        "fields": {
+            "order": 2,
+            "page": 49
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 129,
+        "fields": {
+            "order": 1,
+            "page": 13
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 130,
+        "fields": {
+            "order": 1,
+            "page": 15
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 131,
+        "fields": {
+            "order": 2,
+            "page": 15
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 132,
+        "fields": {
+            "order": 1,
+            "page": 23
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 133,
+        "fields": {
+            "order": 2,
+            "page": 23
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 134,
+        "fields": {
+            "order": 1,
+            "page": 18
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 135,
+        "fields": {
+            "order": 2,
+            "page": 20
+        }
+    },
+    {
+        "model": "pages.component",
+        "pk": 136,
+        "fields": {
+            "order": 1,
+            "page": 20
         }
     },
     {
@@ -884,21 +1444,10 @@
         "pk": 1,
         "fields": {
             "created_date": "2018-07-25T13:29:49.308Z",
-            "modified_date": "2018-07-27T10:56:22.060Z",
+            "modified_date": "2019-03-12T21:47:06.986Z",
             "title": "",
-            "content": "<p>You can contact us by emailing <a href=\"mailto:brightonphoenix@gmail.com\">brightonphoenix@gmail.com</a> or by&nbsp;filling in the form below</p>",
+            "content": "<p>There are lots of ways you can keep up to date with our news. As well as the <a href=\"http://dev.brightonphoenix.org.uk/news/\">news</a> and <a href=\"http://dev.brightonphoenix.org.uk/results/\">results</a> pages on this site, we are active on <a href=\"https://twitter.com/brightonphoenix\">Twitter</a>, <a href=\"https://www.instagram.com/brighton_phoenix/\">Instagram</a>, and <a href=\"https://www.facebook.com/phoenixathletics/\">Facebook</a>.&nbsp; Links to the dedicated social media pages for our popular <a href=\"http://dev.brightonphoenix.org.uk/events/bmc-open/\">BMC Open</a> track races and the <a href=\"http://dev.brightonphoenix.org.uk/events/phoenix-10k/\">Phoenix 10k</a> can also be found on the <a href=\"http://dev.brightonphoenix.org.uk/events/\">events</a> page of this site.&nbsp; Club members can also join our closed <a href=\"https://www.facebook.com/groups/brightonphoenix/\">Facebook page</a>.You can contact us directly by emailing <a href=\"mailto:brightonphoenix@gmail.com\">brightonphoenix@gmail.com</a> or by&nbsp;filling in the form below. We will make sure your message gets to the right person.</p>\r\n\r\n<p>Members are kept up to date with fixtures and other news by email, and receive the monthly&nbsp;<em>Phoenix Phlyer</em>&nbsp;newsletter.&nbsp; Many members also set up smaller email and Whatsapp groups to make plans for specific training sessions and events.</p>\r\n\r\n<p>Please use the form below to get in touch with us:</p>",
             "component": 1
-        }
-    },
-    {
-        "model": "pages.editorial",
-        "pk": 2,
-        "fields": {
-            "created_date": "2018-07-27T10:58:53.208Z",
-            "modified_date": "2018-07-27T11:02:04.722Z",
-            "title": "",
-            "content": "<p>You can find us at the <a href=\"https://www.freedom-leisure.co.uk/centres/withdean-sports-complex/\">Withdean Stadium track</a> every Wednesday evening from 5:30pm.</p>\r\n\r\n<p>Tongdean Lane, Brighton,&nbsp;<a href=\"https://www.google.co.uk/maps/place/Withdean+Sports+Complex/@50.8535931,-0.1597183,18z/data=!4m13!1m7!3m6!1s0x48758f8d2383f9dd:0x32e9caf72a3d565b!2sTongdean+Ln,+Brighton+BN1+5JD!3b1!8m2!3d50.8538631!4d-0.159572!3m4!1s0x48758f8d23653431:0x57201f67be7f42a0!8m2!3d50.852903!4d-0.1602452\">BN1 5JD</a></p>",
-            "component": 2
         }
     },
     {
@@ -1027,9 +1576,9 @@
         "pk": 14,
         "fields": {
             "created_date": "2018-08-07T14:44:38.845Z",
-            "modified_date": "2018-08-07T14:44:38.845Z",
+            "modified_date": "2019-03-19T11:56:23.549Z",
             "title": "",
-            "content": "<p>Feature components can be used to place text alongside an image.&nbsp;</p>\r\n\r\n<p>There are two required pieces of information for a feature component:</p>\r\n\r\n<ul>\r\n\t<li>Title</li>\r\n\t<li>Text content</li>\r\n</ul>\r\n\r\n<p>There are several optional pieces of information:</p>\r\n\r\n<ul>\r\n\t<li>A subtitle</li>\r\n\t<li>An image</li>\r\n\t<li>Image alt text</li>\r\n\t<li>A link URL</li>\r\n\t<li>The link text</li>\r\n</ul>\r\n\r\n<p>There are also&nbsp;configuration options:&nbsp;</p>\r\n\r\n<ul>\r\n\t<li>Image/text alignment - e.g. image to the left or right of the text, or centred text (with no image)</li>\r\n\t<li>The background colour - light or dark blue, or white</li>\r\n</ul>",
+            "content": "<p>Feature components can be used to place text alongside an image.&nbsp;</p>\r\n\r\n<p>There are two required pieces of information for a feature component:</p>\r\n\r\n<ul>\r\n\t<li>Title</li>\r\n\t<li>Text content</li>\r\n</ul>\r\n\r\n<p>There are several optional pieces of information:</p>\r\n\r\n<ul>\r\n\t<li>A subtitle</li>\r\n\t<li>An image</li>\r\n\t<li>Image alt text</li>\r\n\t<li>A link URL</li>\r\n\t<li>The link text</li>\r\n</ul>\r\n\r\n<p>There are also&nbsp;configuration options:&nbsp;</p>\r\n\r\n<ul>\r\n\t<li>Image/text alignment - e.g. image to the left or right of the text, or centred text (with no image or image above)</li>\r\n\t<li>The background colour - light or dark blue, or white</li>\r\n\t<li>Text size - large or small</li>\r\n</ul>",
             "component": 17
         }
     },
@@ -1049,9 +1598,9 @@
         "pk": 16,
         "fields": {
             "created_date": "2018-08-07T14:49:04.075Z",
-            "modified_date": "2018-08-07T14:49:04.075Z",
+            "modified_date": "2019-03-19T11:55:43.225Z",
             "title": "",
-            "content": "<p>Quote components can be used to place a quote alongside an image.&nbsp;</p>\r\n\r\n<p>There is one&nbsp;required&nbsp;piece&nbsp;of information for a quote component:</p>\r\n\r\n<ul>\r\n\t<li>Quote</li>\r\n</ul>\r\n\r\n<p>There are several optional pieces of information:</p>\r\n\r\n<ul>\r\n\t<li>Author</li>\r\n\t<li>An image</li>\r\n\t<li>Image alt text</li>\r\n</ul>\r\n\r\n<p>There are also&nbsp;configuration options:&nbsp;</p>\r\n\r\n<ul>\r\n\t<li>Image/text alignment - e.g. image to the left or right of the text, or centred text (with no image)</li>\r\n\t<li>The background colour - light or dark blue, or white</li>\r\n</ul>",
+            "content": "<p>Quote components can be used to place a quote alongside an image.&nbsp;</p>\r\n\r\n<p>There is one&nbsp;required&nbsp;piece&nbsp;of information for a quote component:</p>\r\n\r\n<ul>\r\n\t<li>Quote</li>\r\n</ul>\r\n\r\n<p>There are several optional pieces of information:</p>\r\n\r\n<ul>\r\n\t<li>Author</li>\r\n\t<li>An image</li>\r\n\t<li>Image alt text</li>\r\n</ul>\r\n\r\n<p>There are also&nbsp;configuration options:&nbsp;</p>\r\n\r\n<ul>\r\n\t<li>Image/text alignment - e.g. image to the left or right of the text, or centred text (with no image or image above)</li>\r\n\t<li>The background colour - light or dark blue, or white</li>\r\n\t<li>Text size - large or small</li>\r\n</ul>",
             "component": 23
         }
     },
@@ -1093,9 +1642,9 @@
         "pk": 20,
         "fields": {
             "created_date": "2018-08-17T10:28:24.808Z",
-            "modified_date": "2018-08-17T10:42:20.116Z",
+            "modified_date": "2019-04-03T10:27:05.310Z",
             "title": "",
-            "content": "<p>These terms and conditions are the contract between you and Brighton Phoenix (&ldquo;us&rdquo;, &ldquo;we&rdquo;, etc). By visiting or using our Website, you agree to be bound by them.</p>\r\n\r\n<p>They protect your rights as well as ours.</p>\r\n\r\n<p>I / We are Brighton Phoenix. Charity Number: xxxxx Address: Tongdean Lane, Brighton BN1 5JD</p>\r\n\r\n<p>You are: Anyone who uses our Website.</p>\r\n\r\n<p>Please read this agreement carefully and save it. If you do not agree with it, you should leave our Website immediately.</p>\r\n\r\n<p>These are the agreed terms:</p>\r\n\r\n<p><strong>1. Definitions</strong></p>\r\n\r\n<p>&ldquo;Content&rdquo; means the textual, visual or aural content that is encountered as part of your experience on our Website. It may include, among other things: text, images, sounds, videos and animations.</p>\r\n\r\n<p>&ldquo;Intellectual Property&rdquo; means intellectual property owned by us, of every sort, whether or not registered or registrable in any country, including intellectual property of all kinds coming into existence after today; and including, among others, patents, trade marks, unregistered marks, designs, copyrights, software, domain names, discoveries, creations and inventions, together with all rights which are derived from those rights.</p>\r\n\r\n<p>&ldquo;Our Website&rdquo; means any website or service designed for electronic access by mobile or fixed devices which is owned or operated by us.</p>\r\n\r\n<p>&ldquo;Services&rdquo; means the service provided from our Website.</p>\r\n\r\n<p><strong>2. Intellectual Property</strong></p>\r\n\r\n<p>You agree that at all times you will:</p>\r\n\r\n<ul>\r\n\t<li>not do anything which does or might reduce the value of our Intellectual Property or challenge our ownership of it.</li>\r\n\t<li>notify us of any suspected infringement of the Intellectual Property;</li>\r\n\t<li>so far as concerns our work provided or made accessible by us to you, you will not:</li>\r\n\t<li>copy, or make any change to any part of its code;</li>\r\n\t<li>use it in any way not anticipated by this agreement;</li>\r\n\t<li>give access to it to any other person than you, the licensee in this agreement;</li>\r\n\t<li>in any way provide any information about it to any other person or generally.</li>\r\n\t<li>not use the Intellectual Property except directly as intended by this agreement or in our interest.</li>\r\n</ul>\r\n\r\n<p><strong>3. Disclaimers and limitation of liability</strong></p>\r\n\r\n<p>The law differs from one country to another. This paragraph applies so far as the applicable law allows.</p>\r\n\r\n<p>All implied conditions, warranties and terms are excluded from this agreement. If in any jurisdiction an implied condition, warrant or term cannot be excluded, then this sub paragraph shall be deemed to be reduced in effect, only to the extent necessary to release that specific condition, warranty or term.</p>\r\n\r\n<p>You are advised that Content may include technical inaccuracies or typographical errors. This is inevitable in any large website. We would be grateful if you bring to our immediate attention, any that you find.</p>\r\n\r\n<p>Our Website contains links to other internet websites. We have neither power nor control over any such website. You acknowledge and agree that we shall not be liable in any way for the Content of any such linked website, nor for any loss or damage arising from your use of any such website or from your buying services or goods via such a website.</p>\r\n\r\n<p>The Brighton Phoenix Website is provided &ldquo;as is&rdquo;. We make no representation or warranty that our Website will be:</p>\r\n\r\n<ul>\r\n\t<li>useful to you;</li>\r\n\t<li>of satisfactory quality;</li>\r\n\t<li>fit for a particular purpose;</li>\r\n\t<li>available or accessible, without interruption, or without error.</li>\r\n</ul>\r\n\r\n<p>We claim no expert knowledge in any subject. We disclaim any obligation or liability to you arising directly or indirectly from information you take from our Website.</p>\r\n\r\n<p>We shall not be liable to you for any loss or expense which is:</p>\r\n\r\n<ul>\r\n\t<li>indirect or consequential loss; or</li>\r\n\t<li>economic loss or other loss of turnover, profits, business or goodwill even if such loss was reasonably foreseeable or we knew you might incur it.</li>\r\n</ul>\r\n\r\n<p>This paragraph (and any other paragraph which excludes or restricts our liability) applies to our directors, officers, employees, subcontractors, agents and affiliated companies (who may enforce this clause under the Contracts (Rights of Third Parties) Act 1999 as well as to ourselves.</p>\r\n\r\n<p><strong>4. Miscellaneous matters</strong></p>\r\n\r\n<p>If any term or provision of this agreement is at any time held by any jurisdiction to be void, invalid or unenforceable, then it shall be treated as changed or reduced, only to the extent minimally necessary to bring it within the laws of that jurisdiction and to prevent it from being void and it shall be binding in that changed or reduced form. Subject to that, each provision shall be interpreted as severable and shall not in any way affect any other of these terms.</p>\r\n\r\n<p>No failure or delay by any party to exercise any right, power or remedy will operate as a waiver of it nor indicate any intention to reduce that or any other right in the future.</p>\r\n\r\n<p>Any communication to be served on either party by the other shall be delivered by hand or sent by first class post or by e-mail. It shall be deemed to have been delivered:</p>\r\n\r\n<ul>\r\n\t<li>&nbsp;if delivered by hand: on the day of delivery;</li>\r\n\t<li>&nbsp;if sent by post to the correct address: within 72 hours of posting;</li>\r\n\t<li>&nbsp;If sent by e-mail to the address from which the receiving party has last sent e-mail: within 24 hours if no notice of non-receipt has been received by the sender.</li>\r\n</ul>\r\n\r\n<p>The validity, construction and performance of this agreement shall be governed by the laws of England and Wales and you agree that any dispute arising from it shall be litigated only in that country.</p>\r\n\r\n<p>These terms and conditions are based on a set written by Net Lawman and released under licence.</p>\r\n\r\n<p>Last updated: 01 October 2018</p>\r\n\r\n<p>If you have any question regarding our terms and conditions, please contact us.</p>\r\n\r\n<p>&copy; 2018 Brighton Phoenix</p>",
+            "content": "<p>These terms and conditions are the contract between you and Brighton Phoenix (&ldquo;us&rdquo;, &ldquo;we&rdquo;, etc). By visiting or using our Website, you agree to be bound by them.</p>\r\n\r\n<p>They protect your rights as well as ours.</p>\r\n\r\n<p>I / We are Brighton Phoenix. Address: Tongdean Lane, Brighton BN1 5JD</p>\r\n\r\n<p>You are: Anyone who uses our Website.</p>\r\n\r\n<p>Please read this agreement carefully and save it. If you do not agree with it, you should leave our Website immediately.</p>\r\n\r\n<p>These are the agreed terms:</p>\r\n\r\n<p><strong>1. Definitions</strong></p>\r\n\r\n<p>&ldquo;Content&rdquo; means the textual, visual or aural content that is encountered as part of your experience on our Website. It may include, among other things: text, images, sounds, videos and animations.</p>\r\n\r\n<p>&ldquo;Intellectual Property&rdquo; means intellectual property owned by us, of every sort, whether or not registered or registrable in any country, including intellectual property of all kinds coming into existence after today; and including, among others, patents, trade marks, unregistered marks, designs, copyrights, software, domain names, discoveries, creations and inventions, together with all rights which are derived from those rights.</p>\r\n\r\n<p>&ldquo;Our Website&rdquo; means any website or service designed for electronic access by mobile or fixed devices which is owned or operated by us.</p>\r\n\r\n<p>&ldquo;Services&rdquo; means the service provided from our Website.</p>\r\n\r\n<p><strong>2. Intellectual Property</strong></p>\r\n\r\n<p>You agree that at all times you will:</p>\r\n\r\n<ul>\r\n\t<li>not do anything which does or might reduce the value of our Intellectual Property or challenge our ownership of it.</li>\r\n\t<li>notify us of any suspected infringement of the Intellectual Property;</li>\r\n\t<li>so far as concerns our work provided or made accessible by us to you, you will not:</li>\r\n\t<li>copy, or make any change to any part of its code;</li>\r\n\t<li>use it in any way not anticipated by this agreement;</li>\r\n\t<li>give access to it to any other person than you, the licensee in this agreement;</li>\r\n\t<li>in any way provide any information about it to any other person or generally.</li>\r\n\t<li>not use the Intellectual Property except directly as intended by this agreement or in our interest.</li>\r\n</ul>\r\n\r\n<p><strong>3. Disclaimers and limitation of liability</strong></p>\r\n\r\n<p>The law differs from one country to another. This paragraph applies so far as the applicable law allows.</p>\r\n\r\n<p>All implied conditions, warranties and terms are excluded from this agreement. If in any jurisdiction an implied condition, warrant or term cannot be excluded, then this sub paragraph shall be deemed to be reduced in effect, only to the extent necessary to release that specific condition, warranty or term.</p>\r\n\r\n<p>You are advised that Content may include technical inaccuracies or typographical errors. This is inevitable in any large website. We would be grateful if you bring to our immediate attention, any that you find.</p>\r\n\r\n<p>Our Website contains links to other internet websites. We have neither power nor control over any such website. You acknowledge and agree that we shall not be liable in any way for the Content of any such linked website, nor for any loss or damage arising from your use of any such website or from your buying services or goods via such a website.</p>\r\n\r\n<p>The Brighton Phoenix Website is provided &ldquo;as is&rdquo;. We make no representation or warranty that our Website will be:</p>\r\n\r\n<ul>\r\n\t<li>useful to you;</li>\r\n\t<li>of satisfactory quality;</li>\r\n\t<li>fit for a particular purpose;</li>\r\n\t<li>available or accessible, without interruption, or without error.</li>\r\n</ul>\r\n\r\n<p>We claim no expert knowledge in any subject. We disclaim any obligation or liability to you arising directly or indirectly from information you take from our Website.</p>\r\n\r\n<p>We shall not be liable to you for any loss or expense which is:</p>\r\n\r\n<ul>\r\n\t<li>indirect or consequential loss; or</li>\r\n\t<li>economic loss or other loss of turnover, profits, business or goodwill even if such loss was reasonably foreseeable or we knew you might incur it.</li>\r\n</ul>\r\n\r\n<p>This paragraph (and any other paragraph which excludes or restricts our liability) applies to our directors, officers, employees, subcontractors, agents and affiliated companies (who may enforce this clause under the Contracts (Rights of Third Parties) Act 1999 as well as to ourselves.</p>\r\n\r\n<p><strong>4. Miscellaneous matters</strong></p>\r\n\r\n<p>If any term or provision of this agreement is at any time held by any jurisdiction to be void, invalid or unenforceable, then it shall be treated as changed or reduced, only to the extent minimally necessary to bring it within the laws of that jurisdiction and to prevent it from being void and it shall be binding in that changed or reduced form. Subject to that, each provision shall be interpreted as severable and shall not in any way affect any other of these terms.</p>\r\n\r\n<p>No failure or delay by any party to exercise any right, power or remedy will operate as a waiver of it nor indicate any intention to reduce that or any other right in the future.</p>\r\n\r\n<p>Any communication to be served on either party by the other shall be delivered by hand or sent by first class post or by e-mail. It shall be deemed to have been delivered:</p>\r\n\r\n<ul>\r\n\t<li>&nbsp;if delivered by hand: on the day of delivery;</li>\r\n\t<li>&nbsp;if sent by post to the correct address: within 72 hours of posting;</li>\r\n\t<li>&nbsp;If sent by e-mail to the address from which the receiving party has last sent e-mail: within 24 hours if no notice of non-receipt has been received by the sender.</li>\r\n</ul>\r\n\r\n<p>The validity, construction and performance of this agreement shall be governed by the laws of England and Wales and you agree that any dispute arising from it shall be litigated only in that country.</p>\r\n\r\n<p>These terms and conditions are based on a set written by Net Lawman and released under licence.</p>\r\n\r\n<p>Last updated: 01 October 2018</p>\r\n\r\n<p>If you have any question regarding our terms and conditions, please contact us.</p>\r\n\r\n<p>&copy; 2018 Brighton Phoenix</p>",
             "component": 33
         }
     },
@@ -1104,9 +1653,9 @@
         "pk": 21,
         "fields": {
             "created_date": "2018-08-17T10:39:03.817Z",
-            "modified_date": "2018-08-17T10:39:03.817Z",
+            "modified_date": "2019-04-03T10:27:24.201Z",
             "title": "",
-            "content": "<p>This is the privacy notice of BrightonPhoenix. In this document, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo; refer to Brighton Phoenix.</p>\r\n\r\n<p>Brighton Phoenix. Charity Number: xxxxx Address: Tongdean Lane, Brighton BN1 5JD</p>\r\n\r\n<p>Data Protection Officer: xxxxxxxxx brightonphoenix@gmail.com<br />\r\n&nbsp;</p>\r\n\r\n<p><strong>Introduction</strong></p>\r\n\r\n<p>This is a notice to inform you of our policy about all information that we record about you. It sets out the conditions under which we may process any information that we collect from you, or that you provide to us. It covers information that could identify you (&ldquo;personal information&rdquo;) and information that could not. In the context of the law and this notice, &ldquo;process&rdquo; means collect, store, transfer, use or otherwise act on information.</p>\r\n\r\n<p>We regret that if there are one or more points below with which you are not happy, your only recourse is to leave our website immediately.</p>\r\n\r\n<p>We take seriously the protection of your privacy and confidentiality. We understand that all visitors to our website are entitled to know that their personal data will not be used for any purpose unintended by them, and will not accidentally fall into the hands of a third party.</p>\r\n\r\n<p>We undertake to preserve the confidentiality of all information you provide to us, and hope that you reciprocate.</p>\r\n\r\n<p>Our policy complies with UK law accordingly implemented, including that required by the EU General Data Protection Regulation (GDPR).</p>\r\n\r\n<p>The law requires us to tell you about your rights and our obligations to you in regards to the processing and control of your personal data. We do this now, by requesting that you read the information provided at <a href=\"https://ico.org.uk/for-the-public/\">https://ico.org.uk/for-the-public/</a>.</p>\r\n\r\n<p>Except as set out below, we do not share, or sell, or disclose to a third party, any information collected through our website.</p>\r\n\r\n<p>The bases on which we process information about you</p>\r\n\r\n<p>The law requires us to determine under which of six defined bases we process different categories of your personal information, and to notify you of the basis for each category.</p>\r\n\r\n<p>If a basis on which we process your personal information is no longer relevant then we shall immediately stop processing your data.</p>\r\n\r\n<p>If the basis changes then if required by law we shall notify you of the change and of any new basis under which we have determined that we can continue to process your information.</p>\r\n\r\n<p><strong>1. Information we process because we have a contractual obligation with you</strong></p>\r\n\r\n<p>When you buy a product or service from us, or otherwise agree to our terms and conditions, a contract is formed between you and us.</p>\r\n\r\n<p>In order to carry out our obligations under that contract we must process the information you give us. Some of this information may be personal information.</p>\r\n\r\n<p>We may use it in order to:</p>\r\n\r\n<ul>\r\n\t<li>verify your identity for security purposes</li>\r\n\t<li>sell products to you</li>\r\n\t<li>provide you with our services</li>\r\n\t<li>provide you with suggestions and advice on products, services and how to obtain the most from using our website</li>\r\n</ul>\r\n\r\n<p>We process this information on the basis there is a contract between us, or that you have requested we use the information before we enter into a legal contract.</p>\r\n\r\n<p>Additionally, we may aggregate this information in a general way and use it to provide class information, for example to monitor our performance with respect to a particular service we provide. If we use it for this purpose, you as an individual will not be personally identifiable.</p>\r\n\r\n<p>We shall continue to process this information until the contract between us ends or is terminated by either party under the terms of the contract.</p>\r\n\r\n<p><strong>2. Information we process with your consent</strong></p>\r\n\r\n<p>Through certain actions when otherwise there is no contractual relationship between us, such as when you browse our website or ask us to provide you more information about our business, including our products and services, you provide your consent to us to process information that may be personal information.</p>\r\n\r\n<p>Wherever possible, we aim to obtain your explicit consent to process this information, for example, by asking you to agree to our use of cookies.</p>\r\n\r\n<p>Sometimes you might give your consent implicitly, such as when you send us a message by e-mail to which you would reasonably expect us to reply.</p>\r\n\r\n<p>Except where you have consented to our use of your information for a specific purpose, we do not use your information in any way that would identify you personally. We may aggregate it in a general way and use it to provide class information, for example to monitor the performance of a particular page on our website.</p>\r\n\r\n<p>If you have given us explicit permission to do so, we may from time to time pass your name and contact information to selected associates whom we consider may provide services or products you would find useful.</p>\r\n\r\n<p>We continue to process your information on this basis until you withdraw your consent or it can be reasonably assumed that your consent no longer exists.</p>\r\n\r\n<p>You may withdraw your consent at any time by instructing us . However, if you do so, you may not be able to use our website or our services further.</p>\r\n\r\n<p><strong>3.&nbsp; Information we process because we have a legal obligation</strong></p>\r\n\r\n<p>We are subject to the law like everyone else. Sometimes, we must process your information in order to comply with a statutory obligation.</p>\r\n\r\n<p>For example, we may be required to give information to legal authorities if they so request or if they have the proper authorisation such as a search warrant or court order.</p>\r\n\r\n<p>This may include your personal information.<br />\r\n<br />\r\n<strong>Specific uses of information you provide to us</strong><br />\r\n<br />\r\n<strong>4. Complaining</strong></p>\r\n\r\n<p>When we receive a complaint, we record all the information you have given to us.</p>\r\n\r\n<p>We use that information to resolve your complaint.</p>\r\n\r\n<p>If your complaint reasonably requires us to contact some other person, we may decide to give to that other person some of the information contained in your complaint. We do this as infrequently as possible, but it is a matter for our sole discretion as to whether we do give information, and if we do, what that information is.</p>\r\n\r\n<p>We may also compile statistics showing information obtained from this source to assess the level of service we provide, but not in a way that could identify you or any other person.<br />\r\nUse of information we collect through automated systems when you visit our website</p>\r\n\r\n<p><strong>5. Cookies</strong></p>\r\n\r\n<p>Our website uses cookies. They are placed by software that operates on our servers, and by software operated by third parties whose services we use.</p>\r\n\r\n<p>The <a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32002L0058:EN:HTML\">ePrivacy directive</a> &ndash; more specifically Article 5(3) &ndash; requires prior informed consent for storage or for access to information stored on a user&rsquo;s terminal equipment (ie, you must ask users if they agree to most cookies). However, some cookies are exempt from this requirement and we consider that applies to the cookies set on our website.</p>\r\n\r\n<p>You can prevent their use through your browser settings, but you will then not be able to use all the functionality of our website.</p>\r\n\r\n<p>We provide more information about the cookies we use in our cookie policy.</p>\r\n\r\n<p><strong>6. Personal identifiers from your browsing activity</strong></p>\r\n\r\n<p>Requests by your web browser to our servers for web pages and other content on our website are recorded.</p>\r\n\r\n<p>We record information such as your geographical location, your Internet service provider and your IP address.</p>\r\n\r\n<p>This information is used by our security systems to track events on the website and may be included in alerts of suspicious activity sent to the website administrator.</p>\r\n\r\n<p>We use anonymised information of this type in aggregate to assess the popularity of the webpages on our website and how we perform in providing content to you.</p>\r\n\r\n<p>If combined with other information we know about you from previous visits, the data possibly could be used to identify you personally, even if you are not signed in to our website.</p>\r\n\r\n<p><strong>7. Our use of re-marketing</strong></p>\r\n\r\n<p>Re-marketing involves placing a cookie on your computer when you browse our website in order to be able to serve to you an advert for our products or services when you visit some other website.</p>\r\n\r\n<p>We do not use re-marketing cookies.</p>\r\n\r\n<p><br />\r\n<strong>Disclosure and sharing of your information</strong></p>\r\n\r\n<p><strong>8. Information we obtain from third parties</strong></p>\r\n\r\n<p>Although we do not disclose your personal information to any third party (except as set out in this notice), we sometimes receive data that is indirectly made up from your personal information from third parties whose services we use.</p>\r\n\r\n<p><strong>9. Third party advertising on our website</strong></p>\r\n\r\n<p>We do not carry third-party advertising on our website.</p>\r\n\r\n<p><strong>10. Data may be processed outside the European Union</strong></p>\r\n\r\n<p>Our website is hosted in the UK.</p>\r\n\r\n<p>We may also use outsourced services in countries outside the European Union from time to time in other aspects of our business.</p>\r\n\r\n<p>Accordingly data obtained within the UK or any other country could be processed outside the European Union.</p>\r\n\r\n<p>We take all steps reasonably necessary to ensure that any outsourced service providers implement appropriate safeguards to protect your personal information.</p>\r\n\r\n<p><strong>Access to your own information</strong></p>\r\n\r\n<p><strong>11. Access to your personal information</strong></p>\r\n\r\n<p>We do not hold your personally identifiable information on our website.</p>\r\n\r\n<p>To obtain a copy of any personal information we hold for you, you may email brightonphoenix@gmail.com.</p>\r\n\r\n<p>After receiving the request, we will tell you when we expect to provide you with the information.</p>\r\n\r\n<p><strong>12. Removal of your information</strong></p>\r\n\r\n<p>If you wish us to remove personally identifiable information, you may email brightonphoenix@gmail.com.</p>\r\n\r\n<p>This may limit the service we can provide to you.</p>\r\n\r\n<p><strong>13. Verification of your information</strong></p>\r\n\r\n<p>When we receive any request to access, edit or delete personal identifiable information we shall first take reasonable steps to verify your identity before granting you access or otherwise taking any action. This is important to safeguard your information.</p>\r\n\r\n<p><strong>Other matters</strong></p>\r\n\r\n<p><strong>14. Use of site by children</strong></p>\r\n\r\n<p>We do not sell products or provide services for purchase by children, nor do we market to children.</p>\r\n\r\n<p>If you are under 18, you may use our website only with consent from a parent or guardian.</p>\r\n\r\n<p><br />\r\n<strong>15. Encryption of data sent between us</strong></p>\r\n\r\n<p>We use Secure Sockets Layer (SSL) certificates to verify our identity to your browser and to encrypt any data you give us.</p>\r\n\r\n<p>Whenever information is transferred between us, you can check that it is done so using SSL by looking for a closed padlock symbol or other trust mark in your browser&rsquo;s URL bar or toolbar.</p>\r\n\r\n<p><strong>16. How you can complain</strong></p>\r\n\r\n<p>If you are not happy with our privacy policy or if have any complaint then you should tell us by email at <a href=\"mailto:brightonphoenix@gmail.com?subject=Privacy%20Policy\">brightonphoenix@gmail.com</a>.</p>\r\n\r\n<p>If a dispute is not settled then we hope you will agree to attempt to resolve it by engaging in good faith with us in a process of mediation or arbitration.</p>\r\n\r\n<p>If you are in any way dissatisfied about how we process your personal information, you have a right to lodge a complaint with the Information Commissioner&rsquo;s Office. This can be done at <a href=\"https://ico.org.uk/concerns/\">https://ico.org.uk/concerns/</a></p>\r\n\r\n<p><br />\r\n<strong>17. Retention period for personal data</strong></p>\r\n\r\n<p>Except as otherwise mentioned in this privacy notice, we keep your personal information only for as long as required by us:</p>\r\n\r\n<ul>\r\n\t<li>&nbsp;to provide you with the services you have requested;</li>\r\n\t<li>&nbsp;to comply with other law, including for the period demanded by our tax authorities;</li>\r\n\t<li>&nbsp;to support a claim or defence in court.</li>\r\n</ul>\r\n\r\n<p><strong>18. Compliance with the law</strong></p>\r\n\r\n<p>Our privacy policy has been compiled so as to comply with the law of every country or legal jurisdiction in which we aim to do business. If you think it fails to satisfy the law of your jurisdiction, we should like to hear from you.</p>\r\n\r\n<p>However, ultimately it is your choice as to whether you wish to use our website.</p>\r\n\r\n<p><strong>19. Review of this privacy policy</strong></p>\r\n\r\n<p>We may update this privacy notice from time to time as necessary. The terms that apply to you are those posted here on our website on the day you use our website. We advise you to print a copy for your records.</p>\r\n\r\n<p>Last updated: 01 October 2018</p>\r\n\r\n<p>If you have any question regarding our privacy notice, please contact us.</p>\r\n\r\n<p>&copy; 2018 Brighton Phoenix Ltd&nbsp;</p>",
+            "content": "<p>This is the privacy notice of BrightonPhoenix. In this document, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo; refer to Brighton Phoenix.</p>\r\n\r\n<p>Brighton Phoenix.&nbsp; Address: Tongdean Lane, Brighton BN1 5JD</p>\r\n\r\n<p>Data Protection Officer: brightonphoenix@gmail.com<br />\r\n&nbsp;</p>\r\n\r\n<p><strong>Introduction</strong></p>\r\n\r\n<p>This is a notice to inform you of our policy about all information that we record about you. It sets out the conditions under which we may process any information that we collect from you, or that you provide to us. It covers information that could identify you (&ldquo;personal information&rdquo;) and information that could not. In the context of the law and this notice, &ldquo;process&rdquo; means collect, store, transfer, use or otherwise act on information.</p>\r\n\r\n<p>We regret that if there are one or more points below with which you are not happy, your only recourse is to leave our website immediately.</p>\r\n\r\n<p>We take seriously the protection of your privacy and confidentiality. We understand that all visitors to our website are entitled to know that their personal data will not be used for any purpose unintended by them, and will not accidentally fall into the hands of a third party.</p>\r\n\r\n<p>We undertake to preserve the confidentiality of all information you provide to us, and hope that you reciprocate.</p>\r\n\r\n<p>Our policy complies with UK law accordingly implemented, including that required by the EU General Data Protection Regulation (GDPR).</p>\r\n\r\n<p>The law requires us to tell you about your rights and our obligations to you in regards to the processing and control of your personal data. We do this now, by requesting that you read the information provided at <a href=\"https://ico.org.uk/for-the-public/\">https://ico.org.uk/for-the-public/</a>.</p>\r\n\r\n<p>Except as set out below, we do not share, or sell, or disclose to a third party, any information collected through our website.</p>\r\n\r\n<p>The bases on which we process information about you</p>\r\n\r\n<p>The law requires us to determine under which of six defined bases we process different categories of your personal information, and to notify you of the basis for each category.</p>\r\n\r\n<p>If a basis on which we process your personal information is no longer relevant then we shall immediately stop processing your data.</p>\r\n\r\n<p>If the basis changes then if required by law we shall notify you of the change and of any new basis under which we have determined that we can continue to process your information.</p>\r\n\r\n<p><strong>1. Information we process because we have a contractual obligation with you</strong></p>\r\n\r\n<p>When you buy a product or service from us, or otherwise agree to our terms and conditions, a contract is formed between you and us.</p>\r\n\r\n<p>In order to carry out our obligations under that contract we must process the information you give us. Some of this information may be personal information.</p>\r\n\r\n<p>We may use it in order to:</p>\r\n\r\n<ul>\r\n\t<li>verify your identity for security purposes</li>\r\n\t<li>sell products to you</li>\r\n\t<li>provide you with our services</li>\r\n\t<li>provide you with suggestions and advice on products, services and how to obtain the most from using our website</li>\r\n</ul>\r\n\r\n<p>We process this information on the basis there is a contract between us, or that you have requested we use the information before we enter into a legal contract.</p>\r\n\r\n<p>Additionally, we may aggregate this information in a general way and use it to provide class information, for example to monitor our performance with respect to a particular service we provide. If we use it for this purpose, you as an individual will not be personally identifiable.</p>\r\n\r\n<p>We shall continue to process this information until the contract between us ends or is terminated by either party under the terms of the contract.</p>\r\n\r\n<p><strong>2. Information we process with your consent</strong></p>\r\n\r\n<p>Through certain actions when otherwise there is no contractual relationship between us, such as when you browse our website or ask us to provide you more information about our business, including our products and services, you provide your consent to us to process information that may be personal information.</p>\r\n\r\n<p>Wherever possible, we aim to obtain your explicit consent to process this information, for example, by asking you to agree to our use of cookies.</p>\r\n\r\n<p>Sometimes you might give your consent implicitly, such as when you send us a message by e-mail to which you would reasonably expect us to reply.</p>\r\n\r\n<p>Except where you have consented to our use of your information for a specific purpose, we do not use your information in any way that would identify you personally. We may aggregate it in a general way and use it to provide class information, for example to monitor the performance of a particular page on our website.</p>\r\n\r\n<p>If you have given us explicit permission to do so, we may from time to time pass your name and contact information to selected associates whom we consider may provide services or products you would find useful.</p>\r\n\r\n<p>We continue to process your information on this basis until you withdraw your consent or it can be reasonably assumed that your consent no longer exists.</p>\r\n\r\n<p>You may withdraw your consent at any time by instructing us . However, if you do so, you may not be able to use our website or our services further.</p>\r\n\r\n<p><strong>3.&nbsp; Information we process because we have a legal obligation</strong></p>\r\n\r\n<p>We are subject to the law like everyone else. Sometimes, we must process your information in order to comply with a statutory obligation.</p>\r\n\r\n<p>For example, we may be required to give information to legal authorities if they so request or if they have the proper authorisation such as a search warrant or court order.</p>\r\n\r\n<p>This may include your personal information.<br />\r\n<br />\r\n<strong>Specific uses of information you provide to us</strong><br />\r\n<br />\r\n<strong>4. Complaining</strong></p>\r\n\r\n<p>When we receive a complaint, we record all the information you have given to us.</p>\r\n\r\n<p>We use that information to resolve your complaint.</p>\r\n\r\n<p>If your complaint reasonably requires us to contact some other person, we may decide to give to that other person some of the information contained in your complaint. We do this as infrequently as possible, but it is a matter for our sole discretion as to whether we do give information, and if we do, what that information is.</p>\r\n\r\n<p>We may also compile statistics showing information obtained from this source to assess the level of service we provide, but not in a way that could identify you or any other person.<br />\r\nUse of information we collect through automated systems when you visit our website</p>\r\n\r\n<p><strong>5. Cookies</strong></p>\r\n\r\n<p>Our website uses cookies. They are placed by software that operates on our servers, and by software operated by third parties whose services we use.</p>\r\n\r\n<p>The <a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32002L0058:EN:HTML\">ePrivacy directive</a> &ndash; more specifically Article 5(3) &ndash; requires prior informed consent for storage or for access to information stored on a user&rsquo;s terminal equipment (ie, you must ask users if they agree to most cookies). However, some cookies are exempt from this requirement and we consider that applies to the cookies set on our website.</p>\r\n\r\n<p>You can prevent their use through your browser settings, but you will then not be able to use all the functionality of our website.</p>\r\n\r\n<p>We provide more information about the cookies we use in our cookie policy.</p>\r\n\r\n<p><strong>6. Personal identifiers from your browsing activity</strong></p>\r\n\r\n<p>Requests by your web browser to our servers for web pages and other content on our website are recorded.</p>\r\n\r\n<p>We record information such as your geographical location, your Internet service provider and your IP address.</p>\r\n\r\n<p>This information is used by our security systems to track events on the website and may be included in alerts of suspicious activity sent to the website administrator.</p>\r\n\r\n<p>We use anonymised information of this type in aggregate to assess the popularity of the webpages on our website and how we perform in providing content to you.</p>\r\n\r\n<p>If combined with other information we know about you from previous visits, the data possibly could be used to identify you personally, even if you are not signed in to our website.</p>\r\n\r\n<p><strong>7. Our use of re-marketing</strong></p>\r\n\r\n<p>Re-marketing involves placing a cookie on your computer when you browse our website in order to be able to serve to you an advert for our products or services when you visit some other website.</p>\r\n\r\n<p>We do not use re-marketing cookies.</p>\r\n\r\n<p><br />\r\n<strong>Disclosure and sharing of your information</strong></p>\r\n\r\n<p><strong>8. Information we obtain from third parties</strong></p>\r\n\r\n<p>Although we do not disclose your personal information to any third party (except as set out in this notice), we sometimes receive data that is indirectly made up from your personal information from third parties whose services we use.</p>\r\n\r\n<p><strong>9. Third party advertising on our website</strong></p>\r\n\r\n<p>We do not carry third-party advertising on our website.</p>\r\n\r\n<p><strong>10. Data may be processed outside the European Union</strong></p>\r\n\r\n<p>Our website is hosted in the UK.</p>\r\n\r\n<p>We may also use outsourced services in countries outside the European Union from time to time in other aspects of our business.</p>\r\n\r\n<p>Accordingly data obtained within the UK or any other country could be processed outside the European Union.</p>\r\n\r\n<p>We take all steps reasonably necessary to ensure that any outsourced service providers implement appropriate safeguards to protect your personal information.</p>\r\n\r\n<p><strong>Access to your own information</strong></p>\r\n\r\n<p><strong>11. Access to your personal information</strong></p>\r\n\r\n<p>We do not hold your personally identifiable information on our website.</p>\r\n\r\n<p>To obtain a copy of any personal information we hold for you, you may email brightonphoenix@gmail.com.</p>\r\n\r\n<p>After receiving the request, we will tell you when we expect to provide you with the information.</p>\r\n\r\n<p><strong>12. Removal of your information</strong></p>\r\n\r\n<p>If you wish us to remove personally identifiable information, you may email brightonphoenix@gmail.com.</p>\r\n\r\n<p>This may limit the service we can provide to you.</p>\r\n\r\n<p><strong>13. Verification of your information</strong></p>\r\n\r\n<p>When we receive any request to access, edit or delete personal identifiable information we shall first take reasonable steps to verify your identity before granting you access or otherwise taking any action. This is important to safeguard your information.</p>\r\n\r\n<p><strong>Other matters</strong></p>\r\n\r\n<p><strong>14. Use of site by children</strong></p>\r\n\r\n<p>We do not sell products or provide services for purchase by children, nor do we market to children.</p>\r\n\r\n<p>If you are under 18, you may use our website only with consent from a parent or guardian.</p>\r\n\r\n<p><br />\r\n<strong>15. Encryption of data sent between us</strong></p>\r\n\r\n<p>We use Secure Sockets Layer (SSL) certificates to verify our identity to your browser and to encrypt any data you give us.</p>\r\n\r\n<p>Whenever information is transferred between us, you can check that it is done so using SSL by looking for a closed padlock symbol or other trust mark in your browser&rsquo;s URL bar or toolbar.</p>\r\n\r\n<p><strong>16. How you can complain</strong></p>\r\n\r\n<p>If you are not happy with our privacy policy or if have any complaint then you should tell us by email at <a href=\"mailto:brightonphoenix@gmail.com?subject=Privacy%20Policy\">brightonphoenix@gmail.com</a>.</p>\r\n\r\n<p>If a dispute is not settled then we hope you will agree to attempt to resolve it by engaging in good faith with us in a process of mediation or arbitration.</p>\r\n\r\n<p>If you are in any way dissatisfied about how we process your personal information, you have a right to lodge a complaint with the Information Commissioner&rsquo;s Office. This can be done at <a href=\"https://ico.org.uk/concerns/\">https://ico.org.uk/concerns/</a></p>\r\n\r\n<p><br />\r\n<strong>17. Retention period for personal data</strong></p>\r\n\r\n<p>Except as otherwise mentioned in this privacy notice, we keep your personal information only for as long as required by us:</p>\r\n\r\n<ul>\r\n\t<li>&nbsp;to provide you with the services you have requested;</li>\r\n\t<li>&nbsp;to comply with other law, including for the period demanded by our tax authorities;</li>\r\n\t<li>&nbsp;to support a claim or defence in court.</li>\r\n</ul>\r\n\r\n<p><strong>18. Compliance with the law</strong></p>\r\n\r\n<p>Our privacy policy has been compiled so as to comply with the law of every country or legal jurisdiction in which we aim to do business. If you think it fails to satisfy the law of your jurisdiction, we should like to hear from you.</p>\r\n\r\n<p>However, ultimately it is your choice as to whether you wish to use our website.</p>\r\n\r\n<p><strong>19. Review of this privacy policy</strong></p>\r\n\r\n<p>We may update this privacy notice from time to time as necessary. The terms that apply to you are those posted here on our website on the day you use our website. We advise you to print a copy for your records.</p>\r\n\r\n<p>Last updated: 01 October 2018</p>\r\n\r\n<p>If you have any question regarding our privacy notice, please contact us.</p>\r\n\r\n<p>&copy; 2018 Brighton Phoenix</p>",
             "component": 32
         }
     },
@@ -1155,6 +1704,402 @@
         }
     },
     {
+        "model": "pages.editorial",
+        "pk": 26,
+        "fields": {
+            "created_date": "2018-08-28T10:21:35.419Z",
+            "modified_date": "2018-08-28T10:21:35.419Z",
+            "title": "",
+            "content": "<p>This is a summer Downland evening run on the hills above Kingston Village (near Lewes). The course is a mere 3.14 mile loop&nbsp;but the route (yes in the shape of a W) includes some highly &#39;challenging&#39; ups and downs. There are staggered, handicapped start times further complicated by offering runners the choice of&nbsp; clockwise or anticlockwise circuits, the merits of which can be robustly debated at The Juggs pub in Kingston after the run.</p>",
+            "component": 43
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 27,
+        "fields": {
+            "created_date": "2018-08-28T10:22:20.980Z",
+            "modified_date": "2019-03-09T16:31:38.652Z",
+            "title": "",
+            "content": "<p>Held on a midsummer evening, this is a popular 5 mile out-and-back run on the South Downs&nbsp;from Ditchling Beacon to the trig point at Black Cap and back. Runners start at intervals, determined by the handicapper, based on current 10K or 5K times and the aim is to have everyone finishing at roughly the same time.</p>\r\n\r\n<p>There are club awards for the overall handicap race winner (the first one back) and the fastest male and female. The event is free for Phoenix members but open to guests for a small fee.</p>\r\n\r\n<p>Post-run analysis is usually conducted at The White Lion pub in Ditchling.</p>",
+            "component": 44
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 28,
+        "fields": {
+            "created_date": "2018-08-28T10:23:17.756Z",
+            "modified_date": "2019-03-10T16:31:09.473Z",
+            "title": "",
+            "content": "<p>Towards the end of each year, we stage our annual Club Awards Night. Ostensibly about handing out trophies for performance, commitment and age group achievement, it also involves food, drink and music. In other words, it is a thoroughly enjoyable chance for juniors, seniors and vets alike to let their hair down and celebrate being part of Brighton Phoenix.</p>\r\n\r\n<p>The trophies themselves are much coveted and all club members can nominate candidates for our awards and vote to choose some of the winners, with the remainder chosen by the Club Board in consultation with our coaches.</p>",
+            "component": 45
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 30,
+        "fields": {
+            "created_date": "2018-09-05T19:31:32.425Z",
+            "modified_date": "2019-03-22T18:34:47.387Z",
+            "title": "Junior sessions",
+            "content": "<p><strong>5.30pm<br />\r\nGREEN BIBS &nbsp;&nbsp; &nbsp;(Year 5)&nbsp; 9-10 year-olds&nbsp;&nbsp; </strong><br />\r\nA starter group who will have the opportunity to try different activities and gain an introduction to athletics in a fun way. Athletes will progress from this group into BLUE/ORANGE.</p>\r\n\r\n<p><strong>BLUE BIBS&nbsp;&nbsp; &nbsp; (Year 6) 10-11 year-olds </strong>&nbsp;&nbsp;&nbsp;<br />\r\nContinuing general athletic development in preparation for Sports Hall/Track and XC</p>\r\n\r\n<p><strong>ORANGE BIBS&nbsp;&nbsp; &nbsp; (Year 6) 10-11 year-olds&nbsp; </strong><br />\r\nContinuing general athletic development in preparation for Sports Hall/Track and XC</p>\r\n\r\n<p><strong>GROUP A - SPRINT&nbsp;&nbsp; &nbsp;(7,8 and 9) 11-14 year-olds &nbsp;&nbsp;</strong>&nbsp;<br />\r\nThis group will be doing more specific sprint work aimed at developing young athletes in sprint technique.</p>\r\n\r\n<p><strong>GROUP B - Distance running &nbsp;&nbsp; &nbsp;(Year 6) 11-12 year-olds &nbsp;&nbsp;&nbsp;</strong><br />\r\nThis group will be doing more specific middle distance training for the track in the summer and XC in winter. Some athletes with maybe invited by the coaches to other training sessions during the week.</p>\r\n\r\n<p><strong>RUNNING FITNESS GROUP &nbsp;&nbsp; &nbsp;(Year 7, 8 and 9) 11-16 year-olds &nbsp;&nbsp;&nbsp; </strong><br />\r\nFor various reasons some young athletes don&rsquo;t want to or can&rsquo;t compete, so this group will be structured to suit their needs while maintaining the opportunity to train with others of a similar ability. This will allow them to continue to enjoy running without the pressure of competition.</p>\r\n\r\n<p><strong>6.30pm<br />\r\nGROUP C - Distance running &nbsp;&nbsp; &nbsp;(Year 8 upwards) 13-15 year-olds &nbsp;&nbsp; </strong><br />\r\nAthletes who have shown a commitment to racing or have reached a set performance standard. They train more than once a week and show potential. They will progress in Group D.<br />\r\n(600m B 2:10/G 2:20)</p>\r\n\r\n<p><strong>GROUP D Distance performance &nbsp;&nbsp; &nbsp; (Year 8 upwards) 14-17 year-olds &nbsp;&nbsp; </strong><br />\r\nThis group will have the same criteria as Group C but will contain athletes who are at a higher level according to the coaches and will benefit from and cope with more advanced training.<br />\r\n(800m B 2:50 G-3:00).</p>\r\n\r\n<p><strong>6.50pm<br />\r\nGROUP E Distance performance&nbsp;&nbsp; &nbsp;16-20 year-olds&nbsp;&nbsp;&nbsp;</strong><br />\r\nThis group will be for advanced athletes training primarily for track and XC. Athletes will receive structured training sessions and in some cases individual schedules to suit their racing requirements. Sub groups within this session will form to take in specific events and personal targets.<br />\r\n(800m B 2:30/G 2:40) (800m B 2:16/ G 2:25) (1500m B 4:20 / G 5:10)</p>",
+            "component": 47
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 31,
+        "fields": {
+            "created_date": "2018-09-05T19:47:51.401Z",
+            "modified_date": "2019-03-19T12:38:57.430Z",
+            "title": "Junior strength and conditioning",
+            "content": "<p>Open to all athletes from 14 years onwards</p>\r\n\r\n<p><strong>When</strong>: Tuesday evenings</p>\r\n\r\n<p><strong>Where</strong>: <a href=\"https://goo.gl/maps/xNrKqZ974Vy\">St Bernadette&#39;s Catholic Primary School, Preston Road, Brighton, East Sussex, BN1 6UT</a></p>\r\n\r\n<p><strong>Time</strong>: 6pm Sharp &ndash; 7.45pm</p>\r\n\r\n<p><strong>Coaches</strong>: Mike Bazire &amp; Lesley Parsons</p>\r\n\r\n<p><strong>Cost</strong>: &pound;3</p>\r\n\r\n<p><em>NB no sessions during </em><em>school</em><em> summer holiday. Sessions restart &nbsp;September 11 </em></p>\r\n\r\n<p>These sessions are usually called &lsquo;Strength &amp; Conditioning&rsquo; or &lsquo;Circuits&rsquo;, but basically are one and the same.</p>\r\n\r\n<p>The reason for Strength &amp; Conditioning is the physical &amp; physiological development of Athletes for an elite sport performance. Strength &amp; Conditioning is more than just lifting weights. It encompasses the entire development of the Athlete &amp; what is needed to improve their physical performance.</p>\r\n\r\n<p>Circuit training or resistance training is a form of body conditioning using high intensity aerobics. It targets strength building &amp; muscular endurance. Regardless of age or discipline, this should be on every coaches training program as part of the development of their Athletes. Therefore our sessions include upper body strength, core strength, leg work &amp; general overall fitness.<br />\r\n<br />\r\nEquipment used: Hand weights, Kettle bells, Bosu Balls, Swiss Balls + more&hellip;.<br />\r\n<br />\r\nContact details:</p>\r\n\r\n<p>Mike Bazire<br />\r\nMob: 07910548394<br />\r\n<a href=\"mailto:mikebazire@gmail.com\">mikebazire@gmail.com</a><br />\r\n<br />\r\nLesley Parsons<br />\r\nMob: 07989678395<br />\r\n<a href=\"mailto:lespar74@yahoo.co.uk\">lespar74@yahoo.co.uk</a></p>",
+            "component": 48
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 32,
+        "fields": {
+            "created_date": "2018-09-05T20:01:07.783Z",
+            "modified_date": "2019-03-25T21:30:14.793Z",
+            "title": "Training with Brighton Phoenix",
+            "content": "<p>At Brighton Phoenix you&#39;ll find a varied training timetable with something going on almost everyday.</p>\r\n\r\n<p>You are welcome to <em><strong>come along to training sessions for two or three weeks</strong></em> to see whether you will be happy at the club. If you then decide to join, we will ask you to consider joining (see the <a href=\"http://dev.brightonphoenix.org.uk/membership/\">Membership</a> page). All athletes must be members if they wish to continue training with and competing for the club.</p>",
+            "component": 49
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 33,
+        "fields": {
+            "created_date": "2018-09-06T13:34:00.307Z",
+            "modified_date": "2019-03-09T12:41:20.872Z",
+            "title": "Phoenix Juniors",
+            "content": "<p>The club philosophy is to encourage and assist the development of the individual athlete and this starts in the junior academy where the young athletes start to develop their movement skills, self confidence and training discipline. This will help them develop as athletes and also, just as importantly, as young people. They will also hopefully have fun and develop a love for the sport that will stay with them as they grow into adulthood and become senior members of the club.</p>",
+            "component": 51
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 34,
+        "fields": {
+            "created_date": "2018-09-06T13:35:04.588Z",
+            "modified_date": "2019-03-11T21:16:45.851Z",
+            "title": "",
+            "content": "<p style=\"margin-left:0cm; margin-right:0cm\">Phoenix Athletics Club was formed in 1981 by Matt Paterson and Olympic champion Steve Ovett. They wanted to take a new approach to athletics, which at the time was radically different. The focus was to respect the individual&rsquo;s development and not be bound by old structures like leagues, the athletes choosing their own paths within what was clearly a performance-focused club.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">This idea of &ldquo;inclusive excellence&rdquo; still drives the club, which has stuck to its core beliefs by respecting the personal ambitions and fulfilling the potential of each individual.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">The club has also evolved.&nbsp; In the 1990s we broadened to become an athletics and triathlon club. Triathlon and other multisport events have a lot in common with the original values and ambition of the club.&nbsp; And while, just like in the 1980s, we still have world-class athletes, our members now span an age range of 9-79 and are just as happy testing themselves in local fun runs.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">In 2012 the club amended its name to&nbsp;<strong>Brighton Phoenix&nbsp;</strong>to ensure potential members and competitors know who we are and where we come from.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">As in 1981 we are open and welcoming: Steve Ovett did not stand on a pedestal and nor does anyone else.</p>",
+            "component": 52
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 35,
+        "fields": {
+            "created_date": "2018-09-06T13:38:44.121Z",
+            "modified_date": "2019-03-19T13:02:31.114Z",
+            "title": "Phoenix Seniors",
+            "content": "<p><strong>Coaching policy</strong></p>\r\n\r\n<p>At Brighton Phoenix we believe that only by respecting the personal ambitions of the individual athlete will we get the best from them. We do this by placing each individual in a group according to their ability. Groups are run by one of our experienced and enthusiastic coaches, who give up their time to look after athletes free of charge. There are regular coaching meetings to improve training standards and to adjust the size of groups to keep them at manageable levels. The club&#39;s philosophy is to enjoy athletics while getting the most from your potential.</p>\r\n\r\n<p>To this end coaches provide a wide variety of training sessions to stimulate the interest of our athletes. Competitions &ndash; ranging from events such as the London Marathon to the South Downs Way Relay &ndash; are available throughout the year, and coaches will give athletes every encouragement to enter.<br />\r\nClub night.</p>\r\n\r\n<p>Brighton Phoenix is based at Withdean Stadium, where we meet every Wednesday, come rain or shine, throughout the year. This is the best time to come and meet coaches from the club as members of all five sections of the club will be training at some point during the evening. Training sessions for the juniors are from 5:30pm onwards according to age and ability; those for seniors are from 6:30pm.</p>\r\n\r\n<p>You will find details of additional sessions, such as our weekly long runs, Monday drills and hills sessions, Saturday-morning cycle rides or our coached swimming sessions on the training page.You can also keep updated by being put on the specific group email lists as training locations and sessions vary throughout the year, please see the <a href=\"/contact/\">contact page</a> for more information.</p>",
+            "component": 53
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 36,
+        "fields": {
+            "created_date": "2018-09-06T13:43:20.647Z",
+            "modified_date": "2019-03-13T09:17:46.388Z",
+            "title": "",
+            "content": "<p><strong>Join Phoenix</strong><br />\r\n<br />\r\n<strong>Senior athletes </strong>(age 17 and over)</p>\r\n\r\n<p>You are welcome to come along to training sessions for two or three weeks to see whether you will be happy at the club. If you then decide to join, we will ask you to complete a membership application form (see below), which should be returned to the Membership Secretary together with the appropriate fee. All athletes must be members if they wish to continue training with and competing for the club.&nbsp; To find out about joining in for a few trial sessions, take a look at the information on our <a href=\"http://dev.brightonphoenix.org.uk/training/\">training pages</a> and contact us using the form on <a href=\"http://dev.brightonphoenix.org.uk/contact/\">this page</a>.</p>\r\n\r\n<p><br />\r\n<strong>Junior athletes </strong>(age 9 to 17)</p>\r\n\r\n<p>If you have responsibility for a junior interested in joining, look at our&nbsp;our <a href=\"http://dev.brightonphoenix.org.uk/training/\">training pages</a> to find out a bit more and then contact us using the <a href=\"http://dev.brightonphoenix.org.uk/contact/\">contact form</a> to discuss trying out a session or to ask&nbsp;any questions.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>* Please note that while anyone can join the club regardless of ability, to be fair to everyone, members, coaches, and those waiting to join the club, we have a minimum racing commitment for our junior members of three winter races and three summer races per year. Although we like to see all members competing this specific requirement only applies to those in the U13 age group and above, not the U11s.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Annual subscriptions are:</p>\r\n\r\n<p><strong>Seniors</strong> (17 and over): &pound;45<br />\r\n<strong>Junior </strong>(under 17), full-time students and unwaged: &pound;35</p>\r\n\r\n<p>Membership includes entry to Withdean Stadium on training nights (Wednesdays 5.30pm-8pm).</p>\r\n\r\n<p>Membership is renewable in March or September, depending on when you join.</p>\r\n\r\n<p>Any athlete aged 11 or over who wishes to compete as a First Claim member in UKA sanctioned events must be registered by the club with England Athletics who will then send a licence to each individual athlete. We are required to notify England Athletics of the athlete&rsquo;s name, gender, date of birth and address. We are assured that personal data will not be shared with third parties without the athlete&rsquo;s express consent.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>To join</strong>,&nbsp;please print out the form, complete and send with a cheque to the Membership Coordinator.</p>\r\n\r\n<p><a href=\"/media/file/phoenix-membership-form.pdf\"><strong>Download Membership application form</strong></a></p>\r\n\r\n<p>**Please note that we are unable to refund any membership fees if you decide to leave the club part way through the year.</p>\r\n\r\n<p>For online payment please remit to:</p>\r\n\r\n<p>Barclays Bank sort code 20-12-75</p>\r\n\r\n<p>Account - Phoenix Athletic Club&nbsp; 00044083</p>\r\n\r\n<p>Ref SUBS + your name</p>\r\n\r\n<p>Please email the membership coordinator to inform them that you have paid on BACs &ndash; failure to email may delay your membership and lead to you being chased for payment.</p>",
+            "component": 54
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 37,
+        "fields": {
+            "created_date": "2018-09-06T13:48:21.316Z",
+            "modified_date": "2019-03-13T14:41:18.038Z",
+            "title": "",
+            "content": "<p><strong>Benefits of Membership</strong></p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">We aspire to be a welcoming, friendly and inclusive club. Most people who join Brighton Phoenix hope to learn more about their sport and step up their performance to achieve their potential while also making friends, being inspired and enjoying the camaraderie of being in a club.&nbsp; In a recent (2017) survey of members, the main reasons they gave for joining were training opportunities, athletic development, the reputation of the club and its friendliness.&nbsp;Competing is also important to members - over three quarters said they had competed in the last year, across a range of types of event.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">Our coaching team have been competing and coaching for decades and through this comes a wealth of knowledge, learned first-hand; and these skills are passed down to up and coming coaches &ndash; many of who are members who first joined to compete and decided to get more involved. With the added opportunity to train and compete with other athletes of a similar or better ability, Brighton Phoenix all share their enjoyment for the sport, and tend to also get involved as volunteers helping to organise events and supporting their clubmates.&nbsp; Anyone who has watched any of the big Brighton road races will be aware of just how popular a local club Phoenix is!&nbsp; Clearly our members have a vast range of interests and abilities. Age groups, and those involved in different disciplines or who have similar goals tend to train together, and often arrange to go on training or competing trips to different parts of the country (and in some cases further afield). Giving our members as many opportunities to try something new has always been of high priority to us, because as important as tradition is in athletics you cannot be afraid to do something different.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">While the club &ldquo;vibe&rdquo; is really what it is all about there are some useful financial benefits too. Club members are able to obtain a 10% discount at: RUN, Blatchington Road, Hove; Sweatshop, Queens Road, Brighton; and the Jog Shop, George Street, Kemptown, Brighton, and can often also get discounts on treatments and massages from other club members.&nbsp; Club members are automatically registered with England Athletics and as such they receive a discount on UKA race entry fees, and can choose to have their profile and results listed on the England Athletics Power of 10 and Run Britain websites.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">Membership includes free entry to Withdean Stadium on training nights (Wednesdays 5.30pm-8pm). For some other specialised training activities (Turbo, Strength and Conditioning, and Swimming) we ask for a small contribution towards the cost of renting the facilities.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">For Members who reach required standards to compete in the British Milers Club (BMC) races, membership is paid for by Phoenix.&nbsp; Entry fees for Sussex Championship races are also paid by the club.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">But perhaps the most important benefit of being a member is being able to compete for the club and wear our distinctive and iconic Phoenix vest. Steve Ovett became an Olympic gold medal winner and, although we can offer no guarantee that you will follow in his footsteps, we will support you in all your efforts to do so!</p>",
+            "component": 55
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 38,
+        "fields": {
+            "created_date": "2018-09-06T14:17:54.051Z",
+            "modified_date": "2019-03-09T11:32:50.925Z",
+            "title": "",
+            "content": "<p><strong>Constitution of the Club</strong></p>\r\n\r\n<p>May 2018</p>\r\n\r\n<p>This document supersedes all previous versions of the club constitution.</p>\r\n\r\n<p><strong>1 Title</strong></p>\r\n\r\n<p>The name of the club: Brighton Phoenix</p>\r\n\r\n<p>The club Logo:<br />\r\n&nbsp;</p>",
+            "component": 56
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 40,
+        "fields": {
+            "created_date": "2018-10-19T13:05:14.322Z",
+            "modified_date": "2019-03-09T13:54:03.995Z",
+            "title": "Club Records - Last updated February 2019",
+            "content": "<p>These are our overall club records, not age group records.</p>\r\n\r\n<p>To set one you must be a first claim member. We have some pretty quick second claim members who are unfortunately not eligible.</p>",
+            "component": 58
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 41,
+        "fields": {
+            "created_date": "2018-10-30T15:19:12.293Z",
+            "modified_date": "2019-03-11T21:13:38.578Z",
+            "title": "",
+            "content": "<p style=\"margin-left:0cm; margin-right:0cm\">Our aim is to match the commitment of any individual coming to the club, so that they achieve their goals while understanding more about the sport. We do this by having a fluid system of coaching where we cross over group training sessions to meet the athlete&rsquo;s ability and vary their training in a progressive manner.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">Our six core values help drive the club forward:</p>\r\n\r\n<ul>\r\n\t<li><strong>Ambition</strong>&nbsp;&ndash; Only by respecting the personal ambitions of the individual athlete can the club help every individual to achieve their potential. The difference between the impossible and the possible lies in a person&rsquo;s determination. If you have the determination, Brighton Phoenix will help you get there.</li>\r\n\t<li><strong>Fairness</strong>&nbsp;&ndash; Brighton Phoenix offers the same opportunities to every club member whatever their level, and through our network and coaching structures we help the athlete to achieve their goals.</li>\r\n\t<li><strong>Friendship</strong>&nbsp;&ndash; Brighton Phoenix operates a network of training groups at every level, so that the athlete can feel comfortable working towards their goals at their own pace with like-minded individuals.&nbsp; We support and inspire each other.</li>\r\n\t<li><strong>Support</strong>&nbsp;&ndash; All aspects of your training are overseen by one of our UKA or BTF qualified coaches so you know you are in good hands. Whatever your level, we can find the right fit for you.</li>\r\n\t<li><strong>Competition</strong>&nbsp;&ndash; Brighton Phoenix athletes participate in Track and Field, Road racing, Cross-country, Trail running and Multisports competitions. We encourage and support our members to compete at all levels from fun runs to international level.</li>\r\n\t<li><strong>Value</strong>&nbsp;&ndash; Brighton Phoenix is an amateur athletics and triathlon club and as such all membership fees are spent on athletic activities to better develop and improve the sport for all its members.</li>\r\n</ul>",
+            "component": 59
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 42,
+        "fields": {
+            "created_date": "2018-11-27T15:12:26.599Z",
+            "modified_date": "2019-03-10T16:14:11.016Z",
+            "title": "",
+            "content": "<p>The club hosts the Phoenix 10K on the second Wednesday evening in July. This is our flagship club race and many of our members either marshal or run it themselves. As an amateur athletics club any funds raised go back into club to help with the development of our young and old athletes alike. Phoenix believe that it is important to be an integral part of the community and as such part of the funds raised go to our partner charity, the Brighton-based <a href=\"http://www.thects.org.uk/\">The Clocktower Sanctuary</a>.</p>\r\n\r\n<p><strong>Race Entry</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://register.primoevents.com/ps/event/BrightonPhoenix10K2019\">Online Entry Here</a></li>\r\n\t<li><a href=\"http://178.62.72.133/media/file/PHX10K2019_APPFORM-FINAL29JAN-SCREEN.pdf\">Download Entry Form</a></li>\r\n\t<li><a href=\"https://www.facebook.com/brightonphoenix10k\">Facebook Page</a></li>\r\n</ul>",
+            "component": 60
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 44,
+        "fields": {
+            "created_date": "2018-11-27T15:41:22.743Z",
+            "modified_date": "2019-03-10T16:12:28.214Z",
+            "title": "",
+            "content": "<p>We organise club events to promote the fun of running and the social side of the club throughout the year, these events take place in the beautiful South Downs National Park so we can take advantage of being located in such a great area for running. These events&nbsp;include:</p>\r\n\r\n<p><strong>Summer Events</strong></p>\r\n\r\n<p>Held on the South Downs on the last Thursday evening of each of May, June, July and August.</p>\r\n\r\n<p>June is our traditional club race the <em>Blackcap Handicap</em> held over a five-mile course (Ditchling Beacon to Blackcap and back).</p>\r\n\r\n<p>The other three will vary but in the past have included<strong> </strong><em>Meet Me At The Juggs</em>, <em>The Snake Downhill Mile</em>, and the&nbsp;<em>Jack &amp; Jill Up &amp; Down</em>. All are followed by a social in a local pub.</p>\r\n\r\n<p>Watch the website/social media/email for details of the summer events, or if you have an idea for a new one please get in touch. We are always happy to try something new.</p>\r\n\r\n<p><strong>Winter Events</strong></p>\r\n\r\n<p>Watch the website/Facebook/club email for more details.</p>",
+            "component": 63
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 45,
+        "fields": {
+            "created_date": "2018-11-27T15:53:53.462Z",
+            "modified_date": "2018-11-27T15:53:53.462Z",
+            "title": "Senior Strength and Conditioning (S&C)",
+            "content": "<p>Open to all athletes from 14 years onwards</p>\r\n\r\n<p><strong>When</strong>: Tuesday evenings</p>\r\n\r\n<p><strong>Where</strong>: <a href=\"https://goo.gl/maps/xNrKqZ974Vy\">St Bernadette&#39;s Catholic Primary School, Preston Road, Brighton, East Sussex, BN1 6UT</a></p>\r\n\r\n<p><strong>Time</strong>: 6pm Sharp &ndash; 7.45pm</p>\r\n\r\n<p><strong>Coaches</strong>: Mike Bazire &amp; Lesley Parsons</p>\r\n\r\n<p><strong>Cost</strong>: &pound;3</p>\r\n\r\n<p><em>NB no sessions during </em><em>school</em><em> summer holiday. </em></p>\r\n\r\n<p>These sessions are usually called &lsquo;Strength &amp; Conditioning&rsquo; or &lsquo;Circuits&rsquo;, but basically are one and the same.</p>\r\n\r\n<p>The reason for Strength &amp; Conditioning is the physical &amp; physiological development of Athletes for an elite sport performance. Strength &amp; Conditioning is more than just lifting weights. It encompasses the entire development of the Athlete &amp; what is needed to improve their physical performance.</p>\r\n\r\n<p>Circuit training or resistance training is a form of body conditioning using high intensity aerobics. It targets strength building and muscular endurance. Regardless of age or discipline, this should be on every coaches training program as part of the development of their Athletes. Therefore our sessions include upper body strength, core strength, leg work and general overall fitness.<br />\r\n<br />\r\nEquipment used: Hand weights, Kettle bells, Bosu Balls, Swiss Balls + more&hellip;.<br />\r\n<br />\r\nContact details:</p>\r\n\r\n<p>Mike Bazire<br />\r\nMob: 07910548394<br />\r\n<a href=\"mailto:mikebazire@gmail.com\">mikebazire@gmail.com</a><br />\r\n<br />\r\nLesley Parsons<br />\r\nMob: 07989678395<br />\r\n<a href=\"mailto:lespar74@yahoo.co.uk\">lespar74@yahoo.co.uk</a></p>",
+            "component": 64
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 46,
+        "fields": {
+            "created_date": "2018-11-27T15:58:51.540Z",
+            "modified_date": "2019-03-25T21:37:59.731Z",
+            "title": "Run sessions",
+            "content": "<p><strong>Monday lunchtime</strong><br />\r\nVenue: Preston Park North East Corner near cycle track<br />\r\nTime: 12:30pm<br />\r\nType of session: Speed Endurance<br />\r\nCoach: uncoached<br />\r\nSuitability: Seniors, all abilities<br />\r\n<em>Park session including a hill on each circuit. Either 5 or 6X6minutes or hills. Approximately 5-6 miles excluding recoveries. Sometimes hill repeats.</em></p>\r\n\r\n<p><strong>Monday evening &quot;Phoenix Nights&quot;</strong><br />\r\nVenue: Preston Park North West Corner next to London Road<br />\r\nTime: 6:40pm Warm Up 7pm Start<br />\r\nType of session: Speed Endurance<br />\r\nCoach: Josh Guilmant<br />\r\nSuitability: Senior/older junior athletes<br />\r\n<em>Suitable for 18 minute 5K athletes and quicker. Session covers approximately 30 minutes of effort but will vary throughout the seasons.</em></p>\r\n\r\n<p><strong>Wednesday lunchtime</strong><br />\r\nVenue: Preston Park Cycle Track<br />\r\nTime 12:30 pm<br />\r\nType of session:&nbsp; Speed endurance<br />\r\nCoache: Andy Bone<br />\r\nSuitability: Seniors<br />\r\n<em>5K session on grass consisting of different distance reps.</em></p>\r\n\r\n<p><strong>Wednesday evening &quot;Phoenix Track&quot; Night</strong><br />\r\nVenue: Withdean Stadium Track</p>\r\n\r\n<p><strong>Senior Group 1</strong><br />\r\n(meet near 100 metre start area)<br />\r\nTime 6:45pm<br />\r\nType of session: Technical warmup drills followed by approx 5K of track intervals<br />\r\nCoaches: Sue Hudson and Liz Halliday<br />\r\nOpen to club members and new participants to try for 2-3 weeks.<br />\r\n<em>Mixed ability group aimed at increasing speed endurance for 5K up&nbsp; to marathon distance. Training plans followed for various distances through the year but also suitable for &quot;drop-ins&quot;.</em></p>\r\n\r\n<p><strong>Senior Group 2</strong><br />\r\n(meet near 50 metre home straight)<br />\r\nTime: 6:45pm for 7:00pm start<br />\r\nType of session: Speed Endurance<br />\r\nCoach: Malcolm Kemp<br />\r\nSuitability: Suitable for 18 minute 5K athletes<br />\r\n<em>Speed endurance session for athletes training for 5K up to the marathon.</em></p>\r\n\r\n<p><strong>Sprints Group</strong><br />\r\n(meet near high jump apron)<br />\r\nTime: 7pm<br />\r\nType of session: Sprints<br />\r\nCoach: Andy Fozzard<br />\r\nSuitability: Suitable for 14 and over</p>\r\n\r\n<p><strong>Middle Distance Group</strong><br />\r\n(meet in stand near finish line)<br />\r\nTime: 6:15pm for 6:50pm start<br />\r\nType of session: Middle distance training appropriate for time of year<br />\r\nCoach: Joel Kidger<br />\r\nSuitability: Middle distance athlete or train and race regularly</p>\r\n\r\n<p><strong>Thursday evening</strong><br />\r\nClub run<br />\r\nWinter start: Withdean Park and Ride car park<br />\r\nSummer starts: Dyke Road Avenue; Asda Holligbury and The Swan, Falmer<br />\r\nSuitability: Seniors, all abilities<br />\r\nsee <a href=\"/training/seniors/thursday-club-run/\">Thursday Club Run page</a></p>\r\n\r\n<p><strong>Saturday</strong><br />\r\nVenue: Varies, track in the summer and normally grass at different venues in the winter<br />\r\nTime &ndash; varies normally 10:00am winter 10:45am summer<br />\r\nType of session: Middle distance sessions either tempo, hills or intervals<br />\r\nCoach: Joel Kidger/Bruce Warren<br />\r\nSuitability: U15 upwards (invitation only due to limits on numbers)<br />\r\n<em>Other sessions do take place on Saturdays but are usually arranged by certain groups of athletes to fulfil their own training requirements.</em></p>\r\n\r\n<p><strong>Sunday</strong><br />\r\nVenue: Varies, normally Stanmer Park or from Shoreham following Adur River<br />\r\nTime: 9:00am<br />\r\nType of session: steady run<br />\r\nCoach: Bruce Warren<br />\r\nSuitability: U15 upwards<br />\r\n<em>Need to be able to run at the pace of the group. Normally two groups one running 5miles the other 7-10 miles, to attend athletes need to be able to run at a pace to stay with the group, this would be to run comfortably at 7:30 mile pace for 5 miles on the flat.</em><br />\r\n<br />\r\nVarious groups make informal arrangements to meet at different times, athletes can normally find a group to run with those suits their training needs and at a time convenient with their personal circumstances.</p>",
+            "component": 65
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 47,
+        "fields": {
+            "created_date": "2019-03-09T11:25:17.080Z",
+            "modified_date": "2019-03-09T17:34:38.774Z",
+            "title": "",
+            "content": "<p>The course is an out-and-back, fast course; the race runs west towards Shoreham on the promenade. After Hove Lagoon, the course meets Basin Road South. Following Shoreham Docks the race turns at Carats Caf&eacute; at 5km returning to the finish at Hove Lawns. Fast times are capable on this course as it is flat, straight and one of the quickest 10km races in the area.</p>\r\n\r\n<p><strong>Current course records</strong></p>\r\n\r\n<ul>\r\n\t<li>Ben Tickner, Brighton Phoenix (<a href=\"https://www.sportsystems.co.uk/ss/results/Brighton%20Phoenix%2010K/1385\">2014 - 30:05</a>)</li>\r\n\t<li>Rebecca Moore, Chichester AC (<a href=\"https://www.sportsystems.co.uk/ss/results/Brighton%20Phoenix%2010K/1925\">2016 - 34:30</a>)</li>\r\n</ul>\r\n\r\n<p><strong>Results</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://www.runbritainrankings.com/results/results.aspx?meetingid=246356&amp;event=10KNAD&amp;venue=Hove&amp;date=11-Jul-18\">2018 Results</a></li>\r\n\t<li><a href=\"https://www.runbritainrankings.com/results/results.aspx?meetingid=208921&amp;event=10K&amp;venue=Hove&amp;date=12-Jul-17\">2017 Results</a></li>\r\n\t<li><a href=\"https://www.runbritainrankings.com/results/results.aspx?meetingid=172319&amp;event=10K&amp;venue=Hove&amp;date=13-Jul-16\">2016 Results</a></li>\r\n\t<li><a href=\"https://www.sportsystems.co.uk/ss/results/Brighton%20Phoenix%2010K/1662\">2015 Results</a></li>\r\n\t<li><a href=\"https://www.sportsystems.co.uk/ss/results/Brighton%20Phoenix%2010K/1385\">2014 Results</a></li>\r\n\t<li><a href=\"https://www.sportsystems.co.uk/ss/results/Brighton%20Phoenix%2010K/1082\">2013 Results</a></li>\r\n\t<li><a href=\"https://www.sportsystems.co.uk/ss/results/Brighton%20Phoenix%2010K/861\">2012 Results</a></li>\r\n\t<li><a href=\"https://www.sportsystems.co.uk/ss/results/Brighton%20Phoenix%2010K/654\">2011 Results</a></li>\r\n</ul>",
+            "component": 69
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 48,
+        "fields": {
+            "created_date": "2019-03-09T11:32:50.928Z",
+            "modified_date": "2019-03-09T11:32:50.928Z",
+            "title": "",
+            "content": "<p>The Club Colours:&nbsp; White with navy logo or navy with white logo</p>\r\n\r\n<p><strong>2 Headquarters</strong><br />\r\nWithdean Stadium, Tongdean Lane Brighton</p>\r\n\r\n<p><strong>3 Aim of Club</strong><br />\r\nThe promotion of amateur athletics and triathlon.</p>\r\n\r\n<p><strong>4 Management</strong><br />\r\nManagement of the club is vested in a board consisting of Chairperson, Vice Chairperson<br />\r\nSecretary, Treasurer, Coaching Director, Membership Co-ordinator, Senior Representative x2 , Juniors&rsquo; Representative, Multi-Sport Representative, Social Secretary , Communications Officer and Club Captain. All board members shall be elected annually. Other members may be co-opted onto the board for the remainder of the year as required. Five board members shall form a quorum.</p>\r\n\r\n<p><strong>5 Membership</strong><br />\r\nMembership of the Club shall be open, on application, to anyone interested in recreational or competitive running and or multisport, regardless of sex, age, disability, ethnicity, race, nationality, sexual orientation, occupation, religion, political or other beliefs. New members will be issued with a membership card and a copy of the club rules and training sessions. Members shall abide by the rules of the club and of the governing board of the sport (either UK Athletics or British Triathlon Federation ). All members should act in a sporting manner at all sporting events and not bring the club into disrepute either by their actions or lack of action. The categories of membership are senior, junior, student, associate and honorary. In championship events members competing for the club must wear appropriate club colours and if entering any other event under the club name (and thereby obtaining financial benefit) should also wear club colours unless prior dispensation has been obtained from the club.</p>\r\n\r\n<p><strong>6 Subscription</strong><br />\r\nThe annual subscription and any other fees will be agreed at the Annual General Meeting for the current year. The fee will be payable by new members on election and annually thereafter at the rate set at the AGM. Any increase in registration fees imposed by England Athletics will automatically be added to the annual subscription as it occurs.</p>\r\n\r\n<p>Renewal will be in March or September. Any member who fails to renew his/her membership for a period of six months after renewal is due will cease to be a member and may not compete under the club name until their membership subscription is up to date. Anyone no longer wishing to be a member shall inform the Membership co-ordinator in writing of this. The board also reserves the right to withdraw membership from any individual and will inform that individual in writing of this decision and reasons for it.<br />\r\n&nbsp;</p>\r\n\r\n<p><strong>7 Annual General Meeting</strong></p>\r\n\r\n<p>An Annual General Meeting shall be held during the first quarter of each year. The purpose is to present the board&rsquo;s annual report and financial statement, elect officers and deal with specific items on the agenda. The Secretary must give twenty eight days notice of the AGM to every member. Any business to be placed on the agenda must be given to the Secretary at least 14 days before the meeting.</p>\r\n\r\n<p>Nominations for election of officers must be tendered at least seven days before the AGM.<br />\r\n<br />\r\nAll paid up members and honorary members, over 16 years of age, shall be allowed to vote. However 2nd claim members may not vote on issues that also affect their first claim club. Motions will be carried if a two thirds majority of the eligible voters present are in favour. The Chairperson shall have a casting vote. Members who are unable to attend the meeting (for any reason) shall be entitled to vote by proxy by appointing any other member who is attending the meeting to speak and vote on their behalf (including the Chair). The form of proxy shall be in writing (including email) and may (but does not need to) specify how the proxy is to vote. &nbsp;</p>\r\n\r\n<p><strong>8 Extraordinary general meeting</strong><br />\r\nThe Secretary must call an EGM within 14 days of receiving a written request by ten percent of the paid up and honorary membership. Such a request must state the business to be discussed. Seven days notice (using best efforts) shall be given to members of an EGM. No other business shall be dealt with at such a meeting. Voting rights will be as in rule 7. Members who are unable to attend the meeting (for any reason) shall be entitled to vote by proxy by appointing any other member who is attending the meeting to speak and vote on their behalf (including the Chair). The form of proxy shall be in writing (including email) and may (but does not need to) specify how the proxy is to vote.</p>\r\n\r\n<p><strong>9 Alteration to Constitution</strong><br />\r\nThe constitution may only be changed at either an AGM or EGM with notice given as in rule 7 and 8</p>\r\n\r\n<p><strong>10 Management Board</strong><br />\r\nThe Board will meet bi-monthly on the first Monday of that month or nearest Monday&nbsp; if that should fall on a bank holiday. Any items for discussion should be presented to a board member in writing at least eight days before such a meeting. Any club member may attend such a meeting, however: -</p>\r\n\r\n<ul>\r\n\t<li>They may only speak if invited to do so</li>\r\n\t<li>They may not vote</li>\r\n</ul>\r\n\r\n<p>Minutes of board meetings will be available on request from the Secretary. The secretary should give seven days notice of a board meeting. The agenda for the meeting should be available to any member on request.</p>\r\n\r\n<p>Any member of the Board who cannot attend a meeting shall tender their apologies to the secretary in advance and submit their report in writing.</p>\r\n\r\n<p><strong>11 Sub-Committees</strong><br />\r\nEach of the sub committees if formed shall meet bi-monthly and in any case the representative shall tender a written report to the next Management Board meeting , this should normally be presented in person .</p>\r\n\r\n<p><strong>12 Complaints</strong><br />\r\nAny complaint about the club or board members of the club shall be made in writing to a board member and shall be signed. Any such complaint must be dealt with at the next board meeting. Such complaints may be treated as confidential at the discretion of the board.</p>\r\n\r\n<p><strong>13 Coaching</strong><br />\r\nThe club requires that all club coaches receive appropriate training on recognised courses and enhanced DBA checks before they can perform coaching duties. Club coaching policy shall be set by the Coaching Director and agreed at board level and must be adhered to by all coaches. Coaching sessions and plans should be agreed by the Coaching Director and regularly reviewed.</p>\r\n\r\n<p><strong>14 Child Protection</strong><br />\r\nThe club will appoint two (one male one female) child protection officers and the child protection policy will be available for any member to inspect on request.</p>\r\n\r\n<p><strong>15 Events</strong><br />\r\nAny Events or advertised training sessions organised in the name of the club must be approved by the board. Funding for organised events and participation must have prior agreement at board level.</p>",
+            "component": 71
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 49,
+        "fields": {
+            "created_date": "2019-03-09T12:03:33.619Z",
+            "modified_date": "2019-03-10T16:26:13.347Z",
+            "title": "Brighton Phoenix BMC Open",
+            "content": "<p>The <a href=\"http://www.britishmilersclub.com/\">BMC</a> organise middle distance races around the country, structured around a set of paced races to give athletes fantastic opportunities to improve their PBs. Subsequently, they cater for a wide range of abilities.</p>\r\n\r\n<p>Phoenix actively supports the BMC and encourages our athletes to take part in their events. As a club we will continue to put the emphasis on improving the individual&rsquo;s ability and these races give athletes opportunities to run against, guaranteed, quality opposition.</p>\r\n\r\n<p>If you achieve a BMC standard you can join the British Milers Club, and Phoenix will pay for membership subject to certain criteria.&nbsp;All of this is a fantastic springboard to propel our athletes into&nbsp;positions to go on and race at higher championship-level races in the future.</p>\r\n\r\n<p><strong>Brighton Phoenix BMC Open Meeting</strong></p>\r\n\r\n<p>The club&#39;s BMC Open Meet takes place on the final Wednesday of May. Traditionally this meeting gives paced races for all abilities for 800m, 1500m and 3000m and in recent years has featured current and future Great Britain &amp; Northern Ireland internationals.</p>\r\n\r\n<p>Please&nbsp;note: Entry information for this year&#39;s BMC Open Meeting will be available soon.</p>",
+            "component": 73
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 52,
+        "fields": {
+            "created_date": "2019-03-09T12:43:43.536Z",
+            "modified_date": "2019-03-09T12:43:43.536Z",
+            "title": "",
+            "content": "<p style=\"margin-left:0cm; margin-right:0cm\">Brighton Phoenix is an athletics and triathlon club that looks to promote excellence in running events all the way up to ultra-marathons, from short course multisport events to long distance triathlons. We offer training and racing opportunities to everyone from 9-79 (and beyond) in a spirit of friendship and mutual support. We are non-discriminatory and non-judgmental: we are about everyone being the best athlete they possibly can.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">We believe in &lsquo;inclusive excellence&rsquo;. For us excellence is not measured in absolute performance but in the performance relative to someone&rsquo;s ability, effort and general commitment. We appreciate the limitations imposed by life/work/family balance, and the other demands and pressures we are all subject to. Within this context a 4-hour marathon for one athlete is a bigger achievement than a sub 3-hour marathon for another.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">We currently have around 400 members training and competing in running and multisport at local, regional, national and international levels, or just looking to get fit and stay healthy. We do encourage our members to race, but we never force them to: it&rsquo;s always a matter of personal choice.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">The club is managed and led by volunteers most of whom have many years&nbsp;experience in racing and training. Our coaches are UK Athletics and British Triathlon Federation qualified and our Board has specific legal, management and sport administration skills and experience.</p>\r\n\r\n<p style=\"margin-left:0cm; margin-right:0cm\">Welcome to your club, welcome to Brighton Phoenix!</p>",
+            "component": 79
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 55,
+        "fields": {
+            "created_date": "2019-03-09T16:31:38.654Z",
+            "modified_date": "2019-03-09T18:15:49.806Z",
+            "title": "Results",
+            "content": "<ul>\r\n\t<li><a href=\"/results/?search=black+cap+handicap#result-1396\">2018 Results</a></li>\r\n\t<li><a href=\"/results/?search=black+cap+handicap#result-1200\">2017 Results</a></li>\r\n\t<li><a href=\"/results/?search=black+cap+handicap#result-995\">2016 Results</a></li>\r\n\t<li><a href=\"/results/?search=black+cap+handicap#result-776\">2015 Results</a></li>\r\n\t<li><a href=\"/results/?search=black+cap+handicap#result-637\">2014 Results</a></li>\r\n\t<li><a href=\"/results/?search=black+cap+handicap#result-472\">2013 Results</a></li>\r\n\t<li><a href=\"/results/?search=black+cap+handicap#result-365\">2012 Results</a></li>\r\n\t<li><a href=\"/results/?search=black+cap+handicap#result-159\">2010 Results</a></li>\r\n\t<li><a href=\"/results/?search=black+cap+handicap#result-48\">2009 Results</a></li>\r\n</ul>",
+            "component": 89
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 56,
+        "fields": {
+            "created_date": "2019-03-09T17:32:00.265Z",
+            "modified_date": "2019-03-12T18:46:11.829Z",
+            "title": "",
+            "content": "<p>When you join Phoenix you will receive the white vest with the iconic Phoenix logo.</p>\r\n\r\n<p>The club shop also stocks hoodies, technical t-shirts, tri-suits, cycling jerseys and lots more for young athletes and old.</p>\r\n\r\n<p><a href=\"/media/file/club-kit.pdf\">To view the kit catalogue</a></p>",
+            "component": 93
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 58,
+        "fields": {
+            "created_date": "2019-03-09T17:35:48.419Z",
+            "modified_date": "2019-03-09T18:18:58.481Z",
+            "title": "Results",
+            "content": "<ul>\r\n\t<li><a href=\"/results/?search=the+big+w#result-1429\">2018 Results</a></li>\r\n\t<li><a href=\"/results/?search=the+big+w#result-1045\">2016 Results</a></li>\r\n\t<li><a href=\"/results/?search=the+big+w#result-822\">2015 Results</a></li>\r\n\t<li><a href=\"/results/?search=the+big+w#result-368\">2012 Results</a></li>\r\n</ul>",
+            "component": 95
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 61,
+        "fields": {
+            "created_date": "2019-03-19T12:35:45.140Z",
+            "modified_date": "2019-03-22T18:22:29.444Z",
+            "title": "Information for parents",
+            "content": "<p>We accept junior athletes from the age of nine upwards. New athletes are invited to try three sessions on our club night, which is Wednesday, before committing to joining. There may be a waiting list for juniors. Please email if you want to try a session.</p>\r\n\r\n<p><strong>Training</strong><br />\r\nOur approach to training is based on the progressive long term development of the individual athlete. We take a long term view for the good of the child, both as an athlete and a person and therefore deliberately restrict training for the younger athletes.</p>\r\n\r\n<p>Training for 9 to 14 year olds is held at our club night at Withdean Stadium on Wednesday evenings at 5:30pm. Athletes are split into small groups based not only on their chronological age but also their biological age (physical and emotional) and training age (time training). At this age training is about learning how to train, having fun trying different activities and learning fundamental movement patterns.</p>\r\n\r\n<p>As athletes develop and show commitment and ability they will be invited to progress through groups and eventually start to specialise at events. Athletes are then invited to training groups at 6:30 on Wednesdays. Additional training is also held on Mondays, Saturdays and Sundays at different times and venues, due to limited coaching resources this is by invitation only based on ability and commitment. When athletes are considered ready specialist strength and conditioning sessions are also available at different times of the week.</p>\r\n\r\n<p>All sessions start with warm up and drills to prepare the body for the main training session. The younger groups are taught the warm up and drills that they will do as they progress to seniors, as the athletes get older they will be expected to warm up and drill by themselves.</p>\r\n\r\n<p>The club has a number of international athletes, many of whom have progressed through the club and the older junior training groups often have combined training sessions with these athletes, which can be very inspirational and educational for the junior athletes.</p>\r\n\r\n<p><strong>Competing</strong><br />\r\nThe club believes that competing is important as it helps young athletes to develop both their athletic and life skills. The club therefore requests all junior members in the U13 age groups and older compete at least three times a year in both summer and winter events. Although we encourage our younger members to try competing in different events they will only be asked to compete in events they feel comfortable with and will never be pressured to compete in events just to gain points for the club. If an athlete does not want to compete they should speak to their coach/team manager/child welfare officer.</p>\r\n\r\n<p>We have athletes regularly competing in events around the region and nationally from the U11 age group upwards, with the emphasis on enjoyment and personal development.</p>\r\n\r\n<p>In the summer the club enters local U13 and U15 track leagues, giving members the opportunity to compete as individuals in a team environment. Members also compete in open meetings and regional and national championships. See (link to info on summer training)</p>\r\n\r\n<p>In the winter the club competes in the Sussex x-country league as well as Sussex indoor sportshall league. Members also compete in regional and national x-country races as well as indoor athletic open and championship events. See (link to info on winter training)</p>\r\n\r\n<p>A race list can be found in <a href=\"/fixtures/\">Fixtures</a>.</p>",
+            "component": 113
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 62,
+        "fields": {
+            "created_date": "2019-03-19T12:55:20.235Z",
+            "modified_date": "2019-04-02T15:25:08.511Z",
+            "title": "Thursday Club Run",
+            "content": "<p>Each Thursday evening we gather for a medium distance run &ndash; in the summer on the Downs and in the winter on the streets. The distances vary between 6.5 and 8.5 miles. To accommodate runners of all abilities we deploy a &#39;run-back&#39; system with faster runners returning to the back of the group at intervals ensuring that no one runs alone. In addition, slower runners can take a shortcut if they need one. The starting points vary in the summer and leave from Withdean Stadium in the winter but always at 6:30pm. There is always a designated run leader for each session and their contact details together with route maps are published beforehand.</p>\r\n\r\n<p><strong>SUMMER (OFF-ROAD) SCHEDULE</strong><br />\r\nDistance 7-8 miles<br />\r\nThe three summer meeting places all give access to downland routes:<br />\r\n<br />\r\n<strong>D1/D2 </strong>Junction of Valley Drive/Dyke Road Avenue<br />\r\nWe park and gather in Whitehorne Drive.<br />\r\nD1&nbsp;&nbsp; &nbsp;<a href=\"https://gb.mapometer.com/running/route_2585251\">https://gb.mapometer.com/running/route_2585251</a><br />\r\nD2&nbsp;&nbsp; &nbsp;<a href=\"https://gb.mapometer.com/running/route_2474462\">https://gb.mapometer.com/running/route_2474462</a></p>\r\n\r\n<p><strong>A1/A2/A3 </strong>Hollingbury Asda BN1 8AS<br />\r\nGo into the car park from Crowhurst Road to park and gather at the petrol station end of the car park.<br />\r\nA1&nbsp;&nbsp; &nbsp;<a href=\"https://gb.mapometer.com/running/route_2826834\">https://gb.mapometer.com/running/route_2826834</a><br />\r\nA2&nbsp;&nbsp; &nbsp;<a href=\"https://gb.mapometer.com/running/route_2474477\">https://gb.mapometer.com/running/route_2474477</a><br />\r\nA3&nbsp;&nbsp; &nbsp;<a href=\"https://gb.mapometer.com/running/route_4751343\">https://gb.mapometer.com/running/route_4751343</a><br />\r\n<br />\r\n<strong>F1/F2/F3/F4</strong> The Swan Inn, Middle Street, Falmer BN1 9PD<br />\r\nPark and muster outside the pub.</p>\r\n\r\n<p>F1&nbsp;&nbsp; &nbsp;<a href=\"https://gb.mapometer.com/running/route_2474540\">https://gb.mapometer.com/running/route_2474540</a><br />\r\nF2&nbsp;&nbsp; &nbsp;<a href=\"https://gb.mapometer.com/running/route_2474986\">https://gb.mapometer.com/running/route_2474986</a><br />\r\nF3&nbsp;&nbsp; &nbsp;<a href=\"https://gb.mapometer.com/running/route_2475012\">https://gb.mapometer.com/running/route_2475012</a><br />\r\nF4 &nbsp;&nbsp; <a href=\"https://gb.mapometer.com/running/route_2477560\">https://gb.mapometer.com/running/route_2477560</a></p>",
+            "component": 116
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 63,
+        "fields": {
+            "created_date": "2019-03-19T12:58:47.654Z",
+            "modified_date": "2019-03-19T13:02:51.281Z",
+            "title": "Multisport",
+            "content": "<p>Brighton Phoenix has several British Triathlon Federation&nbsp;(BTF) coaches at Levels 1, 2 and 3&nbsp; as well as specialist UKA running coaches who will be happy to advise you in any aspect of the sport whether you are just wanting to give it a try or if you are an experienced athlete wanting help with your training.</p>\r\n\r\n<p>The club members also have a great depth of experience between them at distances from super sprint to ironman and at small local events to international competitions and they are always willing to share&nbsp; their advice and experience with new members</p>\r\n\r\n<p><strong>What is multisport?</strong></p>\r\n\r\n<p>Multisport is the dedication of training and racing to swimming, cycling and running, or two of these three. Other titles include Duathlon, (Run, Bike, Run), Triathlon (Swim, Bike, Run) and Aquathlon (Swim, Run). If you want to improve your run/swim/bike skills by joining us, we would be more than happy to have you on board!</p>\r\n\r\n<p>Simply put, multisport is a lifestyle sport, which rolls various disciplines into one race format. It is guaranteed to challenge you like no other.</p>",
+            "component": 117
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 64,
+        "fields": {
+            "created_date": "2019-03-19T12:58:47.656Z",
+            "modified_date": "2019-03-19T12:58:47.656Z",
+            "title": "",
+            "content": "<p><strong>Where do you start?</strong></p>\r\n\r\n<p>Multisport has a strange, attractive force, which gradually pulls you into its orbit. Many participants have come from a single-discipline sport, wishing to have more variation in training or looking to increase the challenge/enjoyment of competition.</p>\r\n\r\n<p>There is no doubt that some people organise their lives around multisport, while others just want to have a go and see what the sport is all about. Brighton Phoenix can help you either way &ndash; we have nearly 30+ multisport athletes at all levels of competition, ranging from novices in their first season to seasoned international standard athletes.</p>\r\n\r\n<p>If you have just joined or wish to see what we are about, have a look around our site, come along to a few sessions and start to get into the multisport scene.</p>",
+            "component": 119
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 65,
+        "fields": {
+            "created_date": "2019-03-19T12:58:47.657Z",
+            "modified_date": "2019-03-19T12:58:47.657Z",
+            "title": "",
+            "content": "<p><em>Triathlon, Duathlon, Aquathon&nbsp;</em>&nbsp;</p>\r\n\r\n<p>Our club provides training for seniors in swim, bike and run and we have members that compete in multisport events on a regular basis. We are affiliated to the British Triathlon Federation and we have coaches qualified by that body. The sessions have also been valuable to our runners for cross training and injury rehabilitation.<br />\r\n<br />\r\n<strong>Monday evenings:</strong><br />\r\nApril to October we have a Bike/Run coached session from 18:30-19:45 hours either at Preston Park Cycle Track (April and October) or Stanmer Park through the summer;<br />\r\nNovember to March we have coached cycling turbo at Downs Infants School on Ditchling Road for &pound;4 per session to cover hall hire costs.</p>\r\n\r\n<p><strong>Thursday evenings:</strong><br />\r\nMay to late September we have coached sessions once a fortnight in the 50 yard outdoor pool - Pells Pool in Lewes. We can also arrange some group open water swims at various locations.<br />\r\nLate September to April we have coached pool sessions at Roedean School, Brighton.<br />\r\nCoached swim sessions are &pound;5 per session to cover pool hire costs.</p>\r\n\r\n<p><strong>Wednesday evenings:</strong><br />\r\nTrack night at Withdean and triathletes and runners are coached together in a speed session for running.<br />\r\n<br />\r\nWe have some experienced triathletes and duathletes that compete regularly including internationally and we have had some newcomers to multisport competition that have enjoyed the above sessions and raced locally with good results see our news items including<br />\r\n<a href=\"http://www.brightonphoenix.org.uk/stories/664\">http://www.brightonphoenix.org.uk/stories/664</a><br />\r\n<a href=\"http://www.brightonphoenix.org.uk/stories/662\">http://www.brightonphoenix.org.uk/stories/662</a><br />\r\n<a href=\"http://www.brightonphoenix.org.uk/stories/636\">http://www.brightonphoenix.org.uk/stories/636</a><br />\r\n&nbsp;<br />\r\nOur own Charlotte Matthews has produced a very good guide to transition skills, take a look&nbsp;<a href=\"https://www.youtube.com/watch?v=qI7pFhGujB8&amp;t=3s\">https://www.youtube.com/watch?v=qI7pFhGujB8&amp;t=3s</a>&nbsp;and remember to &#39;Like&#39;. (Its fine to wear socks if you feel better with them just remember to put the talcum powder in the socks).&nbsp;</p>\r\n\r\n<p>To all those interested in Triathlon, Duathlon, Acquathlon and Turbo we have a WhatsApp group so that we can easily communicate training sessions and other relevant info. If you&#39;d like to join it please send an email to&nbsp;<a href=\"mailto:lizhalliday2003@yahoo.co.uk\">lizhalliday2003@yahoo.co.uk</a>&nbsp;who will provide a link for the relevant training groups. &nbsp;</p>\r\n\r\n<p>For information on the British Triathlon Federation and links to sanctioned events and how to join Triathlon England go to:</p>\r\n\r\n<p><a href=\"http://www.britishtriathlon.org/\">http://www.britishtriathlon.org/</a></p>\r\n\r\n<p><strong>Club policy documents</strong><br />\r\nSee Training notes for club rules, equity policy, open-water guidelines and emergency procedures.</p>",
+            "component": 121
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 66,
+        "fields": {
+            "created_date": "2019-03-19T13:01:32.600Z",
+            "modified_date": "2019-03-22T18:28:48.296Z",
+            "title": "Training Pathway",
+            "content": "<p><strong>Brghton Phoenix Wednesday Evening Group Structure</strong></p>\r\n\r\n<p><strong>5.30pm</strong><br />\r\n<strong>GREEN BIBS &nbsp;&nbsp; &nbsp;(Year 5)&nbsp; 9-10 year-olds&nbsp;&nbsp; &nbsp;BW/GR/NS</strong><br />\r\nA starter group who will have the opportunity to try different activities and gain an introduction to athletics in a fun way. Athletes will progress from this group into BLUE/ORANGE.</p>\r\n\r\n<p><strong>BLUE BIBS&nbsp;&nbsp; &nbsp; (Year 6) 10-11 year-olds &nbsp;&nbsp; &nbsp;BW/GR/NS</strong><br />\r\nContinuing general athletic development in preparation for Sports Hall/Track and XC</p>\r\n\r\n<p><strong>ORANGE BIBS&nbsp;&nbsp; &nbsp; (Year 6) 10-11 year-olds &nbsp;&nbsp; &nbsp;BW/GR/NS</strong><br />\r\nContinuing general athletic development in preparation for Sports Hall/Track and XC</p>\r\n\r\n<p><strong>GROUP A - SPRINT&nbsp;&nbsp; &nbsp;(7,8 and 9) 11-14 year-olds &nbsp;&nbsp; &nbsp;RH/MT/SH</strong><br />\r\nThis group will be doing more specific sprint work aimed at developing young athletes in sprint technique.</p>\r\n\r\n<p><strong>GROUP B - Distance running &nbsp;&nbsp; &nbsp;(Year 6) 11-12 year-olds &nbsp;&nbsp; &nbsp;AB</strong><br />\r\nThis group will be doing more specific middle distance training for the track in the summer and XC in winter. Some athletes with maybe invited by the coaches to other training sessions during the week.</p>\r\n\r\n<p><strong>RUNNING FITNESS GROUP &nbsp;&nbsp; &nbsp;(Year 7, 8 and 9) 11-16 year-olds</strong> &nbsp;&nbsp;&nbsp;<em> tbc</em><br />\r\nFor various reasons some young athletes don&rsquo;t want to or can&rsquo;t compete, so this group will be structured to suit their needs while maintaining the opportunity to train with others of a similar ability. This will allow them to continue to enjoy running without the pressure of competition.</p>\r\n\r\n<p><strong>6.30pm</strong><br />\r\n<strong>GROUP C - Distance running &nbsp;&nbsp; &nbsp;(Year 8 upwards) 13-15 year-olds &nbsp;&nbsp; &nbsp;AB</strong><br />\r\nAthletes who have shown a commitment to racing or have reached a set performance standard. They train more than once a week and show potential. They will progress in Group D.<br />\r\n(600m B 2:10/G 2:20)</p>\r\n\r\n<p><strong>GROUP D Distance performance &nbsp;&nbsp; &nbsp; (Year 8 upwards) 14-17 year-olds &nbsp;&nbsp; &nbsp;BW</strong><br />\r\nThis group will have the same criteria as Group C but will contain athletes who are at a higher level according to the coaches and will benefit from and cope with more advanced training.<br />\r\n(800m B 2:50 G-3:00).</p>\r\n\r\n<p><strong>6.50pm<br />\r\nGROUP E Distance performance&nbsp;&nbsp; &nbsp;16-20 year-olds&nbsp;&nbsp; &nbsp;BW/JK</strong><br />\r\nThis group will be for advanced athletes training primarily for track and XC. Athletes will receive structured training sessions and in some cases individual schedules to suit their racing requirements. Sub groups within this session will form to take in specific events and personal targets.<br />\r\n(800m B 2:30/G 2:40) (800m B 2:16/ G 2:25) (1500m B 4:20 / G 5:10)</p>\r\n\r\n<p><strong>7.00pm<br />\r\nGROUP F Senior Distance &nbsp;&nbsp; &nbsp;17 upwards&nbsp;&nbsp; &nbsp;SH/LH</strong><br />\r\nAthletes of varying abilities training for 5k to marathons. Sessions composed of different distance reps totalling 5K. Group splits into two/ three groups of ability. All abilities are welcome.<br />\r\n&nbsp;<br />\r\n<strong>GROUP G Advanced Senior Distance &nbsp;&nbsp; &nbsp;(17-19min 5K or 2.40-3 hour marathon)&nbsp;&nbsp; &nbsp;MK</strong><br />\r\nAthletes of varying abilities training for 5k to marathons and 800 + 1500m. Sessions composed of different distance reps totalling 5-6K. Middle distance athletes in the spring/summer will do specific<br />\r\ntraining.</p>\r\n\r\n<p><strong>GROUP H Sprint Group &nbsp;&nbsp; &nbsp;14 upwards&nbsp;&nbsp; &nbsp;AF</strong><br />\r\nAthletes who wish to train for 100m, 200m and 400m.</p>\r\n\r\n<p>&nbsp;</p>",
+            "component": 122
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 67,
+        "fields": {
+            "created_date": "2019-03-19T13:05:58.043Z",
+            "modified_date": "2019-03-22T18:38:50.038Z",
+            "title": "Swimming",
+            "content": "<p>May to late September we have coached sessions once a fortnight in the 50 yard outdoor pool &ndash; <strong>Pells Pool</strong> in Lewes. We can also arrange some group open water swims at various locations.<br />\r\n<br />\r\nLate September to April we have coached pool sessions at <strong>Roedean School</strong>, Brighton.<br />\r\n<br />\r\nCoached swim sessions are &pound;5 per session to cover pool hire costs.</p>",
+            "component": 124
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 68,
+        "fields": {
+            "created_date": "2019-03-19T13:06:13.667Z",
+            "modified_date": "2019-04-03T09:15:17.289Z",
+            "title": "Phoenix Elite",
+            "content": "<p>Throughout Phoenix&#39;s history we have had athletes who have competed at national and international stage, we currently have members, both male and female competing internationally in junior, senior and master age groups. Some of these have been with the club from the age of 10 ! We can&#39;t promise you will all make it to an Olympic final but our club has a great record of spotting those with talent and making sure they get the support they need.</p>",
+            "component": 126
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 69,
+        "fields": {
+            "created_date": "2019-03-22T18:22:29.447Z",
+            "modified_date": "2019-03-22T18:22:29.447Z",
+            "title": "",
+            "content": "<p><strong>Coaches/volunteers</strong><br />\r\nAll our coaches are volunteers have a number of years experience in athletics and are UK Athletics qualified and are DBS checked. Coaches are supported by assistant coaches and parent volunteers.</p>\r\n\r\n<p>The club only exists due to its volunteers and any offer of help is always welcome be it coaching, team management, officiating or any other task. Experience is not necessary and the club will pay for any training required. Please speak to a coach or club official if you would like to offer your help.</p>\r\n\r\n<p><strong>Equipment/clothing</strong><br />\r\nAthletes should attend training and races properly dressed to suit the potential conditions for the time of year. Warm clothes when the weather is cold &ndash; gloves, track suit and hat, and in cool clothes when the weather is warm &ndash; shorts and T-shirt.</p>\r\n\r\n<p>Club vests should be worn for all competitions if competing for the club.</p>\r\n\r\n<p>The younger athletes should normally only wear trainers on their feet for training, only as they get older and requested to do so should they wear spikes.</p>\r\n\r\n<p>Spikes &ndash; these are shoes with removable spikes on the base. As children get older they are beneficial for racing/training. For track/field completion and training 6mm spikes should be used, for grass/x-country training and racing in wet/muddy conditions 9 or 12mm spikes should be used. Please speak to your coach regarding the need for spikes before you purchase them.</p>\r\n\r\n<p>Track and field equipment &ndash; athletes should only use equipment such as javelins, discuss, high jump area etc under the supervision of a coach.</p>\r\n\r\n<p><br />\r\n<strong>Track discipline/etiquette</strong></p>\r\n\r\n<ul>\r\n\t<li>&nbsp;&nbsp;&nbsp; Only go on the track if instructed by the coach.</li>\r\n\t<li>&nbsp;&nbsp;&nbsp; Be aware at all times, never stand chatting etc on the inside lanes. Pay particular attention when crossing the track as athletes running at speed cannot stop</li>\r\n\t<li>&nbsp;&nbsp;&nbsp; If you are on the track and someone behind you shouts &quot;Track!&quot; it means move out of your lane towards the outside of the track to let them through.</li>\r\n</ul>\r\n\r\n<p><strong>Junior club rules</strong><br />\r\n<strong>Code of conduct for coaches and volunteers<br />\r\nCode of conduct parents/carers</strong></p>\r\n\r\n<p><strong>Child protection</strong></p>\r\n\r\n<ul>\r\n\t<li>All coaches are checked regularly by the government&#39;s Disclosure and Barring Service {DBS} Also, all coaches have individually signed up to the UK Athletics code of Coaching Conduct.</li>\r\n\t<li>&nbsp;(link to club welfare policy?)</li>\r\n</ul>\r\n\r\n<p><strong>Food and drin</strong></p>\r\n\r\n<ul>\r\n\t<li>&nbsp;Children should bring a bottle of water, whatever the time of year. Sugary drinks are discouraged.</li>\r\n\t<li>&nbsp;Children should be adequately fuelled before training/racing. Food should be easily digestible and a good source of energy and ideally consumed more than one hour before training. Food should not be eaten during training.</li>\r\n\t<li>Children should not eat at training sessions.</li>\r\n</ul>\r\n\r\n<p><strong>Injury/medication</strong></p>\r\n\r\n<ul>\r\n\t<li>Athletes/parents or guardians should inform their coach if they are injured or have a health condition that may impact their training/racing or need to take medication such as inhalers.</li>\r\n</ul>\r\n\r\n<p><strong>Personal property</strong></p>\r\n\r\n<ul>\r\n\t<li>&nbsp;Athletes are responsible for their own personal property and any property the club lends them.</li>\r\n</ul>\r\n\r\n<p><strong>Mobile phones and headphones</strong></p>\r\n\r\n<ul>\r\n\t<li>Mobile phones or personal headphones should not be used during training without the permission of the coach, such items are bought to training at the owners risk.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>",
+            "component": 128
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 70,
+        "fields": {
+            "created_date": "2019-03-22T18:34:47.388Z",
+            "modified_date": "2019-03-22T18:34:47.388Z",
+            "title": "Other training",
+            "content": "<p>Additional training is available throughout the week, with the exception of Tuesday circuits this is invite only for those in performance groups, numbers are restricted based on the number of coaches available.</p>\r\n\r\n<p><strong>Monday middle distance training &ndash;<em> invite only</em></strong><br />\r\nU13 upwards who race regularly and are considered of a suitable standard to manage the session.</p>\r\n\r\n<p><a href=\"/training/juniors/strength-and-conditioning/\"><strong>Tuesday circuit training</strong></a><br />\r\nHeld at St Bernadette&rsquo;s School &ndash; any member aged 14 and older</p>\r\n\r\n<p><strong>Strength and Conditioning &ndash; various nights &ndash;<em> invite only</em></strong><br />\r\nAged U15 and older</p>\r\n\r\n<p><strong>Saturday middle distance training &ndash; <em>invite only</em></strong><br />\r\nU15 upwards who have the potential to make county standard.</p>\r\n\r\n<p><strong>Sunday junior long run &ndash; </strong>invite only<br />\r\nU15 upwards who race regularly and train on Mondays/Saturdays and are considered of a suitable standard to manage the session.</p>\r\n\r\n<p>&nbsp;</p>",
+            "component": 131
+        }
+    },
+    {
+        "model": "pages.editorial",
+        "pk": 71,
+        "fields": {
+            "created_date": "2019-04-02T15:12:54.129Z",
+            "modified_date": "2019-04-02T15:25:08.517Z",
+            "title": "WINTER SCHEDULE",
+            "content": "<p><strong>WINTER SCHEDULE</strong><br />\r\nDistance 7-8 miles<br />\r\nThe four routes from Withdean Stadium park-and-ride car park:</p>\r\n\r\n<p><strong>Winter 1</strong>&nbsp;&nbsp; &nbsp;<a href=\"https://gb.mapometer.com/running/route_2472775\">https://gb.mapometer.com/running/route_2472775</a><br />\r\n<strong>Winter 2</strong>&nbsp;&nbsp; &nbsp;<a href=\"https://gb.mapometer.com/running/route_2472650\">https://gb.mapometer.com/running/route_2472650</a><br />\r\n<strong>Winter 3</strong>&nbsp;&nbsp; &nbsp;<a href=\"https://gb.mapometer.com/running/route_2477503\">https://gb.mapometer.com/running/route_2477503</a><br />\r\n<strong>Winter 4&nbsp;</strong>&nbsp; &nbsp;<a href=\"https://gb.mapometer.com/running/route_2472810\">https://gb.mapometer.com/running/route_2472810</a></p>",
+            "component": 135
+        }
+    },
+    {
         "model": "pages.embed",
         "pk": 1,
         "fields": {
@@ -1177,17 +2122,6 @@
         }
     },
     {
-        "model": "pages.embed",
-        "pk": 3,
-        "fields": {
-            "created_date": "2018-08-20T16:01:21.113Z",
-            "modified_date": "2018-08-20T16:01:21.113Z",
-            "title": "",
-            "content": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.8261799276784!2d-0.1624336842586232!3d50.85290297953289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758f8d23653431%3A0x57201f67be7f42a0!2sWithdean+Sports+Complex!5e0!3m2!1sen!2suk!4v1534687604947\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>",
-            "component": 42
-        }
-    },
-    {
         "model": "pages.feature",
         "pk": 1,
         "fields": {
@@ -1201,6 +2135,7 @@
             "link_text": "Link",
             "align": "imageLeft",
             "background": "dark",
+            "text_size": "large",
             "component": 19,
             "image": "page/42/feature/1.jpg"
         }
@@ -1219,6 +2154,7 @@
             "link_text": "",
             "align": "imageRight",
             "background": "light",
+            "text_size": "large",
             "component": 20,
             "image": "page/42/feature/1_JAQIAQj.jpg"
         }
@@ -1237,6 +2173,7 @@
             "link_text": "",
             "align": "imageLeft",
             "background": "white",
+            "text_size": "large",
             "component": 21,
             "image": "page/42/feature/2.jpg"
         }
@@ -1255,8 +2192,47 @@
             "link_text": "",
             "align": "centre",
             "background": "dark",
+            "text_size": "large",
             "component": 22,
             "image": ""
+        }
+    },
+    {
+        "model": "pages.feature",
+        "pk": 5,
+        "fields": {
+            "created_date": "2019-03-19T11:50:26.009Z",
+            "modified_date": "2019-03-19T11:51:48.990Z",
+            "title": "Centred text, image above",
+            "subtitle": "Subtitle",
+            "content": "Lorem ipsum dolor sit amet",
+            "image_alt": "",
+            "link_url": "",
+            "link_text": "",
+            "align": "centre",
+            "background": "dark",
+            "text_size": "large",
+            "component": 109,
+            "image": "page/42/feature/13235442_813691331996429_6675805911722536230_o.jpg"
+        }
+    },
+    {
+        "model": "pages.feature",
+        "pk": 6,
+        "fields": {
+            "created_date": "2019-03-19T11:50:26.011Z",
+            "modified_date": "2019-03-19T11:51:49.001Z",
+            "title": "Small text",
+            "subtitle": "Subtitle",
+            "content": "Lorem ipsum dolor sit amet",
+            "image_alt": "",
+            "link_url": "http://brightonphoenix.org.uk",
+            "link_text": "Link",
+            "align": "imageLeft",
+            "background": "dark",
+            "text_size": "small",
+            "component": 110,
+            "image": "page/42/feature/1_JAQIAQj_UIG9gF8.jpg"
         }
     },
     {
@@ -1281,6 +2257,270 @@
             "caption": "An example of a portrait photo",
             "component": 16,
             "image": "page/41/image/3-portrait.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 7,
+        "fields": {
+            "created_date": "2019-03-09T11:22:25.388Z",
+            "modified_date": "2019-03-09T11:22:25.388Z",
+            "image_alt": "",
+            "caption": "Brighton Phoenix 10K Start 2017",
+            "component": 68,
+            "image": "page/25/image/PHX10K-start2017.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 8,
+        "fields": {
+            "created_date": "2019-03-09T11:32:50.931Z",
+            "modified_date": "2019-03-09T16:06:59.371Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 70,
+            "image": "page/8/image/PHX-Logo-web400_CiJ7v4C.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 9,
+        "fields": {
+            "created_date": "2019-03-09T11:54:10.626Z",
+            "modified_date": "2019-03-09T11:54:10.626Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 72,
+            "image": "page/26/image/AwardsSlides_2018_147.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 10,
+        "fields": {
+            "created_date": "2019-03-09T12:16:19.063Z",
+            "modified_date": "2019-03-09T12:16:19.063Z",
+            "image_alt": "",
+            "caption": "Black Cap 2018",
+            "component": 74,
+            "image": "page/28/image/AwardsSlides_2018_95.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 11,
+        "fields": {
+            "created_date": "2019-03-09T12:41:20.881Z",
+            "modified_date": "2019-03-09T12:41:20.881Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 75,
+            "image": "page/14/image/AwardsSlides_2018_167.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 13,
+        "fields": {
+            "created_date": "2019-03-09T13:04:09.226Z",
+            "modified_date": "2019-03-09T13:04:09.226Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 81,
+            "image": "page/17/image/AwardsSlides_2018_184.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 18,
+        "fields": {
+            "created_date": "2019-03-09T14:30:30.121Z",
+            "modified_date": "2019-03-09T17:35:48.423Z",
+            "image_alt": "",
+            "caption": "Big W - August 2018",
+            "component": 88,
+            "image": "page/27/image/Big_W_2018.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 19,
+        "fields": {
+            "created_date": "2019-03-12T18:03:30.364Z",
+            "modified_date": "2019-03-12T18:09:34.583Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 101,
+            "image": "page/6/image/Ovett_Southern_Champs_Copthall_1983.png"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 20,
+        "fields": {
+            "created_date": "2019-03-12T18:03:30.372Z",
+            "modified_date": "2019-03-12T18:09:34.588Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 102,
+            "image": "page/6/image/Ovett_Nike_Shoe_1980.png"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 21,
+        "fields": {
+            "created_date": "2019-03-12T18:05:38.498Z",
+            "modified_date": "2019-03-12T18:09:53.884Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 103,
+            "image": "page/9/image/Steve_Harris_PHX_HM_record_holder_64_minutes.png"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 22,
+        "fields": {
+            "created_date": "2019-03-12T18:09:15.430Z",
+            "modified_date": "2019-03-12T18:09:15.430Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 104,
+            "image": "page/5/image/AwardsSlides_2018_30.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 23,
+        "fields": {
+            "created_date": "2019-03-12T18:38:11.874Z",
+            "modified_date": "2019-03-12T18:38:11.874Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 105,
+            "image": "page/7/image/EventsStanmer.png"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 24,
+        "fields": {
+            "created_date": "2019-03-12T18:46:11.831Z",
+            "modified_date": "2019-03-12T18:46:11.831Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 106,
+            "image": "page/34/image/Kit_splash.png"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 25,
+        "fields": {
+            "created_date": "2019-03-19T12:58:47.660Z",
+            "modified_date": "2019-03-19T12:58:47.660Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 118,
+            "image": "page/21/image/13235442_813691331996429_6675805911722536230_o.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 26,
+        "fields": {
+            "created_date": "2019-03-19T12:58:47.663Z",
+            "modified_date": "2019-03-19T12:58:47.663Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 120,
+            "image": "page/21/image/AwardsSlides_2018_43.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 27,
+        "fields": {
+            "created_date": "2019-03-19T13:05:58.045Z",
+            "modified_date": "2019-03-19T13:05:58.045Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 125,
+            "image": "page/22/image/AwardsSlides_2018_48_FZErB8C.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 28,
+        "fields": {
+            "created_date": "2019-03-22T18:22:29.449Z",
+            "modified_date": "2019-03-22T18:22:29.449Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 127,
+            "image": "page/49/image/AwardsSlides_2018_69-2.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 29,
+        "fields": {
+            "created_date": "2019-03-22T18:28:48.298Z",
+            "modified_date": "2019-03-22T18:28:48.298Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 129,
+            "image": "page/13/image/PHX-Training-Junior-Structure-Pathway-MARCH-2019.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 30,
+        "fields": {
+            "created_date": "2019-03-22T18:34:47.389Z",
+            "modified_date": "2019-03-22T18:34:47.389Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 130,
+            "image": "page/15/image/49464891_1365518736915892_8664355444547911680_n.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 31,
+        "fields": {
+            "created_date": "2019-03-22T18:47:38.752Z",
+            "modified_date": "2019-03-22T18:47:38.752Z",
+            "image_alt": "",
+            "caption": "Charlie Grice",
+            "component": 132,
+            "image": "page/23/image/CharlieGrice_Berlin_TV1.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 32,
+        "fields": {
+            "created_date": "2019-03-22T18:47:38.755Z",
+            "modified_date": "2019-03-22T18:47:38.755Z",
+            "image_alt": "",
+            "caption": "Beth Kidger",
+            "component": 133,
+            "image": "page/23/image/CHRelays17_049.jpg"
+        }
+    },
+    {
+        "model": "pages.image",
+        "pk": 33,
+        "fields": {
+            "created_date": "2019-03-22T19:19:14.810Z",
+            "modified_date": "2019-03-22T19:19:14.811Z",
+            "image_alt": "",
+            "caption": "",
+            "component": 134,
+            "image": "page/18/image/AwardsSlides_2018_176.jpg"
         }
     },
     {
@@ -1387,6 +2627,36 @@
         }
     },
     {
+        "model": "pages.profile",
+        "pk": 2,
+        "fields": {
+            "created_date": "2019-03-09T17:01:43.189Z",
+            "modified_date": "2019-03-09T17:01:43.189Z",
+            "title": "Board Members",
+            "component": 90
+        }
+    },
+    {
+        "model": "pages.profile",
+        "pk": 3,
+        "fields": {
+            "created_date": "2019-03-09T17:19:33.090Z",
+            "modified_date": "2019-03-09T17:19:33.091Z",
+            "title": "Coaches",
+            "component": 91
+        }
+    },
+    {
+        "model": "pages.profile",
+        "pk": 4,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.336Z",
+            "modified_date": "2019-03-09T17:29:51.336Z",
+            "title": "Club Reps",
+            "component": 92
+        }
+    },
+    {
         "model": "pages.profilemember",
         "pk": 1,
         "fields": {
@@ -1435,6 +2705,366 @@
         }
     },
     {
+        "model": "pages.profilemember",
+        "pk": 5,
+        "fields": {
+            "created_date": "2019-03-09T17:01:43.192Z",
+            "modified_date": "2019-04-02T08:15:46.427Z",
+            "name": "Mike Townley",
+            "role": "Chairman",
+            "profile": 2,
+            "image": "page/10/profile/Mike.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 6,
+        "fields": {
+            "created_date": "2019-03-09T17:01:43.195Z",
+            "modified_date": "2019-04-02T11:01:54.458Z",
+            "name": "Josh Guilmant",
+            "role": "Vice-Chair",
+            "profile": 2,
+            "image": "page/10/profile/Josh-G2.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 7,
+        "fields": {
+            "created_date": "2019-03-09T17:01:43.196Z",
+            "modified_date": "2019-03-16T13:01:42.964Z",
+            "name": "Paul Whelpton",
+            "role": "Secretary & V60 Men’s Captain",
+            "profile": 2,
+            "image": "page/10/profile/Paul-Whepton.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 8,
+        "fields": {
+            "created_date": "2019-03-09T17:01:43.197Z",
+            "modified_date": "2019-03-09T17:01:43.197Z",
+            "name": "Darryl Hards",
+            "role": "Treasurer",
+            "profile": 2,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 9,
+        "fields": {
+            "created_date": "2019-03-09T17:01:43.199Z",
+            "modified_date": "2019-03-16T13:01:42.978Z",
+            "name": "Malcolm Kemp",
+            "role": "Coaching Director",
+            "profile": 2,
+            "image": "page/10/profile/Malcolm-K.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 10,
+        "fields": {
+            "created_date": "2019-03-09T17:01:43.200Z",
+            "modified_date": "2019-03-09T17:19:33.113Z",
+            "name": "Nerine Standen",
+            "role": "Membership Coordinator & Child Welfare Officer",
+            "profile": 2,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 11,
+        "fields": {
+            "created_date": "2019-03-09T17:19:33.115Z",
+            "modified_date": "2019-03-12T18:21:05.128Z",
+            "name": "Jon Bigg",
+            "role": "UKA Coach",
+            "profile": 3,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 12,
+        "fields": {
+            "created_date": "2019-03-09T17:19:33.116Z",
+            "modified_date": "2019-04-02T10:50:59.278Z",
+            "name": "Andy Bone",
+            "role": "UKA Coach and Child Welfare Officer",
+            "profile": 3,
+            "image": "page/10/profile/andyb2.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 13,
+        "fields": {
+            "created_date": "2019-03-09T17:19:33.116Z",
+            "modified_date": "2019-03-12T18:21:05.140Z",
+            "name": "Paul Collicutt",
+            "role": "UKA Coach and former Chair",
+            "profile": 3,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 14,
+        "fields": {
+            "created_date": "2019-03-09T17:19:33.117Z",
+            "modified_date": "2019-03-12T18:21:05.146Z",
+            "name": "Andy Fozard",
+            "role": "UKA Coach",
+            "profile": 3,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 15,
+        "fields": {
+            "created_date": "2019-03-09T17:19:33.118Z",
+            "modified_date": "2019-03-16T13:01:43.021Z",
+            "name": "Liz Halliday",
+            "role": "BTF Coach and kit sales",
+            "profile": 3,
+            "image": "page/10/profile/Liz-H.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 16,
+        "fields": {
+            "created_date": "2019-03-09T17:19:33.119Z",
+            "modified_date": "2019-03-12T18:21:05.154Z",
+            "name": "Roy Hayward",
+            "role": "UKA Coach",
+            "profile": 3,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 17,
+        "fields": {
+            "created_date": "2019-03-09T17:23:29.700Z",
+            "modified_date": "2019-03-12T18:21:05.158Z",
+            "name": "Sue Hudson",
+            "role": "UKA and BTF Coach",
+            "profile": 3,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 18,
+        "fields": {
+            "created_date": "2019-03-09T17:23:29.701Z",
+            "modified_date": "2019-03-16T13:01:43.043Z",
+            "name": "Nigel Herron",
+            "role": "BTF Coach",
+            "profile": 3,
+            "image": "page/10/profile/Nigel.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 19,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.384Z",
+            "modified_date": "2019-03-16T13:01:43.052Z",
+            "name": "Malcolm Kemp",
+            "role": "UKA Coach",
+            "profile": 3,
+            "image": "page/10/profile/Malcolm-K_wXi6xX7.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 20,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.385Z",
+            "modified_date": "2019-03-16T13:01:43.061Z",
+            "name": "Joel Kidger",
+            "role": "UKA Coach",
+            "profile": 3,
+            "image": "page/10/profile/Joel.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 21,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.386Z",
+            "modified_date": "2019-03-16T13:01:43.068Z",
+            "name": "Hildi Mitchell",
+            "role": "BTF Coach",
+            "profile": 3,
+            "image": "page/10/profile/Hildi.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 22,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.386Z",
+            "modified_date": "2019-03-12T18:21:05.179Z",
+            "name": "Phil Savage",
+            "role": "UKA Coach and former Chair",
+            "profile": 3,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 23,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.387Z",
+            "modified_date": "2019-03-12T18:21:05.183Z",
+            "name": "Bruce Warren",
+            "role": "UKA Coach and Child Welfare Officer",
+            "profile": 3,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 24,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.388Z",
+            "modified_date": "2019-03-12T18:21:05.187Z",
+            "name": "Jon Wright",
+            "role": "UKA Coach",
+            "profile": 3,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 25,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.390Z",
+            "modified_date": "2019-03-22T19:25:33.005Z",
+            "name": "Amelia Culshaw",
+            "role": "Senior Women's Captain",
+            "profile": 4,
+            "image": "page/10/profile/amelia.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 26,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.391Z",
+            "modified_date": "2019-03-12T18:21:05.196Z",
+            "name": "Alex Bonzi",
+            "role": "V40 Men's Captain",
+            "profile": 4,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 27,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.392Z",
+            "modified_date": "2019-03-09T17:29:51.392Z",
+            "name": "Paul Weir",
+            "role": "Senior Men’s Captain",
+            "profile": 4,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 28,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.393Z",
+            "modified_date": "2019-03-12T18:21:05.203Z",
+            "name": "VACANT",
+            "role": "Social Secretary",
+            "profile": 4,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 29,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.393Z",
+            "modified_date": "2019-03-22T19:25:33.023Z",
+            "name": "Sarah Russell",
+            "role": "Vet Women’s Captain",
+            "profile": 4,
+            "image": "page/10/profile/sarah.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 30,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.394Z",
+            "modified_date": "2019-03-16T13:01:43.106Z",
+            "name": "Lance Bellers",
+            "role": "V50 Men’s Captain",
+            "profile": 4,
+            "image": "page/10/profile/Lance.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 31,
+        "fields": {
+            "created_date": "2019-03-09T17:29:51.395Z",
+            "modified_date": "2019-03-16T13:01:43.112Z",
+            "name": "Nicola Swanson",
+            "role": "U11 & U13 Boys and Girls Team Manager",
+            "profile": 4,
+            "image": "page/10/profile/Nicola.jpg"
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 32,
+        "fields": {
+            "created_date": "2019-03-12T18:21:05.188Z",
+            "modified_date": "2019-03-12T18:21:05.188Z",
+            "name": "Colin Simpson",
+            "role": "UKA Coach and former Chair",
+            "profile": 3,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 33,
+        "fields": {
+            "created_date": "2019-03-12T18:21:05.214Z",
+            "modified_date": "2019-03-12T18:21:05.214Z",
+            "name": "Quenton Davis",
+            "role": "U15 Boys and Girls Team Manager",
+            "profile": 4,
+            "image": ""
+        }
+    },
+    {
+        "model": "pages.profilemember",
+        "pk": 34,
+        "fields": {
+            "created_date": "2019-04-02T08:15:46.522Z",
+            "modified_date": "2019-04-02T11:01:54.572Z",
+            "name": "Josh Guilmant",
+            "role": "UKA Coach",
+            "profile": 4,
+            "image": "page/10/profile/Josh-G2_gPjTDqM.jpg"
+        }
+    },
+    {
         "model": "pages.quote",
         "pk": 1,
         "fields": {
@@ -1445,6 +3075,7 @@
             "image_alt": "",
             "align": "imageLeft",
             "background": "dark",
+            "text_size": "large",
             "component": 25,
             "image": "page/43/quote/1.jpg"
         }
@@ -1460,6 +3091,7 @@
             "image_alt": "",
             "align": "imageRight",
             "background": "light",
+            "text_size": "large",
             "component": 26,
             "image": "page/43/quote/1_4KZslKt.jpg"
         }
@@ -1475,8 +3107,73 @@
             "image_alt": "",
             "align": "centre",
             "background": "dark",
+            "text_size": "large",
             "component": 27,
             "image": ""
+        }
+    },
+    {
+        "model": "pages.quote",
+        "pk": 4,
+        "fields": {
+            "created_date": "2019-03-16T15:08:46.039Z",
+            "modified_date": "2019-03-19T11:45:35.230Z",
+            "quote": "I have benefited so much from being a Phoenix member – I’ve gained true friends and fitness. I have tried things I never would have before… swimming in rivers, open water swimming, running up hills in all kinds of weather, running through rainbows to name a few.",
+            "author": "Kathryn Harnett",
+            "image_alt": "",
+            "align": "imageLeft",
+            "background": "dark",
+            "text_size": "small",
+            "component": 107,
+            "image": "page/35/quote/kath.jpg"
+        }
+    },
+    {
+        "model": "pages.quote",
+        "pk": 5,
+        "fields": {
+            "created_date": "2019-03-16T15:12:14.249Z",
+            "modified_date": "2019-03-19T11:45:35.237Z",
+            "quote": "I particularly enjoy the camaraderie amongst runners. At Phoenix that’s amplified x 10. It’s such a welcoming and inclusive club, no matter what your ability. I especially enjoy the track banter, both within our middle distance group and between groups. When you’re suffering, even in training, shouts of encouragement really help keep you going. It’s great! The standard of coaching at Phoenix is very high too. No surprise that we’ve got so many top class athletes.",
+            "author": "Steve Atkinson",
+            "image_alt": "",
+            "align": "imageRight",
+            "background": "dark",
+            "text_size": "small",
+            "component": 108,
+            "image": "page/35/quote/SteveAtk_WithOpen18_HeroA.jpg"
+        }
+    },
+    {
+        "model": "pages.quote",
+        "pk": 6,
+        "fields": {
+            "created_date": "2019-03-19T11:54:17.359Z",
+            "modified_date": "2019-03-19T11:54:17.359Z",
+            "quote": "Centred text, image above",
+            "author": "Author name",
+            "image_alt": "",
+            "align": "centre",
+            "background": "dark",
+            "text_size": "large",
+            "component": 111,
+            "image": "page/43/quote/13235442_813691331996429_6675805911722536230_o.jpg"
+        }
+    },
+    {
+        "model": "pages.quote",
+        "pk": 7,
+        "fields": {
+            "created_date": "2019-03-19T11:54:17.361Z",
+            "modified_date": "2019-03-19T11:54:17.361Z",
+            "quote": "Smaller quote text",
+            "author": "Author name",
+            "image_alt": "",
+            "align": "imageLeft",
+            "background": "dark",
+            "text_size": "small",
+            "component": 112,
+            "image": "page/43/quote/1_JAQIAQj.jpg"
         }
     },
     {
@@ -1488,6 +3185,50 @@
             "title": "Example table",
             "content": "<table border=\"1\" style=\"width:100%\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>Lorem</td>\r\n\t\t\t<td>Ipsum</td>\r\n\t\t\t<td>Dolor</td>\r\n\t\t\t<td>Sit</td>\r\n\t\t\t<td>Amet</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>1</td>\r\n\t\t\t<td>2</td>\r\n\t\t\t<td>1</td>\r\n\t\t\t<td>2</td>\r\n\t\t\t<td>1</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>2</td>\r\n\t\t\t<td>1</td>\r\n\t\t\t<td>2</td>\r\n\t\t\t<td>1</td>\r\n\t\t\t<td>2</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>",
             "component": 39
+        }
+    },
+    {
+        "model": "pages.table",
+        "pk": 2,
+        "fields": {
+            "created_date": "2018-09-05T20:01:07.786Z",
+            "modified_date": "2019-04-03T09:14:06.612Z",
+            "title": "",
+            "content": "<table border=\"1\" style=\"width:100%\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>Day</td>\r\n\t\t\t<td>Details</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td colspan=\"1\" rowspan=\"3\">Monday</td>\r\n\t\t\t<td>Tempo Run &ndash; 18:40 for 19:00 start (suitable for those running an 18 minute 5k or faster)</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t<p>Middle distance training &ndash; 18:15</p>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Brick (Bike/Run) &ndash; 18:30</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Tuesday</td>\r\n\t\t\t<td>Strength and conditioning &ndash; 18:00</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Wednesday</td>\r\n\t\t\t<td>\r\n\t\t\t<p>Club track night, junior and senior sessions from 5.30-8pm - see junior and senior training sections for further details</p>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td colspan=\"1\" rowspan=\"3\">Thursday</td>\r\n\t\t\t<td>Athletes on specific strength and development programmes &amp; weights</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Senior long runs suitable for all athletes from alternating start points &ndash; 18:30</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Swimming Training &ndash; 17:30</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Friday</td>\r\n\t\t\t<td>No training</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td colspan=\"1\" rowspan=\"3\">Saturday</td>\r\n\t\t\t<td>Morning long run or cycle (see Facebook or email group)</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Middle distance training groups (grass in the winter, track in the summer)</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Parkrun &ndash; 09:00</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Sunday</td>\r\n\t\t\t<td>Morning long run or cycle (see Facebook or email group)</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>",
+            "component": 50
+        }
+    },
+    {
+        "model": "pages.table",
+        "pk": 3,
+        "fields": {
+            "created_date": "2019-03-09T12:53:44.329Z",
+            "modified_date": "2019-03-10T17:24:29.853Z",
+            "title": "Club Records",
+            "content": "<table border=\"1\" style=\"width:100%\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>Event</td>\r\n\t\t\t<td>Men&#39;s</td>\r\n\t\t\t<td>Time</td>\r\n\t\t\t<td>Women&#39;s</td>\r\n\t\t\t<td>Time</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>100m</td>\r\n\t\t\t<td>Toby Harries</td>\r\n\t\t\t<td>10.57</td>\r\n\t\t\t<td>Savannah Echel-Thomson</td>\r\n\t\t\t<td>12.33</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>200m</td>\r\n\t\t\t<td>Toby Harries</td>\r\n\t\t\t<td>20.92</td>\r\n\t\t\t<td>Savannah Echel-Thomson</td>\r\n\t\t\t<td>24.98</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>400m</td>\r\n\t\t\t<td>Finley Bigg</td>\r\n\t\t\t<td>48.66</td>\r\n\t\t\t<td>Savannah Echel-Thomson</td>\r\n\t\t\t<td>54.68</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>800m</td>\r\n\t\t\t<td>Steve Ovett</td>\r\n\t\t\t<td>1:48.81</td>\r\n\t\t\t<td>Bridget Smyth</td>\r\n\t\t\t<td>2:04.30</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>1500m</td>\r\n\t\t\t<td>Steve Ovett</td>\r\n\t\t\t<td>3:30.77*</td>\r\n\t\t\t<td>Bridget Smyth</td>\r\n\t\t\t<td>4:11.12</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Mile</td>\r\n\t\t\t<td>Steve Ovett</td>\r\n\t\t\t<td>3:48.40*</td>\r\n\t\t\t<td>Bridget Smyth</td>\r\n\t\t\t<td>4:37.88</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>3000m</td>\r\n\t\t\t<td>Steve Ovett</td>\r\n\t\t\t<td>7:41.30</td>\r\n\t\t\t<td>Bridget Smyth</td>\r\n\t\t\t<td>9:00.30</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>5000m</td>\r\n\t\t\t<td>Steve Ovett</td>\r\n\t\t\t<td>13:20.06</td>\r\n\t\t\t<td>Erica Martin</td>\r\n\t\t\t<td>17:37.09</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>10000m</td>\r\n\t\t\t<td>Ben Tickner</td>\r\n\t\t\t<td><a href=\"https://www.thepowerof10.info/results/results.aspx?meetingid=123891&amp;event=10000&amp;venue=Parliament+Hill&amp;date=16-May-15\">29:36.32</a></td>\r\n\t\t\t<td>Erica Martin</td>\r\n\t\t\t<td>37:01.40</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>3000m Steeplechase</td>\r\n\t\t\t<td>Mark Rowland</td>\r\n\t\t\t<td>8:07.96**</td>\r\n\t\t\t<td>TBC</td>\r\n\t\t\t<td>TBC</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Road 10km</td>\r\n\t\t\t<td>TBC</td>\r\n\t\t\t<td>TBC</td>\r\n\t\t\t<td>TBC</td>\r\n\t\t\t<td>TBC</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Half Marathon</td>\r\n\t\t\t<td>Steve Harris</td>\r\n\t\t\t<td>64:08</td>\r\n\t\t\t<td>Rachel Gorman</td>\r\n\t\t\t<td><a href=\"https://www.thepowerof10.info/results/results.aspx?meetingid=277567&amp;event=HM&amp;venue=Brighton&amp;date=24-Feb-19\">82:24</a></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Marathon</td>\r\n\t\t\t<td>Jon Pepper</td>\r\n\t\t\t<td><a href=\"https://www.runbritainrankings.com/results/results.aspx?meetingid=101377\">2:19.10</a></td>\r\n\t\t\t<td>Sharon Rodwell</td>\r\n\t\t\t<td>2:48</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>* = Former World Record</p>\r\n\r\n<p>** = Current UK Record</p>",
+            "component": 80
+        }
+    },
+    {
+        "model": "pages.table",
+        "pk": 4,
+        "fields": {
+            "created_date": "2019-03-10T17:03:37.504Z",
+            "modified_date": "2019-03-10T17:07:03.807Z",
+            "title": "",
+            "content": "<p><strong>Male and Female Awards 2018</strong></p>\r\n\r\n<table border=\"1\" style=\"width:100%\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td><strong>Award</strong></td>\r\n\t\t\t<td><strong>Male</strong></td>\r\n\t\t\t<td><strong>Female</strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Burchell Award</td>\r\n\t\t\t<td>Reiss Bernard</td>\r\n\t\t\t<td>Yuuna Barra</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Sportshall Award</td>\r\n\t\t\t<td>Freddie Castillo</td>\r\n\t\t\t<td>Isabel Siddle</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>U11 Athlete of the Year</td>\r\n\t\t\t<td>Alex Kavouras</td>\r\n\t\t\t<td>Jahnvi Choksi</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>U13 Athlete of the Year</td>\r\n\t\t\t<td>Matthew Noakes</td>\r\n\t\t\t<td>Amelia Kortens</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>U15 Athlete of the Year</td>\r\n\t\t\t<td>Cassius Hebden</td>\r\n\t\t\t<td>Anna Court</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>U17 Athlete of the Year</td>\r\n\t\t\t<td>Leo Brewer</td>\r\n\t\t\t<td>Milly Dickinson</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>U20 Athlete of the Year</td>\r\n\t\t\t<td>George Mills</td>\r\n\t\t\t<td>Louisa Saunders</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>U23 Athlete of the Year</td>\r\n\t\t\t<td>Spencer Thomas</td>\r\n\t\t\t<td>Tara Bage</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Senior Athlete of the Year</td>\r\n\t\t\t<td>Ross Skelton</td>\r\n\t\t\t<td>Rachel Gorman</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Multisport Athlete of the Year</td>\r\n\t\t\t<td>Mark Cossey</td>\r\n\t\t\t<td>Erica Martin</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Triclub&nbsp;Champions</td>\r\n\t\t\t<td>Malcolm Hughes</td>\r\n\t\t\t<td>Hannah Felton</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Blackcap Handicap Fastest Leg</td>\r\n\t\t\t<td>Alex Cruttenden</td>\r\n\t\t\t<td>Cat Bounds</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Track &amp; Field Best Performance</td>\r\n\t\t\t<td>Charlie Da&#39;vall Grice</td>\r\n\t\t\t<td>Beth Kidger</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Road/XC Best Performance</td>\r\n\t\t\t<td>Paul Whelpton</td>\r\n\t\t\t<td>Almi Nerurkar</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p><strong>Individual and Team Awards 2018</strong></p>\r\n\r\n<table border=\"1\" style=\"width:100%\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td><strong>Award</strong></td>\r\n\t\t\t<td><strong>Winner</strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Most Committed Team</td>\r\n\t\t\t<td>SGP Women</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Outstanding Team</td>\r\n\t\t\t<td>Mens 6-Stage Relay</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Shield for Commitment &amp; Enthusiasm</td>\r\n\t\t\t<td>Daniel Simpkin</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Tough of the Track</td>\r\n\t\t\t<td>Declan Neary</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Bruce Faulkner Award</td>\r\n\t\t\t<td>Ash Dorrington</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Volunteer of the Year</td>\r\n\t\t\t<td>Nicola Swinson &amp; Ginette Read</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Best Newcomer</td>\r\n\t\t\t<td>Rosie Howie</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Comeback of the Year</td>\r\n\t\t\t<td>Mark Cossey</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Coach of the Year</td>\r\n\t\t\t<td>Phil Savage</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Chairman&#39;s Award</td>\r\n\t\t\t<td>Liz Halliday</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Multisport Outstanding Achievement</td>\r\n\t\t\t<td>Sam Wade</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Male Vet V40</td>\r\n\t\t\t<td>Ian Leitch</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Male Vet V50</td>\r\n\t\t\t<td>Steve Atkinson</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Male Vet V60</td>\r\n\t\t\t<td>Phil Hampshire</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Female Vet V35</td>\r\n\t\t\t<td>Amelia Culshaw</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Female Vet V50</td>\r\n\t\t\t<td>Jude Matthews</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Blackcap Handicap Winner</td>\r\n\t\t\t<td>Andy Pumphrey</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>",
+            "component": 97
+        }
+    },
+    {
+        "model": "pages.table",
+        "pk": 5,
+        "fields": {
+            "created_date": "2019-04-02T15:19:34.529Z",
+            "modified_date": "2019-04-02T15:25:08.521Z",
+            "title": "",
+            "content": "<table border=\"1\" style=\"width:100%\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>Date</td>\r\n\t\t\t<td>Route</td>\r\n\t\t\t<td>Run leader</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>4 April</td>\r\n\t\t\t<td>D1</td>\r\n\t\t\t<td>Jim Whitelegg</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>11 April</td>\r\n\t\t\t<td>A1</td>\r\n\t\t\t<td>Andrew Haig</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>18 April</td>\r\n\t\t\t<td>F1</td>\r\n\t\t\t<td>Milan Watson</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>25 April</td>\r\n\t\t\t<td>D2</td>\r\n\t\t\t<td>Steve Selby</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>2 May</td>\r\n\t\t\t<td>A2</td>\r\n\t\t\t<td>Andy Bone</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>9 May</td>\r\n\t\t\t<td>F2</td>\r\n\t\t\t<td>John Lamb</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>16 May</td>\r\n\t\t\t<td>D1</td>\r\n\t\t\t<td>Alex Cruttenden</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>23 May</td>\r\n\t\t\t<td>A3</td>\r\n\t\t\t<td>Phil Grabsky</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>30 May</td>\r\n\t\t\t<td>F3</td>\r\n\t\t\t<td>Andrew Haig</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>6 June</td>\r\n\t\t\t<td>D2</td>\r\n\t\t\t<td>Dave Powell</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>13 June</td>\r\n\t\t\t<td>A1</td>\r\n\t\t\t<td>Steve Atkinson</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>20 June</td>\r\n\t\t\t<td>F4</td>\r\n\t\t\t<td>Erica Martin</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>27 June</td>\r\n\t\t\t<td>D1</td>\r\n\t\t\t<td>Jon Wright</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>4 July</td>\r\n\t\t\t<td>A2</td>\r\n\t\t\t<td>Lance Bellers</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>11 July</td>\r\n\t\t\t<td>F1</td>\r\n\t\t\t<td>Andy Pumphrey</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>",
+            "component": 136
         }
     }
 ]

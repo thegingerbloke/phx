@@ -7,8 +7,20 @@
             "slug": "phoenix-classic",
             "summary": "Some classic Phoenix photos from years gone by",
             "created_date": "2018-08-19T12:47:27.331Z",
-            "modified_date": "2018-08-19T12:47:27.331Z",
+            "modified_date": "2019-03-13T11:35:27.937Z",
             "author": 1
+        }
+    },
+    {
+        "model": "gallery.gallery",
+        "pk": 3,
+        "fields": {
+            "title": "Phoenix Today",
+            "slug": "phoenix-today",
+            "summary": "Some photos from recent events",
+            "created_date": "2019-03-09T13:35:00.894Z",
+            "modified_date": "2019-03-12T22:00:23.711Z",
+            "author": 2
         }
     },
     {
@@ -17,6 +29,15 @@
         "fields": {
             "gallery": 1,
             "image": "gallery/1/thumbnail/1.jpg",
+            "image_alt": ""
+        }
+    },
+    {
+        "model": "gallery.thumbnail",
+        "pk": 3,
+        "fields": {
+            "gallery": 3,
+            "image": "gallery/3/thumbnail/WithdeanOpen17_015.jpg",
             "image_alt": ""
         }
     },
@@ -37,6 +58,356 @@
             "image_alt": "",
             "caption": "",
             "image": "gallery/1/image/2.jpg",
+            "gallery": 1
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 4,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/CHRelays17_003.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 5,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_54_YBcfDw6.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 6,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_73-2.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 7,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_97.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 8,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_47.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 9,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSet17_82.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 10,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/WithdeanOpen17_001.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 11,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSet17_8.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 12,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/921625_188785021272340_1125954236_o.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 13,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_144.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 14,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/Crow16_01.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 15,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_77-2_7TVGYaN.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 16,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_31-2.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 17,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/CHRelays17_049.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 18,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_147.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 19,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/1/image/Malcolm1bike.jpg",
+            "gallery": 1
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 20,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/1/image/Brighton_City_Centre_5k.jpeg",
+            "gallery": 1
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 21,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/LancingMasters16_007.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 22,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_101.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 23,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_96.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 24,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/SDWR_2018_010.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 25,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/SDWR_2018_006.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 26,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_60.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 27,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/WithdeanOpen17_028.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 28,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_48.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 29,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_189.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 30,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/AwardsSlides_2018_79-2.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 31,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/3/image/Phx10k_2017_d.jpg",
+            "gallery": 3
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 32,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/1/image/42299173_10210045880583157_6459135045109022720_n.jpg",
+            "gallery": 1
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 33,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/1/image/24232862_10208409877124093_1721252821954674612_n.jpg",
+            "gallery": 1
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 34,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/1/image/43555401_10210139649207314_5284901088145702912_n.jpg",
+            "gallery": 1
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 35,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/1/image/CD7tKk8WMAAZGK0.jpg",
+            "gallery": 1
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 36,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/1/image/Bitvz0dIcAARjrH.jpg",
+            "gallery": 1
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 37,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/1/image/SXGP_2005.jpg",
+            "gallery": 1
+        }
+    },
+    {
+        "model": "gallery.image",
+        "pk": 38,
+        "fields": {
+            "image_alt": "",
+            "caption": "",
+            "image": "gallery/1/image/Kurt_copy.jpg",
             "gallery": 1
         }
     }

@@ -5,8 +5,8 @@
         "fields": {
             "title": "Welcome",
             "gallery": 1,
-            "join": "<p>Join us at Brighton Phoenix!</p>",
-            "about": "<p>Here is some information about Phoenix...</p>"
+            "join": "<p>Become a Brighton Phoenix member today and take the first steps in achieving your athletic goals, no matter what they are.</p>",
+            "about": "<p>Brighton Phoenix is an athletics and triathlon club that looks to promote excellence in running events all the way up to ultra-marathons, from short-course multisport events to long-distance triathlons. We offer training and racing opportunities to everyone aged from 9-79 (and beyond) in a spirit of friendship and mutual support. Phoenix&#39;s core values are non-discriminatory and non-judgmental: we are about everyone being the best athlete they possibly can.</p>"
         }
     },
     {
@@ -14,21 +14,301 @@
         "pk": 1,
         "fields": {
             "image": "home/hero/1.jpg",
-            "caption": "",
+            "caption": "South Downs Way Relay, June 2018",
             "created_date": "2018-08-16T14:10:39.882Z",
-            "modified_date": "2018-08-16T15:50:47.825Z",
+            "modified_date": "2019-03-09T13:28:13.505Z",
             "author": 1,
             "image_categories": [
-                1
+                4
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 3,
+        "fields": {
+            "image": "home/hero/AwardsSlides_2018_163.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T13:29:31.600Z",
+            "modified_date": "2019-03-09T18:50:10.365Z",
+            "author": 2,
+            "image_categories": [
+                5
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 4,
+        "fields": {
+            "image": "home/hero/WithdeanOpen17_047_jP4sQsb.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T13:29:44.120Z",
+            "modified_date": "2019-03-09T18:49:46.526Z",
+            "author": 2,
+            "image_categories": [
+                5
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 5,
+        "fields": {
+            "image": "home/hero/Swim_Below_HeroA.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T13:30:06.941Z",
+            "modified_date": "2019-03-09T13:30:06.941Z",
+            "author": 2,
+            "image_categories": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 6,
+        "fields": {
+            "image": "home/hero/125.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:50:42.728Z",
+            "modified_date": "2019-03-09T18:50:42.728Z",
+            "author": 7,
+            "image_categories": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 7,
+        "fields": {
+            "image": "home/hero/AwardsSlides_2018_77-2.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:50:55.942Z",
+            "modified_date": "2019-03-09T18:50:55.942Z",
+            "author": 7,
+            "image_categories": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 8,
+        "fields": {
+            "image": "home/hero/AwardsSlides_2018_116.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:51:08.521Z",
+            "modified_date": "2019-03-09T18:51:08.522Z",
+            "author": 7,
+            "image_categories": [
+                4,
+                6
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 9,
+        "fields": {
+            "image": "home/hero/AwardsSlides_2018_150.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:51:18.936Z",
+            "modified_date": "2019-03-09T18:51:18.936Z",
+            "author": 7,
+            "image_categories": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 10,
+        "fields": {
+            "image": "home/hero/charlie4hero-2_LXU8NMc.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:51:31.732Z",
+            "modified_date": "2019-03-13T10:46:21.392Z",
+            "author": 7,
+            "image_categories": [
+                7
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 11,
+        "fields": {
+            "image": "home/hero/Cycle_Sweden17_HeroA.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:51:42.334Z",
+            "modified_date": "2019-03-09T18:51:42.334Z",
+            "author": 7,
+            "image_categories": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 12,
+        "fields": {
+            "image": "home/hero/Cycle_Tri_Steyning15_HeroA.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:52:45.572Z",
+            "modified_date": "2019-03-09T18:52:45.572Z",
+            "author": 7,
+            "image_categories": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 13,
+        "fields": {
+            "image": "home/hero/Masters_CoombesFarm_Jan19_027.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:52:57.941Z",
+            "modified_date": "2019-03-09T18:52:57.941Z",
+            "author": 7,
+            "image_categories": [
+                6
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 14,
+        "fields": {
+            "image": "home/hero/Masters_CoombesFarm_Jan19_036.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:53:10.330Z",
+            "modified_date": "2019-03-09T18:53:10.330Z",
+            "author": 7,
+            "image_categories": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 15,
+        "fields": {
+            "image": "home/hero/Masters_CoombesFarm_Jan19_053.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:53:22.598Z",
+            "modified_date": "2019-03-09T18:53:22.598Z",
+            "author": 7,
+            "image_categories": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 16,
+        "fields": {
+            "image": "home/hero/SDWR_024.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:53:34.257Z",
+            "modified_date": "2019-03-09T18:53:34.257Z",
+            "author": 7,
+            "image_categories": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 17,
+        "fields": {
+            "image": "home/hero/SteveAtk_WithOpen18_HeroA.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:53:45.169Z",
+            "modified_date": "2019-03-09T18:53:45.169Z",
+            "author": 7,
+            "image_categories": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 18,
+        "fields": {
+            "image": "home/hero/Sussex_Cross_Country_Championships_SENIOR_MEN_57.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:54:03.742Z",
+            "modified_date": "2019-03-09T18:54:03.742Z",
+            "author": 7,
+            "image_categories": [
+                7
+            ]
+        }
+    },
+    {
+        "model": "home.hero",
+        "pk": 19,
+        "fields": {
+            "image": "home/hero/WithdeanOpen17_015.jpg",
+            "caption": "",
+            "created_date": "2019-03-09T18:54:21.836Z",
+            "modified_date": "2019-03-09T18:54:21.836Z",
+            "author": 7,
+            "image_categories": [
+                5,
+                6
             ]
         }
     },
     {
         "model": "home.heroimagecategory",
-        "pk": 1,
+        "pk": 2,
         "fields": {
-            "category": "Running",
+            "category": "Cycling",
+            "count": 2
+        }
+    },
+    {
+        "model": "home.heroimagecategory",
+        "pk": 3,
+        "fields": {
+            "category": "Swimming",
             "count": 1
+        }
+    },
+    {
+        "model": "home.heroimagecategory",
+        "pk": 4,
+        "fields": {
+            "category": "Running - Seniors",
+            "count": 4
+        }
+    },
+    {
+        "model": "home.heroimagecategory",
+        "pk": 5,
+        "fields": {
+            "category": "Running - Juniors",
+            "count": 2
+        }
+    },
+    {
+        "model": "home.heroimagecategory",
+        "pk": 6,
+        "fields": {
+            "category": "Running - Women",
+            "count": 2
+        }
+    },
+    {
+        "model": "home.heroimagecategory",
+        "pk": 7,
+        "fields": {
+            "category": "Running – Elite",
+            "count": 2
         }
     }
 ]
