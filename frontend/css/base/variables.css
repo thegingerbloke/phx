@@ -62,11 +62,11 @@
   --width-medium: 37.5rem; /* 600px */
   --width-large: 53.125rem; /* 850px */
   --width-full: 75rem; /* 1200px */
-
-  /* media queries */
-
-  @custom-media --small (min-width: 25rem);
-  @custom-media --medium (min-width: 37.5rem);
-  @custom-media --large (min-width: 53.125rem);
-  @custom-media --full (min-width: 75rem);
 }
+
+/* media queries */
+
+@custom-media --small (min-width: 25rem);
+@custom-media --medium (min-width: 37.5rem);
+@custom-media --large (min-width: 53.125rem);
+@custom-media --full (min-width: 75rem);

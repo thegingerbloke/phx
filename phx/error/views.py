@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from django.views.generic import TemplateView
 
 
@@ -46,9 +47,10 @@ class Error404View(ErrorAbstractView):
         return 'Sorry, we couldn\'t find that page'
 
 
-class Error500View(ErrorAbstractView):
-    def get_status(self):
-        return 500
-
-    def get_error_message(self):
-        return 'Sorry, we encountered an error with that request'
+# 500 error isn't a class-based view due to different call signature required
+def error_500(request):
+    context = {
+        'error': 'Sorry, we encountered an error with that request',
+        'status': 500
+    }
+    return render(request, 'error/error.html', context, status=500)

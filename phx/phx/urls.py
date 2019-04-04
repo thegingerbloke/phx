@@ -18,7 +18,7 @@ from django.conf.urls import include
 from django.conf.urls.static import static
 from django.urls import path, re_path
 
-from error.views import Error400View, Error403View, Error404View, Error500View
+from error.views import Error400View, Error403View, Error404View, error_500
 
 from .admin import phx_admin
 
@@ -44,7 +44,7 @@ urlpatterns = [
 handler400 = Error400View.as_view()
 handler403 = Error403View.as_view()
 handler404 = Error404View.as_view()
-handler500 = Error500View.as_view()
+handler500 = error_500
 
 # debug toolbar
 if settings.DEBUG:
