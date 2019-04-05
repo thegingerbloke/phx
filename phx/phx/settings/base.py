@@ -55,7 +55,7 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', [])
 HOST = env.str('HOST', 'http://localhost:8000/')
 
 # App-specific settings
-CONTACT_EMAIL = env.list('CONTACT_EMAIL')
+CONTACT_EMAIL = env.str('CONTACT_EMAIL')
 ADMINS = env.list('ADMINS', default=[])
 
 # Analytics

@@ -59,8 +59,8 @@ class ContactForm(forms.Form):
             additional_recipients = []
 
         subject = '{} - Website message received'.format(settings.SITE_TITLE)
-        email_from = settings.CONTACT_EMAIL[0]
-        email_to = settings.CONTACT_EMAIL + additional_recipients
+        email_from = settings.CONTACT_EMAIL
+        email_to = [settings.CONTACT_EMAIL] + additional_recipients
         message = ('Website message received on:\n{0}\n\n'
                    'From:\n{1}\n\n'
                    'Email:\n{2}\n\n'
