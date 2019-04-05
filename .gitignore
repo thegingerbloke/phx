@@ -27,6 +27,7 @@ media/
 
 # Static assets
 static/
+!frontend/static/img
 
 # Compiled frontend files
 frontend/static/css
