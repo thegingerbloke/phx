@@ -117,7 +117,7 @@ USE_TZ = True
 
 CRON_CLASSES = [
     'social.cron.SocialCronPost',
-    'social.cron.SocialCronRePost',
+    # 'social.cron.SocialCronRePost',
 ]
 
 # CK Editor
