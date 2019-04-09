@@ -1,12 +1,19 @@
 from django.test import TestCase
 from django.urls import reverse
 from django.utils import timezone
+from factory import SubFactory
 
 from fixtures.models import Fixture
 from fixtures.tests.factories import FixtureFactory
 from gallery.tests.factories import GalleryFactory
 from news.models import News
 from news.tests.factories import NewsFactory
+from pages.models import Page
+from pages.tests.factories import (
+    ComponentFactory,
+    ListItemFactory,
+    ListItemsFactory,
+)
 from results.models import Result
 from results.tests.factories import ResultFactory
 
@@ -32,6 +39,7 @@ class TestHomeView(TestCase):
         GET request uses template
         """
         url = reverse('home-index')
+        Page.objects.create(title='home')
         ContentFactory()
         response = self.client.get(url)
 
@@ -43,6 +51,7 @@ class TestHomeView(TestCase):
         Home model returns content to view as expected
         """
         url = reverse('home-index')
+        Page.objects.create(title='home')
         content = ContentFactory()
         response = self.client.get(url)
 
@@ -55,6 +64,7 @@ class TestHomeView(TestCase):
         Home model returns no announcement content if there aren't any
         """
         url = reverse('home-index')
+        Page.objects.create(title='home')
         ContentFactory()
         response = self.client.get(url)
 
@@ -66,6 +76,7 @@ class TestHomeView(TestCase):
         in the past
         """
         url = reverse('home-index')
+        Page.objects.create(title='home')
         ContentFactory()
         AnnouncementFactory()
         response = self.client.get(url)
@@ -77,6 +88,7 @@ class TestHomeView(TestCase):
         Home model returns an announcement if it is in the future
         """
         url = reverse('home-index')
+        Page.objects.create(title='home')
         ContentFactory()
 
         future = timezone.now() + timezone.timedelta(days=+7)
@@ -92,6 +104,7 @@ class TestHomeView(TestCase):
         announcements exist
         """
         url = reverse('home-index')
+        Page.objects.create(title='home')
         ContentFactory()
 
         future = timezone.now() + timezone.timedelta(days=+7)
@@ -108,6 +121,7 @@ class TestHomeView(TestCase):
         Test gallery is returned
         """
         url = reverse('home-index')
+        Page.objects.create(title='home')
         gallery = GalleryFactory()
         ContentFactory(gallery=gallery)
 
@@ -120,6 +134,7 @@ class TestHomeView(TestCase):
         Test latest fixtures are returned
         """
         url = reverse('home-index')
+        Page.objects.create(title='home')
         ContentFactory()
 
         future = timezone.now() + timezone.timedelta(days=+7)
@@ -136,6 +151,7 @@ class TestHomeView(TestCase):
         Test hero images are returned as expected
         """
         url = reverse('home-index')
+        Page.objects.create(title='home')
         ContentFactory()
 
         first_category = HeroImageCategoryFactory(category='Cat 1', count=1)
@@ -156,6 +172,7 @@ class TestHomeView(TestCase):
         Although hero is in both categories, it should only be retrieved once
         """
         url = reverse('home-index')
+        Page.objects.create(title='home')
         ContentFactory()
 
         first_category = HeroImageCategoryFactory(category='Cat 1', count=1)
@@ -174,6 +191,7 @@ class TestHomeView(TestCase):
         Test latest results are returned
         """
         url = reverse('home-index')
+        Page.objects.create(title='home')
         ContentFactory()
 
         past = timezone.now() - timezone.timedelta(days=7)
@@ -191,6 +209,7 @@ class TestHomeView(TestCase):
         Test latest news are returned
         """
         url = reverse('home-index')
+        Page.objects.create(title='home')
         ContentFactory()
 
         NewsFactory.create_batch(3)
@@ -199,3 +218,22 @@ class TestHomeView(TestCase):
 
         self.assertEqual(len(response.context['news']), 3)
         self.assertEqual(response.context['news'][0], News.objects.first())
+
+    def test_components(self):
+        """
+        Test home page components are returned
+        """
+        url = reverse('home-index')
+        page = Page.objects.create(title='home')
+        ContentFactory()
+
+        list_items = ListItemsFactory(
+            component=SubFactory(ComponentFactory, page=page))
+        ListItemFactory.create_batch(3, list_items=list_items)
+
+        response = self.client.get(url)
+
+        component = response.context['components'].first()
+        first_list_items = component.list_items
+        self.assertEqual(first_list_items, list_items)
+        self.assertEqual(len(first_list_items.list_items.all()), 3)

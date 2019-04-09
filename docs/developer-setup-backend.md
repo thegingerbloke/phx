@@ -114,15 +114,20 @@ The site can post news articles and results to Twitter and Facebook. To do this,
 
 #### Facebook
 
- - Follow: https://developers.facebook.com/docs/pages/getting-started
+Follow the guide here: https://developers.facebook.com/docs/pages/getting-started
+
+A few notes:
+
  - For the relevant page, find its page ID (from 'about' section)
- - [Register a new app](https://developers.facebook.com/apps/)
+ - [Register a new Facebook App](https://developers.facebook.com/apps/)
  - Note the new app id and app secret from `'settings' --> 'basic'`
- - Go to the [API explorer](https://developers.facebook.com/tools/explorer/)
- - Select `"Get Token" --> "Get User Access Token"`, tick `"manage_pages"` and `"publish_pages"`
- - Generate a [long-lived token](https://developers.facebook.com/docs/facebook-login/access-tokens/refreshing/#generate-long-lived-token)
- - From the API explorer, enter `GET /{page-id}?fields=access_token`
+ - Go to the [Facebook Graph API explorer](https://developers.facebook.com/tools/explorer/)
+ - To generate a short-lived token, select `"Get Token" --> "Get User Access Token"`, tick `"manage_pages"` and `"publish_pages"`
+ - Convert the short-lived user token into a [long-lived user token](https://developers.facebook.com/docs/facebook-login/access-tokens/refreshing/#generate-long-lived-token)
+ - Generate a page token using the long-lived user token. From the API explorer, enter `GET /{page-id}?fields=access_token&access_token={long-lived-token}`
+ - Use the [access token debugger](https://developers.facebook.com/tools/debug/accesstoken/) to check that it won't expire
  - From the API explorer, test by entering `POST /{page-id}/feed?message={msg}` replacing `{msg}` with something.
+ - Publish the app in order for the posts to be public.
 
 
 ### Cron
@@ -133,8 +138,10 @@ In order to set this up, the following `crontab` should be set up on the server:
 
 ```
 * * * * * source env/bin/activate && python manage.py runcrons
-
 ```
+
+If the cron doesn't run as expected, test with another `manage.py` command (.e.g `version`) writing to a text file to ensure that it's running. If not, it might be easier to create a bash script to run the `runcrons` command, and have the cron run that.
+
 
 ## CI
 

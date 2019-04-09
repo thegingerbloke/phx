@@ -1,11 +1,14 @@
 import random
 from itertools import chain
 
+from django.shortcuts import get_object_or_404
 from django.utils import timezone
 from django.views import generic
 
+from components.models import COMPONENT_TYPES
 from fixtures.models import Fixture
 from news.models import News
+from pages.models import Component, Page
 from results.models import Result
 
 from .models import Announcement, Content, Hero, HeroImageCategory
@@ -17,6 +20,13 @@ class HomeView(generic.TemplateView):
     def get_context_data(self, **kwargs):
         self.content = Content.objects.first()
         context = super(HomeView, self).get_context_data(**kwargs)
+
+        page = get_object_or_404(Page, slug='/home/')
+        context['page'] = page
+        context['page_title'] = page.title
+        context['components'] = Component.objects.select_related(
+            *COMPONENT_TYPES).filter(page_id=page.id)
+
         context['about'] = self.get_about()
         context['announcement'] = self.get_announcement()
         context['fixtures'] = self.get_fixtures()
