@@ -70,11 +70,15 @@ source env/bin/activate
 ```
 
 
-### Installing requirements
+### Dependencies
 
 Python dependencies are installed using `pip`. This project uses `pip-tools` to help manage dependencies.
 
 - Pip tools: https://github.com/jazzband/pip-tools
+- See: https://jamescooke.info/a-successful-pip-tools-workflow-for-managing-python-package-requirements.html
+
+
+#### Installing dependencies
 
 Install pip-tools:
 
@@ -88,7 +92,7 @@ Install local dependencies, via the local.txt requirements file (this includes b
 cd requirements && pip-sync local.txt
 ```
 
-### Adding a new dependency
+#### Adding a new dependency
 
 Add dependency to corresponding `.in` in the requirements directory file and then run:
 
@@ -101,6 +105,12 @@ Then run `pip-sync` again:
 ```
 pip-sync local.txt
 ```
+
+#### Updating a dependency
+
+Remove the dependency from the relevant `.txt` file(s) and re-run `pip-sync`.
+
+If it doesn't work as expected, remove from the `.in` file, run `pip-sync` to update the `.txt` files, then re-add and re-run again.
 
 
 ### Social media accounts
