@@ -9,10 +9,17 @@
   margin-bottom: var(--gutter-double);
 }
 
-@media (--medium) {
+@media (--large) {
+  .ResultsList-filter {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (--full) {
   .ResultsList-filter {
     align-items: center;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -54,9 +61,17 @@
   position: relative;
 }
 
+@media (--large) {
+  .ResultsList-filterSearch {
+    align-self: flex-end;
+    width: 50%;
+  }
+}
+
 .ResultsList-filterLabel {
   align-items: center;
   display: flex;
+  justify-content: flex-end;
 }
 
 .ResultsList-filterInput {

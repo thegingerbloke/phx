@@ -13,10 +13,17 @@
   margin-bottom: var(--gutter-double);
 }
 
-@media (--medium) {
+@media (--large) {
+  .FixturesList-filter {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (--full) {
   .FixturesList-filter {
     align-items: center;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -58,9 +65,17 @@
   position: relative;
 }
 
+@media (--large) {
+  .FixturesList-filterSearch {
+    align-self: flex-end;
+    width: 50%;
+  }
+}
+
 .FixturesList-filterLabel {
   align-items: center;
   display: flex;
+  justify-content: flex-end;
 }
 
 .FixturesList-filterInput {
