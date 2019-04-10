@@ -101,3 +101,30 @@ class TestContactIndexView(TestCase):
             'topic': ['This field is required.'],
         })
         self.assertEqual(Message.objects.count(), 0)
+
+    def test_post_invalid_honeypot(self):
+        """
+        Invalid POST returns form with errors, no Message model saved
+        """
+        url = reverse('contact-index')
+        Page.objects.create(title='contact')
+
+        response = self.client.post(
+            url, {
+                'name': 'Lorem Ipsum',
+                'email': 'lorem@ipsum.com',
+                'topic': 'misc',
+                'message': 'This is a test',
+                'phone_no': '123'
+            },
+            follow=True)
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(
+            response.context['form'].errors, {
+                '__all__': [
+                    "Sorry, something went wrong. "
+                    "Please try again, or send us an email."
+                ],
+            })
+        self.assertEqual(Message.objects.count(), 0)
