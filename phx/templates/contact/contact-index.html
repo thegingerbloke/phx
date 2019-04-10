@@ -11,7 +11,7 @@
 <div class="Content-component">
 
     {% if form.non_field_errors %}
-        <p>{{ form.non_field_errors }}</p>
+        <p><strong><em>{{ form.non_field_errors }}</em></strong></p>
     {% endif %}
 
     <form class="Form" method="post" action="{% url 'contact-index' %}">
