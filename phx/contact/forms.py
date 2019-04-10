@@ -6,8 +6,10 @@ from django.utils import timezone
 
 from .models import Topic
 
-custom_topics = [('general', 'General Enquiry'),
-                 ('misc', 'Miscellaneous / Other')]
+custom_topics = [
+    ('general', 'General Enquiry'),
+    ('misc', 'Miscellaneous / Other'),
+]
 
 
 class ContactForm(forms.Form):
@@ -29,12 +31,27 @@ class ContactForm(forms.Form):
         widget=forms.Textarea(attrs={'class': 'Form-textarea'}),
     )
 
+    # honeypot
+    phone_no = forms.CharField(
+        required=False,
+        widget=forms.TextInput(attrs={'class': 'u-hidden'}),
+    )
+
     def __init__(self, *args, **kwargs):
         # add custom topics to start and end of dropdown list
         super(ContactForm, self).__init__(*args, **kwargs)
         choices = [(topic.pk, topic.topic) for topic in Topic.objects.all()]
         choices = [custom_topics[0]] + choices + [custom_topics[1]]
         self.fields['topic'].choices = choices
+
+    def clean(self):
+        # honeypot detection
+        cleaned_data = super().clean()
+        phone_no = cleaned_data.get("phone_no")
+        if len(phone_no) != 0:
+            raise forms.ValidationError(
+                "Sorry, something went wrong. "
+                "Please try again, or send us an email.")
 
     def send_email(self):
         # get posted topic id
