@@ -16,6 +16,12 @@ def save_results(sender, instance, created, **kwargs):
         save('Results', instance.fixture.title, url)
 
 
+def save_gallery(sender, instance, created, **kwargs):
+    if created:
+        url = get_gallery_url(instance)
+        save('Gallery', instance.title, url)
+
+
 def save_announcements(sender, instance, created, **kwargs):
     if created:
         url = get_announcements_url()
@@ -40,6 +46,11 @@ def get_news_url(obj):
 
 def get_results_url(obj):
     url = reverse('results-index')
+    return '{0}{1}'.format(settings.HOST, url)
+
+
+def get_gallery_url(obj):
+    url = reverse('gallery-detail', kwargs={'pk': obj.id, 'slug': obj.slug})
     return '{0}{1}'.format(settings.HOST, url)
 
 
