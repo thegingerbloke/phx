@@ -7,7 +7,12 @@ from .models import Category, Fixture
 
 class FixtureAdmin(admin.ModelAdmin):
     list_display = [
-        'title', 'event_date', 'age_groups', 'location', 'has_results'
+        'title',
+        'event_date',
+        'age_groups',
+        'location',
+        'has_results',
+        'author',
     ]
     list_select_related = ['fixture']
     ordering = ['-event_date']

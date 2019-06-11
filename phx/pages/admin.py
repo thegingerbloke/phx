@@ -89,7 +89,7 @@ class ComponentAdmin(nested_admin.NestedStackedInline):
 
 
 class PageAdmin(nested_admin.NestedModelAdmin):
-    list_display = ['get_title', 'parent', 'slug']
+    list_display = ['get_title', 'parent', 'slug', 'author']
     list_select_related = ['parent']
     autocomplete_fields = ['parent']
     search_fields = ['title', 'parent__title']

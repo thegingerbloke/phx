@@ -10,7 +10,7 @@ from .models import Result
 
 class ResultAdmin(admin.ModelAdmin):
     # display fixture data on results listing view
-    list_display = ['fixture_title', 'fixture_event_date']
+    list_display = ['fixture_title', 'fixture_event_date', 'author']
 
     # order list display view by fixture event date
     def get_queryset(self, request):
