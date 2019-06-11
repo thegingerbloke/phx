@@ -341,7 +341,6 @@
 .GridBlocks-block--gallery .GridBlocks-link {
   bottom: 0;
   line-height: var(--line-height-default);
-  max-width: 49%;
   opacity: 1;
   padding: var(--gutter-half) var(--gutter);
   top: auto;
