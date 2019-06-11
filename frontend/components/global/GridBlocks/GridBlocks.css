@@ -342,18 +342,14 @@
   bottom: 0;
   line-height: var(--line-height-default);
   max-width: 49%;
-  opacity: 0;
+  opacity: 1;
   padding: var(--gutter-half) var(--gutter);
   top: auto;
   transition: opacity var(--transition-time);
 }
 
-.GridBlocks-block--gallery:hover .GridBlocks-link {
-  opacity: 1;
-}
-
 .GridBlocks-block--gallery:hover .GridBlocks-link:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 /* Announcement block styles */
