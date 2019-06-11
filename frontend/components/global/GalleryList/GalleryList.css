@@ -120,14 +120,8 @@
 .GalleryList-thumb::after {
   content: "";
   display: block;
-  padding-top: 50%;
+  padding-top: 71.4%;
   width: 100%;
-}
-
-@media (--medium) {
-  .GalleryList-thumb::after {
-    padding-top: 71.4%;
-  }
 }
 
 .GalleryList-thumbImg {
