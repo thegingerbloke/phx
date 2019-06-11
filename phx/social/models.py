@@ -21,7 +21,7 @@ class Social(models.Model):
 
     def post(self):
         model = Social.objects.filter(
-            posted=False).order_by('-created_date')[:1].first()
+            posted=False).order_by('created_date')[:1].first()
 
         if model:
             message = self.create_message(model, 'Latest ')
