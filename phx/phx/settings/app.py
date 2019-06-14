@@ -8,6 +8,8 @@ import os
 
 import environ
 
+from ..helpers.logging import skip_404s
+
 django_root = environ.Path(__file__) - 3
 app_root = environ.Path(django_root) - 1
 
@@ -92,13 +94,17 @@ LOGGING = {
         'require_debug_true': {
             '()': 'django.utils.log.RequireDebugTrue',
         },
+        'ignore_404': {
+            '()': 'django.utils.log.CallbackFilter',
+            'callback': skip_404s,
+        }
     },
     'formatters': {
         'save_to_log_file': {
             'format': '[{asctime}] [{levelname}] ({module}): {message}',
             'style': '{',
         },
-        'django.server': {
+        'django_server': {
             '()': 'django.utils.log.ServerFormatter',
             'format': '[{server_time}] {message}',
             'style': '{',
@@ -110,14 +116,17 @@ LOGGING = {
             'filters': ['require_debug_true'],
             'class': 'logging.StreamHandler',
         },
-        'django.server': {
+        'django_server': {
             'level': 'INFO',
             'class': 'logging.StreamHandler',
-            'formatter': 'django.server',
+            'formatter': 'django_server',
         },
         'save_to_log_file': {
             'level': 'WARNING',
-            'filters': ['require_debug_false'],
+            'filters': [
+                'ignore_404',
+                'require_debug_false',
+            ],
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': os.path.join(app_root.path('logs'), 'phx.log'),
             'maxBytes': 1024 * 1024 * 15,  # 15MB
@@ -136,7 +145,12 @@ LOGGING = {
             'level': 'INFO',
         },
         'django.server': {
-            'handlers': ['django.server', 'save_to_log_file'],
+            'handlers': ['django_server', 'save_to_log_file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        'django.request': {
+            'handlers': ['django_server', 'save_to_log_file'],
             'level': 'INFO',
             'propagate': False,
         },
