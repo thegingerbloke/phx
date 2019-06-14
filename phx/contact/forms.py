@@ -1,3 +1,5 @@
+import logging
+
 from django import forms
 from django.conf import settings
 from django.core.mail import BadHeaderError, send_mail
@@ -5,6 +7,8 @@ from django.http import HttpResponse
 from django.utils import timezone
 
 from .models import Topic
+
+logger = logging.getLogger(__name__)
 
 custom_topics = [
     ('general', 'General Enquiry'),
@@ -49,6 +53,8 @@ class ContactForm(forms.Form):
         cleaned_data = super().clean()
         phone_no = cleaned_data.get("phone_no")
         if len(phone_no) != 0:
+            logger.warning("Email attempt using honeypot: '%s'",
+                           cleaned_data.get('message'))
             raise forms.ValidationError(
                 "Sorry, something went wrong. "
                 "Please try again, or send us an email.")
@@ -94,4 +100,8 @@ class ContactForm(forms.Form):
         try:
             send_mail(subject, message, email_from, email_to)
         except BadHeaderError:
+            logger.warning("Contact email, invalid header found: '%s'",
+                           self.cleaned_data['message'])
             return HttpResponse('Invalid header found.')
+        except Exception as e:
+            logger.warning(e)

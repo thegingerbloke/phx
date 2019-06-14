@@ -1,8 +1,12 @@
+import logging
+
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.db import models
 
 from phx.helpers.file import file_size_string
+
+logger = logging.getLogger(__name__)
 
 
 def file_size_validator(value):
@@ -12,6 +16,7 @@ def file_size_validator(value):
         limit_size = file_size_string(limit)
         error = ('File is too large - {0}. '
                  'It should not exceed {1}').format(file_size, limit_size)
+        logger.warning(error)
         raise ValidationError(error)
 
 

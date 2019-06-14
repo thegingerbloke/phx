@@ -41,6 +41,7 @@ var Hero = {
     );
   },
   queueTransition: function() {
+    this.clearTransition();
     this.timeout = setTimeout(this.transition.bind(this), this.transitionTime);
   },
   clearTransition: function() {

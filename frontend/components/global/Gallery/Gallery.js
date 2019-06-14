@@ -57,7 +57,7 @@ var Gallery = {
     );
   },
   queueTransition: function() {
-    clearTimeout(this.timeout);
+    this.clearTransition();
     this.timeout = setTimeout(this.transition.bind(this), this.transitionTime);
   },
   clearTransition: function() {

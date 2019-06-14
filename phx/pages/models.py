@@ -1,3 +1,5 @@
+import logging
+
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.db import models
@@ -17,6 +19,8 @@ from components.models import (
     AbstractQuote,
     AbstractTable,
 )
+
+logger = logging.getLogger(__name__)
 
 
 def generate_slug(instance):
@@ -67,7 +71,9 @@ class Page(models.Model):
     # disallow selecting self as parent
     def clean(self):
         if self.parent == self:
-            raise ValidationError("A page can't be its own parent")
+            error = "A page can't be its own parent"
+            logger.warning(error)
+            raise ValidationError(error)
 
     # display parent hierarchy in admin dropdown list
     def __str__(self):

@@ -1,7 +1,11 @@
+import logging
+
 import facebook
 from django.conf import settings
 from django.db import models
 from twitter import OAuth, Twitter
+
+logger = logging.getLogger(__name__)
 
 
 class Social(models.Model):
@@ -54,9 +58,8 @@ class Social(models.Model):
                                settings.TWITTER['consumer_key'],
                                settings.TWITTER['consumer_secret']))
                 t.statuses.update(status=message)
-            except:  # noqa
-                # todo - catch twitter errors
-                pass
+            except Exception as e:
+                logger.warning(e)
 
     def post_to_facebook(self, message):
         if hasattr(settings, 'FACEBOOK'):
@@ -65,6 +68,5 @@ class Social(models.Model):
                     access_token=settings.FACEBOOK['access_token'], )
                 page_id = settings.FACEBOOK['page_id']
                 graph.put_object(page_id, 'feed', message=message)
-            except:  # noqa
-                # todo - catch facebook errors
-                pass
+            except Exception as e:
+                logger.warning(e)
