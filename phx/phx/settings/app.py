@@ -97,7 +97,7 @@ LOGGING = {
         'ignore_404': {
             '()': 'django.utils.log.CallbackFilter',
             'callback': skip_404s,
-        }
+        },
     },
     'formatters': {
         'save_to_log_file': {

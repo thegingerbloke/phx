@@ -3,8 +3,9 @@ from django.shortcuts import get_object_or_404
 from django.utils import timezone
 from django.views import generic
 
+from components.models import COMPONENT_TYPES
 from fixtures.models import Category
-from pages.models import Page
+from pages.models import Component, Page
 from phx.helpers.subnav import generate_subnav
 
 from .models import Result
@@ -20,6 +21,8 @@ class ResultsListView(generic.ListView):
         page = get_object_or_404(Page, slug=self.request.path)
         context['page'] = page
         context['page_title'] = page.title
+        context['components'] = Component.objects.select_related(
+            *COMPONENT_TYPES).filter(page_id=page.id)
         context['categories'] = Category.objects.all()
         context['search'] = self.request.GET.get('search', '')
         context['category'] = self.request.GET.get('category', '')

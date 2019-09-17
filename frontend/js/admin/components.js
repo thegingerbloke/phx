@@ -26,6 +26,12 @@ var Components = {
       $emptyComponents.each(function(subCounter, emptyComponent) {
         var $emptyComponent = $(emptyComponent);
         var $fieldset = $emptyComponent.closest(".djn-group-nested");
+
+        // ensure this only applies to component fieldsets
+        if ($fieldset.attr("id").indexOf("components-") !== 0) {
+          return;
+        }
+
         if (
           $fieldset.find(
             ".djn-inline-form.has_original, .djn-inline-form:not(.djn-empty-form)"
