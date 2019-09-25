@@ -11,9 +11,17 @@
   {% for item in gallery %}
   <div class="Gallery-item js-Gallery-item"
     {% if forloop.counter is 1 %}
-      style="background-image:url({% thumbnail item.image 2000x0 %});"
+      {% if autosize %}
+        style="background-image:url({% thumbnail item.image 2000x0 %});"
+      {% else %}
+        style="background-image:url({% thumbnail item.image 600x0 %});"
+      {% endif %}
     {% else %}
-      data-img="{% thumbnail item.image 2000x0 %}"
+      {% if autosize %}
+        data-img="{% thumbnail item.image 2000x0 %}"
+      {% else %}
+        data-img="{% thumbnail item.image 600x0 %}"
+      {% endif %}
     {% endif %}
   >
     {% if item.caption %}
