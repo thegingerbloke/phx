@@ -18,7 +18,7 @@ django==2.2
 easy-thumbnails==2.6
 facebook-sdk==3.1.0
 idna==2.8                 # via requests
-pillow==6.0.0             # via easy-thumbnails
+pillow==6.2.0             # via easy-thumbnails
 psycopg2-binary==2.7.7
 python-monkey-business==1.0.0  # via django-nested-admin
 pytz==2018.9              # via django
