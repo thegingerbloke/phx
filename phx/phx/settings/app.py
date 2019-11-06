@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'files.apps.FilesConfig',
     'social.apps.SocialConfig',
     'error.apps.ErrorConfig',
+    'offline.apps.OfflineConfig',
 ]
 
 MIDDLEWARE = [
