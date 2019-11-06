@@ -41,18 +41,18 @@ def save(model, title, url, reposted=False):
 
 def get_news_url(obj):
     url = reverse('news-detail', kwargs={'pk': obj.id, 'slug': obj.slug})
-    return '{0}{1}'.format(settings.HOST, url)
+    return '{0}{1}'.format(settings.SITE_URL, url)
 
 
 def get_results_url(obj):
     url = reverse('results-index')
-    return '{0}{1}'.format(settings.HOST, url)
+    return '{0}{1}'.format(settings.SITE_URL, url)
 
 
 def get_gallery_url(obj):
     url = reverse('gallery-detail', kwargs={'pk': obj.id, 'slug': obj.slug})
-    return '{0}{1}'.format(settings.HOST, url)
+    return '{0}{1}'.format(settings.SITE_URL, url)
 
 
 def get_announcements_url():
-    return settings.HOST
+    return settings.SITE_URL

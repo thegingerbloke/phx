@@ -12,7 +12,7 @@ How to deploy the app
     - Note: When creating `gunicorn.service` file, the following needs to be added:
 
       ```
-      --env DJANGO_SETTINGS_MODULE=phx.settings.dev (or .production)
+      --env DJANGO_SETTINGS_MODULE=phx.settings.production
       ```
 
 * Check out this project
@@ -20,11 +20,11 @@ How to deploy the app
 * Install requirements:
 
   ```
-  pip install -r dev.txt (or production.txt)
+  pip install -r production.txt
   ```
   or
   ```
-  pip-sync dev.txt (or production.txt)
+  pip-sync production.txt
   ```
 
 
@@ -44,24 +44,24 @@ How to deploy the app
 
 * Optional: manually upload any existing media files, into `/phx/media`
 
-* Manually create an `.env` file in the root, using the sample `.env.dev.example` or `.env.production.example` files
+* Manually create an `.env` file in the root, using the sample `.env.production.example` file
 
 * Collect static assets:
 
   ```
-  manage.py collectstatic  --settings=phx.settings.dev/production
+  manage.py collectstatic  --settings=phx.settings.production
   ```
 
 * Migrate DB:
 
   ```
-  manage.py migrate  --settings=phx.settings.dev/production
+  manage.py migrate  --settings=phx.settings.production
   ```
 
 * Optional: manually (generate, upload and) load fixture data:
 
   ```
-  manage.py loaddata fixtures results contact pages news home gallery --settings=phx.settings.dev/production
+  manage.py loaddata fixtures results contact pages news home gallery --settings=phx.settings.production
   ```
 
 ### Deployment - making updates:
@@ -80,7 +80,7 @@ How to deploy the app
     npm run build
 
     # backend dependencies
-    pip install -r requirements/production.txt # or pip-sync production.txt
+    pip install -r requirements/production.txt  # or pip-sync production.txt
 
     # update content
     cd phx/
@@ -91,6 +91,6 @@ How to deploy the app
     # python manage.py loaddata fixtures results contact pages news home gallery --settings=phx.settings.production
 
     # restart server
-    sudo systemctl restart gunicorn.socket gunicorn.service
+    sudo systemctl restart gunicorn
     sudo systemctl restart nginx
     ```

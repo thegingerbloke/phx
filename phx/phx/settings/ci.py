@@ -1,5 +1,4 @@
-from .base import *  # noqa
+# CI env - used by Circle CI (etc)
 
-HOST = 'http://example.com'
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+from .app import *  # noqa
+from .env import *  # noqa

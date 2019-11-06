@@ -1,6 +1,10 @@
-import os
+# Test env - used for local test runner
 
-from .base import *  # noqa
+from .app import *  # noqa
+from .env import *  # noqa
+
+# Config settings below are manually set here rather than via .env file as
+# these tests are generally run while the default .env is active
 
 DATABASES = {
     'default': {
@@ -9,6 +13,4 @@ DATABASES = {
     }
 }
 
-HOST = 'http://example.com'
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+SITE_URL = 'http://example.com'

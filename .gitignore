@@ -19,7 +19,6 @@ __pycache__
 env/
 .env
 .env.local
-.env.dev
 .env.production
 
 # Uploaded assets

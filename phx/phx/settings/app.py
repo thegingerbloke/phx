@@ -10,6 +10,7 @@ import environ
 
 from ..helpers.logging import skip_404s
 
+# app roots
 django_root = environ.Path(__file__) - 3
 app_root = environ.Path(django_root) - 1
 
@@ -181,6 +182,21 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME':
         'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
+]
+
+# Files
+
+SITE_ROOT = django_root()
+
+MEDIA_ROOT = app_root('media')
+MEDIA_URL = '/media/'
+
+STATIC_ROOT = app_root('static')
+STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = [
+    os.path.join(app_root(), 'frontend', 'static'),
 ]
 
 # Internationalization

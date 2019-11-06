@@ -9,7 +9,7 @@ class TestContextProcessorGlobalConfig(TestCase):
         Return settings in config object
         """
         results = global_config({})
-        self.assertEqual(results['HOST'], 'http://example.com')
+        self.assertEqual(results['SITE_URL'], 'http://example.com')
         self.assertTrue('ANALYTICS' not in results)
 
     @override_settings(ANALYTICS=1234)

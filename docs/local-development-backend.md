@@ -95,6 +95,12 @@ To check for isort errors in a terminal window:
 isort --check-only --quiet --recursive --diff phx
 ```
 
+To fix reported isort errors:
+
+```
+isort --quiet --recursive .
+```
+
 Code is auto-formatted with yapf.
 
 To check for yapf formatting errors in a terminal window:

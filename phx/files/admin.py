@@ -18,7 +18,7 @@ class FileAdmin(admin.ModelAdmin):
     exclude = ['uploaded_by']
 
     def url(self, obj):
-        return '{0}{1}'.format(settings.HOST, obj.file.url)
+        return '{0}{1}'.format(settings.SITE_URL, obj.file.url)
 
     def size(self, obj):
         return file_size_string(obj.file.size)

@@ -11,7 +11,7 @@ jobs:
             - dependency-cache-npm-
       - restore_cache:
           keys:
-            - dependency-cache-pip-{{ checksum "requirements/test.txt" }}
+            - dependency-cache-pip-{{ checksum "requirements/ci.txt" }}
             - dependency-cache-pip-
       - run:
           name: NPM install
@@ -25,9 +25,9 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip install -r requirements/test.txt
+            pip install -r requirements/ci.txt
       - save_cache:
-          key: dependency-cache-pip-{{ checksum "requirements/test.txt" }}
+          key: dependency-cache-pip-{{ checksum "requirements/ci.txt" }}
           paths:
             - ./venv
 
@@ -50,7 +50,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - dependency-cache-pip-{{ checksum "requirements/test.txt" }}
+            - dependency-cache-pip-{{ checksum "requirements/ci.txt" }}
       - run:
           name: Lint (Backend)
           command: |
@@ -79,7 +79,7 @@ jobs:
             - dependency-cache-npm-{{ checksum "package.json" }}
       - restore_cache:
           keys:
-            - dependency-cache-pip-{{ checksum "requirements/test.txt" }}
+            - dependency-cache-pip-{{ checksum "requirements/ci.txt" }}
       - run:
           name: build frontend
           command: npm run build

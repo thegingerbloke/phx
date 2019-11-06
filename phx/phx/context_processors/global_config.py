@@ -6,7 +6,7 @@ def global_config(request):
     Add config info to the global template context
     """
     config = {
-        'HOST': settings.HOST,
+        'SITE_URL': settings.SITE_URL,
         'SITE_TITLE': settings.SITE_TITLE,
         'SITE_DESCRIPTION': settings.SITE_DESCRIPTION,
     }
