@@ -38,8 +38,7 @@ urlpatterns = [
 
     # pages - must be last
     re_path(r'^(?P<slug>.*)/', include('pages.urls')),
-] + static(
-    settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler400 = Error400View.as_view()
 handler403 = Error403View.as_view()

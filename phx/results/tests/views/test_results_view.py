@@ -148,8 +148,8 @@ class TestResultsView(TestCase):
         first_category = CategoryFactory(title='Cat 1')
         CategoryFactory(title='Cat 2')
 
-        first_fixture = FixtureFactory(
-            title='First Fixture', categories=[first_category])
+        first_fixture = FixtureFactory(title='First Fixture',
+                                       categories=[first_category])
         ResultFactory(fixture=first_fixture)
 
         second_fixture = FixtureFactory(title='Second Fixture')

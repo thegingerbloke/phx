@@ -45,11 +45,11 @@ class ResultAdmin(admin.ModelAdmin):
         if db_field.name == "fixture":
             one_month_ago = timezone.now() - timezone.timedelta(days=30)
             kwargs["queryset"] = Fixture.objects.filter(
-                Q(fixture__isnull=True) & (
-                    (Q(event_date__lte=timezone.now()) & Q(
-                        event_date__gte=one_month_ago))
-                    | (Q(event_date__lte=timezone.now()) & Q(
-                        modified_date__gte=one_month_ago))))
+                Q(fixture__isnull=True)
+                & ((Q(event_date__lte=timezone.now())
+                    & Q(event_date__gte=one_month_ago))
+                   | (Q(event_date__lte=timezone.now())
+                      & Q(modified_date__gte=one_month_ago))))
 
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
 

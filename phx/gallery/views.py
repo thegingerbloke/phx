@@ -62,12 +62,11 @@ class GalleryDetailView(generic.DetailView):
                 'title':
                 previous.title,
                 'link_url':
-                reverse(
-                    'gallery-detail',
-                    kwargs={
-                        'pk': previous.id,
-                        'slug': previous.slug
-                    })
+                reverse('gallery-detail',
+                        kwargs={
+                            'pk': previous.id,
+                            'slug': previous.slug
+                        })
             }
 
     def get_next(self):
@@ -78,12 +77,11 @@ class GalleryDetailView(generic.DetailView):
                 'title':
                 next.title,
                 'link_url':
-                reverse(
-                    'gallery-detail',
-                    kwargs={
-                        'pk': next.id,
-                        'slug': next.slug
-                    })
+                reverse('gallery-detail',
+                        kwargs={
+                            'pk': next.id,
+                            'slug': next.slug
+                        })
             }
 
     def generate_breadcrumb(self):

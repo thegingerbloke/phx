@@ -41,12 +41,11 @@ class Page(models.Model):
         help_text=(
             'Select section of the site this page should appear in, '
             'leave blank if this page shouldn\'t appear under any section'))
-    slug = AutoSlugField(
-        help_text='This will be the URL for this page',
-        unique=True,
-        overwrite=True,
-        slugify_function=lambda value: value,
-        populate_from=generate_slug)
+    slug = AutoSlugField(help_text='This will be the URL for this page',
+                         unique=True,
+                         overwrite=True,
+                         slugify_function=lambda value: value,
+                         populate_from=generate_slug)
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
     author = models.ForeignKey(

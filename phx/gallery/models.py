@@ -9,11 +9,10 @@ class Gallery(models.Model):
     """ Gallery """
 
     title = models.CharField(max_length=200)
-    slug = AutoSlugField(
-        populate_from='title',
-        help_text='This is used as the URL for this gallery',
-        unique=False,
-        max_length=200)
+    slug = AutoSlugField(populate_from='title',
+                         help_text='This is used as the URL for this gallery',
+                         unique=False,
+                         max_length=200)
     summary = models.TextField(
         max_length=1000,
         help_text='Text used on the gallery listing page',
@@ -34,11 +33,11 @@ class Gallery(models.Model):
         ordering = ['-created_date']
 
     def get_absolute_url(self):
-        return reverse(
-            'gallery-detail', kwargs={
-                'pk': self.id,
-                'slug': self.slug,
-            })
+        return reverse('gallery-detail',
+                       kwargs={
+                           'pk': self.id,
+                           'slug': self.slug,
+                       })
 
     def __str__(self):
         return '{} ({})'.format(self.title,

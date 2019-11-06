@@ -20,11 +20,11 @@ class TestComponentDetailView(TestCase):
         """"
         URL resolves as expected
         """
-        url = reverse(
-            'components-detail', kwargs={
-                'group': 'foo',
-                'component': 'Bar'
-            })
+        url = reverse('components-detail',
+                      kwargs={
+                          'group': 'foo',
+                          'component': 'Bar'
+                      })
 
         self.assertEqual(url, '/components/foo/Bar/')
 
@@ -32,11 +32,11 @@ class TestComponentDetailView(TestCase):
         """"
         GET request uses template
         """
-        url = reverse(
-            'components-detail', kwargs={
-                'group': 'foo',
-                'component': 'Bar'
-            })
+        url = reverse('components-detail',
+                      kwargs={
+                          'group': 'foo',
+                          'component': 'Bar'
+                      })
 
         response = self.client.get(url)
 

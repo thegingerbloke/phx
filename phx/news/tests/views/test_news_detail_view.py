@@ -44,11 +44,11 @@ class TestNewsDetailsView(TestCase):
         """"
         GET request returns a 404 when no article found
         """
-        url = reverse(
-            'news-detail', kwargs={
-                'pk': 9999,
-                'slug': 'this is a test'
-            })
+        url = reverse('news-detail',
+                      kwargs={
+                          'pk': 9999,
+                          'slug': 'this is a test'
+                      })
 
         response = self.client.get(url)
 
@@ -62,11 +62,11 @@ class TestNewsDetailsView(TestCase):
         news_1 = NewsFactory(title='article 1')
         news_2 = NewsFactory(title='article 2')
         news_3 = NewsFactory(title='article 3')
-        url = reverse(
-            'news-detail', kwargs={
-                'pk': news_2.id,
-                'slug': news_2.slug
-            })
+        url = reverse('news-detail',
+                      kwargs={
+                          'pk': news_2.id,
+                          'slug': news_2.slug
+                      })
 
         response = self.client.get(url)
         self.assertEqual(response.context['news'], news_2)
@@ -80,9 +80,9 @@ class TestNewsDetailsView(TestCase):
         GET request returns editorial component as expected
         """
         news = NewsFactory()
-        editorial = EditorialFactory(
-            title='first editorial block',
-            component=SubFactory(ComponentFactory, news=news))
+        editorial = EditorialFactory(title='first editorial block',
+                                     component=SubFactory(ComponentFactory,
+                                                          news=news))
 
         url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
@@ -97,10 +97,9 @@ class TestNewsDetailsView(TestCase):
         GET request returns embed component as expected
         """
         news = NewsFactory()
-        embed = EmbedFactory(
-            title='first embed block',
-            content='blah',
-            component=SubFactory(ComponentFactory, news=news))
+        embed = EmbedFactory(title='first embed block',
+                             content='blah',
+                             component=SubFactory(ComponentFactory, news=news))
 
         url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
@@ -115,9 +114,9 @@ class TestNewsDetailsView(TestCase):
         GET request returns feature component as expected
         """
         news = NewsFactory()
-        feature = FeatureFactory(
-            title='first feature block',
-            component=SubFactory(ComponentFactory, news=news))
+        feature = FeatureFactory(title='first feature block',
+                                 component=SubFactory(ComponentFactory,
+                                                      news=news))
 
         url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
@@ -132,9 +131,8 @@ class TestNewsDetailsView(TestCase):
         GET request returns image component as expected
         """
         news = NewsFactory()
-        image = ImageFactory(
-            caption='first image block',
-            component=SubFactory(ComponentFactory, news=news))
+        image = ImageFactory(caption='first image block',
+                             component=SubFactory(ComponentFactory, news=news))
 
         url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
@@ -183,9 +181,8 @@ class TestNewsDetailsView(TestCase):
         GET request returns quote component as expected
         """
         news = NewsFactory()
-        quote = QuoteFactory(
-            quote='first quote block',
-            component=SubFactory(ComponentFactory, news=news))
+        quote = QuoteFactory(quote='first quote block',
+                             component=SubFactory(ComponentFactory, news=news))
 
         url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
@@ -200,10 +197,9 @@ class TestNewsDetailsView(TestCase):
         GET request returns table component as expected
         """
         news = NewsFactory()
-        table = TableFactory(
-            title='first table block',
-            content='blah',
-            component=SubFactory(ComponentFactory, news=news))
+        table = TableFactory(title='first table block',
+                             content='blah',
+                             component=SubFactory(ComponentFactory, news=news))
 
         url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 

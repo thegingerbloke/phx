@@ -63,11 +63,10 @@ if env.str('ANALYTICS', default=''):
     ANALYTICS = env.str('ANALYTICS')
 
 # Twitter
-if env.str(
-        'TWITTER_CONSUMER_KEY', default='') and env.str(
-            'TWITTER_SECRET_KEY', default='') and env.str(
-                'TWITTER_OAUTH_TOKEN_KEY', default='') and env.str(
-                    'TWITTER_OAUTH_SECRET_KEY', default=''):
+if (env.str('TWITTER_CONSUMER_KEY', default='')
+        and env.str('TWITTER_SECRET_KEY', default='')
+        and env.str('TWITTER_OAUTH_TOKEN_KEY', default='')
+        and env.str('TWITTER_OAUTH_SECRET_KEY', default='')):
     TWITTER = {
         'consumer_key': env.str('TWITTER_CONSUMER_KEY'),
         'consumer_secret': env.str('TWITTER_SECRET_KEY'),
@@ -76,18 +75,16 @@ if env.str(
     }
 
 # Facebook
-if env.str(
-        'FACEBOOK_PAGE_ID_KEY', default='') and env.str(
-            'FACEBOOK_ACCESS_TOKEN_KEY', default=''):
+if (env.str('FACEBOOK_PAGE_ID_KEY', default='')
+        and env.str('FACEBOOK_ACCESS_TOKEN_KEY', default='')):
     FACEBOOK = {
         'page_id': env.str('FACEBOOK_PAGE_ID_KEY'),
         'access_token': env.str('FACEBOOK_ACCESS_TOKEN_KEY')
     }
 
 # Mailgun
-if env.str(
-        'MAILGUN_API_KEY', default='') and env.str(
-            'MAILGUN_SENDER_DOMAIN', default=''):
+if (env.str('MAILGUN_API_KEY', default='')
+        and env.str('MAILGUN_SENDER_DOMAIN', default='')):
     EMAIL_BACKEND = "anymail.backends.mailgun.EmailBackend"
     ANYMAIL = {
         "MAILGUN_API_KEY": env.str("MAILGUN_API_KEY"),

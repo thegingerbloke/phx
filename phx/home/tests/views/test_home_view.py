@@ -157,8 +157,8 @@ class TestHomeView(TestCase):
         first_category = HeroImageCategoryFactory(category='Cat 1', count=1)
         second_category = HeroImageCategoryFactory(category='Cat 2', count=2)
 
-        first_hero = HeroFactory(
-            caption='First Fixture', image_categories=[first_category])
+        first_hero = HeroFactory(caption='First Fixture',
+                                 image_categories=[first_category])
         HeroFactory.create_batch(5, image_categories=[second_category])
 
         response = self.client.get(url)
@@ -178,9 +178,8 @@ class TestHomeView(TestCase):
         first_category = HeroImageCategoryFactory(category='Cat 1', count=1)
         second_category = HeroImageCategoryFactory(category='Cat 2', count=1)
 
-        HeroFactory(
-            caption='First Fixture',
-            image_categories=[first_category, second_category])
+        HeroFactory(caption='First Fixture',
+                    image_categories=[first_category, second_category])
 
         response = self.client.get(url)
 

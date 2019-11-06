@@ -56,9 +56,9 @@ class TestPageView(TestCase):
         GET request returns editorial component as expected
         """
         page = PageFactory()
-        editorial = EditorialFactory(
-            title='first editorial block',
-            component=SubFactory(ComponentFactory, page=page))
+        editorial = EditorialFactory(title='first editorial block',
+                                     component=SubFactory(ComponentFactory,
+                                                          page=page))
 
         url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
@@ -73,9 +73,8 @@ class TestPageView(TestCase):
         GET request returns embed component as expected
         """
         page = PageFactory()
-        embed = EmbedFactory(
-            title='first embed block',
-            component=SubFactory(ComponentFactory, page=page))
+        embed = EmbedFactory(title='first embed block',
+                             component=SubFactory(ComponentFactory, page=page))
 
         url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
@@ -90,9 +89,9 @@ class TestPageView(TestCase):
         GET request returns feature component as expected
         """
         page = PageFactory()
-        feature = FeatureFactory(
-            title='first feature block',
-            component=SubFactory(ComponentFactory, page=page))
+        feature = FeatureFactory(title='first feature block',
+                                 component=SubFactory(ComponentFactory,
+                                                      page=page))
 
         url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
@@ -107,9 +106,8 @@ class TestPageView(TestCase):
         GET request returns image component as expected
         """
         page = PageFactory()
-        image = ImageFactory(
-            caption='first image block',
-            component=SubFactory(ComponentFactory, page=page))
+        image = ImageFactory(caption='first image block',
+                             component=SubFactory(ComponentFactory, page=page))
 
         url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
@@ -158,9 +156,8 @@ class TestPageView(TestCase):
         GET request returns quote component as expected
         """
         page = PageFactory()
-        quote = QuoteFactory(
-            quote='first quote block',
-            component=SubFactory(ComponentFactory, page=page))
+        quote = QuoteFactory(quote='first quote block',
+                             component=SubFactory(ComponentFactory, page=page))
 
         url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 
@@ -175,9 +172,8 @@ class TestPageView(TestCase):
         GET request returns table component as expected
         """
         page = PageFactory()
-        table = TableFactory(
-            title='first table block',
-            component=SubFactory(ComponentFactory, page=page))
+        table = TableFactory(title='first table block',
+                             component=SubFactory(ComponentFactory, page=page))
 
         url = reverse('page-detail', kwargs={'slug': page.get_slug()})
 

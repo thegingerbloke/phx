@@ -65,12 +65,11 @@ class NewsDetailView(generic.DetailView):
                 'title':
                 previous.title,
                 'link_url':
-                reverse(
-                    'news-detail',
-                    kwargs={
-                        'pk': previous.id,
-                        'slug': previous.slug
-                    })
+                reverse('news-detail',
+                        kwargs={
+                            'pk': previous.id,
+                            'slug': previous.slug
+                        })
             }
 
     def get_next(self):
@@ -81,11 +80,11 @@ class NewsDetailView(generic.DetailView):
                 'title':
                 next.title,
                 'link_url':
-                reverse(
-                    'news-detail', kwargs={
-                        'pk': next.id,
-                        'slug': next.slug
-                    })
+                reverse('news-detail',
+                        kwargs={
+                            'pk': next.id,
+                            'slug': next.slug
+                        })
             }
 
     def generate_breadcrumb(self):

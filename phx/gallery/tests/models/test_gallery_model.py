@@ -10,11 +10,11 @@ class TestGalleryModel(TestCase):
         Get the URL for the Gallery instance - the sluggified title
         """
         gallery = GalleryFactory(title='this? is& a! (test*)')
-        expected_url = reverse(
-            'gallery-detail', kwargs={
-                'pk': gallery.id,
-                'slug': gallery.slug
-            })
+        expected_url = reverse('gallery-detail',
+                               kwargs={
+                                   'pk': gallery.id,
+                                   'slug': gallery.slug
+                               })
 
         url = gallery.get_absolute_url()
 

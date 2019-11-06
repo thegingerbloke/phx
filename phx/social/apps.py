@@ -14,11 +14,12 @@ class SocialConfig(AppConfig):
         from home.models import Announcement
 
         post_save.connect(save_news, sender=News, dispatch_uid="add_news")
-        post_save.connect(
-            save_results, sender=Result, dispatch_uid="add_results")
-        post_save.connect(
-            save_gallery, sender=Gallery, dispatch_uid="add_gallery")
-        post_save.connect(
-            save_announcements,
-            sender=Announcement,
-            dispatch_uid="add_announcements")
+        post_save.connect(save_results,
+                          sender=Result,
+                          dispatch_uid="add_results")
+        post_save.connect(save_gallery,
+                          sender=Gallery,
+                          dispatch_uid="add_gallery")
+        post_save.connect(save_announcements,
+                          sender=Announcement,
+                          dispatch_uid="add_announcements")

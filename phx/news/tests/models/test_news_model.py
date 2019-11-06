@@ -10,11 +10,11 @@ class TestNewsModel(TestCase):
         Get the URL for the News instance - the sluggified title
         """
         news = NewsFactory(title='this? is& a! (test*)')
-        expected_url = reverse(
-            'news-detail', kwargs={
-                'pk': news.id,
-                'slug': news.slug
-            })
+        expected_url = reverse('news-detail',
+                               kwargs={
+                                   'pk': news.id,
+                                   'slug': news.slug
+                               })
 
         url = news.get_absolute_url()
 

@@ -37,14 +37,13 @@ class TestContactIndexView(TestCase):
         url = reverse('contact-index')
         Page.objects.create(title='contact')
 
-        response = self.client.post(
-            url, {
-                'name': 'Lorem Ipsum',
-                'email': 'lorem@ipsum.com',
-                'topic': 'misc',
-                'message': 'This is a test'
-            },
-            follow=True)
+        response = self.client.post(url, {
+            'name': 'Lorem Ipsum',
+            'email': 'lorem@ipsum.com',
+            'topic': 'misc',
+            'message': 'This is a test'
+        },
+                                    follow=True)
 
         self.assertEqual(response.status_code, 200)
         self.assertEqual(Message.objects.count(), 1)
@@ -63,14 +62,13 @@ class TestContactIndexView(TestCase):
         Page.objects.create(title='contact')
         Topic.objects.create(topic='Test topic')
 
-        response = self.client.post(
-            url, {
-                'name': 'Lorem Ipsum',
-                'email': 'lorem@ipsum.com',
-                'topic': '1',
-                'message': 'This is a test'
-            },
-            follow=True)
+        response = self.client.post(url, {
+            'name': 'Lorem Ipsum',
+            'email': 'lorem@ipsum.com',
+            'topic': '1',
+            'message': 'This is a test'
+        },
+                                    follow=True)
 
         self.assertEqual(response.status_code, 200)
         self.assertEqual(Message.objects.count(), 1)
@@ -109,15 +107,14 @@ class TestContactIndexView(TestCase):
         url = reverse('contact-index')
         Page.objects.create(title='contact')
 
-        response = self.client.post(
-            url, {
-                'name': 'Lorem Ipsum',
-                'email': 'lorem@ipsum.com',
-                'topic': 'misc',
-                'message': 'This is a test',
-                'phone_no': '123'
-            },
-            follow=True)
+        response = self.client.post(url, {
+            'name': 'Lorem Ipsum',
+            'email': 'lorem@ipsum.com',
+            'topic': 'misc',
+            'message': 'This is a test',
+            'phone_no': '123'
+        },
+                                    follow=True)
 
         self.assertEqual(response.status_code, 200)
         self.assertEqual(
