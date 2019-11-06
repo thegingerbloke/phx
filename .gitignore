@@ -27,7 +27,7 @@ media/
 
 # Static assets
 static/
-!frontend/static/img
+!frontend/static/img/*
 
 # Compiled frontend files
 frontend/static/css
@@ -40,3 +40,6 @@ phx/db.sqlite3
 # Tests
 __pycache__/
 .pytest_cache
+
+# misc
+notes.txt

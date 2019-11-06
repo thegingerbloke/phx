@@ -8,13 +8,19 @@
 <meta name="description" content="{% if description %}{{description}}{% else %}{{SITE_DESCRIPTION}}{% endif %}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="twitter:card" content="summary_large_image">
+{% if image %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="{{HOST}}{{image}}">
+{% else %}
+  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="{{HOST}}{% static 'img/logo_brighton-phoenix-square.png' %}">
+{% endif %}
+
 <meta name="twitter:site" content="@brightonphoenix">
 
 <meta property="og:url" content="{{HOST}}">
 <meta property="og:title" content="{% if title %}{{title}} | {% endif %}{{SITE_TITLE}}">
 <meta property="og:description" content="{% if description %}{{description}}{% else %}{{SITE_DESCRIPTION}}{% endif %}">
-<meta property="og:image" content="{% if image %}{{HOST}}{{image}}{% else %}{{HOST}}{% static 'img/logo_brighton-phoenix.png' %}{% endif %}">
 <meta property="og:image:alt" content="{% if image_alt %}{{image_alt}}{% endif %}">
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
