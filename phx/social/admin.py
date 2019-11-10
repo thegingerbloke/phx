@@ -6,9 +6,7 @@ from .models import Social
 
 
 class SocialAdmin(admin.ModelAdmin):
-    list_display = [
-        'model', 'title', 'url', 'created_date', 'posted', 'reposted'
-    ]
+    list_display = ['model', 'title', 'url', 'created_date', 'posted']
     readonly_fields = ['model', 'title', 'url', 'posted', 'reposted']
 
     def has_add_permission(self, request):
