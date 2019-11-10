@@ -26,7 +26,7 @@ urlpatterns = [
     # app
     path('admin/', phx_admin.urls),
     path('', include('home.urls')),
-    path('offline/', include('offline.urls')),
+    path('', include('offline.urls')),
     path('news/', include('news.urls')),
     path('fixtures/', include('fixtures.urls')),
     path('results/', include('results.urls')),

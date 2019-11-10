@@ -3,7 +3,7 @@
 "use strict";
 
 var cacheName = "offline";
-var cacheVersion = "v1.0.0::";
+var cacheVersion = "v1.0.2::";
 var cacheFiles = {
   optional: [],
   required: ["/offline/"]
