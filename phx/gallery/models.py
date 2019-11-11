@@ -18,6 +18,7 @@ class Gallery(models.Model):
         help_text='Text used on the gallery listing page',
         blank=True,
     )
+    event_date = models.DateField(blank=True, null=True)
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
     author = models.ForeignKey(

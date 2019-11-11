@@ -9,9 +9,12 @@
   <div class="Content-component">
     <div class="Editorial">
       <h2>{{gallery.title}}</h2>
+
+      {% if gallery.event_date %}
       <p>
-        <em>{{gallery.created_date|date:"l dS F Y"}}</em>
+        <em>{{gallery.event_date|date:"l jS F Y"}}</em>
       </p>
+      {% endif %}
       <p>{{gallery.summary}}</p>
     </div>
   </div>

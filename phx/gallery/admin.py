@@ -32,7 +32,12 @@ class ThumbnailAdmin(admin.StackedInline):
 
 class GalleryAdmin(admin.ModelAdmin):
     list_display = [
-        'get_thumbnail', 'title', 'created_date', 'author', 'image_count'
+        'get_thumbnail',
+        'title',
+        'created_date',
+        'event_date',
+        'author',
+        'image_count',
     ]
     list_display_links = ['get_thumbnail', 'title']
     list_select_related = ['author', 'thumbnail']

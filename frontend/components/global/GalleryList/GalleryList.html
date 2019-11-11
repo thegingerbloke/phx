@@ -34,9 +34,11 @@
             </div>
             <div class="GalleryList-content">
               <h3 class="GalleryList-title">{{gallery.title|highlight:search|safe}}</h3>
+              {% if gallery.event_date %}
               <p class="GalleryList-text">
-                <em>{{gallery.created_date|date:'D j M Y'}}</em>
+                <em>{{gallery.event_date|date:'D j M Y'}}</em>
               </p>
+              {% endif %}
               <p class="GalleryList-text">
                 {{gallery.summary|highlight:search|safe|truncatewords_html:50}}
               </p>
