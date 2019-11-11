@@ -1,3 +1,4 @@
+from admin_ordering.admin import OrderableAdmin
 from django.contrib import admin
 from django.utils.html import format_html
 from easy_thumbnails.files import get_thumbnailer
@@ -38,6 +39,7 @@ class GalleryAdmin(admin.ModelAdmin):
         'event_date',
         'author',
         'image_count',
+        'get_reorder_images_link',
     ]
     list_display_links = ['get_thumbnail', 'title']
     list_select_related = ['author', 'thumbnail']
@@ -58,10 +60,65 @@ class GalleryAdmin(admin.ModelAdmin):
 
     get_thumbnail.short_description = 'thumbnail'
 
+    # add custom link to gallery image reordering
+    def get_reorder_images_link(self, obj):
+        return format_html(
+            '<a href="../image/?gallery={}">Reorder images</a>'.format(obj.id))
+
+    get_reorder_images_link.short_description = 'Reorder images'
+
     def save_model(self, request, obj, form, change):
         if getattr(obj, 'author', None) is None:
             obj.author = request.user
         obj.save()
 
 
+class ImageOrderAdmin(OrderableAdmin, admin.ModelAdmin):
+    list_display = [
+        'get_image',
+        'caption',
+        'order',
+    ]
+    list_editable = (
+        'order',
+        'caption',
+    )
+    list_display_links = None
+    ordering_field = 'order'
+    readonly_fields = ('order', )
+
+    def changelist_view(self, request, extra_context=None):
+        extra_context = {
+            'title': 'Drag "order" to reorder images for this gallery'
+        }
+        return super(ImageOrderAdmin, self).changelist_view(
+            request,
+            extra_context=extra_context,
+        )
+
+    def get_image(self, obj):
+        thumbnailer = get_thumbnailer(obj.image)
+        thumbnail_options = {'size': (100, 100)}
+        return format_html('<img src="/media/{0}" />'.format(
+            thumbnailer.get_thumbnail(thumbnail_options)))
+
+    get_image.short_description = 'Image'
+
+    def has_add_permission(self, request):
+        return False
+
+    def has_delete_permission(self, request, obj=None):
+        return False
+
+    def get_queryset(self, request):
+        gallery_id = request.GET.get('gallery')
+        qs = super().get_queryset(request)
+        return qs.filter(gallery_id=gallery_id)
+
+    # hide link from admin home page
+    def has_module_permission(self, request):
+        return False
+
+
 phx_admin.register(Gallery, GalleryAdmin)
+phx_admin.register(Image, ImageOrderAdmin)

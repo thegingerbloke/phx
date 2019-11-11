@@ -74,11 +74,15 @@ class Image(models.Model):
     image_alt = models.CharField(max_length=200, blank=True)
     caption = models.CharField(max_length=200, blank=True)
     image = models.ImageField(upload_to=get_upload_path)
+    order = models.PositiveIntegerField(default=1)
     gallery = models.ForeignKey(
         Gallery,
         on_delete=models.CASCADE,
         related_name='images',
     )
+
+    class Meta:
+        ordering = ['order', '-id']
 
     def __str__(self):
         return self.caption

@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'nested_admin',
     'django_cron',
     'ckeditor',
+    'admin_ordering',
 
     # PHX
     'components.apps.ComponentsConfig',
