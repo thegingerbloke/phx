@@ -76,8 +76,10 @@ class TestGalleryDetailView(TestCase):
         GET request returns images as expected
         """
         gallery = GalleryFactory()
-        first_image = ImageFactory(caption='first image', gallery=gallery)
-        ImageFactory.create_batch(4, gallery=gallery)
+        first_image = ImageFactory(caption='first image',
+                                   gallery=gallery,
+                                   order=1)
+        ImageFactory.create_batch(4, gallery=gallery, order=2)
 
         url = reverse('gallery-detail',
                       kwargs={
