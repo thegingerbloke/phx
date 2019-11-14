@@ -11,7 +11,7 @@
 <div class="Content-component">
     {% include '../components/global/ResultsList/ResultsList.html' with results=result_list categories=categories %}
     {% if is_paginated %}{% load paginator %}{% paginator 4 %}{% endif %}
+    {% include '../components/global/ListPageSize/ListPageSize.html' %}
 </div>
-
 
 {% endblock %}

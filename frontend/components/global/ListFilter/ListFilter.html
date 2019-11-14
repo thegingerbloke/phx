@@ -1,0 +1,32 @@
+<div class="ListFilter">
+  <form class="ListFilter-search" method="get" action="{{filter_form_url}}">
+    <label class="ListFilter-label">
+      <span class="ListFilter-title">Search:</span>
+      <div class="ListFilter-inputWrap">
+        <input class="ListFilter-input" name="search" value="{{search}}" />
+        {% if category %}
+          <input type="hidden" name="category" value="{{category}}" />
+        {% endif %}
+        {% if paginate_by %}
+          <input type="hidden" name="pageSize" value="{{paginate_by}}" />
+        {% endif %}
+        {% if search %}
+          <a class="ListFilter-clear" href="{{filter_form_url}}">
+            <svg class="ListFilter-clearIcon"><use xlink:href="/static/img/icons/icons.svg#icon-cross"></use></svg>
+          </a>
+        {% endif %}
+      </div>
+    </label>
+    <div class="ListFilter-selectWrap">
+      <select class="ListFilter-select" name="year">
+        <option value="">All years</option>
+        {% for y in year_range %}
+          <option {% if year == y %} selected{% endif %}>
+            {{y}}
+          </option>
+        {% endfor %}
+      </select>
+    </div>
+    <button class="ListFilter-submit" type="submit">Go</button>
+  </form>
+</div>

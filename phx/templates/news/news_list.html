@@ -11,6 +11,7 @@
 <div class="Content-component">
     {% include '../components/global/NewsList/NewsList.html' with news=news_list %}
     {% if is_paginated %}{% load paginator %}{% paginator 4 %}{% endif %}
+    {% include '../components/global/ListPageSize/ListPageSize.html' %}
 </div>
 
 {% endblock %}

@@ -1,0 +1,18 @@
+{% load templatehelpers %}
+
+<div class="ListPageSize">
+  <p class="ListPageSize-count">{{page_obj.start_index}}-{{page_obj.end_index}} of {{paginator.count}}</p>
+  <p class="ListPageSize-label">Per page:</p>
+  <ul class="ListPageSize-list">
+    <li class="ListPageSize-item">
+      <a class="ListPageSize-link {% if paginate_by == 10 %}is-active{% endif %}" href="{% url_self_with_params 'pageSize' 10 request.GET.urlencode %}">
+        10
+      </a>
+    </li>
+    <li class="ListPageSize-item">
+      <a class="ListPageSize-link {% if paginate_by == 50 %}is-active{% endif %}" href="{% url_self_with_params 'pageSize' 50 request.GET.urlencode %}">
+        50
+      </a>
+    </li>
+  </ul>
+</div>

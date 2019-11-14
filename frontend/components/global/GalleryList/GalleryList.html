@@ -5,18 +5,7 @@
 <div class="GalleryList">
 
   <div class="GalleryList-filter">
-    <form class="GalleryList-filterSearch" method="get" action="{% url 'gallery-list' %}">
-      <label class="GalleryList-filterLabel">
-        <span class="GalleryList-filterTitle">Search:</span>
-        <input class="GalleryList-filterInput" name="search" value="{{search}}" />
-        <button class="GalleryList-filterSubmit" type="submit">Go</button>
-        {% if search %}
-          <a class="GalleryList-filterClear" href="{% url 'gallery-list' %}">
-            <svg class="GalleryList-filterClearIcon"><use xlink:href="/static/img/icons/icons.svg#icon-cross"></use></svg>
-          </a>
-        {% endif %}
-      </label>
-    </form>
+    {% include '../ListFilter/ListFilter.html' %}
   </div>
 
 

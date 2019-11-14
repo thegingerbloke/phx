@@ -1,5 +1,8 @@
+from datetime import datetime
+
 from django.db.models import Q
 from django.shortcuts import get_object_or_404
+from django.urls import reverse
 from django.utils import timezone
 from django.views import generic
 
@@ -13,7 +16,9 @@ from .models import Result
 
 class ResultsListView(generic.ListView):
     model = Result
-    paginate_by = 10
+
+    def calculate_year_range(self):
+        return reversed(range(2009, datetime.now().year + 1))
 
     def get_context_data(self, **kwargs):
         context = super(ResultsListView, self).get_context_data(**kwargs)
@@ -27,6 +32,14 @@ class ResultsListView(generic.ListView):
         context['search'] = self.request.GET.get('search', '')
         context['category'] = self.request.GET.get('category', '')
         context['subnav'] = generate_subnav(self.request.path, context['page'])
+        context['year_range'] = self.calculate_year_range()
+        context['filter_form_url'] = reverse('results-index')
+        context['paginate_by'] = self.paginate_by
+
+        year = self.request.GET.get('year', '')
+        if year:
+            context['year'] = int(year)
+
         return context
 
     def get_queryset(self):
@@ -48,6 +61,11 @@ class ResultsListView(generic.ListView):
         if category:
             query = query.filter(fixture__categories__abbreviation=category)
 
+        year = self.request.GET.get('year', '')
+        year_range = self.calculate_year_range()
+        if year and int(year) in year_range:
+            query = query.filter(fixture__event_date__year=year)
+
         return query
 
     def generate_breadcrumb(self):
@@ -57,3 +75,14 @@ class ResultsListView(generic.ListView):
         }, {
             'title': 'Results',
         }]
+
+    def get_paginate_by(self, queryset):
+        pagination_options = [10, 50]
+        self.paginate_by = pagination_options[0]
+        requested_page_size = self.request.GET.get(
+            'pageSize',
+            self.paginate_by,
+        )
+        if int(requested_page_size) in pagination_options:
+            self.paginate_by = int(requested_page_size)
+        return self.paginate_by

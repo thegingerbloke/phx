@@ -5,20 +5,8 @@
 <div class="NewsList">
 
   <div class="NewsList-filter">
-    <form class="NewsList-filterSearch" method="get" action="{% url 'news-list' %}">
-      <label class="NewsList-filterLabel">
-        <span class="NewsList-filterTitle">Search:</span>
-        <input class="NewsList-filterInput" name="search" value="{{search}}" />
-        <button class="NewsList-filterSubmit" type="submit">Go</button>
-        {% if search %}
-          <a class="NewsList-filterClear" href="{% url 'news-list' %}">
-            <svg class="NewsList-filterClearIcon"><use xlink:href="/static/img/icons/icons.svg#icon-cross"></use></svg>
-          </a>
-        {% endif %}
-      </label>
-    </form>
+    {% include '../ListFilter/ListFilter.html' %}
   </div>
-
 
   {% if news %}
     <ul class="NewsList-list">

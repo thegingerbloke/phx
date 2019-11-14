@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 from django.test import TestCase
 from django.urls import reverse
 from django.utils import timezone
+from django.utils.timezone import make_aware
 
 from fixtures.models import Fixture
 from fixtures.tests.factories import CategoryFactory, FixtureFactory
@@ -157,3 +158,57 @@ class TestResultsView(TestCase):
 
         response = self.client.get(url, {'search': 'cat 3'})
         self.assertEqual(len(response.context['results']), 0)
+
+    def test_get_year(self):
+        """"
+        GET request uses year, tested against gallery dates
+        """
+        Page.objects.create(title='results')
+
+        date_2018 = make_aware(datetime(2018, 1, 1))
+        date_2016 = make_aware(datetime(2016, 1, 1))
+
+        first_fixture = FixtureFactory(event_date=date_2018)
+        first_result = ResultFactory(fixture=first_fixture)
+
+        second_fixture = FixtureFactory(event_date=date_2016)
+        second_result = ResultFactory(fixture=second_fixture)
+
+        url = reverse('results-index')
+        response = self.client.get(url)
+        self.assertEqual(len(response.context['result_list']), 2)
+
+        response = self.client.get(url, {'year': '2018'})
+        self.assertEqual(len(response.context['result_list']), 1)
+        self.assertEqual(response.context['result_list'][0], first_result)
+
+        response = self.client.get(url, {'year': '2016'})
+        self.assertEqual(len(response.context['result_list']), 1)
+        self.assertEqual(response.context['result_list'][0], second_result)
+
+        # year out of range, not used in query
+        response = self.client.get(url, {'year': '1999'})
+        self.assertEqual(len(response.context['result_list']), 2)
+
+    def test_get_page_size(self):
+        """"
+        GET request uses page_size
+        """
+        Page.objects.create(title='results')
+
+        fixtures = FixtureFactory.create_batch(100)
+        for fixture in fixtures:
+            ResultFactory(fixture=fixture)
+
+        url = reverse('results-index')
+        response = self.client.get(url)
+        self.assertEqual(len(response.context['result_list']), 10)
+        self.assertEqual(response.context['paginate_by'], 10)
+
+        response = self.client.get(url, {'pageSize': '50'})
+        self.assertEqual(len(response.context['result_list']), 50)
+        self.assertEqual(response.context['paginate_by'], 50)
+
+        response = self.client.get(url, {'pageSize': '87'})
+        self.assertEqual(len(response.context['result_list']), 10)
+        self.assertEqual(response.context['paginate_by'], 10)

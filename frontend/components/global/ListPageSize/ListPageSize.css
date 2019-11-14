@@ -1,0 +1,43 @@
+/**
+ * @define ListPageSize; use strict
+ */
+
+.ListPageSize {
+  display: flex;
+  font-size: var(--font-size-small);
+  justify-content: center;
+}
+
+.ListPageSize-count {
+  color: var(--colour-grey-mid);
+}
+
+.ListPageSize-count::after {
+  content: "|";
+  display: inline-block;
+  padding-left: var(--gutter-half);
+  padding-right: var(--gutter-half);
+}
+
+.ListPageSize-label {
+  color: var(--colour-grey-mid);
+  margin-right: var(--gutter-quarter);
+}
+
+.ListPageSize-list {
+  list-style: none;
+}
+
+.ListPageSize-item {
+  display: inline-block;
+}
+
+.ListPageSize-link {
+  color: var(--colour-grey-mid);
+  padding: var(--gutter-quarter) 2px;
+}
+
+.ListPageSize-link.is-active {
+  color: var(--colour-grey-dark);
+  font-weight: bold;
+}

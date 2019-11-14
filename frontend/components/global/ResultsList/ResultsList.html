@@ -25,21 +25,9 @@
         {% endfor %}
       </ul>
     </div>
-    <form class="ResultsList-filterSearch" method="get" action="{% url 'results-index' %}">
-      <label class="ResultsList-filterLabel">
-        <span class="ResultsList-filterTitle">Search:</span>
-        <input class="ResultsList-filterInput" name="search" value="{{search}}" />
-        {% if category %}
-          <input type="hidden" name="category" value="{{category}}" />
-        {% endif %}
-        <button class="ResultsList-filterSubmit" type="submit">Go</button>
-        {% if search %}
-          <a class="ResultsList-filterClear" href="{% url 'results-index' %}{% if category %}?category={{category}}{% endif %}">
-            <svg class="ResultsList-filterClearIcon"><use xlink:href="/static/img/icons/icons.svg#icon-cross"></use></svg>
-          </a>
-        {% endif %}
-      </label>
-    </form>
+    <div class="ResultsList-filterSearch" >
+        {% include '../ListFilter/ListFilter.html' %}
+    </div>
   </div>
 
   {% if results %}
