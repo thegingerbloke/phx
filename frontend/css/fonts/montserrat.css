@@ -5,6 +5,6 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/montserrat.woff2") format("woff2"),
-    url("../fonts/montserrat.woff") format("woff");
+  src: url("../fonts/montserrat/montserrat.woff2") format("woff2"),
+    url("../fonts/montserrat/montserrat.woff") format("woff");
 }
