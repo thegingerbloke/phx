@@ -25,8 +25,7 @@ env/
 media/
 
 # Static assets
-static/
-!frontend/static/img/*
+/static/
 
 # Compiled frontend files
 frontend/static/css
