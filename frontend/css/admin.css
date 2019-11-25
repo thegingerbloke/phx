@@ -19,12 +19,6 @@
   font-size: 72px;
 }
 
-/* hide order field - populated automatically */
-
-.field-order {
-  display: none !important;
-}
-
 /* inline form - display component options alongside one another */
 
 .djn-inline-form {

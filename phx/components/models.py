@@ -113,11 +113,16 @@ class AbstractListItem(AbstractComponent):
     image_alt = models.CharField(max_length=200, blank=True)
     link_url = models.URLField(max_length=200, blank=True)
     link_text = models.CharField(max_length=200, blank=True)
+    order = models.IntegerField(
+        blank=True,
+        null=True,
+        default=0,
+    )
 
     class Meta:
         abstract = True
         verbose_name = 'list item'
-        ordering = ['id']
+        ordering = ['order', 'id']
 
     def __str__(self):
         return 'list item'
@@ -138,10 +143,15 @@ class AbstractProfileMember(AbstractComponent):
     # image = models.ImageField(upload_to=get_upload_path, blank=True)
     name = models.CharField(max_length=200)
     role = models.CharField(max_length=200, blank=True)
+    order = models.IntegerField(
+        blank=True,
+        null=True,
+        default=0,
+    )
 
     class Meta:
         abstract = True
-        ordering = ['id']
+        ordering = ['order', 'id']
 
     def __str__(self):
         return 'profile member'
