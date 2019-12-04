@@ -15,7 +15,7 @@ django-environ==0.4.5
 django-extensions==2.2.5
 django-js-asset==1.2.2    # via django-admin-ordering, django-ckeditor
 django-nested-admin==3.2.4
-django==2.2.7
+django==2.2.8
 easy-thumbnails==2.6
 facebook-sdk==3.1.0
 idna==2.8                 # via requests
