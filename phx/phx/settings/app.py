@@ -159,12 +159,12 @@ LOGGING = {
             'level': 'INFO',
         },
         'django.server': {
-            'handlers': ['django_server', 'save_to_log_file'],
+            'handlers': ['django_server', 'save_to_log_file', 'mail_admins'],
             'level': 'INFO',
             'propagate': False,
         },
         'django.request': {
-            'handlers': ['django_server', 'save_to_log_file'],
+            'handlers': ['django_server', 'save_to_log_file', 'mail_admins'],
             'level': 'INFO',
             'propagate': False,
         },

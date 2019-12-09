@@ -45,6 +45,8 @@ SITE_URL = env.str('SITE_URL', default='http://localhost:8000/')
 
 # App-specific settings
 CONTACT_EMAIL = env.str('CONTACT_EMAIL')
+DEFAULT_FROM_EMAIL = CONTACT_EMAIL[0]
+SERVER_EMAIL = CONTACT_EMAIL[0]
 
 # Analytics
 if env.str('ANALYTICS', default=''):
