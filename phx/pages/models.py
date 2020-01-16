@@ -31,6 +31,11 @@ def generate_slug(instance):
 
 
 class Page(models.Model):
+    order = models.IntegerField(
+        blank=True,
+        null=True,
+        default=0,
+    )
     title = models.CharField(max_length=200)
     parent = models.ForeignKey(
         'self',
@@ -57,7 +62,7 @@ class Page(models.Model):
 
     # Metadata
     class Meta:
-        ordering = ['created_date']
+        ordering = ['order', 'created_date']
 
     # Methods
     def get_absolute_url(self):
