@@ -21,8 +21,11 @@ def nav(request):
         'linkUrl': reverse('news-list'),
         'linkText': 'News',
     }, {
-        'linkUrl': '/events/',
-        'linkText': 'Events'
+        'linkUrl': '/our-events/',
+        'linkText': 'Our Events'
+    }, {
+        'linkUrl': '/competing/',
+        'linkText': 'Competing'
     }, {
         'linkUrl': reverse('gallery-list'),
         'linkText': 'Gallery'

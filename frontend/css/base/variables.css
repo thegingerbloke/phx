@@ -61,6 +61,7 @@
   --width-small: 25rem; /* 400px */
   --width-medium: 37.5rem; /* 600px */
   --width-large: 53.125rem; /* 850px */
+  --width-xlarge: 62.5rem; /* 1000px */
   --width-full: 75rem; /* 1200px */
 }
 
@@ -69,4 +70,5 @@
 @custom-media --small (min-width: 25rem);
 @custom-media --medium (min-width: 37.5rem);
 @custom-media --large (min-width: 53.125rem);
+@custom-media --xlarge (min-width: 62.5rem);
 @custom-media --full (min-width: 75rem);

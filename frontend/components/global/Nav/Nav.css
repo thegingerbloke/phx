@@ -47,7 +47,7 @@
   display: none;
 }
 
-@media (--large) {
+@media (--xlarge) {
   .Nav-toggle {
     display: none;
   }
@@ -65,7 +65,7 @@
   padding: 0;
 }
 
-@media (--large) {
+@media (--xlarge) {
   .Nav-list,
   .Nav--open .Nav-list {
     display: flex;
@@ -107,7 +107,7 @@
   }
 }
 
-@media (--large) {
+@media (--xlarge) {
   .Nav-link {
     padding: var(--gutter) var(--gutter-half);
   }
