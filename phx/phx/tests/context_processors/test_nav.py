@@ -14,7 +14,7 @@ class TestContextProcessorNav(TestCase):
         request.get_full_path = lambda: '/lorem/ipsum/'
 
         results = nav(request)
-        self.assertEqual(len(results['nav']), 9)
+        self.assertEqual(len(results['nav']), 10)
         self.assertEqual(results['nav'][0]['active'], False)
 
     def test_nav_active(self):
@@ -36,4 +36,4 @@ class TestContextProcessorNav(TestCase):
 
         results = nav(request)
         self.assertEqual(results['nav'][0]['contact'], False)
-        self.assertEqual(results['nav'][8]['contact'], True)
+        self.assertEqual(results['nav'][9]['contact'], True)
