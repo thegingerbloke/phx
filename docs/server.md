@@ -26,10 +26,23 @@
     - https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
 * SSL
     - https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04
+* If you are migrating server, also migrate existing SSL, db, media files
+    - https://ivanderevianko.com/2019/03/migrate-letsencrypt-certificates-certbot-to-new-server
+    - `psql -U user db < db.sql`
 * HTTP/2
     - https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-with-http-2-support-on-ubuntu-18-04
 * Consider adding extra nginx config:
     - https://github.com/h5bp/server-configs-nginx
+* Add cron
+    - add cron bash script to user root
+    - call cron bash script to call bash django command every minute
+* Nginx config
+    - edit /etc/nginx/nginx.conf
+    - enable 32mb uploads
+    - enable gzip file types - html/css/js
+* Alerts
+    - Add alert policies
+
 
 ## Nginx configs
 

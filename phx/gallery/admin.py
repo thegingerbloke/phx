@@ -1,3 +1,5 @@
+import logging
+
 from admin_ordering.admin import OrderableAdmin
 from django.contrib import admin
 from django.utils.html import format_html
@@ -6,6 +8,8 @@ from easy_thumbnails.files import get_thumbnailer
 from phx.admin import phx_admin
 
 from .models import Gallery, Image, Thumbnail
+
+logger = logging.getLogger(__name__)
 
 
 class ImageAdmin(admin.StackedInline):
@@ -53,10 +57,13 @@ class GalleryAdmin(admin.ModelAdmin):
         return obj.images.count()
 
     def get_thumbnail(self, obj):
-        thumbnailer = get_thumbnailer(obj.thumbnail.image)
-        thumbnail_options = {'size': (100, 100)}
-        return format_html('<img src="/media/{0}" />'.format(
-            thumbnailer.get_thumbnail(thumbnail_options)))
+        try:
+            thumbnailer = get_thumbnailer(obj.thumbnail.image)
+            thumbnail_options = {'size': (100, 100)}
+            return format_html('<img src="/media/{0}" />'.format(
+                thumbnailer.get_thumbnail(thumbnail_options)))
+        except Exception as e:
+            logger.warning("Gallery admin error: '{}'".format(e))
 
     get_thumbnail.short_description = 'thumbnail'
 

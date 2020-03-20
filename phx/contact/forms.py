@@ -53,8 +53,9 @@ class ContactForm(forms.Form):
         cleaned_data = super().clean()
         phone_no = cleaned_data.get("phone_no")
         if len(phone_no) != 0:
-            logger.warning("Email attempt using honeypot: '%s'",
-                           cleaned_data.get('message'))
+            logger.warning("Email attempt using honeypot: '{}'".format(
+                cleaned_data.get('message').replace('\n',
+                                                    ' ').replace('\r', '')))
             raise forms.ValidationError(
                 "Sorry, something went wrong. "
                 "Please try again, or send us an email.")
@@ -100,8 +101,8 @@ class ContactForm(forms.Form):
         try:
             send_mail(subject, message, email_from, email_to)
         except BadHeaderError:
-            logger.warning("Contact email, invalid header found: '%s'",
-                           self.cleaned_data['message'])
+            logger.warning("Contact email, invalid header found: '{}'".format(
+                self.cleaned_data['message']))
             return HttpResponse('Invalid header found.')
         except Exception as e:
-            logger.warning(e)
+            logger.warning("Contact email, general error: '{}'".format(e))
