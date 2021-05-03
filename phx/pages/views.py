@@ -1,7 +1,7 @@
+from components.models import COMPONENT_TYPES
 from django.shortcuts import get_object_or_404
 from django.views import generic
 
-from components.models import COMPONENT_TYPES
 from phx.helpers.subnav import generate_subnav
 
 from .models import Component, Page

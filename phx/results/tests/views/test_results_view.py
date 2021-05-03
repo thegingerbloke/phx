@@ -4,7 +4,6 @@ from django.test import TestCase
 from django.urls import reverse
 from django.utils import timezone
 from django.utils.timezone import make_aware
-
 from fixtures.models import Fixture
 from fixtures.tests.factories import CategoryFactory, FixtureFactory
 from pages.models import Page

@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.db.models import Q
 from django.utils import timezone
-
 from fixtures.models import Fixture
+
 from phx.admin import phx_admin
 
 from .models import Result

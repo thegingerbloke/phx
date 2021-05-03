@@ -1,15 +1,15 @@
 import logging
 from datetime import datetime
 
+from components.models import COMPONENT_TYPES
 from django.db.models import Q
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
 from django.utils import timezone
 from django.views import generic
-
-from components.models import COMPONENT_TYPES
 from fixtures.models import Category
 from pages.models import Component, Page
+
 from phx.helpers.subnav import generate_subnav
 
 from .models import Result

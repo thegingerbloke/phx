@@ -1,6 +1,5 @@
 from django.test import TestCase, override_settings
 from django.urls import reverse
-
 from pages.models import Page
 
 from ...forms import ContactForm

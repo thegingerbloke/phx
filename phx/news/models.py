@@ -1,8 +1,3 @@
-from django.contrib.auth.models import User
-from django.db import models
-from django.urls import reverse
-from django_extensions.db.fields import AutoSlugField
-
 from components.models import (
     AbstractEditorial,
     AbstractEmbed,
@@ -15,6 +10,10 @@ from components.models import (
     AbstractQuote,
     AbstractTable,
 )
+from django.contrib.auth.models import User
+from django.db import models
+from django.urls import reverse
+from django_extensions.db.fields import AutoSlugField
 
 
 class News(models.Model):

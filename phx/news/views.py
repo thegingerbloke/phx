@@ -1,10 +1,9 @@
 from datetime import datetime
 
+from components.models import COMPONENT_TYPES
 from django.db.models import Q
 from django.urls import reverse
 from django.views import generic
-
-from components.models import COMPONENT_TYPES
 
 from .models import Component, News
 

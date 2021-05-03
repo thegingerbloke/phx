@@ -2,7 +2,6 @@ from django.test import TestCase
 from django.urls import reverse
 from django.utils import timezone
 from factory import SubFactory
-
 from fixtures.models import Fixture
 from fixtures.tests.factories import FixtureFactory
 from gallery.tests.factories import GalleryFactory

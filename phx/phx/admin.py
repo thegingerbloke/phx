@@ -6,6 +6,7 @@ from django.contrib.auth.models import Group, User
 class PHXAdminSite(AdminSite):
     site_title = 'Brighton Phoenix - Administration'
     site_header = 'Brighton Phoenix - Administration'
+    enable_nav_sidebar = False
 
 
 phx_admin = PHXAdminSite()

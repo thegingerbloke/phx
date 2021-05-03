@@ -2,7 +2,6 @@ from datetime import datetime, timedelta
 
 from django.test import TestCase
 from django.urls import reverse
-
 from pages.models import Page
 
 from ..factories import FixtureFactory

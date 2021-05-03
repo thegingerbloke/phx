@@ -1,7 +1,4 @@
 import nested_admin
-from django.utils.html import format_html
-from easy_thumbnails.files import get_thumbnailer
-
 from components.admin import (
     AbstractEditorialAdmin,
     AbstractEmbedAdmin,
@@ -14,6 +11,9 @@ from components.admin import (
     AbstractQuoteAdmin,
     AbstractTableAdmin,
 )
+from django.utils.html import format_html
+from easy_thumbnails.files import get_thumbnailer
+
 from phx.admin import phx_admin
 
 from .models import (

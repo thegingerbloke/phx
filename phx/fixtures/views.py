@@ -1,9 +1,9 @@
+from components.models import COMPONENT_TYPES
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
 from django.views import generic
-
-from components.models import COMPONENT_TYPES
 from pages.models import Component, Page
+
 from phx.helpers.subnav import generate_subnav
 
 from .models import Category, Fixture
