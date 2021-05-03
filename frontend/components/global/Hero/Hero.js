@@ -1,12 +1,12 @@
 var Hero = {
   els: {
     container: ".js-Hero",
-    items: ".js-Hero-item"
+    items: ".js-Hero-item",
   },
   transitionTime: 4000,
   timeout: null,
 
-  init: function() {
+  init: function () {
     this.current = 0;
 
     this.container = document.querySelector(this.els.container);
@@ -29,7 +29,7 @@ var Hero = {
     img.addEventListener("load", this.imageLoaded.bind(this));
     img.src = container.dataset.img;
   },
-  imageLoaded: function() {
+  imageLoaded: function () {
     this.queueTransition();
     this.container.addEventListener(
       "mouseover",
@@ -40,14 +40,14 @@ var Hero = {
       this.queueTransition.bind(this)
     );
   },
-  queueTransition: function() {
+  queueTransition: function () {
     this.clearTransition();
     this.timeout = setTimeout(this.transition.bind(this), this.transitionTime);
   },
-  clearTransition: function() {
+  clearTransition: function () {
     clearTimeout(this.timeout);
   },
-  transition: function() {
+  transition: function () {
     for (var i = 0; i < this.items.length; i++) {
       this.items[i].style.opacity = 0;
     }
@@ -57,7 +57,7 @@ var Hero = {
     this.current = next;
 
     this.queueTransition();
-  }
+  },
 };
 
 module.exports = Hero;
