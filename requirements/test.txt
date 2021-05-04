@@ -45,7 +45,7 @@ django-js-asset==1.2.2
     #   django-ckeditor
 django-nested-admin==3.3.3
     # via -r base.txt
-django==3.2
+django==3.2.1
     # via
     #   -r base.txt
     #   django-anymail
@@ -96,7 +96,7 @@ pyparsing==2.4.7
     # via packaging
 pytest-django==4.2.0
     # via -r test.in
-pytest==6.2.3
+pytest==6.2.4
     # via pytest-django
 python-dateutil==2.8.1
     # via faker
