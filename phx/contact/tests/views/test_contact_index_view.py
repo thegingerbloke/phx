@@ -59,12 +59,12 @@ class TestContactIndexView(TestCase):
         """
         url = reverse('contact-index')
         Page.objects.create(title='contact')
-        Topic.objects.create(topic='Test topic')
+        topic = Topic.objects.create(topic='Test topic')
 
         response = self.client.post(url, {
             'name': 'Lorem Ipsum',
             'email': 'lorem@ipsum.com',
-            'topic': '1',
+            'topic': topic.id,
             'message': 'This is a test'
         },
                                     follow=True)

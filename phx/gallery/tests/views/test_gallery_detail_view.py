@@ -16,7 +16,7 @@ class TestGalleryDetailView(TestCase):
                           'slug': gallery.slug
                       })
 
-        self.assertEqual(url, '/gallery/1/this-is-a-test/')
+        self.assertEqual(url, '/gallery/{}/this-is-a-test/'.format(gallery.id))
 
     def test_get(self):
         """"
