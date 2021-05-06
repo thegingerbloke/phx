@@ -61,7 +61,7 @@ django-js-asset==1.2.2
     #   django-ckeditor
 django-nested-admin==3.3.3
     # via -r test.txt
-django==3.2.1
+django==3.2.2
     # via
     #   -r test.txt
     #   django-anymail

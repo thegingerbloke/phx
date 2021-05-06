@@ -108,7 +108,7 @@ pip-sync local.txt
 
 #### Updating a dependency
 
-Remove the dependency from the relevant `.txt` file(s) and re-run `pip-sync`.
+Remove the dependency from the relevant `.txt` file(s) and re-run `make all`.
 
 If it doesn't work as expected, remove from the `.in` file, run `pip-sync` to update the `.txt` files, then re-add and re-run again.
 
