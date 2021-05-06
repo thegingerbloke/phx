@@ -18,6 +18,12 @@ ALIGNMENT_CHOICES = (
     ('centre', 'Centre'),
 )
 
+EMBED_ALIGNMENT_CHOICES = (
+    ('', 'Default'),
+    ('responsive', 'Responsive'),
+    ('fullSize', 'Full size'),
+)
+
 BACKGROUND_CHOICES = (
     ('light', 'Light'),
     ('dark', 'Dark'),
@@ -51,6 +57,13 @@ class AbstractEditorial(AbstractComponent):
 
 class AbstractEmbed(AbstractComponent):
     title = models.CharField(max_length=200, blank=True)
+    align = models.CharField(
+        choices=EMBED_ALIGNMENT_CHOICES,
+        default='',
+        blank=True,
+        max_length=200,
+        help_text="(Leave blank unless you know what you're doing!)",
+    )
     content = models.TextField(
         help_text="Careful! Anything you enter here will be embedded "
         "directly in the website...")

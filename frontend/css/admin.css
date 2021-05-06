@@ -75,3 +75,19 @@
 .djn-inline-form .djn-inline-form .djn-delete-handler {
   display: none !important;
 }
+
+/* show remove/delete link for profile/listitem components */
+.djn-inline-form.djn-dynamic-form-pages-profilemember
+  .djn-drag-handler
+  .djn-remove-handler,
+.djn-inline-form.djn-dynamic-form-pages-profilemember
+  .djn-drag-handler
+  .djn-delete-handler,
+.djn-inline-form.djn-dynamic-form-pages-listitem
+  .djn-drag-handler
+  .djn-remove-handler,
+.djn-inline-form.djn-dynamic-form-pages-listitem
+  .djn-drag-handler
+  .djn-delete-handler {
+  display: block !important;
+}

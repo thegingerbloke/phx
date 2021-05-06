@@ -1,4 +1,4 @@
-<div class="Embed">
+<div class="Embed js-Embed {% if data.align %}Embed--{{data.align}}{% endif %}">
   {% if data.title %}<h3 class="Embed-title">{{data.title}}</h3>{% endif %}
   <div class="Embed-content">
     {{data.content|safe}}

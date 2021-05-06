@@ -1,12 +1,5 @@
 import logging
 
-from django.contrib.auth.models import User
-from django.core.exceptions import ValidationError
-from django.db import models
-from django.template.defaultfilters import slugify
-from django.urls import reverse
-from django_extensions.db.fields import AutoSlugField
-
 from components.models import (
     AbstractEditorial,
     AbstractEmbed,
@@ -19,6 +12,12 @@ from components.models import (
     AbstractQuote,
     AbstractTable,
 )
+from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
+from django.db import models
+from django.template.defaultfilters import slugify
+from django.urls import reverse
+from django_extensions.db.fields import AutoSlugField
 
 logger = logging.getLogger(__name__)
 

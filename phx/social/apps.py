@@ -8,10 +8,10 @@ class SocialConfig(AppConfig):
     name = 'social'
 
     def ready(self):
-        from news.models import News
-        from results.models import Result
         from gallery.models import Gallery
         from home.models import Announcement
+        from news.models import News
+        from results.models import Result
 
         post_save.connect(save_news, sender=News, dispatch_uid="add_news")
         post_save.connect(save_results,

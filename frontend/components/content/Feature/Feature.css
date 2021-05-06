@@ -73,6 +73,11 @@
   padding: var(--gutter-double);
 }
 
+.Feature--imageLeft .Feature-content,
+.Feature--imageRight .Feature-content {
+  max-width: 50%;
+}
+
 .Feature-title {
   font-size: var(--font-size-h3);
   font-weight: normal;

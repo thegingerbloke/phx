@@ -5,6 +5,7 @@ Applied to all envs
 """
 
 import os
+from pathlib import Path
 
 import environ
 
@@ -61,7 +62,7 @@ ROOT_URLCONF = 'phx.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [django_root.path('templates/')],
+        'DIRS': [Path(django_root.path('templates/')).resolve()],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -211,6 +212,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(app_root(), 'frontend', 'static'),
 ]
+
+# DB
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/

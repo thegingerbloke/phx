@@ -1,7 +1,6 @@
 {
   "recommendations": [
-    "editorconfig.editorconfig",
-    "shinnn.stylelint",
+    "stylelint.vscode-stylelint",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
     "mikestead.dotenv",

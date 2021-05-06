@@ -1,5 +1,4 @@
 import nested_admin
-
 from components.admin import (
     AbstractEditorialAdmin,
     AbstractEmbedAdmin,
@@ -12,6 +11,7 @@ from components.admin import (
     AbstractQuoteAdmin,
     AbstractTableAdmin,
 )
+
 from phx.admin import phx_admin
 
 from .models import (

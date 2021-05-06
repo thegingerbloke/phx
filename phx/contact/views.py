@@ -1,9 +1,9 @@
+from components.models import COMPONENT_TYPES
 from django.shortcuts import get_object_or_404
 from django.views import generic
 from django.views.generic.edit import FormView
-
-from components.models import COMPONENT_TYPES
 from pages.models import Component, Page
+
 from phx.helpers.subnav import generate_subnav
 
 from .forms import ContactForm, custom_topics

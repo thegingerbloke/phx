@@ -26,7 +26,7 @@ class TestNewsDetailsView(TestCase):
         news = NewsFactory(title='this? is& a! (test*)')
         url = reverse('news-detail', kwargs={'pk': news.id, 'slug': news.slug})
 
-        self.assertEqual(url, '/news/1/this-is-a-test/')
+        self.assertEqual(url, '/news/{}/this-is-a-test/'.format(news.id))
 
     def test_get(self):
         """"

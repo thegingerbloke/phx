@@ -7,6 +7,9 @@
   "css.validate": true,
 
   // Prettier - enable per-language
+  "[json]": {
+    "editor.formatOnSave": true
+  },
   "[javascript]": {
     "editor.formatOnSave": true
   },
