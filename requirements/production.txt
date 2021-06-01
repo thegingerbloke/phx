@@ -87,7 +87,7 @@ sqlparse==0.4.1
     #   django
 twitter==1.18.0
     # via -r base.txt
-urllib3==1.26.4
+urllib3==1.26.5
     # via
     #   -r base.txt
     #   requests
