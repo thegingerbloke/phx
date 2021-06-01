@@ -194,7 +194,7 @@ toml==0.10.2
     #   pytest
 twitter==1.18.0
     # via -r test.txt
-urllib3==1.26.4
+urllib3==1.26.5
     # via
     #   -r test.txt
     #   requests
